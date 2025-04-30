@@ -15,6 +15,7 @@ interface QuizContextType {
   getNextSectionId: (currentSectionId: number) => number;
   startQuiz: (sectionId: number) => void;
   answerQuestion: (sectionId: number, questionIndex: number, optionId: string) => void;
+  goToPreviousQuestion: (sectionId: number, currentQuestionIndex: number) => void;
   calculateScore: (sectionId: number) => {
     correct: number;
     incorrect: number;
@@ -194,6 +195,17 @@ Trân trọng,
     return sections.every(section => section.completed && section.score >= 90);
   }, [sections]);
 
+  // Go to previous question
+  const goToPreviousQuestion = useCallback((sectionId: number, currentQuestionIndex: number) => {
+    if (currentQuestionIndex > 0) {
+      setSections(prev => prev.map(section => 
+        section.id === sectionId 
+          ? { ...section, currentQuestion: currentQuestionIndex - 1 }
+          : section
+      ));
+    }
+  }, []);
+
   // Load progress from localStorage
   const loadStoredProgress = useCallback(() => {
     const { loadedSections, loadedAnswers } = loadProgress();
@@ -220,6 +232,7 @@ Trân trọng,
     getNextSectionId,
     startQuiz,
     answerQuestion,
+    goToPreviousQuestion,
     calculateScore,
     completeSection,
     getImageRevealLevel,

@@ -3,8 +3,9 @@ import { useQuiz } from "@/contexts/quiz-context";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
-import { useEffect } from "react";
-import { Trophy, Check } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Trophy, Check, Eye } from "lucide-react";
+import AnswerReview from "@/components/answer-review";
 
 export default function Results() {
   const { sectionId } = useParams();
@@ -16,6 +17,8 @@ export default function Results() {
     getImageRevealLevel,
     previousRevealLevel
   } = useQuiz();
+  
+  const [showAnswers, setShowAnswers] = useState(false);
   
   const currentSection = getCurrentSection(Number(sectionId));
   const nextSectionId = getNextSectionId(Number(sectionId));
@@ -157,6 +160,34 @@ export default function Results() {
             </div>
           </div>
         </motion.div>
+        
+        {/* View Answers Button */}
+        <motion.div 
+          className="mb-6"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3 }}
+        >
+          <Button 
+            variant="outline" 
+            className="w-full flex items-center justify-center gap-2 py-3"
+            onClick={() => setShowAnswers(!showAnswers)}
+          >
+            <Eye className="h-5 w-5" />
+            {showAnswers ? 'Ẩn đáp án' : 'Xem đáp án'}
+          </Button>
+        </motion.div>
+        
+        {/* Answer Review Component */}
+        {showAnswers && (
+          <motion.div 
+            className="mb-6"
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+          >
+            <AnswerReview sectionId={Number(sectionId)} />
+          </motion.div>
+        )}
         
         {/* Next Section Preview */}
         {nextSection && (

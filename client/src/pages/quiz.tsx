@@ -12,7 +12,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 export default function Quiz() {
   const { sectionId } = useParams();
   const [, setLocation] = useLocation();
-  const { sections, getCurrentSection, startQuiz, answerQuestion, userAnswers, getImageRevealLevel } = useQuiz();
+  const { sections, getCurrentSection, startQuiz, answerQuestion, goToPreviousQuestion, userAnswers, getImageRevealLevel } = useQuiz();
   
   const currentSection = getCurrentSection(Number(sectionId));
   const currentQuestion = currentSection?.currentQuestion || 0;
@@ -61,12 +61,7 @@ export default function Quiz() {
   const handlePrev = () => {
     // Go to previous question if not at the start
     if (currentQuestion > 0) {
-      // Set the current question to the previous one
-      const newCurrentQuestion = currentQuestion - 1;
-      
-      // Update the sections state directly through the quiz context
-      // We're not implementing this now as it requires adding another function to the quiz context
-      // This would typically need to be added to the quiz context API
+      goToPreviousQuestion(currentSection.id, currentQuestion);
     }
   };
   
