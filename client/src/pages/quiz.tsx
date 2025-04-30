@@ -94,9 +94,9 @@ export default function Quiz() {
       
       {/* Quiz Content */}
       <div className="flex-1 overflow-auto p-6">
-        <div className="max-w-md mx-auto">
-          {/* Reward Progress Sidebar (shown on desktop) */}
-          <div className="hidden md:block fixed right-6 top-24 w-60 bg-white p-4 rounded-lg shadow-md">
+        <div className="max-w-md mx-auto md:mr-72 md:ml-auto">
+          {/* Reward Progress Sidebar (responsive) */}
+          <div className="md:fixed md:right-6 md:top-24 md:w-60 bg-white p-4 rounded-lg shadow-md mb-6 md:mb-0">
             <h3 className="font-semibold mb-3">Phần thưởng</h3>
             <div className="aspect-w-1 aspect-h-1 mb-4 rounded-lg overflow-hidden">
               <img 
@@ -137,42 +137,6 @@ export default function Quiz() {
               ))}
             </div>
           </motion.div>
-          
-          {/* Mobile Progress Indicator */}
-          <div className="md:hidden bg-white rounded-lg shadow-md p-4 mb-6">
-            <h3 className="font-semibold mb-2">Tiến độ mở khóa</h3>
-            <div className="flex items-center justify-between">
-              <div className="flex space-x-1">
-                {sections.map((section) => (
-                  <div 
-                    key={section.id}
-                    className={`w-6 h-6 rounded-full flex items-center justify-center ${
-                      section.completed 
-                        ? 'bg-success' 
-                        : section.id === currentSection.id 
-                          ? 'bg-white border-2 border-primary' 
-                          : 'bg-gray-200'
-                    }`}
-                  >
-                    {section.completed ? (
-                      <i className="fas fa-check text-white text-xs"></i>
-                    ) : section.id === currentSection.id ? (
-                      <i className="fas fa-spinner fa-spin text-primary text-xs"></i>
-                    ) : (
-                      <i className="fas fa-lock text-gray-400 text-xs"></i>
-                    )}
-                  </div>
-                ))}
-              </div>
-              <div className="w-14 h-14 relative">
-                <img 
-                  src="https://images.unsplash.com/photo-1635476654563-9e4694de1e1e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                  alt="Mystery reward preview" 
-                  className={`w-full h-full object-cover rounded-md blur-image reveal-${getImageRevealLevel()}`}
-                />
-              </div>
-            </div>
-          </div>
           
           {/* Navigation Buttons */}
           <div className="flex justify-between">
