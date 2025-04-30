@@ -94,23 +94,7 @@ export default function Quiz() {
       
       {/* Quiz Content */}
       <div className="flex-1 overflow-auto p-6">
-        <div className="max-w-md mx-auto md:mr-72 md:ml-auto">
-          {/* Reward Progress Sidebar (responsive) */}
-          <div className="md:fixed md:right-6 md:top-24 md:w-60 bg-white p-4 rounded-lg shadow-md mb-6 md:mb-0">
-            <h3 className="font-semibold mb-3">Phần thưởng</h3>
-            <div className="aspect-w-1 aspect-h-1 mb-4 rounded-lg overflow-hidden">
-              <img 
-                src="https://images.unsplash.com/photo-1635476654563-9e4694de1e1e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                alt="Mystery reward" 
-                className={`w-full h-40 object-cover blur-image reveal-${getImageRevealLevel()}`}
-              />
-            </div>
-            
-            <div className="space-y-2">
-              <ProgressIndicator sections={sections} currentSectionId={currentSection.id} />
-            </div>
-          </div>
-          
+        <div className="max-w-md mx-auto">
           {/* Question */}
           <motion.div
             key={`question-${currentQuestion}`}
