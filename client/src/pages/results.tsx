@@ -141,29 +141,29 @@ export default function Results() {
               </Button>
             </div>
             
-            {/* Actions - Rearranged buttons */}
-            <div className="flex space-x-3">
-              <Link href={`/quiz/${sectionId}`}>
+            {/* Actions - Centered buttons */}
+            <div className="flex justify-center space-x-4">
+              <Link href={`/quiz/${sectionId}`} className="w-1/3">
                 <Button 
                   variant="outline" 
-                  className="flex-1 px-4 py-3 border border-gray-300 text-gray-700 font-medium"
+                  className="w-full px-4 py-3 border border-gray-300 text-gray-700 font-medium"
                 >
                   Làm lại
                 </Button>
               </Link>
               
               {nextSection ? (
-                <Link href={nextSection ? `/quiz/${nextSectionId}` : "/quiz-selection"}>
+                <Link href={nextSection ? `/quiz/${nextSectionId}` : "/quiz-selection"} className="w-1/3">
                   <Button 
-                    className="flex-1 px-4 py-3 bg-primary text-white font-medium"
+                    className="w-full px-4 py-3 bg-primary text-white font-medium"
                   >
                     Tiếp tục
                   </Button>
                 </Link>
               ) : (
-                <Link href="/reward">
+                <Link href="/reward" className="w-1/3">
                   <Button 
-                    className="flex-1 px-4 py-3 bg-primary text-white font-medium"
+                    className="w-full px-4 py-3 bg-primary text-white font-medium"
                   >
                     Xem phần thưởng
                   </Button>
