@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 import QuizOption from "@/components/quiz-option";
 import ProgressIndicator from "@/components/progress-indicator";
 import { motion } from "framer-motion";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft } from "lucide-react";
 
 export default function Quiz() {
   const { sectionId } = useParams();
@@ -42,20 +42,17 @@ export default function Quiz() {
   
   const handleOptionSelect = (optionId: string) => {
     setSelectedOption(optionId);
-  };
-  
-  const handleNext = () => {
-    if (selectedOption) {
-      answerQuestion(currentSection.id, currentQuestion, selectedOption);
+    
+    // Short delay before moving to next question to show the selection
+    setTimeout(() => {
+      answerQuestion(currentSection.id, currentQuestion, optionId);
       
-      if (currentQuestion < totalQuestions - 1) {
-        // No need to manually set section state - answerQuestion handles this
-      } else {
+      if (currentQuestion >= totalQuestions - 1) {
         // Quiz completed, go to results
         setLocation(`/results/${sectionId}`);
-        return;
       }
-    }
+      // No need to handle "else" case as answerQuestion handles moving to the next question
+    }, 500); // 500ms delay gives user visual feedback of selection
   };
   
   const handlePrev = () => {
@@ -122,8 +119,8 @@ export default function Quiz() {
             </div>
           </motion.div>
           
-          {/* Navigation Buttons */}
-          <div className="flex justify-between">
+          {/* Back Button */}
+          <div className="flex justify-start">
             <Button
               variant="outline"
               disabled={currentQuestion === 0}
@@ -131,13 +128,6 @@ export default function Quiz() {
               className="px-4 py-2 text-gray-600"
             >
               <ChevronLeft className="mr-1 h-4 w-4" /> Trước
-            </Button>
-            <Button
-              onClick={handleNext}
-              disabled={!selectedOption}
-              className="px-6 py-2 bg-primary text-white font-medium"
-            >
-              {currentQuestion < totalQuestions - 1 ? 'Tiếp theo' : 'Hoàn thành'} <ChevronRight className="ml-1 h-4 w-4" />
             </Button>
           </div>
         </div>
