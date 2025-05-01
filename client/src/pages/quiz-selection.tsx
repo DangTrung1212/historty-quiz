@@ -18,6 +18,12 @@ export default function QuizSelection() {
 
   return (
     <section className="min-h-screen p-6 bg-gray-50">
+      {/* Progress Modal - moved outside container for proper rendering */}
+      <ProgressModal 
+        open={showProgressModal} 
+        onOpenChange={setShowProgressModal} 
+      />
+      
       <div className="max-w-md mx-auto">
         {/* Header */}
         <motion.header 
@@ -63,12 +69,6 @@ export default function QuizSelection() {
               </div>
             </div>
           </Button>
-          
-          {/* Progress Modal */}
-          <ProgressModal 
-            open={showProgressModal} 
-            onOpenChange={setShowProgressModal} 
-          />
         </motion.div>
         
         {/* Quiz Sections */}
