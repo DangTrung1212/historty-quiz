@@ -1,11 +1,17 @@
 import { Card } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
+import { Button } from "@/components/ui/button";
 import { useQuiz } from "@/contexts/quiz-context";
 import SectionCard from "@/components/section-card";
+import ProgressModal from "@/components/progress-modal";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import { BarChart2, ChevronRight } from "lucide-react";
 
 export default function QuizSelection() {
   const { sections, getImageRevealLevel, completedSections } = useQuiz();
+  const [showProgressModal, setShowProgressModal] = useState(false);
+  
   const totalSections = sections.length;
   const progressPercent = (completedSections / totalSections) * 100;
   const revealLevel = getImageRevealLevel();
@@ -23,38 +29,46 @@ export default function QuizSelection() {
           <p className="text-gray-600">Hoàn thành mỗi phần với điểm ≥90% để mở khóa phần thưởng</p>
         </motion.header>
         
-        {/* Overall Progress */}
+        {/* Progress Widget */}
         <motion.div 
-          className="mb-8 bg-white p-4 rounded-lg shadow-md"
+          className="mb-8"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
         >
-          <div className="flex justify-between items-center mb-2">
-            <h2 className="font-semibold">Tiến độ tổng quan</h2>
-            <span className="text-sm text-gray-500">{completedSections}/{totalSections}</span>
-          </div>
-          <Progress 
-            value={progressPercent} 
-            className="h-2.5 bg-gray-200" 
-          />
-          
-          {/* Mystery Image Preview */}
-          <div className="mt-4 relative">
-            <p className="text-sm text-gray-500 mb-2">Phần thưởng bí mật:</p>
-            <div className="aspect-w-16 aspect-h-9 relative rounded-lg overflow-hidden">
-              <img 
-                src="https://via.placeholder.com/800x450?text=Complete+Quizzes+to+Reveal" 
-                alt="Mystery reward" 
-                className={`w-full h-48 object-cover blur-image reveal-${revealLevel}`}
-              />
-              {revealLevel < 100 && (
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <i className="fas fa-lock text-white text-4xl opacity-70"></i>
+          <Button 
+            variant="outline" 
+            className="w-full py-6 bg-white shadow-sm border border-gray-200 hover:bg-gray-50"
+            onClick={() => setShowProgressModal(true)}
+          >
+            <div className="flex flex-col w-full">
+              <div className="flex justify-between items-center mb-3 w-full">
+                <div className="flex items-center gap-2">
+                  <BarChart2 className="h-5 w-5 text-primary" />
+                  <span className="font-medium">Tiến độ & Phần thưởng</span>
                 </div>
-              )}
+                <span className="text-sm bg-gray-100 px-2 py-1 rounded-full">
+                  {completedSections}/{totalSections}
+                </span>
+              </div>
+              
+              <Progress 
+                value={progressPercent} 
+                className="h-2.5 bg-gray-200 mb-3" 
+              />
+              
+              <div className="flex justify-between items-center text-xs text-gray-500">
+                <span>Phần thưởng đã mở khóa: {revealLevel}%</span>
+                <ChevronRight className="h-4 w-4" />
+              </div>
             </div>
-          </div>
+          </Button>
+          
+          {/* Progress Modal */}
+          <ProgressModal 
+            open={showProgressModal} 
+            onOpenChange={setShowProgressModal} 
+          />
         </motion.div>
         
         {/* Quiz Sections */}
