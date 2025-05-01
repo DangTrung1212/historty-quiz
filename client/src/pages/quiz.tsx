@@ -119,15 +119,16 @@ export default function Quiz() {
             </div>
           </motion.div>
           
-          {/* Back Button */}
-          <div className="flex justify-start">
+          {/* Back Button - Centered */}
+          <div className="flex justify-center mt-6">
             <Button
               variant="outline"
               disabled={currentQuestion === 0}
               onClick={handlePrev}
-              className="px-4 py-2 text-gray-600"
+              className="px-6 py-2.5 text-gray-600 border-gray-300 hover:bg-gray-100 transition-colors"
+              size="lg"
             >
-              <ChevronLeft className="mr-1 h-4 w-4" /> Trước
+              <ChevronLeft className="mr-1.5 h-4 w-4" /> Quay lại
             </Button>
           </div>
         </div>
