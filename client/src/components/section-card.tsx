@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { Check, Lock } from "lucide-react";
+import { Check } from "lucide-react";
 import { motion } from "framer-motion";
 import { QuizSection } from "@/lib/quiz-data";
 
@@ -10,13 +10,13 @@ interface SectionCardProps {
 }
 
 export default function SectionCard({ section, previousCompleted }: SectionCardProps) {
-  const isLocked = !previousCompleted && !section.completed;
+  // Removed the section locking logic
   
   return (
     <motion.div 
-      className={`bg-white rounded-lg shadow-md overflow-hidden ${isLocked ? 'opacity-75' : ''}`}
+      className="bg-white rounded-lg shadow-md overflow-hidden"
       initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: isLocked ? 0.75 : 1, y: 0 }}
+      animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.1 * section.id }}
     >
       <div className="p-4 border-b border-gray-100 flex justify-between items-center">
@@ -34,7 +34,8 @@ export default function SectionCard({ section, previousCompleted }: SectionCardP
             </>
           ) : (
             <div className="w-8 h-8 border-2 border-gray-300 rounded-full flex items-center justify-center">
-              <Lock className="text-gray-400 h-3 w-3" />
+              {/* Removed the lock icon */}
+              <span className="text-gray-400 text-xs font-medium">NEW</span>
             </div>
           )}
         </div>
@@ -49,13 +50,6 @@ export default function SectionCard({ section, previousCompleted }: SectionCardP
               Làm Lại
             </Button>
           </Link>
-        ) : isLocked ? (
-          <Button 
-            disabled
-            className="w-full px-4 py-2 bg-gray-200 text-gray-500 cursor-not-allowed"
-          >
-            {section.id > 1 ? `Hoàn thành phần ${section.id - 1}` : 'Bắt Đầu'}
-          </Button>
         ) : (
           <Link href={`/quiz/${section.id}`}>
             <Button 
