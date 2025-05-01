@@ -23,26 +23,39 @@ export default function Landing() {
         
         {/* Features Preview */}
         <motion.div 
-          className="w-full mb-8 grid grid-cols-2 gap-4"
+          className="w-full mb-8"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.5 }}
         >
-          <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
-            <i className="fas fa-tasks text-primary text-xl mb-2"></i>
-            <p className="text-sm text-center">4 phần thi đa dạng</p>
-          </div>
-          <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
-            <i className="fas fa-unlock-alt text-secondary text-xl mb-2"></i>
-            <p className="text-sm text-center">Mở khóa phần thưởng</p>
-          </div>
-          <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
-            <i className="fas fa-medal text-warning text-xl mb-2"></i>
-            <p className="text-sm text-center">Huy hiệu thành tích</p>
-          </div>
-          <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
-            <i className="fas fa-chart-line text-success text-xl mb-2"></i>
-            <p className="text-sm text-center">Theo dõi tiến độ</p>
+          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-2xl shadow-sm border border-indigo-100">
+            <h3 className="text-lg font-semibold text-primary mb-4 text-center">Tính năng</h3>
+            <div className="flex flex-wrap justify-center gap-6">
+              <div className="flex items-center gap-3">
+                <div className="bg-primary bg-opacity-10 p-2 rounded-full">
+                  <i className="fas fa-tasks text-primary text-lg"></i>
+                </div>
+                <p className="text-sm">4 phần thi đa dạng</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="bg-indigo-400 bg-opacity-10 p-2 rounded-full">
+                  <i className="fas fa-unlock-alt text-indigo-500 text-lg"></i>
+                </div>
+                <p className="text-sm">Mở khóa phần thưởng</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="bg-yellow-400 bg-opacity-10 p-2 rounded-full">
+                  <i className="fas fa-medal text-yellow-500 text-lg"></i>
+                </div>
+                <p className="text-sm">Huy hiệu thành tích</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="bg-green-400 bg-opacity-10 p-2 rounded-full">
+                  <i className="fas fa-chart-line text-green-500 text-lg"></i>
+                </div>
+                <p className="text-sm">Theo dõi tiến độ</p>
+              </div>
+            </div>
           </div>
         </motion.div>
         
