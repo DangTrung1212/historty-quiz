@@ -35,40 +35,41 @@ export default function QuizSelection() {
           <p className="text-gray-600">Hoàn thành mỗi phần với điểm ≥90% để mở khóa phần thưởng</p>
         </motion.header>
         
-        {/* Progress Widget */}
+        {/* Progress Widget - New Card-based design */}
         <motion.div 
           className="mb-8"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
         >
-          <Button 
-            variant="outline" 
-            className="w-full py-6 bg-white shadow-sm border border-gray-200 hover:bg-gray-50"
+          <div 
+            className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden cursor-pointer hover:shadow-md transition-shadow duration-200"
             onClick={() => setShowProgressModal(true)}
           >
-            <div className="flex flex-col w-full">
-              <div className="flex justify-between items-center mb-3 w-full">
+            <div className="p-4">
+              <div className="flex justify-between items-center mb-4">
                 <div className="flex items-center gap-2">
-                  <BarChart2 className="h-5 w-5 text-primary" />
-                  <span className="font-medium">Tiến độ & Phần thưởng</span>
+                  <div className="bg-primary/10 p-2 rounded-full">
+                    <BarChart2 className="h-5 w-5 text-primary" />
+                  </div>
+                  <h3 className="font-medium">Tiến độ & Phần thưởng</h3>
                 </div>
-                <span className="text-sm bg-gray-100 px-2 py-1 rounded-full">
+                <span className="text-sm bg-gray-100 px-3 py-1 rounded-full font-medium">
                   {completedSections}/{totalSections}
                 </span>
               </div>
               
               <Progress 
                 value={progressPercent} 
-                className="h-2.5 bg-gray-200 mb-3" 
+                className="h-2.5 bg-gray-200 mb-4" 
               />
-              
-              <div className="flex justify-between items-center text-xs text-gray-500">
-                <span>Phần thưởng đã mở khóa: {revealLevel}%</span>
-                <ChevronRight className="h-4 w-4" />
-              </div>
             </div>
-          </Button>
+            
+            <div className="bg-gray-50 px-4 py-3 flex justify-between items-center border-t border-gray-100">
+              <span className="text-sm text-gray-600">Phần thưởng đã mở khóa: <span className="font-medium">{revealLevel}%</span></span>
+              <ChevronRight className="h-4 w-4 text-gray-400" />
+            </div>
+          </div>
         </motion.div>
         
         {/* Quiz Sections */}
