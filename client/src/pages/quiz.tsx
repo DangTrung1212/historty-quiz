@@ -41,8 +41,18 @@ export default function Quiz() {
   const question = currentSection.questions[currentQuestion];
   
   const handleOptionSelect = (optionId: string) => {
-    // Just set the selected option without automatic navigation
     setSelectedOption(optionId);
+    
+    // Short delay before moving to next question to show the selection
+    setTimeout(() => {
+      answerQuestion(currentSection.id, currentQuestion, optionId);
+      
+      if (currentQuestion >= totalQuestions - 1) {
+        // Quiz completed, go to results
+        setLocation(`/results/${sectionId}`);
+      }
+      // No need to handle "else" case as answerQuestion handles moving to the next question
+    }, 500); // 500ms delay gives user visual feedback of selection
   };
   
   const handlePrev = () => {
