@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 import QuizOption from "@/components/quiz-option";
 import ProgressIndicator from "@/components/progress-indicator";
 import { motion } from "framer-motion";
-import { ChevronLeft } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function Quiz() {
   const { sectionId } = useParams();
@@ -41,18 +41,8 @@ export default function Quiz() {
   const question = currentSection.questions[currentQuestion];
   
   const handleOptionSelect = (optionId: string) => {
+    // Just set the selected option without automatic navigation
     setSelectedOption(optionId);
-    
-    // Short delay before moving to next question to show the selection
-    setTimeout(() => {
-      answerQuestion(currentSection.id, currentQuestion, optionId);
-      
-      if (currentQuestion >= totalQuestions - 1) {
-        // Quiz completed, go to results
-        setLocation(`/results/${sectionId}`);
-      }
-      // No need to handle "else" case as answerQuestion handles moving to the next question
-    }, 500); // 500ms delay gives user visual feedback of selection
   };
   
   const handlePrev = () => {
@@ -62,22 +52,56 @@ export default function Quiz() {
     }
   };
   
+  const handleNext = () => {
+    // Only allow going to next if an option is selected
+    if (selectedOption) {
+      answerQuestion(currentSection.id, currentQuestion, selectedOption);
+      
+      if (currentQuestion >= totalQuestions - 1) {
+        // Quiz completed, go to results
+        setLocation(`/results/${sectionId}`);
+      }
+    }
+  };
+  
   return (
     <section className="min-h-screen flex flex-col bg-gray-50">
       {/* Progress Indicators */}
       <div className="bg-white border-b border-gray-200 px-6 py-4 sticky top-0 z-10">
         <div className="max-w-md mx-auto">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between mb-2">
             <Link href="/quiz-selection">
               <Button variant="ghost" size="icon" className="text-gray-600">
                 <ChevronLeft />
               </Button>
             </Link>
             <h2 className="font-semibold text-primary">{currentSection.title}</h2>
-            <div className="text-sm font-medium flex items-center">
-              <span className="text-gray-600">{currentQuestion + 1}</span>
-              <span className="text-gray-400 mx-1">/</span>
-              <span className="text-gray-600">{totalQuestions}</span>
+            <div className="flex items-center space-x-1">
+              <Button
+                variant="ghost"
+                size="icon"
+                disabled={currentQuestion === 0}
+                onClick={handlePrev}
+                className="h-8 w-8 text-gray-600"
+              >
+                <ChevronLeft className="h-4 w-4" />
+              </Button>
+              
+              <div className="text-sm font-medium flex items-center bg-gray-100 px-2 py-1 rounded-full">
+                <span className="text-gray-700">{currentQuestion + 1}</span>
+                <span className="text-gray-500 mx-1">/</span>
+                <span className="text-gray-700">{totalQuestions}</span>
+              </div>
+              
+              <Button
+                variant="ghost"
+                size="icon"
+                disabled={!selectedOption || currentQuestion >= totalQuestions - 1}
+                onClick={handleNext}
+                className="h-8 w-8 text-gray-600"
+              >
+                <ChevronRight className="h-4 w-4" />
+              </Button>
             </div>
           </div>
           
@@ -118,19 +142,6 @@ export default function Quiz() {
               ))}
             </div>
           </motion.div>
-          
-          {/* Back Button - Centered */}
-          <div className="flex justify-center mt-6">
-            <Button
-              variant="outline"
-              disabled={currentQuestion === 0}
-              onClick={handlePrev}
-              className="px-6 py-2.5 text-gray-600 border-gray-300 hover:bg-gray-100 transition-colors"
-              size="lg"
-            >
-              <ChevronLeft className="mr-1.5 h-4 w-4" /> Quay lại
-            </Button>
-          </div>
         </div>
       </div>
     </section>
