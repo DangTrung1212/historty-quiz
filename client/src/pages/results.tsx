@@ -192,23 +192,21 @@ export default function Results() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
           >
-            <h3 className="font-semibold mb-3">Phần thi tiếp theo</h3>
-            <div className="flex flex-col space-y-4">
-              <div className="flex items-center">
-                <div className="w-12 h-12 bg-white border border-gray-200 rounded-lg flex items-center justify-center mr-4">
-                  <i className="fas fa-flag text-primary text-xl"></i>
-                </div>
-                <div>
-                  <h4 className="font-medium">{nextSection.title}</h4>
-                  <p className="text-sm text-gray-600">{nextSection.questions.length} câu hỏi</p>
-                </div>
+            <div className="flex justify-between items-center mb-3">
+              <h3 className="font-semibold">Phần thi tiếp theo</h3>
+              <Link href={`/quiz/${nextSectionId}`}>
+                <Button className="px-4 py-1.5 bg-primary text-white text-sm font-medium">
+                  Bắt đầu
+                </Button>
+              </Link>
+            </div>
+            <div className="flex items-center">
+              <div className="w-12 h-12 bg-white border border-gray-200 rounded-lg flex items-center justify-center mr-4">
+                <i className="fas fa-flag text-primary text-xl"></i>
               </div>
-              <div className="flex justify-end">
-                <Link href={`/quiz/${nextSectionId}`}>
-                  <Button className="px-4 py-2 bg-primary text-white font-medium">
-                    Bắt đầu
-                  </Button>
-                </Link>
+              <div>
+                <h4 className="font-medium">{nextSection.title}</h4>
+                <p className="text-sm text-gray-600">{nextSection.questions.length} câu hỏi</p>
               </div>
             </div>
           </motion.div>
