@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-import { Trophy, Check, Eye } from "lucide-react";
+import { Trophy, Check, Eye, ChevronRight } from "lucide-react";
 import AnswerReview from "@/components/answer-review";
 
 export default function Results() {
@@ -184,31 +184,31 @@ export default function Results() {
           </motion.div>
         )}
         
-        {/* Next Section Preview */}
+        {/* Next Section Preview - Made Entire Section Clickable */}
         {nextSection && (
           <motion.div 
-            className="bg-white rounded-lg shadow-md p-6"
+            className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
           >
-            <div className="flex justify-between items-center mb-3">
-              <h3 className="font-semibold">Phần thi tiếp theo</h3>
-              <Link href={`/quiz/${nextSectionId}`}>
-                <Button className="px-4 py-1.5 bg-primary text-white text-sm font-medium">
-                  Bắt đầu
-                </Button>
-              </Link>
-            </div>
-            <div className="flex items-center">
-              <div className="w-12 h-12 bg-white border border-gray-200 rounded-lg flex items-center justify-center mr-4">
-                <i className="fas fa-flag text-primary text-xl"></i>
+            <Link href={`/quiz/${nextSectionId}`} className="block">
+              <div className="cursor-pointer">
+                <h3 className="font-semibold mb-3 text-gray-800">Phần thi tiếp theo</h3>
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-white border border-gray-200 rounded-lg flex items-center justify-center mr-4">
+                    <i className="fas fa-flag text-primary text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 className="font-medium">{nextSection.title}</h4>
+                    <p className="text-sm text-gray-600">{nextSection.questions.length} câu hỏi</p>
+                  </div>
+                  <div className="ml-auto text-primary">
+                    <ChevronRight className="h-5 w-5" />
+                  </div>
+                </div>
               </div>
-              <div>
-                <h4 className="font-medium">{nextSection.title}</h4>
-                <p className="text-sm text-gray-600">{nextSection.questions.length} câu hỏi</p>
-              </div>
-            </div>
+            </Link>
           </motion.div>
         )}
       </div>
