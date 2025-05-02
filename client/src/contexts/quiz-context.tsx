@@ -47,8 +47,7 @@ Mỗi sự kiện trong lịch sử đều có những bài học quý giá, và
 
 Chúc bạn đạt được kết quả cao nhất trong kỳ thi!
 
-Trân trọng,
-Đội ngũ Sử Nhanh`);
+Trân trọng`);
 
   // Helper function to calculate the reveal level
   const calculateRevealLevel = (sectionsArr: QuizSection[]) => {
@@ -169,26 +168,19 @@ Trân trọng,
 
   // Complete a section
   const completeSection = useCallback((sectionId: number, score: number) => {
-    // Save current reveal level before updating
     setPreviousRevealLevel(calculateRevealLevel(sections));
-    
     setSections(prev => {
       const newSections = prev.map(section => 
         section.id === sectionId 
           ? { ...section, completed: true, score }
           : section
       );
-      
-      // Count completed sections
-      const completed = newSections.filter(s => s.completed).length;
-      setCompletedSections(completed);
-      
-      // Save progress to localStorage
-      saveProgress(newSections, userAnswers);
-      
+      setCompletedSections(newSections.filter(s => s.completed).length);
+      // Save only sections to localStorage
+      saveProgress(newSections);
       return newSections;
     });
-  }, [userAnswers, sections]);
+  }, [sections]);
 
   // Check if all sections are completed
   const allSectionsCompleted = useCallback(() => {
@@ -208,15 +200,10 @@ Trân trọng,
 
   // Load progress from localStorage
   const loadStoredProgress = useCallback(() => {
-    const { loadedSections, loadedAnswers } = loadProgress();
-    
+    const { loadedSections } = loadProgress();
     if (loadedSections && loadedSections.length > 0) {
       setSections(loadedSections);
       setCompletedSections(loadedSections.filter(s => s.completed).length);
-    }
-    
-    if (loadedAnswers) {
-      setUserAnswers(loadedAnswers);
     }
   }, []);
 

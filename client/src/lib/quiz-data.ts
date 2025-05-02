@@ -37,7 +37,7 @@ export const quizSections: QuizSection[] = [
           { id: "1c", text: "Triều Lê" },
           { id: "1d", text: "Triều Nguyễn" }
         ],
-        correctOptionId: "1b"
+        correctOptionId: "1a"
       },
       {
         id: 2,
@@ -70,7 +70,7 @@ export const quizSections: QuizSection[] = [
           { id: "4c", text: "Nhà Trần" },
           { id: "4d", text: "Nhà Hồ" }
         ],
-        correctOptionId: "4b"
+        correctOptionId: "4a"
       },
       {
         id: 5,
@@ -81,7 +81,7 @@ export const quizSections: QuizSection[] = [
           { id: "5c", text: "Lý Nhân Tông" },
           { id: "5d", text: "Lý Anh Tông" }
         ],
-        correctOptionId: "5b"
+        correctOptionId: "5a"
       },
       {
         id: 6,
@@ -92,7 +92,7 @@ export const quizSections: QuizSection[] = [
           { id: "6c", text: "Nhà Lý" },
           { id: "6d", text: "Nhà Trần" }
         ],
-        correctOptionId: "6c"
+        correctOptionId: "6a"
       },
       {
         id: 7,
@@ -136,7 +136,7 @@ export const quizSections: QuizSection[] = [
           { id: "10c", text: "Thời Lê Thánh Tông" },
           { id: "10d", text: "Thời Gia Long" }
         ],
-        correctOptionId: "10c"
+        correctOptionId: "10a"
       }
     ]
   },

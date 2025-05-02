@@ -4,15 +4,13 @@ const STORAGE_KEY = 'quiz_progress';
 
 // Save quiz progress to localStorage
 export function saveProgress(
-  sections: QuizSection[],
-  userAnswers: Record<number, Record<number, string>>
+  sections: QuizSection[]
 ) {
   try {
     localStorage.setItem(
       STORAGE_KEY,
       JSON.stringify({
         sections,
-        userAnswers,
         lastUpdated: new Date().toISOString(),
       })
     );
@@ -26,25 +24,20 @@ export function saveProgress(
 // Load quiz progress from localStorage
 export function loadProgress(): {
   loadedSections: QuizSection[] | null;
-  loadedAnswers: Record<number, Record<number, string>> | null;
 } {
   try {
     const storedData = localStorage.getItem(STORAGE_KEY);
-    
     if (storedData) {
       const parsedData = JSON.parse(storedData);
       return {
         loadedSections: parsedData.sections || null,
-        loadedAnswers: parsedData.userAnswers || null,
       };
     }
   } catch (error) {
     console.error('Error loading progress from localStorage:', error);
   }
-  
   return {
     loadedSections: null,
-    loadedAnswers: null,
   };
 }
 

@@ -4,8 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-import { Trophy, Check, Eye, ChevronRight } from "lucide-react";
+import { Trophy, Check, Eye, ChevronRight, X as XIcon } from "lucide-react";
 import AnswerReview from "@/components/answer-review";
+import ProgressModal from '@/components/progress-modal';
 
 export default function Results() {
   const { sectionId } = useParams();
@@ -19,6 +20,7 @@ export default function Results() {
   } = useQuiz();
   
   const [showAnswers, setShowAnswers] = useState(false);
+  const [showProgressModal, setShowProgressModal] = useState(false);
   
   const currentSection = getCurrentSection(Number(sectionId));
   const nextSectionId = getNextSectionId(Number(sectionId));
@@ -28,6 +30,7 @@ export default function Results() {
   const scorePercent = Math.round(score.percent);
   const currentRevealLevel = getImageRevealLevel();
   const unlocked = scorePercent >= 90 && currentRevealLevel > previousRevealLevel;
+  const isPassed = scorePercent >= 90;
   
   useEffect(() => {
     if (currentSection && !currentSection.completed && scorePercent >= 90) {
@@ -49,15 +52,25 @@ export default function Results() {
         >
           <div className="text-center">
             <motion.div 
-              className="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4"
+              className={`inline-flex items-center justify-center w-16 h-16 rounded-full mb-4 ${isPassed ? 'bg-green-100' : 'bg-red-100'}`}
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ delay: 0.2, type: "spring" }}
             >
-              <Trophy className="text-success text-2xl" />
+              {isPassed ? (
+                <Trophy className="text-success text-2xl" />
+              ) : (
+                <XIcon className="text-error text-2xl" />
+              )}
             </motion.div>
-            <h2 className="text-xl font-bold mb-2">Hoàn thành!</h2>
-            <p className="text-gray-600 mb-4">Bạn đã hoàn thành phần thi "{currentSection.title}"</p>
+            <h2 className={`text-xl font-bold mb-2 ${isPassed ? 'text-success' : 'text-error'}`}>
+              {isPassed ? 'Đạt yêu cầu!' : 'Chưa đạt'}
+            </h2>
+            <p className="text-gray-600 mb-4">
+              {isPassed
+                ? 'Bạn đã vượt qua phần thi này!'
+                : 'Bạn chưa đạt điểm tối thiểu. Hãy thử lại để cải thiện kết quả.'}
+            </p>
             
             {/* Score */}
             <div className="flex justify-center mb-6">
@@ -112,10 +125,11 @@ export default function Results() {
             {/* Unlock Notice */}
             {unlocked && (
               <motion.div 
-                className="bg-indigo-50 border border-indigo-100 rounded-lg p-4 mb-6"
+                className="bg-indigo-50 border border-indigo-100 rounded-lg p-4 mb-6 cursor-pointer"
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: "auto" }}
                 transition={{ delay: 1.2 }}
+                onClick={() => setShowProgressModal(true)}
               >
                 <div className="flex items-center">
                   <div className="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center mr-3">
@@ -212,6 +226,8 @@ export default function Results() {
           </motion.div>
         )}
       </div>
+      {/* Progress Modal */}
+      <ProgressModal open={showProgressModal} onOpenChange={setShowProgressModal} />
     </section>
   );
 }
