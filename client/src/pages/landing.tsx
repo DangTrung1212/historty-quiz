@@ -9,7 +9,7 @@ export default function Landing() {
       <div className="max-w-md w-full flex flex-col items-center">
         {/* Logo and App Name - Enhanced */}
         <motion.div 
-          className="mb-12 text-center"
+          className="mb-6 text-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -31,16 +31,11 @@ export default function Landing() {
           
           <p className="mt-2 text-xl text-gray-600 mb-4">Luyện thi lịch sử THPT Quốc Gia</p>
           
-          <div className="flex items-center justify-center gap-3 mt-4">
-            <span className="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm font-medium">Dễ tiếp cận</span>
-            <span className="bg-indigo-100 text-indigo-600 px-3 py-1 rounded-full text-sm font-medium">Tương tác cao</span>
-            <span className="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-sm font-medium">Miễn phí</span>
-          </div>
         </motion.div>
         
         {/* Features Preview */}
         <motion.div 
-          className="w-full mb-10"
+          className="w-full mb-6"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.5 }}
@@ -74,43 +69,12 @@ export default function Landing() {
                   <p className="text-sm text-gray-600">Hoàn thành để mở khóa nội dung đặc biệt</p>
                 </div>
               </div>
-              
-              {/* Feature 3 */}
-              <div className="bg-white rounded-xl shadow-md p-5 border border-gray-100 hover:shadow-lg transition-shadow duration-300">
-                <div className="flex flex-col items-center text-center">
-                  <div className="bg-amber-500 text-white p-3 rounded-lg mb-3 shadow-md">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
-                      <path d="M8.21 13.89 7 23l5-3 5 3-1.21-9.11" /><circle cx="12" cy="8" r="7" />
-                    </svg>
-                  </div>
-                  <h4 className="font-bold text-gray-800 mb-1">Huy hiệu thành tích</h4>
-                  <p className="text-sm text-gray-600">Nhận huy hiệu khi đạt thành tích cao</p>
-                </div>
-              </div>
-              
-              {/* Feature 4 */}
-              <div className="bg-white rounded-xl shadow-md p-5 border border-gray-100 hover:shadow-lg transition-shadow duration-300">
-                <div className="flex flex-col items-center text-center">
-                  <div className="bg-green-500 text-white p-3 rounded-lg mb-3 shadow-md">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
-                      <path d="M3 3v18h18" /><path d="m19 9-5 5-4-4-3 3" />
-                    </svg>
-                  </div>
-                  <h4 className="font-bold text-gray-800 mb-1">Theo dõi tiến độ</h4>
-                  <p className="text-sm text-gray-600">Xem quá trình học tập của bạn</p>
-                </div>
-              </div>
             </div>
           </div>
         </motion.div>
         
         {/* Start Button - Enhanced */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.4, duration: 0.5 }}
-          className="mt-8"
-        >
+          <div className="mt-8">
           <div className="relative group">
             {/* Glow effect */}
             <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full blur opacity-50 group-hover:opacity-75 transition duration-300"></div>
@@ -128,7 +92,7 @@ export default function Landing() {
               </Button>
             </Link>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
