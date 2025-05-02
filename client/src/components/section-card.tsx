@@ -33,9 +33,10 @@ export default function SectionCard({ section, previousCompleted }: SectionCardP
               </div>
             </>
           ) : (
-            <div className="w-8 h-8 border-2 border-gray-300 rounded-full flex items-center justify-center">
-              {/* Removed the lock icon */}
-              <span className="text-gray-400 text-xs font-medium">NEW</span>
+            <div className="w-8 h-8 bg-primary shadow-lg rounded-full flex items-center justify-center animate-pulse">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-5 h-5 text-primary-foreground">
+                <path d="M12 17.25l-5.197 3.102 1.486-6.36-4.789-4.15 6.364-.55L12 3.75l2.136 5.542 6.364.55-4.789 4.15 1.486 6.36z" />
+              </svg>
             </div>
           )}
         </div>

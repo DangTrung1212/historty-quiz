@@ -19,18 +19,18 @@ export default function ProgressModal({ open, onOpenChange }: ProgressModalProps
   
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-md p-0 gap-0 overflow-hidden">
+      <DialogContent className="sm:max-w-md p-0 gap-0 overflow-hidden max-h-[80vh] overflow-y-auto">
         {/* Header with background */}
-        <div className="bg-primary/5 p-6 pb-4 relative">
-          <DialogClose className="absolute right-4 top-4 p-1.5 bg-white rounded-full shadow-sm hover:bg-gray-50">
+        <div className="bg-primary/5 p-6 pb-4 relative sticky top-0 z-10 shadow-sm">
+          <DialogClose className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
             <X className="h-4 w-4" />
+            <span className="sr-only">Close</span>
           </DialogClose>
-          
           <h2 className="text-xl font-bold text-primary mb-1">Tiến độ & Phần thưởng</h2>
           <p className="text-sm text-gray-600">Theo dõi quá trình học tập của bạn</p>
         </div>
         
-        <div className="p-6 space-y-6">
+        <div className="p-6 space-y-6 pt-2">
           {/* Overall Progress */}
           <div className="space-y-3">
             <div className="flex justify-between items-center mb-1">
@@ -71,7 +71,7 @@ export default function ProgressModal({ open, onOpenChange }: ProgressModalProps
           {/* Sections Progress */}
           <div className="space-y-3">
             <h3 className="font-medium text-gray-800">Chi tiết các phần</h3>
-            <div className="space-y-2 max-h-40 overflow-y-auto pr-1 -mx-2 px-2">
+            <div className="space-y-2 px-2 -mx-2">
               {sections.map((section) => (
                 <div key={section.id} className="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50">
                   <div className={`w-3 h-3 rounded-full flex-shrink-0 ${section.completed ? 'bg-success' : 'bg-gray-300'}`}></div>

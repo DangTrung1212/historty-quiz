@@ -192,10 +192,10 @@ export default function Results() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
           >
-            <Link href={`/quiz/${nextSectionId}`} className="block">
-              <div className="cursor-pointer">
-                <h3 className="font-semibold mb-3 text-gray-800">Phần thi tiếp theo</h3>
-                <div className="flex items-center">
+            <div>
+              <h3 className="font-semibold mb-3 text-gray-800">Phần thi tiếp theo</h3>
+              <Link href={`/quiz/${nextSectionId}`} className="block">
+                <div className="flex items-center transition active:scale-95 active:bg-primary/10 rounded-lg cursor-pointer">
                   <div className="w-12 h-12 bg-white border border-gray-200 rounded-lg flex items-center justify-center mr-4">
                     <i className="fas fa-flag text-primary text-xl"></i>
                   </div>
@@ -207,8 +207,8 @@ export default function Results() {
                     <ChevronRight className="h-5 w-5" />
                   </div>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </div>
           </motion.div>
         )}
       </div>
