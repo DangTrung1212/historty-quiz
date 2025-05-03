@@ -33,7 +33,9 @@ export default function Results() {
   const isPassed = scorePercent >= 90;
   
   useEffect(() => {
-    if (currentSection && !currentSection.completed && scorePercent >= 90) {
+    if (!currentSection) return;
+    // Only update if the new score is higher, or if not completed and passed
+    if ((scorePercent > (currentSection.score || 0)) || (!currentSection.completed && scorePercent >= 90)) {
       completeSection(Number(sectionId), scorePercent);
     }
   }, [currentSection, scorePercent, sectionId, completeSection]);

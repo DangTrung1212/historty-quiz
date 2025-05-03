@@ -1,6 +1,7 @@
-import { createContext, useContext, useState, useCallback, ReactNode } from 'react';
-import { quizSections, QuizSection } from '@/lib/quiz-data';
+import { createContext, useContext, useState, useCallback, ReactNode, useEffect } from 'react';
+import {  QuizSection } from '@/lib/quiz-data';
 import { saveProgress, loadProgress } from '@/lib/storage';
+import { useLocation } from "wouter";
 
 interface QuizContextType {
   sections: QuizSection[];
@@ -33,7 +34,7 @@ interface QuizContextType {
 const QuizContext = createContext<QuizContextType | undefined>(undefined);
 
 export function QuizProvider({ children }: { children: ReactNode }) {
-  const [sections, setSections] = useState<QuizSection[]>(quizSections);
+  const [sections, setSections] = useState<QuizSection[]>([]);
   const [userAnswers, setUserAnswers] = useState<Record<number, Record<number, string>>>({});
   const [startTime, setStartTime] = useState<Record<number, number>>({});
   const [endTime, setEndTime] = useState<Record<number, number>>({});
@@ -48,6 +49,7 @@ Mỗi sự kiện trong lịch sử đều có những bài học quý giá, và
 Chúc bạn đạt được kết quả cao nhất trong kỳ thi!
 
 Trân trọng`);
+  const [location] = useLocation();
 
   // Helper function to calculate the reveal level
   const calculateRevealLevel = (sectionsArr: QuizSection[]) => {
@@ -170,13 +172,17 @@ Trân trọng`);
   const completeSection = useCallback((sectionId: number, score: number) => {
     setPreviousRevealLevel(calculateRevealLevel(sections));
     setSections(prev => {
-      const newSections = prev.map(section => 
-        section.id === sectionId 
-          ? { ...section, completed: true, score }
-          : section
-      );
+      const newSections = prev.map(section => {
+        if (section.id === sectionId) {
+          return {
+            ...section,
+            completed: score >= 90,
+            score,
+          };
+        }
+        return section;
+      });
       setCompletedSections(newSections.filter(s => s.completed).length);
-      // Save only sections to localStorage
       saveProgress(newSections);
       return newSections;
     });
@@ -200,12 +206,84 @@ Trân trọng`);
 
   // Load progress from localStorage
   const loadStoredProgress = useCallback(() => {
-    const { loadedSections } = loadProgress();
-    if (loadedSections && loadedSections.length > 0) {
-      setSections(loadedSections);
-      setCompletedSections(loadedSections.filter(s => s.completed).length);
-    }
+    // No need to restore questions, currentQuestion, or userAnswers
+    // Only restore completed and score for each section if needed elsewhere
+    // (Currently, this is not used for restoring questions or currentQuestion)
   }, []);
+
+  useEffect(() => {
+    const { loadedSections } = loadProgress();
+
+    async function fetchAndSetDynamicSections() {
+      // Fetch Trắc Nghiệm 1
+      const res1 = await fetch("/api/questions/combined/trac_nghiem_1");
+      const questions1 = await res1.json();
+
+      // Fetch Trắc Nghiệm 2
+      const res2 = await fetch("/api/questions/combined/trac_nghiem_2");
+      const questions2 = await res2.json();
+
+      // Map to QuizSection format
+      const newSections = [
+        {
+          id: 1,
+          title: "Trắc Nghiệm 1",
+          questions: questions1.map((q: any, idx: number) => ({
+            id: idx + 1,
+            text: q.question_text,
+            options: Object.entries(q.options).map(([key, value]) => ({
+              id: key,
+              text: value
+            })),
+            correctOptionId: q.correct_answer
+          })),
+          completed: false,
+          score: 0,
+          currentQuestion: 0,
+        },
+        {
+          id: 2,
+          title: "Trắc Nghiệm 2",
+          questions: questions2.map((q: any, idx: number) => ({
+            id: idx + 1,
+            text: q.question_text,
+            options: Object.entries(q.options).map(([key, value]) => ({
+              id: key,
+              text: value
+            })),
+            correctOptionId: q.correct_answer
+          })),
+          completed: false,
+          score: 0,
+          currentQuestion: 0,
+        }
+        // Add Đúng Sai section here later if needed
+      ];
+
+      // If we have loadedSections, only restore completed and score
+      if (loadedSections && loadedSections.length > 0) {
+        const mergedSections = newSections.map((section) => {
+          const existing = loadedSections.find((s: any) => s.id === section.id);
+          if (existing) {
+            return {
+              ...section,
+              completed: existing.completed,
+              score: existing.score,
+              currentQuestion: 0, // always start at first question
+            };
+          }
+          return section;
+        });
+        setSections(mergedSections);
+        setCompletedSections(mergedSections.filter(s => s.completed).length);
+      } else {
+        setSections(newSections);
+        setCompletedSections(0);
+      }
+    }
+
+    fetchAndSetDynamicSections();
+  }, [location]);
 
   const value = {
     sections,
