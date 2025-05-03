@@ -2,15 +2,21 @@ import { QuizSection } from './quiz-data';
 
 const STORAGE_KEY = 'quiz_progress';
 
-// Save quiz progress to localStorage
+// Save only minimal quiz progress to localStorage
 export function saveProgress(
   sections: QuizSection[]
 ) {
   try {
+    // Only save id, completed, and score for each section
+    const minimalSections = sections.map(s => ({
+      id: s.id,
+      completed: s.completed,
+      score: s.score,
+    }));
     localStorage.setItem(
       STORAGE_KEY,
       JSON.stringify({
-        sections,
+        sections: minimalSections,
         lastUpdated: new Date().toISOString(),
       })
     );
@@ -21,9 +27,9 @@ export function saveProgress(
   }
 }
 
-// Load quiz progress from localStorage
+// Load minimal quiz progress from localStorage
 export function loadProgress(): {
-  loadedSections: QuizSection[] | null;
+  loadedSections: { id: number; completed: boolean; score: number }[] | null;
 } {
   try {
     const storedData = localStorage.getItem(STORAGE_KEY);

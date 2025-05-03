@@ -1,7 +1,8 @@
 import { Card } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Button } from "@/components/ui/button";
-import { useQuiz } from "@/contexts/quiz-context";
+import { useMultipleChoiceQuiz } from "@/contexts/MultipleChoiceQuizContext";
+import { useProgress } from "@/contexts/ProgressContext";
 import SectionCard from "@/components/section-card";
 import ProgressModal from "@/components/progress-modal";
 import { motion } from "framer-motion";
@@ -9,12 +10,13 @@ import { useState } from "react";
 import { BarChart2, ChevronRight } from "lucide-react";
 
 export default function QuizSelection() {
-  const { sections, getImageRevealLevel, completedSections } = useQuiz();
+  const { sections } = useMultipleChoiceQuiz();
+  const { getImageRevealLevel, completedSections } = useProgress();
   const [showProgressModal, setShowProgressModal] = useState(false);
   
   const totalSections = sections.length;
   const progressPercent = (completedSections / totalSections) * 100;
-  const revealLevel = getImageRevealLevel();
+  const revealLevel = getImageRevealLevel(sections);
 
   return (
     <section className="min-h-screen p-6 bg-gray-50">

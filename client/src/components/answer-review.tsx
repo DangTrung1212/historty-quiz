@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useQuiz } from '@/contexts/quiz-context';
+import { useMultipleChoiceQuiz } from '@/contexts/MultipleChoiceQuizContext';
 import { QuizSection, Question } from '@/lib/quiz-data';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
@@ -11,7 +11,7 @@ interface AnswerReviewProps {
 }
 
 export default function AnswerReview({ sectionId }: AnswerReviewProps) {
-  const { getCurrentSection, userAnswers } = useQuiz();
+  const { getCurrentSection, userAnswers } = useMultipleChoiceQuiz();
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   
   const section = getCurrentSection(Number(sectionId));

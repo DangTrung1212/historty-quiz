@@ -9,17 +9,11 @@ import QuizSelection from "@/pages/quiz-selection";
 import Quiz from "@/pages/quiz";
 import Results from "@/pages/results";
 import Reward from "@/pages/reward";
-import { useEffect } from "react";
-import { useQuiz, QuizProvider } from "./contexts/quiz-context";
+import { ProgressProvider } from "./contexts/ProgressContext";
+import { MultipleChoiceQuizProvider } from "./contexts/MultipleChoiceQuizContext";
+import { DungSaiQuizProvider } from "./contexts/DungSaiQuizContext";
 
 function Router() {
-  const { loadStoredProgress } = useQuiz();
-
-  useEffect(() => {
-    // Load progress from localStorage when app starts
-    loadStoredProgress();
-  }, [loadStoredProgress]);
-
   return (
     <Switch>
       <Route path="/" component={Landing} />
@@ -36,10 +30,14 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <QuizProvider>
-          <Toaster />
-          <Router />
-        </QuizProvider>
+        <ProgressProvider>
+          <MultipleChoiceQuizProvider>
+            <DungSaiQuizProvider>
+              <Toaster />
+              <Router />
+            </DungSaiQuizProvider>
+          </MultipleChoiceQuizProvider>
+        </ProgressProvider>
       </TooltipProvider>
     </QueryClientProvider>
   );

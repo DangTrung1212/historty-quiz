@@ -1,5 +1,6 @@
 import React from 'react';
-import { useQuiz } from '@/contexts/quiz-context';
+import { useMultipleChoiceQuiz } from '@/contexts/MultipleChoiceQuizContext';
+import { useProgress } from '@/contexts/ProgressContext';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogClose } from '@/components/ui/dialog';
 import { Progress } from '@/components/ui/progress';
 import { Button } from '@/components/ui/button';
@@ -12,11 +13,12 @@ interface ProgressModalProps {
 }
 
 export default function ProgressModal({ open, onOpenChange, onOverlayClick }: ProgressModalProps) {
-  const { sections, completedSections, getImageRevealLevel } = useQuiz();
+  const { sections } = useMultipleChoiceQuiz();
+  const { completedSections, getImageRevealLevel } = useProgress();
   
   const totalSections = sections.length;
   const progressPercent = (completedSections / totalSections) * 100;
-  const revealLevel = getImageRevealLevel();
+  const revealLevel = getImageRevealLevel(sections);
   
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
