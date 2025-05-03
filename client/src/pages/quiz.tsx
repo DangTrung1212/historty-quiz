@@ -1,5 +1,5 @@
 import { useParams, useLocation, Link } from "wouter";
-import { useQuiz } from "@/contexts/quiz-context";
+import { useMultipleChoiceQuiz } from "@/contexts/MultipleChoiceQuizContext";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
@@ -12,7 +12,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 export default function Quiz() {
   const { sectionId } = useParams();
   const [, setLocation] = useLocation();
-  const { sections, getCurrentSection, startQuiz, answerQuestion, goToPreviousQuestion, userAnswers, getImageRevealLevel } = useQuiz();
+  const { sections, getCurrentSection, startQuiz, answerQuestion, goToPreviousQuestion, userAnswers, getImageRevealLevel } = useMultipleChoiceQuiz();
   
   const currentSection = getCurrentSection(Number(sectionId));
   const currentQuestion = currentSection?.currentQuestion || 0;

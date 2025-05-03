@@ -48,6 +48,21 @@ export function getTracNghiem2(req: any, res: any) {
 }
 
 export function getTracNghiemDungSai(req: any, res: any) {
-  // TODO: Implement logic to combine all phan_ii (Đúng Sai) questions and return 5 random ones
-  res.status(501).json({ message: 'Not implemented yet' });
+  const dirPath = path.join(__dirname, '../question-json');
+  let allQuestions: any[] = [];
+  try {
+    const files = fs.readdirSync(dirPath).filter(f => f.endsWith('.json'));
+    for (const file of files) {
+      const filePath = path.join(dirPath, file);
+      const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+      if (Array.isArray(data.phan_ii)) {
+        allQuestions = allQuestions.concat(data.phan_ii);
+      }
+    }
+    allQuestions = allQuestions.sort(() => 0.5 - Math.random());
+    const selected = allQuestions.slice(0, 5);
+    res.json(selected);
+  } catch (err: any) {
+    res.status(500).json({ message: 'Error combining phan_ii questions for trac_nghiem_dung_sai', error: err.message });
+  }
 } 

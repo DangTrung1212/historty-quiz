@@ -1,5 +1,6 @@
 import { useParams, Link } from "wouter";
-import { useQuiz } from "@/contexts/quiz-context";
+import { useMultipleChoiceQuiz } from "@/contexts/MultipleChoiceQuizContext";
+import { useProgress } from "@/contexts/ProgressContext";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
@@ -15,9 +16,8 @@ export default function Results() {
     getNextSectionId, 
     calculateScore, 
     completeSection,
-    getImageRevealLevel,
-    previousRevealLevel
-  } = useQuiz();
+  } = useMultipleChoiceQuiz();
+  const { getImageRevealLevel, previousRevealLevel } = useProgress();
   
   const [showAnswers, setShowAnswers] = useState(false);
   const [showProgressModal, setShowProgressModal] = useState(false);
@@ -28,7 +28,7 @@ export default function Results() {
   
   const score = calculateScore(Number(sectionId));
   const scorePercent = Math.round(score.percent);
-  const currentRevealLevel = getImageRevealLevel();
+  const currentRevealLevel = getImageRevealLevel(currentSection ? [currentSection] : []);
   const unlocked = scorePercent >= 90 && currentRevealLevel > previousRevealLevel;
   const isPassed = scorePercent >= 90;
   

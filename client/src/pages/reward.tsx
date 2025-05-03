@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { useQuiz } from "@/contexts/quiz-context";
+import { useMultipleChoiceQuiz } from "@/contexts/MultipleChoiceQuizContext";
+import { useProgress } from "@/contexts/ProgressContext";
 import { motion } from "framer-motion";
 import BadgeCard from "@/components/badge-card";
 import confetti from "react-confetti";
@@ -12,7 +13,8 @@ import { Share, RotateCcw, Star } from "lucide-react";
 export default function Reward() {
   const { width, height } = useWindowSize();
   const [showConfetti, setShowConfetti] = useState(true);
-  const { sections, allSectionsCompleted, personalLetter } = useQuiz();
+  const { sections } = useMultipleChoiceQuiz();
+  const { allSectionsCompleted, personalLetter } = useProgress();
 
   useEffect(() => {
     // Stop confetti after 5 seconds
