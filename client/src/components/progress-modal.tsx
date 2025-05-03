@@ -8,9 +8,10 @@ import { X, Lock } from 'lucide-react';
 interface ProgressModalProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
+  onOverlayClick?: () => void;
 }
 
-export default function ProgressModal({ open, onOpenChange }: ProgressModalProps) {
+export default function ProgressModal({ open, onOpenChange, onOverlayClick }: ProgressModalProps) {
   const { sections, completedSections, getImageRevealLevel } = useQuiz();
   
   const totalSections = sections.length;
@@ -49,14 +50,30 @@ export default function ProgressModal({ open, onOpenChange }: ProgressModalProps
           {/* Mystery Image Preview */}
           <div className="space-y-3">
             <h3 className="font-medium text-gray-800">Phần thưởng bí mật</h3>
-            <div className="relative rounded-lg overflow-hidden border border-gray-200 bg-gray-50">
+            <div className="relative rounded-lg overflow-hidden border border-gray-200 bg-gray-50 w-full h-48">
               <img 
                 src="https://images.unsplash.com/photo-1635476654563-9e4694de1e1e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
                 alt="Mystery reward" 
-                className={`w-full h-48 object-cover blur-image reveal-${revealLevel}`}
+                className="w-full h-48 object-cover absolute top-0 left-0"
               />
+              {/* Overlay grid for 4 pieces */}
+              <div className="absolute inset-0 grid grid-cols-2 grid-rows-2 w-full h-full">
+                {[0,1,2,3].map(idx => {
+                  const isRevealed = sections[idx]?.completed && sections[idx]?.score >= 90;
+                  return (
+                    <div
+                      key={idx}
+                      className={`transition-all duration-700 ${isRevealed ? 'bg-transparent' : 'bg-black/60'} border border-white`}
+                      style={{
+                        opacity: isRevealed ? 0 : 1,
+                        transitionDelay: isRevealed ? `${idx * 0.2}s` : '0s',
+                      }}
+                    />
+                  );
+                })}
+              </div>
               {revealLevel < 100 && (
-                <div className="absolute inset-0 flex items-center justify-center bg-black/30">
+                <div className="absolute inset-0 flex items-center justify-center bg-black/30" style={{ cursor: onOverlayClick ? 'pointer' : undefined }} onClick={onOverlayClick}>
                   <div className="bg-black/50 rounded-full p-4">
                     <Lock className="h-6 w-6 text-white" />
                   </div>
