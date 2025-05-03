@@ -1,0 +1,478 @@
+{
+  "phan_i": [
+    {
+      "question_id": 1,
+      "source": "Ninh Bình",
+      "question_text": "Thắng lợi của nhân dân Việt Nam trong Cách mạng tháng Tám năm 1945 có ý nghĩa như thế nào đối với thế giới?",
+      "options": {
+        "A": "Góp phần làm đảo lộn và đưa tới thất bại chiến lược toàn cầu của Mỹ.",
+        "B": "Cổ vũ các dân tộc thuộc địa và phụ thuộc đấu tranh tự giải phóng.",
+        "C": "Làm tan rã hoàn toàn hệ thống thuộc địa của chủ nghĩa thực dân.",
+        "D": "Xây dựng vững chắc thành trì của phong trào giải phóng dân tộc."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "Xem lại nội dung Cách mạng tháng Tám năm 1945 và ý nghĩa của nó đối với thế giới.",
+        "solution": "Ý nghĩa của thắng lợi trong Cách mạng tháng Tám 1945 đối với thế giới là cổ vũ các dân tộc thuộc địa và phụ thuộc trên thế giới đấu tranh tự giải phóng, khẳng định tinh thần độc lập và quyền tự quyết."
+      }
+    },
+    {
+      "question_id": 2,
+      "source": "Ninh Bình",
+      "question_text": "Từ ngày 25 - 4 - 1945 đến ngày 26 - 6 - 1945, Hội nghị quốc tế họp tại Xan Phran-xi xcô (Mỹ) với sự tham gia của đại biểu 50 nước đã thông qua văn kiện nào sau đây?",
+      "options": {
+        "A": "Tuyên ngôn Liên hợp quốc.",
+        "B": "Tuyên ngôn Quốc tế Nhân quyền.",
+        "C": "Hiến chương Liên hợp quốc.",
+        "D": "Hiệp ước hoà bình Xan Phran-xi-xcô."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "Xem lại nội dung Liên hợp quốc và văn kiện được thông qua tại Hội nghị quốc tế ở Xan Phran-xi-xcô (1945).",
+        "solution": "Hội nghị quốc tế tại Xan Phran-xi-xcô (1945) đã thông qua Hiến chương Liên hợp quốc, đặt nền móng cho tổ chức Liên hợp quốc nhằm giữ gìn hòa bình và an ninh thế giới."
+      }
+    },
+    {
+      "question_id": 3,
+      "source": "Ninh Bình",
+      "question_text": "Trong xu thế đa cực, trung tâm quyền lực nào đã vươn lên mạnh mẽ để trở thành nền kinh tế lớn thứ hai thế giới (từ năm 2010)?",
+      "options": {
+        "A": "Liên bang Nga.",
+        "B": "Trung Quốc.",
+        "C": "Nhật Bản.",
+        "D": "Ấn Độ."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "Xem lại nội dung Trật tự thế giới sau Chiến tranh Lạnh và sự vươn lên của các cường quốc.",
+        "solution": "Trong xu thế đa cực, Trung Quốc vươn lên mạnh mẽ, trở thành nền kinh tế lớn thứ hai thế giới kể từ năm 2010, nhờ tốc độ phát triển kinh tế vượt bậc."
+      }
+    },
+    {
+      "question_id": 4,
+      "source": "Ninh Bình",
+      "question_text": "Trong những thập niên đầu của thế kỉ XXI, nhân tố nào sẽ còn tiếp tục tạo ra những “đột phá” và biến chuyển trong cục diện thế giới?",
+      "options": {
+        "A": "Sự vươn lên mạnh mẽ của Nhật Bản và Tây Âu.",
+        "B": "Cuộc chạy đua vũ trang giữa Mỹ và Liên Xô.",
+        "C": "Sự phát triển của cách mạng khoa học - kĩ thuật.",
+        "D": "Mỹ khống chế và chi phối Trung Quốc, Tây Âu."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "Xác định các từ khóa “đột phá”, “chuyển biến”. Phân tích, suy luận nhân tố tạo ra những “đột phá” trong thế kỷ XXI.",
+        "solution": "Trong những thập niên đầu của thế kỉ XXI, nhân tố sẽ còn tiếp tục tạo ra những “đột phá” và biến chuyển trong cục diện thế giới là Sự phát triển của cách mạng khoa học - kĩ thuật. Sự phát triển nhanh chóng của công nghệ và khoa học kỹ thuật đã và sẽ tiếp tục thay đổi cách chúng ta sống, làm việc và tương tác, tạo ra những biến chuyển lớn trong cục diện thế giới."
+      }
+    },
+    {
+      "question_id": 5,
+      "source": "Ninh Bình",
+      "question_text": "Trong cuộc kháng chiến chống thực dân Pháp xâm lược (1945 - 1954), cuộc chiến đấu của nhân dân Nam Bộ đã giáng đòn đầu tiên vào kế hoạch chiến tranh nào của thực dân Pháp?",
+      "options": {
+        "A": "“Việt Nam hóa chiến tranh\".",
+        "B": "“Chiến tranh chớp nhoáng\".",
+        "C": "“Chinh phục từng gói nhỏ”.",
+        "D": "“Đánh nhanh, thắng nhanh\"."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "Xem lại nội dung Cuộc kháng chiến chống thực dân Pháp xâm lược (1945 – 1954) và kế hoạch của Pháp ở Nam Bộ cuối năm 1945.",
+        "solution": "Cuộc chiến đấu của nhân dân Nam Bộ vào cuối năm 1945 đã giáng đòn đầu tiên vào kế hoạch “Đánh nhanh, thắng nhanh” của thực dân Pháp, buộc Pháp phải kéo dài chiến tranh và thay đổi chiến lược."
+      }
+    },
+    {
+      "question_id": 6,
+      "source": "Ninh Bình",
+      "question_text": "Trong công cuộc cải cách, mở cửa (từ tháng 12 - 1978), Trung Quốc đạt được thành tựu nào sau đây?",
+      "options": {
+        "A": "Nước khởi đầu cuộc cách mạng công nghiệp lần thứ nhất và thứ hai.",
+        "B": "Nước đầu tiên phóng thành công vệ tinh nhân tạo lên quỹ đạo trái đất.",
+        "C": "Là quốc gia thứ ba trên thế giới có tàu đưa con người bay vào vũ trụ.",
+        "D": "Trở thành nước có nền nông nghiệp phát triển nhất trên toàn thế giới."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "Xem lại nội dung Công cuộc cải cách, mở cửa ở Trung Quốc và các thành tựu nổi bật.",
+        "solution": "Trong công cuộc cải cách, mở cửa từ tháng 12 năm 1978, Trung Quốc đã đạt được nhiều thành tựu quan trọng. Trung Quốc đã phóng thành công tàu vũ trụ có người lái đầu tiên, Thần Châu 5, vào năm 2003, trở thành quốc gia thứ ba trên thế giới (sau Liên Xô và Hoa Kỳ) đạt được thành tựu này."
+      }
+    },
+    {
+      "question_id": 7,
+      "source": "Ninh Bình",
+      "question_text": "Nội dung nào sau đây không phản ánh đúng điều kiện khách quan thuận lợi cho Cách mạng tháng Tám năm 1945 ở Việt Nam nó ra và giành thắng lợi?",
+      "options": {
+        "A": "Hồng quân Liên Xô tấn công đội quân Quan Đông của Nhật ở Đông Bắc Trung Quốc.",
+        "B": "Đảng Cộng sản Đông Dương đã chuẩn bị đầy đủ về đường lối và phương pháp đấu tranh.",
+        "C": "Quân Đồng minh dồn dập tấn công quân đội Nhật Bản ở châu Á - Thái Bình Dương.",
+        "D": "Mĩ ném bom nguyên tử xuống hai thành phố Hi-rô-si-ma và Na-ga-sa-ki của Nhật Bản."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "Phân tích, suy luận, tìm nhận định phản ánh không đúng điều kiện khách quan của Cách mạng tháng Tám năm 1945.",
+        "solution": "Nội dung không phản ánh đúng điều kiện khách quan thuận lợi cho Cách mạng tháng Tám năm 1945 ở Việt Nam nổ ra và giành thắng lợi là: Đảng Cộng sản Đông Dương đã chuẩn bị đầy đủ về đường lối và phương pháp đấu tranh. Đây là điều kiện chủ quan, không phải khách quan. Các điều kiện khách quan bao gồm các sự kiện quốc tế như Hồng quân Liên Xô tấn công quân Nhật, Quân Đồng minh tấn công quân đội Nhật Bản ở châu Á - Thái Bình Dương, và Mỹ ném bom nguyên tử xuống hai thành phố Hi-rô-si-ma và Na-ga-sa-ki của Nhật Bản."
+      }
+    },
+    {
+      "question_id": 8,
+      "source": "Ninh Bình",
+      "question_text": "Nội dung nào sau đây không phải là thách thức đối với Cộng đồng ASEAN trong bối cảnh hiện nay?",
+      "options": {
+        "A": "Sự đa dạng của các nước thành viên về chế độ chính trị, tôn giáo.",
+        "B": "Thách thức an ninh đến từ cạnh tranh chiến lược giữa các nước lớn.",
+        "C": "Thay đổi cấu trúc địa - chính trị khu vực châu Á - Thái Bình Dương.",
+        "D": "Chưa tạo ra được vị thế quan trọng ở khu vực và trên trường quốc tế."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "Phân tích các đáp án, xác định nội dung không phải thách thức đối với Cộng đồng ASEAN.",
+        "solution": "Nội dung không phải là thách thức đối với Cộng đồng ASEAN trong bối cảnh hiện nay là Chưa tạo ra được vị thế quan trọng ở khu vực và trên trường quốc tế. ASEAN đã tạo ra được vị thế quan trọng ở khu vực và trên trường quốc tế. Các thách thức hiện nay bao gồm sự đa dạng về chế độ chính trị, tôn giáo, thách thức an ninh từ cạnh tranh chiến lược giữa các nước lớn, và thay đổi cấu trúc địa - chính trị khu vực châu Á - Thái Bình Dương."
+      }
+    },
+    {
+      "question_id": 9,
+      "source": "Ninh Bình",
+      "question_text": "Mục đích thành lập của tổ chức ASEAN là thúc đẩy hòa bình và ổn định khu vực thông qua việc",
+      "options": {
+        "A": "giúp đỡ lẫn nhau về mặt kinh tế, quân sự, khoa học - kĩ thuật giữa các nước thành viên.",
+        "B": "ra sức mở rộng quan hệ với các cường quốc thuộc các trung tâm quyền lực của thế giới.",
+        "C": "tôn trọng công lý và nguyên tắc luật pháp trong quan hệ giữa các quốc gia thành viên.",
+        "D": "đề cao công tác nghiên cứu khoa học - kĩ thuật ở các nước thuộc khu vực Đông Nam Á."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "Xem lại nội dung Sự ra đời và phát triển của Hiệp hội các quốc gia Đông Nam Á (ASEAN) và mục tiêu chính.",
+        "solution": "Mục tiêu chính của ASEAN được nêu rõ trong Tuyên bố Bangkok là thúc đẩy hòa bình và ổn định khu vực. Để đạt được mục tiêu này, ASEAN tập trung vào việc xây dựng một môi trường hợp tác dựa trên luật pháp quốc tế, tôn trọng sự khác biệt và giải quyết tranh chấp bằng biện pháp hòa bình."
+      }
+    },
+    {
+      "question_id": 10,
+      "source": "Ninh Bình",
+      "question_text": "Trong cuộc kháng chiến chống quân Tống (1075 - 1077), nhà Lý đã chủ động kết thúc chiến tranh bằng cách",
+      "options": {
+        "A": "rút quân về nước.",
+        "B": "tổng phản công.",
+        "C": "đề nghị giảng hòa.",
+        "D": "kí hòa ước đầu hàng."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "Xem lại nội dung Một số cuộc khởi nghĩa và chiến tranh giải phóng trong lịch sử Việt Nam (từ thế kỉ III TCN đến cuối thế kỉ XIX), cụ thể là cuộc kháng chiến chống Tống (1075 - 1077).",
+        "solution": "Sau khi giành thắng lợi quyết định trong trận chiến trên sông Như Nguyệt, nhà Lý đã chủ động rút quân về nước, thể hiện thiện chí hòa bình, kết thúc chiến tranh."
+      }
+    },
+    {
+      "question_id": 11,
+      "source": "Ninh Bình",
+      "question_text": "Trong Cách mạng tháng Tám năm 1945 ở Việt Nam, Quân lệnh số 1 chính thức phát lệnh Tổng khởi nghĩa trên cả nước được ban bố bởi",
+      "options": {
+        "A": "Chính phủ lâm thời.",
+        "B": "Ủy ban Dân tộc Giải phóng Việt Nam.",
+        "C": "Ủy ban Khởi nghĩa toàn quốc.",
+        "D": "Tổng bộ Việt Minh."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "Xem lại nội dung Cách mạng tháng Tám năm 1945 và sự kiện ban bố Quân lệnh số 1.",
+        "solution": "Ủy ban Khởi nghĩa toàn quốc đã ban bố Quân lệnh số 1 vào ngày 13/8/1945, chính thức phát lệnh Tổng khởi nghĩa trên cả nước, khẳng định quyết tâm giành chính quyền từ tay Nhật và tay sai."
+      }
+    },
+    {
+      "question_id": 12,
+      "source": "Ninh Bình",
+      "question_text": "Cộng đồng Văn hóa - Xã hội ASEAN (ASCC) là khuôn khổ hợp tác hướng tới xây dựng một ASEAN lấy yếu tố nào làm trung tâm?",
+      "options": {
+        "A": "Giáo dục.",
+        "B": "Y tế.",
+        "C": "Ngoại giao.",
+        "D": "Con người."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "Xem lại nội dung Cộng đồng ASEAN và trụ cột Văn hóa - Xã hội.",
+        "solution": "Cộng đồng Văn hóa - Xã hội ASEAN (ASCC) hướng tới xây dựng một ASEAN lấy con người làm trung tâm, tập trung vào việc nâng cao chất lượng cuộc sống, bảo vệ quyền con người, và thúc đẩy sự đoàn kết xã hội."
+      }
+    },
+    {
+      "question_id": 13,
+      "source": "Ninh Bình",
+      "question_text": "Cơ sở để tập hợp và phát huy sức mạnh toàn dân, đưa đến thắng lợi của các cuộc kháng chiến chống ngoại xâm trong lịch sử Việt Nam (trước Cách mạng tháng Tám năm 1945) là",
+      "options": {
+        "A": "kẻ thù xâm lược.",
+        "B": "tính nhân văn.",
+        "C": "tính chính nghĩa.",
+        "D": "lòng dũng cảm."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "Phân tích các yếu tố dẫn đến thắng lợi của các cuộc kháng chiến chống ngoại xâm trong lịch sử Việt Nam trước năm 1945.",
+        "solution": "Tính chính nghĩa của các cuộc kháng chiến chống ngoại xâm là cơ sở quan trọng để tập hợp và phát huy sức mạnh toàn dân, tạo nên sự đoàn kết, tinh thần yêu nước và sự ủng hộ rộng rãi của nhân dân."
+      }
+    },
+    {
+      "question_id": 14,
+      "source": "Ninh Bình",
+      "question_text": "Ngày 8 - 8 - 1967, Hiệp hội các quốc gia Đông Nam Á (ASEAN) được thành lập tại quốc gia nào sau đây?",
+      "options": {
+        "A": "Ma-lai-xi-a.",
+        "B": "Mi-an-ma.",
+        "C": "In-do-nê-xi-a.",
+        "D": "Thái Lan."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "Xem lại nội dung Sự ra đời của Hiệp hội các quốc gia Đông Nam Á (ASEAN).",
+        "solution": "Hiệp hội các quốc gia Đông Nam Á (ASEAN) được thành lập ngày 8/8/1967 tại Băng Cốc, Thái Lan, với sự tham gia của 5 quốc gia sáng lập: Thái Lan, In-đô-nê-xi-a, Ma-lai-xi-a, Phi-líp-pin và Xin-ga-po."
+      }
+    },
+    {
+      "question_id": 15,
+      "source": "Ninh Bình",
+      "question_text": "Xu thế hòa hoãn Đông - Tây trong quan hệ quốc tế bắt đầu xuất hiện từ đầu những năm 70 của thế kỉ XX với biểu hiện nào sau đây?",
+      "options": {
+        "A": "Anh rút quân đội khỏi tất cả các nước thuộc địa.",
+        "B": "Liên Xô và Mỹ thỏa thuận hạn chế vũ khí chiến lược.",
+        "C": "Pháp rút quân đội khỏi tất cả các nước thuộc địa.",
+        "D": "Mỹ đề ra và thực hiện Kế hoạch phục hưng châu Âu."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "Xem lại nội dung Trật tự thế giới sau Chiến tranh Lạnh và xu thế hòa hoãn Đông - Tây.",
+        "solution": "Xu thế hòa hoãn Đông - Tây bắt đầu từ đầu những năm 1970, với biểu hiện tiêu biểu là việc Liên Xô và Mỹ thỏa thuận hạn chế vũ khí chiến lược qua Hiệp định SALT I (1972). Đây là bước đi quan trọng trong việc giảm căng thẳng giữa hai siêu cường."
+      }
+    },
+    {
+      "question_id": 16,
+      "source": "Ninh Bình",
+      "question_text": "Trong chiến dịch Việt Bắc thu - đông năm 1947, khi quân Pháp tấn công lên Việt Bắc, quân dân Việt Nam đã chủ động phản công và giành thắng lợi ở",
+      "options": {
+        "A": "Ấp Bắc.",
+        "B": "Núi Thành.",
+        "C": "Khe Lau.",
+        "D": "Bình Giã."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "Xem lại nội dung Cuộc kháng chiến chống thực dân Pháp (1945 – 1954) và chiến dịch Việt Bắc thu - đông năm 1947.",
+        "solution": "Trong chiến dịch Việt Bắc thu - đông năm 1947, quân dân Việt Nam đã chủ động phản công và giành thắng lợi tại Khe Lau, cũng như nhiều trận địa khác, buộc quân Pháp phải rút lui và thất bại trong kế hoạch “đánh nhanh thắng nhanh”."
+      }
+    },
+    {
+      "question_id": 17,
+      "source": "Ninh Bình",
+      "question_text": "Nội dung nào sau đây phản ánh không đúng kết quả của Cách mạng tháng Mười năm 1917 ở Nga?",
+      "options": {
+        "A": "Thành lập Chính phủ Xô viết do V.I. Lê-nin đứng đầu.",
+        "B": "Xoá bỏ bộ máy Chính phủ lâm thời của giai cấp tư sản.",
+        "C": "Thông qua “Sắc lệnh hòa bình” và “Sắc lệnh ruộng đất”.",
+        "D": "Sau cách mạng, Nga trở thành nước Cộng hoà đại nghị."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "Phân tích, suy luận, tìm nội dung phản ánh không đúng kết quả của Cách mạng tháng Mười năm 1917.",
+        "solution": "Sau Cách mạng tháng Mười Nga năm 1917, nước Nga trở thành nhà nước Xô viết, không phải Cộng hòa đại nghị. Các nội dung khác đúng với kết quả của cuộc cách mạng này."
+      }
+    },
+    {
+      "question_id": 18,
+      "source": "Ninh Bình",
+      "question_text": "Vì sao trong Cách mạng tháng Tám năm 1945, khởi nghĩa ở Hà Nội, Huế, Sài Gòn thắng lợi đã tác động lớn đến các địa phương khác trong cả nước?",
+      "options": {
+        "A": "Làm xuất hiện thời cơ khách quan “ngàn năm có một”.",
+        "B": "Lực lượng trung gian đã ngả hẳn về phía cách mạng.",
+        "C": "Cơ quan đầu não của kẻ thù đã bị cách mạng đánh chiếm.",
+        "D": "Công cuộc chuẩn bị khởi nghĩa vũ trang đã hoàn thành."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "Giải thích lý do khởi nghĩa ở Hà Nội, Huế, Sài Gòn thắng lợi đã tác động lớn đến các địa phương khác trong cả nước.",
+        "solution": "Khởi nghĩa thắng lợi ở Hà Nội, Huế, Sài Gòn đã tác động lớn đến các địa phương khác vì cơ quan đầu não của kẻ thù đã bị cách mạng đánh chiếm, tạo động lực và thời cơ cho toàn quốc giành chính quyền."
+      }
+    },
+    {
+      "question_id": 19,
+      "source": "Ninh Bình",
+      "question_text": "Ở Việt Nam, cuộc kháng chiến chống thực dân Pháp (1945 - 1954) có điểm khác biệt nào sau đây so với Cách mạng tháng Tám năm 1945?",
+      "options": {
+        "A": "Hoàn thành khẩu hiệu “người cày có ruộng”.",
+        "B": "Phương thức sử dụng lực lượng cách mạng.",
+        "C": "Đã xóa bỏ tình trạng đất nước bị chia cắt.",
+        "D": "Có tính chất cách mạng giải phóng dân tộc."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "So sánh, tìm điểm khác biệt giữa cuộc kháng chiến chống thực dân Pháp (1945 - 1954) và Cách mạng tháng Tám năm 1945.",
+        "solution": "Điểm khác biệt của cuộc kháng chiến chống thực dân Pháp so với Cách mạng tháng Tám là phương thức sử dụng lực lượng cách mạng. Cuộc kháng chiến chống Pháp chủ yếu dựa vào chiến tranh nhân dân và đấu tranh quân sự lâu dài, trong khi Cách mạng tháng Tám chủ yếu dựa vào đấu tranh chính trị và khởi nghĩa nhanh chóng."
+      }
+    },
+    {
+      "question_id": 20,
+      "source": "Ninh Bình",
+      "question_text": "Nhận xét nào sau đây không đúng khi nói về Cách mạng tháng Tám năm 1945 ở Việt Nam?",
+      "options": {
+        "A": "Là cuộc cách mạng diễn ra với sự kết hợp lực lượng chính trị và lực lượng vũ trang.",
+        "B": "Cuộc cách mạng diễn ra rất nhanh chóng, ít đổ máu và bằng phương pháp hòa bình.",
+        "C": "Cách mạng diễn ra với sự kết hợp khởi nghĩa giành chính quyền ở nông thôn và thành thị.",
+        "D": "Cuộc cách mạng đi từ khởi nghĩa từng phần tiến lên Tổng khởi nghĩa trong cả nước."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "Phân tích, loại trừ nội dung không đúng khi nói về Cách mạng tháng Tám năm 1945.",
+        "solution": "Nhận xét “Cuộc cách mạng diễn ra rất nhanh chóng, ít đổ máu và bằng phương pháp hòa bình” không đúng hoàn toàn. Cách mạng tháng Tám chủ yếu diễn ra nhanh chóng và ít đổ máu, nhưng không hoàn toàn hòa bình vì có những nơi xảy ra xung đột vũ trang với kẻ thù."
+      }
+    },
+    {
+      "question_id": 21,
+      "source": "Ninh Bình",
+      "question_text": "Thắng lợi của cuộc kháng chiến chống thực dân Pháp (1945 - 1954) đã làm cho miền Bắc Việt Nam được hoàn toàn giải phóng và",
+      "options": {
+        "A": "hoàn thành công cuộc xây dựng chủ nghĩa xã hội.",
+        "B": "chấm dứt chế độ quân chủ chuyên chế ở Việt Nam.",
+        "C": "chuyển sang giai đoạn cách mạng xã hội chủ nghĩa.",
+        "D": "trở thành hậu phương của các nước xã hội chủ nghĩa."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "Xem lại nội dung Cuộc kháng chiến chống thực dân Pháp (1945 – 1954) và kết quả của nó đối với miền Bắc Việt Nam.",
+        "solution": "Thắng lợi của cuộc kháng chiến chống Pháp (1945-1954) đã làm cho miền Bắc hoàn toàn giải phóng và chuyển sang giai đoạn cách mạng xã hội chủ nghĩa, xây dựng hậu phương vững chắc cho sự nghiệp thống nhất đất nước."
+      }
+    },
+    {
+      "question_id": 22,
+      "source": "Ninh Bình",
+      "question_text": "Trong những năm 1951 - 1953, những thắng lợi của quân dân Việt Nam trên tất cả các lĩnh vực chính trị, quân sự, kinh tế, văn hóa đã cho thấy sự đúng đắn của Đảng Lao động Việt Nam trong việc thực hiện đường lối nào?",
+      "options": {
+        "A": "Cả nước xây dựng chủ nghĩa xã hội.",
+        "B": "Vừa kháng chiến, vừa kiến quốc.",
+        "C": "Dựng nước đi đôi với giữ nước.",
+        "D": "Độc lập dân tộc gắn với chủ nghĩa"
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "Xem lại nội dung Cuộc kháng chiến chống thực dân Pháp (1945 – 1954) và đường lối của Đảng Lao động Việt Nam trong giai đoạn 1951-1953.",
+        "solution": "Trong những năm 1951-1953, thắng lợi trên các lĩnh vực chính trị, quân sự, kinh tế, văn hóa đã minh chứng cho sự đúng đắn của đường lối vừa kháng chiến, vừa kiến quốc do Đảng Lao động Việt Nam đề ra. Đường lối này kết hợp giữa đấu tranh chống thực dân và xây dựng nền tảng cho đất nước."
+      }
+    },
+    {
+      "question_id": 23,
+      "source": "Ninh Bình",
+      "question_text": "Trong những năm 1951 - 1953, Đảng Lao động Việt Nam đã đưa ra biện pháp nào sau đây để tiếp tục đẩy mạnh sự phát triển của cuộc kháng chiến chống thực dân Pháp?",
+      "options": {
+        "A": "Quân đội tạm rút lui để bảo toàn lực lượng.",
+        "B": "Thực hiện phổ cập giáo dục ở bậc đại học.",
+        "C": "Tiến hành cải cách ruộng đất ở vùng tự do.",
+        "D": "Xây dựng mô hình nông thôn mới kiểu mẫu."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "Suy luận, tìm ra các biện pháp để tiếp tục đẩy mạnh sự phát triển của cuộc kháng chiến trong giai đoạn 1951-1953.",
+        "solution": "Trong những năm 1951 - 1953, Đảng Lao động Việt Nam đã quyết định tiến hành cải cách ruộng đất ở vùng tự do, giúp phân phối lại ruộng đất cho nông dân, tăng cường hậu phương cho cuộc kháng chiến và củng cố lực lượng cách mạng. Biện pháp này nhằm củng cố cơ sở vật chất và tạo động lực cho nông dân tham gia vào cuộc kháng chiến chống thực dân Pháp."
+      }
+    },
+    {
+      "question_id": 24,
+      "source": "Ninh Bình",
+      "question_text": "Bài học kinh nghiệm nào rút ra từ thắng lợi của Cách mạng tháng Tám năm 1945 có thể vận dụng trong sự nghiệp xây dựng và bảo vệ Tổ quốc Việt Nam hiện nay?",
+      "options": {
+        "A": "kết hợp đấu tranh quân sự với đấu tranh chính trị, ngoại giao.",
+        "B": "tăng cường liên minh chiến đấu giữa ba nước Đông Dương.",
+        "C": "xây dựng lực lượng vũ trang nhân dân là nhiệm vụ hàng đầu.",
+        "D": "xây dựng và phát huy sức mạnh của khối đoàn kết toàn dân."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "Vận dụng kiến thức về Cách mạng tháng Tám năm 1945 để rút ra bài học kinh nghiệm cho công cuộc xây dựng và bảo vệ Tổ quốc hiện nay.",
+        "solution": "Bài học quan trọng nhất từ thắng lợi của Cách mạng tháng Tám năm 1945 là xây dựng và phát huy sức mạnh của khối đoàn kết toàn dân. Đoàn kết toàn dân tộc là nền tảng quan trọng giúp Việt Nam vượt qua mọi khó khăn, thách thức trong sự nghiệp xây dựng và bảo vệ Tổ quốc hiện nay. Điều này bao gồm việc kết nối các tầng lớp nhân dân, phát huy trí tuệ tập thể và tạo sức mạnh tổng hợp để đối phó với các thách thức trong và ngoài nước."
+      }
+    }
+  ],
+  "phan_ii": [
+    {
+      "question_id": 25,
+      "question": "Cho những thông tin trong bảng sau đây, chọn đúng hoặc sai\nThời gian\tNội dung\nNăm 1945\tTại I-an-ta (Liên Xô) đã diễn ra hội nghị giữa ba cường quốc: Liên Xô, Mỹ, Anh.\nNăm 1947\tMỹ đề ra “Kế hoạch Mác – san” nhằm viện trợ cho các nước Tây Âu.\nNăm 1949\tLiên Xô và các nước Đông Âu thành lập Hội đồng tương trợ kinh tế (SEV)\nNăm 1972\tTổng thống Mỹ R. Ních-xơn có chuyến thăm chính thức đầu tiên tới Liên Xô.\nNăm 1989\tLiên Xô và Mỹ cùng tuyên bố chấm dứt Chiến tranh lạnh.",
+      "statements": {
+        "a": "Hội nghị I-an-ta (2 - 1945) được xem là hội nghị khởi đầu cho việc hình thành một trật tự thế giới mới sau khi Chiến tranh thế giới thứ hai kết thúc trên toàn thế giới.",
+        "b": "Phát biểu của Tổng thống Mỹ G. Bút-sơ trong cuộc gặp với Tổng Bí thư Đảng Cộng sản Liên Xô M. Goóc-ba-chốp (12 - 1989) đánh dấu kết thúc hoàn toàn cuộc đối đầu quân sự tại châu Âu.",
+        "c": "Việc Mỹ đề ra “Kế hoạch Mác-san” còn Liên Xô và các nước Đông Âu thành lập Hội đồng tương trợ kinh tế (SEV) đã tạo ra sự đối đầu về chính trị, quân sự giữa hai hệ thống xã hội đối lập.",
+        "d": "Tổng thống Mỹ R. Nich-xơn có chuyến thăm chính thức đầu tiên tới Liên Xô đã mở đầu cho sự xói mòn và đi đến sụp đổ của trật tự thế giới hai cực I-an-ta."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": false,
+        "c": true,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Đúng, Hội nghị I-an-ta (2 - 1945) được xem là hội nghị khởi đầu cho việc hình thành một trật tự thế giới mới sau khi Chiến tranh thế giới thứ hai kết thúc, vì tại hội nghị này, các cường quốc đã quyết định nhiều vấn đề quan trọng, định hình lại trật tự quốc tế.",
+        "b": "Sai, phát biểu của Tổng thống Mỹ G. Bút-sơ trong cuộc gặp với Tổng Bí thư Đảng Cộng sản Liên Xô M. Goóc-ba-chốp vào tháng 12 năm 1989 đánh dấu kết thúc Chiến tranh Lạnh, nhưng không phải là kết thúc hoàn toàn cuộc đối đầu quân sự tại châu Âu. Cuộc đối đầu này thực sự kết thúc với sự sụp đổ của Bức tường Berlin (1989) và sự tan rã của Liên Xô (1991).",
+        "c": "Đúng, Mỹ đề ra “Kế hoạch Mác-san” và Liên Xô cùng các nước Đông Âu thành lập Hội đồng tương trợ kinh tế (SEV) là các biện pháp đã dẫn đến sự đối đầu gay gắt về chính trị và quân sự giữa hai hệ thống xã hội đối lập: tư bản chủ nghĩa và xã hội chủ nghĩa.",
+        "d": "Đúng, Tổng thống Mỹ R. Ních-xơn có chuyến thăm chính thức đầu tiên tới Liên Xô vào năm 1972, điều này mở đầu cho sự xói mòn trật tự thế giới hai cực I-an-ta, góp phần làm giảm căng thẳng trong Chiến tranh Lạnh, và cuối cùng dẫn đến sự tan rã của trật tự này."
+      }
+    },
+    {
+      "question_id": 26,
+      "question": "Cho đoạn tư liệu sau đây:\n“Sau năm 1945, các quốc gia độc lập ở Đông Nam Á lần lượt ra đời, đã có những sáng kiến về việc thành lập các tổ chức khu vực như ASA (Ma-lai-xi-a, Thái Lan, Phi-líp-pin) năm 1961, MAPHILINDO (Ma-lai-xi-a, Phi-líp-pin, In-đô-nê-xi-a) năm 1963, song đều không thành công do sự tranh chấp lãnh thổ giữa các nước thành viên. Trật tự thế giới hai cực và cuộc Chiến tranh lạnh kéo dài đã ảnh hưởng đến khu vực Đông Nam Á. Tình hình càng trở nên căng thẳng hơn do sự sa lầy của Mỹ trong cuộc chiến tại Việt Nam. Năm nước Đông Nam Á là Thái Lan, In-đô-nê-xi-a, Ma-lai-xi-a, Xin-ga-po và Phi-líp-pin lo ngại có thể sẽ bị lôi cuốn vào chiến tranh và ảnh hưởng của phong trào cách mạng Đông Dương lan rộng đã quyết định thành lập một tổ chức khu vực. Ngày 08 - 08 - 1967, Hiệp hội các quốc gia Đông Nam Á - ASEAN đã chính thức ra đời”.",
+      "statements": {
+        "a": "Trong bối cảnh khu vực và quốc tế có nhiều biến động, yêu cầu hợp tác để cùng phát triển giữa các nước trong khu vực Đông Nam Á là yêu cầu tất yếu.",
+        "b": "Tổ chức Liên hợp quốc (UN) và Hiệp hội các quốc gia Đông Nam Á (ASEAN) là hai tổ chức hợp tác khu vực ra đời sớm nhất và thành công nhất.",
+        "c": "Ma-lai-xi-a, Phi-lip-pin, Thái Lan, In-đô-nê-xi-a là những quốc gia sớm có ý tưởng về việc thành lập một tổ chức khu vực ở Đông Nam Á.",
+        "d": "Đoạn tư liệu trên đề cập đến quá trình hình thành và quá trình phát triển của Hiệp hội các quốc gia Đông Nam Á (ASEAN)."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": false,
+        "c": true,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Đúng, trong bối cảnh khu vực và quốc tế có nhiều biến động, việc hợp tác để cùng phát triển giữa các nước trong khu vực Đông Nam Á là yêu cầu tất yếu, đặc biệt khi các nước lo ngại về ảnh hưởng của chiến tranh và phong trào cách mạng.",
+        "b": "Sai, Liên hợp quốc (UN) là một tổ chức quốc tế toàn cầu, không phải khu vực, còn ASEAN là tổ chức khu vực Đông Nam Á. Hai tổ chức này có sự ra đời và mục tiêu khác nhau, và trong đoạn tư liệu không nói ASEAN là tổ chức hợp tác khu vực ra đời sớm nhất hoặc thành công nhất.",
+        "c": "Đúng, các quốc gia Ma-lai-xi-a, Phi-líp-pin, Thái Lan và In-đô-nê-xi-a là những nước đã tham gia vào các sáng kiến khu vực trước khi ASEAN chính thức ra đời, như ASA (1961) và MAPHILINDO (1963), mặc dù chúng không thành công.",
+        "d": "Đúng, đoạn tư liệu trên đề cập đến quá trình hình thành và sự ra đời của Hiệp hội các quốc gia Đông Nam Á (ASEAN) vào ngày 08 - 08 - 1967, trong bối cảnh căng thẳng và ảnh hưởng của chiến tranh tại khu vực."
+      }
+    },
+    {
+      "question_id": 27,
+      "question": "Cho đoạn tư liệu sau đây:\n“Với chiến dịch Biên giới, quân ta đã diệt và bắt sống hơn 8000 tên địch, trong đó có 8 tiểu đoàn bị diệt gọn, giải phóng 5 thị xã, 12 thị trấn, nhiều vùng đất đai quan trọng của Tổ quốc trên một dải biên giới dài 750 km, gồm 35 vạn dân. Căn cứ địa Việt Bắc được mở rộng. Đất nước ta được nối liền với các nước xã hội chủ nghĩa. Chiến dịch Biên giới là một chiến dịch tiến công có quy mô lớn, một chiến dịch đánh tiêu diệt hay và gọn theo phương thức “vận động chiến”, đánh dấu bước trưởng thành vượt bậc về nghệ thuật quân sự, nghệ thuật chiến dịch và trình độ tác chiến tập trung của quân đội ta”.",
+      "statements": {
+        "a": "Chiến dịch Biên giới thu - đông năm 1950 là chiến dịch chủ động phản công lớn đầu tiên của bộ đội chủ lực Việt Nam trong kháng chiến chống thực dân Pháp.",
+        "b": "Các chiến dịch Việt Bắc thu - đông năm 1947, Biên giới thu - đông năm 1950 cho thấy sự chuyển biến về thế và lực của cuộc kháng chiến.",
+        "c": "Chiến dịch Biên giới thu - đông năm 1950 đã thực hiện được chủ trương “điều địch để đánh địch”, góp phần củng cố và mở rộng căn cứ địa Việt Bắc.",
+        "d": "Mục tiêu của chiến dịch Biên giới thu - đông năm 1950 là tiêu diệt toàn bộ sinh lực địch, khai thông biên giới Việt - Trung, mở rộng và củng cố căn cứ địa Việt Bắc."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": true,
+        "c": true,
+        "d": false
+      },
+      "explanation_map": {
+        "a": "Đúng, chiến dịch Biên giới thu - đông năm 1950 là chiến dịch chủ động phản công lớn đầu tiên của bộ đội chủ lực Việt Nam trong kháng chiến chống thực dân Pháp, đánh dấu bước tiến quan trọng trong chiến lược quân sự của ta.",
+        "b": "Đúng, các chiến dịch Việt Bắc thu - đông năm 1947 và Biên giới thu - đông năm 1950 thể hiện sự chuyển biến về thế và lực của cuộc kháng chiến, từ thế bị động chuyển sang thế chủ động phản công, với nhiều thắng lợi quan trọng.",
+        "c": "Đúng, chiến dịch Biên giới thu - đông năm 1950 thực hiện chủ trương “điều địch để đánh địch”, qua đó vừa tiêu diệt lực lượng địch, vừa củng cố và mở rộng căn cứ địa Việt Bắc, tạo điều kiện thuận lợi cho cuộc kháng chiến.",
+        "d": "Sai, mục tiêu của chiến dịch không phải là tiêu diệt toàn bộ sinh lực địch, mà tập trung tiêu diệt một bộ phận quan trọng, khai thông biên giới Việt - Trung, và củng cố căn cứ địa Việt Bắc."
+      }
+    },
+    {
+      "question_id": 28,
+      "question": "Cho đoạn tư liệu sau đây:\n“Chẳng những giai cấp lao động và nhân dân Việt Nam ta có thể tự hào, mà giai cấp lao động và những dân tộc bị áp bức nơi khác cũng có thể tự hào rằng: Lần này là lần đầu tiên trong lịch sử cách mạng của các nước dân tộc thuộc địa và nửa thuộc địa, một Đảng mới 15 tuổi đã lãnh đạo cách mạng thành công, đã nắm chính quyền toàn quốc. Cách mạng tháng Tám đã lật đổ nền quân chủ mấy mươi thế kỷ, đã đánh tan xiềng xích thực dân gần 100 năm, đã đưa chính quyền lại cho nhân dân, đã xây dựng nền tảng nước Việt Nam dân chủ cộng hòa, độc lập, tự do, hạnh phúc\".",
+      "statements": {
+        "a": "Cách mạng tháng Tám năm 1945 là cuộc cách mạng giải phóng dân tộc điển hình ở châu Á.",
+        "b": "Sau Cách mạng tháng Tám năm 1945, nước Việt Nam có hòa bình và tiến lên chủ nghĩa xã hội.",
+        "c": "Đoạn tư liệu trên phản ánh ý nghĩa lịch sử của Cách mạng tháng Tám năm 1945 ở Việt Nam.",
+        "d": "Cách mạng tháng Tám năm 1945 đưa đến sự sụp đổ của chế độ quân chủ lập hiến ở Việt Nam."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": false,
+        "c": true,
+        "d": false
+      },
+      "explanation_map": {
+        "a": "Đúng, cách mạng tháng Tám năm 1945 là cuộc cách mạng giải phóng dân tộc điển hình ở châu Á, không chỉ thành công trong việc giành độc lập dân tộc mà còn ảnh hưởng lớn đến phong trào cách mạng ở các nước thuộc địa và nửa thuộc địa.",
+        "b": "Sai, sau Cách mạng tháng Tám năm 1945, Việt Nam không có hòa bình lâu dài mà phải đối mặt với nhiều khó khăn, bao gồm nạn đói, giặc dốt và giặc ngoại xâm. Cuộc kháng chiến chống Pháp đã bùng nổ vào cuối năm 1946.",
+        "c": "Đúng, đoạn tư liệu trên phản ánh ý nghĩa lịch sử của Cách mạng tháng Tám năm 1945, nhấn mạnh thành tựu to lớn của cách mạng, như việc giành lại chính quyền, xây dựng nền tảng của nước Việt Nam dân chủ cộng hòa và chấm dứt chế độ quân chủ phong kiến.",
+        "d": "Sai, cách mạng tháng Tám năm 1945 không đưa đến sự sụp đổ của chế độ quân chủ lập hiến, mà là chế độ quân chủ chuyên chế. Việt Nam chưa từng có chế độ quân chủ lập hiến trước đó."
+      }
+    }
+  ]
+}
