@@ -8,11 +8,14 @@ import QuizOption from "@/components/quiz-option";
 import ProgressIndicator from "@/components/progress-indicator";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import DungSaiQuiz from "@/components/DungSaiQuiz";
+import { useDungSaiQuiz } from "@/contexts/DungSaiQuizContext";
 
 export default function Quiz() {
   const { sectionId } = useParams();
   const [, setLocation] = useLocation();
-  const { sections, getCurrentSection, startQuiz, answerQuestion, goToPreviousQuestion, userAnswers, getImageRevealLevel } = useMultipleChoiceQuiz();
+  const { sections, getCurrentSection, startQuiz, answerQuestion, goToPreviousQuestion, userAnswers } = useMultipleChoiceQuiz();
+  const { dungSaiSection, setDungSaiSection } = useDungSaiQuiz();
   
   const currentSection = getCurrentSection(Number(sectionId));
   const currentQuestion = currentSection?.currentQuestion || 0;
@@ -39,6 +42,11 @@ export default function Quiz() {
   }
   
   const question = currentSection.questions[currentQuestion];
+  
+  const statements = question.options.map(opt => ({
+    id: opt.id,
+    label: opt.text
+  }));
   
   const handleOptionSelect = (optionId: string) => {
     setSelectedOption(optionId);
@@ -73,6 +81,17 @@ export default function Quiz() {
       }
     }
   };
+  
+  const isDungSai = currentSection?.title === "Trắc Nghiệm Đúng Sai";
+  
+  if (isDungSai && !dungSaiSection) {
+    return <div>Loading...</div>;
+  }
+  
+  let dsQuestion = null;
+  if (isDungSai && dungSaiSection) {
+    dsQuestion = dungSaiSection.questions[currentQuestion];
+  }
   
   return (
     <section className="min-h-screen flex flex-col bg-gray-50">
@@ -123,37 +142,57 @@ export default function Quiz() {
         </div>
       </div>
       
-      {/* Quiz Content */}
-      <div className="flex-1 overflow-auto p-6">
-        <div className="max-w-md mx-auto">
-          {/* Question */}
-          <motion.div
-            key={`question-${currentQuestion}`}
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -50 }}
-            className="bg-white rounded-lg shadow-md p-6 mb-6"
-          >
-            <span className="inline-block px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded-full mb-3">
-              Câu hỏi {currentQuestion + 1}/{totalQuestions}
-            </span>
-            <h2 className="text-lg font-medium mb-5">{question.text}</h2>
+      {isDungSai ? (
+        dsQuestion && (
+          <DungSaiQuiz
+            passage={dsQuestion.passage}
+            statements={Object.entries(dsQuestion.statements).map(([id, label]) => ({ id, label }))}
+            currentQuestion={currentQuestion + 1}
+            totalQuestions={dungSaiSection!.questions.length}
+            onBack={handlePrev}
+            onNext={(answers) => {
+              // TODO: Store answers in DungSaiQuizContext (next step)
+              if (currentQuestion >= dungSaiSection!.questions.length - 1) {
+                setLocation(`/results/${sectionId}`);
+              } else {
+                // Move to next question logic
+              }
+            }}
+            isLast={currentQuestion >= dungSaiSection!.questions.length - 1}
+          />
+        )
+      ) : (
+        <div className="flex-1 overflow-auto p-6">
+          <div className="max-w-md mx-auto">
+            {/* Question */}
+            <motion.div
+              key={`question-${currentQuestion}`}
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -50 }}
+              className="bg-white rounded-lg shadow-md p-6 mb-6"
+            >
+              <span className="inline-block px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded-full mb-3">
+                Câu hỏi {currentQuestion + 1}/{totalQuestions}
+              </span>
+              <h2 className="text-lg font-medium mb-5">{question.text}</h2>
 
-            {/* Answer Options */}
-            <div className="space-y-3">
-              {question.options.map((option, index) => (
-                <QuizOption
-                  key={option.id}
-                  option={option}
-                  index={index}
-                  isSelected={selectedOption === option.id}
-                  onSelect={() => handleOptionSelect(option.id)}
-                />
-              ))}
-            </div>
-          </motion.div>
+              {/* Answer Options */}
+              <div className="space-y-3">
+                {question.options.map((option, index) => (
+                  <QuizOption
+                    key={option.id}
+                    option={option}
+                    index={index}
+                    isSelected={selectedOption === option.id}
+                    onSelect={() => handleOptionSelect(option.id)}
+                  />
+                ))}
+              </div>
+            </motion.div>
+          </div>
         </div>
-      </div>
+      )}
     </section>
   );
 }
