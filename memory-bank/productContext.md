@@ -15,6 +15,7 @@ Sử Nhanh provides an interactive quiz application that:
 2. **Rewarding**: Create a sense of achievement and progress through visual rewards
 3. **Educational**: Support learning through proper question design and answer explanations
 4. **Motivational**: Encourage continued practice through the progressive unlocking mechanism
+5. **Consistent and Robust**: Ensure quiz state and answer review are always correct, regardless of quiz type or navigation.
 
 ## Quiz Sections
 The app includes three main quiz sections:
@@ -33,4 +34,9 @@ The app includes three main quiz sections:
 3. Quiz question screen for answering questions
 4. Results screen showing score and unlocking image piece (if score is high enough)
 5. Answer review screen for learning from mistakes
-6. Final reward screen when all sections are completed successfully 
+6. Final reward screen when all sections are completed successfully
+
+---
+
+**Note:**
+- Recent bugs and fixes have highlighted the importance of robust, unified state management for all quiz types. There is a plan to refactor the quiz logic into a single, maintainable context to ensure a seamless and bug-free user experience. 

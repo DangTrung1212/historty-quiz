@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react'; // Added useEffect
+import { useDungSaiQuiz } from '@/contexts/DungSaiQuizContext'; // Import the context hook
 
 // Example props, replace with your actual data structure as needed
 type Statement = {
@@ -9,23 +10,31 @@ type Statement = {
 type DungSaiQuizProps = {
   passage: string;
   statements: Statement[];
-  currentQuestion: number;
-  totalQuestions: number;
   onBack: () => void;
   onNext: (answers: Record<string, 'Đúng' | 'Sai'>) => void;
-  isLast: boolean;
 };
 
 const DungSaiQuiz: React.FC<DungSaiQuizProps> = ({
   passage,
   statements,
-  currentQuestion,
-  totalQuestions,
   onBack,
   onNext,
-  isLast,
 }) => {
+  const { dungSaiSection } = useDungSaiQuiz(); // Get context
+  const currentQuestion = dungSaiSection?.currentQuestion || 0;
+  const totalQuestions = dungSaiSection?.questions.length || 0;
+  const isLast = currentQuestion >= totalQuestions - 1; // Calculate isLast from context
+
   const [answers, setAnswers] = useState<Record<string, 'Đúng' | 'Sai'>>({});
+
+  // Reset answers or load previous answers when the question changes
+  useEffect(() => {
+    const newAnswers = dungSaiSection?.userAnswers[currentQuestion] || {};
+    if (JSON.stringify(answers) !== JSON.stringify(newAnswers)) {
+      setAnswers(newAnswers);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentQuestion, dungSaiSection]);
 
   const handleSelect = (statementId: string, value: 'Đúng' | 'Sai') => {
     setAnswers((prev) => ({ ...prev, [statementId]: value }));
@@ -40,22 +49,6 @@ const DungSaiQuiz: React.FC<DungSaiQuizProps> = ({
 
   return (
     <div className="container max-w-xl mx-auto bg-white rounded-xl shadow-lg p-6 space-y-6">
-      {/* Header */}
-      <div className="flex justify-between items-center border-b pb-3">
-        <button
-          className="text-blue-600 font-medium"
-          onClick={onBack}
-        >
-          &larr; Quay lại
-        </button>
-        <h1 className="text-xl font-bold text-gray-800">Trắc Nghiệm Đúng Sai</h1>
-        <div className="flex items-center gap-2">
-          <span className="text-sm font-medium text-gray-500 mr-2">
-            ← [Q{currentQuestion}/{totalQuestions}] →
-          </span>
-        </div>
-      </div>
-
       {/* Passage */}
       <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 max-h-40 overflow-y-auto">
         <strong className="text-gray-700 block mb-2">Tư liệu:</strong>
@@ -101,4 +94,4 @@ const DungSaiQuiz: React.FC<DungSaiQuizProps> = ({
   );
 };
 
-export default DungSaiQuiz; 
+export default DungSaiQuiz;

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useMultipleChoiceQuiz } from '@/contexts/MultipleChoiceQuizContext';
-import { QuizSection, Question } from '@/lib/quiz-data';
+import { useDungSaiQuiz, DungSaiQuestion } from '@/contexts/DungSaiQuizContext'; // Import DungSai context and types
+import { QuizSection, Question as MultipleChoiceQuestion } from '@/lib/quiz-data';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Check, X } from 'lucide-react';
@@ -8,23 +9,26 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 interface AnswerReviewProps {
   sectionId: number;
+  isDungSai: boolean; // Added isDungSai prop
 }
 
-export default function AnswerReview({ sectionId }: AnswerReviewProps) {
-  const { getCurrentSection, userAnswers } = useMultipleChoiceQuiz();
+export default function AnswerReview({ sectionId, isDungSai }: AnswerReviewProps) {
+  console.log("AnswerReview: isDungSai prop", isDungSai); // Log isDungSai prop
+  const { getCurrentSection: getMultipleChoiceSection, userAnswers: mcUserAnswers } = useMultipleChoiceQuiz();
+  const { dungSaiSection } = useDungSaiQuiz();
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   
-  const section = getCurrentSection(Number(sectionId));
-  const sectionAnswers = userAnswers[Number(sectionId)] || {};
-  
+  const section = isDungSai ? dungSaiSection : getMultipleChoiceSection(Number(sectionId));
+  const userAnswers = isDungSai ? dungSaiSection?.userAnswers : mcUserAnswers[Number(sectionId)];
+  console.log("AnswerReview: section data", section); // Log section data
+  console.log("AnswerReview: userAnswers data", userAnswers); // Log user answers data
+
   if (!section) {
     return null;
   }
   
   const totalQuestions = section.questions.length;
   const question = section.questions[currentQuestionIndex];
-  const userAnswer = sectionAnswers[currentQuestionIndex] || null;
-  const isCorrect = userAnswer === question.correctOptionId;
   
   const handleNext = () => {
     if (currentQuestionIndex < totalQuestions - 1) {
@@ -38,11 +42,96 @@ export default function AnswerReview({ sectionId }: AnswerReviewProps) {
     }
   };
   
-  // Find the correct option text
-  const correctOption = question.options.find(option => option.id === question.correctOptionId);
-  // Find the user's selected option text
-  const selectedOption = question.options.find(option => option.id === userAnswer);
-  
+  if (isDungSai) {
+    const dsQuestion = question as DungSaiQuestion;
+    const dsUserAnswers = userAnswers?.[currentQuestionIndex] as Record<string, 'Đúng' | 'Sai'> | undefined;
+    console.log("AnswerReview (DungSai): dsUserAnswers for current question", dsUserAnswers); // Log DungSai user answers for current question
+
+    return (
+      <div className="bg-white rounded-lg shadow-md p-6">
+        <h3 className="font-semibold mb-4">Xem đáp án - Trắc Nghiệm Đúng Sai</h3>
+        <div className="mb-4">
+          <div className="flex justify-between text-sm text-gray-500 mb-2">
+            <span>Câu hỏi {currentQuestionIndex + 1}/{totalQuestions}</span>
+          </div>
+          <div className="h-1 bg-gray-100 rounded-full overflow-hidden">
+            <div 
+              className="h-full bg-primary" 
+              style={{ width: `${((currentQuestionIndex + 1) / totalQuestions) * 100}%` }}
+            ></div>
+          </div>
+        </div>
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={currentQuestionIndex}
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -20 }}
+            className="mb-6"
+          >
+            <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 mb-4 max-h-40 overflow-y-auto">
+              <strong className="text-gray-700 block mb-2">Tư liệu:</strong>
+              <p className="text-sm text-gray-600 leading-relaxed">{dsQuestion.passage}</p>
+            </div>
+            <div className="space-y-3 mb-6">
+              {Object.entries(dsQuestion.statements).map(([statementId, statementText]) => {
+                const correctAnswer = dsQuestion.correctMap[statementId] ? 'Đúng' : 'Sai';
+                const userAnswer = dsUserAnswers?.[statementId];
+                const isCorrect = userAnswer === correctAnswer;
+                
+                let bgColor = 'bg-white';
+                let borderColor = 'border-gray-200';
+                let textColor = 'text-gray-700';
+
+                if (userAnswer) {
+                  if (isCorrect) {
+                    bgColor = 'bg-green-50';
+                    borderColor = 'border-green-200';
+                    textColor = 'text-green-700';
+                  } else {
+                    bgColor = 'bg-red-50';
+                    borderColor = 'border-red-200';
+                    textColor = 'text-red-700';
+                  }
+                }
+                
+                return (
+                  <div key={statementId} className={`p-3 border rounded-md ${bgColor} ${borderColor} ${textColor}`}>
+                    <p className="mb-1">{statementText}</p>
+                    <div className="flex items-center justify-between text-sm">
+                      <div>
+                        <span>Đáp án của bạn: </span>
+                        <span className={`font-medium ${isCorrect ? 'text-green-700' : 'text-red-700'}`}>
+                          {userAnswer || 'Chưa trả lời'}
+                        </span>
+                      </div>
+                      {userAnswer && (isCorrect ? <Check className="h-5 w-5 text-green-500" /> : <X className="h-5 w-5 text-red-500" />)}
+                    </div>
+                    {!isCorrect && userAnswer && (
+                      <p className="text-xs mt-1 text-gray-600">Đáp án đúng: <span className="font-medium">{correctAnswer}</span></p>
+                    )}
+                     <p className="text-xs mt-1 text-gray-500">Giải thích: {dsQuestion.explanationMap[statementId]}</p>
+                  </div>
+                );
+              })}
+            </div>
+          </motion.div>
+        </AnimatePresence>
+        <div className="flex justify-between">
+          <Button variant="outline" onClick={handlePrev} disabled={currentQuestionIndex === 0} className="px-4 py-2">Trước</Button>
+          <Button variant="outline" onClick={handleNext} disabled={currentQuestionIndex === totalQuestions - 1} className="px-4 py-2">Tiếp theo</Button>
+        </div>
+      </div>
+    );
+  }
+
+  // Logic for Multiple Choice Questions
+  const mcQuestion = question as MultipleChoiceQuestion;
+  const mcUserAnswer = userAnswers?.[currentQuestionIndex] as string | null | undefined;
+  const isMcCorrect = mcUserAnswer === mcQuestion.correctOptionId;
+  const correctOption = mcQuestion.options.find(option => option.id === mcQuestion.correctOptionId);
+  const selectedOption = mcQuestion.options.find(option => option.id === mcUserAnswer);
+
   return (
     <div className="bg-white rounded-lg shadow-md p-6">
       <h3 className="font-semibold mb-4">Xem đáp án</h3>
@@ -50,8 +139,8 @@ export default function AnswerReview({ sectionId }: AnswerReviewProps) {
       <div className="mb-4">
         <div className="flex justify-between text-sm text-gray-500 mb-2">
           <span>Câu hỏi {currentQuestionIndex + 1}/{totalQuestions}</span>
-          <span className={isCorrect ? 'text-success' : 'text-error'}>
-            {isCorrect ? 'Đúng' : 'Sai'}
+          <span className={isMcCorrect ? 'text-success' : 'text-error'}>
+            {isMcCorrect ? 'Đúng' : 'Sai'}
           </span>
         </div>
         
@@ -71,12 +160,12 @@ export default function AnswerReview({ sectionId }: AnswerReviewProps) {
           exit={{ opacity: 0, x: -20 }}
           className="mb-6"
         >
-          <h4 className="font-medium text-gray-800 mb-4">{question.text}</h4>
+          <h4 className="font-medium text-gray-800 mb-4">{mcQuestion.text}</h4>
           
           <div className="space-y-3 mb-6">
-            {question.options.map(option => {
-              const isCorrectOption = option.id === question.correctOptionId;
-              const isUserSelected = option.id === userAnswer;
+            {mcQuestion.options.map(option => {
+              const isCorrectOption = option.id === mcQuestion.correctOptionId;
+              const isUserSelected = option.id === mcUserAnswer;
               
               let bgColor = 'bg-white';
               let borderColor = 'border-gray-200';
@@ -109,12 +198,12 @@ export default function AnswerReview({ sectionId }: AnswerReviewProps) {
             })}
           </div>
           
-          {!isCorrect && (
+          {!isMcCorrect && (
             <div className="text-sm bg-indigo-50 p-3 rounded-md">
               <p className="font-medium text-primary mb-1">Giải thích:</p>
               <p className="text-gray-700">
                 Câu trả lời đúng là: <span className="font-medium">{correctOption?.text}</span>.
-                {userAnswer ? ` Bạn đã chọn: ${selectedOption?.text}` : ' Bạn chưa chọn câu trả lời.'}
+                {mcUserAnswer ? ` Bạn đã chọn: ${selectedOption?.text}` : ' Bạn chưa chọn câu trả lời.'}
               </p>
             </div>
           )}

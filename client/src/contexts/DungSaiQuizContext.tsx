@@ -1,5 +1,6 @@
 import { createContext, useContext, useState, ReactNode, useEffect } from 'react';
 import { useLocation } from 'wouter';
+import { useMultipleChoiceQuiz } from './MultipleChoiceQuizContext'; // Import MultipleChoiceQuizContext
 
 export interface DungSaiQuestion {
   id: number;
@@ -15,15 +16,19 @@ interface DungSaiQuizContextType {
     completed: boolean;
     score: number;
     userAnswers: Record<number, Record<string, 'Đúng' | 'Sai'>>;
+    currentQuestion: number; // Added currentQuestion
   } | null;
   setDungSaiSection: React.Dispatch<React.SetStateAction<{
     questions: DungSaiQuestion[];
     completed: boolean;
     score: number;
     userAnswers: Record<number, Record<string, 'Đúng' | 'Sai'>>;
+    currentQuestion: number; // Added currentQuestion
   } | null>>;
   answerDungSaiQuestion: (questionIndex: number, answers: Record<string, 'Đúng' | 'Sai'>) => void;
   calculateDungSaiScore: () => number;
+  isCurrentQuestionAnswered: () => boolean; // Added
+  resetDungSaiSection: () => void;
 }
 
 const DungSaiQuizContext = createContext<DungSaiQuizContextType | undefined>(undefined);
@@ -34,8 +39,20 @@ export function DungSaiQuizProvider({ children }: { children: ReactNode }) {
     completed: boolean;
     score: number;
     userAnswers: Record<number, Record<string, 'Đúng' | 'Sai'>>;
+    currentQuestion: number; // Added currentQuestion
   } | null>(null);
   const [location] = useLocation();
+  const { completeSection } = useMultipleChoiceQuiz(); // Get completeSection from MC context
+
+  // Function to check if the current question is fully answered
+  const isCurrentQuestionAnswered = () => {
+    if (!dungSaiSection) return false;
+    const currentQuestionData = dungSaiSection.questions[dungSaiSection.currentQuestion];
+    if (!currentQuestionData) return false;
+    const totalStatements = Object.keys(currentQuestionData.statements).length;
+    const answeredStatements = Object.keys(dungSaiSection.userAnswers[dungSaiSection.currentQuestion] || {}).length;
+    return answeredStatements === totalStatements;
+  };
 
   useEffect(() => {
     async function fetchDungSaiSection() {
@@ -48,26 +65,45 @@ export function DungSaiQuizProvider({ children }: { children: ReactNode }) {
         correctMap: q.answer_boolean_map,
         explanationMap: q.explanation_map,
       }));
+
+      // Initialize with empty user answers, as they are not persisted individually
       setDungSaiSection({
         questions: dungSaiQuestions,
-        completed: false,
-        score: 0,
-        userAnswers: {},
+        completed: false, // Completed status will be managed by MC context
+        score: 0, // Score will be calculated on results page and managed by MC context
+        userAnswers: {}, // User answers are not persisted individually
+        currentQuestion: 0, // Initialize currentQuestion
       });
     }
     fetchDungSaiSection();
-  }, [location]);
+  }, []);
 
   // Store answers for a question
   const answerDungSaiQuestion = (questionIndex: number, answers: Record<string, 'Đúng' | 'Sai'>) => {
     setDungSaiSection(prev => {
       if (!prev) return prev;
+      const updatedAnswers = {
+        ...prev.userAnswers,
+        [questionIndex]: answers,
+      };
+      console.log("DungSaiQuizContext: User answers updated", updatedAnswers); // Log user answers update
       return {
         ...prev,
-        userAnswers: {
-          ...prev.userAnswers,
-          [questionIndex]: answers,
-        },
+        userAnswers: updatedAnswers,
+      };
+    });
+  };
+
+  // Reset DungSai section state
+  const resetDungSaiSection = () => {
+    setDungSaiSection(prev => {
+      if (!prev) return prev;
+      return {
+        ...prev,
+        userAnswers: {},
+        currentQuestion: 0,
+        completed: false,
+        score: 0,
       };
     });
   };
@@ -88,16 +124,32 @@ export function DungSaiQuizProvider({ children }: { children: ReactNode }) {
       }
     });
 
-    if (incorrectCount === 0) return 100;
-    if (incorrectCount === 1) return 50;
-    if (incorrectCount === 2) return 25;
-    if (incorrectCount === 3) return 10;
-    if (incorrectCount === totalStatements) return 0;
-    return 0;
+    const score = (() => {
+      if (incorrectCount === 0) return 100;
+      if (incorrectCount === 1) return 50;
+      if (incorrectCount === 2) return 25;
+      if (incorrectCount === 3) return 10;
+      if (incorrectCount === totalStatements) return 0;
+      return 0;
+    })();
+    console.log("DungSaiQuizContext: Calculated score", score, "Incorrect count:", incorrectCount, "Total statements:", totalStatements); // Log calculated score
+    return score;
   };
 
+  // Effect to complete the section when the last question is answered
+  useEffect(() => {
+    if (dungSaiSection && dungSaiSection.currentQuestion >= dungSaiSection.questions.length && !dungSaiSection.completed) {
+      console.log("DungSaiQuizContext: Completing section", dungSaiSection.currentQuestion, dungSaiSection.questions.length); // Log section completion trigger
+      const score = calculateDungSaiScore();
+      // Assuming section ID for Dung Sai is 3 based on MultipleChoiceQuizContext
+      completeSection(3, score);
+      setDungSaiSection(prev => prev ? { ...prev, completed: true, score: score } : null);
+    }
+  }, [dungSaiSection?.currentQuestion, dungSaiSection?.questions.length, dungSaiSection?.completed, calculateDungSaiScore, completeSection]);
+
+
   return (
-    <DungSaiQuizContext.Provider value={{ dungSaiSection, setDungSaiSection, answerDungSaiQuestion, calculateDungSaiScore }}>
+    <DungSaiQuizContext.Provider value={{ dungSaiSection, setDungSaiSection, answerDungSaiQuestion, calculateDungSaiScore, isCurrentQuestionAnswered, resetDungSaiSection }}>
       {children}
     </DungSaiQuizContext.Provider>
   );
@@ -109,4 +161,4 @@ export function useDungSaiQuiz() {
     throw new Error('useDungSaiQuiz must be used within a DungSaiQuizProvider');
   }
   return context;
-} 
+}

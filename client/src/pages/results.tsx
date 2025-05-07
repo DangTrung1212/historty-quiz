@@ -1,5 +1,6 @@
-import { useParams, Link } from "wouter";
+import { useParams, Link, useLocation } from "wouter";
 import { useMultipleChoiceQuiz } from "@/contexts/MultipleChoiceQuizContext";
+import { useDungSaiQuiz } from "@/contexts/DungSaiQuizContext"; // Import DungSaiQuizContext
 import { useProgress } from "@/contexts/ProgressContext";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -12,38 +13,69 @@ import ProgressModal from '@/components/progress-modal';
 export default function Results() {
   const { sectionId } = useParams();
   const { 
-    getCurrentSection, 
+    getCurrentSection: getMultipleChoiceSection, // Renamed to avoid conflict
     getNextSectionId, 
-    calculateScore, 
+    calculateScore: calculateMultipleChoiceScore, // Renamed to avoid conflict
     completeSection,
   } = useMultipleChoiceQuiz();
+  const { dungSaiSection, calculateDungSaiScore, resetDungSaiSection } = useDungSaiQuiz(); // Get DungSaiQuiz context and add resetDungSaiSection
   const { getImageRevealLevel, previousRevealLevel } = useProgress();
+  const [, setLocation] = useLocation();
   
   const [showAnswers, setShowAnswers] = useState(false);
   const [showProgressModal, setShowProgressModal] = useState(false);
   
-  const currentSection = getCurrentSection(Number(sectionId));
-  const nextSectionId = getNextSectionId(Number(sectionId));
-  const nextSection = getCurrentSection(nextSectionId);
+  const currentSection = getMultipleChoiceSection(Number(sectionId));
+  const isDungSai = currentSection?.title === "Trắc Nghiệm Đúng Sai";
+  console.log("Results Page: isDungSai", isDungSai); // Log isDungSai
+
+  // Conditionally get section data and calculate score based on quiz type
+  const sectionData = isDungSai ? dungSaiSection : currentSection;
+  const score = isDungSai ? calculateDungSaiScore() : calculateMultipleChoiceScore(Number(sectionId));
+  console.log("Results Page: Score", score); // Log score
   
-  const score = calculateScore(Number(sectionId));
-  const scorePercent = Math.round(score.percent);
-  const currentRevealLevel = getImageRevealLevel(currentSection ? [currentSection] : []);
+  const scorePercent = Math.round(isDungSai ? score : (score as any).percent); // Score is already percent for DungSai
+  console.log("Results Page: Score Percent", scorePercent); // Log scorePercent
+  
+  // Pass compatible section data to getImageRevealLevel
+  const sectionsForReveal = sectionData ? [{ 
+    id: Number(sectionId), 
+    title: currentSection?.title || '',
+    questions: sectionData.questions, // Include questions
+    completed: sectionData.completed, // Include completed
+    score: sectionData.score, // Include score
+    currentQuestion: isDungSai ? (sectionData as any).currentQuestion : currentSection?.currentQuestion || 0 // Include currentQuestion
+  }] : [];
+  const currentRevealLevel = getImageRevealLevel(sectionsForReveal as any); // Cast to any for now, will fix type later
+  
   const unlocked = scorePercent >= 90 && currentRevealLevel > previousRevealLevel;
   const isPassed = scorePercent >= 90;
   
   useEffect(() => {
-    if (!currentSection) return;
+    if (!sectionData) return;
     // Only update if the new score is higher, or if not completed and passed
-    if ((scorePercent > (currentSection.score || 0)) || (!currentSection.completed && scorePercent >= 90)) {
-      completeSection(Number(sectionId), scorePercent);
+    // Need to adjust this logic for DungSaiQuiz if its score is not stored in the same way
+    if (!isDungSai && ((scorePercent > (sectionData.score || 0)) || (!sectionData.completed && scorePercent >= 90))) {
+       completeSection(Number(sectionId), scorePercent);
     }
-  }, [currentSection, scorePercent, sectionId, completeSection]);
+    // TODO: Add logic to update progress for DungSaiQuiz
+  }, [sectionData, scorePercent, sectionId, completeSection, isDungSai]);
   
-  if (!currentSection) {
+  if (!sectionData) {
     return <div>Section not found</div>;
   }
+  console.log("Results Page: Section Data", sectionData); // Log sectionData
+  console.log("Results Page: User Answers (from DungSaiContext if isDungSai)", dungSaiSection?.userAnswers); // Log DungSai user answers
   
+  // Adjust score display for DungSaiQuiz
+  const correctCount = isDungSai ? 'N/A' : (score as any).correct; // Cast to any to access properties conditionally
+  const incorrectCount = isDungSai ? 'N/A' : (score as any).incorrect; // Cast to any
+  const totalQuestionsDisplay = isDungSai ? sectionData.questions.length : (score as any).total; // Total questions for display
+  const timeDisplay = isDungSai ? 'N/A' : `${(score as any).timeMinutes}:${(score as any).timeSeconds}`; // Cast to any
+
+  const nextSectionId = getNextSectionId(Number(sectionId));
+  const nextSection = getMultipleChoiceSection(nextSectionId); // Still use multiple choice context for next section
+
   return (
     <section className="min-h-screen p-6 bg-gray-50">
       <div className="max-w-md mx-auto">
@@ -111,15 +143,15 @@ export default function Results() {
               transition={{ delay: 0.8 }}
             >
               <div className="bg-gray-50 p-3 rounded-lg">
-                <div className="text-xl font-bold text-primary">{score.correct}/{score.total}</div>
-                <div className="text-xs text-gray-500">Câu đúng</div>
+                <div className="text-xl font-bold text-primary">{correctCount}{isDungSai ? '' : `/${totalQuestionsDisplay}`}</div>
+                <div className="text-xs text-gray-500">{isDungSai ? 'N/A' : 'Câu đúng'}</div>
               </div>
               <div className="bg-gray-50 p-3 rounded-lg">
-                <div className="text-xl font-bold text-error">{score.incorrect}/{score.total}</div>
-                <div className="text-xs text-gray-500">Câu sai</div>
+                <div className="text-xl font-bold text-error">{incorrectCount}{isDungSai ? '' : `/${totalQuestionsDisplay}`}</div>
+                <div className="text-xs text-gray-500">{isDungSai ? 'N/A' : 'Câu sai'}</div>
               </div>
               <div className="bg-gray-50 p-3 rounded-lg">
-                <div className="text-xl font-bold text-gray-700">{score.timeMinutes}:{score.timeSeconds}</div>
+                <div className="text-xl font-bold text-gray-700">{timeDisplay}</div>
                 <div className="text-xs text-gray-500">Thời gian</div>
               </div>
             </motion.div>
@@ -159,14 +191,27 @@ export default function Results() {
             
             {/* Actions - Centered buttons */}
             <div className="flex justify-center space-x-4">
-              <Link href={`/quiz/${sectionId}`} className="w-1/3">
-                <Button 
-                  variant="outline" 
+              {isDungSai ? (
+                <Button
+                  variant="outline"
                   className="w-full px-4 py-3 border border-gray-300 text-gray-700 font-medium"
+                  onClick={() => {
+                    resetDungSaiSection();
+                    setLocation(`/quiz/${sectionId}`);
+                  }}
                 >
                   Làm lại
                 </Button>
-              </Link>
+              ) : (
+                <Link href={`/quiz/${sectionId}`} className="w-1/3">
+                  <Button
+                    variant="outline"
+                    className="w-full px-4 py-3 border border-gray-300 text-gray-700 font-medium"
+                  >
+                    Làm lại
+                  </Button>
+                </Link>
+              )}
               
               {nextSection ? (
                 <Link href={nextSection ? `/quiz/${nextSectionId}` : "/quiz-selection"} className="w-1/3">
@@ -196,7 +241,8 @@ export default function Results() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
           >
-            <AnswerReview sectionId={Number(sectionId)} />
+            {/* Pass sectionId and isDungSai to AnswerReview */}
+            <AnswerReview sectionId={Number(sectionId)} isDungSai={isDungSai} />
           </motion.div>
         )}
         

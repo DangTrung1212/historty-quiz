@@ -5,7 +5,7 @@
 ### Frontend
 - **Framework**: React 18 with TypeScript
 - **Routing**: Wouter (lightweight alternative to React Router)
-- **State Management**: React Context API
+- **State Management**: React Context API (currently separate for MCQ and DungSai, planned to unify)
 - **Styling**: Tailwind CSS with custom configurations
 - **UI Components**: Radix UI (accessible, unstyled components)
 - **Animation**: CSS transitions, react-confetti for celebration effects
@@ -45,10 +45,14 @@
 ## Data Flow
 1. Server provides quiz questions via API endpoints
 2. Client fetches and caches questions using React Query
-3. User progress is stored in localStorage
+3. User progress is stored in localStorage (hydrated into context on mount)
 4. No database is required as all state is maintained client-side
 
 ## Performance Considerations
 - Bundle size optimized through proper code splitting
 - Images and assets need to be optimized for quick loading
-- Quiz data is structured for efficient rendering and state management 
+- Quiz data is structured for efficient rendering and state management
+
+---
+**Note:**
+- The project is moving toward a unified quiz context for all quiz types, with robust localStorage persistence and hydration to ensure state is always correct and recoverable. 

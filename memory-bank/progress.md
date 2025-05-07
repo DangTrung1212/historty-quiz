@@ -1,7 +1,7 @@
 # Project Progress
 
 ## Current Status
-The project is progressing through a refactor of the "Trắc Nghiệm Đúng Sai" (True/False) quiz section. This section now uses its own context and UI, with dedicated answer storage and custom score calculation logic. The navigation button is at the bottom and is disabled until all statements are answered.
+The project is now stable for both MCQ and DungSai quiz types, with robust state reset and navigation logic. All major bugs related to context, state sync, and retake logic have been fixed.
 
 ## What Works
 - Project structure is established with client/server architecture
@@ -9,28 +9,24 @@ The project is progressing through a refactor of the "Trắc Nghiệm Đúng Sai
 - Component organization following modern React patterns
 - Context API providers are set up for state management
 - Tailwind CSS is configured for styling
-- Finalized UI/UX decisions for "Trắc Nghiệm Đúng Sai" section:
-  - Navigation button shows "Tiếp theo" except on the last question, where it shows "Nộp bài"
-  - User selection for Đúng/Sai is highlighted visually (no extra text like "Bạn đã chọn: ...")
-  - No correct/incorrect feedback is shown until after submission
-  - Long passages are handled with collapsible or scrollable containers
-  - Navigation button is at the bottom and disabled until all statements are answered
-  - Dedicated context and answer storage for True/False section
-  - Custom score calculation logic (0: 100%, 1: 50%, 2: 25%, 3: 10%, all: 0%)
+- Finalized UI/UX decisions for "Trắc Nghiệm Đúng Sai" section
+- State reset and navigation logic is now robust and consistent for all quiz types
+- Infinite render loop in DungSaiQuiz is fixed
+- Retake logic is consistent and reliable for all quiz types
 
 ## What's Left to Build/Complete
 1. **Quiz Functionality**:
-   - Complete answer storage and navigation logic for True/False section
-   - Create answer selection and validation for all sections
-   - Implement question navigation for all sections
+   - Refactor to a unified QuizContext for all quiz types
+   - Move business logic (scoring, validation) to pure functions in lib/
+   - Update all components and pages to use the new context API
+   - Add/expand unit tests for quiz logic
    
 2. **Progress Tracking**:
-   - Implement local storage persistence
-   - Score calculation and tracking for all sections
+   - Ensure localStorage persistence and hydration is robust for unified context
    - Section completion status management
    
 3. **Reward System**:
-   - Image slice unlocking mechanism
+   - Image slice unlocking mechanism (final polish)
    - Final reward screen with full image reveal
    - Congratulatory message display
    
@@ -40,47 +36,45 @@ The project is progressing through a refactor of the "Trắc Nghiệm Đúng Sai
    - Accessibility improvements
 
 ## Known Issues
-- Need to verify format and structure of question JSON data
-- Progress persistence mechanism needs to be tested thoroughly
-- Image unlocking visualization requires implementation
+- No critical context/state bugs remain
+- Some code duplication and complexity due to separate quiz contexts (to be addressed in refactor)
 
 ## Milestones
 - [x] Project setup and structure established
 - [x] Documentation framework created
 - [x] Refactor True/False section to use dedicated context and UI
-- [ ] Complete answer storage and navigation for True/False section
-- [ ] Quiz section logic implementation for all sections
-- [ ] Progress tracking system
-- [ ] Reward unlocking mechanism
+- [x] Ensure correct score calculation and answer review for True/False section
+- [x] Robust state reset and navigation for all quiz types
+- [x] Fix infinite render loop in DungSaiQuiz
+- [x] Consistent retake logic for all quiz types
+- [ ] Refactor to unified QuizContext
+- [ ] Move business logic to pure functions
+- [ ] Update documentation and Memory Bank after refactor
 - [ ] Complete UI implementation
 - [ ] Testing and optimization
 - [ ] Deployment preparation
-- [ ] **Implement proper True/False UI for "Trắc Nghiệm Đúng Sai" section**
-- [ ] **Wire up answer storage and navigation for True/False section**
 
 ## Next Milestone Focus
-Complete the answer storage and navigation logic for the True/False section and ensure questions can be loaded, displayed, and answered correctly. 
+Refactor to a single, unified QuizContext for all quiz types and update documentation accordingly.
 
 ## Recently Completed
-- Finalized UI/UX decisions for "Trắc Nghiệm Đúng Sai" section:
-  - Navigation button shows "Tiếp theo" except on the last question, where it shows "Nộp bài"
-  - User selection for Đúng/Sai is highlighted visually (no extra text like "Bạn đã chọn: ...")
-  - No correct/incorrect feedback is shown until after submission
-  - Long passages are handled with collapsible or scrollable containers
-  - Navigation button is at the bottom and disabled until all statements are answered
-  - Dedicated context and answer storage for True/False section
-  - Custom score calculation logic
+- Fixed state reset and navigation bugs for Đúng/Sai (DungSai) quiz
+- Fixed infinite render loop in DungSaiQuiz component
+- Made state reset logic consistent for all quiz types (retake, navigation, etc.)
+- Improved context provider placement and usage to avoid unmount/remount bugs
+- Decoupled navigation from state reset (using router hooks, not window.location)
 
 ## In Progress
-- Updating UI components to match the finalized Đúng/Sai interaction flow and visual style
-- Wiring up answer storage and navigation for True/False section
+- Planning and designing a unified QuizContext to handle all quiz types
+- Identifying shared logic and moving it to pure functions/hooks
 
 ## Next Steps
-- Implement and test the new Đúng/Sai UI pattern, ensuring consistency with Trắc Nghiệm 1/2 navigation and progress indicators
-- Complete answer storage and navigation for True/False section
+- Refactor to a single, unified QuizContext for all quiz types
+- Move business logic (scoring, validation) to pure functions in lib/
+- Update all components and pages to use the new context API
+- Update documentation and Memory Bank to reflect the new architecture
 
 ## Active Decisions
-- **Đúng/Sai Button Highlighting**: Use strong color (primary) for selected, subtle border/background for unselected, no selection text
-- **Navigation Button Text**: "Tiếp theo" for non-final questions, "Nộp bài" for the last question 
-- **Dedicated Context**: True/False section uses its own context and answer storage
-- **Score Calculation**: Custom penalty rules for incorrect answers 
+- **Unification:** Move away from separate contexts for each quiz type
+- **Encapsulation:** All state transitions (start, answer, reset, complete) will be handled by context methods
+- **Testing:** Pure logic functions will be tested in isolation

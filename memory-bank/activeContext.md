@@ -1,30 +1,32 @@
 # Active Context
 
 ## Current Focus
-The project is actively refactoring the "Trắc Nghiệm Đúng Sai" (True/False quiz) section to use its own context (`DungSaiQuizContext`) and a dedicated UI component. The navigation button is now at the bottom of the card, and the UI disables the button until all statements are answered. Score calculation uses custom penalty rules.
+- Ensuring robust and consistent state management for all quiz types (MCQ and DungSai)
+- Preparing for a major refactor to unify quiz logic and context
 
 ## Recently Completed
-- Refactored the True/False quiz section to use `DungSaiQuizContext` for data, answer storage, and score calculation
-- Implemented a dedicated `DungSaiQuiz` component with a bottom navigation button
-- Added logic to disable the navigation button until all statements are answered
-- Improved score calculation logic for True/False section (custom penalties)
+- Fixed state reset and navigation bugs for Đúng/Sai (DungSai) quiz
+- Fixed infinite render loop in DungSaiQuiz component
+- Made state reset logic consistent for all quiz types (retake, navigation, etc.)
+- Improved context provider placement and usage to avoid unmount/remount bugs
+- Decoupled navigation from state reset (using router hooks, not window.location)
 
 ## In Progress
-- Wiring up answer storage and navigation in the parent quiz page for the True/False section
-- Ensuring the UI and context are fully integrated for the new flow
+- Planning and designing a unified QuizContext to handle all quiz types
+- Identifying shared logic and moving it to pure functions/hooks
 
 ## Next Steps
-1. Complete answer storage and navigation logic in the parent quiz page for True/False section
-2. Test score calculation and result display for True/False section
-3. Integrate progress tracking and reward unlocking for the new section
+1. Refactor to a single, unified QuizContext for all quiz types
+2. Move business logic (scoring, validation) to pure functions in lib/
+3. Update all components and pages to use the new context API
+4. Update documentation and Memory Bank to reflect the new architecture
 
 ## Active Decisions
-- **Separation of Contexts**: True/False section uses its own context for clarity and maintainability
-- **Score Calculation**: Custom penalty rules for incorrect answers (0: 100%, 1: 50%, 2: 25%, 3: 10%, all: 0%)
-- **UI/UX**: Navigation button at the bottom, disabled until all statements are answered
+- **Unification:** Move away from separate contexts for each quiz type
+- **Encapsulation:** All state transitions (start, answer, reset, complete) will be handled by context methods
+- **Testing:** Pure logic functions will be tested in isolation
 
 ## Blockers/Questions
-- Need to verify the format of question data in the JSON files
-- Explore design specifications for the unlockable image components
-- Determine exact requirements for the final reward screen
-- Understand how the DungSaiQuizContext should differ from MultipleChoiceQuizContext 
+- Need to design a flexible data model for unified quiz state
+- Ensure backward compatibility with existing progress data if possible
+- Plan for incremental migration to minimize disruption 
