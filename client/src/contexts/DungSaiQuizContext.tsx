@@ -1,6 +1,7 @@
 import { createContext, useContext, useState, ReactNode, useEffect } from 'react';
 import { useLocation } from 'wouter';
 import { useMultipleChoiceQuiz } from './MultipleChoiceQuizContext'; // Import MultipleChoiceQuizContext
+import { calculateDungSaiScore, isDungSaiQuestionAnswered } from "../lib/quiz-dungsai";
 
 export interface DungSaiQuestion {
   id: number;
@@ -49,9 +50,7 @@ export function DungSaiQuizProvider({ children }: { children: ReactNode }) {
     if (!dungSaiSection) return false;
     const currentQuestionData = dungSaiSection.questions[dungSaiSection.currentQuestion];
     if (!currentQuestionData) return false;
-    const totalStatements = Object.keys(currentQuestionData.statements).length;
-    const answeredStatements = Object.keys(dungSaiSection.userAnswers[dungSaiSection.currentQuestion] || {}).length;
-    return answeredStatements === totalStatements;
+    return isDungSaiQuestionAnswered(currentQuestionData, dungSaiSection.userAnswers[dungSaiSection.currentQuestion] || {});
   };
 
   useEffect(() => {
@@ -109,47 +108,23 @@ export function DungSaiQuizProvider({ children }: { children: ReactNode }) {
   };
 
   // Calculate score with penalty rules
-  const calculateDungSaiScore = () => {
+  const calculateDungSaiScoreWrapper = () => {
     if (!dungSaiSection) return 0;
-    let incorrectCount = 0;
-    let totalStatements = 0;
-    dungSaiSection.questions.forEach((q, idx) => {
-      const userAns = dungSaiSection.userAnswers[idx] || {};
-      for (const key in q.statements) {
-        totalStatements++;
-        const correct = q.correctMap[key] ? 'Đúng' : 'Sai';
-        if (userAns[key] && userAns[key] !== correct) {
-          incorrectCount++;
-        }
-      }
-    });
-
-    const score = (() => {
-      if (incorrectCount === 0) return 100;
-      if (incorrectCount === 1) return 50;
-      if (incorrectCount === 2) return 25;
-      if (incorrectCount === 3) return 10;
-      if (incorrectCount === totalStatements) return 0;
-      return 0;
-    })();
-    console.log("DungSaiQuizContext: Calculated score", score, "Incorrect count:", incorrectCount, "Total statements:", totalStatements); // Log calculated score
-    return score;
+    return calculateDungSaiScore(dungSaiSection.questions, dungSaiSection.userAnswers);
   };
 
   // Effect to complete the section when the last question is answered
   useEffect(() => {
     if (dungSaiSection && dungSaiSection.currentQuestion >= dungSaiSection.questions.length && !dungSaiSection.completed) {
-      console.log("DungSaiQuizContext: Completing section", dungSaiSection.currentQuestion, dungSaiSection.questions.length); // Log section completion trigger
-      const score = calculateDungSaiScore();
-      // Assuming section ID for Dung Sai is 3 based on MultipleChoiceQuizContext
+      const score = calculateDungSaiScoreWrapper();
       completeSection(3, score);
       setDungSaiSection(prev => prev ? { ...prev, completed: true, score: score } : null);
     }
-  }, [dungSaiSection?.currentQuestion, dungSaiSection?.questions.length, dungSaiSection?.completed, calculateDungSaiScore, completeSection]);
+  }, [dungSaiSection?.currentQuestion, dungSaiSection?.questions.length, dungSaiSection?.completed, calculateDungSaiScoreWrapper, completeSection]);
 
 
   return (
-    <DungSaiQuizContext.Provider value={{ dungSaiSection, setDungSaiSection, answerDungSaiQuestion, calculateDungSaiScore, isCurrentQuestionAnswered, resetDungSaiSection }}>
+    <DungSaiQuizContext.Provider value={{ dungSaiSection, setDungSaiSection, answerDungSaiQuestion, calculateDungSaiScore: calculateDungSaiScoreWrapper, isCurrentQuestionAnswered, resetDungSaiSection }}>
       {children}
     </DungSaiQuizContext.Provider>
   );
