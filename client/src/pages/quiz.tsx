@@ -14,7 +14,7 @@ import { useDungSaiQuiz } from "@/contexts/DungSaiQuizContext";
 export default function Quiz() {
   const { sectionId } = useParams();
   const [, setLocation] = useLocation();
-  const { sections, getCurrentSection, startQuiz, answerQuestion, goToPreviousQuestion, userAnswers } = useMultipleChoiceQuiz();
+  const { sections, getCurrentSection, startQuiz, answerQuestion, goToPreviousQuestion, userAnswers, resetSection } = useMultipleChoiceQuiz();
   const { dungSaiSection, setDungSaiSection, isCurrentQuestionAnswered, answerDungSaiQuestion } = useDungSaiQuiz(); // Added answerDungSaiQuestion
   
   const currentSection = getCurrentSection(Number(sectionId));
@@ -145,7 +145,7 @@ export default function Quiz() {
         <div className="max-w-md mx-auto">
           <div className="flex items-center justify-between mb-2">
             <Link href="/quiz-selection">
-              <Button variant="ghost" size="icon" className="text-gray-600">
+              <Button variant="ghost" size="icon" className="text-gray-600" onClick={() => { if (!isDungSai) resetSection(currentSection.id); }}>
                 <ChevronLeft />
               </Button>
             </Link>

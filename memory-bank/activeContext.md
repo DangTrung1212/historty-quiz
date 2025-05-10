@@ -29,4 +29,8 @@
 ## Blockers/Questions
 - Need to design a flexible data model for unified quiz state
 - Ensure backward compatibility with existing progress data if possible
-- Plan for incremental migration to minimize disruption 
+- Plan for incremental migration to minimize disruption
+
+## New Issues & Notes
+- Issue: When clicking 'Chọn Trắc Nghiệm I', the question is re-rendered (potential unnecessary rerender or state reset).
+- Implement reward function and UI should be done in a separate branch (not in current mainline work). 

@@ -25,6 +25,7 @@ interface MultipleChoiceQuizContextType {
   };
   completeSection: (sectionId: number, score: number) => void;
   loadStoredProgress: () => void;
+  resetSection: (sectionId: number) => void;
 }
 
 const MultipleChoiceQuizContext = createContext<MultipleChoiceQuizContextType | undefined>(undefined);
@@ -145,6 +146,18 @@ export function MultipleChoiceQuizProvider({ children }: { children: ReactNode }
     // Only restore completed and score for each section if needed elsewhere
   }, []);
 
+  const resetSection = useCallback((sectionId: number) => {
+    setUserAnswers(prev => ({
+      ...prev,
+      [sectionId]: {},
+    }));
+    setSections(prev => prev.map(section =>
+      section.id === sectionId
+        ? { ...section, currentQuestion: 0 }
+        : section
+    ));
+  }, []);
+
   useEffect(() => {
     const { loadedSections } = loadProgress();
     async function fetchAndSetDynamicSections() {
@@ -241,7 +254,8 @@ export function MultipleChoiceQuizProvider({ children }: { children: ReactNode }
     goToPreviousQuestion,
     calculateScore,
     completeSection,
-    loadStoredProgress
+    loadStoredProgress,
+    resetSection,
   };
 
   return (

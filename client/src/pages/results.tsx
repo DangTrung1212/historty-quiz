@@ -17,9 +17,10 @@ export default function Results() {
     getNextSectionId, 
     calculateScore: calculateMultipleChoiceScore, // Renamed to avoid conflict
     completeSection,
+    sections,
   } = useMultipleChoiceQuiz();
   const { dungSaiSection, calculateDungSaiScore, resetDungSaiSection } = useDungSaiQuiz(); // Get DungSaiQuiz context and add resetDungSaiSection
-  const { getImageRevealLevel, previousRevealLevel } = useProgress();
+  // const { getImageRevealLevel, previousRevealLevel } = useProgress(); // Commented for fast release
   const [, setLocation] = useLocation();
   
   const [showAnswers, setShowAnswers] = useState(false);
@@ -33,22 +34,26 @@ export default function Results() {
   const sectionData = isDungSai ? dungSaiSection : currentSection;
   const score = isDungSai ? calculateDungSaiScore() : calculateMultipleChoiceScore(Number(sectionId));
   console.log("Results Page: Score", score); // Log score
-  
+  if (isDungSai) {
+    console.log("DungSaiQuiz: dungSaiSection", dungSaiSection);
+    console.log("DungSaiQuiz: userAnswers", dungSaiSection?.userAnswers);
+    console.log("DungSaiQuiz: questions", dungSaiSection?.questions);
+  }
   const scorePercent = Math.round(isDungSai ? score : (score as any).percent); // Score is already percent for DungSai
   console.log("Results Page: Score Percent", scorePercent); // Log scorePercent
   
   // Pass compatible section data to getImageRevealLevel
-  const sectionsForReveal = sectionData ? [{ 
-    id: Number(sectionId), 
-    title: currentSection?.title || '',
-    questions: sectionData.questions, // Include questions
-    completed: sectionData.completed, // Include completed
-    score: sectionData.score, // Include score
-    currentQuestion: isDungSai ? (sectionData as any).currentQuestion : currentSection?.currentQuestion || 0 // Include currentQuestion
-  }] : [];
-  const currentRevealLevel = getImageRevealLevel(sectionsForReveal as any); // Cast to any for now, will fix type later
+  // const sectionsForReveal = sectionData ? [{ 
+  //   id: Number(sectionId), 
+  //   title: currentSection?.title || '',
+  //   questions: sectionData.questions, // Include questions
+  //   completed: sectionData.completed, // Include completed
+  //   score: sectionData.score, // Include score
+  //   currentQuestion: isDungSai ? (sectionData as any).currentQuestion : currentSection?.currentQuestion || 0 // Include currentQuestion
+  // }] : [];
+  // const currentRevealLevel = getImageRevealLevel(sectionsForReveal as any); // Cast to any for now, will fix type later
   
-  const unlocked = scorePercent >= 90 && currentRevealLevel > previousRevealLevel;
+  // const unlocked = scorePercent >= 90 && currentRevealLevel > previousRevealLevel; // Commented for fast release
   const isPassed = scorePercent >= 90;
   
   useEffect(() => {
@@ -68,9 +73,34 @@ export default function Results() {
   console.log("Results Page: User Answers (from DungSaiContext if isDungSai)", dungSaiSection?.userAnswers); // Log DungSai user answers
   
   // Adjust score display for DungSaiQuiz
-  const correctCount = isDungSai ? 'N/A' : (score as any).correct; // Cast to any to access properties conditionally
-  const incorrectCount = isDungSai ? 'N/A' : (score as any).incorrect; // Cast to any
-  const totalQuestionsDisplay = isDungSai ? sectionData.questions.length : (score as any).total; // Total questions for display
+  let correctCount, incorrectCount, totalQuestionsDisplay;
+  if (isDungSai && dungSaiSection) {
+    // Calculate correct/incorrect for DungSai
+    let correct = 0;
+    let incorrect = 0;
+    let total = 0;
+    dungSaiSection.questions.forEach((q, idx) => {
+      const userAns = dungSaiSection.userAnswers[idx] || {};
+      for (const key in q.statements) {
+        total++;
+        const correctAnswer = q.correctMap[key] ? 'Đúng' : 'Sai';
+        if (userAns[key]) {
+          if (userAns[key] === correctAnswer) {
+            correct++;
+          } else {
+            incorrect++;
+          }
+        }
+      }
+    });
+    correctCount = correct;
+    incorrectCount = incorrect;
+    totalQuestionsDisplay = total;
+  } else {
+    correctCount = (score as any).correct;
+    incorrectCount = (score as any).incorrect;
+    totalQuestionsDisplay = (score as any).total;
+  }
   const timeDisplay = isDungSai ? 'N/A' : `${(score as any).timeMinutes}:${(score as any).timeSeconds}`; // Cast to any
 
   const nextSectionId = getNextSectionId(Number(sectionId));
@@ -143,12 +173,12 @@ export default function Results() {
               transition={{ delay: 0.8 }}
             >
               <div className="bg-gray-50 p-3 rounded-lg">
-                <div className="text-xl font-bold text-primary">{correctCount}{isDungSai ? '' : `/${totalQuestionsDisplay}`}</div>
-                <div className="text-xs text-gray-500">{isDungSai ? 'N/A' : 'Câu đúng'}</div>
+                <div className="text-xl font-bold text-primary">{correctCount}/{totalQuestionsDisplay}</div>
+                <div className="text-xs text-gray-500">Câu đúng</div>
               </div>
               <div className="bg-gray-50 p-3 rounded-lg">
-                <div className="text-xl font-bold text-error">{incorrectCount}{isDungSai ? '' : `/${totalQuestionsDisplay}`}</div>
-                <div className="text-xs text-gray-500">{isDungSai ? 'N/A' : 'Câu sai'}</div>
+                <div className="text-xl font-bold text-error">{incorrectCount}/{totalQuestionsDisplay}</div>
+                <div className="text-xs text-gray-500">Câu sai</div>
               </div>
               <div className="bg-gray-50 p-3 rounded-lg">
                 <div className="text-xl font-bold text-gray-700">{timeDisplay}</div>
@@ -157,6 +187,7 @@ export default function Results() {
             </motion.div>
             
             {/* Unlock Notice */}
+            {/*
             {unlocked && (
               <motion.div 
                 className="bg-indigo-50 border border-indigo-100 rounded-lg p-4 mb-6 cursor-pointer"
@@ -176,6 +207,7 @@ export default function Results() {
                 </div>
               </motion.div>
             )}
+            */}
             
             {/* View Answers Button - Moved above the action buttons */}
             <div className="mb-6">
@@ -222,6 +254,8 @@ export default function Results() {
                   </Button>
                 </Link>
               ) : (
+                <>
+                {/*
                 <Link href="/reward" className="w-1/3">
                   <Button 
                     className="w-full px-4 py-3 bg-primary text-white font-medium"
@@ -229,6 +263,8 @@ export default function Results() {
                     Xem phần thưởng
                   </Button>
                 </Link>
+                */}
+                </>
               )}
             </div>
           </div>
@@ -247,35 +283,37 @@ export default function Results() {
         )}
         
         {/* Next Section Preview - Made Entire Section Clickable */}
-        {nextSection && (
-          <motion.div 
-            className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-          >
-            <div>
-              <h3 className="font-semibold mb-3 text-gray-800">Phần thi tiếp theo</h3>
-              <Link href={`/quiz/${nextSectionId}`} className="block">
-                <div className="flex items-center transition active:scale-95 active:bg-primary/10 rounded-lg cursor-pointer">
-                  <div className="w-12 h-12 bg-white border border-gray-200 rounded-lg flex items-center justify-center mr-4">
-                    <i className="fas fa-flag text-primary text-xl"></i>
+        <motion.div 
+          className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3 }}
+        >
+          <div>
+            <h3 className="font-semibold mb-3 text-gray-800">Chọn Phần Thi Khác</h3>
+            <div className="space-y-3">
+              {sections.filter(s => s.id !== Number(sectionId)).map(section => (
+                <Link key={section.id} href={`/quiz/${section.id}`} className="block">
+                  <div className="flex items-center transition active:scale-95 active:bg-primary/10 rounded-lg cursor-pointer p-3 hover:bg-primary/5">
+                    <div className="w-12 h-12 bg-white border border-gray-200 rounded-lg flex items-center justify-center mr-4">
+                      <i className="fas fa-flag text-primary text-xl"></i>
+                    </div>
+                    <div>
+                      <h4 className="font-medium">{section.title}</h4>
+                      <p className="text-sm text-gray-600">{section.questions.length} câu hỏi</p>
+                    </div>
+                    <div className="ml-auto text-primary">
+                      <ChevronRight className="h-5 w-5" />
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="font-medium">{nextSection.title}</h4>
-                    <p className="text-sm text-gray-600">{nextSection.questions.length} câu hỏi</p>
-                  </div>
-                  <div className="ml-auto text-primary">
-                    <ChevronRight className="h-5 w-5" />
-                  </div>
-                </div>
-              </Link>
+                </Link>
+              ))}
             </div>
-          </motion.div>
-        )}
+          </div>
+        </motion.div>
       </div>
       {/* Progress Modal */}
-      <ProgressModal open={showProgressModal} onOpenChange={setShowProgressModal} />
+      {/* <ProgressModal open={showProgressModal} onOpenChange={setShowProgressModal} /> */}
     </section>
   );
 }

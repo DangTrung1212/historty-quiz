@@ -38,6 +38,10 @@ The project is now stable for both MCQ and DungSai quiz types, with robust state
 ## Known Issues
 - No critical context/state bugs remain
 - Some code duplication and complexity due to separate quiz contexts (to be addressed in refactor)
+- Issue: When clicking 'Chọn Trắc Nghiệm I', the question is re-rendered (potential unnecessary rerender or state reset).
+
+## Notes
+- Implement reward function and UI should be done in a separate branch (not in current mainline work).
 
 ## Milestones
 - [x] Project setup and structure established

@@ -47,6 +47,28 @@ export default function AnswerReview({ sectionId, isDungSai }: AnswerReviewProps
     const dsUserAnswers = userAnswers?.[currentQuestionIndex] as Record<string, 'Đúng' | 'Sai'> | undefined;
     console.log("AnswerReview (DungSai): dsUserAnswers for current question", dsUserAnswers); // Log DungSai user answers for current question
 
+    // Calculate per-question score
+    let incorrectCount = 0;
+    let totalStatements = Object.keys(dsQuestion.statements).length;
+    for (const key in dsQuestion.statements) {
+      const correct = dsQuestion.correctMap[key] ? 'Đúng' : 'Sai';
+      if (dsUserAnswers && dsUserAnswers[key]) {
+        if (dsUserAnswers[key] !== correct) {
+          incorrectCount++;
+        }
+      } else {
+        // If not answered, treat as incorrect
+        incorrectCount++;
+      }
+    }
+    let questionScore = 0;
+    if (incorrectCount === 0) questionScore = 20;
+    else if (incorrectCount === 1) questionScore = 10;
+    else if (incorrectCount === 2) questionScore = 5;
+    else if (incorrectCount === 3) questionScore = 2;
+    else if (incorrectCount === totalStatements) questionScore = 0;
+    else questionScore = 0;
+
     return (
       <div className="bg-white rounded-lg shadow-md p-6">
         <h3 className="font-semibold mb-4">Xem đáp án - Trắc Nghiệm Đúng Sai</h3>
@@ -60,6 +82,12 @@ export default function AnswerReview({ sectionId, isDungSai }: AnswerReviewProps
               style={{ width: `${((currentQuestionIndex + 1) / totalQuestions) * 100}%` }}
             ></div>
           </div>
+        </div>
+        {/* Per-question score display */}
+        <div className="mb-4 text-center">
+          <span className="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-4 py-1 rounded-full">
+            Điểm cho câu này: {questionScore}
+          </span>
         </div>
         <AnimatePresence mode="wait">
           <motion.div
