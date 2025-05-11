@@ -154,7 +154,7 @@ export default function AnswerReview({ sectionId, isDungSai }: AnswerReviewProps
   }
 
   // Logic for Multiple Choice Questions
-  const mcQuestion = question as MultipleChoiceQuestion;
+  const mcQuestion = question as MultipleChoiceQuestion & { explanation?: string };
   const mcUserAnswer = userAnswers?.[currentQuestionIndex] as string | null | undefined;
   const isMcCorrect = mcUserAnswer === mcQuestion.correctOptionId;
   const correctOption = mcQuestion.options.find(option => option.id === mcQuestion.correctOptionId);
@@ -226,14 +226,17 @@ export default function AnswerReview({ sectionId, isDungSai }: AnswerReviewProps
             })}
           </div>
           
-          {!isMcCorrect && (
-            <div className="text-sm bg-indigo-50 p-3 rounded-md">
-              <p className="font-medium text-primary mb-1">Giải thích:</p>
-              <p className="text-gray-700">
-                Câu trả lời đúng là: <span className="font-medium">{correctOption?.text}</span>.
-                {mcUserAnswer ? ` Bạn đã chọn: ${selectedOption?.text}` : ' Bạn chưa chọn câu trả lời.'}
+          {/* Explanation: now shown if mcQuestion.explanation exists, regardless of correctness */}
+          {mcQuestion.explanation && (
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="mt-4 p-3 bg-yellow-50 border border-yellow-200 rounded-md"
+            >
+              <p className="text-sm text-yellow-700">
+                <span className="font-semibold">Giải thích:</span> {mcQuestion.explanation}
               </p>
-            </div>
+            </motion.div>
           )}
         </motion.div>
       </AnimatePresence>

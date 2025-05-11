@@ -1,8 +1,9 @@
 # Active Context
 
 ## Current Focus
-- Ensuring robust and consistent state management for all quiz types (MCQ and DungSai)
-- Preparing for a major refactor to unify quiz logic and context
+- Implementing the reward feature.
+- Improving the application's UI and UX.
+- Continuing to address any outstanding bugs.
 
 ## Recently Completed
 - Fixed state reset and navigation bugs for Đúng/Sai (DungSai) quiz
@@ -10,20 +11,35 @@
 - Made state reset logic consistent for all quiz types (retake, navigation, etc.)
 - Improved context provider placement and usage to avoid unmount/remount bugs
 - Decoupled navigation from state reset (using router hooks, not window.location)
+- Resolved MCQ re-render issue when starting a quiz (progress now persists within a session).
+- Updated MCQ answer review to always show explanations if available.
+- Fixed "Làm lại" button on results page to correctly reset MCQ quiz progress.
 
 ## In Progress
-- Planning and designing a unified QuizContext to handle all quiz types
-- Identifying shared logic and moving it to pure functions/hooks
+- Developing the reward system mechanics and UI.
+- Identifying areas for UI/UX enhancements (including color theme).
+- Ongoing bug fixing as issues are identified.
 
 ## Next Steps
-1. Refactor to a single, unified QuizContext for all quiz types
-2. Move business logic (scoring, validation) to pure functions in lib/
-3. Update all components and pages to use the new context API
-4. Update documentation and Memory Bank to reflect the new architecture
+1.  **Implement Reward Feature**:
+    *   Finalize image slice unlocking mechanism.
+    *   Develop the final reward screen (full image and congratulatory message).
+    *   Integrate reward system with quiz completion and scoring.
+2.  **Improve UI/UX**:
+    *   Implement the new color theme.
+    *   Enhance overall visual appeal and user experience.
+    *   Optimize for responsive design.
+    *   Address accessibility improvements.
+3.  **Bug Fixing**:
+    *   Continue to identify and resolve any remaining bugs.
+4.  **Testing & Polish**:
+    *   Thoroughly test all new features, UI changes, and bug fixes.
+5.  **Documentation**:
+    *   Update Memory Bank and any other relevant documentation.
 
 ## Active Decisions
-- **Unification:** Move away from separate contexts for each quiz type
-- **Encapsulation:** All state transitions (start, answer, reset, complete) will be handled by context methods
+- **Unification:** Move away from separate contexts for each quiz type (This decision might be revisited or deprioritized given the new focus).
+- **Encapsulation:** All state transitions (start, answer, reset, complete) will be handled by context methods (This decision might be revisited or deprioritized).
 - **Testing:** Pure logic functions will be tested in isolation
 
 ## Blockers/Questions
@@ -32,5 +48,5 @@
 - Plan for incremental migration to minimize disruption
 
 ## New Issues & Notes
-- Issue: When clicking 'Chọn Trắc Nghiệm I', the question is re-rendered (potential unnecessary rerender or state reset).
-- Implement reward function and UI should be done in a separate branch (not in current mainline work). 
+- The reward feature and UI/UX improvements are the primary focus. Refactoring remains deprioritized.
+- Ensure `lib/storage.ts` and its type definitions are reviewed to allow full persistence of `currentQuestion`, `userAnswers`, `startTime`, and `endTime` across sessions for `MultipleChoiceQuizContext` if this becomes a priority. Currently, `currentQuestion` in MCQ resets on new sessions due to type limitations during loading. 

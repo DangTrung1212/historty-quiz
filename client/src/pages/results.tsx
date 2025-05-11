@@ -18,6 +18,7 @@ export default function Results() {
     calculateScore: calculateMultipleChoiceScore, // Renamed to avoid conflict
     completeSection,
     sections,
+    resetSection, // Destructure resetSection
   } = useMultipleChoiceQuiz();
   const { dungSaiSection, calculateDungSaiScore, resetDungSaiSection } = useDungSaiQuiz(); // Get DungSaiQuiz context and add resetDungSaiSection
   // const { getImageRevealLevel, previousRevealLevel } = useProgress(); // Commented for fast release
@@ -103,8 +104,8 @@ export default function Results() {
   }
   const timeDisplay = isDungSai ? 'N/A' : `${(score as any).timeMinutes}:${(score as any).timeSeconds}`; // Cast to any
 
-  const nextSectionId = getNextSectionId(Number(sectionId));
-  const nextSection = getMultipleChoiceSection(nextSectionId); // Still use multiple choice context for next section
+  const nextSectionIdValue = getNextSectionId(Number(sectionId));
+  const nextQuizSection = getMultipleChoiceSection(nextSectionIdValue);
 
   return (
     <section className="min-h-screen p-6 bg-gray-50">
@@ -235,54 +236,45 @@ export default function Results() {
                   Làm lại
                 </Button>
               ) : (
-                <Link href={`/quiz/${sectionId}`} className="w-1/3">
-                  <Button
-                    variant="outline"
-                    className="w-full px-4 py-3 border border-gray-300 text-gray-700 font-medium"
-                  >
-                    Làm lại
-                  </Button>
-                </Link>
+                // MCQ "Làm lại" button
+                <Button
+                  variant="outline"
+                  className={`${nextQuizSection ? 'w-1/2' : 'w-full'} px-4 py-3 border border-gray-300 text-gray-700 font-medium`}
+                  onClick={() => {
+                    if (sectionId) {
+                      resetSection(Number(sectionId));
+                    }
+                    setLocation(`/quiz/${sectionId}`);
+                  }}
+                >
+                  Làm lại
+                </Button>
               )}
               
-              {nextSection ? (
-                <Link href={nextSection ? `/quiz/${nextSectionId}` : "/quiz-selection"} className="w-1/3">
+              {/* "Tiếp tục" button for MCQ only, if there's a next section */}
+              {!isDungSai && nextQuizSection && (
+                <Link href={`/quiz/${nextSectionIdValue}`} className="w-1/2">
                   <Button 
                     className="w-full px-4 py-3 bg-primary text-white font-medium"
                   >
                     Tiếp tục
                   </Button>
                 </Link>
-              ) : (
-                <>
-                {/*
-                <Link href="/reward" className="w-1/3">
-                  <Button 
-                    className="w-full px-4 py-3 bg-primary text-white font-medium"
-                  >
-                    Xem phần thưởng
-                  </Button>
-                </Link>
-                */}
-                </>
               )}
             </div>
           </div>
         </motion.div>
         
-        {/* Answer Review Component */}
         {showAnswers && (
           <motion.div 
             className="mb-6"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
           >
-            {/* Pass sectionId and isDungSai to AnswerReview */}
             <AnswerReview sectionId={Number(sectionId)} isDungSai={isDungSai} />
           </motion.div>
         )}
         
-        {/* Next Section Preview - Made Entire Section Clickable */}
         <motion.div 
           className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200"
           initial={{ opacity: 0, y: 20 }}
@@ -296,7 +288,8 @@ export default function Results() {
                 <Link key={section.id} href={`/quiz/${section.id}`} className="block">
                   <div className="flex items-center transition active:scale-95 active:bg-primary/10 rounded-lg cursor-pointer p-3 hover:bg-primary/5">
                     <div className="w-12 h-12 bg-white border border-gray-200 rounded-lg flex items-center justify-center mr-4">
-                      <i className="fas fa-flag text-primary text-xl"></i>
+                      {/* Placeholder for an icon, assuming you might add one later */}
+                      <span className="text-primary text-xl">📝</span> 
                     </div>
                     <div>
                       <h4 className="font-medium">{section.title}</h4>
@@ -312,8 +305,6 @@ export default function Results() {
           </div>
         </motion.div>
       </div>
-      {/* Progress Modal */}
-      {/* <ProgressModal open={showProgressModal} onOpenChange={setShowProgressModal} /> */}
     </section>
   );
 }
