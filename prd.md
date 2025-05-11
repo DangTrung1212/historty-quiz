@@ -102,14 +102,41 @@
 | [C] Fall of Saigon                                                 |
 | [D] Fall of Hanoi                                                  |
 ----------------------------------------------------------------------  
-```  
-**FRs:**  
-1. **Single-click answering**: Immediate validation & auto-save to localStorage on selection.  
-2. **← / → arrows** for **question navigation** (from Q1–Q10 or Q1–Q5 for Đúng Sai).  
-3. **[BACK]** button exits quiz and returns to Section Selection immediately.  
-4. Display:  
-   - Current **question number** (Q3/10 or Q3/5).  
-   - **Section name** in header.  
+```
+**For Trắc Nghiệm Đúng Sai:**  
+```plaintext
+----------------------------------------------------------------------
+| BACK      ←  [Q2/5]   →       |   Trắc Nghiệm Đúng Sai         |
+----------------------------------------------------------------------
+| Đọc đoạn tư liệu, chọn đúng hoặc sai                             |
+| [Collapsible/scrollable passage for long text]                   |
+|                                                                  |
+| a. Statement text                                                |
+|   [Đúng]   [Sai]   (user selection is visually highlighted)      |
+|                                                                  |
+| b. Statement text                                                |
+|   [Đúng]   [Sai]                                                 |
+|                                                                  |
+| ...                                                              |
+|                                                                  |
+| [TIẾP THEO] (if not last question)                               |
+| [NỘP BÀI] (if last question)                                     |
+----------------------------------------------------------------------  
+```
+**FRs (Functional Requirements) for Trắc Nghiệm Đúng Sai:**  
+1. Each question presents a passage and several statements (a, b, c, ...).
+2. For each statement, user selects "Đúng" or "Sai" (True/False).
+3. User selection is visually highlighted (e.g., button color), **no extra text** like "Bạn đã chọn: ...".
+4. No correct/incorrect feedback is shown until after the quiz is submitted.
+5. Navigation:
+   - Use **"TIẾP THEO"** button to proceed to the next question (if not last).
+   - Use **"NỘP BÀI"** button to submit answers (only on the last question).
+   - Navigation arrows (← / →) for moving between questions.
+6. Long passages are displayed in a **collapsible or scrollable container** for better readability.
+7. [BACK] button exits quiz and returns to Section Selection immediately.
+8. Display:
+   - Current **question number** (Q2/5).
+   - **Section name** in header.
 
 ---
 

@@ -34,10 +34,11 @@ export default function QuizSelection() {
           animate={{ opacity: 1, y: 0 }}
         >
           <h1 className="text-2xl font-bold text-primary">Chọn Phần Thi</h1>
-          <p className="text-gray-600">Hoàn thành mỗi phần với điểm ≥90% để mở khóa phần thưởng</p>
+          {/* <p className="text-gray-600">Hoàn thành mỗi phần với điểm ≥90% để mở khóa phần thưởng</p> */}
         </motion.header>
         
         {/* Progress Widget - New Card-based design */}
+        {/*
         <motion.div 
           className="mb-8"
           initial={{ opacity: 0, y: 20 }}
@@ -73,6 +74,7 @@ export default function QuizSelection() {
             </div>
           </div>
         </motion.div>
+        */}
         
         {/* Quiz Sections */}
         <motion.div 
