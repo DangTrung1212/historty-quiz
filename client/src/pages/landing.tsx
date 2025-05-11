@@ -34,7 +34,7 @@ export default function Landing() {
         </motion.div>
         
         {/* Features Preview */}
-        <motion.div 
+        {/* <motion.div 
           className="w-full mb-6"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -45,7 +45,7 @@ export default function Landing() {
             
             <div className="grid grid-cols-2 gap-4">
               {/* Feature 1 */}
-              <div className="bg-white rounded-xl shadow-md p-5 border border-gray-100 hover:shadow-lg transition-shadow duration-300">
+              {/* <div className="bg-white rounded-xl shadow-md p-5 border border-gray-100 hover:shadow-lg transition-shadow duration-300">
                 <div className="flex flex-col items-center text-center">
                   <div className="bg-blue-500 text-white p-3 rounded-lg mb-3 shadow-md">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
@@ -55,10 +55,10 @@ export default function Landing() {
                   <h4 className="font-bold text-gray-800 mb-1">4 phần thi đa dạng</h4>
                   <p className="text-sm text-gray-600">Khám phá nhiều chủ đề lịch sử Việt Nam</p>
                 </div>
-              </div>
+              // </div> */} 
               
               {/* Feature 2 */}
-              <div className="bg-white rounded-xl shadow-md p-5 border border-gray-100 hover:shadow-lg transition-shadow duration-300">
+              {/* <div className="bg-white rounded-xl shadow-md p-5 border border-gray-100 hover:shadow-lg transition-shadow duration-300">
                 <div className="flex flex-col items-center text-center">
                   <div className="bg-purple-500 text-white p-3 rounded-lg mb-3 shadow-md">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
@@ -68,10 +68,10 @@ export default function Landing() {
                   <h4 className="font-bold text-gray-800 mb-1">Mở khóa phần thưởng</h4>
                   <p className="text-sm text-gray-600">Hoàn thành để mở khóa nội dung đặc biệt</p>
                 </div>
-              </div>
-            </div>
+              </div> */}
+            {/* </div>
           </div>
-        </motion.div>
+        </motion.div> */}
         
         {/* Start Button - Enhanced */}
           <div className="mt-8">

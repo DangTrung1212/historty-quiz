@@ -2,6 +2,7 @@ import { createContext, useContext, useState, useCallback, ReactNode, useEffect 
 import { QuizSection } from '@/lib/quiz-data';
 import { saveProgress, loadProgress } from '@/lib/storage';
 import { useLocation } from 'wouter';
+import { calculateMultipleChoiceScore } from "../lib/quiz-multichoice";
 
 interface MultipleChoiceQuizContextType {
   sections: QuizSection[];
@@ -24,6 +25,7 @@ interface MultipleChoiceQuizContextType {
   };
   completeSection: (sectionId: number, score: number) => void;
   loadStoredProgress: () => void;
+  resetSection: (sectionId: number) => void;
 }
 
 const MultipleChoiceQuizContext = createContext<MultipleChoiceQuizContextType | undefined>(undefined);
@@ -95,17 +97,7 @@ export function MultipleChoiceQuizProvider({ children }: { children: ReactNode }
     if (!section) {
       return { correct: 0, incorrect: 0, total: 0, percent: 0, timeMinutes: '00', timeSeconds: '00' };
     }
-    let correct = 0;
-    let total = section.questions.length;
-    for (let i = 0; i < total; i++) {
-      const question = section.questions[i];
-      const userAnswer = sectionAnswers[i];
-      if (userAnswer && userAnswer === question.correctOptionId) {
-        correct++;
-      }
-    }
-    const incorrect = total - correct;
-    const percent = (correct / total) * 100;
+    const { correct, incorrect, total, percent } = calculateMultipleChoiceScore(section, sectionAnswers);
     const start = startTime[sectionId] || Date.now();
     const end = endTime[sectionId] || Date.now();
     const timeTakenMs = end - start;
@@ -152,6 +144,18 @@ export function MultipleChoiceQuizProvider({ children }: { children: ReactNode }
   const loadStoredProgress = useCallback(() => {
     // No need to restore questions, currentQuestion, or userAnswers
     // Only restore completed and score for each section if needed elsewhere
+  }, []);
+
+  const resetSection = useCallback((sectionId: number) => {
+    setUserAnswers(prev => ({
+      ...prev,
+      [sectionId]: {},
+    }));
+    setSections(prev => prev.map(section =>
+      section.id === sectionId
+        ? { ...section, currentQuestion: 0 }
+        : section
+    ));
   }, []);
 
   useEffect(() => {
@@ -250,7 +254,8 @@ export function MultipleChoiceQuizProvider({ children }: { children: ReactNode }
     goToPreviousQuestion,
     calculateScore,
     completeSection,
-    loadStoredProgress
+    loadStoredProgress,
+    resetSection,
   };
 
   return (
@@ -266,4 +271,4 @@ export function useMultipleChoiceQuiz() {
     throw new Error('useMultipleChoiceQuiz must be used within a MultipleChoiceQuizProvider');
   }
   return context;
-} 
+}
