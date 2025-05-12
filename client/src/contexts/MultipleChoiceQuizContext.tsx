@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, useCallback, ReactNode, useEffect } from 'react';
 import { QuizSection } from '@/lib/quiz-data';
-import { saveProgress, loadProgress } from '@/lib/storage';
+import { saveMcqProgress, loadMcqProgress } from '@/lib/storage';
 import { useLocation } from 'wouter';
 import { calculateMultipleChoiceScore } from "../lib/quiz-multichoice";
 
@@ -143,6 +143,7 @@ export function MultipleChoiceQuizProvider({ children }: { children: ReactNode }
         return section;
       });
       setCompletedSections(newSections.filter(s => s.completed).length);
+      console.log("[MCQContext] completeSection: Intentionally not saving to quiz_progress anymore.");
       return newSections;
     });
   }, []);
@@ -175,12 +176,12 @@ export function MultipleChoiceQuizProvider({ children }: { children: ReactNode }
   }, []);
 
   useEffect(() => {
-    // Based on linter errors, loadProgress() likely returns an object like { loadedSections: QuizSection[] | null } or null.
-    const progressStorage = loadProgress();
-    const loadedSectionsFromStorage = progressStorage?.loadedSections || [];
+    // Use loadMcqProgress for MCQ context
+    // const progressStorage = loadMcqProgress(); // Remove this load call
+    console.log("[MCQContext Init] Intentionally not loading from quiz_progress anymore for initial section setup.");
 
     // userAnswers, startTime, endTime will start empty or be populated by in-session activity,
-    // as we can't reliably load them with the current implied signature of loadProgress.
+    // as we can't reliably load them with the current implied signature of loadMcqProgress.
 
     async function fetchAndInitializeSections() {
       try {
@@ -228,19 +229,19 @@ export function MultipleChoiceQuizProvider({ children }: { children: ReactNode }
         ];
 
         const initializedSections = apiSectionsStructure.map(apiSection => {
-          const storedSectionInfo = loadedSectionsFromStorage.find((s: any) => s.id === apiSection.id);
-          // Linter indicates storedSectionInfo does not have .currentQuestion. So, default to 0.
-          // currentQuestion will be managed in-session and saved, but not loaded if type is strict.
+          // const storedSectionInfo = loadedSectionsFromStorage.find((s: any) => s.id === apiSection.id);
           return {
             ...apiSection, 
-            completed: storedSectionInfo?.completed || false,
-            score: storedSectionInfo?.score || 0,
-            currentQuestion: 0, // Default to 0 as it cannot be reliably loaded from storedSectionInfo per linter.
+            completed: false, // Default to false
+            score: 0,       // Default to 0
+            currentQuestion: 0, 
           };
         });
 
         setSections(initializedSections);
         setCompletedSections(initializedSections.filter(s => s.completed).length);
+        
+        // saveMcqProgress(minimalDataForInitialSave); // Remove this save call as well
 
       } catch (error) {
         console.error("Failed to fetch and initialize sections:", error);
@@ -250,14 +251,15 @@ export function MultipleChoiceQuizProvider({ children }: { children: ReactNode }
     if (sections.length === 0) {
       fetchAndInitializeSections();
     }
-  }, []); // Runs once on mount
+  }, [sections]); // sections dependency is to prevent re-fetch if already populated
 
   useEffect(() => {
     if (sections.length > 0) {
-      const hasProgressOrLoadedStructure = sections.some(s => s.completed || s.currentQuestion > 0 || (s.questions && s.questions.length > 0));
-      if (hasProgressOrLoadedStructure) {
-         saveProgress(sections); 
-      }
+      // const hasProgressOrLoadedStructure = sections.some(s => s.completed || s.currentQuestion > 0 || (s.questions && s.questions.length > 0));
+      // if (hasProgressOrLoadedStructure) {
+      //    saveMcqProgress(sections); 
+      // }
+      console.log("[MCQContext] Intentionally not saving full section data to localStorage anymore.");
     }
   }, [sections]); 
 

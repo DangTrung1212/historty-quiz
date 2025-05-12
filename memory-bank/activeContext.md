@@ -1,52 +1,35 @@
 # Active Context
 
 ## Current Focus
-- Implementing the reward feature.
-- Improving the application's UI and UX.
-- Continuing to address any outstanding bugs.
+- **Implement Progress Widget:** Design and implement the progress widget on the quiz selection page (`quiz-selection.tsx`).
+- **Integrate Reward Image:** Integrate the reward image slices/reveal mechanism directly into the new progress widget.
+- **Display Highest Scores:** Show the highest score achieved for each section in the UI (e.g., in the progress widget or on quiz selection cards).
 
 ## Recently Completed
-- Fixed state reset and navigation bugs for Đúng/Sai (DungSai) quiz
-- Fixed infinite render loop in DungSaiQuiz component
-- Made state reset logic consistent for all quiz types (retake, navigation, etc.)
-- Improved context provider placement and usage to avoid unmount/remount bugs
-- Decoupled navigation from state reset (using router hooks, not window.location)
-- Resolved MCQ re-render issue when starting a quiz (progress now persists within a session).
-- Updated MCQ answer review to always show explanations if available.
-- Fixed "Làm lại" button on results page to correctly reset MCQ quiz progress.
+- **DungSai Quiz Reset:** Fixed a bug where the DungSai quiz state (answers, current question) was not resetting when navigating back to it. Implemented a `useEffect` in `quiz.tsx` to call `resetDungSaiSection` when the DungSai section is loaded.
+- **Infinite Loop Fix (DungSai Reset):** Resolved a "Maximum update depth exceeded" error caused by the DungSai reset logic. This was fixed by wrapping functions in `DungSaiQuizContext` (like `resetDungSaiSection`) with `useCallback` to stabilize their references, preventing the `useEffect` in `quiz.tsx` from looping.
+- **Highest Score Tracking:** Enhanced `ProgressContext` to track and store the `highestScore` achieved for each quiz section in `overallQuizProgress` in Local Storage. Added a `getSectionHighestScore` accessor function.
+- **Local Storage Consolidation (In Progress):** Began consolidating Local Storage usage. `MultipleChoiceQuizContext` no longer saves its detailed state (questions, answers) to `quiz_progress`. The `overallQuizProgress` key (managed by `ProgressContext`) is now the primary source of truth for persistent reward-related progress.
 
 ## In Progress
-- Developing the reward system mechanics and UI.
-- Identifying areas for UI/UX enhancements (including color theme).
-- Ongoing bug fixing as issues are identified.
+- Finalizing Local Storage consolidation by removing now-unused storage functions related to `quiz_progress`.
+- Planning the UI and logic for the progress widget and its integration with the reward image.
 
 ## Next Steps
-1.  **Implement Reward Feature**:
-    *   Finalize image slice unlocking mechanism.
-    *   Develop the final reward screen (full image and congratulatory message).
-    *   Integrate reward system with quiz completion and scoring.
-2.  **Improve UI/UX**:
-    *   Implement the new color theme.
-    *   Enhance overall visual appeal and user experience.
-    *   Optimize for responsive design.
-    *   Address accessibility improvements.
-3.  **Bug Fixing**:
-    *   Continue to identify and resolve any remaining bugs.
-4.  **Testing & Polish**:
-    *   Thoroughly test all new features, UI changes, and bug fixes.
-5.  **Documentation**:
-    *   Update Memory Bank and any other relevant documentation.
+1.  **Implement Progress Widget UI** on `quiz-selection.tsx`.
+2.  **Integrate Reward Image Reveal** into the progress widget.
+    *   Logic to determine how many slices to show based on `ProgressContext.getImageRevealLevel()`.
+    *   Display corresponding image slices.
+3.  **Display Highest Scores** for each section (e.g., on quiz cards or in the widget) using `ProgressContext.getSectionHighestScore()`.
+4.  **Cleanup Unused Code:** Remove `saveMcqProgress`, `loadMcqProgress` from `storage.ts` and related imports in `MultipleChoiceQuizContext.tsx`.
+5.  **Thorough Testing** of the new widget, reward display, and overall quiz flow.
 
 ## Active Decisions
-- **Unification:** Move away from separate contexts for each quiz type (This decision might be revisited or deprioritized given the new focus).
-- **Encapsulation:** All state transitions (start, answer, reset, complete) will be handled by context methods (This decision might be revisited or deprioritized).
-- **Testing:** Pure logic functions will be tested in isolation
+- **Single Source of Truth for Progress:** `ProgressContext` and the `overallQuizProgress` Local Storage key are the definitive sources for completion status, high scores, and reward image reveal levels.
+- **Context Function Stability:** Ensure functions exposed by contexts are wrapped in `useCallback` with correct dependencies to prevent unnecessary re-renders and potential loops in consuming components.
 
 ## Blockers/Questions
-- Need to design a flexible data model for unified quiz state
-- Ensure backward compatibility with existing progress data if possible
-- Plan for incremental migration to minimize disruption
+- None currently.
 
 ## New Issues & Notes
-- The reward feature and UI/UX improvements are the primary focus. Refactoring remains deprioritized.
-- Ensure `lib/storage.ts` and its type definitions are reviewed to allow full persistence of `currentQuestion`, `userAnswers`, `startTime`, and `endTime` across sessions for `MultipleChoiceQuizContext` if this becomes a priority. Currently, `currentQuestion` in MCQ resets on new sessions due to type limitations during loading. 
+- The previous inability to select MCQ answers was likely a temporary side-effect of the infinite loop and should be re-verified as fixed. 

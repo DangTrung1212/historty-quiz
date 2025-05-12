@@ -1,10 +1,10 @@
 import React from 'react';
-import { useMultipleChoiceQuiz } from '@/contexts/MultipleChoiceQuizContext';
 import { useProgress } from '@/contexts/ProgressContext';
+import { useMultipleChoiceQuiz } from '@/contexts/MultipleChoiceQuizContext';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogClose } from '@/components/ui/dialog';
 import { Progress } from '@/components/ui/progress';
 import { Button } from '@/components/ui/button';
-import { X, Lock } from 'lucide-react';
+import { X, Lock, CheckCircle } from 'lucide-react';
 
 interface ProgressModalProps {
   open: boolean;
@@ -13,12 +13,13 @@ interface ProgressModalProps {
 }
 
 export default function ProgressModal({ open, onOpenChange, onOverlayClick }: ProgressModalProps) {
+  const { progress, getImageRevealLevel } = useProgress();
   const { sections } = useMultipleChoiceQuiz();
-  const { completedSections, getImageRevealLevel } = useProgress();
   
   const totalSections = sections.length;
-  const progressPercent = (completedSections / totalSections) * 100;
-  const revealLevel = getImageRevealLevel(sections);
+  const completedSections = Object.values(progress.sections).filter(s => s.completed).length;
+  const progressPercent = totalSections > 0 ? (completedSections / totalSections) * 100 : 0;
+  const revealLevel = getImageRevealLevel();
   
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
@@ -58,13 +59,13 @@ export default function ProgressModal({ open, onOpenChange, onOverlayClick }: Pr
                 alt="Mystery reward" 
                 className="w-full h-48 object-cover absolute top-0 left-0"
               />
-              {/* Overlay grid for 4 pieces */}
+              {/* Overlay grid - Use actual sections data */}
               <div className="absolute inset-0 grid grid-cols-2 grid-rows-2 w-full h-full">
-                {[0,1,2,3].map(idx => {
-                  const isRevealed = sections[idx]?.completed && sections[idx]?.score >= 90;
+                {sections.map((section, idx) => {
+                  const isRevealed = progress.sections[section.id]?.highScoreAchieved || false;
                   return (
                     <div
-                      key={idx}
+                      key={section.id}
                       className={`transition-all duration-700 ${isRevealed ? 'bg-transparent' : 'bg-black/60'} border border-white`}
                       style={{
                         opacity: isRevealed ? 0 : 1,
@@ -91,21 +92,32 @@ export default function ProgressModal({ open, onOpenChange, onOverlayClick }: Pr
           <div className="space-y-3">
             <h3 className="font-medium text-gray-800">Chi tiết các phần</h3>
             <div className="space-y-2 px-2 -mx-2">
-              {sections.map((section) => (
-                <div key={section.id} className="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50">
-                  <div className={`w-3 h-3 rounded-full flex-shrink-0 ${section.completed ? 'bg-success' : 'bg-gray-300'}`}></div>
-                  <div className="flex-1 text-sm font-medium text-gray-700">{section.title}</div>
-                  {section.completed ? (
-                    <div className="text-xs font-medium px-2 py-1 bg-green-50 text-green-600 rounded-full">
-                      {section.score}%
-                    </div>
-                  ) : (
-                    <div className="text-xs font-medium px-2 py-1 bg-gray-100 text-gray-500 rounded-full">
-                      Chưa hoàn thành
-                    </div>
-                  )}
-                </div>
-              ))}
+              {sections.map((section) => {
+                const status = progress.sections[section.id];
+                const isCompleted = status?.completed || false;
+                const highScoreAchieved = status?.highScoreAchieved || false;
+                return (
+                  <div key={section.id} className="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50">
+                    <div className={`w-3 h-3 rounded-full flex-shrink-0 ${isCompleted ? (highScoreAchieved ? 'bg-success' : 'bg-orange-400') : 'bg-gray-300'}`}></div>
+                    <div className="flex-1 text-sm font-medium text-gray-700">{section.title}</div>
+                    {isCompleted ? (
+                      highScoreAchieved ? (
+                        <div className="text-xs font-medium px-2 py-1 bg-green-100 text-green-700 rounded-full flex items-center gap-1">
+                          <CheckCircle className="w-3 h-3" /> Đạt yêu cầu
+                        </div>
+                      ) : (
+                        <div className="text-xs font-medium px-2 py-1 bg-orange-100 text-orange-700 rounded-full">
+                           Hoàn thành (chưa đạt)
+                        </div>
+                      )
+                    ) : (
+                      <div className="text-xs font-medium px-2 py-1 bg-gray-100 text-gray-500 rounded-full">
+                        Chưa hoàn thành
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
