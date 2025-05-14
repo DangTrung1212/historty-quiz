@@ -1,7 +1,7 @@
 # Project Progress
 
 ## Current Status
-The application is stable after resolving significant state management and lifecycle bugs. Focus is now shifting to implementing the core reward visualization (Progress Widget) and related UI enhancements.
+The application features a robust progress tracking and reward system. The primary focus is now on enhancing the user experience by showing immediate visual rewards (unlocked image pieces) on the quiz results page.
 
 ## What Works
 - Project structure is established with client/server architecture.
@@ -9,38 +9,43 @@ The application is stable after resolving significant state management and lifec
 - Component organization following modern React patterns.
 - Context API providers are set up for state management (`MultipleChoiceQuizContext`, `DungSaiQuizContext`, `ProgressContext`).
 - Tailwind CSS is configured for styling.
-- UI/UX for "Trắc Nghiệm Đúng Sai" section is implemented.
-- State reset and navigation logic is robust and consistent for all quiz types (retake, navigating away/back).
-- Infinite render loop bugs related to state updates and effect dependencies are fixed.
+- State reset and navigation logic is robust and consistent for all quiz types.
 - Retake logic is consistent and reliable for all quiz types.
 - MCQ answer review correctly shows explanations.
 - "Làm lại" button on results page correctly resets quiz progress.
-- **Overall Progress Tracking:** `ProgressContext` reliably tracks `completed`, `highScoreAchieved` (score >= 90%), and `highestScore` for each section.
-- **Persistent Progress:** `ProgressContext` saves and loads the overall progress state to Local Storage under the `overallQuizProgress` key.
+- **Overall Progress Tracking (`ProgressContext`):** Reliably tracks `completed`, `highScoreAchieved` (score >= 90%), and `highestScore` for each section, persisted to Local Storage (`overallQuizProgress`).
+- **Progress Modal (`ProgressModal.tsx`):**
+    - Displays a 3-part horizontal reward image corresponding to the three main quiz sections.
+    - Each part shows an image piece (blurred if not all complete, clear if all complete) or a locked status.
+    - Correctly uses actual section IDs (`'1'`, `'2'`, `'3'`) for accurate progress display.
+    - Provides a button to navigate to the `/reward` page upon full completion.
+- **Section Cards (`SectionCard.tsx`):**
+    - Now use `ProgressContext` to display persistent `highScoreAchieved` status (filled/empty star icon) and scores directly on the quiz selection page.
+- **Reward Page (`/reward` - `client/src/pages/reward.tsx`):**
+    - Displays the assembled 3-part reward image upon full completion.
+    - Contains a static, well-formatted congratulatory letter (no longer from `ProgressContext`).
+    - Includes confetti, badges, and action buttons (Share, Làm lại).
 - **DungSai Quiz Reset:** State correctly resets when navigating to the DungSai quiz page.
 
 ## What's Left to Build/Complete
-1. **Progress Widget & Reward Visualization**:
-   - Implement the Progress Widget UI on the quiz selection page (`quiz-selection.tsx`).
-   - Display the reward image within the widget, showing slices based on `ProgressContext.getImageRevealLevel()`.
-   - Display highest scores per section (e.g., in the widget or on quiz cards) using `ProgressContext.getSectionHighestScore()`.
+1.  **Display Unlocked Image on Results Page**:
+    *   When a user achieves a high score on a quiz, the results page for that section should immediately display the specific image piece they've unlocked.
 
-2. **UI & UX Enhancements**:
-   - Implement the planned new color theme across the application.
-   - Conduct a general UI review and implement improvements for visual appeal and intuitiveness.
-   - Optimize responsive design for various screen sizes.
-   - Review and implement accessibility improvements (ARIA attributes, keyboard navigation, etc.).
+2.  **UI & UX Enhancements (Ongoing/Future)**:
+    *   Implement the planned new color theme across the application (if applicable).
+    *   Conduct a general UI review and implement improvements for visual appeal and intuitiveness.
+    *   Optimize responsive design for various screen sizes.
+    *   Review and implement accessibility improvements.
 
-3. **Code Cleanup**:
-    - Remove unused Local Storage functions (`saveMcqProgress`, `loadMcqProgress`) from `lib/storage.ts` and related imports.
+3.  **Code Cleanup (Ongoing/Future)**:
+    *   Remove any unused Local Storage functions or old context logic if consolidation is fully complete.
 
-4. **Testing & Polish**:
-   - Address any remaining minor bugs or visual inconsistencies.
-   - Perform thorough testing of the progress widget, reward display, and overall quiz flow.
-   - Consider adding more unit/integration tests for new features.
+4.  **Testing & Polish (Ongoing/Future)**:
+    *   Thorough testing of new features and UI.
+    *   Consider adding more unit/integration tests.
 
 ## Known Issues
-- `currentQuestion` for MCQs resets on new browser sessions because `MultipleChoiceQuizContext` no longer persists this detailed state (this is now the intended behavior, focusing persistence on overall progress via `ProgressContext`).
+- `currentQuestion` for MCQs resets on new browser sessions (intended behavior as `MultipleChoiceQuizContext` no longer persists this detailed state).
 - Some code duplication and complexity due to separate quiz contexts (Refactoring remains deprioritized).
 
 ## Milestones
@@ -54,33 +59,26 @@ The application is stable after resolving significant state management and lifec
 - [x] Fix outstanding application bugs (major ones related to quiz state/navigation)
 - [x] Implement highest score tracking in `ProgressContext`
 - [x] Consolidate persistent progress storage to `overallQuizProgress` key
-- [ ] **Implement Progress Widget with Reward Image**
-- [ ] Implement new color theme
-- [ ] Conduct comprehensive UI/UX overhaul
-- [ ] Full testing of new features and UI
-- [ ] Cleanup unused storage code
+- [x] Implement Progress Modal with 3-part Reward Image & Navigation to full reward page
+- [x] Update Section Cards to reflect persistent high scores
+- [x] Refactor `/reward` page with static letter and 3-part image
+- [ ] **Display Unlocked Image Piece on Quiz Results Page**
+- [ ] Implement new color theme (if planned)
+- [ ] Conduct comprehensive UI/UX overhaul (if planned)
 
 ## Next Milestone Focus
-Implement the Progress Widget on the quiz selection page, including the reward image reveal and highest score display.
+Implement the display of the unlocked image piece on the quiz results page immediately after a high score is achieved for a section.
 
 ## Recently Completed
-- Fixed state reset bug for DungSai quiz upon navigation.
-- Fixed infinite render loop related to DungSai quiz reset.
-- Wrapped context functions in `useCallback` to stabilize references.
-- Implemented `highestScore` tracking in `ProgressContext`.
-- Consolidated persistent progress tracking to `overallQuizProgress`, removing saves from `MultipleChoiceQuizContext`.
+- Updated `ProgressModal.tsx` to use a 3-part horizontal reward display with correct section ID mapping (`'1', '2', '3'`) and navigation to the final reward page.
+- Updated `SectionCard.tsx` to use `ProgressContext` for displaying persistent high score status (star icon) and scores.
+- Refactored the `/reward` page (`client/src/pages/reward.tsx`) to use a static congratulatory letter and display the 3-part assembled reward image.
+- Deleted redundant `RewardPage.tsx`.
 
 ## In Progress
-- Implementing the Progress Widget and integrating reward image display.
-
-## Next Steps
-1. **Implement Progress Widget UI & Logic** (integrating image slices and highest scores).
-2. **Cleanup `lib/storage.ts`**.
-3. **Improve UI/UX** (color theme, responsiveness, accessibility).
-4. **Testing & Polish**.
-5. **Update Documentation** (Memory Bank).
+- Planning and starting implementation for displaying the specific unlocked image piece on the quiz results page.
 
 ## Active Decisions
-- **Prioritization:** Focus is now on the Progress Widget and reward visualization.
+- **Prioritization:** Focus is on showing immediate reward feedback on the results page.
 - **Progress State:** `ProgressContext` / `overallQuizProgress` is the single source of truth for persistent progress.
-- **State Reset:** Component-level `useEffect` (like in `quiz.tsx`) is used for state resets triggered by navigation/mounting.
+- **Static Content:** Presentational text like the reward letter is best kept within page components.

@@ -10,6 +10,15 @@ import { Trophy, Check, Eye, ChevronRight, X as XIcon } from "lucide-react";
 import AnswerReview from "@/components/answer-review";
 import ProgressModal from '@/components/progress-modal';
 
+// Define image sources and ordered section IDs for reward parts
+// (Consider centralizing these if used in multiple places)
+const rewardImageParts = [
+  '/assets/images/reward/modal-part1.png', 
+  '/assets/images/reward/modal-part2.png', 
+  '/assets/images/reward/modal-part3.png', 
+];
+const orderedSectionIds = ['1', '2', '3'];
+
 export default function Results() {
   const { sectionId } = useParams();
   const sectionIdNum = Number(sectionId);
@@ -69,6 +78,7 @@ export default function Results() {
   // State for managing reward unlock effect
   const [unlocked, setUnlocked] = useState(false);
   const [showRewardNavigation, setShowRewardNavigation] = useState(false);
+  const [newlyUnlockedImageIndex, setNewlyUnlockedImageIndex] = useState<number | null>(null);
   
   // State to track if the effect has run for the *current* score calculation
   const [effectCompletedForScore, setEffectCompletedForScore] = useState<number | null>(null);
@@ -115,6 +125,12 @@ export default function Results() {
       if (newSliceUnlocked && !finalCompletion) {
         setUnlocked(true);
         setShowProgressModal(true);
+        // Determine and set the newly unlocked image index
+        const currentSectionStringId = String(sectionIdNum);
+        const imageIndex = orderedSectionIds.indexOf(currentSectionStringId);
+        if (imageIndex !== -1 && isPassed) { // isPassed check to ensure it's a successful unlock
+          setNewlyUnlockedImageIndex(imageIndex);
+        }
       }
       if (finalCompletion) {
         setShowRewardNavigation(true);
@@ -213,6 +229,25 @@ export default function Results() {
                 ? 'Bạn đã vượt qua phần thi này!'
                 : 'Bạn chưa đạt điểm tối thiểu. Hãy thử lại để cải thiện kết quả.'}
             </p>
+            
+            {/* Display newly unlocked image piece */}
+            {isPassed && newlyUnlockedImageIndex !== null && rewardImageParts[newlyUnlockedImageIndex] && (
+              <motion.div
+                className="my-6 p-4 border-2 border-yellow-400 rounded-lg shadow-lg bg-yellow-50"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.5, duration: 0.5 }}
+              >
+                <h3 className="text-lg font-semibold text-yellow-700 mb-2 text-center">
+                  Mảnh ghép mới đã được mở khóa!
+                </h3>
+                <img 
+                  src={rewardImageParts[newlyUnlockedImageIndex]} 
+                  alt={`Mảnh ghép phần thưởng ${newlyUnlockedImageIndex + 1}`}
+                  className="rounded-md mx-auto max-h-48 object-contain shadow-md"
+                />
+              </motion.div>
+            )}
             
             {/* Score */}
             <div className="flex justify-center mb-6">

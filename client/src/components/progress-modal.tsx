@@ -1,10 +1,11 @@
 import React from 'react';
 import { useProgress } from '@/contexts/ProgressContext';
 import { useMultipleChoiceQuiz } from '@/contexts/MultipleChoiceQuizContext';
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogClose } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogClose } from '@/components/ui/dialog';
 import { Progress } from '@/components/ui/progress';
+import { X, Lock, CheckCircle, Gift } from 'lucide-react';
+import { Link } from 'wouter';
 import { Button } from '@/components/ui/button';
-import { X, Lock, CheckCircle } from 'lucide-react';
 
 interface ProgressModalProps {
   open: boolean;
@@ -12,19 +13,37 @@ interface ProgressModalProps {
   onOverlayClick?: () => void;
 }
 
+// Define the ordered section IDs for the 3-part reward display
+const orderedSectionIds = ['1', '2', '3'];
+
+// Define image sources for each reward part
+const rewardImageParts = [
+  '/assets/images/reward/modal-part1.png', // Corresponds to orderedSectionIds[0]
+  '/assets/images/reward/modal-part2.png', // Corresponds to orderedSectionIds[1]
+  '/assets/images/reward/modal-part3.png', // Corresponds to orderedSectionIds[2]
+];
+
 export default function ProgressModal({ open, onOpenChange, onOverlayClick }: ProgressModalProps) {
-  const { progress, getImageRevealLevel } = useProgress();
-  const { sections } = useMultipleChoiceQuiz();
+  const { progress } = useProgress();
+  const { sections: allQuizSections } = useMultipleChoiceQuiz();
   
-  const totalSections = sections.length;
-  const completedSections = Object.values(progress.sections).filter(s => s.completed).length;
-  const progressPercent = totalSections > 0 ? (completedSections / totalSections) * 100 : 0;
-  const revealLevel = getImageRevealLevel();
+  const totalQuizSections = allQuizSections.length;
+  const completedOverallSections = totalQuizSections > 0 ? Object.values(progress.sections).filter(s => s.completed).length : 0;
+  const progressPercent = totalQuizSections > 0 ? (completedOverallSections / totalQuizSections) * 100 : 0;
+
+  // Calculate status for the 3 reward sections
+  const rewardSectionStatuses = orderedSectionIds.map(sectionId => {
+    // Forcefully treat progress.sections as a Record<string, any> for indexing
+    const sectionProg = (progress.sections as Record<string, { highScoreAchieved?: boolean } | undefined>)[sectionId];
+    return sectionProg?.highScoreAchieved || false;
+  });
+  
+  const unlockedRewardCount = rewardSectionStatuses.filter(Boolean).length;
+  const allRewardsUnlocked = unlockedRewardCount === orderedSectionIds.length && orderedSectionIds.length > 0;
   
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-md p-0 gap-0 overflow-hidden max-h-[80vh] overflow-y-auto">
-        {/* Header with background */}
         <div className="bg-primary/5 p-6 pb-4 relative sticky top-0 z-10 shadow-sm">
           <DialogClose className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
             <X className="h-4 w-4" />
@@ -35,12 +54,11 @@ export default function ProgressModal({ open, onOpenChange, onOverlayClick }: Pr
         </div>
         
         <div className="p-6 space-y-6 pt-2">
-          {/* Overall Progress */}
           <div className="space-y-3">
             <div className="flex justify-between items-center mb-1">
               <h3 className="font-medium text-gray-800">Tiến độ tổng quan</h3>
               <div className="bg-primary/10 text-primary rounded-full px-3 py-1 text-sm font-medium">
-                {completedSections}/{totalSections}
+                {completedOverallSections}/{totalQuizSections}
               </div>
             </div>
             <Progress 
@@ -50,49 +68,65 @@ export default function ProgressModal({ open, onOpenChange, onOverlayClick }: Pr
             <p className="text-xs text-gray-500 italic">Hoàn thành tất cả các phần để mở khóa hoàn toàn phần thưởng</p>
           </div>
           
-          {/* Mystery Image Preview */}
           <div className="space-y-3">
             <h3 className="font-medium text-gray-800">Phần thưởng bí mật</h3>
-            <div className="relative rounded-lg overflow-hidden border border-gray-200 bg-gray-50 w-full h-48">
-              <img 
-                src="https://images.unsplash.com/photo-1635476654563-9e4694de1e1e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                alt="Mystery reward" 
-                className="w-full h-48 object-cover absolute top-0 left-0"
-              />
-              {/* Overlay grid - Use actual sections data */}
-              <div className="absolute inset-0 grid grid-cols-2 grid-rows-2 w-full h-full">
-                {sections.map((section, idx) => {
-                  const isRevealed = progress.sections[section.id]?.highScoreAchieved || false;
-                  return (
-                    <div
-                      key={section.id}
-                      className={`transition-all duration-700 ${isRevealed ? 'bg-transparent' : 'bg-black/60'} border border-white`}
-                      style={{
-                        opacity: isRevealed ? 0 : 1,
-                        transitionDelay: isRevealed ? `${idx * 0.2}s` : '0s',
-                      }}
-                    />
-                  );
-                })}
-              </div>
-              {revealLevel < 100 && (
-                <div className="absolute inset-0 flex items-center justify-center bg-black/30" style={{ cursor: onOverlayClick ? 'pointer' : undefined }} onClick={onOverlayClick}>
-                  <div className="bg-black/50 rounded-full p-4">
-                    <Lock className="h-6 w-6 text-white" />
+            <div className="relative border-2 border-gray-300 rounded-md overflow-hidden shadow-md">
+              <div className="flex h-32 bg-gray-800">
+                {rewardSectionStatuses.map((isUnlocked, index) => (
+                  <div 
+                    key={orderedSectionIds[index]}
+                    className={`flex items-center justify-center text-center transition-all duration-300
+                      w-1/3 overflow-hidden relative PreventImageOverflowIfTooLarge
+                      ${isUnlocked 
+                        ? 'bg-gray-700' 
+                        : 'bg-gray-900 text-gray-400' 
+                      }
+                      ${index < orderedSectionIds.length - 1 ? 'border-r border-gray-600' : ''} 
+                    `}
+                  >
+                    {isUnlocked ? (
+                      <img 
+                        src={rewardImageParts[index]} 
+                        alt={`Phần thưởng ${index + 1}`}
+                        className={`w-full h-full object-cover transition-all duration-500 ease-in-out 
+                          ${!allRewardsUnlocked ? 'filter blur-md' : 'filter blur-none'}`}
+                      />
+                    ) : (
+                      <div className="p-2 flex flex-col items-center">
+                        <Lock className="w-6 h-6 mb-1 text-gray-500" />
+                        <span className="text-sm font-medium block text-gray-400">Chưa mở khóa</span>
+                      </div>
+                    )}
                   </div>
+                ))}
+              </div>
+              
+              {!allRewardsUnlocked && (
+                 <div className="absolute bottom-1 right-1 bg-blue-600 text-white text-xs px-2 py-1 rounded-md font-semibold shadow">
+                    {unlockedRewardCount}/{orderedSectionIds.length} đã mở khóa
+                 </div>
+              )}
+              
+              {allRewardsUnlocked && (
+                <div className="absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-r from-green-500 to-blue-500 bg-opacity-90 p-4">
+                  <Gift className="w-12 h-12 text-yellow-300 mb-3" />
+                  <p className="text-white font-bold text-xl text-center px-4 mb-4">
+                    Chúc mừng! Bạn đã mở khóa toàn bộ phần thưởng!
+                  </p>
+                  <Link href="/reward" onClick={() => onOpenChange(false)}>
+                    <Button className="bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-semibold py-2 px-6 rounded-lg shadow-lg text-base">
+                      Xem Thư & Phần Thưởng Đầy Đủ
+                    </Button>
+                  </Link>
                 </div>
               )}
-              <div className="absolute bottom-3 right-3 bg-primary text-white px-3 py-1.5 rounded-full text-xs font-medium shadow-sm">
-                {revealLevel}% đã mở khóa
-              </div>
             </div>
           </div>
           
-          {/* Sections Progress */}
           <div className="space-y-3">
             <h3 className="font-medium text-gray-800">Chi tiết các phần</h3>
             <div className="space-y-2 px-2 -mx-2">
-              {sections.map((section) => {
+              {allQuizSections.map((section) => {
                 const status = progress.sections[section.id];
                 const isCompleted = status?.completed || false;
                 const highScoreAchieved = status?.highScoreAchieved || false;
