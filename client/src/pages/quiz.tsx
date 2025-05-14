@@ -13,12 +13,30 @@ import { useDungSaiQuiz } from "@/contexts/DungSaiQuizContext";
 
 export default function Quiz() {
   const { sectionId } = useParams();
+  const sectionIdNum = Number(sectionId); // Get numeric ID
   const [, setLocation] = useLocation();
   const { sections, getCurrentSection, startQuiz, answerQuestion, goToPreviousQuestion, userAnswers, resetSection } = useMultipleChoiceQuiz();
-  const { dungSaiSection, setDungSaiSection, isCurrentQuestionAnswered, answerDungSaiQuestion } = useDungSaiQuiz(); // Added answerDungSaiQuestion
+  const { 
+    dungSaiSection, 
+    setDungSaiSection, 
+    isCurrentQuestionAnswered, 
+    answerDungSaiQuestion, 
+    resetDungSaiSection // Import reset function
+  } = useDungSaiQuiz(); 
   
-  const currentSection = getCurrentSection(Number(sectionId));
+  const currentSection = getCurrentSection(sectionIdNum);
   const isDungSai = currentSection?.title === "Trắc Nghiệm Đúng Sai";
+
+  // Effect to reset DungSai state when navigating to section 3
+  useEffect(() => {
+    if (isDungSai) {
+      console.log("[Quiz Page Effect] Resetting DungSai section state.");
+      resetDungSaiSection();
+    }
+    // Add dependencies: sectionIdNum to re-run if the section changes,
+    // isDungSai to ensure the check is up-to-date,
+    // resetDungSaiSection as it's called within the effect.
+  }, [sectionIdNum, isDungSai, resetDungSaiSection]);
 
   const currentQuestionIndex = isDungSai ? dungSaiSection?.currentQuestion || 0 : currentSection?.currentQuestion || 0;
   const totalQuestions = isDungSai ? dungSaiSection?.questions.length || 0 : currentSection?.questions.length || 0;
@@ -65,15 +83,27 @@ export default function Quiz() {
   
   const question = currentSection.questions[currentQuestionIndex];
   
+  // --- TESTING LOG --- Log current MCQ question data
+  if (!isDungSai && question) {
+    console.log(`[TEST] Current MCQ Question (${currentQuestionIndex+1}):`, question);
+    console.log(`[TEST] Correct Option ID: ${question.correctOptionId}`);
+  }
+  // --- END TESTING LOG ---
+  
   const statements = question.options.map(opt => ({
     id: opt.id,
     label: opt.text
   }));
   
   const handleOptionSelect = (optionId: string) => {
+    console.log(`[MCQ Click] handleOptionSelect called with optionId: ${optionId}`);
     setSelectedOption(optionId);
     
-    // Short delay before moving to next question to show the selection
+    // --- TESTING LOG --- Log selected vs correct MCQ answer
+    console.log(`[TEST] User selected MCQ Option ID: ${optionId}`);
+    console.log(`[TEST] Correct Option ID for question ${currentQuestionIndex+1} was: ${question.correctOptionId}`);
+    // --- END TESTING LOG ---
+    
     setTimeout(() => {
       answerQuestion(currentSection.id, currentQuestionIndex, optionId);
       
@@ -136,6 +166,10 @@ export default function Quiz() {
   let dsQuestion = null;
   if (isDungSai && dungSaiSection) {
     dsQuestion = dungSaiSection.questions[currentQuestionIndex];
+    // --- TESTING LOG --- Log current DungSai question data
+    console.log(`[TEST] Current DungSai Question (${currentQuestionIndex+1}):`, dsQuestion);
+    console.log(`[TEST] Correct Map:`, dsQuestion.correctMap);
+    // --- END TESTING LOG ---
   }
   
   return (
@@ -198,6 +232,10 @@ export default function Quiz() {
             statements={Object.entries(dsQuestion.statements).map(([id, label]) => ({ id, label }))}
             onBack={handlePrev}
             onNext={(answers) => {
+              // --- TESTING LOG --- Log selected vs correct DungSai answers
+              console.log(`[TEST] User submitted DungSai Answers for question ${currentQuestionIndex+1}:`, answers);
+              console.log(`[TEST] Correct Map for question ${currentQuestionIndex+1} was:`, dsQuestion.correctMap);
+              // --- END TESTING LOG ---
               answerDungSaiQuestion(currentQuestionIndex, answers);
               if (currentQuestionIndex >= dungSaiSection!.questions.length - 1) {
                 setPendingAnswers(answers);

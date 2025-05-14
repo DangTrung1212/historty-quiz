@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, useCallback, ReactNode, useEffect } from 'react';
 import { QuizSection } from '@/lib/quiz-data';
-import { saveProgress, loadProgress } from '@/lib/storage';
+import { saveMcqProgress, loadMcqProgress } from '@/lib/storage';
 import { useLocation } from 'wouter';
 import { calculateMultipleChoiceScore } from "../lib/quiz-multichoice";
 
@@ -36,7 +36,7 @@ export function MultipleChoiceQuizProvider({ children }: { children: ReactNode }
   const [startTime, setStartTime] = useState<Record<number, number>>({});
   const [endTime, setEndTime] = useState<Record<number, number>>({});
   const [completedSections, setCompletedSections] = useState(0);
-  const [location] = useLocation();
+  // const [location] = useLocation(); // No longer needed for the main data loading effect
 
   const getCurrentSection = useCallback((sectionId: number) => {
     return sections.find(section => section.id === sectionId);
@@ -51,16 +51,33 @@ export function MultipleChoiceQuizProvider({ children }: { children: ReactNode }
   }, [sections]);
 
   const startQuiz = useCallback((sectionId: number) => {
+    setSections(prevSections =>
+      prevSections.map(section => {
+        if (section.id === sectionId) {
+          // Only reset to question 0 if it's effectively a new start.
+          // A simple check: if there are no user answers for this section yet.
+          const sectionAnswers = userAnswers[sectionId];
+          const isNewStart = !sectionAnswers || Object.keys(sectionAnswers).length === 0;
+
+          return {
+            ...section,
+            // Only set currentQuestion to 0 if it's a truly new start.
+            // If answers exist, user is likely returning, so preserve currentQuestion.
+            // If currentQuestion is already 0 and no answers, this is fine.
+            // Ensure currentQuestion is at least 0 if it was undefined.
+            currentQuestion: isNewStart ? 0 : (section.currentQuestion || 0),
+          };
+        }
+        return section;
+      })
+    );
+
+    // Set/update startTime regardless, as visiting the page implies activity.
     setStartTime(prev => ({
       ...prev,
       [sectionId]: Date.now()
     }));
-    setSections(prev => prev.map(section =>
-      section.id === sectionId
-        ? { ...section, currentQuestion: 0 }
-        : section
-    ));
-  }, []);
+  }, [userAnswers]);
 
   const answerQuestion = useCallback((sectionId: number, questionIndex: number, optionId: string) => {
     setUserAnswers(prev => ({
@@ -126,7 +143,7 @@ export function MultipleChoiceQuizProvider({ children }: { children: ReactNode }
         return section;
       });
       setCompletedSections(newSections.filter(s => s.completed).length);
-      saveProgress(newSections);
+      console.log("[MCQContext] completeSection: Intentionally not saving to quiz_progress anymore.");
       return newSections;
     });
   }, []);
@@ -159,87 +176,92 @@ export function MultipleChoiceQuizProvider({ children }: { children: ReactNode }
   }, []);
 
   useEffect(() => {
-    const { loadedSections } = loadProgress();
-    async function fetchAndSetDynamicSections() {
-      const res1 = await fetch("/api/questions/combined/trac_nghiem_1");
-      const questions1 = await res1.json();
-      const res2 = await fetch("/api/questions/combined/trac_nghiem_2");
-      const questions2 = await res2.json();
-      const res3 = await fetch("/api/questions/combined/trac_nghiem_dung_sai");
-      const questions3 = await res3.json();
-      const newSections = [
-        {
-          id: 1,
-          title: "Trắc Nghiệm 1",
-          questions: questions1.map((q: any, idx: number) => ({
-            id: idx + 1,
-            text: q.question_text,
-            options: Object.entries(q.options).map(([key, value]) => ({
-              id: key,
-              text: value
+    // Use loadMcqProgress for MCQ context
+    // const progressStorage = loadMcqProgress(); // Remove this load call
+    console.log("[MCQContext Init] Intentionally not loading from quiz_progress anymore for initial section setup.");
+
+    // userAnswers, startTime, endTime will start empty or be populated by in-session activity,
+    // as we can't reliably load them with the current implied signature of loadMcqProgress.
+
+    async function fetchAndInitializeSections() {
+      try {
+        const res1 = await fetch("/api/questions/combined/trac_nghiem_1");
+        const questions1 = await res1.json();
+        const res2 = await fetch("/api/questions/combined/trac_nghiem_2");
+        const questions2 = await res2.json();
+        const res3 = await fetch("/api/questions/combined/trac_nghiem_dung_sai");
+        const questions3 = await res3.json();
+        
+        const apiSectionsStructure = [
+          {
+            id: 1,
+            title: "Trắc Nghiệm 1",
+            questions: questions1.map((q: any, idx: number) => ({
+              id: idx + 1,
+              text: q.question_text,
+              options: Object.entries(q.options).map(([key, value]) => ({ id: key, text: value as string })),
+              correctOptionId: q.correct_answer,
+              explanation: q.explanation?.solution
             })),
-            correctOptionId: q.correct_answer
-          })),
-          completed: false,
-          score: 0,
-          currentQuestion: 0,
-        },
-        {
-          id: 2,
-          title: "Trắc Nghiệm 2",
-          questions: questions2.map((q: any, idx: number) => ({
-            id: idx + 1,
-            text: q.question_text,
-            options: Object.entries(q.options).map(([key, value]) => ({
-              id: key,
-              text: value
+          },
+          {
+            id: 2,
+            title: "Trắc Nghiệm 2",
+            questions: questions2.map((q: any, idx: number) => ({
+              id: idx + 1,
+              text: q.question_text,
+              options: Object.entries(q.options).map(([key, value]) => ({ id: key, text: value as string })),
+              correctOptionId: q.correct_answer,
+              explanation: q.explanation?.solution
             })),
-            correctOptionId: q.correct_answer
-          })),
-          completed: false,
-          score: 0,
-          currentQuestion: 0,
-        },
-        {
-          id: 3,
-          title: "Trắc Nghiệm Đúng Sai",
-          questions: questions3.map((q: any, idx: number) => ({
-            id: idx + 1,
-            text: q.question,
-            options: Object.entries(q.statements).map(([key, value]) => ({
-              id: key,
-              text: value
+          },
+          {
+            id: 3,
+            title: "Trắc Nghiệm Đúng Sai",
+            questions: questions3.map((q: any, idx: number) => ({
+              id: idx + 1,
+              text: q.question, 
+              options: Object.entries(q.statements).map(([key, value]) => ({ id: key, text: value as string })), 
+              correctOptionId: q.answer_boolean_map, 
+              explanationMap: q.explanation_map
             })),
-            correctOptionId: q.answer_boolean_map,
-            explanationMap: q.explanation_map
-          })),
-          completed: false,
-          score: 0,
-          currentQuestion: 0,
-        }
-      ];
-      if (loadedSections && loadedSections.length > 0) {
-        const mergedSections = newSections.map((section) => {
-          const existing = loadedSections.find((s: any) => s.id === section.id);
-          if (existing) {
-            return {
-              ...section,
-              completed: existing.completed,
-              score: existing.score,
-              currentQuestion: 0,
-            };
           }
-          return section;
+        ];
+
+        const initializedSections = apiSectionsStructure.map(apiSection => {
+          // const storedSectionInfo = loadedSectionsFromStorage.find((s: any) => s.id === apiSection.id);
+          return {
+            ...apiSection, 
+            completed: false, // Default to false
+            score: 0,       // Default to 0
+            currentQuestion: 0, 
+          };
         });
-        setSections(mergedSections);
-        setCompletedSections(mergedSections.filter(s => s.completed).length);
-      } else {
-        setSections(newSections);
-        setCompletedSections(0);
+
+        setSections(initializedSections);
+        setCompletedSections(initializedSections.filter(s => s.completed).length);
+        
+        // saveMcqProgress(minimalDataForInitialSave); // Remove this save call as well
+
+      } catch (error) {
+        console.error("Failed to fetch and initialize sections:", error);
       }
     }
-    fetchAndSetDynamicSections();
-  }, [location]);
+
+    if (sections.length === 0) {
+      fetchAndInitializeSections();
+    }
+  }, [sections]); // sections dependency is to prevent re-fetch if already populated
+
+  useEffect(() => {
+    if (sections.length > 0) {
+      // const hasProgressOrLoadedStructure = sections.some(s => s.completed || s.currentQuestion > 0 || (s.questions && s.questions.length > 0));
+      // if (hasProgressOrLoadedStructure) {
+      //    saveMcqProgress(sections); 
+      // }
+      console.log("[MCQContext] Intentionally not saving full section data to localStorage anymore.");
+    }
+  }, [sections]); 
 
   const value = {
     sections,

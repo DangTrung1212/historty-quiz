@@ -5,66 +5,144 @@ import { useProgress } from "@/contexts/ProgressContext";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { Trophy, Check, Eye, ChevronRight, X as XIcon } from "lucide-react";
 import AnswerReview from "@/components/answer-review";
 import ProgressModal from '@/components/progress-modal';
 
 export default function Results() {
   const { sectionId } = useParams();
+  const sectionIdNum = Number(sectionId);
   const { 
-    getCurrentSection: getMultipleChoiceSection, // Renamed to avoid conflict
+    sections, 
+    getCurrentSection: getMultipleChoiceSection,
     getNextSectionId, 
-    calculateScore: calculateMultipleChoiceScore, // Renamed to avoid conflict
+    calculateScore: calculateMultipleChoiceScore,
     completeSection,
-    sections,
+    resetSection,
   } = useMultipleChoiceQuiz();
-  const { dungSaiSection, calculateDungSaiScore, resetDungSaiSection } = useDungSaiQuiz(); // Get DungSaiQuiz context and add resetDungSaiSection
-  // const { getImageRevealLevel, previousRevealLevel } = useProgress(); // Commented for fast release
+  const { 
+    dungSaiSection, 
+    calculateDungSaiScore, 
+    resetDungSaiSection, 
+    completeDungSaiSection,
+  } = useDungSaiQuiz(); 
+  const { 
+    updateSectionProgress,
+    getImageRevealLevel, 
+    allSectionsCompleted, 
+    getSectionStatus,
+  } = useProgress();
   const [, setLocation] = useLocation();
   
   const [showAnswers, setShowAnswers] = useState(false);
   const [showProgressModal, setShowProgressModal] = useState(false);
-  
-  const currentSection = getMultipleChoiceSection(Number(sectionId));
-  const isDungSai = currentSection?.title === "Trắc Nghiệm Đúng Sai";
-  console.log("Results Page: isDungSai", isDungSai); // Log isDungSai
 
-  // Conditionally get section data and calculate score based on quiz type
-  const sectionData = isDungSai ? dungSaiSection : currentSection;
-  const score = isDungSai ? calculateDungSaiScore() : calculateMultipleChoiceScore(Number(sectionId));
-  console.log("Results Page: Score", score); // Log score
-  if (isDungSai) {
-    console.log("DungSaiQuiz: dungSaiSection", dungSaiSection);
-    console.log("DungSaiQuiz: userAnswers", dungSaiSection?.userAnswers);
-    console.log("DungSaiQuiz: questions", dungSaiSection?.questions);
-  }
-  const scorePercent = Math.round(isDungSai ? score : (score as any).percent); // Score is already percent for DungSai
-  console.log("Results Page: Score Percent", scorePercent); // Log scorePercent
+  // Determine if the current section is DungSai based on ID or potentially title from sections array
+  // Use useMemo to stabilize this value if sections array reference is stable
+  const isDungSai = useMemo(() => {
+      // Section 3 is assumed to be DungSai based on previous context
+      return sectionIdNum === 3; 
+      // Alternatively, find title if needed, but ID is more stable:
+      // const foundSection = sections.find(s => s.id === sectionIdNum);
+      // return foundSection?.title === "Trắc Nghiệm Đúng Sai";
+  }, [sectionIdNum]); // Depend only on sectionIdNum
+
+  // Get section data - useMemo might help stabilize references if contexts are stable
+  const sectionData = useMemo(() => {
+    return isDungSai ? dungSaiSection : getMultipleChoiceSection(sectionIdNum);
+  }, [isDungSai, dungSaiSection, getMultipleChoiceSection, sectionIdNum]);
+
+  // Calculate score - useMemo to stabilize
+  const scoreResult = useMemo(() => {
+     console.log("[Results] Recalculating score..."); // Log score calculation
+     return isDungSai ? calculateDungSaiScore() : calculateMultipleChoiceScore(sectionIdNum);
+  }, [isDungSai, calculateDungSaiScore, calculateMultipleChoiceScore, sectionIdNum, dungSaiSection]); // Add dungSaiSection as dependency if needed
   
-  // Pass compatible section data to getImageRevealLevel
-  // const sectionsForReveal = sectionData ? [{ 
-  //   id: Number(sectionId), 
-  //   title: currentSection?.title || '',
-  //   questions: sectionData.questions, // Include questions
-  //   completed: sectionData.completed, // Include completed
-  //   score: sectionData.score, // Include score
-  //   currentQuestion: isDungSai ? (sectionData as any).currentQuestion : currentSection?.currentQuestion || 0 // Include currentQuestion
-  // }] : [];
-  // const currentRevealLevel = getImageRevealLevel(sectionsForReveal as any); // Cast to any for now, will fix type later
+  const scorePercent = useMemo(() => Math.round(isDungSai ? scoreResult : (scoreResult as any).percent), [isDungSai, scoreResult]);
+  const isPassed = useMemo(() => scorePercent >= 90, [scorePercent]);
+
+  // Get progress *before* potential update - memoize if functions are stable
+  const oldRevealLevel = useMemo(() => getImageRevealLevel(), [getImageRevealLevel]);
+  const wasAlreadyCompleted = useMemo(() => allSectionsCompleted(), [allSectionsCompleted]);
   
-  // const unlocked = scorePercent >= 90 && currentRevealLevel > previousRevealLevel; // Commented for fast release
-  const isPassed = scorePercent >= 90;
+  // State for managing reward unlock effect
+  const [unlocked, setUnlocked] = useState(false);
+  const [showRewardNavigation, setShowRewardNavigation] = useState(false);
   
+  // State to track if the effect has run for the *current* score calculation
+  const [effectCompletedForScore, setEffectCompletedForScore] = useState<number | null>(null);
+
   useEffect(() => {
-    if (!sectionData) return;
-    // Only update if the new score is higher, or if not completed and passed
-    // Need to adjust this logic for DungSaiQuiz if its score is not stored in the same way
-    if (!isDungSai && ((scorePercent > (sectionData.score || 0)) || (!sectionData.completed && scorePercent >= 90))) {
-       completeSection(Number(sectionId), scorePercent);
+    // Check if the necessary data exists and if the effect hasn't run for this score yet
+    const sectionExists = sections.some(s => s.id === sectionIdNum);
+    const dataReady = sectionIdNum && sectionExists && (isDungSai ? dungSaiSection : true); // Check dungSaiSection if relevant
+    
+    // Only run if data is ready AND the effect hasn't completed for the current scorePercent
+    if (dataReady && effectCompletedForScore !== scorePercent) { 
+      
+      console.log(`[Results Effect] Running effect for section ${sectionIdNum} with score ${scorePercent}%`);
+
+      // --- Get current section data INSIDE effect ---
+      // This avoids depending on the potentially unstable sectionData object reference
+      const currentSectionForEffect = isDungSai ? dungSaiSection : sections.find(s => s.id === sectionIdNum);
+      if (!currentSectionForEffect) {
+        console.error("[Results Effect] Section data disappeared unexpectedly inside effect.");
+        return; // Should not happen if dataReady check passed, but good safety check
+      }
+      // --------------------------------------------
+
+      // 1. Mark the specific quiz context as completed (internal state)
+      if (isDungSai) {
+        completeDungSaiSection();
+      } else {
+        completeSection(sectionIdNum, scorePercent); 
+      }
+
+      console.log(`[Results Effect] About to call updateSectionProgress for section ${sectionIdNum} with score ${scorePercent}%`);
+      
+      // 2. Update the overall progress in ProgressContext (persistent state)
+      updateSectionProgress(sectionIdNum, scorePercent); 
+
+      // 3. Check for reward unlock *after* updating progress
+      const newRevealLevel = getImageRevealLevel(); // Get fresh values
+      const isNowCompleted = allSectionsCompleted();
+      const newSliceUnlocked = scorePercent >= 90 && newRevealLevel > oldRevealLevel;
+      const finalCompletion = !wasAlreadyCompleted && isNowCompleted;
+
+      console.log(`[Results Check Inner] Section ${sectionIdNum}, Score ${scorePercent}%. Passed: ${isPassed}. Old Reveal: ${oldRevealLevel}, New Reveal: ${newRevealLevel}. New Slice: ${newSliceUnlocked}. Final Completion: ${finalCompletion}`);
+
+      if (newSliceUnlocked && !finalCompletion) {
+        setUnlocked(true);
+        setShowProgressModal(true);
+      }
+      if (finalCompletion) {
+        setShowRewardNavigation(true);
+        setTimeout(() => {
+          setLocation("/reward");
+        }, 2000);
+      }
+
+      // Mark effect as completed for this specific score
+      setEffectCompletedForScore(scorePercent);
+
+    } else if (dataReady && effectCompletedForScore === scorePercent) {
+        console.log(`[Results Effect] Skipped: Effect already completed for score ${scorePercent}`);
+    } else {
+        console.log(`[Results Effect] Skipped: Data not ready (sectionExists: ${sectionExists}, dataReady: ${dataReady})`);
     }
-    // TODO: Add logic to update progress for DungSaiQuiz
-  }, [sectionData, scorePercent, sectionId, completeSection, isDungSai]);
+
+  // Dependencies: Include primitives, stable functions, and potentially stable memoized values.
+  // AVOID depending on objects like sectionData or functions that change reference unnecessarily.
+  }, [sectionIdNum, isDungSai, dungSaiSection, sections, // Include sections array if needed for existence check
+      scorePercent, isPassed, // Depend on calculated score/pass status
+      effectCompletedForScore, // Depend on the completion flag for this score
+      // Stable context functions (assuming wrapped in useCallback correctly):
+      completeDungSaiSection, completeSection, updateSectionProgress, 
+      getImageRevealLevel, allSectionsCompleted, 
+      // Memoized values from above (may or may not be needed if functions are stable):
+      oldRevealLevel, wasAlreadyCompleted, 
+      setLocation]); 
   
   if (!sectionData) {
     return <div>Section not found</div>;
@@ -97,14 +175,14 @@ export default function Results() {
     incorrectCount = incorrect;
     totalQuestionsDisplay = total;
   } else {
-    correctCount = (score as any).correct;
-    incorrectCount = (score as any).incorrect;
-    totalQuestionsDisplay = (score as any).total;
+    correctCount = (scoreResult as any).correct;
+    incorrectCount = (scoreResult as any).incorrect;
+    totalQuestionsDisplay = (scoreResult as any).total;
   }
-  const timeDisplay = isDungSai ? 'N/A' : `${(score as any).timeMinutes}:${(score as any).timeSeconds}`; // Cast to any
+  const timeDisplay = isDungSai ? 'N/A' : `${(scoreResult as any).timeMinutes}:${(scoreResult as any).timeSeconds}`; // Cast to any
 
-  const nextSectionId = getNextSectionId(Number(sectionId));
-  const nextSection = getMultipleChoiceSection(nextSectionId); // Still use multiple choice context for next section
+  const nextSectionIdValue = getNextSectionId(Number(sectionId));
+  const nextQuizSection = getMultipleChoiceSection(nextSectionIdValue);
 
   return (
     <section className="min-h-screen p-6 bg-gray-50">
@@ -186,28 +264,37 @@ export default function Results() {
               </div>
             </motion.div>
             
-            {/* Unlock Notice */}
-            {/*
-            {unlocked && (
+            {/* --- Reward Unlock Notice --- */}
+            {unlocked && !showRewardNavigation && (
               <motion.div 
-                className="bg-indigo-50 border border-indigo-100 rounded-lg p-4 mb-6 cursor-pointer"
+                className="bg-indigo-50 border border-indigo-100 rounded-lg p-4 mb-6 cursor-pointer text-indigo-700"
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: "auto" }}
                 transition={{ delay: 1.2 }}
-                onClick={() => setShowProgressModal(true)}
+                onClick={() => setShowProgressModal(true)} // Keep modal trigger
               >
-                <div className="flex items-center">
-                  <div className="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center mr-3">
-                    <i className="fas fa-unlock-alt text-primary"></i>
-                  </div>
-                  <div className="text-left">
-                    <h3 className="font-medium text-primary">Mở khóa thành công!</h3>
-                    <p className="text-sm text-gray-600">Bạn đã mở khóa {currentRevealLevel}% hình ảnh bí mật</p>
-                  </div>
+                <div className="flex items-center justify-center">
+                  <Trophy className="w-5 h-5 mr-2 text-indigo-500" />
+                  <span className="font-semibold">Mảnh ghép mới đã được mở khóa!</span>
                 </div>
+                <p className="text-sm text-center mt-1">Xem tiến độ của bạn.</p>
               </motion.div>
             )}
-            */}
+            {/* --- Final Completion Notice --- */}
+            {showRewardNavigation && (
+               <motion.div 
+                className="bg-emerald-50 border border-emerald-100 rounded-lg p-4 mb-6 text-emerald-700"
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: "auto" }}
+                transition={{ delay: 1.2 }}
+              >
+                <div className="flex items-center justify-center">
+                  <Check className="w-5 h-5 mr-2 text-emerald-500" />
+                  <span className="font-semibold">Chúc mừng! Bạn đã hoàn thành tất cả!</span>
+                </div>
+                <p className="text-sm text-center mt-1">Xem phần thưởng cuối cùng...</p>
+              </motion.div>
+            )}
             
             {/* View Answers Button - Moved above the action buttons */}
             <div className="mb-6">
@@ -223,66 +310,55 @@ export default function Results() {
             
             {/* Actions - Centered buttons */}
             <div className="flex justify-center space-x-4">
-              {isDungSai ? (
-                <Button
-                  variant="outline"
-                  className="w-full px-4 py-3 border border-gray-300 text-gray-700 font-medium"
-                  onClick={() => {
+              <Button
+                variant="outline"
+                className="w-full px-4 py-3 border border-gray-300 text-gray-700 font-medium"
+                onClick={() => {
+                  if (isDungSai) {
                     resetDungSaiSection();
                     setLocation(`/quiz/${sectionId}`);
-                  }}
-                >
-                  Làm lại
-                </Button>
-              ) : (
-                <Link href={`/quiz/${sectionId}`} className="w-1/3">
-                  <Button
-                    variant="outline"
-                    className="w-full px-4 py-3 border border-gray-300 text-gray-700 font-medium"
-                  >
-                    Làm lại
-                  </Button>
-                </Link>
-              )}
+                  } else {
+                    resetSection(sectionIdNum);
+                    setLocation(`/quiz/${sectionId}`);
+                  }
+                }}
+              >
+                Làm lại
+              </Button>
               
-              {nextSection ? (
-                <Link href={nextSection ? `/quiz/${nextSectionId}` : "/quiz-selection"} className="w-1/3">
+              {/* Conditional Next/Home Button */}            
+              {!showRewardNavigation && nextQuizSection && (
+                <motion.div className="mt-4" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2 }}>
                   <Button 
-                    className="w-full px-4 py-3 bg-primary text-white font-medium"
+                    className="w-full bg-primary hover:bg-primary/90"
+                    onClick={() => setLocation(`/quiz/${nextQuizSection.id}`)}
                   >
-                    Tiếp tục
+                    Phần tiếp theo <ChevronRight className="ml-2 h-4 w-4" />
                   </Button>
-                </Link>
-              ) : (
-                <>
-                {/*
-                <Link href="/reward" className="w-1/3">
+                </motion.div>
+              )}
+              {!showRewardNavigation && !nextQuizSection && (
+                <motion.div className="mt-4" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2 }}>
                   <Button 
-                    className="w-full px-4 py-3 bg-primary text-white font-medium"
+                    variant="secondary"
+                    className="w-full"
+                    onClick={() => setLocation("/")}
                   >
-                    Xem phần thưởng
+                    Quay về trang chủ
                   </Button>
-                </Link>
-                */}
-                </>
+                </motion.div>
               )}
             </div>
           </div>
         </motion.div>
         
-        {/* Answer Review Component */}
-        {showAnswers && (
-          <motion.div 
-            className="mb-6"
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-          >
-            {/* Pass sectionId and isDungSai to AnswerReview */}
-            <AnswerReview sectionId={Number(sectionId)} isDungSai={isDungSai} />
-          </motion.div>
+        {showAnswers && sectionData && (
+          <AnswerReview 
+            sectionId={sectionIdNum} 
+            isDungSai={isDungSai}
+          />
         )}
         
-        {/* Next Section Preview - Made Entire Section Clickable */}
         <motion.div 
           className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200"
           initial={{ opacity: 0, y: 20 }}
@@ -296,7 +372,8 @@ export default function Results() {
                 <Link key={section.id} href={`/quiz/${section.id}`} className="block">
                   <div className="flex items-center transition active:scale-95 active:bg-primary/10 rounded-lg cursor-pointer p-3 hover:bg-primary/5">
                     <div className="w-12 h-12 bg-white border border-gray-200 rounded-lg flex items-center justify-center mr-4">
-                      <i className="fas fa-flag text-primary text-xl"></i>
+                      {/* Placeholder for an icon, assuming you might add one later */}
+                      <span className="text-primary text-xl">📝</span> 
                     </div>
                     <div>
                       <h4 className="font-medium">{section.title}</h4>
@@ -311,9 +388,14 @@ export default function Results() {
             </div>
           </div>
         </motion.div>
+
+        {showProgressModal && (
+          <ProgressModal 
+            open={showProgressModal}
+            onOpenChange={setShowProgressModal}
+          />
+        )}
       </div>
-      {/* Progress Modal */}
-      {/* <ProgressModal open={showProgressModal} onOpenChange={setShowProgressModal} /> */}
     </section>
   );
 }

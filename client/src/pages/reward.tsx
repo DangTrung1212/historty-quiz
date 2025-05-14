@@ -6,7 +6,7 @@ import { useMultipleChoiceQuiz } from "@/contexts/MultipleChoiceQuizContext";
 import { useProgress } from "@/contexts/ProgressContext";
 import { motion } from "framer-motion";
 import BadgeCard from "@/components/badge-card";
-import confetti from "react-confetti";
+import Confetti from "react-confetti";
 import useWindowSize from "react-use/lib/useWindowSize";
 import { Share, RotateCcw, Star } from "lucide-react";
 
@@ -65,7 +65,7 @@ export default function Reward() {
   return (
     <section className="min-h-screen bg-gray-50 flex flex-col">
       {/* Confetti Container */}
-      {showConfetti && <confetti width={width} height={height} />}
+      {showConfetti && <Confetti width={width} height={height} />}
       
       <div className="flex-1 overflow-auto p-6">
         <div className="max-w-md mx-auto">
@@ -92,7 +92,7 @@ export default function Reward() {
             <h2 className="font-semibold mb-4">Hình ảnh đã mở khóa</h2>
             <div className="aspect-w-16 aspect-h-9 mb-4">
               <img 
-                src="https://via.placeholder.com/800x450?text=Reward+Image+Fully+Revealed" 
+                src="/assets/rewards/final-reward.png"
                 alt="Unlocked reward image" 
                 className="w-full h-64 object-cover rounded-lg reveal-100"
               />

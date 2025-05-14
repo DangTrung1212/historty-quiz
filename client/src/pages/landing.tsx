@@ -26,7 +26,7 @@ export default function Landing() {
           </div>
           
           <h1 className="text-5xl font-extrabold mb-3">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Sử Nhanh</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">History Quiz</span>
           </h1>
           
           <p className="mt-2 text-xl text-gray-600 mb-4">Luyện thi lịch sử THPT Quốc Gia</p>

@@ -30,14 +30,14 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <ProgressProvider>
-          <MultipleChoiceQuizProvider>
+        <MultipleChoiceQuizProvider>
+          <ProgressProvider>
             <DungSaiQuizProvider>
               <GlobalLoaderAndRouter />
               <Toaster />
             </DungSaiQuizProvider>
-          </MultipleChoiceQuizProvider>
-        </ProgressProvider>
+          </ProgressProvider>
+        </MultipleChoiceQuizProvider>
       </TooltipProvider>
     </QueryClientProvider>
   );
