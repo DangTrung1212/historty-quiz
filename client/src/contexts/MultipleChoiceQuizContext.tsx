@@ -1,6 +1,5 @@
 import { createContext, useContext, useState, useCallback, ReactNode, useEffect } from 'react';
 import { QuizSection } from '@/lib/quiz-data';
-import { saveMcqProgress, loadMcqProgress } from '@/lib/storage';
 import { useLocation } from 'wouter';
 import { calculateMultipleChoiceScore } from "../lib/quiz-multichoice";
 
@@ -177,7 +176,7 @@ export function MultipleChoiceQuizProvider({ children }: { children: ReactNode }
 
   useEffect(() => {
     // Use loadMcqProgress for MCQ context
-    // const progressStorage = loadMcqProgress(); // Remove this load call
+    
     console.log("[MCQContext Init] Intentionally not loading from quiz_progress anymore for initial section setup.");
 
     // userAnswers, startTime, endTime will start empty or be populated by in-session activity,
@@ -241,7 +240,7 @@ export function MultipleChoiceQuizProvider({ children }: { children: ReactNode }
         setSections(initializedSections);
         setCompletedSections(initializedSections.filter(s => s.completed).length);
         
-        // saveMcqProgress(minimalDataForInitialSave); // Remove this save call as well
+        
 
       } catch (error) {
         console.error("Failed to fetch and initialize sections:", error);

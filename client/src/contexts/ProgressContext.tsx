@@ -12,11 +12,18 @@ interface OverallProgress {
   sections: Record<number, SectionProgress>;
 }
 
+// Define the return type for the refactored updateSectionProgress
+interface UpdateProgressResult {
+  updatedProgress: OverallProgress;
+  newRevealLevel: number;
+  newAllSectionsCompleted: boolean;
+} 
+
 interface ProgressContextType {
   progress: OverallProgress;
-  updateSectionProgress: (sectionId: number, scorePercent: number) => void;
-  getImageRevealLevel: () => number;
-  allSectionsCompleted: () => boolean;
+  updateSectionProgress: (sectionId: number, scorePercent: number) => UpdateProgressResult | null; // Modified return type
+  getImageRevealLevel: () => number; // This will now primarily be used for initial/memoized values
+  allSectionsCompleted: () => boolean; // Similar to above
   personalLetter: string;
   getSectionStatus: (sectionId: number) => SectionProgress | undefined;
   getSectionHighestScore: (sectionId: number) => number;
@@ -100,31 +107,44 @@ Chúc bạn đạt được kết quả cao nhất trong kỳ thi!
 
 Trân trọng`);
 
-  const updateSectionProgress = useCallback((sectionId: number, scorePercent: number) => {
-    console.log(`[ProgressContext] updateSectionProgress called for section ${sectionId} with score ${scorePercent}%`);
-    
+  // Helper function to calculate reveal level based on a given progress object
+  const calculateRevealLevelForProgress = useCallback((currentProgressData: OverallProgress) => {
+    if (quizSections.length === 0) return 0;
+    const completedWithHighScore = Object.values(currentProgressData.sections).filter(
+      (s) => s.completed && s.highScoreAchieved
+    ).length;
+    return Math.min(Math.floor((completedWithHighScore / quizSections.length) * 100), 100);
+  }, [quizSections]);
+
+  // Helper function to calculate all sections completed based on a given progress object
+  const calculateAllSectionsCompletedForProgress = useCallback((currentProgressData: OverallProgress) => {
+    if (quizSections.length === 0) return false;
+    return quizSections.every(
+      (section) => currentProgressData.sections[section.id]?.completed && currentProgressData.sections[section.id]?.highScoreAchieved
+    );
+  }, [quizSections]);
+
+  const updateSectionProgress = useCallback((sectionId: number, scorePercent: number): UpdateProgressResult | null => {
+    let result: UpdateProgressResult | null = null;
     setProgress(currentProgress => {
-      const sectionExists = currentProgress.sections[sectionId];
-      if (!sectionExists) {
-        console.warn(`[ProgressContext] Attempted to update progress for non-existent section ID: ${sectionId}`);
-        return currentProgress;
+      const sectionState = currentProgress.sections[sectionId];
+      if (!sectionState) {
+        console.warn(`[ProgressContext] Attempted to update progress for non-existent section ID: ${sectionId}. Current progress:`, currentProgress);
+        // Ensure quizSections are loaded before trying to access them for default state
+        if (quizSections.length > 0 && !quizSections.find(qs => qs.id === sectionId)) {
+            console.error(`[ProgressContext] Section ID ${sectionId} does not exist in quizSections either.`);
+            // Decide how to handle: return currentProgress or throw error, or try to initialize if safe
+        }
+        // If sectionState is truly missing, and we expect it, this indicates a sync issue.
+        // For now, we prevent update to avoid further errors.
+        return currentProgress; 
       }
 
       const isHighScore = scorePercent >= 90;
-
-      console.log(`[ProgressContext] Checking condition for section ${sectionId}:`);
-      console.log(`  - Current state for section ${sectionId} BEFORE check:`, sectionExists);
-      console.log(`  - sectionExists.completed: ${sectionExists.completed}`);
-      console.log(`  - isHighScore (score >= 90%): ${isHighScore}`);
-      console.log(`  - sectionExists.highScoreAchieved: ${sectionExists.highScoreAchieved}`);
-      const shouldUpdate = !sectionExists.completed || (isHighScore && !sectionExists.highScoreAchieved);
-      console.log(`  - Should update/save?: ${shouldUpdate}`);
+      const shouldUpdate = !sectionState.completed || (isHighScore && !sectionState.highScoreAchieved);
 
       if (shouldUpdate) {
-        console.log(`[ProgressContext] Condition met for section ${sectionId}. Preparing to save.`);
-        
-        // Calculate the new highest score
-        const currentHighest = sectionExists.highestScore || 0; // Default to 0 if undefined
+        const currentHighest = sectionState.highestScore || 0;
         const newHighestScore = Math.max(currentHighest, scorePercent);
 
         const newProgressData: OverallProgress = {
@@ -132,38 +152,43 @@ Trân trọng`);
           sections: {
             ...currentProgress.sections,
             [sectionId]: {
-              completed: true, 
-              highScoreAchieved: sectionExists.highScoreAchieved || isHighScore,
+              completed: true,
+              highScoreAchieved: sectionState.highScoreAchieved || isHighScore,
               highestScore: newHighestScore,
             },
           },
         };
-        console.log("[ProgressContext] >>> Reached point of saving data:", newProgressData);
-        saveProgress(PROGRESS_STORAGE_KEY, newProgressData); 
+        
+        saveProgress(PROGRESS_STORAGE_KEY, newProgressData);
         console.log("[ProgressContext] Progress updated AND saved to localStorage:", newProgressData);
-        return newProgressData;
+        
+        // Calculate new reveal level and completion status based on newProgressData
+        const newRevealLevel = calculateRevealLevelForProgress(newProgressData);
+        const newAllSectionsCompleted = calculateAllSectionsCompletedForProgress(newProgressData);
+        
+        result = {
+            updatedProgress: newProgressData,
+            newRevealLevel,
+            newAllSectionsCompleted
+        };
+        return newProgressData; // Update state
       } else {
         console.log(`[ProgressContext] Condition NOT met for section ${sectionId}. No update needed/saved.`);
+        // Result remains null if no update
       }
-      return currentProgress;
+      return currentProgress; // No state update
     });
-  }, []);
+    return result; // Return the captured result (or null if no update occurred)
+  }, [quizSections, calculateRevealLevelForProgress, calculateAllSectionsCompletedForProgress]);
 
+  // getImageRevealLevel and allSectionsCompleted now use the internal state primarily for on-load/display purposes
   const getImageRevealLevel = useCallback(() => {
-    const completedWithHighScore = Object.values(progress.sections).filter(
-      (s) => s.completed && s.highScoreAchieved
-    ).length;
-    const totalSections = quizSections.length;
-    if (totalSections === 0) return 0;
-    return Math.min(Math.floor((completedWithHighScore / totalSections) * 100), 100);
-  }, [progress, quizSections]);
+    return calculateRevealLevelForProgress(progress); // Uses the helper with current state
+  }, [progress, calculateRevealLevelForProgress]);
 
   const allSectionsCompleted = useCallback(() => {
-    if (quizSections.length === 0) return false;
-    return quizSections.every(
-      (section) => progress.sections[section.id]?.completed && progress.sections[section.id]?.highScoreAchieved
-    );
-  }, [progress, quizSections]);
+    return calculateAllSectionsCompletedForProgress(progress); // Uses the helper with current state
+  }, [progress, calculateAllSectionsCompletedForProgress]);
 
   const getSectionStatus = useCallback((sectionId: number): SectionProgress | undefined => {
     return progress.sections[sectionId];

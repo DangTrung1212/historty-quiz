@@ -1,49 +1,37 @@
 # Active Context
 
 ## Current Focus
-- **Display Unlocked Image Piece on Results Page**: Implement functionality on the quiz results page (`/results/:sectionId`) to show the specific image piece the user has just unlocked if they achieve a high score (≥90%) for that section.
+- **Resolve Score Calculation/Display Discrepancy (`results.tsx`)**: The `scorePercent` variable on the results page might not accurately reflect the user's actual score (e.g., user reports 90% actual vs. 80% displayed). Awaiting clarification on the specific quiz section to investigate the relevant scoring logic (`calculateMultipleChoiceScore` or `calculateDungSaiScore`).
 
 ## Recently Completed
-- **Progress Modal UI Refactor (`ProgressModal.tsx`):**
-    - Replaced the 2x2 grid for reward images with a 3-part horizontal flex display.
-    - Each part corresponds to one of the three main quiz sections and shows "Đã mở khóa" (with the image piece) or "Chưa mở khóa" (with a lock icon).
-    - Unlocked image pieces are displayed (blurred if not all sections are complete, clear if all are).
-    - Added a button to navigate to the `/reward` page when all sections are completed with high scores.
-- **Corrected Section ID Mapping (`ProgressModal.tsx`):** Updated `orderedSectionIds` to use actual IDs (`'1'`, `'2'`, `'3'`) to fix the "0/3 đã mở khóa" display error, ensuring accurate progress tracking for reward images.
-- **Section Card Update (`SectionCard.tsx`):**
-    - Refactored to use `ProgressContext` to fetch and display persistent completion status (`isCompleted`), `highScoreAchieved`, and `highestScore`.
-    - Star icon now correctly reflects `highScoreAchieved` status on page load (filled yellow for high score, filled gray for completed without high score, outline gray if not completed).
-- **Reward Page Refactor (`/reward` page - `client/src/pages/reward.tsx`):**
-    - Deleted the redundant `client/src/pages/RewardPage.tsx`.
-    - Modified the existing `client/src/pages/reward.tsx` to:
-        - Define the congratulatory letter content statically within the component, removing reliance on `personalLetter` from `ProgressContext`.
-        - Display the final reward image by assembling the three image parts (`rewardImageParts`), consistent with the `ProgressModal`'s fully unlocked state.
-        - Enhanced overall styling for a more celebratory feel.
+- **Fixed `getImageRevealLevel()` Timing Issue (`results.tsx` & `ProgressContext.tsx`):**
+    - Refactored `ProgressContext.updateSectionProgress` to calculate and return `newRevealLevel` and `newAllSectionsCompleted` status directly, based on the updated progress data.
+    - Updated `results.tsx` to use these returned values, ensuring accurate and synchronized state for `ProgressModal` trigger logic and final reward navigation.
+- **Results Page - First-Time High Score Celebration (`client/src/pages/results.tsx`):**
+    - Implemented confetti effect and a special notification message for first-time high scores.
+- **Local Storage Cleanup (`client/src/lib/storage.ts`, `client/src/contexts/MultipleChoiceQuizContext.tsx`):**
+    - Removed unused legacy Local Storage functions and keys.
+- **UI Polish (`client/src/pages/quiz-selection.tsx`):**
+    - Improved header subtitle and progress widget clarity.
+    - Resolved a linter error.
 
 ## In Progress
-- Finalizing Local Storage consolidation by removing now-unused storage functions related to `quiz_progress`.
-- Planning the UI and logic for the progress widget and its integration with the reward image.
+- Awaiting user feedback on which quiz section exhibited the score discrepancy.
 
-## Next Steps (Display Unlocked Image on Results Page)
-1.  **Identify Results Page Component:** Confirm the file path for the quiz results page (likely `client/src/pages/ResultsPage.tsx` or similar).
-2.  **Access Progress & Section ID:** The results page component needs to:
-    *   Receive the current `sectionId` (e.g., from route parameters).
-    *   Use the `useProgress()` hook to get the `progress` state.
-3.  **Determine if High Score Achieved:** Check `progress.sections[sectionId]?.highScoreAchieved`.
-4.  **Map Section ID to Image Piece:**
-    *   Maintain or import the `orderedSectionIds` array (e.g., `['1', '2', '3']`) and the `rewardImageParts` array (image paths).
-    *   If a high score is achieved for the current `sectionId`, find its index in `orderedSectionIds` to select the corresponding image from `rewardImageParts`.
-5.  **Display Image Piece:** If unlocked, render the specific image piece. Consider a subtle animation or emphasis.
-6.  **Conditional Display:** Only show this if `highScoreAchieved` is true for the *current* quiz attempt/result being viewed.
-7.  **Styling:** Ensure the image piece is displayed clearly and attractively.
+## Next Steps
+1.  **Investigate and Fix Score Discrepancy (`results.tsx` & relevant scoring functions):**
+    *   Once the user specifies the quiz section, review the `calculateScore` function for that section type and how `scorePercent` is derived in `results.tsx`.
+    *   Identify and correct any logical errors.
+2.  **Test Results Page Extensively:** After the score fix, thoroughly test various scenarios including score accuracy for all quiz types.
+3.  **UI/UX Polish on `results.tsx`**: Address general UX improvements as noted by the user.
 
 ## Active Decisions
-- **Single Source of Truth for Progress:** `ProgressContext` and the `overallQuizProgress` Local Storage key remain the definitive sources for completion status, high scores, and reward image data.
-- **Component-Specific Content:** Presentational content like the final reward letter is best kept static within the relevant page component rather than in context.
-- **Consistent Reward Image Logic:** The mapping of section IDs to specific image pieces should be consistent between `ProgressModal` and the results page.
+- **Prioritization:** Fixing the score discrepancy on `results.tsx` is the highest priority.
+- **Single Source of Truth for Progress:** `ProgressContext` and `overallQuizProgress` Local Storage key.
 
 ## Blockers/Questions
-- None currently.
+- **Score Discrepancy Clarification:** Need to know which quiz section (1, 2, or 3) showed the 90% vs. 80% score mismatch.
 
 ## New Issues & Notes
-- The previous inability to select MCQ answers was likely a temporary side-effect of the infinite loop and should be re-verified as fixed. 
+- **Score Discrepancy in `results.tsx`**: `scorePercent` may not be accurate. Section TBD. (High Priority)
+- Minor stale comments at the end of `client/src/lib/storage.ts` (Low priority). 

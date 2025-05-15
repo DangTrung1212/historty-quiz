@@ -6,9 +6,11 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { useState, useEffect, useMemo } from "react";
-import { Trophy, Check, Eye, ChevronRight, X as XIcon } from "lucide-react";
+import { Trophy, Check, Eye, ChevronRight, X as XIcon, Star } from "lucide-react";
 import AnswerReview from "@/components/answer-review";
 import ProgressModal from '@/components/progress-modal';
+import Confetti from "react-confetti";
+import useWindowSize from "react-use/lib/useWindowSize";
 
 // Define image sources and ordered section IDs for reward parts
 // (Consider centralizing these if used in multiple places)
@@ -37,44 +39,43 @@ export default function Results() {
     completeDungSaiSection,
   } = useDungSaiQuiz(); 
   const { 
+    progress,
     updateSectionProgress,
     getImageRevealLevel, 
     allSectionsCompleted, 
     getSectionStatus,
   } = useProgress();
   const [, setLocation] = useLocation();
-  
+  const { width, height } = useWindowSize();
+
   const [showAnswers, setShowAnswers] = useState(false);
   const [showProgressModal, setShowProgressModal] = useState(false);
+  const [showFirstTimeUnlockCelebration, setShowFirstTimeUnlockCelebration] = useState(false);
 
-  // Determine if the current section is DungSai based on ID or potentially title from sections array
-  // Use useMemo to stabilize this value if sections array reference is stable
-  const isDungSai = useMemo(() => {
-      // Section 3 is assumed to be DungSai based on previous context
-      return sectionIdNum === 3; 
-      // Alternatively, find title if needed, but ID is more stable:
-      // const foundSection = sections.find(s => s.id === sectionIdNum);
-      // return foundSection?.title === "Trắc Nghiệm Đúng Sai";
-  }, [sectionIdNum]); // Depend only on sectionIdNum
+  // Determine if the current section is DungSai
+  const isDungSai = useMemo(() => sectionIdNum === 3, [sectionIdNum]);
 
-  // Get section data - useMemo might help stabilize references if contexts are stable
+  // Get section data
   const sectionData = useMemo(() => {
     return isDungSai ? dungSaiSection : getMultipleChoiceSection(sectionIdNum);
   }, [isDungSai, dungSaiSection, getMultipleChoiceSection, sectionIdNum]);
 
-  // Calculate score - useMemo to stabilize
+  // Calculate score
   const scoreResult = useMemo(() => {
-     console.log("[Results] Recalculating score..."); // Log score calculation
      return isDungSai ? calculateDungSaiScore() : calculateMultipleChoiceScore(sectionIdNum);
-  }, [isDungSai, calculateDungSaiScore, calculateMultipleChoiceScore, sectionIdNum, dungSaiSection]); // Add dungSaiSection as dependency if needed
+  }, [isDungSai, calculateDungSaiScore, calculateMultipleChoiceScore, sectionIdNum, dungSaiSection]);
   
   const scorePercent = useMemo(() => Math.round(isDungSai ? scoreResult : (scoreResult as any).percent), [isDungSai, scoreResult]);
   const isPassed = useMemo(() => scorePercent >= 90, [scorePercent]);
 
-  // Get progress *before* potential update - memoize if functions are stable
+  // Get progress *before* update
   const oldRevealLevel = useMemo(() => getImageRevealLevel(), [getImageRevealLevel]);
-  const wasAlreadyCompleted = useMemo(() => allSectionsCompleted(), [allSectionsCompleted]);
+  const wasAlreadyCompletedOverall = useMemo(() => allSectionsCompleted(), [allSectionsCompleted]);
   
+  // Capture if this section already had a high score *before* this attempt's update
+  const wasSectionHighScorePreviously = useMemo(() => progress.sections[sectionIdNum]?.highScoreAchieved || false,
+    [sectionIdNum, progress.sections]);
+
   // State for managing reward unlock effect
   const [unlocked, setUnlocked] = useState(false);
   const [showRewardNavigation, setShowRewardNavigation] = useState(false);
@@ -84,82 +85,87 @@ export default function Results() {
   const [effectCompletedForScore, setEffectCompletedForScore] = useState<number | null>(null);
 
   useEffect(() => {
-    // Check if the necessary data exists and if the effect hasn't run for this score yet
     const sectionExists = sections.some(s => s.id === sectionIdNum);
-    const dataReady = sectionIdNum && sectionExists && (isDungSai ? dungSaiSection : true); // Check dungSaiSection if relevant
+    const dataReady = sectionIdNum && sectionExists && (isDungSai ? dungSaiSection : true);
     
-    // Only run if data is ready AND the effect hasn't completed for the current scorePercent
     if (dataReady && effectCompletedForScore !== scorePercent) { 
-      
       console.log(`[Results Effect] Running effect for section ${sectionIdNum} with score ${scorePercent}%`);
 
-      // --- Get current section data INSIDE effect ---
-      // This avoids depending on the potentially unstable sectionData object reference
-      const currentSectionForEffect = isDungSai ? dungSaiSection : sections.find(s => s.id === sectionIdNum);
-      if (!currentSectionForEffect) {
-        console.error("[Results Effect] Section data disappeared unexpectedly inside effect.");
-        return; // Should not happen if dataReady check passed, but good safety check
-      }
-      // --------------------------------------------
-
-      // 1. Mark the specific quiz context as completed (internal state)
       if (isDungSai) {
         completeDungSaiSection();
       } else {
         completeSection(sectionIdNum, scorePercent); 
       }
-
-      console.log(`[Results Effect] About to call updateSectionProgress for section ${sectionIdNum} with score ${scorePercent}%`);
       
-      // 2. Update the overall progress in ProgressContext (persistent state)
-      updateSectionProgress(sectionIdNum, scorePercent); 
+      // Use the memoized value which captures state before this effect runs for this score
+      const hadHighScoreBeforeThisUpdate = wasSectionHighScorePreviously;
 
-      // 3. Check for reward unlock *after* updating progress
-      const newRevealLevel = getImageRevealLevel(); // Get fresh values
-      const isNowCompleted = allSectionsCompleted();
-      const newSliceUnlocked = scorePercent >= 90 && newRevealLevel > oldRevealLevel;
-      const finalCompletion = !wasAlreadyCompleted && isNowCompleted;
+      // Update progress and get the direct result containing new calculated values
+      const updateResult = updateSectionProgress(sectionIdNum, scorePercent);
 
-      console.log(`[Results Check Inner] Section ${sectionIdNum}, Score ${scorePercent}%. Passed: ${isPassed}. Old Reveal: ${oldRevealLevel}, New Reveal: ${newRevealLevel}. New Slice: ${newSliceUnlocked}. Final Completion: ${finalCompletion}`);
+      if (updateResult) {
+        const { updatedProgress, newRevealLevel, newAllSectionsCompleted } = updateResult;
+        const sectionProgressAfterUpdate = updatedProgress.sections[sectionIdNum];
+        const hasHighScoreAfterThisUpdate = sectionProgressAfterUpdate?.highScoreAchieved || false;
 
-      if (newSliceUnlocked && !finalCompletion) {
-        setUnlocked(true);
-        setShowProgressModal(true);
-        // Determine and set the newly unlocked image index
-        const currentSectionStringId = String(sectionIdNum);
-        const imageIndex = orderedSectionIds.indexOf(currentSectionStringId);
-        if (imageIndex !== -1 && isPassed) { // isPassed check to ensure it's a successful unlock
-          setNewlyUnlockedImageIndex(imageIndex);
+        if (isPassed && hasHighScoreAfterThisUpdate && !hadHighScoreBeforeThisUpdate) {
+          console.log(`[Results Effect] First time high score for section ${sectionIdNum}! Triggering celebration.`);
+          setShowFirstTimeUnlockCelebration(true);
+          const currentSectionStringId = String(sectionIdNum);
+          const imageIndex = orderedSectionIds.indexOf(currentSectionStringId);
+          if (imageIndex !== -1) {
+            setNewlyUnlockedImageIndex(imageIndex);
+          }
         }
-      }
-      if (finalCompletion) {
-        setShowRewardNavigation(true);
-        setTimeout(() => {
-          setLocation("/reward");
-        }, 2000);
-      }
+        
+        const newSliceUnlockedOverall = isPassed && newRevealLevel > oldRevealLevel;
+        const finalCompletion = !wasAlreadyCompletedOverall && newAllSectionsCompleted;
 
-      // Mark effect as completed for this specific score
+        console.log(`[Results Check Inner] Section ${sectionIdNum}, Score ${scorePercent}%. Passed: ${isPassed}. Old Overall Reveal: ${oldRevealLevel}, New Overall Reveal: ${newRevealLevel}. New Slice Overall: ${newSliceUnlockedOverall}. Final Completion: ${finalCompletion}`);
+
+        if (newSliceUnlockedOverall && !finalCompletion && !showFirstTimeUnlockCelebration) {
+          setUnlocked(true);
+          setShowProgressModal(true); 
+          const currentSectionStringId = String(sectionIdNum);
+          const imageIndex = orderedSectionIds.indexOf(currentSectionStringId);
+          if (imageIndex !== -1 && isPassed) {
+            setNewlyUnlockedImageIndex(imageIndex);
+          }
+        }
+        
+        if (finalCompletion) {
+          setShowRewardNavigation(true);
+          setTimeout(() => setLocation("/reward"), 2000);
+        }
+      } else {
+        console.log(`[Results Effect] updateSectionProgress reported no change. Skipping further unlock checks.`);
+      }
       setEffectCompletedForScore(scorePercent);
-
     } else if (dataReady && effectCompletedForScore === scorePercent) {
         console.log(`[Results Effect] Skipped: Effect already completed for score ${scorePercent}`);
     } else {
         console.log(`[Results Effect] Skipped: Data not ready (sectionExists: ${sectionExists}, dataReady: ${dataReady})`);
     }
-
-  // Dependencies: Include primitives, stable functions, and potentially stable memoized values.
-  // AVOID depending on objects like sectionData or functions that change reference unnecessarily.
-  }, [sectionIdNum, isDungSai, dungSaiSection, sections, // Include sections array if needed for existence check
-      scorePercent, isPassed, // Depend on calculated score/pass status
-      effectCompletedForScore, // Depend on the completion flag for this score
-      // Stable context functions (assuming wrapped in useCallback correctly):
+  }, [
+      sectionIdNum, isDungSai, dungSaiSection, sections, 
+      scorePercent, isPassed, effectCompletedForScore,
       completeDungSaiSection, completeSection, updateSectionProgress, 
-      getImageRevealLevel, allSectionsCompleted, 
-      // Memoized values from above (may or may not be needed if functions are stable):
-      oldRevealLevel, wasAlreadyCompleted, 
-      setLocation]); 
+      // Memoized values and their dependencies (context functions are stable, progress.sections is a direct dep for wasSectionHighScorePreviously)
+      oldRevealLevel, wasAlreadyCompletedOverall, wasSectionHighScorePreviously, 
+      setLocation, progress.sections 
+      // Removed getImageRevealLevel, allSectionsCompleted from here as their direct results for *new* state are now from updateResult
+    ]); 
   
+  // Effect to hide confetti after a delay
+  useEffect(() => {
+    if (showFirstTimeUnlockCelebration) {
+      const timer = setTimeout(() => {
+        setShowFirstTimeUnlockCelebration(false);
+      }, 7000); // Confetti for 7 seconds
+      return () => clearTimeout(timer);
+    }
+  }, [showFirstTimeUnlockCelebration]);
+
   if (!sectionData) {
     return <div>Section not found</div>;
   }
@@ -202,6 +208,9 @@ export default function Results() {
 
   return (
     <section className="min-h-screen p-6 bg-gray-50">
+      {showFirstTimeUnlockCelebration && (
+        <Confetti width={width} height={height} recycle={false} numberOfPieces={400} initialVelocityY={10} />
+      )}
       <div className="max-w-md mx-auto">
         <motion.div 
           className="bg-white rounded-lg shadow-md p-6 mb-6"
@@ -230,7 +239,7 @@ export default function Results() {
                 : 'Bạn chưa đạt điểm tối thiểu. Hãy thử lại để cải thiện kết quả.'}
             </p>
             
-            {/* Display newly unlocked image piece */}
+            {/* Display first time unlock message AND newly unlocked image piece */}
             {isPassed && newlyUnlockedImageIndex !== null && rewardImageParts[newlyUnlockedImageIndex] && (
               <motion.div
                 className="my-6 p-4 border-2 border-yellow-400 rounded-lg shadow-lg bg-yellow-50"
@@ -238,9 +247,19 @@ export default function Results() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.5, duration: 0.5 }}
               >
-                <h3 className="text-lg font-semibold text-yellow-700 mb-2 text-center">
-                  Mảnh ghép mới đã được mở khóa!
-                </h3>
+                {showFirstTimeUnlockCelebration && (
+                  <div className="text-center mb-3">
+                    <Star className="inline-block text-yellow-500 h-7 w-7 mr-2 animate-pulse" />
+                    <span className="text-lg font-semibold text-yellow-700">
+                      Chúc mừng! Bạn đã mở khóa một mảnh ghép mới!
+                    </span>
+                  </div>
+                )}
+                {!showFirstTimeUnlockCelebration && (
+                   <h3 className="text-lg font-semibold text-yellow-700 mb-2 text-center">
+                    Mảnh ghép mới đã được mở khóa!
+                  </h3>
+                )}
                 <img 
                   src={rewardImageParts[newlyUnlockedImageIndex]} 
                   alt={`Mảnh ghép phần thưởng ${newlyUnlockedImageIndex + 1}`}
@@ -248,6 +267,9 @@ export default function Results() {
                 />
               </motion.div>
             )}
+            
+            {/* Spacer if confetti is showing to prevent overlap with buttons */}
+            {showFirstTimeUnlockCelebration && <div className="h-16"></div>}
             
             {/* Score */}
             <div className="flex justify-center mb-6">

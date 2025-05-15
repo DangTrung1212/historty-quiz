@@ -35,7 +35,7 @@ export default function QuizSelection() {
           animate={{ opacity: 1, y: 0 }}
         >
           <h1 className="text-2xl font-bold text-primary">Chọn Phần Thi</h1>
-          {/* <p className="text-gray-600">Hoàn thành mỗi phần với điểm ≥90% để mở khóa phần thưởng</p> */}
+          <p className="text-gray-600">Hoàn thành mỗi phần với điểm ≥90% để mở khóa phần thưởng</p>
         </motion.header>
         
         {/* Progress Widget - Uncommented */}
@@ -69,8 +69,10 @@ export default function QuizSelection() {
             </div>
             
             <div className="bg-gray-50 px-4 py-3 flex justify-between items-center border-t border-gray-100">
-              <span className="text-sm text-gray-600">Phần thưởng đã mở khóa: <span className="font-medium">{revealLevel}%</span></span>
-              <ChevronRight className="h-4 w-4 text-gray-400" />
+              <span className="text-sm text-gray-600">Phần thưởng: <span className="font-medium">{revealLevel}%</span></span>
+              <div className="flex items-center text-primary text-sm font-medium">
+                Xem chi tiết <ChevronRight className="h-4 w-4 ml-1" />
+              </div>
             </div>
           </div>
         </motion.div>
@@ -86,7 +88,6 @@ export default function QuizSelection() {
             <SectionCard 
               key={section.id} 
               section={section} 
-              previousCompleted={index === 0 || sections[index-1].completed}
             />
           ))}
         </motion.div>
