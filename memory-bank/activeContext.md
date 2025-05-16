@@ -1,7 +1,18 @@
 # Active Context
 
 ## Current Focus
-- **Test and Polish Results Page (`results.tsx`)**
+- **UI/UX Improvements**
+  - Implement romantic purple theme across the application
+  - Enhance visual design of all quiz and results pages
+  - Improve overall user experience with better spacing, typography, and visual hierarchy
+- **Reward Content Creation**
+  - Design and implement engaging reward images
+  - Create a romantic visual theme for rewards
+  - Ensure rewards are motivating and visually appealing
+- **Theme Implementation**
+  - Update color scheme to romantic purple theme
+  - Apply consistent styling across all components
+  - Ensure good contrast and accessibility
 
 ## Recently Completed
 - **Fixed `getImageRevealLevel()` Timing Issue (`results.tsx` & `ProgressContext.tsx`):**
@@ -17,15 +28,21 @@
 - **Fixed Score Calculation/Display Discrepancy (`results.tsx` & relevant scoring functions):** The issue where `scorePercent` on the results page might not accurately reflect the user's actual score has been resolved.
 
 ## In Progress
-- Testing and polishing the results page.
+- UI/UX redesign with romantic purple theme
+- Reward content creation
+- Theme implementation across all pages
 
 ## Next Steps
-1.  **Test Results Page Extensively:** Thoroughly test various scenarios including score accuracy for all quiz types.
-2.  **UI/UX Polish on `results.tsx`**: Address general UX improvements as noted by the user.
+1. Finalize romantic purple color palette
+2. Design and implement reward images
+3. Update component styling across the application
+4. Test visual consistency and accessibility
+5. Gather user feedback on new design
 
 ## Active Decisions
-- **Prioritization:** Fixing the score discrepancy on `results.tsx` is the highest priority.
-- **Single Source of Truth for Progress:** `ProgressContext` and `overallQuizProgress` Local Storage key.
+- Prioritizing visual appeal and romantic theme
+- Focusing on creating engaging reward content
+- Maintaining good performance while enhancing visuals
 
 ## Blockers/Questions
 - None currently.
