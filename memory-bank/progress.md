@@ -72,7 +72,7 @@ The application features a robust progress tracking and reward system. Enhanceme
 - [ ] Conduct comprehensive UI/UX overhaul (if planned)
 
 ## Next Milestone Focus
-Resolve the score calculation/display discrepancy on the results page.
+Test and polish the results page.
 
 ## Recently Completed
 - **Refactored `ProgressContext.updateSectionProgress` and `results.tsx`:**
@@ -82,6 +82,7 @@ Resolve the score calculation/display discrepancy on the results page.
 - Updated `SectionCard.tsx` to use `ProgressContext` for displaying persistent high score status (star icon) and scores. UI polished on `quiz-selection.tsx`.
 - Refactored the `/reward` page (`client/src/pages/reward.tsx`) to use a static congratulatory letter and display the 3-part assembled reward image.
 - Implemented confetti and special notification for first-time high score achievements on `client/src/pages/results.tsx`.
+- **Fixed Score Calculation/Display Discrepancy (`results.tsx` & relevant scoring functions):** The issue where `scorePercent` on the results page might not accurately reflect the user's actual score has been resolved.
 - Removed unused Local Storage functions (`saveMcqProgress`, `loadMcqProgress`) from `client/src/lib/storage.ts` and `MultipleChoiceQuizContext.tsx`.
 
 ## In Progress
