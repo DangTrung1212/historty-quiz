@@ -173,55 +173,58 @@ export default function Quiz() {
   }
   
   return (
-    <section className="min-h-screen flex flex-col bg-gray-50">
+    <section className="min-h-screen flex flex-col bg-gradient-to-b from-purple-50 to-pink-50">
       {/* Progress Indicators */}
-      <div className="bg-white border-b border-gray-200 px-6 py-4 sticky top-0 z-10">
+      <div className="bg-white/80 backdrop-blur-sm border-b border-purple-100 px-6 py-4 sticky top-0 z-10">
         <div className="max-w-md mx-auto">
           <div className="flex items-center justify-between mb-2">
             <Link href="/quiz-selection">
-              <Button variant="ghost" size="icon" className="text-gray-600" onClick={() => { if (!isDungSai) resetSection(currentSection.id); }}>
-                <ChevronLeft />
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                className="text-purple-600 hover:bg-purple-100/50" 
+                onClick={() => { if (!isDungSai) resetSection(currentSection.id); }}
+              >
+                <ChevronLeft className="h-5 w-5" />
               </Button>
             </Link>
-            <h2 className="font-semibold text-primary">{currentSection.title}</h2>
+            <h2 className="font-heading font-semibold text-purple-800">{currentSection.title}</h2>
             <div className="flex items-center space-x-1">
               <Button
                 variant="ghost"
                 size="icon"
                 disabled={currentQuestionIndex === 0}
                 onClick={handlePrev}
-                className="h-8 w-8 text-gray-600"
+                className="h-8 w-8 text-purple-600 hover:bg-purple-100/50 disabled:opacity-50"
               >
-                <ChevronLeft className="h-4 w-4" />
+                <ChevronLeft className="h-5 w-5" />
               </Button>
               
-              <div className="text-sm font-medium flex items-center bg-gray-100 px-2 py-1 rounded-full">
-                <span className="text-gray-700">{currentQuestionIndex + 1}</span>
-                <span className="text-gray-500 mx-1">/</span>
-                <span className="text-gray-700">{totalQuestions}</span>
+              <div className="text-sm font-medium flex items-center bg-purple-100/50 px-3 py-1 rounded-full border border-purple-200">
+                <span className="text-purple-800">{currentQuestionIndex + 1}</span>
+                <span className="text-purple-500 mx-1">/</span>
+                <span className="text-purple-800">{totalQuestions}</span>
               </div>
               
               <Button
                 variant="ghost"
                 size="icon"
-                disabled={
-                  isDungSai
-                    ? !isCurrentQuestionAnswered() || currentQuestionIndex >= totalQuestions - 1
-                    : !selectedOption || currentQuestionIndex >= totalQuestions - 1
-                }
+                disabled={currentQuestionIndex >= totalQuestions - 1}
                 onClick={handleNext}
-                className="h-8 w-8 text-gray-600"
+                className="h-8 w-8 text-purple-600 hover:bg-purple-100/50 disabled:opacity-50"
               >
-                <ChevronRight className="h-4 w-4" />
+                <ChevronRight className="h-5 w-5" />
               </Button>
             </div>
           </div>
           
           {/* Question Progress Bar */}
-          <Progress
-            value={questionProgress}
-            className="mt-2 h-1.5 bg-gray-200"
-          />
+          <div className="w-full bg-purple-100/50 rounded-full h-2.5 mt-2">
+            <div 
+              className="bg-gradient-to-r from-purple-500 to-pink-500 h-2.5 rounded-full transition-all duration-500 ease-out"
+              style={{ width: `${questionProgress}%` }}
+            />
+          </div>
         </div>
       </div>
       
@@ -258,27 +261,33 @@ export default function Quiz() {
             {/* Question */}
             <motion.div
               key={`question-${currentQuestionIndex}`}
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -50 }}
-              className="bg-white rounded-lg shadow-md p-6 mb-6"
+              className="group relative p-0.5 rounded-xl bg-gradient-to-r from-purple-100/50 to-pink-100/50 hover:from-purple-200/50 hover:to-pink-200/50 transition-all duration-300"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ 
+                type: 'spring',
+                stiffness: 400,
+                damping: 25
+              }}
+              whileHover={{ scale: 1.01 }}
             >
-              <span className="inline-block px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded-full mb-3">
-                Câu hỏi {currentQuestionIndex + 1}/{totalQuestions}
-              </span>
-              <h2 className="text-lg font-medium mb-5">{question.text}</h2>
+              <div className="bg-white/90 backdrop-blur-sm rounded-xl p-6 border border-purple-100/50 group-hover:border-purple-200 transition-colors duration-300">
+                <h2 className="text-purple-900 font-medium text-lg leading-relaxed mb-6">
+                  {question.text}
+                </h2>
 
-              {/* Answer Options */}
-              <div className="space-y-3">
-                {question.options.map((option, index) => (
-                  <QuizOption
-                    key={option.id}
-                    option={option}
-                    index={index}
-                    isSelected={selectedOption === option.id}
-                    onSelect={() => handleOptionSelect(option.id)}
-                  />
-                ))}
+                {/* Answer Options */}
+                <div className="space-y-3">
+                  {question.options.map((option, index) => (
+                    <QuizOption
+                      key={option.id}
+                      option={option}
+                      index={index}
+                      isSelected={selectedOption === option.id}
+                      onSelect={() => handleOptionSelect(option.id)}
+                    />
+                  ))}
+                </div>
               </div>
             </motion.div>
           </div>

@@ -34,8 +34,8 @@ export default function QuizSelection() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <h1 className="text-2xl font-bold text-primary">Chọn Phần Thi</h1>
-          <p className="text-gray-600">Hoàn thành mỗi phần với điểm ≥90% để mở khóa phần thưởng</p>
+          <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">Chọn Phần Thi</h1>
+          <p className="text-purple-700/80 font-medium">Hoàn thành mỗi phần với điểm ≥90% để mở khóa phần thưởng</p>
         </motion.header>
         
         {/* Progress Widget - Uncommented */}
@@ -52,25 +52,25 @@ export default function QuizSelection() {
             <div className="p-4">
               <div className="flex justify-between items-center mb-4">
                 <div className="flex items-center gap-2">
-                  <div className="bg-primary/10 p-2 rounded-full">
-                    <BarChart2 className="h-5 w-5 text-primary" />
+                  <div className="bg-purple-100 p-2 rounded-full">
+                    <BarChart2 className="h-5 w-5 text-purple-500" />
                   </div>
-                  <h3 className="font-medium">Tiến độ & Phần thưởng</h3>
+                  <h3 className="font-semibold text-purple-700">Tiến độ & Phần thưởng</h3>
                 </div>
-                <span className="text-sm bg-gray-100 px-3 py-1 rounded-full font-medium">
+                <span className="text-sm bg-purple-50 px-3 py-1 rounded-full font-semibold text-purple-600 border border-purple-100">
                   {completedSections}/{totalSections}
                 </span>
               </div>
               
               <Progress 
                 value={progressPercent} 
-                className="h-2.5 bg-gray-200 mb-4" 
+                className="h-2.5 bg-purple-100 mb-4" 
               />
             </div>
             
-            <div className="bg-gray-50 px-4 py-3 flex justify-between items-center border-t border-gray-100">
-              <span className="text-sm text-gray-600">Phần thưởng: <span className="font-medium">{revealLevel}%</span></span>
-              <div className="flex items-center text-primary text-sm font-medium">
+            <div className="bg-gradient-to-r from-purple-50 to-pink-50 px-4 py-3 flex justify-between items-center border-t border-purple-100">
+              <span className="text-sm text-purple-700">Phần thưởng: <span className="font-semibold bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">{revealLevel}%</span></span>
+              <div className="flex items-center text-purple-600 text-sm font-semibold">
                 Xem chi tiết <ChevronRight className="h-4 w-4 ml-1" />
               </div>
             </div>

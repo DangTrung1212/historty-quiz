@@ -5,7 +5,7 @@ import { useProgress } from "@/contexts/ProgressContext";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect, useMemo, useRef } from "react";
 import { Trophy, Check, Eye, ChevronRight, X as XIcon, Star } from "lucide-react";
 import AnswerReview from "@/components/answer-review";
 import ProgressModal from '@/components/progress-modal';
@@ -51,6 +51,8 @@ export default function Results() {
   const [showAnswers, setShowAnswers] = useState(false);
   const [showProgressModal, setShowProgressModal] = useState(false);
   const [showFirstTimeUnlockCelebration, setShowFirstTimeUnlockCelebration] = useState(false);
+  const answerReviewRef = useRef<HTMLDivElement>(null);
+  const headerHeight = 80; // Approximate height of the fixed header
 
   // Determine if the current section is DungSai
   const isDungSai = useMemo(() => sectionIdNum === 3, [sectionIdNum]);
@@ -207,20 +209,20 @@ export default function Results() {
   const nextQuizSection = getMultipleChoiceSection(nextSectionIdValue);
 
   return (
-    <section className="min-h-screen p-6 bg-gradient-to-b from-primary-light/5 to-white">
+    <section className="min-h-screen p-6 bg-gradient-to-b from-purple-50 to-white">
       {showFirstTimeUnlockCelebration && (
         <Confetti width={width} height={height} recycle={false} numberOfPieces={500} initialVelocityY={12} colors={['#9d4edd', '#c77dff', '#e0aaff', '#7b2cbf', '#5a189a', '#f9c74f']} />
       )}
       <div className="max-w-md mx-auto">
         <motion.div 
-          className="bg-white rounded-lg shadow-romantic p-6 mb-6 border border-primary-light/30"
+          className="bg-white rounded-xl shadow-romantic p-6 mb-6 border border-purple-100"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
         >
           <div className="text-center">
             <motion.div 
-              className={`inline-flex items-center justify-center w-20 h-20 rounded-full mb-4 shadow-romantic-sm ${isPassed ? 'bg-gradient-romantic' : 'bg-gradient-to-br from-red-400 to-red-600'}`}
+              className={`inline-flex items-center justify-center w-20 h-20 rounded-full mb-4 shadow-romantic-sm ${isPassed ? 'bg-gradient-to-r from-purple-500 to-pink-500' : 'bg-gradient-to-r from-rose-400 to-pink-500'}`}
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ delay: 0.2, type: "spring" }}
@@ -231,10 +233,10 @@ export default function Results() {
                 <XIcon className="text-white text-2xl drop-shadow-md" />
               )}
             </motion.div>
-            <h2 className={`text-2xl font-heading font-bold mb-2 ${isPassed ? 'text-primary' : 'text-error'}`}>
+            <h2 className={`text-2xl font-heading font-bold mb-2 ${isPassed ? 'bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent' : 'text-rose-500'}`}>
               {isPassed ? 'Đạt yêu cầu!' : 'Chưa đạt'}
             </h2>
-            <p className="text-primary/70 mb-4">
+            <p className="text-purple-600/80 mb-4">
               {isPassed
                 ? 'Bạn đã vượt qua phần thi này!'
                 : 'Bạn chưa đạt điểm tối thiểu. Hãy thử lại để cải thiện kết quả.'}
@@ -275,15 +277,16 @@ export default function Results() {
             {/* Score */}
             <div className="flex justify-center mb-6">
               <div className="relative w-36 h-36">
+                <div className="absolute inset-0 flex items-center justify-center rounded-full bg-gradient-to-br from-purple-50 to-pink-50 shadow-inner"></div>
                 <svg className="w-full h-full" viewBox="0 0 36 36">
                   <path 
-                    className="stroke-current text-primary-light/30" 
+                    className="stroke-current text-purple-200" 
                     strokeWidth="3" 
                     fill="none"
                     d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
                   />
                   <motion.path 
-                    className={`stroke-current ${isPassed ? 'text-success' : 'text-primary'}`} 
+                    className={`stroke-current ${isPassed ? 'text-purple-500' : 'text-pink-400'}`} 
                     strokeWidth="3" 
                     fill="none" 
                     strokeLinecap="round"
@@ -295,8 +298,8 @@ export default function Results() {
                   />
                 </svg>
                 <div className="absolute inset-0 flex items-center justify-center flex-col">
-                  <span className="text-4xl font-heading font-bold text-primary-dark">{scorePercent}%</span>
-                  <span className="text-sm text-primary/70">Điểm số</span>
+                  <span className="text-4xl font-heading font-bold bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">{scorePercent}%</span>
+                  <span className="text-sm text-purple-500/80">Điểm số</span>
                 </div>
               </div>
             </div>
@@ -308,24 +311,24 @@ export default function Results() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8 }}
             >
-              <div className="bg-primary-light/10 p-4 rounded-lg shadow-romantic-sm border border-primary-light/20">
-                <div className="text-xl font-bold text-success">{correctCount}/{totalQuestionsDisplay}</div>
-                <div className="text-xs text-primary/70 font-medium">Câu đúng</div>
+              <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-4 rounded-xl shadow-romantic-sm border border-purple-100">
+                <div className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">{correctCount}/{totalQuestionsDisplay}</div>
+                <div className="text-xs text-purple-500/80 font-medium">Câu đúng</div>
               </div>
-              <div className="bg-primary-light/10 p-4 rounded-lg shadow-romantic-sm border border-primary-light/20">
-                <div className="text-xl font-bold text-error">{incorrectCount}/{totalQuestionsDisplay}</div>
-                <div className="text-xs text-primary/70 font-medium">Câu sai</div>
+              <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-4 rounded-xl shadow-romantic-sm border border-purple-100">
+                <div className="text-2xl font-bold text-rose-500">{incorrectCount}/{totalQuestionsDisplay}</div>
+                <div className="text-xs text-rose-500/80 font-medium">Câu sai</div>
               </div>
-              <div className="bg-primary-light/10 p-4 rounded-lg shadow-romantic-sm border border-primary-light/20">
-                <div className="text-xl font-bold text-primary-dark">{timeDisplay}</div>
-                <div className="text-xs text-primary/70 font-medium">Thời gian</div>
+              <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-4 rounded-xl shadow-romantic-sm border border-purple-100">
+                <div className="text-2xl font-bold text-purple-700">{timeDisplay}</div>
+                <div className="text-xs text-purple-500/80 font-medium">Thời gian</div>
               </div>
             </motion.div>
             
             {/* --- Reward Unlock Notice --- */}
             {unlocked && !showRewardNavigation && (
               <motion.div 
-                className="bg-primary-light/10 border border-primary-light/30 rounded-lg p-5 mb-6 cursor-pointer shadow-romantic-sm hover:shadow-romantic transition-all duration-300"
+                className="bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-200 rounded-xl p-5 mb-6 cursor-pointer shadow-romantic-sm hover:shadow-romantic transition-all duration-300"
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: "auto" }}
                 transition={{ delay: 1.2 }}
@@ -333,16 +336,16 @@ export default function Results() {
                 whileHover={{ scale: 1.02 }}
               >
                 <div className="flex items-center justify-center">
-                  <Trophy className="w-6 h-6 mr-2 text-accent drop-shadow-sm" />
-                  <span className="font-heading font-semibold text-primary-dark">Mảnh ghép mới đã được mở khóa!</span>
+                  <Trophy className="w-6 h-6 mr-2 text-purple-500 drop-shadow-sm" />
+                  <span className="font-heading font-semibold bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">Mảnh ghép mới đã được mở khóa!</span>
                 </div>
-                <p className="text-sm text-center mt-1 text-primary/70">Xem tiến độ của bạn.</p>
+                <p className="text-sm text-center mt-1 text-purple-500/80">Xem tiến độ của bạn.</p>
               </motion.div>
             )}
             {/* --- Final Completion Notice --- */}
             {showRewardNavigation && (
                <motion.div 
-                className="bg-gradient-romantic p-5 mb-6 text-white rounded-lg shadow-romantic"
+                className="bg-gradient-to-r from-purple-600 to-pink-500 p-5 mb-6 text-white rounded-xl shadow-romantic"
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: "auto" }}
                 transition={{ delay: 1.2 }}
@@ -357,21 +360,41 @@ export default function Results() {
             
             {/* View Answers Button - Moved above the action buttons */}
             <div className="mb-6">
-              <Button 
-                variant="outline" 
-                className="w-full flex items-center justify-center gap-2 py-3 shadow-romantic-sm hover:bg-primary-light/5"
-                onClick={() => setShowAnswers(!showAnswers)}
+              <motion.button 
+                className="w-full flex items-center justify-center gap-2 py-3 rounded-xl border-2 border-purple-200 bg-white text-purple-700 font-medium shadow-romantic-sm hover:bg-purple-50 transition-all duration-200"
+                onClick={() => {
+                  const newShowAnswers = !showAnswers;
+                  setShowAnswers(newShowAnswers);
+                  
+                  // Scroll to answer review after a short delay to allow it to render
+                  if (newShowAnswers) {
+                    setTimeout(() => {
+                      if (answerReviewRef.current) {
+                        const yOffset = -headerHeight - 20; // Adjust for header and add some padding
+                        const y = answerReviewRef.current.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                        window.scrollTo({
+                          top: y,
+                          behavior: 'smooth'
+                        });
+                      }
+                    }, 150); // Slightly longer delay for more reliable rendering
+                  }
+                }}
+                whileHover={{ scale: 1.01 }}
+                whileTap={{ scale: 0.99 }}
               >
-                <Eye className="h-5 w-5" />
-                {showAnswers ? 'Ẩn đáp án' : 'Xem đáp án'}
-              </Button>
+                <Eye className="h-5 w-5 text-purple-600" />
+                <span className="bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
+                  {showAnswers ? 'Ẩn đáp án' : 'Xem đáp án'}
+                </span>
+              </motion.button>
             </div>
             
             {/* Actions - Centered buttons */}
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button
-                variant="outline"
-                className="w-full px-4 py-3 border-primary-light/30 text-primary-dark font-medium shadow-romantic-sm hover:bg-primary-light/5"
+                variant="secondary"
+                className="w-full px-4 py-3 font-medium shadow-romantic-sm rounded-xl transition-all duration-200 bg-white text-purple-700 border border-purple-200 hover:bg-purple-50 hover:text-purple-800"
                 onClick={() => {
                   if (isDungSai) {
                     resetDungSaiSection();
@@ -399,8 +422,7 @@ export default function Results() {
               {!showRewardNavigation && !nextQuizSection && (
                 <motion.div className="w-full" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2 }}>
                   <Button 
-                    variant="secondary"
-                    className="w-full shadow-romantic-sm py-3"
+                    className="w-full shadow-romantic-sm py-3 bg-gradient-to-r from-purple-600 to-pink-500 hover:from-purple-700 hover:to-pink-600 text-white rounded-xl transition-all duration-200"
                     onClick={() => setLocation("/")}
                   >
                     Quay về trang chủ
@@ -412,33 +434,34 @@ export default function Results() {
         </motion.div>
         
         {showAnswers && sectionData && (
-          <AnswerReview 
-            sectionId={sectionIdNum} 
-            isDungSai={isDungSai}
-          />
+          <div ref={answerReviewRef} className="scroll-mt-24">
+            <AnswerReview 
+              sectionId={sectionIdNum} 
+              isDungSai={isDungSai}
+            />
+          </div>
         )}
         
         <motion.div 
-          className="bg-white rounded-lg shadow-romantic p-6 hover:shadow-romantic-lg transition-all duration-300 border border-primary-light/30"
+          className="bg-white rounded-xl shadow-romantic p-6 hover:shadow-romantic-lg transition-all duration-300 border border-purple-100"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
         >
           <div>
-            <h3 className="font-heading font-semibold mb-4 text-primary-dark text-lg">Chọn Phần Thi Khác</h3>
+            <h3 className="font-heading font-semibold mb-4 bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent text-xl">Chọn Phần Thi Khác</h3>
             <div className="space-y-3">
               {sections.filter(s => s.id !== Number(sectionId)).map(section => (
                 <Link key={section.id} href={`/quiz/${section.id}`} className="block">
-                  <div className="flex items-center transition-all duration-300 active:scale-98 rounded-lg cursor-pointer p-3 hover:bg-primary-light/10 border border-primary-light/20 hover:border-primary-light/40 shadow-romantic-sm hover:shadow-romantic">
-                    <div className="w-14 h-14 bg-gradient-to-br from-primary-light/20 to-white border border-primary-light/30 rounded-lg flex items-center justify-center mr-4 shadow-sm">
-                      {/* Placeholder for an icon, assuming you might add one later */}
-                      <span className="text-primary text-2xl drop-shadow-sm">📝</span> 
+                  <div className="flex items-center transition-all duration-300 active:scale-98 rounded-xl cursor-pointer p-3 hover:bg-purple-50 border border-purple-100 hover:border-purple-200 shadow-romantic-sm hover:shadow-romantic">
+                    <div className="w-14 h-14 bg-gradient-to-br from-purple-100 to-white border border-purple-200 rounded-xl flex items-center justify-center mr-4 shadow-sm">
+                      <span className="text-2xl bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent drop-shadow-sm">📝</span> 
                     </div>
                     <div>
-                      <h4 className="font-medium text-primary-dark">{section.title}</h4>
-                      <p className="text-sm text-primary/70">{section.questions.length} câu hỏi</p>
+                      <h4 className="font-medium text-purple-900">{section.title}</h4>
+                      <p className="text-sm text-purple-500/80">{section.questions.length} câu hỏi</p>
                     </div>
-                    <div className="ml-auto text-primary">
+                    <div className="ml-auto text-purple-400">
                       <ChevronRight className="h-5 w-5" />
                     </div>
                   </div>

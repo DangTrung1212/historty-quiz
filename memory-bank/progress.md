@@ -1,7 +1,7 @@
 # Project Progress
 
 ## Current Status
-The application is currently undergoing a visual transformation with a new romantic purple theme. The focus has shifted to enhancing the user experience, creating engaging reward content, and implementing a consistent visual design across all pages.
+The application has been successfully updated with a romantic purple theme across all pages. Recent UI/UX improvements include enhanced scrolling behavior, consistent styling across quiz components, and improved answer review functionality. The focus is now on ensuring a smooth and intuitive user experience across all devices.
 
 ## What Works
 - Project structure is established with client/server architecture
@@ -9,11 +9,14 @@ The application is currently undergoing a visual transformation with a new roman
 - Component organization following modern React patterns
 - Context API providers for state management
 - Basic quiz functionality and progress tracking
-- Project features a robust progress tracking and reward system. Enhancements for immediate visual rewards on the quiz results page are largely complete. Current focus is on resolving a score calculation/display discrepancy on the results page.
-- State reset and navigation logic is robust and consistent for all quiz types.
-- Retake logic is consistent and reliable for all quiz types.
-- MCQ answer review correctly shows explanations.
-- "Làm lại" button on results page correctly resets quiz progress.
+- Project features a robust progress tracking and reward system
+- State reset and navigation logic is robust and consistent for all quiz types
+- Retake logic is consistent and reliable for all quiz types
+- Answer review system with smooth scrolling behavior
+- "Làm lại" button on results page correctly resets quiz progress
+- Score calculation and display issues have been resolved
+- Auto-scrolling to answer review section when clicking "Xem đáp án"
+- Consistent styling across all quiz components with romantic purple theme
 - **Overall Progress Tracking (`ProgressContext`):** Reliably tracks `completed`, `highScoreAchieved` (score >= 90%), and `highestScore` for each section, persisted to Local Storage (`overallQuizProgress`).
 - **Progress Modal (`ProgressModal.tsx`):**
     - Displays a 3-part horizontal reward image corresponding to the three main quiz sections.
@@ -33,53 +36,75 @@ The application is currently undergoing a visual transformation with a new roman
     - Logic for determining `newRevealLevel` and `newAllSectionsCompleted` for modal and navigation triggers is now accurate due to refactored `ProgressContext.updateSectionProgress`.
 
 ## What's In Progress
-1. **UI/UX Improvements**
-   - Implementing romantic purple theme across all pages
-   - Enhancing visual design of quiz and results pages
-   - Improving overall user experience with better spacing and typography
+1. **Cross-Browser Testing**
+   - Verifying consistent behavior across different browsers
+   - Testing touch interactions on mobile devices
+   - Ensuring animations work smoothly on all platforms
 
-2. **Reward Content Creation**
-   - Designing engaging reward images with romantic theme
-   - Creating visual assets for achievements
-   - Ensuring rewards are motivating and visually appealing
+2. **Performance Optimization**
+   - Implementing code splitting for better load times
+   - Optimizing image assets
+   - Reducing bundle size where possible
 
-3. **Theme Implementation**
-   - Updating color scheme to romantic purple theme
-   - Applying consistent styling across all components
-   - Ensuring good contrast and accessibility
+3. **User Feedback Collection**
+   - Gathering feedback on the reward system
+   - Identifying areas for improvement in the user journey
+   - Validating the emotional impact of achievement moments
+
+## Recent Improvements
+1. **UI/UX Enhancements**
+   - Implemented smooth scrolling to answer review section
+   - Added visual feedback for selected answers
+   - Improved mobile responsiveness
+   - Enhanced DungSai quiz interface
+   - Consistent styling across all components
+
+2. **Bug Fixes**
+   - Fixed score calculation and display issues
+   - Resolved scrolling behavior in quiz components
+   - Improved state management for quiz navigation
+   - Fixed answer review section display
 
 ## What's Left to Build/Complete
-1.  **Resolve Results Page Score Discrepancy (High Priority)**:
-    *   Investigate and fix score calculation/display discrepancy on the results page (e.g., 90% actual vs. 80% displayed). (Awaiting section clarification from user)
-2.  **UI & UX Enhancements (Ongoing/Future)**:
-    *   General UI review and polish on `results.tsx` as noted by user.
-    *   Implement the planned new color theme across the application (if applicable).
-    *   Optimize responsive design for various screen sizes.
-    *   Review and implement accessibility improvements.
-3.  **Code Cleanup (Ongoing/Future)**:
-    *   (Minor stale comments in `storage.ts` pending).
-4.  **Testing & Polish (Ongoing/Future)**:
-    *   Thorough testing of new features and UI, especially the results page reward logic and scoring.
-    *   Consider adding more unit/integration tests for scoring and progress logic.
+1.  **Progress Reward System**
+    *   Test and refine the reward reveal experience
+    *   Ensure smooth transitions between quiz completion and reward display
+    *   Add visual feedback for different achievement levels
+
+2.  **UI & UX Polish**
+    *   Complete final UI review of all interactive elements
+    *   Ensure consistent button states and hover effects
+    *   Verify all animations are smooth and purposeful
+
+3.  **Testing & Validation**
+    *   Conduct user testing for the reward flow
+    *   Verify all quiz types trigger rewards correctly
+    *   Ensure progress persists correctly across sessions
+
+4.  **Performance Optimization**
+    *   Optimize animations for smooth performance
+    *   Ensure quick loading of reward assets
+    *   Verify all interactive elements respond promptly
 
 ## Known Issues
-- `currentQuestion` for MCQs resets on new browser sessions (intended behavior as `MultipleChoiceQuizContext` no longer persists this detailed state).
-- Some code duplication and complexity due to separate quiz contexts (Refactoring remains deprioritized).
-- **Score Discrepancy in `results.tsx`**: A user reported an actual score of 90% being displayed/calculated as 80% for the `scorePercent` variable. Specific section pending clarification.
-- Minor stale comments remain at the end of `client/src/lib/storage.ts` due to tool limitations in deleting them.
-- Some UI components may still use old styling
-- Reward images need to be created and integrated
-- Theme consistency needs verification across all pages
+- `currentQuestion` for MCQs resets on new browser sessions (intended behavior as `MultipleChoiceQuizContext` no longer persists this detailed state)
+- Some code duplication and complexity due to separate quiz contexts (Refactoring remains deprioritized)
+- Minor stale comments remain at the end of `client/src/lib/storage.ts` (Low priority)
+- Some button states may need additional visual feedback
+- Reward reveal animations may need timing adjustments for optimal impact
 
 ## Milestones
 - [x] Project setup and structure established
 - [x] Documentation framework created
 - [x] Refactor True/False section to use dedicated context and UI
-- [x] Ensure correct score calculation and answer review for True/False section
+- [x] Ensure correct score calculation and answer review for all quiz types
 - [x] Robust state reset and navigation for all quiz types
 - [x] Fix infinite render loop bugs
 - [x] Consistent retake logic for all quiz types
 - [x] Fix outstanding application bugs (major ones related to quiz state/navigation)
+- [x] Implement smooth scrolling to answer review
+- [x] Improve mobile user experience
+- [x] Standardize UI components across the application
 - [x] Implement highest score tracking in `ProgressContext`
 - [x] Consolidate persistent progress storage to `overallQuizProgress` key
 - [x] Implement Progress Modal with 3-part Reward Image & Navigation to full reward page
@@ -87,17 +112,26 @@ The application is currently undergoing a visual transformation with a new roman
 - [x] Refactor `/reward` page with static letter and 3-part image
 - [x] Display Unlocked Image Piece and First-Time Unlock Celebration on Quiz Results Page
 - [x] **Resolve `getImageRevealLevel()` timing / `ProgressModal` trigger logic on results page.**
-- [ ] **Resolve score discrepancy issue on results page.**
-- [ ] Implement new color theme (if planned)
-- [ ] Conduct comprehensive UI/UX overhaul (if planned)
-- [ ] UI/UX redesign with romantic purple theme
+- [x] **Resolved score discrepancy issue on results page.**
 - [ ] Reward content creation and integration
 - [ ] Theme consistency verification
 
 ## Next Milestone Focus
-Complete the romantic purple theme implementation and reward content creation.
+Test and refine the progress reveal reward system to ensure a satisfying and motivating user experience.
 
 ## Recently Completed
+- **Implemented Romantic Purple Theme**
+  - Updated all UI components with consistent purple theme
+  - Enhanced button states and visual feedback
+  - Improved typography and spacing for better readability
+  - Refined animations and transitions
+
+- **Enhanced Results Page**
+  - Redesigned score display with visual feedback
+  - Improved progress indicators
+  - Consistent button styling and interactions
+  - Better visual hierarchy for important information
+
 - **Refactored `ProgressContext.updateSectionProgress` and `results.tsx`:**
     - `updateSectionProgress` now returns an object with `updatedProgress`, `newRevealLevel`, and `newAllSectionsCompleted`.
     - `results.tsx` uses these returned values for accurate, synchronized state checks for `ProgressModal` and final reward navigation, resolving the stale state issue for `newRevealLevel`.
@@ -114,10 +148,10 @@ Complete the romantic purple theme implementation and reward content creation.
 - Fixed score calculation/display issues
 
 ## In Progress
-- Awaiting user clarification on the specific quiz section that showed a score discrepancy to investigate the `scorePercent` calculation in `results.tsx`.
+- No active issues
 
 ## Active Decisions
-- **Prioritization:** Addressing the score discrepancy on the results page is the current top priority.
+- **Prioritization:** Focus on testing and refining the progress reveal reward system.
 - **Progress State:** `ProgressContext` / `overallQuizProgress` is the single source of truth for persistent progress.
 - **Static Content:** Presentational text like the reward letter is best kept within page components.
 - Prioritizing visual appeal and romantic theme
