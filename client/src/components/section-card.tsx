@@ -22,44 +22,45 @@ export default function SectionCard({ section }: SectionCardProps) {
   
   return (
     <motion.div 
-      className="bg-white rounded-lg shadow-md overflow-hidden"
+      className="rounded-lg overflow-hidden shadow-romantic border border-primary-light/30 transition-all duration-300 hover:shadow-romantic-lg bg-white"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: animationDelay }}
+      whileHover={{ scale: 1.02 }}
     >
-      <div className="p-4 border-b border-gray-100 flex justify-between items-center">
+      <div className="p-5 border-b border-primary-light/20 flex justify-between items-center">
         <div>
-          <h3 className="font-semibold text-gray-800">{section.title}</h3>
-          <p className="text-sm text-gray-500">{section.questions.length} câu hỏi</p>
+          <h3 className="font-heading font-bold text-lg text-primary-dark">{section.title}</h3>
+          <p className="text-sm text-primary/70">{section.questions.length} câu hỏi</p>
         </div>
         <div className="flex items-center space-x-2">
           {isCompleted && highestScore !== undefined && !highScoreAchieved && (
             <span className="text-sm font-medium text-orange-500">{highestScore}%</span>
           )}
           {highScoreAchieved && highestScore !== undefined && (
-            <span className="text-sm font-medium text-green-600">{highestScore}%</span>
+            <span className="text-sm font-medium text-success">{highestScore}%</span>
           )}
           
           {highScoreAchieved ? (
-            <div className="text-yellow-400">
-              <Star className="h-6 w-6 fill-current" />
+            <div className="text-accent animate-pulse-romantic">
+              <Star className="h-7 w-7 fill-current drop-shadow-md" />
             </div>
           ) : isCompleted ? (
-            <div className="text-gray-300">
+            <div className="text-secondary-light">
               <Star className="h-6 w-6 fill-current" /> 
             </div>
           ) : (
-            <div className="text-gray-300">
+            <div className="text-primary-light">
               <Star className="h-6 w-6" />
             </div>
           )}
         </div>
       </div>
-      <div className="px-4 py-3 bg-gray-50">
+      <div className="px-4 py-4 bg-gradient-to-b from-white to-primary-light/5">
         <Link href={`/quiz/${section.id}`}>
           <Button 
-            variant={isCompleted ? "secondary" : "default"}
-            className="w-full px-4 py-2"
+            variant={isCompleted ? "outline" : "default"}
+            className="w-full py-2.5 font-medium"
           >
             {isCompleted ? "Làm Lại" : "Bắt Đầu"}
           </Button>

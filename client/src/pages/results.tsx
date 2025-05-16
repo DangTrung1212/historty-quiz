@@ -207,33 +207,34 @@ export default function Results() {
   const nextQuizSection = getMultipleChoiceSection(nextSectionIdValue);
 
   return (
-    <section className="min-h-screen p-6 bg-gray-50">
+    <section className="min-h-screen p-6 bg-gradient-to-b from-primary-light/5 to-white">
       {showFirstTimeUnlockCelebration && (
-        <Confetti width={width} height={height} recycle={false} numberOfPieces={400} initialVelocityY={10} />
+        <Confetti width={width} height={height} recycle={false} numberOfPieces={500} initialVelocityY={12} colors={['#9d4edd', '#c77dff', '#e0aaff', '#7b2cbf', '#5a189a', '#f9c74f']} />
       )}
       <div className="max-w-md mx-auto">
         <motion.div 
-          className="bg-white rounded-lg shadow-md p-6 mb-6"
+          className="bg-white rounded-lg shadow-romantic p-6 mb-6 border border-primary-light/30"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
         >
           <div className="text-center">
             <motion.div 
-              className={`inline-flex items-center justify-center w-16 h-16 rounded-full mb-4 ${isPassed ? 'bg-green-100' : 'bg-red-100'}`}
+              className={`inline-flex items-center justify-center w-20 h-20 rounded-full mb-4 shadow-romantic-sm ${isPassed ? 'bg-gradient-romantic' : 'bg-gradient-to-br from-red-400 to-red-600'}`}
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ delay: 0.2, type: "spring" }}
             >
               {isPassed ? (
-                <Trophy className="text-success text-2xl" />
+                <Trophy className="text-white text-2xl drop-shadow-md" />
               ) : (
-                <XIcon className="text-error text-2xl" />
+                <XIcon className="text-white text-2xl drop-shadow-md" />
               )}
             </motion.div>
-            <h2 className={`text-xl font-bold mb-2 ${isPassed ? 'text-success' : 'text-error'}`}>
+            <h2 className={`text-2xl font-heading font-bold mb-2 ${isPassed ? 'text-primary' : 'text-error'}`}>
               {isPassed ? 'Đạt yêu cầu!' : 'Chưa đạt'}
             </h2>
-            <p className="text-gray-600 mb-4">
+            <p className="text-primary/70 mb-4">
               {isPassed
                 ? 'Bạn đã vượt qua phần thi này!'
                 : 'Bạn chưa đạt điểm tối thiểu. Hãy thử lại để cải thiện kết quả.'}
@@ -242,28 +243,28 @@ export default function Results() {
             {/* Display first time unlock message AND newly unlocked image piece */}
             {isPassed && newlyUnlockedImageIndex !== null && rewardImageParts[newlyUnlockedImageIndex] && (
               <motion.div
-                className="my-6 p-4 border-2 border-yellow-400 rounded-lg shadow-lg bg-yellow-50"
+                className="my-6 p-5 border-2 border-accent/70 rounded-lg shadow-romantic bg-accent/5"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.5, duration: 0.5 }}
               >
                 {showFirstTimeUnlockCelebration && (
                   <div className="text-center mb-3">
-                    <Star className="inline-block text-yellow-500 h-7 w-7 mr-2 animate-pulse" />
-                    <span className="text-lg font-semibold text-yellow-700">
+                    <Star className="inline-block text-accent h-8 w-8 mr-2 animate-pulse-romantic drop-shadow-sm" />
+                    <span className="text-lg font-heading font-semibold text-primary-dark">
                       Chúc mừng! Bạn đã mở khóa một mảnh ghép mới!
                     </span>
                   </div>
                 )}
                 {!showFirstTimeUnlockCelebration && (
-                   <h3 className="text-lg font-semibold text-yellow-700 mb-2 text-center">
+                   <h3 className="text-lg font-heading font-semibold text-primary-dark mb-2 text-center">
                     Mảnh ghép mới đã được mở khóa!
                   </h3>
                 )}
                 <img 
                   src={rewardImageParts[newlyUnlockedImageIndex]} 
                   alt={`Mảnh ghép phần thưởng ${newlyUnlockedImageIndex + 1}`}
-                  className="rounded-md mx-auto max-h-48 object-contain shadow-md"
+                  className="rounded-md mx-auto max-h-48 object-contain shadow-romantic"
                 />
               </motion.div>
             )}
@@ -273,16 +274,16 @@ export default function Results() {
             
             {/* Score */}
             <div className="flex justify-center mb-6">
-              <div className="relative w-32 h-32">
+              <div className="relative w-36 h-36">
                 <svg className="w-full h-full" viewBox="0 0 36 36">
                   <path 
-                    className="stroke-current text-gray-200" 
+                    className="stroke-current text-primary-light/30" 
                     strokeWidth="3" 
                     fill="none"
                     d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
                   />
                   <motion.path 
-                    className="stroke-current text-success" 
+                    className={`stroke-current ${isPassed ? 'text-success' : 'text-primary'}`} 
                     strokeWidth="3" 
                     fill="none" 
                     strokeLinecap="round"
@@ -294,8 +295,8 @@ export default function Results() {
                   />
                 </svg>
                 <div className="absolute inset-0 flex items-center justify-center flex-col">
-                  <span className="text-3xl font-bold">{scorePercent}%</span>
-                  <span className="text-sm text-gray-500">Điểm số</span>
+                  <span className="text-4xl font-heading font-bold text-primary-dark">{scorePercent}%</span>
+                  <span className="text-sm text-primary/70">Điểm số</span>
                 </div>
               </div>
             </div>
@@ -307,49 +308,50 @@ export default function Results() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8 }}
             >
-              <div className="bg-gray-50 p-3 rounded-lg">
-                <div className="text-xl font-bold text-primary">{correctCount}/{totalQuestionsDisplay}</div>
-                <div className="text-xs text-gray-500">Câu đúng</div>
+              <div className="bg-primary-light/10 p-4 rounded-lg shadow-romantic-sm border border-primary-light/20">
+                <div className="text-xl font-bold text-success">{correctCount}/{totalQuestionsDisplay}</div>
+                <div className="text-xs text-primary/70 font-medium">Câu đúng</div>
               </div>
-              <div className="bg-gray-50 p-3 rounded-lg">
+              <div className="bg-primary-light/10 p-4 rounded-lg shadow-romantic-sm border border-primary-light/20">
                 <div className="text-xl font-bold text-error">{incorrectCount}/{totalQuestionsDisplay}</div>
-                <div className="text-xs text-gray-500">Câu sai</div>
+                <div className="text-xs text-primary/70 font-medium">Câu sai</div>
               </div>
-              <div className="bg-gray-50 p-3 rounded-lg">
-                <div className="text-xl font-bold text-gray-700">{timeDisplay}</div>
-                <div className="text-xs text-gray-500">Thời gian</div>
+              <div className="bg-primary-light/10 p-4 rounded-lg shadow-romantic-sm border border-primary-light/20">
+                <div className="text-xl font-bold text-primary-dark">{timeDisplay}</div>
+                <div className="text-xs text-primary/70 font-medium">Thời gian</div>
               </div>
             </motion.div>
             
             {/* --- Reward Unlock Notice --- */}
             {unlocked && !showRewardNavigation && (
               <motion.div 
-                className="bg-indigo-50 border border-indigo-100 rounded-lg p-4 mb-6 cursor-pointer text-indigo-700"
+                className="bg-primary-light/10 border border-primary-light/30 rounded-lg p-5 mb-6 cursor-pointer shadow-romantic-sm hover:shadow-romantic transition-all duration-300"
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: "auto" }}
                 transition={{ delay: 1.2 }}
                 onClick={() => setShowProgressModal(true)} // Keep modal trigger
+                whileHover={{ scale: 1.02 }}
               >
                 <div className="flex items-center justify-center">
-                  <Trophy className="w-5 h-5 mr-2 text-indigo-500" />
-                  <span className="font-semibold">Mảnh ghép mới đã được mở khóa!</span>
+                  <Trophy className="w-6 h-6 mr-2 text-accent drop-shadow-sm" />
+                  <span className="font-heading font-semibold text-primary-dark">Mảnh ghép mới đã được mở khóa!</span>
                 </div>
-                <p className="text-sm text-center mt-1">Xem tiến độ của bạn.</p>
+                <p className="text-sm text-center mt-1 text-primary/70">Xem tiến độ của bạn.</p>
               </motion.div>
             )}
             {/* --- Final Completion Notice --- */}
             {showRewardNavigation && (
                <motion.div 
-                className="bg-emerald-50 border border-emerald-100 rounded-lg p-4 mb-6 text-emerald-700"
+                className="bg-gradient-romantic p-5 mb-6 text-white rounded-lg shadow-romantic"
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: "auto" }}
                 transition={{ delay: 1.2 }}
               >
                 <div className="flex items-center justify-center">
-                  <Check className="w-5 h-5 mr-2 text-emerald-500" />
-                  <span className="font-semibold">Chúc mừng! Bạn đã hoàn thành tất cả!</span>
+                  <Check className="w-6 h-6 mr-2 text-white" />
+                  <span className="font-heading font-semibold">Chúc mừng! Bạn đã hoàn thành tất cả!</span>
                 </div>
-                <p className="text-sm text-center mt-1">Xem phần thưởng cuối cùng...</p>
+                <p className="text-sm text-center mt-1 text-white/90">Xem phần thưởng cuối cùng...</p>
               </motion.div>
             )}
             
@@ -357,7 +359,7 @@ export default function Results() {
             <div className="mb-6">
               <Button 
                 variant="outline" 
-                className="w-full flex items-center justify-center gap-2 py-3"
+                className="w-full flex items-center justify-center gap-2 py-3 shadow-romantic-sm hover:bg-primary-light/5"
                 onClick={() => setShowAnswers(!showAnswers)}
               >
                 <Eye className="h-5 w-5" />
@@ -366,10 +368,10 @@ export default function Results() {
             </div>
             
             {/* Actions - Centered buttons */}
-            <div className="flex justify-center space-x-4">
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button
                 variant="outline"
-                className="w-full px-4 py-3 border border-gray-300 text-gray-700 font-medium"
+                className="w-full px-4 py-3 border-primary-light/30 text-primary-dark font-medium shadow-romantic-sm hover:bg-primary-light/5"
                 onClick={() => {
                   if (isDungSai) {
                     resetDungSaiSection();
@@ -385,9 +387,9 @@ export default function Results() {
               
               {/* Conditional Next/Home Button */}            
               {!showRewardNavigation && nextQuizSection && (
-                <motion.div className="mt-4" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2 }}>
+                <motion.div className="w-full" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2 }}>
                   <Button 
-                    className="w-full bg-primary hover:bg-primary/90"
+                    className="w-full shadow-romantic-sm py-3"
                     onClick={() => setLocation(`/quiz/${nextQuizSection.id}`)}
                   >
                     Phần tiếp theo <ChevronRight className="ml-2 h-4 w-4" />
@@ -395,10 +397,10 @@ export default function Results() {
                 </motion.div>
               )}
               {!showRewardNavigation && !nextQuizSection && (
-                <motion.div className="mt-4" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2 }}>
+                <motion.div className="w-full" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2 }}>
                   <Button 
                     variant="secondary"
-                    className="w-full"
+                    className="w-full shadow-romantic-sm py-3"
                     onClick={() => setLocation("/")}
                   >
                     Quay về trang chủ
@@ -417,24 +419,24 @@ export default function Results() {
         )}
         
         <motion.div 
-          className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200"
+          className="bg-white rounded-lg shadow-romantic p-6 hover:shadow-romantic-lg transition-all duration-300 border border-primary-light/30"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
         >
           <div>
-            <h3 className="font-semibold mb-3 text-gray-800">Chọn Phần Thi Khác</h3>
+            <h3 className="font-heading font-semibold mb-4 text-primary-dark text-lg">Chọn Phần Thi Khác</h3>
             <div className="space-y-3">
               {sections.filter(s => s.id !== Number(sectionId)).map(section => (
                 <Link key={section.id} href={`/quiz/${section.id}`} className="block">
-                  <div className="flex items-center transition active:scale-95 active:bg-primary/10 rounded-lg cursor-pointer p-3 hover:bg-primary/5">
-                    <div className="w-12 h-12 bg-white border border-gray-200 rounded-lg flex items-center justify-center mr-4">
+                  <div className="flex items-center transition-all duration-300 active:scale-98 rounded-lg cursor-pointer p-3 hover:bg-primary-light/10 border border-primary-light/20 hover:border-primary-light/40 shadow-romantic-sm hover:shadow-romantic">
+                    <div className="w-14 h-14 bg-gradient-to-br from-primary-light/20 to-white border border-primary-light/30 rounded-lg flex items-center justify-center mr-4 shadow-sm">
                       {/* Placeholder for an icon, assuming you might add one later */}
-                      <span className="text-primary text-xl">📝</span> 
+                      <span className="text-primary text-2xl drop-shadow-sm">📝</span> 
                     </div>
                     <div>
-                      <h4 className="font-medium">{section.title}</h4>
-                      <p className="text-sm text-gray-600">{section.questions.length} câu hỏi</p>
+                      <h4 className="font-medium text-primary-dark">{section.title}</h4>
+                      <p className="text-sm text-primary/70">{section.questions.length} câu hỏi</p>
                     </div>
                     <div className="ml-auto text-primary">
                       <ChevronRight className="h-5 w-5" />

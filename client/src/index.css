@@ -3,54 +3,90 @@
 @tailwind utilities;
 
 :root {
-  --background: 0 0% 100%;
-  --foreground: 20 14.3% 4.1%;
-  --muted: 60 4.8% 95.9%;
-  --muted-foreground: 25 5.3% 44.7%;
-  --popover: 0 0% 100%;
-  --popover-foreground: 20 14.3% 4.1%;
+  /* Base colors */
+  --background: 280 25% 98%;
+  --foreground: 270 15% 15%;
+  
+  /* Purple theme colors */
+  --primary: 270 70% 50%;          /* Main purple */
+  --primary-foreground: 0 0% 100%;
+  --primary-light: 270 70% 90%;    /* Light purple for backgrounds */
+  --primary-dark: 270 70% 30%;     /* Dark purple for text */
+  
+  /* Secondary pink colors */
+  --secondary: 330 80% 80%;        /* Soft pink */
+  --secondary-foreground: 330 50% 20%;
+  --secondary-light: 330 80% 95%;  /* Very light pink */
+  --secondary-dark: 330 80% 40%;   /* Darker pink */
+  
+  /* Accent gold colors */
+  --accent: 45 90% 60%;            /* Gold accent */
+  --accent-foreground: 45 30% 20%;
+  --accent-light: 45 90% 90%;      /* Light gold */
+  
+  /* UI colors */
+  --muted: 270 20% 95%;
+  --muted-foreground: 270 10% 40%;
+  --popover: 280 25% 98%;
+  --popover-foreground: 270 15% 15%;
   --card: 0 0% 100%;
-  --card-foreground: 20 14.3% 4.1%;
-  --border: 20 5.9% 90%;
-  --input: 20 5.9% 90%;
-  --primary: 207 90% 54%;
-  --primary-foreground: 211 100% 99%;
-  --secondary: 60 4.8% 95.9%;
-  --secondary-foreground: 24 9.8% 10%;
-  --accent: 60 4.8% 95.9%;
-  --accent-foreground: 24 9.8% 10%;
-  --destructive: 0 84.2% 60.2%;
-  --destructive-foreground: 60 9.1% 97.8%;
-  --ring: 20 14.3% 4.1%;
-  --radius: 0.5rem;
+  --card-foreground: 270 15% 15%;
+  --border: 270 20% 90%;
+  --input: 270 20% 90%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --ring: 270 70% 50%;
+  --radius: 0.8rem;                /* Slightly larger radius for softer look */
   
   /* Custom colors */
   --success: 142 71% 45%;
   --warning: 38 92% 50%;
   --error: 0 84% 60%;
+  
+  /* Romantic gradient colors */
+  --gradient-start: 270 70% 50%;   /* Purple */
+  --gradient-end: 330 80% 80%;     /* Pink */
 }
 
 .dark {
-  --background: 240 10% 3.9%;
-  --foreground: 0 0% 98%;
-  --muted: 240 3.7% 15.9%;
-  --muted-foreground: 240 5% 64.9%;
-  --popover: 240 10% 3.9%;
-  --popover-foreground: 0 0% 98%;
-  --card: 240 10% 3.9%;
-  --card-foreground: 0 0% 98%;
-  --border: 240 3.7% 15.9%;
-  --input: 240 3.7% 15.9%;
-  --primary: 207 90% 54%;
-  --primary-foreground: 211 100% 99%;
-  --secondary: 240 3.7% 15.9%;
-  --secondary-foreground: 0 0% 98%;
-  --accent: 240 3.7% 15.9%;
-  --accent-foreground: 0 0% 98%;
-  --destructive: 0 62.8% 30.6%;
-  --destructive-foreground: 0 0% 98%;
-  --ring: 240 4.9% 83.9%;
-  --radius: 0.5rem;
+  /* Base colors */
+  --background: 270 30% 10%;
+  --foreground: 270 20% 95%;
+  
+  /* Purple theme colors */
+  --primary: 270 70% 60%;          /* Brighter purple for dark mode */
+  --primary-foreground: 0 0% 100%;
+  --primary-light: 270 40% 20%;    /* Darker purple for backgrounds in dark mode */
+  --primary-dark: 270 70% 80%;     /* Lighter purple for text in dark mode */
+  
+  /* Secondary pink colors */
+  --secondary: 330 70% 60%;        /* Vibrant pink for dark mode */
+  --secondary-foreground: 330 30% 95%;
+  --secondary-light: 330 40% 25%;  /* Darker pink for backgrounds in dark mode */
+  --secondary-dark: 330 70% 80%;   /* Lighter pink for text in dark mode */
+  
+  /* Accent gold colors */
+  --accent: 45 90% 50%;            /* Slightly darker gold for dark mode */
+  --accent-foreground: 45 30% 95%;
+  --accent-light: 45 50% 30%;      /* Darker gold for backgrounds in dark mode */
+  
+  /* UI colors */
+  --muted: 270 20% 20%;
+  --muted-foreground: 270 10% 70%;
+  --popover: 270 30% 12%;
+  --popover-foreground: 270 20% 95%;
+  --card: 270 30% 15%;
+  --card-foreground: 270 20% 95%;
+  --border: 270 20% 25%;
+  --input: 270 20% 25%;
+  --destructive: 0 70% 50%;
+  --destructive-foreground: 0 0% 100%;
+  --ring: 270 70% 60%;
+  --radius: 0.8rem;
+  
+  /* Romantic gradient colors */
+  --gradient-start: 270 70% 40%;   /* Darker purple for dark mode */
+  --gradient-end: 330 70% 50%;     /* Darker pink for dark mode */
 }
 
 @layer base {
@@ -107,5 +143,67 @@
 
 .bg-error {
   background-color: hsl(var(--error));
+}
+
+/* Romantic theme custom classes */
+.romantic-card {
+  @apply bg-white rounded-lg shadow-romantic border border-primary-light/30 overflow-hidden transition-all duration-300 hover:shadow-romantic-lg;
+}
+
+.romantic-button {
+  @apply bg-gradient-romantic text-white font-medium py-2 px-4 rounded-md shadow-romantic transition-all duration-300 hover:shadow-romantic-lg hover:scale-105 active:scale-95;
+}
+
+.romantic-button-outline {
+  @apply bg-white text-primary border border-primary/30 font-medium py-2 px-4 rounded-md shadow-romantic-sm transition-all duration-300 hover:border-primary hover:shadow-romantic hover:bg-primary-light/10;
+}
+
+.romantic-input {
+  @apply border border-primary-light/30 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary/50 shadow-romantic-sm;
+}
+
+.romantic-badge {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary-light text-primary-dark;
+}
+
+.romantic-progress {
+  @apply h-2 bg-primary-light/30 rounded-full overflow-hidden;
+}
+
+.romantic-progress-bar {
+  @apply h-full bg-gradient-romantic rounded-full;
+}
+
+.romantic-section {
+  @apply bg-gradient-to-b from-primary-light/10 to-secondary-light/10 rounded-xl p-6 shadow-romantic;
+}
+
+.romantic-divider {
+  @apply h-px w-full bg-gradient-romantic opacity-30 my-4;
+}
+
+.romantic-heading {
+  @apply font-heading font-bold text-transparent bg-clip-text bg-gradient-romantic;
+}
+
+.romantic-glow {
+  @apply relative;
+}
+
+.romantic-glow::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: radial-gradient(circle, rgba(159, 122, 234, 0.3) 0%, rgba(159, 122, 234, 0) 70%);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.romantic-glow:hover::after {
+  opacity: 1;
 }
 

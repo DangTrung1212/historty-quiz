@@ -19,6 +19,7 @@ export default function QuizOption({ option, index, isSelected, onSelect }: Quiz
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.1 * index }}
+      whileHover={{ scale: 1.01 }}
     >
       <input 
         type="radio" 
@@ -30,16 +31,24 @@ export default function QuizOption({ option, index, isSelected, onSelect }: Quiz
       />
       <label 
         htmlFor={`option-${option.id}`} 
-        className="block p-4 border border-gray-200 rounded-lg cursor-pointer hover:bg-gray-50 peer-checked:border-primary peer-checked:bg-indigo-50"
+        className={`block p-4 border rounded-lg cursor-pointer transition-all duration-300 shadow-sm
+          ${isSelected 
+            ? 'border-primary-light bg-gradient-to-r from-primary-light/10 to-primary/5 shadow-romantic-sm' 
+            : 'border-primary-light/20 hover:bg-primary-light/5'}`}
         onClick={onSelect}
       >
         <div className="flex items-center">
-          <div className={`w-6 h-6 flex-shrink-0 rounded-full border ${isSelected ? 'border-primary bg-primary' : 'border-gray-300'} flex items-center justify-center mr-3`}>
-            <span className={isSelected ? 'text-white' : 'text-gray-500'} style={{ fontSize: '0.75rem' }}>
+          <div className={`w-7 h-7 flex-shrink-0 rounded-full border transition-all duration-300 shadow-sm
+            ${isSelected 
+              ? 'border-primary bg-gradient-romantic' 
+              : 'border-primary-light/50 bg-white'} 
+            flex items-center justify-center mr-3`}>
+            <span className={`font-medium transition-colors ${isSelected ? 'text-white' : 'text-primary-light'}`} 
+              style={{ fontSize: '0.75rem' }}>
               {optionLetters[index]}
             </span>
           </div>
-          <span>{option.text}</span>
+          <span className={`${isSelected ? 'text-primary-dark font-medium' : 'text-primary/80'}`}>{option.text}</span>
         </div>
       </label>
     </motion.div>

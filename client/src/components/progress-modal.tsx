@@ -43,45 +43,46 @@ export default function ProgressModal({ open, onOpenChange, onOverlayClick }: Pr
   
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-md p-0 gap-0 overflow-hidden max-h-[80vh] overflow-y-auto">
-        <div className="bg-primary/5 p-6 pb-4 relative sticky top-0 z-10 shadow-sm">
-          <DialogClose className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
+      <DialogContent className="sm:max-w-md p-0 gap-0 overflow-hidden max-h-[80vh] overflow-y-auto shadow-romantic-lg border border-primary-light/30">
+        <div className="bg-gradient-romantic p-6 pb-4 relative sticky top-0 z-10 shadow-sm">
+          <DialogClose className="absolute right-4 top-4 rounded-sm opacity-90 text-white transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 disabled:pointer-events-none">
             <X className="h-4 w-4" />
             <span className="sr-only">Close</span>
           </DialogClose>
-          <h2 className="text-xl font-bold text-primary mb-1">Tiến độ & Phần thưởng</h2>
-          <p className="text-sm text-gray-600">Theo dõi quá trình học tập của bạn</p>
+          <h2 className="text-xl font-heading font-bold text-white mb-1">Tiến độ & Phần thưởng</h2>
+          <p className="text-sm text-white/80">Theo dõi quá trình học tập của bạn</p>
         </div>
         
-        <div className="p-6 space-y-6 pt-2">
+        <div className="p-6 space-y-6 pt-4 bg-gradient-to-b from-primary-light/5 to-white">
           <div className="space-y-3">
-            <div className="flex justify-between items-center mb-1">
-              <h3 className="font-medium text-gray-800">Tiến độ tổng quan</h3>
-              <div className="bg-primary/10 text-primary rounded-full px-3 py-1 text-sm font-medium">
+            <div className="flex justify-between items-center mb-2">
+              <h3 className="font-heading font-semibold text-primary-dark">Tiến độ tổng quan</h3>
+              <div className="bg-primary/10 text-primary rounded-full px-3 py-1 text-sm font-medium shadow-romantic-sm">
                 {completedOverallSections}/{totalQuizSections}
               </div>
             </div>
             <Progress 
               value={progressPercent} 
-              className="h-2.5 bg-gray-200" 
+              className="h-3 bg-primary-light/20" 
+              romantic={true}
             />
-            <p className="text-xs text-gray-500 italic">Hoàn thành tất cả các phần để mở khóa hoàn toàn phần thưởng</p>
+            <p className="text-xs text-primary/60 italic">Hoàn thành tất cả các phần để mở khóa hoàn toàn phần thưởng</p>
           </div>
           
           <div className="space-y-3">
-            <h3 className="font-medium text-gray-800">Phần thưởng bí mật</h3>
-            <div className="relative border-2 border-gray-300 rounded-md overflow-hidden shadow-md">
-              <div className="flex h-32 bg-gray-800">
+            <h3 className="font-heading font-semibold text-primary-dark">Phần thưởng bí mật</h3>
+            <div className="relative border-2 border-primary-light/50 rounded-lg overflow-hidden shadow-romantic">
+              <div className="flex h-40 bg-primary-dark">
                 {rewardSectionStatuses.map((isUnlocked, index) => (
                   <div 
                     key={orderedSectionIds[index]}
                     className={`flex items-center justify-center text-center transition-all duration-300
-                      w-1/3 overflow-hidden relative PreventImageOverflowIfTooLarge
+                      w-1/3 overflow-hidden relative
                       ${isUnlocked 
-                        ? 'bg-gray-700' 
-                        : 'bg-gray-900 text-gray-400' 
+                        ? 'bg-primary-dark/80' 
+                        : 'bg-primary-dark text-primary-light/50' 
                       }
-                      ${index < orderedSectionIds.length - 1 ? 'border-r border-gray-600' : ''} 
+                      ${index < orderedSectionIds.length - 1 ? 'border-r border-primary/30' : ''} 
                     `}
                   >
                     {isUnlocked ? (
@@ -93,8 +94,8 @@ export default function ProgressModal({ open, onOpenChange, onOverlayClick }: Pr
                       />
                     ) : (
                       <div className="p-2 flex flex-col items-center">
-                        <Lock className="w-6 h-6 mb-1 text-gray-500" />
-                        <span className="text-sm font-medium block text-gray-400">Chưa mở khóa</span>
+                        <Lock className="w-7 h-7 mb-1 text-primary-light/40" />
+                        <span className="text-sm font-medium block text-primary-light/60">Chưa mở khóa</span>
                       </div>
                     )}
                   </div>
@@ -102,19 +103,19 @@ export default function ProgressModal({ open, onOpenChange, onOverlayClick }: Pr
               </div>
               
               {!allRewardsUnlocked && (
-                 <div className="absolute bottom-1 right-1 bg-blue-600 text-white text-xs px-2 py-1 rounded-md font-semibold shadow">
+                 <div className="absolute bottom-2 right-2 bg-gradient-romantic text-white text-xs px-3 py-1.5 rounded-full font-semibold shadow-romantic-sm">
                     {unlockedRewardCount}/{orderedSectionIds.length} đã mở khóa
                  </div>
               )}
               
               {allRewardsUnlocked && (
-                <div className="absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-r from-green-500 to-blue-500 bg-opacity-90 p-4">
-                  <Gift className="w-12 h-12 text-yellow-300 mb-3" />
-                  <p className="text-white font-bold text-xl text-center px-4 mb-4">
+                <div className="absolute inset-0 flex flex-col items-center justify-center bg-gradient-romantic p-4">
+                  <Gift className="w-14 h-14 text-accent animate-pulse-romantic mb-3 drop-shadow-lg" />
+                  <p className="text-white font-heading font-bold text-xl text-center px-4 mb-4 drop-shadow-md">
                     Chúc mừng! Bạn đã mở khóa toàn bộ phần thưởng!
                   </p>
                   <Link href="/reward" onClick={() => onOpenChange(false)}>
-                    <Button className="bg-yellow-400 hover:bg-yellow-500 text-gray-800 font-semibold py-2 px-6 rounded-lg shadow-lg text-base">
+                    <Button variant="gold" className="py-2.5 px-6 text-base shadow-romantic-lg">
                       Xem Thư & Phần Thưởng Đầy Đủ
                     </Button>
                   </Link>
@@ -124,28 +125,28 @@ export default function ProgressModal({ open, onOpenChange, onOverlayClick }: Pr
           </div>
           
           <div className="space-y-3">
-            <h3 className="font-medium text-gray-800">Chi tiết các phần</h3>
+            <h3 className="font-heading font-semibold text-primary-dark">Chi tiết các phần</h3>
             <div className="space-y-2 px-2 -mx-2">
               {allQuizSections.map((section) => {
                 const status = progress.sections[section.id];
                 const isCompleted = status?.completed || false;
                 const highScoreAchieved = status?.highScoreAchieved || false;
                 return (
-                  <div key={section.id} className="flex items-center space-x-3 p-2 rounded-lg hover:bg-gray-50">
-                    <div className={`w-3 h-3 rounded-full flex-shrink-0 ${isCompleted ? (highScoreAchieved ? 'bg-success' : 'bg-orange-400') : 'bg-gray-300'}`}></div>
-                    <div className="flex-1 text-sm font-medium text-gray-700">{section.title}</div>
+                  <div key={section.id} className="flex items-center space-x-3 p-3 rounded-lg hover:bg-primary-light/10 transition-colors duration-200">
+                    <div className={`w-3 h-3 rounded-full flex-shrink-0 ${isCompleted ? (highScoreAchieved ? 'bg-success shadow-sm' : 'bg-orange-400') : 'bg-primary-light/40'}`}></div>
+                    <div className="flex-1 text-sm font-medium text-primary-dark">{section.title}</div>
                     {isCompleted ? (
                       highScoreAchieved ? (
-                        <div className="text-xs font-medium px-2 py-1 bg-green-100 text-green-700 rounded-full flex items-center gap-1">
+                        <div className="text-xs font-medium px-2.5 py-1 bg-green-100 text-green-700 rounded-full flex items-center gap-1 shadow-sm">
                           <CheckCircle className="w-3 h-3" /> Đạt yêu cầu
                         </div>
                       ) : (
-                        <div className="text-xs font-medium px-2 py-1 bg-orange-100 text-orange-700 rounded-full">
+                        <div className="text-xs font-medium px-2.5 py-1 bg-orange-100 text-orange-700 rounded-full shadow-sm">
                            Hoàn thành (chưa đạt)
                         </div>
                       )
                     ) : (
-                      <div className="text-xs font-medium px-2 py-1 bg-gray-100 text-gray-500 rounded-full">
+                      <div className="text-xs font-medium px-2.5 py-1 bg-primary-light/20 text-primary-dark/70 rounded-full shadow-sm">
                         Chưa hoàn thành
                       </div>
                     )}

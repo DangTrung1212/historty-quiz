@@ -70,22 +70,22 @@ export default function AnswerReview({ sectionId, isDungSai }: AnswerReviewProps
     else questionScore = 0;
 
     return (
-      <div className="bg-white rounded-lg shadow-md p-6">
-        <h3 className="font-semibold mb-4">Xem đáp án - Trắc Nghiệm Đúng Sai</h3>
+      <div className="bg-white rounded-lg shadow-romantic p-6 border border-primary-light/30">
+        <h3 className="font-heading font-semibold mb-4 text-primary-dark">Xem đáp án - Trắc Nghiệm Đúng Sai</h3>
         <div className="mb-4">
-          <div className="flex justify-between text-sm text-gray-500 mb-2">
+          <div className="flex justify-between text-sm text-primary/70 mb-2">
             <span>Câu hỏi {currentQuestionIndex + 1}/{totalQuestions}</span>
           </div>
-          <div className="h-1 bg-gray-100 rounded-full overflow-hidden">
+          <div className="h-2 bg-primary-light/20 rounded-full overflow-hidden">
             <div 
-              className="h-full bg-primary" 
+              className="h-full bg-gradient-romantic" 
               style={{ width: `${((currentQuestionIndex + 1) / totalQuestions) * 100}%` }}
             ></div>
           </div>
         </div>
         {/* Per-question score display */}
         <div className="mb-4 text-center">
-          <span className="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-4 py-1 rounded-full">
+          <span className="inline-block bg-primary-light/20 text-primary-dark text-sm font-semibold px-4 py-1.5 rounded-full shadow-romantic-sm">
             Điểm cho câu này: {questionScore}
           </span>
         </div>
@@ -97,9 +97,9 @@ export default function AnswerReview({ sectionId, isDungSai }: AnswerReviewProps
             exit={{ opacity: 0, x: -20 }}
             className="mb-6"
           >
-            <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-4 mb-4 max-h-40 overflow-y-auto">
-              <strong className="text-gray-700 block mb-2">Tư liệu:</strong>
-              <p className="text-sm text-gray-600 leading-relaxed">{dsQuestion.passage}</p>
+            <div className="bg-primary-light/10 border-l-4 border-primary rounded-r-lg p-4 mb-4 max-h-40 overflow-y-auto shadow-romantic-sm">
+              <strong className="text-primary-dark block mb-2 font-heading">Tư liệu:</strong>
+              <p className="text-sm text-primary/80 leading-relaxed">{dsQuestion.passage}</p>
             </div>
             <div className="space-y-3 mb-6">
               {Object.entries(dsQuestion.statements).map(([statementId, statementText]) => {
@@ -108,37 +108,38 @@ export default function AnswerReview({ sectionId, isDungSai }: AnswerReviewProps
                 const isCorrect = userAnswer === correctAnswer;
                 
                 let bgColor = 'bg-white';
-                let borderColor = 'border-gray-200';
-                let textColor = 'text-gray-700';
+                let borderColor = 'border-primary-light/20';
+                let textColor = 'text-primary-dark';
+                let shadowClass = 'shadow-romantic-sm';
 
                 if (userAnswer) {
                   if (isCorrect) {
-                    bgColor = 'bg-green-50';
-                    borderColor = 'border-green-200';
-                    textColor = 'text-green-700';
+                    bgColor = 'bg-success/5';
+                    borderColor = 'border-success/30';
+                    textColor = 'text-success-dark';
                   } else {
-                    bgColor = 'bg-red-50';
-                    borderColor = 'border-red-200';
-                    textColor = 'text-red-700';
+                    bgColor = 'bg-error/5';
+                    borderColor = 'border-error/30';
+                    textColor = 'text-error-dark';
                   }
                 }
                 
                 return (
-                  <div key={statementId} className={`p-3 border rounded-md ${bgColor} ${borderColor} ${textColor}`}>
-                    <p className="mb-1">{statementText}</p>
+                  <div key={statementId} className={`p-4 border rounded-md ${bgColor} ${borderColor} ${textColor} ${shadowClass}`}>
+                    <p className="mb-2">{statementText}</p>
                     <div className="flex items-center justify-between text-sm">
                       <div>
-                        <span>Đáp án của bạn: </span>
-                        <span className={`font-medium ${isCorrect ? 'text-green-700' : 'text-red-700'}`}>
+                        <span className="text-primary/70">Đáp án của bạn: </span>
+                        <span className={`font-medium ${isCorrect ? 'text-success' : 'text-error'}`}>
                           {userAnswer || 'Chưa trả lời'}
                         </span>
                       </div>
-                      {userAnswer && (isCorrect ? <Check className="h-5 w-5 text-green-500" /> : <X className="h-5 w-5 text-red-500" />)}
+                      {userAnswer && (isCorrect ? <Check className="h-5 w-5 text-success drop-shadow-sm" /> : <X className="h-5 w-5 text-error drop-shadow-sm" />)}
                     </div>
                     {!isCorrect && userAnswer && (
-                      <p className="text-xs mt-1 text-gray-600">Đáp án đúng: <span className="font-medium">{correctAnswer}</span></p>
+                      <p className="text-xs mt-2 text-primary/70">Đáp án đúng: <span className="font-medium text-success">{correctAnswer}</span></p>
                     )}
-                     <p className="text-xs mt-1 text-gray-500">Giải thích: {dsQuestion.explanationMap[statementId]}</p>
+                     <p className="text-xs mt-2 text-primary/70 border-t border-primary-light/20 pt-2 mt-3">Giải thích: <span className="text-primary-dark">{dsQuestion.explanationMap[statementId]}</span></p>
                   </div>
                 );
               })}
@@ -161,20 +162,20 @@ export default function AnswerReview({ sectionId, isDungSai }: AnswerReviewProps
   const selectedOption = mcQuestion.options.find(option => option.id === mcUserAnswer);
 
   return (
-    <div className="bg-white rounded-lg shadow-md p-6">
-      <h3 className="font-semibold mb-4">Xem đáp án</h3>
+    <div className="bg-white rounded-lg shadow-romantic p-6 border border-primary-light/30">
+      <h3 className="font-heading font-semibold mb-4 text-primary-dark">Xem đáp án</h3>
       
       <div className="mb-4">
-        <div className="flex justify-between text-sm text-gray-500 mb-2">
+        <div className="flex justify-between text-sm text-primary/70 mb-2">
           <span>Câu hỏi {currentQuestionIndex + 1}/{totalQuestions}</span>
-          <span className={isMcCorrect ? 'text-success' : 'text-error'}>
+          <span className={`font-medium ${isMcCorrect ? 'text-success' : 'text-error'}`}>
             {isMcCorrect ? 'Đúng' : 'Sai'}
           </span>
         </div>
         
-        <div className="h-1 bg-gray-100 rounded-full overflow-hidden">
+        <div className="h-2 bg-primary-light/20 rounded-full overflow-hidden">
           <div 
-            className="h-full bg-primary" 
+            className="h-full bg-gradient-romantic" 
             style={{ width: `${((currentQuestionIndex + 1) / totalQuestions) * 100}%` }}
           ></div>
         </div>
@@ -188,7 +189,7 @@ export default function AnswerReview({ sectionId, isDungSai }: AnswerReviewProps
           exit={{ opacity: 0, x: -20 }}
           className="mb-6"
         >
-          <h4 className="font-medium text-gray-800 mb-4">{mcQuestion.text}</h4>
+          <h4 className="font-medium text-primary-dark mb-4 text-lg">{mcQuestion.text}</h4>
           
           <div className="space-y-3 mb-6">
             {mcQuestion.options.map(option => {
@@ -196,30 +197,31 @@ export default function AnswerReview({ sectionId, isDungSai }: AnswerReviewProps
               const isUserSelected = option.id === mcUserAnswer;
               
               let bgColor = 'bg-white';
-              let borderColor = 'border-gray-200';
-              let textColor = 'text-gray-700';
+              let borderColor = 'border-primary-light/20';
+              let textColor = 'text-primary-dark';
+              let shadowClass = 'shadow-romantic-sm';
               
               if (isCorrectOption) {
-                bgColor = 'bg-green-50';
-                borderColor = 'border-green-200';
-                textColor = 'text-green-700';
+                bgColor = 'bg-success/5';
+                borderColor = 'border-success/30';
+                textColor = 'text-success-dark';
               } else if (isUserSelected) {
-                bgColor = 'bg-red-50';
-                borderColor = 'border-red-200';
-                textColor = 'text-red-700';
+                bgColor = 'bg-error/5';
+                borderColor = 'border-error/30';
+                textColor = 'text-error-dark';
               }
               
               return (
                 <div 
                   key={option.id}
-                  className={`p-3 border rounded-md ${bgColor} ${borderColor} ${textColor} flex items-center`}
+                  className={`p-4 border rounded-md ${bgColor} ${borderColor} ${textColor} ${shadowClass} flex items-center`}
                 >
                   <div className="flex-1">{option.text}</div>
                   {isCorrectOption && (
-                    <Check className="h-5 w-5 text-green-500" />
+                    <Check className="h-5 w-5 text-success drop-shadow-sm" />
                   )}
                   {!isCorrectOption && isUserSelected && (
-                    <X className="h-5 w-5 text-red-500" />
+                    <X className="h-5 w-5 text-error drop-shadow-sm" />
                   )}
                 </div>
               );
@@ -231,9 +233,9 @@ export default function AnswerReview({ sectionId, isDungSai }: AnswerReviewProps
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              className="mt-4 p-3 bg-yellow-50 border border-yellow-200 rounded-md"
+              className="mt-4 p-4 bg-primary-light/10 border border-primary-light/30 rounded-md shadow-romantic-sm"
             >
-              <p className="text-sm text-yellow-700">
+              <p className="text-sm text-primary-dark">
                 <span className="font-semibold">Giải thích:</span> {mcQuestion.explanation}
               </p>
             </motion.div>
@@ -241,12 +243,12 @@ export default function AnswerReview({ sectionId, isDungSai }: AnswerReviewProps
         </motion.div>
       </AnimatePresence>
       
-      <div className="flex justify-between">
+      <div className="flex justify-between gap-4">
         <Button
           variant="outline"
           onClick={handlePrev}
           disabled={currentQuestionIndex === 0}
-          className="px-4 py-2"
+          className="px-4 py-2.5 shadow-romantic-sm border-primary-light/30 hover:bg-primary-light/5 flex-1"
         >
           Trước
         </Button>
@@ -254,7 +256,7 @@ export default function AnswerReview({ sectionId, isDungSai }: AnswerReviewProps
           variant="outline"
           onClick={handleNext}
           disabled={currentQuestionIndex === totalQuestions - 1}
-          className="px-4 py-2"
+          className="px-4 py-2.5 shadow-romantic-sm border-primary-light/30 hover:bg-primary-light/5 flex-1"
         >
           Tiếp theo
         </Button>
