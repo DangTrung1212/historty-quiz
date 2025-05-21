@@ -1,0 +1,188 @@
+{
+  "phan_i": [
+    {
+      "question_id": 1,
+      "source": "Unknown",
+      "question_text": "Nội dung nào sau đây phản ánh vai trò của tổ chức Liên hợp quốc?",
+      "options": {
+        "A": "Can thiệp vào nội bộ các nước",
+        "B": "Thúc đẩy phát triển kinh tế.",
+        "C": "Phát động Chiến tranh lạnh.",
+        "D": "Thiết lập trật tự thế giới mới."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung vai trò Liên hợp quốc.",
+        "solution": "Thúc đẩy phát triển kinh tế phản ánh vai trò của tổ chức Liên hợp quốc."
+      }
+    },
+    {
+      "question_id": 2,
+      "source": "Unknown",
+      "question_text": "Năm 1953, thực dân Pháp đề ra kế hoạch quân sự Nava ở Đông Dương nhằm mục đích nào sau đây?",
+      "options": {
+        "A": "Kết thúc chiến tranh",
+        "B": "Xâm lược Đồng Bắc Á",
+        "C": "Cấm vận Việt Nam.",
+        "D": "Nhận viện trợ của Anh."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung cuộc kháng chiến chống thực dân Pháp (1945-1954).",
+        "solution": "Năm 1953, thực dân Pháp đề ra kế hoạch quân sự Nava ở Đông Dương nhằm mục đích kết thúc chiến tranh trong danh dự."
+      }
+    },
+    {
+      "question_id": 3,
+      "source": "Unknown",
+      "question_text": "Điểm tương đồng về mục tiêu của các chiến dịch quân sự trong cuộc kháng chiến chống thực dân Pháp (1945 -1954) của quân dân Việt Nam là",
+      "options": {
+        "A": "tiêu diệt một bộ phận sinh lực địch.",
+        "B": "mở rộng căn cứ địa Việt Bắc.",
+        "C": "giam chân quân Pháp tại các đô thị.",
+        "D": "kết nối với cách mạng thế giới."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "So sánh, tìm điểm tương đồng.",
+        "solution": "Điểm tương đồng về mục tiêu của các chiến dịch quân sự trong cuộc kháng chiến chống thực dân Pháp (1945 -1954) của quân dân Việt Nam là tiêu diệt một bộ phận sinh lực địch."
+      }
+    },
+    {
+      "question_id": 4,
+      "source": "Unknown",
+      "question_text": "Trong những năm 1945-1954, cuộc chiến đấu của nhân dân Nam Bộ đã giáng đòn đầu tiên vào kế hoạch chiến tranh nào của thực dân Pháp?",
+      "options": {
+        "A": "\"Dánh nhanh, thắng nhanh\"",
+        "B": "\"Chính phục từng gói nhỏ\".",
+        "C": "\"Đông Dương hóa chiến tranh\"",
+        "D": "\"Chiến tranh chớp nhoáng\""
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung kháng chiến chống thực dân Pháp xâm lược (1945-1954).",
+        "solution": "Trong những năm 1945 -1954, cuộc chiến đấu của nhân dân Nam Bộ đã giáng đòn đầu tiên vào kế hoạch \"đánh nhanh thắng nhanh\" của thực dân Pháp."
+      }
+    },
+    {
+      "question_id": 5,
+      "source": "Unknown",
+      "question_text": "Trong xu thế đa cực, quốc gia nào sau đây đã vươn lên mạnh mẽ để trở thành nền kinh tế lớn thứ hai thế giới (từ năm 2010)?",
+      "options": {
+        "A": "Thái Lan.",
+        "B": "Tây Ban Nha.",
+        "C": "Trung Quốc.",
+        "D": "Ấn Độ."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung thế giới sau Chiến tranh Lạnh.",
+        "solution": "Trong xu thế đa cực, Trung Quốc đã vươn lên mạnh mẽ để trở thành nền kinh tế lớn thứ hai thế giới (từ năm 2010)."
+      }
+    },
+    {
+      "question_id": 6,
+      "source": "Unknown",
+      "question_text": "Một trong những xu thế phát triển chính của thế giới sau khi Chiến tranh lạnh kết thúc (1989) là",
+      "options": {
+        "A": "chế tạo các loại vũ khí hủy diệt.",
+        "B": "tập trung đầu tư vào quân sự.",
+        "C": "đối thoại trong quan hệ quốc tế.",
+        "D": "hạn chế quyền dân chủ nhân dân."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung thế giới sau Chiến tranh Lạnh.",
+        "solution": "Một trong những xu thế phát triển chính của thế giới sau khi Chiến tranh lạnh kết thúc (1989) là đối thoại trong quan hệ quốc tế."
+      }
+    },
+    {
+      "question_id": 7,
+      "source": "Unknown",
+      "question_text": "Một trong những ý nghĩa lịch sử của cuộc đấu tranh bảo vệ Tổ quốc của nhân dân Việt Nam từ sau tháng 4 - 1975 đến nay là",
+      "options": {
+        "A": "đánh dấu bước phát triển mới của Đảng Cộng sản Việt Nam.",
+        "B": "góp phần bảo vệ hòa bình và ổn định ở khu vực Đông Nam Á.",
+        "C": "giải quyết được mối quan hệ giữa nhiệm vụ dân tộc và dân chủ.",
+        "D": "tạo thuận lợi cho các nước Đông Nam Á tham gia Liên hợp quốc."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "Loại trừ đáp án.",
+        "solution": "Một trong những ý nghĩa lịch sử của cuộc đấu tranh bảo vệ Tổ quốc của nhân dân Việt Nam từ sau tháng 4 - 1975 đến nay là góp phần bảo vệ hòa bình và ổn định ở khu vực Đông Nam Á."
+      }
+    },
+    {
+      "question_id": 8,
+      "source": "Unknown",
+      "question_text": "Nội dung nào sau đây phản ánh bối cảnh lịch sử của Cách mạng tháng Tám năm Việt Nam?",
+      "options": {
+        "A": "Chiến tranh thế giới thứ hai bước vào giai đoạn kết thúc.",
+        "B": "Trật tự thế giới đa cực được xác lập trên toàn cầu.",
+        "C": "Chủ nghĩa phát xít mở rộng ảnh hưởng ở nhiều nước.",
+        "D": "Xu thế toàn cầu hóa được hình thành trên thế giới."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "Loại trừ phương án.",
+        "solution": "Chiến tranh thế giới thứ hai bước vào giai đoạn kết thúc phản ánh bối cảnh lịch sử của Cách mạng tháng Tám năm 1945 ở Việt Nam."
+      }
+    },
+    {
+      "question_id": 9,
+      "source": "Unknown",
+      "question_text": "Một trong những thuận lợi của cách mạng Việt Nam sau Cách mạng tháng Tám năm 1945 là",
+      "options": {
+        "A": "xu thế khu vực hóa bắt đầu xuất hiện.",
+        "B": "nhân dân quyết tâm bảo vệ chế độ.",
+        "C": "chủ nghĩa tư bản trở thành hệ thống.",
+        "D": "cuộc Chiến tranh lạnh đã kết thúc."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Việt Nam những năm đầu sau Cách mạng tháng Tám năm 1945.",
+        "solution": "Một trong những thuận lợi của cách mạng Việt Nam sau Cách mạng tháng Tám năm 1945 là nhân dân quyết tâm bảo vệ chế độ."
+      }
+    },
+    {
+      "question_id": 10,
+      "source": "Unknown",
+      "question_text": "Điểm tương đồng giữa cuộc kháng chiến chống thực dân Pháp (1945 -1954) và cuộc kháng chiến chống Mỹ, cứu nước (1954 -1975) của nhân dân Việt Nam là",
+      "options": {
+        "A": "kết thúc bằng một thắng lợi ngoại giao.",
+        "B": "chỉ diễn ra ở miền Nam của Việt Nam.",
+        "C": "cuộc kháng chiến có tính chất toàn dân.",
+        "D": "chống lại các thế lực thực dân kiểu cũ."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "So sánh, tìm điểm tương đồng.",
+        "solution": "Điểm tương đồng giữa cuộc kháng chiến chống thực dân Pháp (1945 -1954) và cuộc kháng chiến chống Mỹ, cứu nước (1954 -1975) của nhân dân Việt Nam là cuộc kháng chiến có tính chất toàn dân."
+      }
+    }
+  ],
+  "phan_ii": [
+    {
+      "question_id": 25,
+      "question": "Cho đoạn tư liệu sau đây: (Chiến dịch Biên giới thu - đông năm 1950) Sau gần một tháng chiến đấu hơn 8000 quân địch bị tiêu diệt hoặc bắt sống, 35 vạn dân được giải phóng, tuyến biên giới Việt - Trung được khai thông. Vùng căn cứ Việt Bắc được mở rộng. Thế bao vây phong tỏa cách mạng Việt Nam của thực dân Pháp bị phá tan. Từ đây, nước Việt Nam Dân chủ Cộng hòa có vùng giải phóng rộng lớn tiếp nối với Trung Quốc và các nước xã hội chủ nghĩa. Chiến dịch Biên giới đánh dấu bước trưởng thành của Quân đội nhân dân Việt Nam. Đây là chiến dịch tiến công quy mô lớn đầu tiên của lực lượng vũ trang cách mạng. Chiến dịch Biên giới tạo ra bước phát triển mới của cuộc kháng chiến chống thực dân Pháp. (Nguyễn Quang Ngọc (Chủ biên), Tiến trình Lịch sử Việt Nam, NXB Giáo dục, Hà Nội, 2003, tr.327)",
+      "statements": {
+        "a": "Với chiến thắng của chiến dịch Biên giới thu - đông năm 1950, thế bao vây của thực dân Pháp đối với căn cứ Việt Bắc đã bị phá vỡ.",
+        "b": "Trong chiến dịch Biên giới thu - đông năm 1950, quân dân Việt Nam đã phát huy thành công nghệ thuật \"đánh điểm, diệt viện\" để tiêu diệt một bộ phận quan trọng sinh lực địch.",
+        "c": "Chiến dịch Biên giới thu - đông năm 1950 đã tạo ra thời cơ cho quân dân Việt Nam chuyển từ tiến công chiến lược sang tổng tiến công chiến lược trên toàn Đông Dương.",
+        "d": "Chiến dịch Biên giới thu - đông năm 1950 là chiến dịch tiến công có quy mô lớn nhất của quân dân Việt Nam trong cuộc kháng chiến chống thực dân Pháp."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": true,
+        "c": false,
+        "d": false
+      },
+      "explanation_map": {
+        "a": "Đúng. Với chiến thắng của chiến dịch Biên giới thu - đông năm 1950, thế bao vây của thực dân Pháp đối với căn cứ Việt Bắc đã bị phá vỡ.",
+        "b": "Đúng. Trong chiến dịch Biên giới thu - đông năm 1950, quân dân Việt Nam đã phát huy thành công nghệ thuật \"đánh điểm, diệt viện\" để tiêu diệt một bộ phận quan trọng sinh lực địch.",
+        "c": "Sai. Chiến dịch Biên giới thu - đông năm 1950 đã giúp ta giành được thế chủ động trên chiến trường chính Bắc Bộ.",
+        "d": "Sai. Chiến dịch Biên giới thu - đông năm 1950 không phải là chiến dịch tiến công có quy mô lớn nhất của quân dân Việt Nam trong cuộc kháng chiến chống thực dân Pháp."
+      }
+    }
+  ]
+}

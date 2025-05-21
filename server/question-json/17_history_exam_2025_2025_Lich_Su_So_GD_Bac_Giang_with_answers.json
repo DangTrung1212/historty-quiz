@@ -1,0 +1,188 @@
+{
+  "phan_i": [
+    {
+      "question_id": 1,
+      "source": "Bắc Giang",
+      "question_text": "Trong những năm 1923-1930, hoạt động ngoại giao của Nguyễn Ái Quốc chủ yếu diễn ra ở đâu?",
+      "options": {
+        "A": "Liên Xô và Trung Quốc.",
+        "B": "Pháp và Đức.",
+        "C": "Trung Quốc và Nhật Bản.",
+        "D": "Anh và Mỹ."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung hoạt động của Nguyễn Ái Quốc (1911-1930).",
+        "solution": "Trong những năm 1923-1930, hoạt động ngoại giao của Nguyễn Ái Quốc chủ yếu diễn ra ở Liên Xô và Trung Quốc."
+      }
+    },
+    {
+      "question_id": 2,
+      "source": "Bắc Giang",
+      "question_text": "Nội dung nào sau đây là một trong những thành tựu chính của cuộc cải cách mở cửa ở Trung Quốc từ năm 1978 đến nay?",
+      "options": {
+        "A": "Giải quyết được triệt để tình trạng ô nhiễm môi trường.",
+        "B": "Đưa Trung Quốc trở thành quốc gia có nền kinh tế lớn thứ hai thế giới.",
+        "C": "Đưa Trung Quốc trở thành quốc gia đầu tiên trên thế giới khám phá vũ trụ.",
+        "D": "Đã xóa bỏ được tình trạng bất bình đẳng trong xã hội."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung công cuộc cải cách mở cửa của Trung Quốc.",
+        "solution": "Đưa Trung Quốc trở thành quốc gia có nền kinh tế lớn thứ hai thế giới là một trong những thành tựu chính của công cuộc cải cách mở cửa ở Trung Quốc từ năm 1978 đến nay."
+      }
+    },
+    {
+      "question_id": 3,
+      "source": "Bắc Giang",
+      "question_text": "Đầu thế kỷ XX, Phan Châu Trinh có hoạt động đối ngoại ở quốc gia nào sau đây?",
+      "options": {
+        "A": "Hàn Quốc.",
+        "B": "Mỹ.",
+        "C": "Pháp.",
+        "D": "Liên Xô."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung hoạt động đối ngoại của Phan Châu Trinh.",
+        "solution": "Đầu thế kỷ XX, Phan Châu Trinh có hoạt động đối ngoại ở Pháp."
+      }
+    },
+    {
+      "question_id": 4,
+      "source": "Bắc Giang",
+      "question_text": "Chiến thắng nào sau đây của quân dân Việt Nam đã làm phá sản kế hoạch Nava của thực dân Pháp trong thời kỳ 1945–1954?",
+      "options": {
+        "A": "Chiến dịch Điện Biên Phủ.",
+        "B": "Chiến dịch Việt Bắc thu – đông.",
+        "C": "Chiến dịch Trần Hưng Đạo.",
+        "D": "Chiến dịch Biên giới thu – đông."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung cuộc kháng chiến chống thực dân Pháp (1945–1954).",
+        "solution": "Chiến thắng Điện Biên Phủ của quân dân Việt Nam đã làm phá sản kế hoạch Nava của thực dân Pháp trong thời kỳ 1945–1954."
+      }
+    },
+    {
+      "question_id": 5,
+      "source": "Bắc Giang",
+      "question_text": "Việc mở rộng không gian địa lý của chủ nghĩa xã hội sau Chiến tranh thế giới thứ hai (1939–1945) trước hết diễn ra ở khu vực nào sau đây?",
+      "options": {
+        "A": "Châu Âu.",
+        "B": "Châu Phi.",
+        "C": "Mỹ Latinh.",
+        "D": "Châu Á."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "SGK Lịch sử 12.",
+        "solution": "Việc mở rộng không gian địa lý của chủ nghĩa xã hội sau Chiến tranh thế giới thứ hai (1939–1945) trước hết diễn ra ở khu vực Đông Âu, khu vực này thuộc phạm vi ảnh hưởng của Liên Xô."
+      }
+    },
+    {
+      "question_id": 6,
+      "source": "Bắc Giang",
+      "question_text": "Nội dung nào sau đây là nguyên nhân chủ quan dẫn đến thắng lợi của các cuộc kháng chiến chống ngoại xâm trong lịch sử Việt Nam (trước Cách mạng tháng Tám năm 1945)?",
+      "options": {
+        "A": "Các nước xã hội chủ nghĩa trên thế giới ủng hộ.",
+        "B": "Sự ủng hộ của nhân dân tiến bộ thế giới.",
+        "C": "Truyền thống yêu nước, đoàn kết được phát huy.",
+        "D": "Có một mặt trận dân tộc lãnh đạo thống nhất."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 11.",
+        "solution": "Truyền thống yêu nước, đoàn kết được phát huy là nguyên nhân chủ quan dẫn đến thắng lợi của các cuộc kháng chiến chống ngoại xâm trong lịch sử Việt Nam (trước Cách mạng tháng Tám năm 1945)."
+      }
+    },
+    {
+      "question_id": 7,
+      "source": "Bắc Giang",
+      "question_text": "Nội dung nào sau đây là bài học xuyên suốt trong lịch sử dựng nước và giữ nước của dân tộc Việt Nam được vận dụng vào công cuộc hội nhập quốc tế hiện nay?",
+      "options": {
+        "A": "Liên minh kinh tế và quân sự khi cần thiết.",
+        "B": "Sử dụng bạo lực trong đấu tranh cách mạng.",
+        "C": "Tăng cường liên minh, liên kết với các nước.",
+        "D": "Củng cố và tăng cường khối đại đoàn kết dân tộc."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "Phân tích, rút ra bài học kinh nghiệm.",
+        "solution": "Khả năng đoàn kết dân tộc là yếu tố quyết định đưa các cuộc kháng chiến giành thắng lợi. Trong công cuộc hội nhập hiện nay, Việt Nam cần củng cố và tăng cường khối đại đoàn kết dân tộc."
+      }
+    },
+    {
+      "question_id": 8,
+      "source": "Bắc Giang",
+      "question_text": "Nội dung nào sau đây là ý nghĩa của phong trào Đồng khởi (1959–1960) ở miền Nam Việt Nam?",
+      "options": {
+        "A": "Buộc Mỹ phải lật đổ chính quyền tay sai Ngô Đình Diệm.",
+        "B": "Buộc Mỹ phải ngơi vào bàn đàm phán với ta ở Pa-ri.",
+        "C": "Làm phá sản chiến lược 'Chiến tranh đặc biệt' của Mỹ.",
+        "D": "Thúc đẩy lực lượng vũ trang cách mạng phát triển."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung cuộc kháng chiến chống Mỹ, cứu nước (1954–1975).",
+        "solution": "Thúc đẩy lực lượng vũ trang cách mạng phát triển là ý nghĩa của phong trào Đồng khởi (1959–1960) ở miền Nam Việt Nam."
+      }
+    },
+    {
+      "question_id": 9,
+      "source": "Bắc Giang",
+      "question_text": "Nội dung nào sau đây là quyết định của Đại hội đại biểu Đảng Lao động Việt Nam lần thứ III (1960)?",
+      "options": {
+        "A": "Xác định nhiệm vụ, vai trò cho cách mạng ở hai miền Nam–Bắc.",
+        "B": "Thành lập một chính quyền để lãnh đạo phong trào cách mạng ở Đông Dương.",
+        "C": "Đề ra chủ trương đưa cả nước tiến lên xây dựng chủ nghĩa xã hội.",
+        "D": "Thành lập ở mỗi nước Đông Dương một chính đảng Mác–Lênin riêng."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung cuộc kháng chiến chống Mỹ, cứu nước (1954–1975).",
+        "solution": "Xác định nhiệm vụ, vai trò cho cách mạng ở hai miền Nam–Bắc là quyết định của Đại hội đại biểu Đảng Lao động Việt Nam lần thứ III (1960)."
+      }
+    },
+    {
+      "question_id": 10,
+      "source": "Bắc Giang",
+      "question_text": "Nội dung nào sau đây là một trong những nguyên nhân dẫn tới sụp đổ của trật tự thế giới hai cực I-an-ta?",
+      "options": {
+        "A": "Nhật Bản bị Trung Quốc vượt qua về kinh tế.",
+        "B": "Tây Âu vươn lên thành một cục đối đầu với Mỹ.",
+        "C": "Sự bùng nổ của cách mạng khoa học–công nghệ.",
+        "D": "Sự thất bại trong công cuộc cải tổ ở Liên Xô."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung trật tự hai cực I-an-ta.",
+        "solution": "Sự thất bại trong công cuộc cải tổ ở Liên Xô khiến Liên Xô sụp đổ là một trong những nguyên nhân dẫn tới sụp đổ của trật tự thế giới hai cực I-an-ta."
+      }
+    }
+  ],
+  "phan_ii": [
+    {
+      "question_id": 25,
+      "question": "Đoạn tài liệu: \"...Chúng ta muốn hòa bình, chúng ta phải nhẫn nhường. Nhưng chúng ta càng nhẫn nhường, thực dân Pháp càng lấn tới, vì chúng quyết tâm cướp nước ta lại một lần nữa! Không! Chúng ta thà hi sinh tất cả, chứ nhất định không chịu mất nước, nhất định không chịu làm nô lệ\".",
+      "statements": {
+        "a": "\"Lời kêu gọi toàn quốc kháng chiến\" được Chủ tịch Hồ Chí Minh soạn thảo trong bối cảnh Pháp đã tấn công và đánh chiếm được thủ đô Hà Nội.",
+        "b": "Đoạn tài liệu phản ánh quyết tâm đấu tranh của nhân dân Việt Nam để giữ vững nền độc lập non trẻ vừa giành được.",
+        "c": "Đoạn tài liệu là văn bản duy nhất xác định nội dung đường lối kháng chiến toàn quốc chống thực dân Pháp xâm lược.",
+        "d": "Đoạn tài liệu thể hiện khát vọng hòa bình và sự nhẫn nhường đến giới hạn cuối cùng của Việt Nam đối với thực dân Pháp."
+      },
+      "answer_boolean_map": {
+        "a": false,
+        "b": true,
+        "c": false,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Sai, \"Lời kêu gọi toàn quốc kháng chiến\" được Chủ tịch Hồ Chí Minh soạn thảo trong bối cảnh Pháp đã tấn công nhưng chưa chiếm được thủ đô Hà Nội.",
+        "b": "Đúng, đoạn tài liệu phản ánh quyết tâm đấu tranh của nhân dân Việt Nam để giữ vững nền độc lập non trẻ vừa giành được.",
+        "c": "Sai, đoạn tài liệu không phải là văn bản duy nhất xác định nội dung đường lối kháng chiến toàn quốc chống thực dân Pháp xâm lược.",
+        "d": "Đúng, đoạn tài liệu thể hiện khát vọng hòa bình và sự nhẫn nhường đến giới hạn cuối cùng của Việt Nam đối với thực dân Pháp."
+      }
+    }
+  ]
+}

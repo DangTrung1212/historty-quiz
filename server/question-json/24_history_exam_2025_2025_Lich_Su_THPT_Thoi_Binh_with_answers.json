@@ -1,0 +1,210 @@
+{
+  "phan_i": [
+    {
+      "question_id": 1,
+      "source": "Bắc Ninh",
+      "question_text": "Trong cuộc kháng chiến chống quân Nguyên (1287-1288), nhà Trần đã giành thắng lợi ở trận quyết chiến chiến lược nào sau đây?",
+      "options": {
+        "A": "Phòng tuyến Như Nguyệt (Bắc Ninh).",
+        "B": "Ngọc Hồi-Dống Đa.",
+        "C": "Sông Bạch Đằng (Quảng Ninh, Hải Phòng).",
+        "D": "Đống Bà Đao (Hà Nội)."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 11.",
+        "solution": "Trong cuộc kháng chiến chống quân Nguyên (1287-1288), nhà Trần đã giành thắng lợi ở trận quyết chiến chiến lược trên sông Bạch Đằng."
+      }
+    },
+    {
+      "question_id": 2,
+      "source": "Unknown",
+      "question_text": "Một trong những địa phương giành chính quyền sớm nhất trong Tổng khởi nghĩa tháng Tám năm 1945 ở Việt Nam là",
+      "options": {
+        "A": "Hà Tiên.",
+        "B": "Hà Tĩnh.",
+        "C": "Nghệ An.",
+        "D": "Hà Nội."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Cách mạng tháng Tám năm 1945.",
+        "solution": "Một trong những địa phương giành chính quyền sớm nhất trong Tổng khởi nghĩa tháng Tám năm 1945 ở Việt Nam là Hà Tĩnh."
+      }
+    },
+    {
+      "question_id": 3,
+      "source": "Unknown",
+      "question_text": "Trong chiến đấu chống chiến lược 'Chiến tranh cục bộ' (1965-1968) của Mỹ, nhân dân miền Nam Việt Nam đã giành thắng lợi quân sự nào sau đây?",
+      "options": {
+        "A": "Phước Long.",
+        "B": "Vân Tràm.",
+        "C": "Tây Nguyên.",
+        "D": "Việt Bắc."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung kháng chiến chống Mỹ cứu nước (1954-1975).",
+        "solution": "Trong chiến đấu chống chiến lược 'Chiến tranh cục bộ' (1965-1968) của Mỹ, nhân dân miền Nam Việt Nam đã giành thắng lợi tại Vân Tràm."
+      }
+    },
+    {
+      "question_id": 4,
+      "source": "Unknown",
+      "question_text": "Từ sau Chiến tranh lạnh kết thúc (1989), thế giới phát triển theo một trong những xu thế nào sau đây?",
+      "options": {
+        "A": "Lấy văn hóa làm trung tâm.",
+        "B": "Đối thoại, hợp tác.",
+        "C": "Lấy chính trị làm nền tảng.",
+        "D": "Thỏa hiệp để ổn định toàn cầu."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung thế giới sau Chiến tranh lạnh.",
+        "solution": "Từ sau Chiến tranh lạnh kết thúc (1989), thế giới phát triển theo xu thế đối thoại và hợp tác."
+      }
+    },
+    {
+      "question_id": 5,
+      "source": "Unknown",
+      "question_text": "Yếu tố nào sau đây đóng vai trò quyết định sự phát triển 'thần kỳ' của kinh tế Nhật Bản trong những năm 1960 - 1973?",
+      "options": {
+        "A": "Các công ty Nhật Bản có tiềm lực và sức cạnh tranh cao.",
+        "B": "Tận dụng tốt các yếu tố thuận lợi bên ngoài để phát triển.",
+        "C": "Chính sách quản lý hiệu quả của Chính phủ Nhật Bản.",
+        "D": "Chi phí cho quốc phòng thấp (không quá 1% GDP)."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 11.",
+        "solution": "Chính sách quản lý hiệu quả của Chính phủ Nhật Bản đóng vai trò quyết định sự phát triển 'thần kỳ' của kinh tế Nhật Bản trong giai đoạn 1960 - 1973."
+      }
+    },
+    {
+      "question_id": 6,
+      "source": "Unknown",
+      "question_text": "Sau Chiến tranh thế giới thứ hai, quốc gia nào sau đây ở khu vực Mĩ Latinh đã chọn con đường đi lên chủ nghĩa xã hội?",
+      "options": {
+        "A": "Ac-hen-ti-na.",
+        "B": "Me-hi-cô.",
+        "C": "Bra-xin.",
+        "D": "Cu-ba."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lịch sử 12.",
+        "solution": "Sau Chiến tranh thế giới thứ hai, Cu-ba là quốc gia ở khu vực Mĩ Latinh đã chọn con đường đi lên chủ nghĩa xã hội."
+      }
+    },
+    {
+      "question_id": 7,
+      "source": "Unknown",
+      "question_text": "Lực lượng vũ trang có vai trò nào sau đây trong cuộc Tổng khởi nghĩa tháng Tám năm 1945 ở Việt Nam?",
+      "options": {
+        "A": "Xung kích, hỗ trợ lực lượng chính trị.",
+        "B": "Nòng cốt, quyết định thắng lợi.",
+        "C": "Đồng đô, quyết định thắng lợi.",
+        "D": "Góp phần quan trọng đưa đến thắng lợi."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "Loại trừ phương án.",
+        "solution": "Lực lượng vũ trang tuy còn ít về số lượng, thiếu thốn về trang bị, non yếu về trình độ tác chiến, nhưng có vai trò rất quan trọng trong hoạt động vũ trang tuyên truyền, góp phần phát triển lực lượng chính trị, tiến công quân sự ở một số nơi gây thành thế cho cách mạng, đồng thời là lực lượng xung kích, lực lượng nòng cốt, hỗ trợ quần chúng nổi dậy tổng khởi nghĩa giành chính quyền khi thời cơ đến."
+      }
+    },
+    {
+      "question_id": 8,
+      "source": "Unknown",
+      "question_text": "Từ đầu những năm 70 của thế kỷ XX, Nhật Bản trở thành",
+      "options": {
+        "A": "siêu cường tài chính số một thế giới.",
+        "B": "cường quốc công nghiệp số một thế giới.",
+        "C": "siêu cường kinh tế của thế giới.",
+        "D": "cường quốc quân sự hàng đầu thế giới."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12.",
+        "solution": "Từ đầu những năm 70 của thế kỷ XX, Nhật Bản trở thành siêu cường kinh tế của thế giới."
+      }
+    },
+    {
+      "question_id": 9,
+      "source": "Unknown",
+      "question_text": "Trong cuộc kháng chiến chống Pháp xâm lược (1945-1954), quân dân Việt Nam giành được thắng lợi quân sự nào sau đây?",
+      "options": {
+        "A": "Vân Tràm.",
+        "B": "Đồng Xoài.",
+        "C": "Điện Biên Phủ.",
+        "D": "Áp Bắc."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung kháng chiến chống thực dân Pháp xâm lược (1945-1954).",
+        "solution": "Trong cuộc kháng chiến chống Pháp xâm lược (1945-1954), quân dân Việt Nam giành được thắng lợi trong trận Điện Biên Phủ."
+      }
+    },
+    {
+      "question_id": 10,
+      "source": "Unknown",
+      "question_text": "Sau Hiệp định Geneva năm 1954 về Đông Dương, miền Nam Việt Nam tiến hành cuộc cách mạng nào sau đây?",
+      "options": {
+        "A": "Cách mạng dân tộc dân chủ nhân dân.",
+        "B": "Cách mạng dân chủ nhân dân.",
+        "C": "Cách mạng xã hội chủ nghĩa.",
+        "D": "Cách mạng tư sản dân quyền."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "Giải thích.",
+        "solution": "Sau Hiệp định Geneva năm 1954, Miền Liên tiếp với Pháp, dựng lên chính quyền tay sai Ngô Đình Diệm với âm mưu chia cắt lâu dài đất nước, biến miền Nam Việt Nam thành thuộc địa kiểu mới của Mỹ vì vậy miền Nam Việt Nam phải tiếp tục cuộc cách mạng dân tộc dân chủ nhân dân."
+      }
+    }
+  ],
+  "phan_ii": [
+    {
+      "question_id": 25,
+      "question": "Đoạn tư liệu sau đây phản ánh những biểu hiện của Trật tự thế giới hai cực I-an-ta.",
+      "statements": {
+        "a": "Đoạn tư liệu trên phản ánh những biểu hiện của Trật tự thế giới hai cực I-an-ta.",
+        "b": "Một trong những nguyên nhân quyết định Mỹ và Liên Xô tuyên bố chấm dứt Chiến tranh lạnh (1989) là thắng lợi của phong trào giải phóng dân tộc trên thế giới.",
+        "c": "Sau khi Liên Xô tan rã, Mỹ và Liên bang Nga tuyên bố chấm dứt Chiến tranh lạnh (1989).",
+        "d": "Trong việc tiến hành Chiến tranh lạnh, châu Âu là mục tiêu chiến lược để Mỹ ngăn chặn ảnh hưởng của chủ nghĩa xã hội và đàn áp phong trào giải phóng dân tộc."
+      },
+      "answer_boolean_map": {
+        "a": false,
+        "b": false,
+        "c": false,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Sai, đoạn tư liệu trên đề cập đến thắng lợi trong cuộc kháng chiến chống thực dân Pháp xâm lược (1945-1954).",
+        "b": "Sai, lần đầu tiên trong lịch sử, một dân tộc Việt Nam nhỏ bé đã đánh thắng một nước thực dân hùng mạnh, đó là thực dân Pháp.",
+        "c": "Sai, thắng lợi vàng của nhân dân Việt Nam không đánh dấu hệ thống xã hội chủ nghĩa nối liền từ châu Âu sang châu Á. Hệ thống xã hội chủ nghĩa nối liền từ châu Âu sang châu Á qua sự kiện Cộng hòa Nhân dân Trung Hoa ra đời (1949).",
+        "d": "Đúng, thắng lợi của nhân dân Việt Nam chứng minh các dân tộc bị áp bức có khả năng đánh bại các cường quốc thực dân."
+      }
+    },
+    {
+      "question_id": 26,
+      "question": "Đoạn tư liệu sau đây đề cập đến thắng lợi Cách mạng tháng Tám năm 1945 ở Việt Nam.",
+      "statements": {
+        "a": "Đoạn tư liệu trên đề cập đến thắng lợi Cách mạng tháng Tám năm 1945 ở Việt Nam.",
+        "b": "Lần đầu tiên trong lịch sử, một dân tộc Việt Nam nhỏ bé đã đánh thắng một nước thực dân hùng mạnh, đó là đế quốc Mỹ.",
+        "c": "Thắng lợi vàng của nhân dân Việt Nam đánh dấu hệ thống xã hội chủ nghĩa nối liền từ châu Âu sang châu Á.",
+        "d": "Thắng lợi của nhân dân Việt Nam chứng minh các dân tộc bị áp bức có khả năng đánh bại các cường quốc thực dân."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": true,
+        "c": false,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Đúng, đoạn tư liệu trên thể hiện các sự kiện của Cách mạng tháng Tám năm 1945 ở Việt Nam.",
+        "b": "Đúng, Tuyên ngôn Độc lập là áng văn lập quốc vĩ đại trong lịch sử dân tộc Việt Nam.",
+        "c": "Sai, khi Hà Nội, Huế, Sài Gòn khởi nghĩa thắng lợi, các địa phương vẫn tiếp tục tiến hành khởi nghĩa.",
+        "d": "Sai, Cách mạng tháng Tám năm 1945 ở Việt Nam bắt đầu diễn ra trước khi Nhật hoàng tuyên bố đầu hàng Đồng minh không điều kiện (15/8/1945). Từ ngày 14/8, một số địa phương đã tiến hành khởi nghĩa."
+      }
+    }
+  ]
+}

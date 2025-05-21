@@ -1,0 +1,108 @@
+{
+  "phan_i": [
+    {
+      "question_id": 1,
+      "source": "Hà Nội",
+      "question_text": "Nội dung nào sau đây không phải là nguyên tắc hoạt động của tổ chức Liên Hợp Quốc?",
+      "options": {
+        "A": "Không can thiệp vào công việc nội bộ của bất kỳ nước nào.",
+        "B": "Hợp tác có hiệu quả trong những lĩnh vực kinh tế - văn hóa - xã hội.",
+        "C": "Bình đẳng chủ quyền giữa các quốc gia và quyền tự quyết của các dân tộc.",
+        "D": "Giải quyết các tranh chấp quốc tế bằng biện pháp hòa bình."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "Xem lại nội dung Liên Hợp Quốc và xác định nguyên tắc hoạt động của tổ chức.",
+        "solution": "Nguyên tắc hoạt động của Liên Hợp Quốc bao gồm: Không can thiệp vào công việc nội bộ của bất kỳ quốc gia nào, bình đẳng chủ quyền giữa các quốc gia và quyền tự quyết của các dân tộc, giải quyết các tranh chấp quốc tế bằng biện pháp hòa bình. Tuy nhiên, hợp tác trong các lĩnh vực kinh tế, văn hóa, xã hội chỉ là mục tiêu hoạt động chứ không phải nguyên tắc."
+      }
+    },
+    {
+      "question_id": 2,
+      "source": "Hà Nội",
+      "question_text": "\"Muốn củng cố nền tự do, độc lập, chúng ta cần sự hy sinh phần đấu tranh của toàn quốc đồng bào; nhưng chúng ta cũng rất cần sự quyên góp của nhân dân, nhất là những nhà giàu có. Ý nghĩa của tuần lễ vàng là ở đó\". (Hồ Chí Minh toàn tập, Tập 4, NXB Chính trị quốc gia, tr 16). Câu nói trên của Chủ tịch Hồ Chí Minh ra đời trong hoàn cảnh nào sau đây?",
+      "options": {
+        "A": "Chính quyền cách mạng chưa thuộc về nhân dân.",
+        "B": "Cuộc kháng chiến chống Pháp lan rộng cả nước.",
+        "C": "Đất nước đứng trước nhiều khó khăn, thách thức.",
+        "D": "Việt Nam bị Trung Hoa Dân quốc khống chế về tài chính."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "Xác định câu nói của Hồ Chí Minh trong bối cảnh lịch sử cụ thể.",
+        "solution": "Câu nói này của Hồ Chí Minh được đưa ra trong bối cảnh sau Cách mạng Tháng Tám năm 1945, khi đất nước đối mặt với nhiều khó khăn như nạn đói, ngân sách quốc gia trống rỗng, quân đội Trung Hoa Dân quốc vào miền Bắc với âm mưu can thiệp. Do đó, Người phát động phong trào \"Tuần lễ vàng\" nhằm huy động sự đóng góp tài chính từ nhân dân để củng cố nền độc lập và xây dựng chính quyền cách mạng."
+      }
+    },
+    {
+      "question_id": 3,
+      "source": "Hà Nội",
+      "question_text": "Nội dung nào sau đây là một trong những hoạt động nổi bật của Hiệp hội các quốc gia Đông Nam Á (ASEAN) trong giai đoạn 1999-2015?",
+      "options": {
+        "A": "Họp bàn và đã thông qua bản Hiến chương ASEAN.",
+        "B": "Hoàn thành việc kết nạp Đông Timor vào ASEAN.",
+        "C": "Hoàn thiện cơ cấu tổ chức và nguyên tắc hoạt động.",
+        "D": "Tham gia giải quyết vấn đề hòa bình ở Indonesia."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "Xem lại nội dung về Hiệp hội các quốc gia Đông Nam Á (ASEAN) và các hoạt động nổi bật từ năm 1999 đến 2015.",
+        "solution": "Trong giai đoạn 1999–2015, một trong những hoạt động nổi bật của ASEAN là họp bàn và thông qua bản Hiến chương ASEAN tại Hội nghị cấp cao lần thứ 13 ở Singapore năm 2007. Hiến chương này có ý nghĩa quan trọng, đánh dấu bước phát triển mới khi ASEAN trở thành một tổ chức hợp pháp, mang tính ràng buộc và quy định rõ nguyên tắc, mục tiêu hoạt động của khối."
+      }
+    },
+    {
+      "question_id": 4,
+      "source": "Hà Nội",
+      "question_text": "Sự kiện nào sau đây có ý nghĩa mở ra bước đột phá đầu tiên góp phần làm xói mòn và sụp đổ của trật tự thế giới hai cực I-an-ta?",
+      "options": {
+        "A": "Anh, Pháp rút quân khỏi kênh đào Xuy-e (1956).",
+        "B": "Chế độ độc tài thân Mỹ thất bại ở Cuba (1959).",
+        "C": "Cách mạng tháng Tám ở Việt Nam (1945).",
+        "D": "Thắng lợi của cách mạng Trung Quốc (1949)."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "Xem lại nội dung Trật tự thế giới trong Chiến tranh Lạnh, xác định sự kiện có ý nghĩa mở ra bước đột phá đầu tiên giúp làm xói mòn hai cực.",
+        "solution": "Thắng lợi của cách mạng Trung Quốc năm 1949 dẫn đến việc thành lập nước Cộng hòa Nhân dân Trung Hoa, mở ra một bước đột phá quan trọng trong cuộc đấu tranh của các nước thuộc địa và phụ thuộc. Sự kiện này làm suy yếu hệ thống thuộc địa của các nước phương Tây và xói mòn trật tự thế giới hai cực I-an-ta do Mỹ và Liên Xô phân chia, khi Trung Quốc trở thành một trung tâm quyền lực mới trong hệ thống xã hội chủ nghĩa."
+      }
+    },
+    {
+      "question_id": 5,
+      "source": "Hà Nội",
+      "question_text": "Sự kiện nào được xem là khởi đầu cho chính sách chống Liên Xô của Mỹ, gây nên cuộc Chiến tranh lạnh?",
+      "options": {
+        "A": "Hội đồng tư vấn trợ giúp kinh tế ra đời (1/1949).",
+        "B": "Thành lập Tổ chức quân sự NATO (4/1949).",
+        "C": "Thông điệp Tổng thống Truman (3/1947).",
+        "D": "Sự ra đời của kế hoạch Mac-san (6/1947)."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "Xem lại nội dung Trật tự thế giới trong Chiến tranh lạnh và xác định sự kiện được xem là khởi đầu cho chính sách chống Liên Xô của Mỹ.",
+        "solution": "Thông điệp của Tổng thống Mỹ Harry Truman ngày 12/3/1947, còn gọi là Học thuyết Truman, được xem là sự khởi đầu của chính sách chống Liên Xô và gây nên Chiến tranh lạnh. Trong thông điệp này, Truman tuyên bố sẽ viện trợ cho Hy Lạp và Thổ Nhĩ Kỳ nhằm ngăn chặn sự lan rộng của chủ nghĩa cộng sản, đánh dấu sự chuyển hướng của Mỹ sang chính sách đối đầu với Liên Xô."
+      }
+    }
+  ],
+  "phan_ii": [
+    {
+      "question_id": 25,
+      "question": "Đoạn tư liệu: 'Sau hai tháng làm việc, qua các cuộc đấu tranh gay gắt giữa nhiều ý kiến và khuynh hướng khác nhau, hiến chương Liên Hợp Quốc được đại biểu của 50 nước ký kết ngày 26-6-1945. Hiến chương bắt đầu có hiệu lực từ ngày 24-10-1945... Ngày này cũng được coi là ngày Liên Hợp Quốc chính thức được thành lập'.",
+      "statements": {
+        "a": "Ngày 24-10-1945, bản Hiến chương Liên Hợp Quốc chính thức có hiệu lực, đánh dấu sự thành lập của Liên Hợp Quốc.",
+        "b": "Sự thông qua và có hiệu lực của Hiến chương Liên Hợp Quốc thiết lập một nền tảng pháp lý cho việc duy trì hòa bình và an ninh quốc tế trong giai đoạn sau chiến tranh thế giới.",
+        "c": "Sự ra đời của Liên Hợp Quốc đánh dấu một bước ngoặt quan trọng trong việc xây dựng hệ thống an ninh tập thể toàn cầu, nhằm ngăn chặn xung đột và bảo vệ hòa bình quốc tế.",
+        "d": "Hiến chương Liên Hợp Quốc được ký kết ngay sau khi Chiến tranh thế giới thứ hai kết thúc mà không gặp phải bất kỳ sự phản đối hay tranh luận nào từ các đại biểu tham gia."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": true,
+        "c": true,
+        "d": false
+      },
+      "explanation_map": {
+        "a": "Đúng, ngày 24-10-1945, Hiến chương Liên Hợp Quốc chính thức có hiệu lực, đánh dấu sự thành lập của Liên Hợp Quốc.",
+        "b": "Đúng, sự thông qua và có hiệu lực của Hiến chương Liên Hợp Quốc thiết lập một nền tảng pháp lý cho việc duy trì hòa bình và an ninh quốc tế trong giai đoạn sau chiến tranh thế giới.",
+        "c": "Đúng, sự ra đời của Liên Hợp Quốc đánh dấu một bước ngoặt quan trọng trong việc xây dựng hệ thống an ninh tập thể toàn cầu, nhằm ngăn chặn xung đột và bảo vệ hòa bình quốc tế.",
+        "d": "Sai, Hiến chương Liên Hợp Quốc được thông qua sau các cuộc đấu tranh gay gắt và tranh luận giữa các đại biểu của 50 quốc gia."
+      }
+    }
+  ]
+}

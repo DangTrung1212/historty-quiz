@@ -1,0 +1,188 @@
+{
+  "phan_i": [
+    {
+      "question_id": 1,
+      "source": "Thai Nguyen",
+      "question_text": "Năm 179 TCN, nhân dân Âu Lạc đã tiến hành cuộc kháng chiến chống quân xâm lược",
+      "options": {
+        "A": "Minh.",
+        "B": "Triều.",
+        "C": "Pháp.",
+        "D": "Nhật Bản"
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "SGK Lịch sử 11.",
+        "solution": "Năm 179 TCN, nhân dân Âu Lạc đã tiến hành cuộc kháng chiến chống quân xâm lược của Triệu Đà."
+      }
+    },
+    {
+      "question_id": 2,
+      "source": "Thai Nguyen",
+      "question_text": "Xu thế phát triển chính của thế giới sau Chiến tranh lạnh là xu thế",
+      "options": {
+        "A": "tam cực.",
+        "B": "hai cực.",
+        "C": "đa cực.",
+        "D": "đơn cực"
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung quan hệ quốc tế sau Chiến tranh lạnh.",
+        "solution": "Xu thế phát triển chính của thế giới sau Chiến tranh lạnh là xu thế đa cực."
+      }
+    },
+    {
+      "question_id": 3,
+      "source": "Thai Nguyen",
+      "question_text": "Năm 1911, Nguyễn Tất Thành có hoạt động nào sau đây?",
+      "options": {
+        "A": "Chủ trì Hội nghị thành lập Đảng Cộng sản Việt Nam.",
+        "B": "Tham gia hoạt động trong Đảng Xã hội Pháp.",
+        "C": "Tham gia thành lập Hội Liên hiệp thuộc địa.",
+        "D": "Rời Sài Gòn sang phương Tây tìm đường cứu nước."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung hoạt động của Nguyễn Ái Quốc (1911-1917).",
+        "solution": "Năm 1911, Nguyễn Tất Thành rời Sài Gòn ra đi tìm đường cứu nước."
+      }
+    },
+    {
+      "question_id": 4,
+      "source": "Thai Nguyen",
+      "question_text": "Đầu thế kỷ XX, hoạt động ngoại giao của Phan Bội Châu có mục đích nào sau đây?",
+      "options": {
+        "A": "Phát triển văn hóa",
+        "B": "Ổn định kinh tế vĩ mô.",
+        "C": "Chấn hưng giáo dục",
+        "D": "Giải phóng dân tộc."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung hoạt động đối ngoại đầu thế kỷ XX.",
+        "solution": "Đầu thế kỷ XX, hoạt động ngoại giao của Phan Bội Châu có mục đích là giải phóng dân tộc."
+      }
+    },
+    {
+      "question_id": 5,
+      "source": "Thai Nguyen",
+      "question_text": "Trong giai đoạn 1967-1976, Hiệp hội các quốc gia Đông Nam Á (ASEAN) có hoạt động nào sau đây?",
+      "options": {
+        "A": "Hoàn thành kết nạp thành viên.",
+        "B": "Thành lập Cộng đồng ASEAN.",
+        "C": "Ra Tuyên bố về khu vực hòa bình, tự do và trung lập.",
+        "D": "Thông qua Hiến chương ASEAN"
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung quá trình hình thành và phát triển của ASEAN.",
+        "solution": "Trong giai đoạn 1967 - 1976, Hiệp hội các quốc gia Đông Nam Á (ASEAN) có hoạt động là ra Tuyên bố về khu vực hòa bình, tự do và trung lập."
+      }
+    },
+    {
+      "question_id": 6,
+      "source": "Thai Nguyen",
+      "question_text": "Nội dung nào sau đây phản ánh đúng bối cảnh thành lập Hiệp hội các quốc gia Đông Nam Á (ASEAN)?",
+      "options": {
+        "A": "Trật tự thế giới hai cực I-an-ta tan ra.",
+        "B": "Chiến tranh lạnh chấm dứt, xu thế hòa hoãn xuất hiện.",
+        "C": "Một số quốc gia ở Đông Nam Á đã giành được độc lập.",
+        "D": "Mỹ chấm dứt cuộc chiến tranh xâm lược Việt Nam."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung sự hình thành Hiệp hội các quốc gia Đông Nam Á (ASEAN).",
+        "solution": "Một số quốc gia ở Đông Nam Á đã giành được độc lập phản ánh đúng bối cảnh thành lập Hiệp hội các quốc gia Đông Nam Á (ASEAN)."
+      }
+    },
+    {
+      "question_id": 7,
+      "source": "Thai Nguyen",
+      "question_text": "Sau Chiến tranh thế giới thứ hai, chủ nghĩa xã hội được mở rộng ở",
+      "options": {
+        "A": "Đông Âu.",
+        "B": "Tây Phi.",
+        "C": "Bắc Mỹ.",
+        "D": "Bắc Phi."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "SGK Lịch sử 11.",
+        "solution": "Sau Chiến tranh thế giới thứ hai, chủ nghĩa xã hội được mở rộng ở Đông Âu."
+      }
+    },
+    {
+      "question_id": 8,
+      "source": "Thai Nguyen",
+      "question_text": "Trong đường lối Đổi mới đất nước giai đoạn 1986-1995, Đảng Cộng sản Việt Nam xác định đổi mới phải",
+      "options": {
+        "A": "toàn diện và đồng bộ",
+        "B": "thay đổi phương hướng chiến lược.",
+        "C": "lấy chính trị làm trung tâm.",
+        "D": "phát triển kinh tế bằng mọi giá."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Công cuộc Đổi mới ở Việt Nam (1986).",
+        "solution": "Trong đường lối Đổi mới đất nước giai đoạn 1986-1995, Đảng Cộng sản Việt Nam xác định đổi mới phải toàn diện và đồng bộ."
+      }
+    },
+    {
+      "question_id": 9,
+      "source": "Thai Nguyen",
+      "question_text": "Trong những năm 1947 - 1949, Nhà nước Việt Nam Dân chủ Cộng hòa có hoạt động đối ngoại nào sau đây để tranh thủ sự ủng hộ của quốc tế đối với sự nghiệp đấu tranh bảo vệ độc lập dân tộc?",
+      "options": {
+        "A": "Thiết lập cơ quan đại diện ngoại giao tại một số nước châu Á.",
+        "B": "Bình thường hóa quan hệ ngoại giao với Hoa Kỳ.",
+        "C": "Thiết lập quan hệ ngoại giao với Cộng hòa Pháp.",
+        "D": "Đàm phán, gia nhập Hiệp hội các quốc gia Đông Nam Á (ASEAN)."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung hoạt động đối ngoại ở Việt Nam (1947-1949).",
+        "solution": "Trong những năm 1947 - 1949, Nhà nước Việt Nam Dân chủ Cộng hòa có hoạt động đối ngoại để tranh thủ sự ủng hộ của quốc tế đối với sự nghiệp đấu tranh bảo vệ độc lập dân tộc là thiết lập cơ quan đại diện ngoại giao tại một số nước châu Á."
+      }
+    },
+    {
+      "question_id": 10,
+      "source": "Thai Nguyen",
+      "question_text": "Sự kiện lịch sử thế giới nào sau đây có ảnh hưởng đến cách mạng Việt Nam trong những năm 1939-1945?",
+      "options": {
+        "A": "Mỹ thực hiện Kế hoạch phục hưng châu Âu (Kế hoạch Mác-san).",
+        "B": "Cộng đồng Châu Âu (EC) được thành lập.",
+        "C": "Nhật hoàng tuyên bố đầu hàng Đồng minh không điều kiện.",
+        "D": "Nước Cộng hòa Cu-ba được thành lập."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Cách mạng tháng Tám năm 1945.",
+        "solution": "Nhật hoàng tuyên bố đầu hàng Đồng minh không điều kiện có ảnh hưởng đến cách mạng Việt Nam trong những năm 1939-1945."
+      }
+    }
+  ],
+  "phan_ii": [
+    {
+      "question_id": 25,
+      "question": "Cho những thông tin trong bảng sau đây:",
+      "statements": {
+        "a": "Những thông tin trên thể hiện xu thế phát triển chính của thế giới sau Chiến tranh lạnh.",
+        "b": "Chiến tranh lạnh đã làm thay đổi quan hệ giữa các cường quốc từng là đồng minh trong Chiến tranh thế giới thứ hai.",
+        "c": "Chiến tranh lạnh chấm dứt, sau đó là Trật tự thế giới hai cực I-an-ta sụp đổ nhưng những di chứng của nó vẫn còn tiếp diễn ở nhiều nơi trên thế giới.",
+        "d": "Tổ chức Hiệp ước Bắc Đại Tây Dương và Tổ chức Hiệp ước Vác-sa-va được thành lập thể hiện sự xói mòn của Trật tự thế giới hai cực I-an-ta."
+      },
+      "answer_boolean_map": {
+        "a": false,
+        "b": true,
+        "c": true,
+        "d": false
+      },
+      "explanation_map": {
+        "a": "Sai, những thông tin trên thể hiện quan hệ quốc tế thời kỳ Chiến tranh lạnh.",
+        "b": "Đúng, trong chiến tranh thế giới thứ hai, Mỹ và Liên Xô là đồng minh chống phát xít, nhưng sau khi chiến tranh kết thúc, hai quốc gia chuyển từ đồng minh sang đối đầu.",
+        "c": "Đúng, Chiến tranh lạnh chấm dứt, sau đó là Trật tự thế giới hai cực I-an-ta sụp đổ nhưng những di chứng của nó vẫn còn tiếp diễn ở nhiều nơi trên thế giới.",
+        "d": "Sai, tổ chức Hiệp ước Bắc Đại Tây Dương và Tổ chức Hiệp ước Vác-sa-va được thành lập thể hiện sự xác lập của Trật tự thế giới hai cực I-an-ta."
+      }
+    }
+  ]
+}

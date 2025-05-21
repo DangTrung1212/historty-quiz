@@ -1,0 +1,130 @@
+{
+  "phan_i": [
+    {
+      "question_id": 1,
+      "source": "Yen Bai",
+      "question_text": "Một trong những xu thế phát triển chính của thế giới sau Chiến tranh lạnh là",
+      "options": {
+        "A": "hình thành các liên minh quân sự xuyên lục địa.",
+        "B": "Mỹ vươn lên thiết lập trật tự đơn cực.",
+        "C": "tập trung nghiên cứu khoa học vũ trụ.",
+        "D": "lấy phát triển kinh tế làm trung tâm."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Trật tự thế giới sau Chiến tranh lạnh.",
+        "solution": "Sau Chiến tranh lạnh, các quốc gia trên thế giới tập trung phát triển kinh tế để nâng cao vị thế và sức mạnh quốc gia."
+      }
+    },
+    {
+      "question_id": 2,
+      "source": "Yen Bai",
+      "question_text": "Nội dung nào sau đây phản ánh đúng bối cảnh lịch sử bùng nổ cuộc kháng chiến chống thực dân Pháp của nhân dân Việt Nam (1945-1954)?",
+      "options": {
+        "A": "Các nước xã hội chủ nghĩa thiết lập quan hệ ngoại giao với Việt Nam.",
+        "B": "Mỹ thực hiện Kế hoạch Mác-san viện trợ cho Pháp.",
+        "C": "Hiệp hội các quốc gia Đông Nam Á (ASEAN) được thành lập.",
+        "D": "Chủ nghĩa xã hội trở thành hệ thống thế giới."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "Suy luận, phân tích.",
+        "solution": "Trong giai đoạn 1945-1954, Mỹ đã thực hiện Kế hoạch Mác-san để viện trợ cho các nước châu Âu, bao gồm cả Pháp, nhằm tái thiết sau Chiến tranh Thế giới thứ hai và ngăn chặn sự lan rộng của chủ nghĩa cộng sản, điều này đã gián tiếp hỗ trợ Pháp trong cuộc chiến tranh ở Đông Dương."
+      }
+    },
+    {
+      "question_id": 3,
+      "source": "Yen Bai",
+      "question_text": "Trong chiến tranh bảo vệ Tổ quốc trước cách mạng tháng Tám năm 1945 ở Việt Nam, cuộc kháng chiến nào sau đây không thành công?",
+      "options": {
+        "A": "Kháng chiến chống quân Minh (1406-1407).",
+        "B": "Kháng chiến chống quân Tống (981).",
+        "C": "Kháng chiến chống quân Xiêm (1785).",
+        "D": "Kháng chiến chống quân Nam Hán (938)."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Đấu tranh bảo vệ Tổ quốc từ sau tháng 4 năm 1975 đến nay. Một số bài học lịch sử của cuộc kháng chiến bảo vệ Tổ quốc từ năm 1945 đến nay.",
+        "solution": "Cuộc kháng chiến chống quân Minh giai đoạn 1406-1407 không thành công, dẫn đến Việt Nam rơi vào ách đô hộ của nhà Minh."
+      }
+    },
+    {
+      "question_id": 4,
+      "source": "Yen Bai",
+      "question_text": "Theo quyết định của Hội nghị I-an-ta (tháng 2-1945), khu vực nào sau đây thuộc phạm vi ảnh hưởng của Mỹ?",
+      "options": {
+        "A": "Tây Âu.",
+        "B": "Đông Bec-lin.",
+        "C": "Đông Đức.",
+        "D": "Đông Âu."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Trật tự thế giới trong Chiến tranh lạnh.",
+        "solution": "Theo quyết định của Hội nghị I-an-ta (2-1945), Tây Âu thuộc phạm vi ảnh hưởng của Mỹ, trong khi Đông Âu nằm trong phạm vi ảnh hưởng của Liên Xô."
+      }
+    },
+    {
+      "question_id": 5,
+      "source": "Yen Bai",
+      "question_text": "Một trong những mục tiêu của Việt Nam khi mở chiến dịch Biên giới thu - đông năm 1950 là",
+      "options": {
+        "A": "chuyển cơ quan đầu não kháng chiến về chiến khu an toàn.",
+        "B": "phá tan kế hoạch 'đánh nhanh, thắng nhanh' của thực dân Pháp.",
+        "C": "khai thông biên giới Việt - Trung, mở rộng căn cứ địa Việt Bắc.",
+        "D": "giải phóng Tây Bắc, tạo điều kiện để giải phóng Bắc Lào."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Cuộc kháng chiến chống thực dân Pháp (1945-1954)",
+        "solution": "Mục tiêu chính của chiến dịch Biên giới thu - đông năm 1950 là khai thông đường liên lạc với Trung Quốc, mở rộng căn cứ địa Việt Bắc, và tăng cường viện trợ quốc tế cho kháng chiến."
+      }
+    }
+  ],
+  "phan_ii": [
+    {
+      "question_id": 25,
+      "question": "Cho đoạn tư liệu sau đây:\n\"Chúng ta kháng chiến, đồng Minh cũng kháng chiến, Lào cũng kháng chiến. Bọn thực dân Pháp và bọn can thiệp Mỹ là kẻ thù của ta và của dân tộc Miên, Lào. Vì vậy, ta phải ra sức giúp đỡ anh em Miên-Lào và tiến hành thành lập Mặt trận thống nhất các dân tộc Việt-Miên-Lào'.\n(Hồ Chí Minh, Toàn tập, tập 6, NXB Chính trị Quốc gia, Hà Nội, 1995, tr 174)",
+      "statements": {
+        "a": "Trong cuộc kháng chiến chống thực dân Pháp và can thiệp Mỹ, Việt Nam có trách nhiệm giúp đỡ Miên và Lào thành lập mặt trận dân tộc thống nhất.",
+        "b": "Sự đoàn kết chiến đấu của ba dân tộc Đông Dương là nguyên nhân quyết định đưa đến thắng lợi của cuộc kháng chiến chống thực dân Pháp.",
+        "c": "Trong xây dựng đất nước hiện nay, ba nước Đông Dương cần phải tăng cường đoàn kết và hợp tác toàn diện với nhau.",
+        "d": "Kẻ thù chung của nhân dân Việt, Miên, Lào là thực dân Pháp và can thiệp Mỹ."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": false,
+        "c": true,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Đúng, trong cuộc kháng chiến chống thực dân Pháp và can thiệp Mỹ, Việt Nam chủ trương giúp đỡ hai nước bạn Miên (Campuchia) và Lào, trong đó việc tiến hành thành lập Mặt trận dân tộc thống nhất ba nước là một mục tiêu quan trọng.",
+        "b": "Sai, sự đoàn kết chiến đấu của ba dân tộc Đông Dương là một trong những yếu tố quan trọng, nhưng không phải nguyên nhân quyết định thắng lợi của cuộc kháng chiến chống thực dân Pháp; thắng lợi này còn dựa vào nhiều yếu tố khác như sự lãnh đạo của Đảng, tinh thần chiến đấu của nhân dân, và bối cảnh quốc tế thuận lợi.",
+        "c": "Đúng, trong bối cảnh xây dựng đất nước hiện nay, ba nước Đông Dương (Việt Nam, Lào, Campuchia) cần tăng cường đoàn kết và hợp tác toàn diện để phát triển kinh tế, bảo vệ an ninh và hòa bình khu vực.",
+        "d": "Đúng, thực dân Pháp và can thiệp Mỹ là kẻ thù chung của nhân dân Việt Nam, Miên (Campuchia), và Lào trong cuộc kháng chiến chống xâm lược."
+      }
+    },
+    {
+      "question_id": 26,
+      "question": "Cho đoạn tư liệu sau đây:\n\"Việc Việt Nam gia nhập ASEAN có ý nghĩa vô cùng quan trọng không chỉ đối với Việt Nam, mà còn đối với toàn bộ khu vực Đông Nam Á, khởi đầu cho quá trình hoàn tất ý tưởng về một tổ chức bao gồm đầy đủ mười quốc gia thành viên, cùng phấn đấu xây dựng một khu vực hòa bình, ổn định và phát triển, để từ đó làm cơ sở cho những bước phát triển cao hơn của Hiệp hội sau này là xây dựng một Cộng đồng và đem lại những lợi ích thiết thực cho gần 700 triệu người dân trong khu vực.\n(Vũ Hò, Đề án Việt Nam trong ASEAN: Đóng hàng, lớn mạnh cùng năm tháng, Tạp chí Cộng sản điện tử, ISSN 2734-9071, ngày 23-10-2023)",
+      "statements": {
+        "a": "Việt Nam gia nhập ASEAN là sự khởi đầu hướng tới xây dựng một khu vực hòa bình, ổn định và phát triển thịnh vượng.",
+        "b": "Đoạn tư liệu cung cấp thông tin về ý nghĩa của việc Việt Nam gia nhập ASEAN.",
+        "c": "Khi gia nhập ASEAN, các nước trong khu vực có nhiều cơ hội để hợp tác, cùng phấn đấu xây dựng một khu vực hòa bình, ổn định và phát triển.",
+        "d": "Việt Nam gia nhập ASEAN đánh dấu bước phát triển mới, đặt cơ sở cho quá trình giải quyết vấn đề xung đột ở Cam-pu-chia."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": true,
+        "c": true,
+        "d": false
+      },
+      "explanation_map": {
+        "a": "Đúng, Việt Nam gia nhập ASEAN mở ra một giai đoạn hợp tác nhằm hướng tới mục tiêu xây dựng khu vực hòa bình, ổn định và phát triển thịnh vượng.",
+        "b": "Đúng, đoạn tư liệu nhấn mạnh ý nghĩa quan trọng của việc Việt Nam gia nhập ASEAN đối với cả nước ta và khu vực Đông Nam Á.",
+        "c": "Đúng, việc gia nhập ASEAN tạo điều kiện để các nước trong khu vực tăng cường hợp tác, cùng phấn đấu vì mục tiêu chung là hòa bình, ổn định và phát triển.",
+        "d": "Sai, việc Việt Nam gia nhập ASEAN có ý nghĩa lớn trong việc thúc đẩy hợp tác khu vực và xây dựng một cộng đồng thống nhất, nhưng nó không trực tiếp đánh dấu bước phát triển mới hay đặt cơ sở cụ thể cho việc giải quyết vấn đề xung đột ở Campuchia (dù có liên quan gián tiếp đến tình hình khu vực)."
+      }
+    }
+  ]
+}

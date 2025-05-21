@@ -1,0 +1,174 @@
+{
+  "phan_i": [
+    {
+      "question_id": 1,
+      "source": "Unknown",
+      "question_text": "Năm 1967, ở Đông Nam Á diễn ra sự kiện lịch sử nào sau đây?",
+      "options": {
+        "A": "Cộng đồng ASEAN ra đời.",
+        "B": "Tổ chức ASEAN ra đời",
+        "C": "Liên hợp quốc được thành lập.",
+        "D": "Cuba tiến lên chủ nghĩa xã hội."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Hội nghị các nước Đông Nam Á (ASEAN).",
+        "solution": "Năm 1967, ở Đông Nam Á đã diễn ra sự kiện lịch sử là tổ chức ASEAN ra đời."
+      }
+    },
+    {
+      "question_id": 2,
+      "source": "Unknown",
+      "question_text": "Ngày 2-9-1945, tại Quảng trường Ba Đình (Hà Nội), Chủ tịch Hồ Chí Minh đã",
+      "options": {
+        "A": "đọc Lời kêu gọi toàn quốc kháng chiến.",
+        "B": "phát lệnh Tổng khởi nghĩa.",
+        "C": "công bố Chỉ thị Toàn dân kháng chiến.",
+        "D": "đọc bản Tuyên ngôn Độc lập."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Cách mạng tháng Tám năm 1945.",
+        "solution": "Ngày 2-9-1945, tại Quảng trường Ba Đình (Hà Nội), Chủ tịch Hồ Chí Minh đã đọc bản Tuyên ngôn Độc lập."
+      }
+    },
+    {
+      "question_id": 3,
+      "source": "Unknown",
+      "question_text": "Ở Việt Nam, phong trào \"Đồng Khởi\" (1959-1960) và Cách mạng tháng Tám 1945 có điểm tương đồng nào sau đây?",
+      "options": {
+        "A": "Hoàn thành cuộc cách mạng ruộng đất.",
+        "B": "Bước đầu giành được độc lập dân tộc.",
+        "C": "Lực lượng vũ trang đóng vai trò quyết định.",
+        "D": "Thành lập được chính quyền cách mạng."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "So sánh, loại trừ đáp án",
+        "solution": "Phong trào \"Đồng Khởi\" (1959-1960) và Cách mạng tháng Tám năm 1945 đều có điểm tương đồng là thành lập được chính quyền cách mạng."
+      }
+    },
+    {
+      "question_id": 4,
+      "source": "Unknown",
+      "question_text": "Nội dung nào sau đây không phải ý nghĩa của phong trào Tây Sơn (cuối thế kỷ XVIII) ở Việt Nam?",
+      "options": {
+        "A": "Lật đổ chính quyền chúa Nguyễn, chúa Trịnh, vua Lê.",
+        "B": "Đánh thắng quân Xiêm và Thanh, bảo vệ độc lập dân tộc.",
+        "C": "Đưa triều đại nhà Lê sơ trong lịch sử.",
+        "D": "Thể hiện ý chí đấu tranh chống áp bức của nhân dân ta."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 11.",
+        "solution": "Việc đưa triều đại nhà Lê sơ trong lịch sử không phải là ý nghĩa của phong trào Tây Sơn (cuối thế kỷ XVIII) ở Việt Nam."
+      }
+    },
+    {
+      "question_id": 5,
+      "source": "Unknown",
+      "question_text": "Đặc điểm nào sau đây khiến cho Việt Nam thường xuyên bị các thế lực bên ngoài nhòm ngó, xâm lược?",
+      "options": {
+        "A": "Có lãnh thổ rộng lớn nhất châu Á.",
+        "B": "Có vị trí địa chiến lược quan trọng.",
+        "C": "Chế độ phong kiến luôn khủng hoảng.",
+        "D": "Trữ lượng lớn về tài nguyên dầu khí."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "Giải thích",
+        "solution": "Vị trí địa chiến lược quan trọng của Việt Nam khiến nó thường xuyên bị các thế lực bên ngoài nhòm ngó, xâm lược."
+      }
+    }
+  ],
+  "phan_ii": [
+    {
+      "question_id": 25,
+      "question": "Đoạn tư liệu sau:",
+      "statements": {
+        "a": "Với thắng lợi của chiến dịch Biên giới (1950), quân dân Việt Nam đã thu hẹp phạm vi ảnh hưởng của kẻ thù.",
+        "b": "Trong chiến dịch Biên giới (1950), lần đầu tiên lực lượng kháng chiến Việt Nam thực hiện đánh công kiên và có hợp đồng quân binh chủng ở quy mô trận đánh đơn lẻ.",
+        "c": "Với chiến thắng Biên giới (1950), quân dân Việt Nam đã tiêu diệt toàn bộ quân Pháp chiếm đóng chính Bắc Bộ và làm chủ chiến trường chính.",
+        "d": "Đoạn tư liệu trên đề cập đến kết quả và ý nghĩa lịch sử của chiến dịch Biên giới (1950) trong cuộc kháng chiến chống thực dân Pháp của nhân dân Việt Nam."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": true,
+        "c": false,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Đúng. Chiến dịch Biên giới (1950) giúp quân dân Việt Nam giải phóng khu vực biên giới rộng lớn, giành được thế chủ động trên chiến trường Bắc Bộ, phạm vi ảnh hưởng của Pháp bị thu hẹp.",
+        "b": "Đúng. Trong chiến dịch Biên giới (1950), lần đầu tiên lực lượng kháng chiến Việt Nam thực hiện đánh công kiên và có hợp đồng quân binh chủng ở quy mô trận đánh đơn lẻ.",
+        "c": "Sai. Chiến dịch Biên giới (1950) giúp quân dân Việt Nam giải phóng khu vực biên giới rộng lớn, giành được thế chủ động trên chiến trường Bắc Bộ, nhưng chưa tiêu diệt hoàn toàn quân Pháp.",
+        "d": "Đúng. Đoạn tư liệu trên đề cập đến kết quả và ý nghĩa lịch sử của chiến dịch Biên giới (1950) trong cuộc kháng chiến chống thực dân Pháp của nhân dân Việt Nam."
+      }
+    },
+    {
+      "question_id": 26,
+      "question": "Đoạn tư liệu sau:",
+      "statements": {
+        "a": "Hòa bình, hợp tác và phát triển là dòng chảy chính của thời đại, phù hợp với khát vọng và mục tiêu của nhân loại.",
+        "b": "Sau khi trật tự thế giới hai cực tan rã, sự dịch chuyển sức mạnh toàn cầu, trước hết là sức mạnh kinh tế diễn ra ngày càng mạnh mẽ.",
+        "c": "Sự chấm dứt Chiến tranh lạnh là nguyên nhân dẫn đến sự sụp đổ của trật tự hai cực và mở ra xu thế toàn cầu hóa.",
+        "d": "Đoạn tư liệu trên cho thấy sự sụp đổ của hệ thống xã hội chủ nghĩa trên thế giới đã kết thúc thời kỳ thế giới hai cực."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": true,
+        "c": false,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Đúng. Hòa bình, hợp tác và phát triển là dòng chảy chính của thời đại, phù hợp với khát vọng và mục tiêu của nhân loại.",
+        "b": "Đúng. Sau khi trật tự thế giới hai cực tan rã, sự dịch chuyển sức mạnh toàn cầu, trước hết là sức mạnh kinh tế diễn ra ngày càng mạnh mẽ.",
+        "c": "Sai. Trật tự hai cực I-an-ta sụp đổ do sự tan rã của chế độ xã hội ở Liên Xô.",
+        "d": "Đúng. Đoạn tư liệu trên cho thấy sự sụp đổ của hệ thống xã hội chủ nghĩa trên thế giới đã kết thúc thời kỳ thế giới hai cực."
+      }
+    },
+    {
+      "question_id": 27,
+      "question": "Đoạn tư liệu sau:",
+      "statements": {
+        "a": "Cách mạng tháng Tám năm 1945 ở Việt Nam thắng lợi là kết quả của việc kết hợp sức mạnh dân tộc với sức mạnh của thời đại.",
+        "b": "Mặc dù tính chất dân chủ chưa đầy đủ nhưng Cách mạng tháng Tám năm 1945 ở Việt Nam là cuộc cách mạng giải phóng dân tộc điển hình.",
+        "c": "Cách mạng tháng Mười Nga năm 1917 đã để lại nhiều bài học kinh nghiệm cho Cách mạng tháng Tám năm 1945 ở Việt Nam.",
+        "d": "Thắng lợi của Cách mạng tháng Tám năm 1945 đã lật đổ chính quyền thực dân Pháp và phong kiến ở Việt Nam, đưa nhân dân lao động lên nắm quyền lãnh đạo cách mạng."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": true,
+        "c": true,
+        "d": false
+      },
+      "explanation_map": {
+        "a": "Đúng. Cách mạng tháng Tám năm 1945 ở Việt Nam thắng lợi là kết quả của việc kết hợp sức mạnh dân tộc với sức mạnh của thời đại.",
+        "b": "Đúng. Mặc dù tính chất dân chủ chưa đầy đủ nhưng Cách mạng tháng Tám năm 1945 ở Việt Nam là cuộc cách mạng giải phóng dân tộc điển hình.",
+        "c": "Đúng. Cách mạng tháng Mười Nga năm 1917 đã để lại nhiều bài học kinh nghiệm cho Cách mạng tháng Tám năm 1945 ở Việt Nam.",
+        "d": "Sai. Sau khi Nhật đảo chính Pháp (9/3/1945), kẻ thù chính của Việt Nam là phát xít Nhật."
+      }
+    },
+    {
+      "question_id": 28,
+      "question": "Đoạn tư liệu sau:",
+      "statements": {
+        "a": "Cuộc Công nghiệp hóa, hiện đại hóa góp phần tạo ra cơ đồ, tiềm lực và nâng cao vị thế quốc tế của Việt Nam.",
+        "b": "Với việc thực hiện Công nghiệp hóa, hiện đại hóa, cơ cấu kinh tế Việt Nam từng bước dịch chuyển theo chiều sâu, tăng tỷ trọng ngành nông nghiệp.",
+        "c": "Hoàn thành cuộc Công nghiệp hóa, hiện đại hóa là điều kiện tiên quyết để Việt Nam tiến hành hội nhập kinh tế quốc tế.",
+        "d": "Đoạn tư liệu trên đề cập một số mục tiêu của Công nghiệp hóa, hiện đại hóa ở Việt Nam."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": false,
+        "c": false,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Đúng. Cuộc Công nghiệp hóa, hiện đại hóa góp phần tạo ra cơ đồ, tiềm lực và nâng cao vị thế quốc tế của Việt Nam.",
+        "b": "Sai. Với việc thực hiện Công nghiệp hóa, hiện đại hóa, cơ cấu kinh tế Việt Nam từng bước dịch chuyển theo chiều sâu, nhưng không tăng tỷ trọng ngành nông nghiệp.",
+        "c": "Sai. Hoàn thành cuộc Công nghiệp hóa, hiện đại hóa không phải là điều kiện tiên quyết để Việt Nam tiến hành hội nhập kinh tế quốc tế.",
+        "d": "Đúng. Đoạn tư liệu trên đề cập một số mục tiêu của Công nghiệp hóa, hiện đại hóa ở Việt Nam."
+      }
+    }
+  ]
+}

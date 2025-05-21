@@ -1,20 +1,23 @@
-# Project Brief: Sử Nhanh (History Quiz App)
+# Project Brief: History Quiz VN - Birthday Edition
 
 ## Overview
-Sử Nhanh is a React-based web application designed for Vietnamese high school students preparing for the national graduation exam. The app provides an interactive way to practice history through quizzes, with a reward system that unlocks parts of a hidden image and a personalized letter as users achieve high scores across different quiz sections.
+History Quiz VN - Birthday Edition is a React-based web application designed to create an engaging and visually appealing history quiz that culminates in a unique and memorable interactive digital birthday card.
 
 ## Core Requirements
-- Provide multiple history quiz sections with different question types
-- Track user progress and quiz scores using local storage
-- Implement a reward system that unlocks pieces of a hidden image upon achieving high scores (≥90%)
-- Allow users to review their answers after completing quizzes
-- Ensure a responsive, intuitive interface suitable for high school students
+- A functional quiz application with multiple-choice and true/false questions related to history
+- Score calculation and progress tracking
+- A special "reward" section unlocked upon quiz completion (or achieving a certain score)
+- The reward is an interactive, animated birthday card that opens like a book/card
+- The card should display a personalized birthday message
+- The application must have a romantic and celebratory theme, consistently applied (e.g., purple/pink gradients, festive icons)
+- The user experience should be delightful on both desktop and mobile devices, with a strong emphasis on mobile optimization
 
 ## Target Audience
-Vietnamese high school students preparing for the national graduation exam.
+- Primary: The USER's crush (for the birthday card experience)
+- Secondary: The USER (for building and testing)
 
 ## Core Philosophy
-**Learning through rewards** – Users unlock a hidden image and personalized letter as they master history topics.
+**Learning through rewards** – Users unlock a hidden interactive digital birthday card as they complete the history quiz.
 
 ## Technical Constraints
 - Frontend: React with hooks and context API for state management

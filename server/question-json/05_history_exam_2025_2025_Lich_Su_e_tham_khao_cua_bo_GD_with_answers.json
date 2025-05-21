@@ -1,0 +1,188 @@
+{
+  "phan_i": [
+    {
+      "question_id": 1,
+      "source": "Unknown",
+      "question_text": "Sự kiện nào sau đây đã cổ vũ phong trào giải phóng dân tộc trên thế giới?",
+      "options": {
+        "A": "Sự ra đời của Liên bang Cộng hòa xã hội chủ nghĩa Xô viết.",
+        "B": "Sự hình thành của Trật tự thế giới hai cực I-an-ta.",
+        "C": "Sự thành lập của Tổ chức Hiệp ước Bắc Đại Tây Dương.",
+        "D": "Sự giải thể của Tổ chức Hiệp ước Vác-sa-va."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "Suy luận kiến thức Chủ nghĩa xã hội từ năm 1917 đến nay.",
+        "solution": "Sự ra đời của Liên bang Xô viết vào năm 1922 đã tạo động lực lớn cho phong trào giải phóng dân tộc trên thế giới, vì Liên Xô trở thành một quốc gia ủng hộ mạnh mẽ các cuộc đấu tranh giành độc lập và chống chủ nghĩa thực dân."
+      }
+    },
+    {
+      "question_id": 2,
+      "source": "Unknown",
+      "question_text": "Thắng lợi của cuộc kháng chiến chống quân Xiêm và quân Thanh ở Đại Việt (cuối thế kỷ XVIII) gắn liền với",
+      "options": {
+        "A": "khởi nghĩa Lý Bí.",
+        "B": "khởi nghĩa Lam Sơn.",
+        "C": "phong trào Tây Sơn.",
+        "D": "phong trào Đông Du."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 11, nội dung Một số cuộc khởi nghĩa và chiến tranh giải phóng dân tộc.",
+        "solution": "Cuối thế kỷ XVIII, đất nước Đại Việt phải đối mặt với nhiều cuộc xâm lược của các thế lực ngoại bang như quân Xiêm và quân Thanh. Trong bối cảnh đó, phong trào Tây Sơn do ba anh em Nguyễn Nhạc, Nguyễn Huệ, Nguyễn Lữ lãnh đạo đã nổi lên như một lực lượng mạnh mẽ, thống nhất đất nước và đánh bại các cuộc xâm lược này."
+      }
+    },
+    {
+      "question_id": 3,
+      "source": "Unknown",
+      "question_text": "Liên hợp quốc được thành lập (1945) có mục tiêu nào sau đây?",
+      "options": {
+        "A": "Duy trì hòa bình và an ninh quốc tế.",
+        "B": "Giải giáp quân đội phát xít.",
+        "C": "Chấm dứt sự cạnh tranh trên thế giới.",
+        "D": "Khắc phục hậu quả chiến tranh thế giới."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Liên hợp quốc.",
+        "solution": "Liên Hợp Quốc được thành lập ngay sau Chiến tranh Thế giới thứ hai (1945) với mục tiêu chính là ngăn chặn các cuộc xung đột quy mô lớn xảy ra trong tương lai, đảm bảo hòa bình và an ninh cho toàn thế giới."
+      }
+    },
+    {
+      "question_id": 4,
+      "source": "Unknown",
+      "question_text": "Hiệp hội các quốc gia Đông Nam Á được thành lập (1967) có mục đích nào sau đây?",
+      "options": {
+        "A": "Tăng cường liên minh quân sự.",
+        "B": "Xây dựng thể chế chính trị chung.",
+        "C": "Xây dựng một nền văn hóa chung.",
+        "D": "Thúc đẩy sự tăng trưởng kinh tế."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Hiệp hội các quốc gia Đông Nam Á.",
+        "solution": "Hiệp hội các quốc gia Đông Nam Á được thành lập (1967) có mục đích thúc đẩy sự tăng trưởng kinh tế."
+      }
+    },
+    {
+      "question_id": 5,
+      "source": "Unknown",
+      "question_text": "Cộng đồng ASEAN được thành lập (2015) dựa trên một trong những trụ cột nào sau đây?",
+      "options": {
+        "A": "Cộng đồng Quân sự ASEAN.",
+        "B": "Cộng đồng Kinh tế ASEAN.",
+        "C": "Cộng đồng Khoa học ASEAN.",
+        "D": "Cộng đồng Tư tưởng ASEAN."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Cộng đồng ASEAN.",
+        "solution": "Khi nói về việc thành lập Cộng đồng ASEAN vào năm 2015, trụ cột quan trọng nhất và được nhấn mạnh nhiều nhất là Cộng đồng Kinh tế ASEAN. Điều này có nghĩa là các quốc gia thành viên ASEAN hướng tới việc tạo ra một thị trường chung và cơ sở sản xuất thống nhất, nơi hàng hóa, dịch vụ, đầu tư, vốn và lao động có tay nghề lưu thông tự do. Mục tiêu cuối cùng là tăng cường tính cạnh tranh, thúc đẩy sự thịnh vượng chung cho cả khu vực và thu hút đầu tư từ bên ngoài."
+      }
+    },
+    {
+      "question_id": 6,
+      "source": "Unknown",
+      "question_text": "Văn bản nào sau đây khẳng định với toàn thể nhân dân Việt Nam và thế giới về sự ra đời của nước Việt Nam Dân chủ Cộng hòa (1945)?",
+      "options": {
+        "A": "Bản Tuyên ngôn Độc lập.",
+        "B": "Lời kêu gọi toàn quốc kháng chiến.",
+        "C": "Tác phẩm Bình Ngô đại cáo.",
+        "D": "Tác phẩm Kháng chiến nhất định thắng lợi."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "Suy luận dựa trên nội dung Cách mạng tháng Tám năm 1945.",
+        "solution": "Văn bản khẳng định với toàn thể nhân dân Việt Nam và thế giới về sự ra đời của nước Việt Nam Dân chủ Cộng hòa (1945) là Bản Tuyên ngôn Độc lập."
+      }
+    },
+    {
+      "question_id": 7,
+      "source": "Unknown",
+      "question_text": "Trong cuộc kháng chiến chống thực dân Pháp (1945-1954), tinh thần đoàn kết chiến đấu của nhân dân ba nước Đông Dương được thể hiện qua sự kiện nào sau đây?",
+      "options": {
+        "A": "Thành lập Hội Việt Nam Cách mạng Thanh niên.",
+        "B": "Thành lập Việt Nam Quang phục Hội.",
+        "C": "Liên minh nhân dân Việt-Miên-Lào ra đời.",
+        "D": "Đông Dương Cộng sản liên đoàn ra đời."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "Suy luận dựa trên Cuộc kháng chiến chống thực dân Pháp (1945-1954).",
+        "solution": "Sự ra đời của Liên minh nhân dân Việt-Miên-Lào là minh chứng sinh động cho tinh thần đoàn kết của ba dân tộc Đông Dương trong cuộc kháng chiến chống thực dân Pháp, góp phần quan trọng vào thắng lợi chung của cuộc kháng chiến."
+      }
+    },
+    {
+      "question_id": 8,
+      "source": "Unknown",
+      "question_text": "Trong giai đoạn 1954-1960, nhân dân miền Bắc Việt Nam thực hiện một trong những nhiệm vụ nào sau đây?",
+      "options": {
+        "A": "Khôi phục kinh tế.",
+        "B": "Khởi nghĩa từng phần.",
+        "C": "Chống chiến lược Chiến tranh cục bộ.",
+        "D": "Chống chiến lược Chiến tranh đặc biệt."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "Suy luận dựa trên nội dung Kháng chiến chống Mỹ cứu nước giai đoạn (1954-1960).",
+        "solution": "Trong giai đoạn 1954-1960, nhân dân miền Bắc Việt Nam thực hiện một trong những nhiệm vụ đó là khôi phục kinh tế."
+      }
+    },
+    {
+      "question_id": 9,
+      "source": "Unknown",
+      "question_text": "Đại hội đại biểu toàn quốc lần thứ VI (1986) của Đảng Cộng sản Việt Nam đã đề ra",
+      "options": {
+        "A": "nhiệm vụ thống nhất đất nước về mặt nhà nước.",
+        "B": "đường lối đổi mới đất nước.",
+        "C": "Nghị quyết về xây dựng nông thôn mới.",
+        "D": "Nghị quyết về hiện đại hóa đất nước."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "Suy luận dựa trên nội dung Công cuộc Đổi mới của Việt Nam (1986).",
+        "solution": "Đại hội đại biểu toàn quốc lần thứ VI (1986) của Đảng Cộng sản Việt Nam đã đề ra đường lối đổi mới đất nước."
+      }
+    },
+    {
+      "question_id": 10,
+      "source": "Unknown",
+      "question_text": "Đầu thế kỷ XX, Phan Bội Châu có hoạt động ngoại giao ở quốc gia nào sau đây?",
+      "options": {
+        "A": "Hà Lan.",
+        "B": "Nhật Bản.",
+        "C": "Liên Xô.",
+        "D": "Ấn Độ."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Hoạt động ngoại giao của Việt Nam thế kỷ XX.",
+        "solution": "Đầu thế kỷ XX, Phan Bội Châu có hoạt động ngoại giao ở Nhật Bản với phong trào Đông Du."
+      }
+    }
+  ],
+  "phan_ii": [
+    {
+      "question_id": 25,
+      "question": "Cho thông tin bảng sau",
+      "statements": {
+        "a": "Bảng thông tin trên thể hiện các sự kiện của Trật tự thế giới hai cực I-an-ta.",
+        "b": "Mối quan hệ giữa Liên Xô và Mỹ chuyển từ đồng minh chiến lược sang cạnh tranh và đối đầu.",
+        "c": "Sự thành lập Tổ chức Hiệp ước Bắc Đại Tây Dương và Tổ chức Hiệp ước Vác-sa-va thể hiện sự xói mòn của Trật tự thế giới hai cực I-an-ta.",
+        "d": "Các cuộc chiến tranh cục bộ trong thập niên 50 của thế kỷ XX đã làm thay đổi thế và lực theo hướng có lợi cho Mỹ."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": false,
+        "c": false,
+        "d": false
+      },
+      "explanation_map": {
+        "a": "Đúng, các sự kiện được liệt kê trong bảng đều liên quan đến quá trình hình thành và phát triển của Trật tự thế giới hai cực I-an-ta, như Hội nghị I-an-ta và Pốtx-đam, Chiến tranh lạnh, và sự thành lập NATO và Hiệp ước Vác-sa-va.",
+        "b": "Sai, vì mối quan hệ của Liên Xô và Mỹ không phải là đồng minh chiến lược mà chỉ là đồng minh tạm thời trong cuộc chiến tranh thế giới.",
+        "c": "Sai, sự thành lập NATO (1949) và Hiệp ước Vác-sa-va (1955) thực ra là những minh chứng cho sự cùng tồn tại của Trật tự hai cực, với NATO đại diện cho khối Tây Âu và Mỹ, và Hiệp ước Vác-sa-va đại diện cho khối Đông Âu và Liên Xô.",
+        "d": "Sai, các cuộc chiến tranh cục bộ như Chiến tranh Triều Tiên (1950-1953) và Chiến tranh Đông Dương thực ra không mang lại lợi thế rõ ràng cho Mỹ, vì Chiến tranh Triều Tiên kết thúc trong bế tắc, và Mỹ gặp nhiều khó khăn trong cuộc chiến ở Đông Dương."
+      }
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "phan_i": [
+    {
+      "question_id": 1,
+      "source": "Unknown",
+      "question_text": "Những năm 1960-1975, Mặt trận Dân tộc giải phóng miền Nam Việt Nam (20-12-1960) có vai trò nào sau đây đối với cách mạng Việt Nam?",
+      "options": {
+        "A": "Lãnh đạo nhân dân hai miền hoàn thành nhiệm vụ 'đánh cho Mỹ cút, Ngụy nhào'.",
+        "B": "Đưa miền Bắc trở thành hậu phương vững chắc trong cuộc kháng chiến chống Mỹ.",
+        "C": "Hình thành đội quân chủ lực đầu tiên của lực lượng vũ trang cách mạng Việt Nam.",
+        "D": "Đoàn kết được mọi lực lượng yêu nước ở miền Nam tham gia chống Mỹ, cứu nước."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "Phân tích, nhận xét.",
+        "solution": "Mặt trận Dân tộc Giải phóng miền Nam Việt Nam có vai trò đoàn kết các lực lượng yêu nước ở miền Nam tham gia chống Mỹ, cứu nước."
+      }
+    },
+    {
+      "question_id": 2,
+      "source": "Unknown",
+      "question_text": "Thắng lợi nào sau đây của nhân dân Việt Nam đã làm thất bại hoàn toàn chiến lược 'đánh nhanh, thắng nhanh' của thực dân Pháp và buộc chúng phải chuyển sang đánh lâu dài?",
+      "options": {
+        "A": "Cuộc tiến công chiến lược Đông - Xuân 1953-1954",
+        "B": "Cuộc chiến đấu ở các đô thị phía Bắc vĩ tuyến 16.",
+        "C": "Chiến dịch Việt Bắc thu - đông năm 1947.",
+        "D": "Chiến dịch Biên giới thu - đông năm 1950."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung cuộc kháng chiến chống thực dân Pháp xâm lược (1945–1975).",
+        "solution": "Chiến dịch Việt Bắc thu - đông năm 1947 là thắng lợi khiến thực dân Pháp không thể tiếp tục chiến lược 'đánh nhanh, thắng nhanh', buộc họ chuyển sang đánh lâu dài."
+      }
+    },
+    {
+      "question_id": 3,
+      "source": "Unknown",
+      "question_text": "Những thành tựu của công cuộc đổi mới, cải cách ở các nước châu Á, khu vực Mĩ La tinh là cơ sở để khẳng định:",
+      "options": {
+        "A": "chủ nghĩa xã hội ngày càng phát triển và mở rộng về không gian địa lý.",
+        "B": "chủ nghĩa tư bản không còn là một hệ thống duy nhất trên thế giới.",
+        "C": "chủ nghĩa xã hội đã trở thành một hệ thống trên phạm vi thế giới.",
+        "D": "con đường đi lên chủ nghĩa xã hội phù hợp với xu thế phát triển của thời đại."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "Loại trừ phương án.",
+        "solution": "Công cuộc đổi mới ở các nước như Trung Quốc (1979), Việt Nam (1986), Cuba... cho thấy con đường đi lên chủ nghĩa xã hội phù hợp với xu thế phát triển của thời đại."
+      }
+    },
+    {
+      "question_id": 4,
+      "source": "Unknown",
+      "question_text": "Sự kiện nào sau đây là biểu hiện của sự suy yếu và đi đến sụp đổ của Trật tự thế giới hai cực I-an-ta (từ đầu những năm 70 của thế kỷ XX đến năm 1991)?",
+      "options": {
+        "A": "Sự thành lập tổ chức Hiệp ước Bắc Đại Tây Dương (NATO).",
+        "B": "Sự ra đời của Kế hoạch phục hưng Châu Âu (Kế hoạch Mác-san).",
+        "C": "Sự sụp đổ của chủ nghĩa xã hội ở Đông Âu và sự tan rã của Liên Xô.",
+        "D": "Tổ chức Hiệp ước Vacsava của Liên Xô và Đông Âu thành lập."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung sự hình thành trật tự hai cực I-an-ta.",
+        "solution": "Sự sụp đổ của chủ nghĩa xã hội ở Đông Âu và sự tan rã của Liên Xô là biểu hiện rõ ràng nhất của sự suy yếu và đi đến sụp đổ của trật tự thế giới hai cực I-an-ta."
+      }
+    },
+    {
+      "question_id": 5,
+      "source": "Unknown",
+      "question_text": "Hình thức cạnh tranh chủ yếu giữa các cường quốc từ sau khi Chiến tranh lạnh chấm dứt đến năm 2000 là:",
+      "options": {
+        "A": "thành lập các tổ chức quân sự trên thế giới.",
+        "B": "lôi kéo đồng minh vào các tổ chức quân sự.",
+        "C": "xây dựng sức mạnh tổng hợp của quốc gia.",
+        "D": "tăng cường các cuộc chạy đua vũ trang."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung thế giới sau Chiến tranh Lạnh.",
+        "solution": "Sau Chiến tranh Lạnh, cạnh tranh giữa các cường quốc tập trung vào việc xây dựng sức mạnh tổng hợp của quốc gia."
+      }
+    }
+  ],
+  "phan_ii": [
+    {
+      "question_id": 25,
+      "question": "Cho đoạn tài liệu sau đây:\n\"Bước sang năm 1963, yêu cầu đánh bại các cuộc hành quân bằng 'trực thăng vận' và 'thiết xa vận' của Mỹ - Diệm trở thành một yêu cầu bức thiết của cách mạng miền Nam. Các địa phương quyết tâm vận dụng phương châm '2 chân, 3 mũi' đánh bại các chiến thuật mới của địch, đưa phong trào cách mạng tiến lên một bước. Tháng 1-1963, chiến trường Ấp Bắc tổ chức thắng lợi trận chống càn quy mô lớn.\"",
+      "statements": {
+        "a": "\"2 chân, 3 mũi\" là nghệ thuật chiến tranh cách mạng tấn công địch bằng lực lượng chính trị, lực lượng vũ trang, đánh địch trên cả ba mặt trận chính trị, quân sự và ngoại giao.",
+        "b": "Chiến thắng Ấp Bắc mở ra khả năng đánh bại chiến thuật \"trực thăng vận\", \"thiết xa vận\", đẩy lên phong trào \"Thi đua Ấp Bắc, giết giặc lập công\".",
+        "c": "Chiến thuật \"trực thăng vận\" và \"thiết xa vận\" được coi là các hình thức chiến thuật \"át chủ bài\" của Mỹ, giúp chính quyền và quân đội Sài Gòn giành ưu thế trên chiến trường.",
+        "d": "Chiến thuật \"trực thăng vận\", \"thiết xa vận\" là các chiến thuật mới, được Mỹ sử dụng phổ biến trong chiến lược \"Chiến tranh đặc biệt\"."
+      },
+      "answer_boolean_map": {
+        "a": false,
+        "b": true,
+        "c": true,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Sai, \"2 chân, 3 mũi\" không liên quan đến ngoại giao mà là nghệ thuật chiến tranh cách mạng tấn công địch bằng lực lượng chính trị và vũ trang.",
+        "b": "Đúng, chiến thắng Ấp Bắc mở ra khả năng đánh bại chiến thuật trực thăng vận, thiết xa vận và thúc đẩy phong trào Thi đua Ấp Bắc.",
+        "c": "Đúng, chiến thuật này được Mỹ sử dụng như công cụ áp đảo trên chiến trường miền Nam.",
+        "d": "Đúng, đây là các chiến thuật mới được Mỹ triển khai trong chiến lược Chiến tranh Đặc biệt."
+      }
+    }
+  ]
+}

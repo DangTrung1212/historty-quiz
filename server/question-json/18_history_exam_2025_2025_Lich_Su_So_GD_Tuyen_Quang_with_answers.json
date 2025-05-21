@@ -1,0 +1,98 @@
+{
+  "phan_i": [
+    {
+      "question_id": 1,
+      "source": "Tuyen Quang",
+      "question_text": "Trong giai doan tu nam 1945 den dau nhung nam 70 cua the ky XX, trat tu the gioi hai cuc I-an-ta co bieu hien nao sau day?",
+      "options": {
+        "A": "Xu the hoa hoan la chu dao.",
+        "B": "Hop tac dien ra tren nhieu linh vuc.",
+        "C": "Giai the cac linh minh quan su.",
+        "D": "Doi dau dien ra tren nhieu linh vuc."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lich su 12, noi dung trat tu hai cuc I-an-ta.",
+        "solution": "Trong giai doan tu nam 1945 den dau nhung nam 70 cua the ky XX, trat tu the gioi hai cuc I-an-ta co bieu hien doi dau dien ra tren nhieu linh vuc."
+      }
+    },
+    {
+      "question_id": 2,
+      "source": "Tuyen Quang",
+      "question_text": "Diem khac biet cua chien luoc \"Viet Nam hoa chien tranh\" (1969-1973) so voi chien luoc \"Chien tranh dac biet\" (1961-1965) cua My o mien Nam Viet Nam la gi?",
+      "options": {
+        "A": "Dat duoi su chi huy cua he thong co van My.",
+        "B": "Co su phoi hop ve hoa luc, khong quan, hau can My.",
+        "C": "La hinh thuc chien tranh xam luoc thuc dan moi cua My.",
+        "D": "Su dung quan doi Sai Gon la luc luong chu yeu."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "So sanh.",
+        "solution": "\"Chien tranh dac biet\" la hinh thuc chien tranh xam luoc kieu moi cua My, duoc tien hanh bang quan doi tay sai, duoi su chi huy cua he thong \"co van\" My. \"Viet Nam hoa chien tranh\" duoc tien hanh bang luc luong quan doi Sai Gon la chu yeu, co su phoi hop ve hoa luc, khong quan, hau can My va van do My chi huy bang he thong co van."
+      }
+    },
+    {
+      "question_id": 3,
+      "source": "Tuyen Quang",
+      "question_text": "Trong giai doan 1965 - 1968, nhan dan mien Bac Viet Nam da:",
+      "options": {
+        "A": "Tap trung cai tao quan he san xuat, bat dau phat trien kinh te - xa hoi.",
+        "B": "Tap trung vao cai cach ruong dat, triet de giam to.",
+        "C": "Vua chien dau, vua san xuat va thuc hien nghia vu hau phuong.",
+        "D": "Chien dau chong chien tranh pha hoai lan hai cua My."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lich su 12, noi dung cuoc khang chien chong My cuu nuoc (1954-1975).",
+        "solution": "Trong giai doan 1965 - 1968, nhan dan mien Bac Viet Nam da kip thoi chuyen moi hoat dong sang thoi chien, vua chien dau chong chien tranh pha hoai, vua tiep tuc phat trien kinh te - xa hoi va thuc hien nhiem vu hau phuong lon doi voi tien tuyen mien Nam."
+      }
+    }
+  ],
+  "phan_ii": [
+    {
+      "question_id": 25,
+      "question": "Doc doan tu lieu sau day:\n\n\"Lang tu tin trong lich su, mot nuoc thuoc dia nho yeu da danh thang mot nuoc thuoc dia hung manh. Do la mot thang loi vang vach cua nhan dan Viet Nam, dong thoi cung la mot thang loi vang vach cua cac luc luong hoa binh, dan chu va xa hoi chu nghia tren the gioi.\" \n(Ho Chi Minh, Ba muc nam hoat dong cua Dang, trich trong: Ho Chi Minh, Toan tap, Tap 12, NXB Chinh tri Quoc gia, Ha Noi, 2011, tr. 410)",
+      "statements": {
+        "a": "Cuoc khang chien chong Phap cua nhan dan Viet Nam khang dinh suc manh cua khoi doan ket toan dan toc.",
+        "b": "Thang loi cua nhan dan Viet Nam trong cuoc khang chien chong Phap lam sup do hoan toan chu nghia thuc dan tren the gioi.",
+        "c": "Lan dau tien trong lich su, mot nuoc thuoc dia nho yeu da tieu diet toan bo doi quan cua mot nuoc thuc dan hung manh.",
+        "d": "Cuoc khang chien chong thuc dan Phap cua nhan dan Viet Nam thang loi mang tam vóc va y nghia quoc te sau sac."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": false,
+        "c": false,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Đúng, Cuoc khang chien chong Phap cua nhan dan Viet Nam khang dinh suc manh cua khoi doan ket toan dan toc.",
+        "b": "Sai, Thang loi cua nhan dan Viet Nam trong cuoc khang chien chong Phap gop phan lam tan ra he thong thuoc dia cua chu nghia de quoc.",
+        "c": "Sai, Ta giành duoc thang loi truoc thuc dan Phap chu khong tieu diet toan bo doi quan cua Phap.",
+        "d": "Đúng, Cuoc khang chien chong thuc dan Phap cua nhan dan Viet Nam thang loi mang tam vóc va y nghia quoc te sau sac."
+      }
+    },
+    {
+      "question_id": 26,
+      "question": "Doc doan tu lieu sau day:\n\n\"Chang nhung giai cap lao dong va nhan dan Viet Nam ta co the tu hao, ma giai cap lao dong va nhung dan toc bi ap buc noi khac cung co the tu hao rang: Lan nay la lan dau tien trong lich su cach mang cua cac dan toc thuoc dia va nuoc thuoc dia, mot Dang moi 15 tuoi da lanh dao cach mang thanh cong, do nam chinh quyen toan quoc.\" \n(Ho Chi Minh, Bao cao chinh tri tai Dai hoi dai bieu toan quoc lan thu II cua Dang, Cong san Viet Nam (1951), trich trong: Ho Chi Minh, Toan tap, Tap 7, NXB Chinh tri Quoc gia Su that, Ha Noi, 2011, tr. 25)",
+      "statements": {
+        "a": "Cach mang thang Tam nam 1945 o Viet Nam dat thang loi, khang dinh vai tro lanh dao cua chinh dang cong san trong cuoc chien tranh giai phong dan toc.",
+        "b": "Dang Lao dong Viet Nam tro thanh dang cam quyen o Viet Nam ngay sau khi Cach mang thang Tam nam 1945 thanh cong.",
+        "c": "Cach mang thang Tam nam 1945 o Viet Nam chung minh suc manh doan ket cac luc luong cach mang trong Mat tran Viet Minh duoi su lanh dao cua Dang Cong san Dong Duong.",
+        "d": "Giai cap lao dong la luc luong lanh dao cua cach mang giai phong dan toc va giai phong giai cap."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": false,
+        "c": true,
+        "d": false
+      },
+      "explanation_map": {
+        "a": "Đúng, Cach mang thang Tam nam 1945 o Viet Nam dat thang loi, khang dinh vai tro lanh dao cua chinh dang cong san trong cuoc chien tranh giai phong dan toc.",
+        "b": "Sai, Sau Cach mang thang Tam, Dang Cong san di vao hoat dong bi mat, toi Dai hoi Dai bieu lan thu hai cua Dang (2/1951), Dang duoc dua ra hoat dong cong khai voi ten goi la Dang Lao dong Viet Nam.",
+        "c": "Đúng, Cach mang thang Tam nam 1945 o Viet Nam chung minh suc manh doan ket cac luc luong cach mang trong Mat tran Viet Minh duoi su lanh dao cua Dang Cong san Dong Duong.",
+        "d": "Sai, Giai cap lao dong bao gom ca giai cap cong nhan va nong dan nen noi dung tren chua chinh xac. Giai cap cong nhan la luc luong lanh dao cua cach mang giai phong dan toc va giai phong giai cap."
+      }
+    }
+  ]
+}

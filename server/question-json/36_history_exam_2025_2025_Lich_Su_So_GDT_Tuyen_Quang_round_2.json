@@ -1,0 +1,130 @@
+{
+  "phan_i": [
+    {
+      "question_id": 1,
+      "source": "Tuyen Quang",
+      "question_text": "Một trong những điểm tương đồng của Cách mạng tháng Tám năm 1945 và hai cuộc kháng chiến chống ngoại xâm (1945 - 1975) ở Việt Nam là:",
+      "options": {
+        "A": "có sự sáng tạo trong phương thức sử dụng lực lượng.",
+        "B": "lực lượng vũ trang giữ vai trò quyết định thắng lợi.",
+        "C": "có sự kết hợp đấu tranh quân sự, chính trị và ngoại giao.",
+        "D": "có sự giúp đỡ của các nước xã hội chủ nghĩa."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "So sánh nội dung Cách mạng tháng Tám năm 1945 và các cuộc kháng chiến chống Pháp, Mỹ.",
+        "solution": "Trong Cách mạng tháng Tám năm 1945, lực lượng chính trị giữ vai trò quyết định; không có đấu trường ngoại giao và hệ thống xã hội chủ nghĩa chưa hình thành. Do đó, A là đáp án đúng."
+      }
+    },
+    {
+      "question_id": 2,
+      "source": "Tuyen Quang",
+      "question_text": "Trung tâm của cuộc cải cách, mở cửa ở Trung Quốc (từ tháng 12 - 1978) là:",
+      "options": {
+        "A": "lấy phát triển kinh tế làm trọng tâm.",
+        "B": "chú trọng phát triển văn hóa, giáo dục.",
+        "C": "lấy cải tổ chính trị làm trọng tâm.",
+        "D": "tập trung cải cách triệt để về kinh tế."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "Xem lại nội dung cải cách ở Trung Quốc sau năm 1978.",
+        "solution": "Cuộc cải cách và mở cửa ở Trung Quốc từ năm 1978 lấy phát triển kinh tế làm trọng tâm."
+      }
+    },
+    {
+      "question_id": 3,
+      "source": "Tuyen Quang",
+      "question_text": "Chiều ngày 16-8-1945, một đơn vị Giải phóng quân do Võ Nguyên Giáp chỉ huy, xuất phát từ Tân Trào tiến về giải phóng thị xã:",
+      "options": {
+        "A": "Thái Nguyên.",
+        "B": "Tuyên Quang.",
+        "C": "Cao Bằng.",
+        "D": "Lào Cai."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "Xem lại nội dung Cách mạng tháng Tám năm 1945.",
+        "solution": "Chiều ngày 16-8-1945, đơn vị Giải phóng quân do Võ Nguyên Giáp chỉ huy xuất phát từ Tân Trào tiến về giải phóng Thái Nguyên."
+      }
+    },
+    {
+      "question_id": 4,
+      "source": "Tuyen Quang",
+      "question_text": "Sự hình thành xu thế đa cực, nhiều trung tâm sau Chiến tranh lạnh có tác động như thế nào đối với tình hình thế giới và quan hệ quốc tế?",
+      "options": {
+        "A": "Ngăn chặn được mọi cuộc chiến tranh, xung đột.",
+        "B": "Góp phần củng cố hòa bình, an ninh quốc tế.",
+        "C": "Mở ra quá trình hình thành của xu thế toàn cầu hóa.",
+        "D": "Góp phần hạn chế tầm ảnh hưởng của Nhật Bản."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "Xem lại nội dung về quan hệ quốc tế sau Chiến tranh lạnh.",
+        "solution": "Việc hình thành xu thế đa cực, nhiều trung tâm sau Chiến tranh lạnh góp phần củng cố hòa bình, an ninh quốc tế."
+      }
+    },
+    {
+      "question_id": 5,
+      "source": "Tuyen Quang",
+      "question_text": "Sau Chiến tranh thế giới thứ hai, chủ nghĩa xã hội được mở rộng ở khu vực nào dưới đây?",
+      "options": {
+        "A": "Bắc Âu.",
+        "B": "Châu Á.",
+        "C": "Bắc Mỹ.",
+        "D": "Nam Phi."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "Xem lại nội dung về sự phát triển của chủ nghĩa xã hội sau Chiến tranh thế giới thứ hai.",
+        "solution": "Sau Chiến tranh thế giới thứ hai, chủ nghĩa xã hội được mở rộng chủ yếu ở khu vực châu Á."
+      }
+    }
+  ],
+  "phan_ii": [
+    {
+      "question_id": 25,
+      "question": "Cho đoạn tư liệu sau đây: '[...] Thực tế đã chứng tỏ việc lựa chọn khâu đột phá đổi mới tư duy kinh tế là hoàn toàn đúng đắn và thật sự sáng suốt. Đổi mới tư duy kinh tế để hình thành những chủ trương, chính sách kinh tế đúng đắn, kịp thời đã đem lại những chuyển biến tích cực trong đời sống kinh tế...'",
+      "statements": {
+        "a": "Đổi mới kinh tế đúng đắn của Đảng đã tạo ra những chuyển biến tích cực, thúc đẩy sự phát triển đất nước.",
+        "b": "Đổi mới về tư duy kinh tế từ năm 1968, Đảng xác định không duy trì kinh tế tự cấp tự túc.",
+        "c": "Chủ trương, chính sách kinh tế đúng đắn, kịp thời của Đảng là khâu đột phá trong quá trình đổi mới đất nước.",
+        "d": "Đoạn tư liệu phản ánh vai trò của đổi mới lý luận trong việc xây dựng chủ nghĩa xã hội ở Việt Nam."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": false,
+        "c": true,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Đúng, đổi mới kinh tế đúng đắn của Đảng đã tạo ra những chuyển biến tích cực, thúc đẩy sự phát triển đất nước.",
+        "b": "Sai, vì Đảng bắt đầu đổi mới tư duy kinh tế vào năm 1986, không phải năm 1968.",
+        "c": "Đúng, chủ trương, chính sách kinh tế đúng đắn, kịp thời của Đảng đóng vai trò quan trọng trong quá trình đổi mới đất nước.",
+        "d": "Đúng, đoạn tư liệu phản ánh vai trò của đổi mới lý luận trong việc xây dựng chủ nghĩa xã hội ở Việt Nam."
+      }
+    },
+    {
+      "question_id": 26,
+      "question": "Cho bảng niên biểu về một số sự kiện tiêu biểu về quan hệ của Việt Nam với một số nước lớn trên thế giới đầu thế kỷ XXI.",
+      "statements": {
+        "a": "Thông qua việc duy trì mối quan hệ tốt đẹp với Mỹ và Trung Quốc, Việt Nam đã giải quyết được cuộc cạnh tranh giữa các cường quốc.",
+        "b": "Việt Nam thực hiện đường lối đối ngoại là sẵn sàng làm bạn với tất cả các nước không phân biệt chế độ chính trị.",
+        "c": "Việt Nam đã thiết lập quan hệ đối tác chiến lược toàn diện với tất cả các nước thành viên của nhóm G7.",
+        "d": "Trung Quốc là quốc gia đầu tiên mà Việt Nam nâng cấp quan hệ lên đối tác chiến lược toàn diện."
+      },
+      "answer_boolean_map": {
+        "a": false,
+        "b": true,
+        "c": false,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Sai, Việt Nam không thể giải quyết hoàn toàn cạnh tranh giữa Mỹ và Trung Quốc vì đây là thực tế khách quan.",
+        "b": "Đúng, Việt Nam theo đuổi đường lối đối ngoại cởi mở, sẵn sàng làm bạn với tất cả các nước bất kể chế độ chính trị.",
+        "c": "Sai, Việt Nam chưa thiết lập quan hệ đối tác chiến lược toàn diện với tất cả các nước G7.",
+        "d": "Đúng, Trung Quốc là quốc gia đầu tiên mà Việt Nam nâng cấp quan hệ lên đối tác chiến lược toàn diện."
+      }
+    }
+  ]
+}

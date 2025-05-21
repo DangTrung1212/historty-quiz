@@ -1,0 +1,254 @@
+{
+  "phan_i": [
+    {
+      "question_id": 1,
+      "source": "Unknown",
+      "question_text": "Quốc gia nào sau đây phát động cuộc Chiến tranh lạnh (1947)?",
+      "options": {
+        "A": "Trung Quốc.",
+        "B": "Nga.",
+        "C": "Triều Tiên.",
+        "D": "Mỹ."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung quan hệ quốc tế trong thời kỳ Chiến tranh Lạnh.",
+        "solution": "Mỹ phát động cuộc Chiến tranh lạnh (1947)."
+      }
+    },
+    {
+      "question_id": 2,
+      "source": "Unknown",
+      "question_text": "19-8-1945, nhân dân Việt Nam đã tiến hành khởi nghĩa giành chính quyền thắng lợi ở địa phương nào sau đây?",
+      "options": {
+        "A": "Hà Nội.",
+        "B": "Hà Tiên.",
+        "C": "Sài Gòn.",
+        "D": "Huế."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Cách mạng tháng Tám năm 1945.",
+        "solution": "19-8-1945, nhân dân Việt Nam đã tiến hành khởi nghĩa giành chính quyền thắng lợi ở Hà Nội."
+      }
+    },
+    {
+      "question_id": 3,
+      "source": "Unknown",
+      "question_text": "Nhân tố nào sau đây chi phối sự hình thành Trật tự thế giới mới sau Chiến tranh lạnh?",
+      "options": {
+        "A": "Sự hội nhập về văn hóa giữa các quốc gia trên thế giới.",
+        "B": "Sự phát triển về thực lực kinh tế của các cường quốc.",
+        "C": "Sự hình thành Trật tự hai cực Ianta.",
+        "D": "Phong trào giải phóng dân tộc phát triển ở châu Á."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung trật tự hai cực Ianta.",
+        "solution": "Sự phát triển về thực lực kinh tế của các cường quốc chi phối sự hình thành Trật tự thế giới mới sau Chiến tranh lạnh."
+      }
+    },
+    {
+      "question_id": 4,
+      "source": "Unknown",
+      "question_text": "Nước nào sau đây ở Đông Nam Á không phải là nước ký tuyên bố về việc thành lập Hiệp hội các quốc gia Đông Nam Á vào năm 1967?",
+      "options": {
+        "A": "In-đô-nê-xi-a.",
+        "B": "Ma-lai-xi-a.",
+        "C": "Bru-nây.",
+        "D": "Phi-lip-pin."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung sự ra đời của Hiệp hội các quốc gia Đông Nam Á.",
+        "solution": "Bru-nây không phải là nước ký tuyên bố về việc thành lập Hiệp hội các quốc gia Đông Nam Á vào năm 1967."
+      }
+    },
+    {
+      "question_id": 5,
+      "source": "Unknown",
+      "question_text": "Trong thu đông năm 1947, quân dân Việt Nam tiến hành hoạt động quân sự nào sau đây?",
+      "options": {
+        "A": "Chiến dịch Huế - Đà Nẵng.",
+        "B": "Chiến dịch Tây Nguyên.",
+        "C": "Chiến dịch Phước Long.",
+        "D": "Chiến dịch Việt Bắc thu đông (1947)."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung cuộc kháng chiến chống thực dân Pháp xâm lược (1945-1954).",
+        "solution": "Trong thu đông năm 1947, quân dân Việt Nam tiến hành chiến dịch Việt Bắc thu đông (1947)."
+      }
+    },
+    {
+      "question_id": 6,
+      "source": "Unknown",
+      "question_text": "Nội dung nào sau đây không phải là trụ cột của Cộng đồng ASEAN?",
+      "options": {
+        "A": "Cộng đồng Văn hóa - Xã hội ASEAN.",
+        "B": "Cộng đồng Chính trị - An ninh ASEAN.",
+        "C": "Cộng đồng Kinh tế ASEAN.",
+        "D": "Cộng đồng Thép ASEAN."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Cộng đồng ASEAN.",
+        "solution": "Cộng đồng Thép ASEAN không phải là trụ cột của Cộng đồng ASEAN."
+      }
+    },
+    {
+      "question_id": 7,
+      "source": "Unknown",
+      "question_text": "Nội dung nào sau đây không phải là nguyên nhân sụp đổ của Trật tự thế giới hai cực Ianta?",
+      "options": {
+        "A": "Hiệp hội các quốc gia Đông Nam Á thành lập.",
+        "B": "Sự vươn lên của Nhật Bản, các nước Tây Âu.",
+        "C": "Thế mạnh của Mỹ và Liên Xô bị suy giảm.",
+        "D": "Thắng lợi của phong trào giải phóng dân tộc."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung sự sụp đổ của trật tự hai cực Ianta.",
+        "solution": "Hiệp hội các quốc gia Đông Nam Á thành lập không phải là nguyên nhân sụp đổ của Trật tự thế giới hai cực Ianta."
+      }
+    },
+    {
+      "question_id": 8,
+      "source": "Unknown",
+      "question_text": "Nội dung nào sau đây không phản ánh đúng ý nghĩa của Tổng tiến công và nổi dậy Xuân Mậu Thân 1968 của quân dân miền Nam Việt Nam?",
+      "options": {
+        "A": "Mở ra bước ngoặt của cuộc kháng chiến chống Mỹ.",
+        "B": "Làm phá sản chiến lược 'Chiến tranh cục bộ' của Mỹ.",
+        "C": "Buộc Mỹ ký hiệp định chấm dứt chiến tranh xâm lược.",
+        "D": "Buộc Mỹ chấm dứt chiến tranh phá hoại miền Bắc."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "Loại trừ phương án.",
+        "solution": "Buộc Mỹ ký hiệp định chấm dứt chiến tranh xâm lược không phản ánh đúng ý nghĩa của Tổng tiến công và nổi dậy Xuân Mậu Thân 1968 của quân dân miền Nam Việt Nam."
+      }
+    },
+    {
+      "question_id": 9,
+      "source": "Unknown",
+      "question_text": "Tháng 2-1951, Đại hội đại biểu toàn quốc lần thứ II của Đảng Cộng sản Đông Dương quyết định điều gì sau đây?",
+      "options": {
+        "A": "Hoàn thành công nghiệp hóa đất nước.",
+        "B": "Hoàn thành hiện đại hóa đất nước.",
+        "C": "Đưa Đảng ra hoạt động công khai.",
+        "D": "Phát động Toàn quốc kháng chiến."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung cuộc kháng chiến chống thực dân Pháp xâm lược (1945-1954).",
+        "solution": "Tháng 2-1951, Đại hội đại biểu toàn quốc lần thứ II của Đảng Cộng sản Đông Dương quyết định đưa Đảng ra hoạt động công khai với tên gọi Đảng Lao động Việt Nam."
+      }
+    },
+    {
+      "question_id": 10,
+      "source": "Unknown",
+      "question_text": "Năm 2015, với việc ký Tuyên bố Kuala Lumpur đã chính thức thành lập:",
+      "options": {
+        "A": "Liên minh châu Phi.",
+        "B": "Cộng đồng ASEAN.",
+        "C": "Liên minh châu Âu.",
+        "D": "Cộng đồng Chính trị-An ninh."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Cộng đồng ASEAN.",
+        "solution": "Năm 2015, với việc ký Tuyên bố Kuala Lumpur đã chính thức thành lập Cộng đồng ASEAN."
+      }
+    }
+  ],
+  "phan_ii": [
+    {
+      "question_id": 25,
+      "question": "Đoạn tài liệu: 'Tháng 1/1946, Chủ tịch Hồ Chí Minh nhân danh Chính phủ nước Việt Nam Dân chủ Cộng hòa đã gửi thư đến Chủ tịch Đại hội đồng Liên Hợp Quốc bày tỏ nguyện vọng Việt Nam gia nhập Liên Hợp Quốc. Trải qua thăng trầm lịch sử, ngày 20/9/1977, Việt Nam chính thức trở thành thành viên thứ 149 của Liên Hợp Quốc. Kể từ đó, Việt Nam luôn là một đối tác tin cậy, là thành viên tích cực và có nhiều đóng góp quan trọng vào thực hiện các sứ mệnh của Liên Hợp Quốc.' (Bùi Thanh Sơn, 45 năm quan hệ Việt Nam-Liên Hợp Quốc: Đối tác tin cậy vì hòa bình, hợp tác và phát triển, báo Chính phủ điện tử, ngày 19-9-2022)",
+      "statements": {
+        "a": "Việc gia nhập Liên Hợp Quốc là mốc đánh dấu bước ngoặt trong hoạt động ngoại giao đa phương của Việt Nam.",
+        "b": "Từ đây Việt Nam đã trở thành một thành viên của Hội đồng Bảo an của Liên Hợp Quốc.",
+        "c": "Ngay sau khi có nguyện vọng, Việt Nam đã được chấp nhận trở thành thành viên thứ 149 của Liên Hợp Quốc.",
+        "d": "Quan hệ Việt Nam và Liên Hợp Quốc là cơ sở quyết định để nước ta hội nhập quốc tế."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": false,
+        "c": false,
+        "d": false
+      },
+      "explanation_map": {
+        "a": "Đúng, việc gia nhập Liên Hợp Quốc là mốc đánh dấu bước ngoặt trong hoạt động ngoại giao đa phương của Việt Nam.",
+        "b": "Sai, Việt Nam không nằm trong Hội đồng Bảo an Liên Hợp Quốc.",
+        "c": "Sai, trải qua nhiều thăng trầm lịch sử, từ năm 1946 đến năm 1977 Việt Nam mới trở thành thành viên thứ 149 của Liên Hợp Quốc.",
+        "d": "Sai, quan hệ Việt Nam và Liên Hợp Quốc là điều kiện thuận lợi để nước ta hội nhập quốc tế."
+      }
+    },
+    {
+      "question_id": 26,
+      "question": "Cho bảng dữ kiện về Tổng khởi nghĩa tháng Tám năm 1945 ở Việt Nam: | Thời gian | Sự kiện |\n| --- | --- |\n| 15-8-1945 | Nhật hoàng tuyên bố đầu hàng Đồng minh không điều kiện. |\n| Từ 19 đến 25-8-1945 | Cuộc Tổng khởi nghĩa của nhân dân Việt Nam đã giành thắng lợi ở Hà Nội, Huế, Sài Gòn. |\n| 28-8-1945 | Tổng khởi nghĩa giành thắng lợi trong cả nước. |\n| 30-8-1945 | Vua Bảo Đại tuyên bố thoái vị. |\n| 2-9-1945 | Tại Quảng trường Ba Đình, thay mặt Chính phủ lâm thời, Hồ Chí Minh đọc Tuyên ngôn độc lập tuyên bố thành lập nước Việt Nam Dân chủ Cộng hòa.",
+      "statements": {
+        "a": "Bảng dữ liệu trên đề cập đến diễn biến của Cách mạng tháng Tám năm 1945 ở Việt Nam.",
+        "b": "Cách mạng tháng Tám năm 1945 ở Việt Nam do dưới sự lãnh đạo của Chính phủ nước Việt Nam Dân chủ Cộng hòa.",
+        "c": "Thắng lợi của Cách mạng tháng Tám năm 1945 ở Việt Nam đã góp phần thúc đẩy cuộc Chiến tranh thế giới thứ hai nhanh chóng kết thúc.",
+        "d": "Sự thắng lợi của quân Đồng minh trước phát xít Nhật đã tác động tích cực đến Cách mạng tháng Tám năm 1945 ở Việt Nam."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": false,
+        "c": false,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Đúng, bảng dữ liệu trên đề cập đến diễn biến của Cách mạng tháng Tám năm 1945 ở Việt Nam.",
+        "b": "Sai, Cách mạng tháng Tám năm 1945 ở Việt Nam do dưới sự lãnh đạo của Đảng Cộng sản Đông Dương.",
+        "c": "Sai, thắng lợi của Cách mạng tháng Tám năm 1945 ở Việt Nam đã góp phần tiêu diệt chủ nghĩa phát xít.",
+        "d": "Đúng, sự thắng lợi của quân Đồng minh trước phát xít Nhật đã tác động tích cực đến Cách mạng tháng Tám năm 1945 ở Việt Nam."
+      }
+    },
+    {
+      "question_id": 27,
+      "question": "Đoạn tài liệu: 'Chiến thắng Điện Biên Phủ là đỉnh cao của cuộc kháng chiến chống thực dân Pháp xâm lược, tạo cơ sở căn bản và quyết định chấm dứt sự đô hộ của thực dân Pháp ở ba nước Đông Dương, là chiến thắng của lòng yêu nước nồng nàn, ý chí bất khuất, kiên cường của dân tộc Việt Nam được hun đúc qua hàng nghìn năm lịch sử'. (Trích PGS. TS Vũ Trọng Lam, 'Chiến thắng Điện Biên Phủ - Bài học lịch sử vẫn nguyên giá trị đối với sự nghiệp đổi mới hiện nay', Tạp chí Cộng sản, Chuyên mục Quốc phòng - an ninh - đối ngoại, ngày 6-5-2024)",
+      "statements": {
+        "a": "Năm 1954, nhân dân Việt Nam đã giành thắng lợi trong chiến dịch Điện Biên Phủ.",
+        "b": "Chiến thắng Điện Biên Phủ của nhân dân Việt Nam đã làm thất bại kế hoạch Ro-ve của Pháp.",
+        "c": "Chiến thắng Điện Biên Phủ có tác động tích cực đến phong trào giải phóng dân tộc trên thế giới.",
+        "d": "Hiệp định Genève về Đông Dương được ký kết đã phản ánh ý nghĩa quyết định của trận quyết chiến chiến lược đối với thắng lợi của Việt Nam trên mặt trận ngoại giao."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": false,
+        "c": true,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Đúng, năm 1954, nhân dân Việt Nam đã giành thắng lợi trong chiến dịch Điện Biên Phủ.",
+        "b": "Sai, chiến thắng Điện Biên Phủ của nhân dân Việt Nam đã làm thất bại kế hoạch Na-va của Pháp.",
+        "c": "Đúng, chiến thắng Điện Biên Phủ có tác động tích cực đến phong trào giải phóng dân tộc trên thế giới.",
+        "d": "Đúng, hiệp định Genève về Đông Dương được ký kết đã phản ánh ý nghĩa quyết định của trận quyết chiến chiến lược đối với thắng lợi của Việt Nam trên mặt trận ngoại giao."
+      }
+    },
+    {
+      "question_id": 28,
+      "question": "Đoạn tài liệu: 'Phát triển con người toàn diện với xây dựng nền văn hóa Việt Nam tiên tiến, đậm đà bản sắc dân tộc để văn hóa thực sự trở thành sức mạnh nội sinh, động lực phát triển đất nước và bảo vệ Tổ quốc. Tăng cường đấu tranh cho phát triển sự nghiệp văn hóa. Xây dựng, phát triển, tạo môi trường và điều kiện xã hội thuận lợi nhất để khơi dậy truyền thống yêu nước, niềm tự hào dân tộc, niềm tin, khát vọng phát triển đất nước phồn vinh, hạnh phúc; tài năng, trí tuệ, phẩm chất của con người Việt Nam là trung tâm, mục tiêu và động lực phát triển quan trọng nhất của đất nước'. (Đảng Cộng sản Việt Nam, Văn kiện Đại hội đại biểu toàn quốc lần thứ XIII, Tập I, NXB Chính trị quốc gia Sự thật, Hà Nội, 2021, tr.115-116)",
+      "statements": {
+        "a": "Trong đổi mới đất nước, Đảng Cộng sản Việt Nam xác định văn hóa là sức mạnh nội sinh để xây dựng và bảo vệ Tổ quốc.",
+        "b": "Để có thể đưa văn hóa thành sức mạnh, cần tập trung bảo tồn, duy trì nền văn hóa truyền thống, đậm đà bản sắc dân tộc, tránh bổ sung các yếu tố văn hóa mới.",
+        "c": "Đảng Cộng sản Việt Nam xác định con người là trung tâm, chủ thể, là nguồn lực chủ yếu, và là mục tiêu của sự phát triển văn hóa và xã hội.",
+        "d": "Chính sách văn hóa đúng định hướng của Đảng góp phần tạo nên ổn định xã hội, thúc đẩy sự phát triển kinh tế."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": false,
+        "c": true,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Đúng, trong đổi mới đất nước, Đảng Cộng sản Việt Nam xác định văn hóa là sức mạnh nội sinh để xây dựng và bảo vệ Tổ quốc.",
+        "b": "Sai, để có thể đưa văn hóa thành sức mạnh, cần tập trung bảo tồn, duy trì nền văn hóa truyền thống, đậm đà bản sắc dân tộc, có thể bổ sung các yếu tố văn hóa mới nhưng hòa nhập chứ không hòa tan.",
+        "c": "Đúng, Đảng Cộng sản Việt Nam xác định con người là trung tâm, chủ thể, là nguồn lực chủ yếu, và là mục tiêu của sự phát triển văn hóa và xã hội.",
+        "d": "Đúng, chính sách văn hóa đúng định hướng của Đảng góp phần tạo nên ổn định xã hội, thúc đẩy sự phát triển kinh tế."
+      }
+    }
+  ]
+}

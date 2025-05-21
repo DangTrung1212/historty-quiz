@@ -1,0 +1,130 @@
+{
+  "phan_i": [
+    {
+      "question_id": 1,
+      "source": "Unknown",
+      "question_text": "Những hoạt động ngoại giao của nhà yêu nước Phan Bội Châu diễn ra đầu thế kỷ XX nhằm mục đích nào sau đây?",
+      "options": {
+        "A": "Tìm kiếm sự giúp đỡ để chống Pháp.",
+        "B": "Hợp tác kinh tế với các nước láng giềng.",
+        "C": "Thành lập liên minh để chống phát xít.",
+        "D": "Thiết lập liên minh quân sự ở châu Á."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "Loại trừ phương án.",
+        "solution": "Những hoạt động ngoại giao của nhà yêu nước Phan Bội Châu diễn ra đầu thế kỷ XX nhằm mục đích tìm kiếm sự giúp đỡ để chống thực dân Pháp."
+      }
+    },
+    {
+      "question_id": 2,
+      "source": "Unknown",
+      "question_text": "Lĩnh vực nào sau đây được Đảng Cộng sản Việt Nam xác định là trọng tâm của cuộc đổi mới (từ năm 1986)?",
+      "options": {
+        "A": "Chính trị.",
+        "B": "Tư tưởng.",
+        "C": "Kinh tế.",
+        "D": "Văn hóa."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung công cuộc Đổi mới (1986).",
+        "solution": "Kinh tế được Đảng Cộng sản Việt Nam xác định là trọng tâm của cuộc đổi mới (từ năm 1986)."
+      }
+    },
+    {
+      "question_id": 3,
+      "source": "Unknown",
+      "question_text": "Trước những xu thế phát triển chính của thế giới sau Chiến tranh lạnh (1991), Việt Nam có thể tận dụng cơ hội nào sau đây để xây dựng, phát triển đất nước?",
+      "options": {
+        "A": "Không bị áp dụng luật chống bán phá giá",
+        "B": "Sự ổn định tình hình chính trị trong nước",
+        "C": "Mua được các bằng phát minh với giá rẻ.",
+        "D": "Thu hút vốn, tiếp thu thành tựu khoa học."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "Phân tích, rút ra bài học kinh nghiệm.",
+        "solution": "Sau Chiến tranh lạnh, xu thế của thế giới là hòa bình, hợp tác cùng phát triển, cùng với đó là xu thế đa cực. Các xu thế sau Chiến tranh Lạnh tạo nhiều điều kiện và cơ hội cho Việt Nam xây dựng và phát triển đất nước. Việt Nam có thể thu hút vốn, áp dụng các thành tựu khoa học kỹ thuật trong quá trình công nghiệp hóa, hiện đại hóa, xây dựng và phát triển đất nước."
+      }
+    },
+    {
+      "question_id": 4,
+      "source": "Unknown",
+      "question_text": "Trong Tuyên bố Băng Cốc (1967), các nước thành viên ASEAN đã đề ra ý tưởng nào sau đây?",
+      "options": {
+        "A": "Tổ chức Đông Nam Á thành một khu vực mậu dịch tự do trong vòng 10 năm.",
+        "B": "Thúc đẩy quan hệ kinh tế, văn hóa giữa ASEAN và Cộng đồng châu Âu (EC).",
+        "C": "Thành lập tổ chức liên minh chính trị - quân sự của các nước trong khu vực.",
+        "D": "Xây dựng một cộng đồng các nước Đông Nam Á hòa bình và thịnh vượng."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Cộng đồng ASEAN.",
+        "solution": "Trong Tuyên bố Băng Cốc (1967), các nước thành viên ASEAN đã đề ra ý tưởng xây dựng một cộng đồng các nước Đông Nam Á hòa bình và thịnh vượng."
+      }
+    },
+    {
+      "question_id": 5,
+      "source": "Unknown",
+      "question_text": "Thắng lợi của chiến dịch nào sau đây đánh dấu sự kết thúc hoàn toàn cuộc kháng chiến chống Mỹ, cứu nước (1954-1975) của nhân dân Việt Nam?",
+      "options": {
+        "A": "Chiến dịch Tây Nguyên.",
+        "B": "Chiến dịch Lam Sơn 719.",
+        "C": "Chiến dịch Huế - Đà Nẵng.",
+        "D": "Chiến dịch Hồ Chí Minh."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung cuộc kháng chiến chống Mỹ cứu nước (1954-1975).",
+        "solution": "Thắng lợi của chiến dịch Hồ Chí Minh đã đánh dấu sự kết thúc hoàn toàn cuộc kháng chiến chống Mỹ, cứu nước (1954-1975) của nhân dân Việt Nam."
+      }
+    }
+  ],
+  "phan_ii": [
+    {
+      "question_id": 25,
+      "question": "Đọc đoạn tư liệu sau:",
+      "statements": {
+        "a": "Từ năm 1991, cuộc cạnh tranh chiến lược giữa các cường quốc trong thời kỳ Chiến tranh lạnh là chạy đua vũ trang được thay thế bằng cuộc chạy đua về sức mạnh tổng hợp.",
+        "b": "Tương quan lực lượng giữa các cường quốc là một trong những nhân tố tác động đến việc hình thành trật tự thế giới sau Chiến tranh lạnh.",
+        "c": "Đoạn tư liệu đề cập đến bối cảnh hình thành và đặc điểm nổi bật của cục diện thế giới thời kỳ Chiến tranh lạnh.",
+        "d": "Sau Chiến tranh lạnh, trật tự đa cực nhiều trung tâm dần hình thành với ưu thế tuyệt đối thuộc về Mỹ và Trung Quốc."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": true,
+        "c": false,
+        "d": false
+      },
+      "explanation_map": {
+        "a": "Đúng, từ năm 1991, cuộc cạnh tranh chiến lược giữa các cường quốc trong thời kỳ Chiến tranh lạnh là chạy đua vũ trang được thay thế bằng cuộc chạy đua về sức mạnh tổng hợp. Trong đó tập trung vào phát triển kinh tế.",
+        "b": "Đúng, tương quan lực lượng giữa các cường quốc là một trong những nhân tố tác động đến việc hình thành trật tự thế giới sau Chiến tranh lạnh.",
+        "c": "Sai, đoạn tư liệu đề cập đến bối cảnh hình thành và đặc điểm nổi bật của cục diện thế giới thời kỳ sau Chiến tranh lạnh.",
+        "d": "Sai, sau Chiến tranh lạnh, trật tự đa cực nhiều trung tâm dần hình thành, không có quốc gia nào có ưu thế tuyệt đối."
+      }
+    },
+    {
+      "question_id": 26,
+      "question": "Cho những thông tin trong bảng sau đây:",
+      "statements": {
+        "a": "Trong quá trình phát triển, ASEAN đã từng bước xóa bỏ những bất đồng giữa các nước thành viên, gắn kết khu vực và nâng cao vị thế trên trường quốc tế.",
+        "b": "Yếu tố quyết định đến sự hoạt động hiệu quả của tổ chức ASEAN là phù hợp với các xu thế phát triển của nhân loại trong bối cảnh trật tự thế giới mới.",
+        "c": "Quá trình mở rộng thành viên của ASEAN chịu tác động của bối cảnh Chiến tranh lạnh.",
+        "d": "Cộng đồng ASEAN hoạt động dựa trên cơ sở pháp lý là Tuyên bố Kuala Lumpur."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": false,
+        "c": true,
+        "d": false
+      },
+      "explanation_map": {
+        "a": "Đúng, trong quá trình phát triển, ASEAN đã từng bước xóa bỏ những bất đồng giữa các nước thành viên, gắn kết khu vực và nâng cao vị thế trên trường quốc tế.",
+        "b": "Sai, yếu tố quyết định đến sự hoạt động hiệu quả của tổ chức ASEAN là sự nỗ lực hoạt động của các nước thành viên.",
+        "c": "Đúng, quá trình mở rộng thành viên của ASEAN chịu tác động của bối cảnh Chiến tranh lạnh khiến cho quá trình mở rộng diễn ra lâu dài và nhiều khó khăn.",
+        "d": "Sai, Cộng đồng ASEAN hoạt động dựa trên cơ sở pháp lý là Hiến chương ASEAN."
+      }
+    }
+  ]
+}

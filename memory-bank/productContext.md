@@ -1,21 +1,33 @@
-# Product Context
+# Product Context: History Quiz VN - Birthday Edition
 
-## Problem Statement
-Vietnamese high school students preparing for the national graduation exam need effective and engaging ways to practice history content. Traditional study methods can be monotonous and fail to incentivize consistent practice.
+## 1. Why This Project Exists
+This project is a personal endeavor by the USER to create a unique, thoughtful, and impressive digital gift for their crush's birthday. It aims to combine an engaging activity (a history quiz) with a heartfelt, personalized message delivered in a novel and interactive way.
 
-## Solution
-Sử Nhanh provides an interactive quiz application that:
-1. Makes history practice more engaging through gamification
-2. Rewards achievement with visual reinforcement (unlockable image pieces)
-3. Provides immediate feedback on quiz performance
-4. Supports self-assessment through answer review functionality
+## 2. Problems It Solves
+-   Provides a creative and modern alternative to traditional birthday cards.
+-   Offers a personalized experience that shows effort and care.
+-   Creates a memorable "moment of delight" for the recipient.
 
-## User Experience Goals
-1. **Simple and Intuitive**: App flow should be immediately understandable to high school students
-2. **Rewarding**: Create a sense of achievement and progress through visual rewards
-3. **Educational**: Support learning through proper question design and answer explanations
-4. **Motivational**: Encourage continued practice through the progressive unlocking mechanism
-5. **Consistent and Robust**: Ensure quiz state and answer review are always correct, regardless of quiz type or navigation.
+## 3. How It Should Work (User Experience Flow)
+1.  **Landing Page**: User (crush) is greeted with a visually appealing landing page, consistent with the romantic/celebratory theme. A "Start" button initiates the experience.
+2.  **Quiz Sections**: The user progresses through various history quiz sections.
+3.  **Progress Tracking**: The application tracks the user's progress and scores.
+4.  **Reward Unlocking**: Upon successful completion of the quiz (e.g., all sections completed), the birthday reward is unlocked.
+5.  **Interactive Birthday Card**:
+    *   The user is presented with a closed card/book.
+    *   Interacting with the card (e.g., clicking) triggers an animation, causing the card to open.
+    *   The animation and layout are responsive (e.g., pages stack on mobile, spread on desktop).
+    *   Upon opening, a personalized birthday message is revealed, potentially across two pages or in a beautifully formatted single view.
+6.  **Overall Feel**: The experience should feel polished, celebratory, romantic, and a little magical.
+
+## 4. User Experience Goals
+-   **Delight & Surprise**: The core goal is to delight and surprise the recipient with the interactive card and message.
+-   **Engagement**: The quiz should be engaging enough to lead the user to the reward.
+-   **Ease of Use**: The application should be intuitive and easy to navigate on all devices.
+-   **Visual Appeal**: A consistent and attractive theme (purple/pink gradients, festive elements) should enhance the experience.
+-   **Personalization**: The birthday message should feel personal and heartfelt.
+-   **Smooth Performance**: Animations and transitions should be smooth.
+-   **Mobile-First**: The mobile experience must be excellent.
 
 ## Quiz Sections
 The app includes three main quiz sections:

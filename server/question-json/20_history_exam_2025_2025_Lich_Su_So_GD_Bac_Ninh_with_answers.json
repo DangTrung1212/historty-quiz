@@ -1,0 +1,130 @@
+{
+  "phan_i": [
+    {
+      "question_id": 1,
+      "source": "Bắc Ninh",
+      "question_text": "Nội dung nào sau đây phản ánh đúng đặc điểm của trật tự thế giới mới được hình thành sau khi trật tự hai cực I-an-ta sụp đổ?",
+      "options": {
+        "A": "Sức mạnh của Mỹ được tăng cường tuyệt đối.",
+        "B": "Có sự cân bằng giữa hai hệ thống xã hội đối lập.",
+        "C": "Lợi ích của dân tộc được đặt lên hàng đầu.",
+        "D": "Quá trình thiết lập và hoàn thiện diễn ra nhanh chóng."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung tác động của sự sụp đổ Trật tự hai cực I-an-ta",
+        "solution": "Lợi ích của dân tộc được đặt lên hàng đầu phản ánh đúng đặc điểm của trật tự thế giới mới được hình thành sau khi trật tự hai cực I-an-ta sụp đổ."
+      }
+    },
+    {
+      "question_id": 2,
+      "source": "Bắc Ninh",
+      "question_text": "Trong đường lối đổi mới kinh tế, Đảng Cộng sản chủ trương trọng tâm là đổi mới kinh tế vì một trong những lý do nào sau đây?",
+      "options": {
+        "A": "Xu thế phát triển chung của thế giới là lấy phát triển kinh tế làm trọng tâm.",
+        "B": "Khả năng phòng thủ của đất nước phụ thuộc vào sự phát triển kinh tế.",
+        "C": "Nền kinh tế phát triển thì các lĩnh vực khác của đất nước mới có thể phát triển.",
+        "D": "Việt Nam vẫn chưa khắc phục được những hậu quả của chiến tranh kéo dài."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "Giải thích",
+        "solution": "Trong đường lối đổi mới kinh tế, Đảng Cộng sản chủ trương trọng tâm là đổi mới kinh tế vì xu thế phát triển chung của thế giới là lấy phát triển kinh tế làm trọng tâm."
+      }
+    },
+    {
+      "question_id": 3,
+      "source": "Bắc Ninh",
+      "question_text": "Thắng lợi quân sự nào đã chuyển cách mạng miền Nam Việt Nam từ thế giữ vững lực lượng sang thế tiến công?",
+      "options": {
+        "A": "Chiến thắng Ấp Bắc.",
+        "B": "Phong trào phá áp chiến lược.",
+        "C": "Chiến thắng Vạn Tường.",
+        "D": "Phong trào Đồng Khởi."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung phong trào Đồng Khởi",
+        "solution": "Thắng lợi quân sự đã chuyển cách mạng miền Nam Việt Nam từ thế giữ vững lực lượng sang thế tiến công là phong trào Đồng Khởi."
+      }
+    },
+    {
+      "question_id": 4,
+      "source": "Bắc Ninh",
+      "question_text": "Sự kiện nào đánh dấu chấm dứt cục diện hai chính quyền đại diện cho lợi ích của các giai cấp khác nhau ở nước Nga năm 1917?",
+      "options": {
+        "A": "Chính phủ lâm thời được thành lập.",
+        "B": "Cách mạng tháng Hai thành công.",
+        "C": "Sắc lệnh hòa bình được ban bố.",
+        "D": "Cách mạng tháng Mười thành công."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lịch sử 11",
+        "solution": "Sự kiện đánh dấu chấm dứt cục diện hai chính quyền đại diện cho lợi ích của các giai cấp khác nhau ở nước Nga năm 1917 là Cách mạng tháng Mười thành công."
+      }
+    },
+    {
+      "question_id": 5,
+      "source": "Bắc Ninh",
+      "question_text": "Trong đường lối đổi mới đất nước giai đoạn 1986-1995, Đảng Cộng sản Việt Nam khẳng định, đổi mới phải được tiến hành",
+      "options": {
+        "A": "trước hết về chính trị.",
+        "B": "toàn diện và đồng bộ.",
+        "C": "trọng tâm về văn hóa.",
+        "D": "nhanh chóng và đồng bộ."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung công cuộc đổi mới ở Việt Nam năm 1986",
+        "solution": "Trong đường lối đổi mới đất nước giai đoạn 1986-1995, Đảng Cộng sản Việt Nam khẳng định, đổi mới phải được tiến hành toàn diện và đồng bộ."
+      }
+    }
+  ],
+  "phan_ii": [
+    {
+      "question_id": 25,
+      "question": "Cho bảng dữ kiện về các chiến lược chiến tranh Mỹ thực hiện ở miền Nam Việt Nam",
+      "statements": {
+        "a": "Trong giai đoạn 1965 -1968， nhân dân miền Nam Việt Nam phải chiến đấu chống chiến lược \"Chiến tranh đặc biệt\" của Mỹ.",
+        "b": "Thắng lợi của nhân dân Việt Nam trong kháng chiến chống Mỹ cứu nước đã làm thất bại chiến lược toàn cầu của Mỹ.",
+        "c": "Các chiến lược chiến tranh Mỹ triển khai ở miền Nam phản ánh bản chất ngoan cố trong việc tiến hành chiến tranh xâm lược miền Nam Việt Nam.",
+        "d": "Việc Mỹ dựng lên chính quyền tay sai Ngô Đình Diệm là biểu hiện Mỹ đã phá hoại Hiệp định Genève về Đông Dương."
+      },
+      "answer_boolean_map": {
+        "a": false,
+        "b": false,
+        "c": true,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Sai, trong giai đoạn 1965 -1968, nhân dân miền Nam Việt Nam phải chiến đấu chống chiến lược \"Chiến tranh cục bộ\" của Mỹ.",
+        "b": "Sai, thắng lợi của nhân dân Việt Nam trong kháng chiến chống Mỹ cứu nước đã góp phần làm thất bại chiến lược toàn cầu của Mỹ.",
+        "c": "Đúng, các chiến lược chiến tranh Mỹ triển khai ở miền Nam phản ánh bản chất ngoan cố trong việc tiến hành chiến tranh xâm lược miền Nam Việt Nam.",
+        "d": "Đúng, việc Mỹ dựng lên chính quyền tay sai Ngô Đình Diệm là biểu hiện Mỹ đã phá hoại Hiệp định Genève về Đông Dương."
+      }
+    },
+    {
+      "question_id": 26,
+      "question": "Đọc đoạn tư liệu sau đây.\n\n\"Sau Chiến tranh lạnh, Đông Nam Á bước vào một thời kỳ phát triển mới. Một trong những nhân tố chủ đạo vẽ nên bức tranh toàn cảnh của Đông Nam Á thời kỳ này là tiến trình liên kết khu vực. Chỉ trong vòng chưa đầy 10 năm, các nước Đông Nam Á đã hoàn tất quá trình khu vực hóa, được bắt đầu từ giữa thập niên \"một trung tâm quyền lực mới\" ở khu vực của thế kỷ trước, đưa ASEAN trở thành một tổ chức toàn khu vực, vươn tới APEC với tính thích nghi cao, sự năng động và sức sống mãnh liệt\".\n\n(Lương Ninh, Lịch sử Đông Nam Á, NXB Giáo dục, 2007, tr.603)",
+      "statements": {
+        "a": "Sự kết thúc của Chiến tranh lạnh đã tạo những điều kiện thuận lợi để Đông Nam Á phát triển.",
+        "b": "Giai đoạn sau Chiến tranh lạnh, với nhiều cơ chế hợp tác mới, ASEAN dần nâng cao vai trò và sức mạnh của mình, chi phối các quan hệ quốc tế.",
+        "c": "Hiện nay, ASEAN là một trong những tổ chức liên kết khu vực thành công nhất thế giới.",
+        "d": "Quá trình khu vực hóa của các nước Đông Nam Á được hoàn thành chỉ trong chưa đầy 10 năm kể từ khi tổ chức ASEAN được thành lập."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": false,
+        "c": true,
+        "d": false
+      },
+      "explanation_map": {
+        "a": "Đúng, sự kết thúc của Chiến tranh lạnh đã tạo những điều kiện thuận lợi để Đông Nam Á phát triển.",
+        "b": "Sai, giai đoạn sau Chiến tranh lạnh, với nhiều cơ chế hợp tác mới, ASEAN dần nâng cao vai trò và sức mạnh của mình, nhưng không chi phối các quan hệ quốc tế.",
+        "c": "Đúng, hiện nay, ASEAN là một trong những tổ chức liên kết khu vực thành công nhất thế giới.",
+        "d": "Sai, quá trình khu vực hóa của các nước Đông Nam Á được hoàn thành trong hơn 30 năm."
+      }
+    }
+  ]
+}

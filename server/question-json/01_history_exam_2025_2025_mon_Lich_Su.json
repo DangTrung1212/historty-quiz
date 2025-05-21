@@ -1,0 +1,254 @@
+{
+  "phan_i": [
+    {
+      "question_id": 1,
+      "source": "Yên Bái",
+      "question_text": "Một trong những xu thế phát triển chính của thế giới sau Chiến tranh lạnh là",
+      "options": {
+        "A": "hình thành các liên minh quân sư xuyên lục địa.",
+        "B": "Mỹ vươn lên thiết lập trật tự đơn cực.",
+        "C": "tập trung nghiên cứu khoa học vũ trụ.",
+        "D": "lấy phát triển kinh tế làm trung tâm."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Trật tự thế giới sau Chiến tranh lạnh",
+        "solution": "Sau Chiến tranh lạnh, các quốc gia trên thế giới tập trung phát triển kinh tế để nâng cao vị thế và sức mạnh quốc gia."
+      }
+    },
+    {
+      "question_id": 2,
+      "source": "Yên Bái",
+      "question_text": "Nội dung nào sau đây phản ánh đúng bối cảnh lịch sử bùng nổ cuộc kháng chiến chống thực dân Pháp của nhân dân Việt Nam(1945-1954)?",
+      "options": {
+        "A": "Các nước xã hội chủ nghĩa thiết lập quan hệ ngoại giao với Việt Nam.",
+        "B": "Mỹ thực hiện Kế hoạch Mác-san viện trợ cho Pháp.",
+        "C": "Hiệp hội các quốc gia Đông Nam Á(ASEAN) được thành lập.",
+        "D": "Chủ nghĩa xã hội trở thành hệ thống thế giới."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "Suy luận, phân tích.",
+        "solution": "Trong giai đoạn 1945-1954, Mỹ đã thực hiện Kế hoạch Mác-san để viện trợ cho các nước châu Âu, bao gồm cả Pháp, nhằm tái thiết sau Chiến tranh Thế giới thứ hai và ngăn chặn sự lan rộng của chủ nghĩa cộng sản, điều này đã gián tiếp hỗ trợ Pháp trong cuộc chiến tranh ở Đông Dương. Đây là bối cảnh quan trọng dẫn đến cuộc kháng chiến chống Pháp ở Việt Nam."
+      }
+    },
+    {
+      "question_id": 3,
+      "source": "Yên Bái",
+      "question_text": "Trong chiến tranh bảo vệ Tổ quốc trước cách mạng tháng Tám năm 1945 ở Việt Nam, cuộc kháng chiến nào sau đây không thành công?",
+      "options": {
+        "A": "Kháng chiến chống quân Minh(1406-1407).",
+        "B": "Kháng chiến chống quân Tống(981).",
+        "C": "Kháng chiến chống quân Xiêm(1785).",
+        "D": "Kháng chiến chống quân Nam Hán(938)."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Đấu tranh bảo vệ Tổ quốc từ sau tháng 4 năm 1975 đến nay. Một số bài học lịch sử của cuộc kháng chiến bảo vệ Tổ quốc từ năm 1945 đến nay.",
+        "solution": "Cuộc kháng chiến chống quân Minh giai đoạn 1406-1407 không thành công, dẫn đến Việt Nam rơi vào ách đô hộ của nhà Minh."
+      }
+    },
+    {
+      "question_id": 4,
+      "source": "Yên Bái",
+      "question_text": "Theo quyết định của Hội nghị I-an-ta(tháng2-1945), khu vực nào sau đây thuộc phạm vi ảnh hưởng của Mỹ",
+      "options": {
+        "A": "Tây Âu.",
+        "B": "Đông Béc-lin.",
+        "C": "Đông Đức.",
+        "D": "Đông Âu."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Trật tự thế giới trong Chiến tranh Lạnh.",
+        "solution": "Theo quyết định của Hội nghị I-an-ta(2-1945), Tây Âu thuộc phạm vi ảnh hưởng của Mỹ, trong khi Đông Âu nằm trong phạm vi ảnh hưởng của Liên Xô."
+      }
+    },
+    {
+      "question_id": 5,
+      "source": "Yên Bái",
+      "question_text": "Một trong những mục tiêu của Việt Nam khi mở chiến dịch Biên giới thu- đông năm 1950 là",
+      "options": {
+        "A": "chuyển cơ quan đầu não kháng chiến về chiến khu an toàn.",
+        "B": "phá sản kế hoạch “đánh nhanh, thắng nhanh” của thực dân Pháp.",
+        "C": "khai thông biên giới Việt- Trung, mở rộng căn cứ địa Việt Bắc.",
+        "D": "giải phóng Tây Bắc, tạo điều kiện để giải phóng Bắc Lào."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Cuộc kháng chiến chống thực dân Pháp(1945 – 1954)",
+        "solution": "Mục tiêu chính của chiến dịch Biên giới thu-đông năm 1950 là khai thông đường liên lạc với Trung Quốc, mở rộng căn cứ địa Việt Bắc, và tăng cường viện trợ quốc tế cho kháng chiến."
+      }
+    },
+    {
+      "question_id": 6,
+      "source": "Yên Bái",
+      "question_text": "Năm 1995, quốc gia nào sau đây gia nhập Hiệp hội các quốc gia Đông Nam Á(ASEAN)?",
+      "options": {
+        "A": "Việt Nam.",
+        "B": "Phi-lip-pin.",
+        "C": "Ti-mo Lét-xtê.",
+        "D": "In-do-nê-xi-a."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Sự ra đời và phát triển của Hiệp hội các quốc gia Đông Nam Á(ASEAN).",
+        "solution": "Năm 1995, Việt Nam chính thức gia nhập ASEAN, trở thành thành viên thứ 7 của tổ chức này."
+      }
+    },
+    {
+      "question_id": 7,
+      "source": "Yên Bái",
+      "question_text": "Sự kiện lịch sử thế giới nào sau đây có ảnh hưởng đến Cách mạng tháng Tám năm 1945 ở Việt Nam?",
+      "options": {
+        "A": "Quân Đồng minh chiến thắng phe phát xít.",
+        "B": "Nước Cộng hòa Nhân dân Trung Hoa ra đời.",
+        "C": "Liên Xô phóng thành công vệ tinh nhân tạo.",
+        "D": "Nước Cộng hòa Ấn Độ được thành lập."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Cách mạng tháng Tám năm 1945.",
+        "solution": "Chiến thắng của quân Đồng minh trong Chiến tranh thế giới thứ hai đã dẫn đến sự sụp đổ của phát xít Nhật, tạo điều kiện thuận lợi cho Cách mạng tháng Tám năm 1945 ở Việt Nam."
+      }
+    },
+    {
+      "question_id": 8,
+      "source": "Yên Bái",
+      "question_text": "Một trong những nguyên tắc hoạt động của tổ chức Liên hợp quốc là",
+      "options": {
+        "A": "bình đẳng về chủ quyền của tất cả các thành viên.",
+        "B": "thúc đẩy quan hệ hữu nghị giữa các quốc gia.",
+        "C": "đảm bảo quyền con người và quyền tự do cơ bản.",
+        "D": "duy trì hòa bình, an ninh quốc tế."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Liên hiệp quốc.",
+        "solution": "Theo Hiến chương Liên hợp quốc, một trong những nguyên tắc cơ bản là sự bình đẳng về chủ quyền của tất cả các thành viên. Điều này đảm bảo rằng mọi quốc gia, dù lớn hay nhỏ, đều có quyền và nghĩa vụ như nhau trong tổ chức."
+      }
+    },
+    {
+      "question_id": 9,
+      "source": "Yên Bái",
+      "question_text": "Năm 1949, nước nào sau đây ở châu Á lựa chọn con đường đi lên chủ nghĩa xã hội",
+      "options": {
+        "A": "Cộng hòa Nhân dân Trung Hoa.",
+        "B": "Cu-Ba.",
+        "C": "Cộng hòa Ai Cập.",
+        "D": "Liên Xô."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Trật tự thế giới trong Chiến tranh lạnh.",
+        "solution": "Năm 1949, Cộng hòa Nhân dân Trung Hoa ra đời và lựa chọn con đường đi lên chủ nghĩa xã hội dưới sự lãnh đạo của Đảng Cộng sản Trung Quốc."
+      }
+    },
+    {
+      "question_id": 10,
+      "source": "Yên Bái",
+      "question_text": "Một trong những nội dung chính của Kế hoạch tổng thể xây dựng Cộng đồng Văn hoá- Xã hội ASEAN là",
+      "options": {
+        "A": "bảo đảm bền vững môi trường.",
+        "B": "bảo vệ người tiêu dùng.",
+        "C": "phát triển cơ sở hạ tầng.",
+        "D": "bảo vệ sở hữu trí tuệ."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "Cách giải:",
+        "solution": "Một trong những nội dung chính của Kế hoạch tổng thể xây dựng Cộng đồng Văn hóa- Xã hội ASEAN là bảo đảm bền vững môi trường, cùng với phát triển xã hội và nâng cao chất lượng cuộc sống của người dân trong khu vực."
+      }
+    }
+  ],
+  "phan_ii": [
+    {
+      "question_id": 25,
+      "question": "Cho đoạn tư liệu sau đây: 'Chúng ta kháng chiến, dân tộc bạn Miên, Lào cũng kháng chiến. Bọn thực dân Pháp và bọn can thiệp Mỹ là kẻ thù của ta và của dân tộc Miên, Lào. Vì vậy, ta phải ra sức giúp đỡ anh em Miên-Lào và tiến đến thành lập Mặt trận thống nhất các dân tộc Việt- Miên- Lào'. (Hồ Chí Minh, Toàn tập, tập 6, NXB Chính trị Quốc gia, Hà Nội, 1995, tr.174)",
+      "statements": {
+        "a": "Trong cuộc kháng chiến chống thực dân Pháp và can thiệp Mỹ, Việt Nam có trách nhiệm giúp đỡ Miên và Lào thành lập mặt trận dân tộc thống nhất.",
+        "b": "Sự đoàn kết chiến đấu của ba dân tộc Đông Dương là nguyên nhân quyết định đưa đến thắng lợi của cuộc kháng chiến chống thực dân Pháp.",
+        "c": "Trong xây dựng đất nước hiện nay, ba nước Đông Dương cần phải tăng cường đoàn kết và hợp tác toàn diện nhau.",
+        "d": "Kẻ thù chung của nhân dân Việt, Miên, Lào là thực dân Pháp và can thiệp Mỹ."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": false,
+        "c": true,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Đúng, trong cuộc kháng chiến chống thực dân Pháp và can thiệp Mỹ, Việt Nam đã chủ trương giúp đỡ hai nước bạn Miên(Campuchia) và Lào, trong đó việc tiến tới thành lập Mặt trận dân tộc thống nhất ba nước là một mục tiêu quan trọng.",
+        "b": "Sai, sự đoàn kết chiến đấu của ba dân tộc Đông Dương là một trong những yếu tố quan trọng, nhưng không phải nguyên nhân quyết định thắng lợi của cuộc kháng chiến chống thực dân Pháp; thắng lợi này còn dựa vào nhiều yếu tố khác như sự lãnh đạo của Đảng, tinh thần chiến đấu của nhân dân, và bối cảnh quốc tế thuận lợi.",
+        "c": "Đúng, trong bối cảnh xây dựng đất nước hiện nay, ba nước Đông Dương(Việt Nam, Lào, Campuchia) cần tăng cường đoàn kết và hợp tác toàn diện để phát triển kinh tế, bảo vệ an ninh và hòa bình khu vực.",
+        "d": "Đúng, thực dân Pháp và can thiệp Mỹ là kẻ thù chung của nhân dân Việt Nam, Miên (Campuchia), và Lào trong cuộc kháng chiến chống xâm lược."
+      }
+    },
+    {
+      "question_id": 26,
+      "question": "Cho đoạn tư liệu sau đây: 'Việc Việt Nam gia nhập ASEAN có ý nghĩa vô cùng quan trọng không chỉ đối với Việt Nam, mà còn với toàn bộ khu vực Đông Nam Á, khởi đầu cho quá trình hoàn tất ý tưởng về một tổ chức bao gồm đầy đủ mười quốc gia thành viên, cùng phấn đấu xây dựng một khu vực hòa bình, ổn định và phát triển, để từ đó làm cơ sở cho những bước phát triển cao hơn của Hiệp hội sau này là xây dựng một Cộng đồng và đem lại những lợi ích thiết thực cho gần 700 triệu người dân trong khu vực'. (Vũ Hồ, Dấu ấn Việt Nam trong ASEAN: Đồng hành, lớn mạnh cùng năm tháng, Tạp chí Cộng sản điện tử, ISSN 2734-9071, ngày 23-10-2023)",
+      "statements": {
+        "a": "Việt Nam gia nhập ASEAN là sự khởi đầu hướng tới xây dựng một khu vực hòa bình, ổn định và phát triển thịnh vượng.",
+        "b": "Đoạn tư liệu cung cấp thông tin về ý nghĩa của việc Việt Nam gia nhập ASEAN.",
+        "c": "Khi gia nhập ASEAN, các nước trong khu vực có nhiều cơ hội để hợp tác, cùng phấn đấu xây dựng một khu vực hòa bình, ổn định và phát triển.",
+        "d": "Việt Nam gia nhập ASEAN đánh dấu bước phát triển mới, đặt cơ sở cho quá trình giải quyết vấn đề xung đột ở Cam-pu-chia"
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": true,
+        "c": true,
+        "d": false
+      },
+      "explanation_map": {
+        "a": "Đúng, Việt Nam gia nhập ASEAN đã mở ra một giai đoạn hợp tác nhằm hướng tới mục tiêu xây dựng khu vực hòa bình, ổn định và phát triển thịnh vượng.",
+        "b": "Đúng, đoạn tư liệu nhấn mạnh ý nghĩa quan trọng của việc Việt Nam gia nhập ASEAN đối với cả nước ta và khu vực Đông Nam Á.",
+        "c": "Đúng, việc gia nhập ASEAN tạo điều kiện để các nước trong khu vực tăng cường hợp tác, cùng phấn đấu vì mục tiêu chung là hòa bình, ổn định và phát triển.",
+        "d": "Sai, việc Việt Nam gia nhập ASEAN có ý nghĩa lớn trong việc thúc đẩy hợp tác khu vực và xây dựng một cộng đồng thống nhất, nhưng nó không trực tiếp đánh dấu bước phát triển mới hay đặt cơ sở cụ thể cho việc giải quyết vấn đề xung đột ở Campuchia(dù có liên quan gián tiếp đến tình hình khu vực)."
+      }
+    },
+    {
+      "question_id": 27,
+      "question": "Cho đoạn tư liệu sau đây: 'Toàn cầu hoá mà trước hết và thực chất là toàn cầu hoá kinh tế đang trở thành một đặc trưng chủ yếu của sự phát triển thế giới. Xu thế toàn cầu hoá là xu thế khách quan, tất yếu, không thể đảo ngược được. Toàn cầu hoá mang lại nhiều cơ hội nhưng cũng hàm chứa không ít thách thức to lớn đối với các quốc gia. đặc biệt là các nước đang phát triển'. (Trần Thị Vinh(Chủ biên), Lê Văn Anh, Lịch sử thế giới hiện đại, quyền 2, NXB Đại học Sư phạm, Hà Nội, 2016, tr.98)",
+      "statements": {
+        "a": "Một trong những thách thức to lớn của xu thế toàn cầu hóa đối với các quốc gia, đặc biệt là các nước đang phát triển là làm trầm trọng thêm bất công xã hội.",
+        "b": "Đoạn thông tin đề cập đến một trong những xu thế phát triển chính của thế giới sau Chiến tranh lạnh là xu thế toàn cầu hóa.",
+        "c": "Toàn cầu hoá là một xu thế khách quan, một thực tế không thể đảo ngược vì đó là hệ quả của việc mở rộng quan hệ thương mại giữa các cường quốc.",
+        "d": "Xu thế toàn cầu hóa đưa đến sự phát triển nhanh của lực lượng sản xuất đòi hỏi các quốc gia phải tăng cường quan hệ hợp tác quốc tế."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": true,
+        "c": false,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Đúng, toàn cầu hóa có thể làm trầm trọng thêm bất công xã hội, đặc biệt ở các nước đang phát triển, do sự bất cân xứng trong hưởng lợi và việc các quốc gia kém phát triển dễ bị tổn thương trước sức ép của các nước lớn.",
+        "b": "Đúng, đoạn tư liệu đề cập đến xu thế toàn cầu hóa, một trong những đặc trưng chính của thế giới sau Chiến tranh lạnh.",
+        "c": "Sai, toàn cầu hóa là một xu thế khách quan và không thể đảo ngược, nhưng nguyên nhân chính không chỉ do mở rộng quan hệ thương mại giữa các cường quốc mà còn bởi sự phát triển của khoa học công nghệ, giao thông, và thông tin liên lạc.",
+        "d": "Đúng, xu thế toàn cầu hóa thúc đẩy sự phát triển nhanh của lực lượng sản xuất và yêu cầu các quốc gia tăng cường hợp tác quốc tế để thích ứng và phát triển."
+      }
+    },
+    {
+      "question_id": 28,
+      "question": "Cho đoạn tư liệu sau đây: 'Như vậy, chỉ trong vòng chưa đầy nửa tháng, với khí thế tiến công cách mạng, tinh thần yêu nước, sức mạnh đoàn kết toàn dân tộc của nhân dân ta, cuộc tổng khởi nghĩa vũ trang giành chính quyền đã diễn ra một cách nhanh gọn, ít đổ máu, dưới những hình thái phong phú, sinh động, giành được thắng lợi vẻ vang trên phạm vi toàn quốc'. (Tạ Thị Thúy(Chủ biên), Lịch sử Việt Nam, tập 9, từ năm 1930 đến năm 1945, NXB Khoa học xã hội, Hà Nội, 2017, tr.722)",
+      "statements": {
+        "a": "Một trong những nguyên nhân dẫn đến thắng lợi của Cách mạng tháng Tám năm 1945 ở Việt Nam là sức mạnh đoàn kết toàn dân tộc.",
+        "b": "Cách mạng tháng Tám năm 1945 ở Việt Nam để lại bài học về chớp thời cơ, tiến hành cách mạng bạo lực bằng lực lượng chính trị và lực lượng vũ trang.",
+        "c": "Bài học về chớp thời cơ của Cách mạng tháng Tám năm 1945 được vận dụng chủ yếu trong việc xây dựng và bảo vệ Tổ quốc hiện nay.",
+        "d": "Cuộc tổng khởi nghĩa vũ trang giành chính quyền trong Cách mạng tháng Tám năm 1945 ở Việt Nam diễn ra một cách nhanh gọn, ít đổ máu, bằng phương pháp hòa bình."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": true,
+        "c": false,
+        "d": false
+      },
+      "explanation_map": {
+        "a": "Đúng, sức mạnh đoàn kết toàn dân tộc là một trong những nguyên nhân quan trọng dẫn đến thắng lợi của Cách mạng tháng Tám năm 1945.",
+        "b": "Đúng, cách mạng tháng Tám năm 1945 để lại bài học quý báu về chớp thời cơ và sử dụng kết hợp lực lượng chính trị, lực lượng vũ trang để tiến hành cách mạng bạo lực.",
+        "c": "Sai, bài học về chớp thời cơ từ Cách mạng tháng Tám không chỉ vận dụng trong việc xây dựng và bảo vệ Tổ quốc mà còn trong mọi lĩnh vực, đặc biệt là đối ngoại và phát triển kinh tế.",
+        "d": "Sai, dù cuộc tổng khởi nghĩa diễn ra nhanh gọn và ít đổ máu, nhưng không hoàn toàn bằng phương pháp hòa bình; đó vẫn là một cuộc cách mạng vũ trang kết hợp các phương thức đấu tranh linh hoạt."
+      }
+    }
+  ]
+}

@@ -1,11 +1,37 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { BookOpen } from "lucide-react";
+import { BookOpen, Heart, Sparkles, Star } from "lucide-react";
 
 export default function Landing() {
   return (
-    <section className="flex flex-col items-center justify-center min-h-screen p-6 bg-gradient-to-br from-indigo-50 to-rose-50">
+    <section className="flex flex-col items-center justify-center min-h-screen p-6 bg-gradient-to-br from-purple-100 via-pink-100 to-purple-200 relative overflow-hidden">
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        {[...Array(5)].map((_, i) => (
+          <motion.div
+            key={i}
+            className="absolute rounded-full bg-purple-100/50"
+            style={{
+              width: Math.random() * 200 + 50,
+              height: Math.random() * 200 + 50,
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              filter: 'blur(40px)',
+            }}
+            animate={{
+              y: [0, Math.random() * 100 - 50],
+              x: [0, Math.random() * 100 - 50],
+            }}
+            transition={{
+              duration: 10 + Math.random() * 20,
+              repeat: Infinity,
+              repeatType: 'reverse',
+              ease: 'easeInOut',
+            }}
+          />
+        ))}
+      </div>
       <div className="max-w-md w-full flex flex-col items-center">
         {/* Logo and App Name - Enhanced */}
         <motion.div 
@@ -16,20 +42,35 @@ export default function Landing() {
         >
           <div className="relative">
             {/* Background effect */}
-            <div className="absolute -inset-5 bg-gradient-to-r from-blue-100 to-indigo-100 rounded-full blur-xl opacity-70"></div>
+            <div className="absolute -inset-5 bg-gradient-to-r from-purple-300 to-pink-300 rounded-full blur-xl opacity-70"></div>
             
-            <div className="relative flex items-center justify-center w-28 h-28 mx-auto mb-6 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full shadow-xl">
+            <div className="relative flex items-center justify-center w-28 h-28 mx-auto mb-6 bg-gradient-to-br from-purple-600 to-pink-500 rounded-full shadow-xl">
               <div className="w-20 h-20 rounded-full bg-white/10 flex items-center justify-center backdrop-blur-sm">
                 <BookOpen className="text-white text-4xl" />
               </div>
+              <motion.div
+                className="absolute -top-2 -right-2 bg-pink-400 rounded-full p-2 shadow-lg"
+                animate={{ scale: [1, 1.1, 1] }}
+                transition={{ repeat: Infinity, duration: 2 }}
+              >
+                <Heart className="w-5 h-5 text-white fill-white" />
+              </motion.div>
             </div>
           </div>
           
           <h1 className="text-5xl font-extrabold mb-3">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">History Quiz</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500">History Quiz</span>
           </h1>
           
-          <p className="mt-2 text-xl text-gray-600 mb-4">Luyện thi lịch sử THPT Quốc Gia</p>
+          <p className="mt-2 text-xl text-purple-700/80 font-medium mb-4">Luyện thi lịch sử THPT Quốc Gia</p>
+          
+          <div className="flex items-center justify-center gap-2 mt-2">
+            <Star className="text-yellow-400 fill-yellow-400 w-5 h-5" />
+            <Star className="text-yellow-400 fill-yellow-400 w-5 h-5" />
+            <Star className="text-yellow-400 fill-yellow-400 w-5 h-5" />
+            <Star className="text-yellow-400 fill-yellow-400 w-5 h-5" />
+            <Star className="text-yellow-400 fill-yellow-400 w-5 h-5" />
+          </div>
           
         </motion.div>
         
@@ -74,25 +115,35 @@ export default function Landing() {
         </motion.div> */}
         
         {/* Start Button - Enhanced */}
-          <div className="mt-8">
-          <div className="relative group">
-            {/* Glow effect */}
-            <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full blur opacity-50 group-hover:opacity-75 transition duration-300"></div>
+          <motion.div 
+            className="mt-8"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.5 }}
+          >
+            <div className="relative group">
+              {/* Glow effect */}
+              <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-500 rounded-full blur opacity-50 group-hover:opacity-75 transition duration-300"></div>
+              
+              <Link href="/quiz-selection" className="block relative">
+                <Button 
+                  className="w-full px-10 py-7 bg-gradient-to-r from-purple-600 to-pink-500 text-white text-xl font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2"
+                  size="lg"
+                >
+                  <Sparkles className="w-5 h-5 mr-1" />
+                  Bắt Đầu Ngay
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-2">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </Button>
+              </Link>
+            </div>
             
-            <Link href="/quiz-selection" className="block relative">
-              <Button 
-                className="w-full px-10 py-7 bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-xl font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2"
-                size="lg"
-              >
-                Bắt Đầu Ngay
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-2">
-                  <path d="M5 12h14"></path>
-                  <path d="m12 5 7 7-7 7"></path>
-                </svg>
-              </Button>
-            </Link>
-          </div>
-        </div>
+            <p className="text-center mt-6 text-sm text-purple-600/80 font-medium">
+              Hoàn thành tất cả các thử thách để mở khóa phần thưởng đặc biệt!
+            </p>
+          </motion.div>
       </div>
     </section>
   );

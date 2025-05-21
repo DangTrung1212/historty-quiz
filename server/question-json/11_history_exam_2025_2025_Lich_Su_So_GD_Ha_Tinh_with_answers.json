@@ -1,0 +1,188 @@
+{
+  "phan_i": [
+    {
+      "question_id": 1,
+      "source": "Hà Tĩnh",
+      "question_text": "Nội dung nào sau đây phản ánh đúng về cuộc kháng chiến chống Mỹ, cứu nước của nhân dân Việt Nam (1954–1975)?",
+      "options": {
+        "A": "Kết hợp giữa chiến tranh du kích với chiến tranh chính quy, du kích chiến là hình thức chủ yếu.",
+        "B": "Thực hiện nhiệm vụ giải phóng dân tộc và góp phần vào bảo vệ hòa bình thế giới.",
+        "C": "Đánh địch bằng ba mặt trận, mặt trận ngoại giao đóng vai trò quyết định thắng lợi.",
+        "D": "Đánh địch ở cả ba vùng rừng núi, nông thôn đồng bằng và đô thị, thắng lợi ở rừng núi là quyết định."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "Phân tích, loại trừ phương án.",
+        "solution": "Cuộc kháng chiến chống Mỹ, cứu nước của nhân dân Việt Nam (1954–1975) có mục tiêu vừa giải phóng miền Nam, thống nhất đất nước vừa góp phần bảo vệ hòa bình thế giới. Các đáp án A, C, D đều không hoàn toàn chính xác về vai trò, hình thức chiến tranh hoặc khu vực đánh."
+      }
+    },
+    {
+      "question_id": 2,
+      "source": "Hà Tĩnh",
+      "question_text": "Năm 1997, Hiệp hội các quốc gia Đông Nam Á (ASEAN) kết nạp thêm hai thành viên là:",
+      "options": {
+        "A": "Campuchia và Lào.",
+        "B": "Thái Lan và Mi-an-ma.",
+        "C": "Lào và Mi-an-ma.",
+        "D": "Bru-nây và Việt Nam."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Hiệp hội các quốc gia Đông Nam Á (ASEAN).",
+        "solution": "Năm 1997, ASEAN kết nạp thêm hai thành viên là Lào và Mi-an-ma."
+      }
+    },
+    {
+      "question_id": 3,
+      "source": "Hà Tĩnh",
+      "question_text": "Trong cuộc kháng chiến chống thực dân Pháp (1945–1954), với thắng lợi nào sau đây quân dân Việt Nam đã khai thông con đường liên lạc với các nước xã hội chủ nghĩa?",
+      "options": {
+        "A": "Trận 'Điện Biên Phủ trên không'.",
+        "B": "Chiến dịch Hồ Chí Minh.",
+        "C": "Chiến dịch Biên giới.",
+        "D": "Trận phản công ở Văn Tràng."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung cuộc kháng chiến chống thực dân Pháp (1945–1954).",
+        "solution": "Với thắng lợi trong Chiến dịch Biên giới thu–đông 1950, quân dân Việt Nam đã mở thông con đường liên lạc với các nước xã hội chủ nghĩa như Trung Quốc và Liên Xô."
+      }
+    },
+    {
+      "question_id": 4,
+      "source": "Hà Tĩnh",
+      "question_text": "Nội dung nào sau đây là biểu hiện của xu thế đa cực trong quan hệ quốc tế từ đầu thế kỷ XXI đến nay?",
+      "options": {
+        "A": "Mỹ suy giảm sức mạnh tương đối trong tương quan so với các cường quốc khác.",
+        "B": "Các liên minh quân sự xuất hiện ngày càng nhiều và ra sức chạy đua vũ trang.",
+        "C": "Liên Xô trở thành cường quốc kinh tế, chính trị, khoa học–kỹ thuật đứng đầu thế giới.",
+        "D": "Mỹ đã thiết lập được trật tự thế giới 'đơn cực' và vai trò lãnh đạo thế giới."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung xu thế đa cực trong quan hệ quốc tế.",
+        "solution": "Từ đầu thế kỷ XXI đến nay, Mỹ suy giảm sức mạnh tương đối so với các cường quốc khác như Trung Quốc, Nga, EU... thể hiện xu thế đa cực trong quan hệ quốc tế."
+      }
+    },
+    {
+      "question_id": 5,
+      "source": "Hà Tĩnh",
+      "question_text": "Nội dung nào sau đây là vai trò của tổ chức Liên hợp quốc?",
+      "options": {
+        "A": "Đảm bảo quyền con người, phát triển văn hóa–xã hội.",
+        "B": "Xóa bỏ được khoảng cách giàu nghèo giữa các quốc gia.",
+        "C": "Ngăn ngừa được tất cả các cuộc chiến tranh cục bộ.",
+        "D": "Chấm dứt được mọi xung đột giữa các quốc gia."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung vai trò của Liên hợp quốc.",
+        "solution": "Liên hợp quốc có vai trò đảm bảo quyền con người, thúc đẩy phát triển văn hóa–xã hội, hòa bình và hợp tác quốc tế."
+      }
+    },
+    {
+      "question_id": 6,
+      "source": "Hà Tĩnh",
+      "question_text": "Trước hành động gây chiến tranh xâm lược của quân Pôn Pốt trên toàn tuyến biên giới Tây Nam, Đảng và Nhà nước Việt Nam đã có chủ trương nào sau đây?",
+      "options": {
+        "A": "Đẩy mạnh hoạt động ngoại giao để đàm phán kết thúc chiến tranh.",
+        "B": "Thực hiện vận động chính trị, kêu gọi đối phương ngừng bàn.",
+        "C": "Kết hợp với quân đội Liên Xô mở các cuộc truy kích.",
+        "D": "Mở cuộc tiến công, làm tan rã toàn bộ lực lượng của đối phương."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung đấu tranh bảo vệ biên giới Tây Nam.",
+        "solution": "Trước hành động gây chiến của quân Pôn Pốt, Việt Nam chủ trương mở cuộc tiến công nhằm làm tan rã lực lượng đối phương."
+      }
+    },
+    {
+      "question_id": 7,
+      "source": "Hà Tĩnh",
+      "question_text": "Đại hội đại biểu lần thứ II của Đảng Cộng sản Đông Dương (2/1951) có quyết định nào sau đây?",
+      "options": {
+        "A": "Đưa Đảng ra hoạt động công khai.",
+        "B": "Phát động toàn quốc kháng chiến.",
+        "C": "Mở chiến dịch Biên giới thu đông.",
+        "D": "Mở chiến dịch Việt Bắc thu đông."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung cuộc kháng chiến chống thực dân Pháp (1945–1954).",
+        "solution": "Tại Đại hội II (2/1951), Đảng Cộng sản Đông Dương đổi tên thành Đảng Lao động Việt Nam và đưa ra hoạt động công khai."
+      }
+    },
+    {
+      "question_id": 8,
+      "source": "Hà Tĩnh",
+      "question_text": "Việc mở rộng thành viên của Hiệp hội các quốc gia Đông Nam Á (ASEAN) có ý nghĩa nào sau đây?",
+      "options": {
+        "A": "Giúp ASEAN trở thành tổ chức đa phương toàn cầu.",
+        "B": "Làm cho ASEAN trở thành liên kết kinh tế lớn nhất hành tinh.",
+        "C": "Là cơ sở để đưa tổ chức trở thành một liên minh chính trị – quân sự.",
+        "D": "Góp phần duy trì hòa bình, ổn định của khu vực Đông Nam Á."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "Loại trừ phương án.",
+        "solution": "Việc mở rộng thành viên ASEAN giúp tăng cường đoàn kết và duy trì hòa bình, ổn định trong khu vực."
+      }
+    },
+    {
+      "question_id": 9,
+      "source": "Hà Tĩnh",
+      "question_text": "Trong cuộc kháng chiến chống Mỹ ở Việt Nam (1954–1975), chiến dịch nào sau đây đã làm tan rã, sụp đổ toàn bộ quân đội và chính quyền Sài Gòn ở cấp trung ương?",
+      "options": {
+        "A": "Chiến dịch Phước Long.",
+        "B": "Chiến dịch Tây Nguyên.",
+        "C": "Chiến dịch Huế–Đà Nẵng.",
+        "D": "Chiến dịch Hồ Chí Minh."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung cuộc kháng chiến chống Mỹ cứu nước (1954–1975).",
+        "solution": "Chiến dịch Hồ Chí Minh năm 1975 đã làm tan rã hoàn toàn quân đội và chính quyền Sài Gòn."
+      }
+    },
+    {
+      "question_id": 10,
+      "source": "Hà Tĩnh",
+      "question_text": "Một trong những tỉnh giành chính quyền sớm nhất ở tỉnh lỵ trong Cách mạng tháng Tám năm 1945 ở Việt Nam là:",
+      "options": {
+        "A": "Hà Tĩnh",
+        "B": "Hưng Yên",
+        "C": "Quảng Ninh",
+        "D": "Thanh Hóa"
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Cách mạng tháng Tám năm 1945.",
+        "solution": "Hà Tĩnh là một trong những tỉnh giành chính quyền sớm nhất trong Cách mạng tháng Tám năm 1945."
+      }
+    }
+  ],
+  "phan_ii": [
+    {
+      "question_id": 25,
+      "question": "Cho đoạn tư liệu sau đây:\n\n\"Trong trật tự thế giới hai cực I-an-ta, đã diễn ra một cuộc đối đầu gay gắt, quyết liệt và kéo dài tới gần bốn thập kỷ giữa hai \"cực\" Xô–Mỹ, làm cho cục diện thế giới luôn phức tạp, căng thẳng. Cuộc đối đầu này đã dẫn tới cuộc đối đầu giữa hai khối Đông–Tây, cuốn hút từng quốc gia, từng quốc gia khó đứng ngoài cuộc đối đầu này và chịu ảnh hưởng sâu sắc của cuộc đối đầu này.\"\n\n(Nguyễn Anh Thái, Lịch sử thế giới hiện đại từ 1945 đến 1995, quyển A, NXB Đại học Quốc gia Hà Nội, 1999, trang 32)",
+      "statements": {
+        "a": "Trong trật tự thế giới hai cực I-an-ta đã diễn ra cuộc đối đầu gay gắt, quyết liệt giữa hai cực Xô–Mỹ, làm cho thế giới luôn phức tạp, căng thẳng.",
+        "b": "Với trật tự hai cực I-an-ta, Liên Xô và Mỹ đã đạt được những mục tiêu cơ bản chi phối cục diện thế giới, đồng thời trật tự này đã xâm phạm đến chủ quyền, lãnh thổ và lợi ích của nhiều nước.",
+        "c": "Trong sự đối đầu 2 cực I-an-ta, cuộc chiến tranh cục bộ lớn nhất phản ánh mâu thuẫn giữa hai cực, hai phe là chiến tranh xâm lược Đông Dương của Pháp (1945–1954).",
+        "d": "Sự tồn tại của Trật tự thế giới hai cực I-an-ta gắn liền với sự đối đầu giữa hai hệ thống xã hội đối lập là tư bản chủ nghĩa và xã hội chủ nghĩa."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": true,
+        "c": false,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Đúng, vì trong trật tự hai cực I-an-ta, cuộc đối đầu giữa Xô-Mỹ diễn ra gay gắt, quyết liệt và tạo nên cục diện thế giới phức tạp, căng thẳng.",
+        "b": "Đúng, vì trật tự hai cực I-an-ta giúp Liên Xô và Mỹ đạt được mục tiêu kiểm soát thế giới nhưng đồng thời cũng xâm phạm đến chủ quyền và lợi ích của nhiều quốc gia.",
+        "c": "Sai, vì cuộc chiến tranh cục bộ lớn nhất trong thời kỳ này là chiến tranh xâm lược Việt Nam của Mỹ (1954–1975), không phải chiến tranh Đông Dương của Pháp.",
+        "d": "Đúng, vì trật tự I-an-ta gắn liền với sự đối đầu giữa hai hệ thống xã hội đối lập là tư bản chủ nghĩa và xã hội chủ nghĩa."
+      }
+    }
+  ]
+}

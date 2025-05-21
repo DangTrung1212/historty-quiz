@@ -10,46 +10,7 @@ import Confetti from "react-confetti";
 import useWindowSize from "react-use/lib/useWindowSize";
 import { Share, RotateCcw, Star, Award, Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
-
-// Define image sources for each reward part (consistent with ProgressModal)
-const rewardImageParts = [
-  '/assets/images/reward/modal-part1.png', 
-  '/assets/images/reward/modal-part2.png',
-  '/assets/images/reward/modal-part3.png',
-];
-
-// Static Congratulatory Letter Component
-const CongratulatoryLetter: React.FC = () => (
-  <div className="bg-gradient-to-br from-purple-50 to-pink-50 border-2 border-purple-200 p-6 sm:p-8 rounded-2xl shadow-lg text-gray-700 leading-relaxed relative overflow-hidden">
-    <div className="absolute -top-4 -right-4 w-24 h-24 bg-purple-200 rounded-full opacity-20"></div>
-    <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-pink-200 rounded-full opacity-20"></div>
-    
-    <div className="relative z-10">
-      <h2 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent mb-6 text-center flex items-center justify-center">
-        <Award className="w-8 h-8 sm:w-10 sm:h-10 mr-3 text-purple-500" /> 
-        <span className="drop-shadow-sm">Thư Chúc Mừng!</span>
-      </h2>
-      <div className="space-y-4">
-        <p className="text-base sm:text-lg text-gray-700">
-          Bạn thật sự xuất sắc! Chúng tôi vô cùng tự hào về những nỗ lực và thành tích tuyệt vời mà bạn đã đạt được.
-        </p>
-        <p className="text-base sm:text-lg text-gray-700">
-          Việc bạn hoàn thành tất cả các thử thách không chỉ cho thấy kiến thức vững vàng về lịch sử, mà còn thể hiện sự kiên trì, ham học hỏi và tinh thần quyết tâm đáng ngưỡng mộ.
-        </p>
-        <p className="text-base sm:text-lg text-gray-700">
-          Phần thưởng này là một sự ghi nhận cho những cố gắng không ngừng của bạn. Hãy tiếp tục khám phá những trang sử hào hùng của dân tộc và chinh phục những đỉnh cao tri thức mới.
-        </p>
-        <p className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500 text-lg sm:text-xl mt-6 text-center">
-          Hãy luôn giữ vững ngọn lửa đam mê!
-        </p>
-      </div>
-      <hr className="my-6 sm:my-8 border-purple-100" />
-      <p className="text-sm text-purple-600 italic text-center font-medium">
-        Trân trọng,<br />Đội ngũ Sử Nhanh App
-      </p>
-    </div>
-  </div>
-);
+import PageTurningCard from '@/components/PageTurningCard';
 
 export default function Reward() {
   const { width, height } = useWindowSize();
@@ -111,8 +72,11 @@ export default function Reward() {
     );
   }
 
+  // Personalized birthday message text
+  const personalizedBirthdayMessage = "Chúc mừng bạn đã hoàn thành tất cả các thử thách lịch sử!\n\nBạn thật tuyệt vời và xứng đáng nhận được món quà đặc biệt này.\n\nChúc bạn có một ngày sinh nhật thật vui vẻ và hạnh phúc!";
+
   return (
-    <section className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-pink-50 flex flex-col relative overflow-hidden">
+    <section className="min-h-screen bg-gradient-to-br from-purple-100 via-pink-100 to-purple-200 py-10 sm:py-16">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(5)].map((_, i) => (
@@ -164,9 +128,9 @@ export default function Reward() {
           {/* Success Header */}
           <motion.div 
             className="text-center mb-8 sm:mb-12"
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: 'easeOut' }}
+            transition={{ duration: 0.5 }}
           >
             <motion.div 
               className="inline-flex items-center justify-center w-24 h-24 bg-gradient-to-br from-purple-100 to-pink-100 rounded-full mb-6 shadow-lg border-2 border-white"
@@ -195,80 +159,23 @@ export default function Reward() {
             </motion.p>
           </motion.div>
           
-          {/* Reward Image Display */}
+          {/* Replaced Reward Image with BirthdayCard */}
           <motion.div 
-            className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg p-5 sm:p-7 mb-8 sm:mb-12 border border-purple-100/50"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
+            className="mb-10 sm:mb-12 flex justify-center items-center" // Centering the card
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.2, type: "spring", stiffness: 100 }}
           >
-            <h2 className="text-xl sm:text-2xl font-bold text-center mb-6 bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
-              Phần Thưởng Của Bạn
-            </h2>
-            <div className="flex flex-col sm:flex-row justify-center items-stretch gap-2 bg-gradient-to-r from-purple-50 to-pink-50 p-2 rounded-xl shadow-inner max-w-xl mx-auto overflow-hidden border border-purple-100">
-              {rewardImageParts.map((src, index) => (
-                <motion.div 
-                  key={index} 
-                  className="w-full sm:w-1/3 h-40 sm:h-52 bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300"
-                  whileHover={{ y: -5, transition: { duration: 0.2 } }}
-                >
-                  <img 
-                    src={src} 
-                    alt={`Phần thưởng ${index + 1}`}
-                    className="w-full h-full object-cover"
-                  />
-                </motion.div>
-              ))}
-            </div>
-            <p className="text-center mt-4 text-sm text-purple-500/80 font-medium">
-              Hình ảnh phần thưởng đã được mở khóa thành công!
-            </p>
+            <PageTurningCard 
+              message={personalizedBirthdayMessage}
+              recipientName="Bạn"
+              cardWidth="320px"
+              cardHeight="450px"
+            />
           </motion.div>
-          
-          {/* Personal Letter */}
-          <motion.div 
-            className="mb-10 sm:mb-12"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-          >
-            <CongratulatoryLetter />
-          </motion.div>
-          
-          {/* Achievement Badges */}
-          <motion.div 
-            className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg p-5 sm:p-7 mb-10 sm:mb-12 border border-purple-100/50"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-          >
-            <h2 className="text-xl sm:text-2xl font-bold text-center mb-6 bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">
-              Thành Tích Đạt Được
-            </h2>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-5">
-              {badges.map((badge, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ scale: 0.9, opacity: 0 }}
-                  animate={{ scale: 1, opacity: 1 }}
-                  transition={{ delay: 0.5 + index * 0.1 }}
-                  whileHover={{ y: -5, transition: { duration: 0.2 } }}
-                >
-                  <BadgeCard 
-                    icon={badge.icon}
-                    color={badge.color}
-                    title={badge.title}
-                    className={cn(
-                      'h-full transition-all duration-300 hover:shadow-lg',
-                      badge.bgColor,
-                      'border-2',
-                      badge.borderColor
-                    )}
-                  />
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
+          <p className="text-center mt-4 text-sm text-purple-500/80 font-medium mb-8">
+            Một lời nhắn đặc biệt dành cho bạn!
+          </p>
           
           {/* Action Buttons */}
           <motion.div 

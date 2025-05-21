@@ -1,0 +1,130 @@
+{
+  "phan_i": [
+    {
+      "question_id": 1,
+      "source": "Thanh Hóa",
+      "question_text": "Một trong những thành tựu quan trọng của ASEAN trong giai đoạn từ 2015 đến nay là:",
+      "options": {
+        "A": "Hiến chương ASEAN được thông qua.",
+        "B": "ASEAN ra tuyên bố về khu vực hòa bình, tự do và trung lập.",
+        "C": "Cộng đồng ASEAN được thành lập.",
+        "D": "ASEAN phát triển số lượng thành viên từ 5 lên 10 nước."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "Theo kiến thức lịch sử hiện hành về tổ chức ASEAN.",
+        "solution": "Năm 2015, Cộng đồng ASEAN chính thức được thành lập - đánh dấu bước phát triển mới của tổ chức này."
+      }
+    },
+    {
+      "question_id": 2,
+      "source": "Thanh Hóa",
+      "question_text": "Một trong những bài học được rút ra từ các cuộc kháng chiến bảo vệ Tổ quốc từ năm 1945 đến nay là:",
+      "options": {
+        "A": "Tăng cường khối đại đoàn kết dân tộc.",
+        "B": "Gia nhập vào các khối liên minh quân sự.",
+        "C": "Thiết lập quan hệ chiến lược với các nước.",
+        "D": "Kiên quyết đấu tranh bằng biện pháp quân sự."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "Theo nội dung tổng kết lịch sử Việt Nam từ 1945 đến nay.",
+        "solution": "Khối đại đoàn kết toàn dân luôn là yếu tố then chốt giúp Việt Nam giành thắng lợi trong các cuộc kháng chiến."
+      }
+    },
+    {
+      "question_id": 3,
+      "source": "Thanh Hóa",
+      "question_text": "Trong khoảng thời gian từ năm 1975 đến năm 1979, cuộc chiến đấu ở biên giới Tây Nam của quân dân Việt Nam thực hiện nhiệm vụ nào sau đây?",
+      "options": {
+        "A": "Đánh đổ phong kiến.",
+        "B": "Bảo vệ Tổ quốc.",
+        "C": "Đánh đổ phát xít.",
+        "D": "Giải phóng dân tộc."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "Lịch sử Việt Nam giai đoạn hậu 1975.",
+        "solution": "Sau khi thống nhất đất nước, Việt Nam tiếp tục đối mặt với các cuộc xâm lược ở biên giới Tây Nam và phía Bắc. Cuộc chiến tại biên giới Tây Nam nhằm mục đích bảo vệ chủ quyền lãnh thổ."
+      }
+    },
+    {
+      "question_id": 4,
+      "source": "Thanh Hóa",
+      "question_text": "Chiến tranh bảo vệ Tổ quốc của ta từ sau tháng 4 năm 1975 đến nay là cuộc chiến tranh chính nghĩa. Tính chất chính nghĩa của cuộc chiến tranh được thể hiện chủ yếu thông qua:",
+      "options": {
+        "A": "mục đích chiến tranh.",
+        "B": "lực lượng tham gia.",
+        "C": "thành phần lãnh đạo.",
+        "D": "hình thức chiến tranh."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "Phân tích tính chất chính nghĩa trong chiến tranh Việt Nam (sau 1975).",
+        "solution": "Chiến tranh bảo vệ Tổ quốc mang tính chính nghĩa vì có mục đích đúng đắn: bảo vệ độc lập, chủ quyền và toàn vẹn lãnh thổ."
+      }
+    },
+    {
+      "question_id": 5,
+      "source": "Thanh Hóa",
+      "question_text": "Hội Quốc Liên và tổ chức Liên Hợp Quốc có nhiều điểm khác biệt, ngoại trừ:",
+      "options": {
+        "A": "tính toàn diện.",
+        "B": "thời gian tồn tại.",
+        "C": "vai trò của Mỹ.",
+        "D": "tôn chỉ, mục đích."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "So sánh giữa Hội Quốc Liên và Liên Hợp Quốc theo tài liệu SGK Lịch sử lớp 12.",
+        "solution": "Cả hai tổ chức đều có tôn chỉ và mục đích chung là duy trì hòa bình thế giới, mặc dù hiệu quả hoạt động khác nhau."
+      }
+    }
+  ],
+  "phan_ii": [
+    {
+      "question_id": 1,
+      "question": "Đọc đoạn tư liệu sau đây:\n\n\"Tháng 1 năm 1959, Hội nghị lần thứ 15 của BCH Trung ương Đảng Lao động Việt Nam được tiến hành tại Hà Nội. Hội nghị đã phân tích đặc điểm tình hình mâu thuẫn cơ bản và chủ yếu của xã hội miền Nam từ sau khi kháng chiến chống Pháp kết thúc. Hội nghị chỉ rõ 'Con đường phát triển cơ bản của cách mạng Việt Nam ở miền Nam là khởi nghĩa giành chính quyền về tay nhân dân. Theo tình hình cụ thể và yêu cầu hiện nay của cách mạng thì con đường đó là lấy sức mạnh của quần chúng, dựa vào lực lượng chính trị của quần chúng là chủ yếu, kết hợp với lực lượng vũ trang để dành lại quyền thống trị của đế quốc và phong kiến, dựng lên chính quyền cách mạng của nhân dân'.\n(Trường Hữu Quỳnh, Đinh Xuân Lâm, Đại cương Lịch sử Việt Nam, toàn tập, NXB Giáo dục Việt Nam, 2008, trang 990.)",
+      "statements": {
+        "a": "Hội nghị lần thứ 15 của Ban Chấp hành Trung ương Đảng Lao động Việt Nam (1/1959) quyết định để nhân dân miền Nam sử dụng bạo lực cách mạng là vì lực lượng vũ trang ở miền Nam đã lớn mạnh.",
+        "b": "Phương thức đấu tranh cơ bản của cách mạng miền Nam là đấu tranh chính trị là chủ yếu kết hợp với đấu tranh vũ trang.",
+        "c": "Nhiệm vụ của cách mạng miền Nam là đánh đổ quyền thống trị của đế quốc, tự mình dựng lên chính quyền cách mạng của nhân dân.",
+        "d": "Sự khủng bố của chính quyền Sài Gòn đòi hỏi cách mạng phải tiến lên hình thức cao hơn."
+      },
+      "answer_boolean_map": {
+        "a": false,
+        "b": true,
+        "c": false,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Sai, vì Hội nghị không quyết định dùng bạo lực cách mạng vì lý do lực lượng vũ trang mạnh, mà vì yêu cầu khách quan của cách mạng.",
+        "b": "Đúng, vì phương thức đấu tranh chính trị kết hợp với vũ trang là đường lối xác định trong văn kiện Hội nghị.",
+        "c": "Sai, vì nhiệm vụ là giành chính quyền chứ không đơn thuần là đánh đổ.",
+        "d": "Đúng, vì tình hình đàn áp của chế độ Ngô Đình Diệm buộc cách mạng chuyển sang hình thức cao hơn."
+      }
+    },
+    {
+      "question_id": 2,
+      "question": "Đọc đoạn tư liệu sau đây:\n\n\"Chẳng những giai cấp lao động và nhân dân Việt Nam ta có thể tự hào, mà giai cấp lao động và những dân tộc bị áp bức nơi khác cũng có thể tự hào rằng: lần này là lần đầu tiên trong lịch sử cách mạng của các dân tộc thuộc địa và nửa thuộc địa, một Đảng mới 15 tuổi đã lãnh đạo cách mạng thành công, đã nắm chính quyền toàn quốc'.\n(Hồ Chí Minh: Toàn tập, tập 6, NXB Chính trị quốc gia, Hà Nội, 2011, tr.25)",
+      "statements": {
+        "a": "Cách mạng tháng Tám (1945) là một sự kiện lịch sử vĩ đại của dân tộc Việt Nam, mở ra kỷ nguyên cả nước hòa bình, độc lập, thống nhất, đi lên chủ nghĩa xã hội.",
+        "b": "Đảng Cộng sản Đông Dương có vai trò to lớn trong lãnh đạo Cách mạng tháng Tám thành công.",
+        "c": "Cách mạng tháng Tám (1945) ở Việt Nam đã cổ vũ tinh thần đấu tranh chống thực dân của nhân dân các dân tộc thuộc địa và phụ thuộc trên thế giới.",
+        "d": "Đoạn tư liệu đã phản ánh nguyên nhân dẫn đến thắng lợi của Cách mạng tháng Tám năm 1945 ở Việt Nam."
+      },
+      "answer_boolean_map": {
+        "a": false,
+        "b": true,
+        "c": true,
+        "d": false
+      },
+      "explanation_map": {
+        "a": "Sai, vì sau Cách mạng tháng Tám, Việt Nam chưa đi ngay vào kỷ nguyên hòa bình mà đối mặt với thực dân Pháp quay lại xâm lược.",
+        "b": "Đúng, vì Đảng giữ vai trò lãnh đạo trực tiếp trong Cách mạng tháng Tám.",
+        "c": "Đúng, vì thành công của Việt Nam trở thành nguồn cảm hứng cho các nước thuộc địa khác.",
+        "d": "Sai, vì đoạn trích không nêu rõ nguyên nhân, mà nhấn mạnh ý nghĩa của sự kiện."
+      }
+    }
+  ]
+}

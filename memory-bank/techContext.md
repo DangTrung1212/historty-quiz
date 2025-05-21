@@ -246,6 +246,46 @@ const zIndex = {
 }
 ```
 
+## Technology Context
+
+## Core Technologies
+- **Frontend Framework**: React (v18+) with TypeScript.
+    - Utilizes functional components and hooks (`useState`, `useEffect`, `useContext`).
+- **Build Tool / Development Environment**: Vite.
+    - Provides fast HMR (Hot Module Replacement) and optimized builds.
+- **Styling**: Tailwind CSS.
+    - Utility-first CSS framework for rapid UI development and responsive design.
+    - Custom theme configurations may be in `tailwind.config.js`.
+- **Animation Library**: `framer-motion`.
+    - Used for declarative animations and transitions, particularly for the `PageTurningCard` and UI embellishments.
+- **Icon Library**: `lucide-react`.
+    - Provides a set of clean and consistent SVG icons.
+- **Routing**: `wouter`.
+    - A minimalist client-side routing solution for React.
+- **Language**: TypeScript for static typing in both client and server-side code.
+
+## Package Management
+- **Package Manager**: npm.
+    - `package.json` and `package-lock.json` manage project dependencies.
+
+## Development Setup
+- **Runtime Environment**: Node.js (ensure a compatible LTS version).
+- **Operating System (User)**: Windows.
+- **Code Editor (Assumed)**: VS Code or similar, with appropriate extensions for TypeScript, React, Tailwind CSS.
+
+## Key Files/Components Recently Focused On
+- `client/src/components/PageTurningCard.tsx`
+- `client/src/pages/reward.tsx`
+- `client/src/pages/landing.tsx`
+- `server/question-json/` (directory for quiz data)
+- `server/handlers/quizHandlers.ts`
+
+## Technical Constraints & Considerations
+- Ensuring mobile-first responsiveness is a high priority.
+- Maintaining performance, especially with animations.
+- Managing state effectively between components and across routes.
+- Keeping dependencies up-to-date and resolving any compatibility issues.
+
 ## Debugging Notes
 - Recent debugging involved heavy use of `console.log` to trace state updates and effect execution order.
 - Identified and resolved infinite loops caused by unstable function references in `useEffect` dependencies (fixed using `useCallback`).

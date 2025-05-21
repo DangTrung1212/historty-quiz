@@ -1,0 +1,254 @@
+{
+  "phan_i": [
+    {
+      "question_id": 1,
+      "source": "Unknown",
+      "question_text": "Trận đánh nào sau đây có ý nghĩa quyết định thắng lợi của cuộc chiến đấu chống chiến tranh xâm lược của quân Thanh thế kỷ XVIII?",
+      "options": {
+        "A": "Chi Lăng - Xương Giang.",
+        "B": "Tốt Động - Chúc Động.",
+        "C": "Rạch Gầm - Xoài Mút.",
+        "D": "Ngọc Hồi - Đống Đa."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lịch sử 11.",
+        "solution": "Trận Ngọc Hồi - Đống Đa có ý nghĩa quyết định thắng lợi của cuộc chiến đấu chống chiến tranh xâm lược của quân Thanh thế kỷ XVIII."
+      }
+    },
+    {
+      "question_id": 2,
+      "source": "Unknown",
+      "question_text": "Một trong những điểm giống nhau giữa Cách mạng tháng Tám (1945) ở Việt Nam và Cách mạng tháng Mười Nga (1917) là gì?",
+      "options": {
+        "A": "Đã góp phần đánh bại chủ nghĩa phát xít.",
+        "B": "Đưa nhân dân lao động làm chủ đất nước.",
+        "C": "Đã mở ra thời kỳ hiện đại trong lịch sử.",
+        "D": "Làm xoay chuyển lớn cục diện thế giới."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "So sánh, tìm điểm tương đồng.",
+        "solution": "Một trong những điểm giống nhau giữa Cách mạng tháng Tám (1945) ở Việt Nam và Cách mạng tháng Mười Nga (1917) là đưa nhân dân lao động làm chủ đất nước."
+      }
+    },
+    {
+      "question_id": 3,
+      "source": "Unknown",
+      "question_text": "Cộng đồng ASEAN có bao nhiêu trụ cột?",
+      "options": {
+        "A": "9",
+        "B": "3",
+        "C": "7",
+        "D": "5"
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Cộng đồng ASEAN.",
+        "solution": "Cộng đồng ASEAN có 3 trụ cột là Cộng đồng Chính trị - An ninh ASEAN; Cộng đồng Kinh tế ASEAN; Cộng đồng Văn hóa - Xã hội ASEAN."
+      }
+    },
+    {
+      "question_id": 4,
+      "source": "Unknown",
+      "question_text": "Điền từ còn thiếu trong câu thơ sau đây: 'Khi Nguyễn Huệ cuối cùng vào cửa Bắc... diệt quân Nguyên trên sóng Bạch Đằng'.",
+      "options": {
+        "A": "Lê Hoàn.",
+        "B": "Lý Bí.",
+        "C": "Ngô Quyền.",
+        "D": "Hưng Đạo."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lịch sử 11.",
+        "solution": "Điền từ 'Hưng Đạo' vào câu thơ: 'Khi Nguyễn Huệ cuối cùng vào cửa Bắc Hưng Đạo diệt quân Nguyên trên sóng Bạch Đằng'."
+      }
+    },
+    {
+      "question_id": 5,
+      "source": "Unknown",
+      "question_text": "Thách thức lớn nhất về mặt kinh tế khi Việt Nam gia nhập tổ chức ASEAN là gì?",
+      "options": {
+        "A": "Tụt hậu về kinh tế, công nghệ.",
+        "B": "Sử dụng nguồn vốn bất hợp lý.",
+        "C": "Điểm xuất phát thấp về kinh tế.",
+        "D": "Chịu sự cạnh tranh quyết liệt."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "Phân tích.",
+        "solution": "Thách thức lớn nhất đối với Việt Nam là môi trường cạnh tranh gay gắt hơn do hội nhập kinh tế khu vực mang lại, đặc biệt khi các quốc gia thành viên có đặc điểm sản xuất khá giống nhau."
+      }
+    },
+    {
+      "question_id": 6,
+      "source": "Unknown",
+      "question_text": "Trong xu thế phát triển chung của thế giới hiện nay, thời cơ Việt Nam có thể tận dụng để xây dựng và phát triển đất nước là gì?",
+      "options": {
+        "A": "Không bị áp dụng luật chống bán phá giá.",
+        "B": "Sự ổn định tình hình chính trị trong nước.",
+        "C": "Thu hút vốn, tiếp thu thành tựu khoa học.",
+        "D": "Mua được các bằng phát minh với giá rẻ."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "Phân tích, liên hệ.",
+        "solution": "Trong xu thế phát triển chung của thế giới hiện nay, thời cơ Việt Nam có thể tận dụng để xây dựng và phát triển đất nước là thu hút được nhiều vốn, tiếp thu thành tựu khoa học."
+      }
+    },
+    {
+      "question_id": 7,
+      "source": "Unknown",
+      "question_text": "Sự kiện nào dưới đây đánh dấu chế độ phong kiến ở Việt Nam đã sụp đổ hoàn toàn?",
+      "options": {
+        "A": "Khởi nghĩa thắng lợi trong cả nước.",
+        "B": "Giành được chính quyền ở Hà Nội.",
+        "C": "Vua Bảo Đại đã tuyên bố thoái vị.",
+        "D": "Hồ Chí Minh đọc Tuyên ngôn Độc lập."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Cách mạng tháng Tám năm 1945.",
+        "solution": "Vua Bảo Đại đã tuyên bố thoái vị đánh dấu chế độ phong kiến ở Việt Nam đã sụp đổ hoàn toàn."
+      }
+    },
+    {
+      "question_id": 8,
+      "source": "Unknown",
+      "question_text": "Đâu là một trong những vai trò, mục tiêu của tổ chức Liên hợp quốc?",
+      "options": {
+        "A": "Thực hiện quyền tự do hàng hải.",
+        "B": "Duy trì hòa bình, an ninh thế giới.",
+        "C": "Cân bằng quyền lực các nước.",
+        "D": "Xóa bỏ chế độ thực dân kiểu cũ."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung vai trò của Liên hợp quốc.",
+        "solution": "Duy trì hòa bình, an ninh thế giới là một trong những vai trò, mục tiêu của tổ chức Liên hợp quốc."
+      }
+    },
+    {
+      "question_id": 9,
+      "source": "Unknown",
+      "question_text": "Xu thế hòa hoãn Đông-Tây xuất hiện có tác động như thế nào đến trật tự hai cực Ianta?",
+      "options": {
+        "A": "Đã củng cố trật tự hai cực.",
+        "B": "Đã xuất hiện xu thế đa cực.",
+        "C": "Các mâu thuẫn càng sâu sắc.",
+        "D": "Làm suy yếu trật tự hai cực."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "Giải thích.",
+        "solution": "Xu thế hòa hoãn Đông-Tây xuất hiện khiến trật tự hai cực Ianta bị suy yếu."
+      }
+    },
+    {
+      "question_id": 10,
+      "source": "Unknown",
+      "question_text": "Trong quá trình phát triển của ASEAN, giai đoạn từ 1967 - 1976 có đặc điểm là gì?",
+      "options": {
+        "A": "Nền kinh tế xuất khẩu.",
+        "B": "Xây dựng nền móng.",
+        "C": "Phát triển rất thần kỳ.",
+        "D": "Tránh đối đầu quân sự."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung quá trình hình thành và phát triển của ASEAN.",
+        "solution": "Trong quá trình phát triển của ASEAN, giai đoạn từ 1967 - 1976 có đặc điểm là xây dựng nền móng ban đầu, tạo tiền đề cho sự hợp tác ASEAN."
+      }
+    }
+  ],
+  "phan_ii": [
+    {
+      "question_id": 25,
+      "question": "Đọc đoạn tư liệu sau:\n\"Sự kiện Việt Nam trở thành thành viên thứ bảy của ASEAN là dấu mốc quan trọng trong sự phát triển của ASEAN. Đây không chỉ là sự tăng thêm về số lượng thành viên mà còn đẩy nhanh quá trình thực hiện mục tiêu xây dựng ASEAN trở thành 'ngôi nhà chung' của các quốc gia Đông Nam Á.\" (SGK trang 23 - NXBGD năm 2024)",
+      "statements": {
+        "a": "Ngày 30/4/1999 khi Campuchia gia nhập ASEAN trở thành tổ chức \"toàn châu Á\".",
+        "b": "Điều kiện tiên quyết nhất dẫn đến sự thành lập tổ chức ASEAN năm 1967 là các quốc gia thành viên đều có nền kinh tế phát triển.",
+        "c": "Sự kiện Việt Nam gia nhập ASEAN năm 1995 chứng tỏ sự khác biệt về ý thức hòa giải.",
+        "d": "Việc mở rộng thành viên của Hiệp hội các quốc gia Đông Nam Á (ASEAN) diễn ra lâu dài và đầy trắc trở."
+      },
+      "answer_boolean_map": {
+        "a": false,
+        "b": false,
+        "c": true,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Sai, ASEAN là tổ chức của các nước Đông Nam Á.",
+        "b": "Sai, ASEAN được ra đời trong bối cảnh xu hướng khu vực hoá trên thế giới bắt đầu xuất hiện và ngày càng trở nên phổ biến. Các nước trong khu vực có nhu cầu hợp tác để cùng phát triển kinh tế - xã hội. Đồng thời, các nước nhận thấy cần hợp tác với nhau để tránh ảnh hưởng của các nước lớn bên ngoài khu vực. Vì vậy, điều kiện tiên quyết nhất dẫn đến sự thành lập tổ chức ASEAN năm 1967 không phải là các quốc gia thành viên đều có nền kinh tế phát triển.",
+        "c": "Đúng, sự kiện Việt Nam gia nhập ASEAN năm 1995 chứng tỏ sự khác biệt về ý thức hòa giải.",
+        "d": "Đúng, việc mở rộng thành viên của Hiệp hội các quốc gia Đông Nam Á (ASEAN) diễn ra lâu dài và đầy trắc trở. Việc mở rộng thành viên của ASEAN trải qua hành trình hơn 30 năm với nhiều trắc trở như ảnh hưởng của cuộc chiến tranh xâm lược Việt Nam của Mỹ (1954-1975) hay vấn đề Campuchia."
+      }
+    },
+    {
+      "question_id": 26,
+      "question": "Đọc đoạn tư liệu sau đây:\n\"Cách mạng tháng Tám... kết hợp giữa đấu tranh chính trị và đấu tranh quân sự, một cuộc nổi dậy ở cả nông thôn và thành thị khắp Bắc, Trung, Nam mà đỉnh quyết định là các cuộc khởi nghĩa ở Hà Nội, Huế, Sài Gòn và ở các thành phố quan trọng khác. Hành động mau lẹ của Đảng chuyển nhanh từ chiến tranh du kích cục bộ ở nông thôn sang phát động tổng khởi nghĩa ở thành thị là một chủ trương vô cùng sáng suốt của Trung ương Đảng lúc bấy giờ trong việc nắm thời cơ\".\n(Lê Duẩn, Tuyển tập, Tập 2, NXB Chính trị quốc gia, Hà Nội, 2008, tr.786)",
+      "statements": {
+        "a": "Cách mạng tháng Tám năm 1945 ở Việt Nam mang đặc điểm độc đáo là có sự kết hợp giữa sử dụng lực lượng chính trị và lực lượng vũ trang ba thứ quân.",
+        "b": "Tiến trình của cuộc Tổng khởi nghĩa tháng Tám năm 1945 ở Việt Nam phát triển từ chiến tranh du kích cục bộ ở địa phương lên chiến tranh chính quy trên phạm vi cả nước.",
+        "c": "Trong Cách mạng tháng Tám, khởi nghĩa nổ ra đồng loạt ở các địa phương, thắng lợi ở mọi địa phương có vai trò, vị trí như nhau.",
+        "d": "Nét đặc sắc về nghệ thuật chỉ đạo khởi nghĩa của Đảng là tận dụng thời cơ để đẩy lùi nguy cơ; kết hợp sức mạnh các lực lượng dân tộc và giành chính quyền trên cả hai địa bàn chiến lược."
+      },
+      "answer_boolean_map": {
+        "a": false,
+        "b": false,
+        "c": false,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Sai, trong kháng chiến chống thực dân Pháp (1945-1954), lực lượng vũ trang ba thứ quân mới chính thức được thành lập.",
+        "b": "Sai, tiến trình của cuộc Tổng khởi nghĩa tháng Tám năm 1945 ở Việt Nam phát triển từ chiến tranh du kích cục bộ ở địa phương lên Tổng khởi nghĩa ở thành thị.",
+        "c": "Sai, trong Cách mạng tháng Tám, khởi nghĩa nổ ra đồng loạt ở các địa phương, thắng lợi ở mỗi địa phương có vai trò, vị trí khác nhau. Như chiến thắng ở Hà Nội, Huế, Sài Gòn có ảnh hưởng lớn và quyết định đến các địa phương trong cả nước.",
+        "d": "Đúng, nét đặc sắc về nghệ thuật chỉ đạo khởi nghĩa của Đảng là tận dụng thời cơ để đẩy lùi nguy cơ; kết hợp sức mạnh các lực lượng dân tộc và giành chính quyền trên cả hai địa bàn chiến lược."
+      }
+    },
+    {
+      "question_id": 27,
+      "question": "Đọc đoạn tư liệu sau:\n\"Thắng lợi của cách mạng Trung Quốc năm 1949 đã mở ra bước đột phá, phá vỡ âm mưu khống chế Trung Quốc của Mỹ và những đặc quyền của Liên Xô ở vùng Đông Bắc Trung Quốc. Đồng thời, sự lớn mạnh của các nước Tây Âu, Nhật Bản cũng làm suy giảm vị trí và ảnh hưởng của Mỹ trong hệ thống tư bản chủ nghĩa.\" (Theo Lịch sử thế giới hiện đại. Quyển 2, NXB Đại học sư phạm. 2016, tr.94)",
+      "statements": {
+        "a": "Thắng lợi của cách mạng Trung Quốc năm 1949 làm xói mòn trật tự hai cực Ianta.",
+        "b": "Sự lớn mạnh của các nước Tây Âu, Nhật Bản là do sự tài trợ, giúp đỡ vô điều kiện của Mỹ.",
+        "c": "Sự lớn mạnh của các nước Tây Âu, Nhật Bản là một trong những nguyên nhân buộc Liên Xô và Mỹ tuyên bố chấm dứt chiến tranh lạnh.",
+        "d": "Tháng lợi của cách mạng Trung Quốc năm 1949 đã đe dọa đến sự tồn tại của Liên Xô và Mỹ."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": false,
+        "c": true,
+        "d": false
+      },
+      "explanation_map": {
+        "a": "Đúng, sự kiện cách mạng Trung Quốc thắng lợi (1949) là mốc đánh dấu bước đột phá, góp phần làm xói mòn trật tự hai cực Ianta, vì đã làm cho một trong những thiết chế của trật tự hai cực Ianta tồn tại bị phá vỡ.",
+        "b": "Sai, sự lớn mạnh của các nước Tây Âu, Nhật Bản là do sự tài trợ, giúp đỡ có điều kiện của Mỹ.",
+        "c": "Đúng, sự lớn mạnh của các nước Tây Âu, Nhật Bản là một trong những nguyên nhân buộc Liên Xô và Mỹ tuyên bố chấm dứt chiến tranh lạnh.",
+        "d": "Sai, thắng lợi của cách mạng Trung Quốc năm 1949 không đe dọa đến sự tồn tại của Liên Xô và Mỹ."
+      }
+    },
+    {
+      "question_id": 28,
+      "question": "Đọc đoạn tư liệu sau đây:\n\"Sự đầu hàng của Chính phủ Nhật đã đẩy quân Nhật đang chiếm đóng ở Đông Dương vào tình thế tuyệt vọng như rắn mất đầu, hoang mang dao động dần cục a6. Chính phủ Trần Trọng Kim rút ra... Trước tình hình như vậy, Hồ Chí Minh mặc dù đang ôm bệnh nặng đã sáng suốt nhận thức rằng: 'Lúc này thời cơ thuận lợi đã tới, dù hy sinh tới đâu, đi phải dốc toàn lực vượt Trường Sơn cũng phải kiên quyết giành cho được độc lập'. Như đã nói, đây không chỉ là sự nhận thức khách quan khoa học mà còn biểu hiện quyết tâm đấu tranh giành chính quyền khi thời cơ đã có. Sự kết hợp giữa tình hình khách quan và nhận thức chủ quan một cách chính xác là một trong những điều kiện đưa cách mạng đến thắng lợi\".\n(Phan Ngọc Liên (chủ biên), Cách mạng tháng Tám năm 1945 - Toàn cảnh, NXB Từ điển bách khoa, Hà Nội, 2015, tr.48)",
+      "statements": {
+        "a": "Phát xít Đức đầu hàng đã tạo ra thời cơ thuận lợi \"ngàn năm có một\" cho cách mạng Việt Nam.",
+        "b": "Sự thống nhất trong hành động và quyết tâm giành chính quyền của nhân dân Việt Nam là một trong những yếu tố làm nên thắng lợi của Cách mạng tháng Tám năm 1945.",
+        "c": "Cách mạng tháng Tám năm 1945 ở Việt Nam có sự kết hợp giữa yếu tố khách quan thuận lợi với yếu tố chủ quan (đóng vai trò quyết định) là một nhận thức khoa học.",
+        "d": "Nhận thức rõ yếu tố thời cơ đan xen lẫn yếu tố nguy cơ, Đảng và Hồ Chí Minh đã hành động kịp thời và kiên quyết phát động toàn quốc đứng lên giành chính quyền."
+      },
+      "answer_boolean_map": {
+        "a": false,
+        "b": true,
+        "c": true,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Sai, phát xít Nhật đầu hàng đã tạo ra thời cơ thuận lợi \"ngàn năm có một\" cho cách mạng Việt Nam.",
+        "b": "Đúng, sự thống nhất trong hành động và quyết tâm giành chính quyền của nhân dân Việt Nam là một trong những yếu tố làm nên thắng lợi của Cách mạng tháng Tám năm 1945.",
+        "c": "Đúng, cách mạng tháng Tám năm 1945 ở Việt Nam có sự kết hợp giữa yếu tố khách quan thuận lợi với yếu tố chủ quan (đóng vai trò quyết định) là một nhận thức khoa học.",
+        "d": "Đúng, nhận thức rõ yếu tố thời cơ đan xen lẫn yếu tố nguy cơ, Đảng và Hồ Chí Minh đã hành động kịp thời và kiên quyết phát động toàn quốc đứng lên giành chính quyền. Thời cơ ngàn năm có một ở Việt Nam xuất hiện khi Nhật tuyên bố đầu hàng Đồng minh, quân Nhật rút khỏi và chính quyền thân Nhật ở Việt Nam hoang mang cực độ. Tuy nhiên, Việt Nam cũng đối mặt với nguy cơ là sau chiến tranh, các nước Đồng minh sẽ vào Việt Nam làm nhiệm vụ giải giáp quân Nhật. Vì vậy, thời cơ của Việt Nam chỉ tồn tại trong khoảng 15 ngày, từ khi Nhật tuyên bố đầu hàng đến trước khi quân Đồng minh vào làm nhiệm vụ."
+      }
+    }
+  ]
+}

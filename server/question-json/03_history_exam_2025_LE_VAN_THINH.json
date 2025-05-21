@@ -1,0 +1,210 @@
+{
+  "phan_i": [
+    {
+      "question_id": 1,
+      "source": "Bắc Ninh",
+      "question_text": "Một trong những nước tham gia sáng lập Hiệp hội các quốc gia Đông Nam Á(ASEAN) năm 1967 là",
+      "options": {
+        "A": "Thái Lan.",
+        "B": "Hàn Quốc.",
+        "C": "Ấn Độ.",
+        "D": "Brunây."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Sự ra đời và phát triển của Hiệp hội các quốc gia Đông Nam Á(ASEAN).",
+        "solution": "Thái Lan là một trong năm quốc gia sáng lập ASEAN vào năm 1967, cùng với Indonesia, Malaysia, Philippines và Singapore."
+      }
+    },
+    {
+      "question_id": 2,
+      "source": "Bắc Ninh",
+      "question_text": "Thắng lợi nào sau đây dẫn đến sự ra đời của Nhà nước xã hội chủ nghĩa đầu tiên trên thế giới?",
+      "options": {
+        "A": "Cách mạng tháng Mười Nga(1917).",
+        "B": "Cách mạng Nga năm 1905- 1907.",
+        "C": "Cách mạng tháng Hai(1917) ở Nga.",
+        "D": "Công xã Pa-ri năm 1871 ở Pháp."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Trật tự thế giới trong chiến tranh Lạnh.",
+        "solution": "Cách mạng tháng Mười Nga năm 1917 đã dẫn đến sự ra đời của Nhà nước xã hội chủ nghĩa đầu tiên trên thế giới."
+      }
+    },
+    {
+      "question_id": 3,
+      "source": "Bắc Ninh",
+      "question_text": "Liên hợp quốc ra đời(1945) nhằm một trong các mục đích nào sau đây?",
+      "options": {
+        "A": "Chống chủ nghĩa phát xít.",
+        "B": "Duy trì hòa bình thế giới.",
+        "C": "Khắc phục hậu quả chiến tranh.",
+        "D": "Xóa bỏ chủ nghĩa thực dân."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Liên hợp quốc.",
+        "solution": "Mục đích quan trọng nhất khi Liên hợp quốc ra đời là duy trì hòa bình và an ninh quốc tế."
+      }
+    },
+    {
+      "question_id": 4,
+      "source": "Bắc Ninh",
+      "question_text": "Nội dung nào sau đây không phải là truyền thống tốt đẹp của dân tộc Việt Nam được hun đúc nên từ lịch sử chống giặc ngoại xâm?",
+      "options": {
+        "A": "Tinh thần đoàn kết keo sơn.",
+        "B": "Giải quyết tranh chấp bằng bạo lực.",
+        "C": "Lòng yêu nước tha thiết.",
+        "D": "Trí thông minh sáng tạo."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "Suy luận.",
+        "solution": "Đây không phải là truyền thống tốt đẹp của dân tộc Việt Nam, vốn luôn đề cao tinh thần hòa bình, đoàn kết, yêu nước và sáng tạo."
+      }
+    },
+    {
+      "question_id": 5,
+      "source": "Bắc Ninh",
+      "question_text": "Một trong những nội dung hợp tác của Cộng đồng ASEAN là",
+      "options": {
+        "A": "quân sự.",
+        "B": "đối ngoại.",
+        "C": "kinh tế.",
+        "D": "dân chủ."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Cộng đồng ASEAN: Từ ý tưởng đến hiện thực.",
+        "solution": "Kinh tế là một trong những nội dung quan trọng của hợp tác giữa các quốc gia thành viên ASEAN."
+      }
+    },
+    {
+      "question_id": 6,
+      "source": "Bắc Ninh",
+      "question_text": "Sự ra đời của Cộng đồng ASEAN năm 2015 có ý nghĩa quan trọng nào sau đây?",
+      "options": {
+        "A": "Đưa ASEAN trở thành tổ chức liên kết khu vực lớn nhất hành tinh.",
+        "B": "Nâng cao mức độ gắn kết và hợp tác hiệu quả giữa các nước thành viên.",
+        "C": "Nâng cao mức độ nhất thể hóa khu vực với một đồng tiền chung.",
+        "D": "Đưa ASEAN trở thành tổ chức liên minh khu vực chặt chẽ nhất."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "Suy luận dựa trên nội dung Cộng đồng ASEAN: Từ ý tưởng đến hiện thực.",
+        "solution": "Sự ra đời của Cộng đồng ASEAN năm 2015 đánh dấu sự tăng cường hợp tác và gắn kết giữa các quốc gia trong khu vực."
+      }
+    },
+    {
+      "question_id": 7,
+      "source": "Bắc Ninh",
+      "question_text": "Các nước ASEAN cần làm gì để giải quyết vấn đề biển Đông hiện nay?",
+      "options": {
+        "A": "Sự đồng thuận giữa các quốc gia và vai trò trung tâm của ASEAN.",
+        "B": "Lợi dụng mâu thuẫn giữa các nước lớn về vấn đề biển Đông.",
+        "C": "Thực hiện tốt chiến lược phát triển kinh tế biển.",
+        "D": "Phát huy tinh thần đoàn kết của nhân dân trong khu vực."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "Suy luận.",
+        "solution": "Việc giải quyết vấn đề biển Đông cần dựa trên sự đồng thuận và vai trò trung tâm của ASEAN trong thúc đẩy hòa bình và hợp tác khu vực."
+      }
+    },
+    {
+      "question_id": 8,
+      "source": "Bắc Ninh",
+      "question_text": "Xu thế toàn cầu hoá đặt ra cho các nước đang phát triển nhiều thách thức, chủ yếu là do các nước này",
+      "options": {
+        "A": "có trình độ sản xuất thấp.",
+        "B": "có sự phân hoá giàu nghèo.",
+        "C": "chưa có tính đoàn kết dân tộc.",
+        "D": "chưa có bản sắc văn hoá dân tộc."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "Suy luận.",
+        "solution": "Các nước đang phát triển gặp thách thức lớn từ toàn cầu hóa do trình độ sản xuất thấp, dẫn đến khó cạnh tranh với các nước phát triển."
+      }
+    },
+    {
+      "question_id": 9,
+      "source": "Bắc Ninh",
+      "question_text": "Theo quyết định của Hội nghị Ianta(2- 1945), Mĩ được đóng quân tại khu vực nào sau đây?",
+      "options": {
+        "A": "Đông Âu.",
+        "B": "Đông Đức.",
+        "C": "Nam Triều Tiên.",
+        "D": "Đông Nam Á."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Hội nghị I-an-ta.",
+        "solution": "Theo Hội nghị Ianta(2-1945), Mĩ được phép đóng quân tại Nam Triều Tiên để kiểm soát khu vực này."
+      }
+    },
+    {
+      "question_id": 10,
+      "source": "Bắc Ninh",
+      "question_text": "Mĩ và Liên Xô tuyên bố chấm dứt Chiến tranh lạnh nhằm mục đích nào sau đây?",
+      "options": {
+        "A": "Thiết lập trật tự thế giới “đa cực”.",
+        "B": "Hợp tác phát triển công nghiệp vũ trụ.",
+        "C": "Ngăn chặn sự vươn lên của Tây Âu.",
+        "D": "Có cục diện ổn định để củng cố vị thế."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Trật tự thế giới sau Chiến tranh Lạnh.",
+        "solution": "Việc chấm dứt Chiến tranh lạnh nhằm tạo ra một cục diện quốc tế ổn định, giúp Mĩ và Liên Xô tập trung củng cố vị thế của mình."
+      }
+    }
+  ],
+  "phan_ii": [
+    {
+      "question_id": 25,
+      "question": "Đọc đoạn tư liệu, chọn đúng hoặc sai",
+      "statements": {
+        "a": "Việt Nam gia nhập ASEAN là sự kiện quyết định, đưa đến thay đổi căn bản và toàn diện cho ASEAN.",
+        "b": "Đoạn tư liệu đề cập ý nghĩa và tác động của sự kiện Việt Nam gia nhập ASEAN năm 1995.",
+        "c": "Đoạn tư liệu cho thấy bài học Việt Nam cần liên minh quân sự chặt chẽ với các nước trong khu vực.",
+        "d": "Việt Nam gia nhập ASEAN là dấu mốc quan trọng của Việt Nam trong quá trình hội nhập khu vực."
+      },
+      "answer_boolean_map": {
+        "a": false,
+        "b": true,
+        "c": false,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Sai, đoạn tư liệu không khẳng định sự kiện Việt Nam gia nhập ASEAN là yếu tố quyết định, dẫn đến thay đổi căn bản và toàn diện cho ASEAN.",
+        "b": "Đúng, đoạn tư liệu nêu rõ ý nghĩa và tác động của sự kiện Việt Nam gia nhập ASEAN năm 1995.",
+        "c": "Sai, đoạn tư liệu không đề cập đến việc Việt Nam cần liên minh quân sự chặt chẽ với các nước trong khu vực, mà nhấn mạnh vai trò hợp tác hòa bình và phát triển.",
+        "d": "Đúng, đoạn tư liệu xác nhận Việt Nam gia nhập ASEAN là một dấu mốc quan trọng trong quá trình hội nhập khu vực."
+      }
+    },
+    {
+      "question_id": 26,
+      "question": "Đọc đoạn tư liệu, chọn đúng hoặc sai",
+      "statements": {
+        "a": "Nguyên tắc điều phối hoạt động của ASEAN là biểu hiện rõ nét việc dung hoà lợi ích của các nước thành viên.",
+        "b": "Việc kết nạp thành viên của ASEAN lâu dài và trở ngại do thể chế chính trị các nước có sự khác nhau.",
+        "c": "ASEAN là một tổ chức liên kết quốc tế, việc kết nạp thành viên không có sự phân biệt thể chế chính trị.",
+        "d": "Nguyên tắc hoạt động của ASEAN khá chặt chẽ là cơ sở để thúc đẩy sự hợp tác, phát triển của tổ chức này."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": false,
+        "c": false,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Đúng, nguyên tắc hoạt động và cơ cấu tổ chức của ASEAN chặt chẽ hơn, nhằm dung hòa lợi ích của các nước thành viên.",
+        "b": "Sai, đoạn tư liệu không đề cập việc việc kết nạp thành viên của ASEAN gặp trở ngại do sự khác biệt về thể chế chính trị, mà nhấn mạnh tinh thần mở rộng không phân biệt trong Tuyên bố Băng Cốc 1967.",
+        "c": "Sai, đoạn tư liệu không đề cập đến việc kết nạp thành viên của ASEAN không có sự phân biệt thể chế chính trị. Thay vào đó, đoạn tư liệu chỉ nhấn mạnh rằng ASEAN mở rộng cho tất cả các quốc gia Đông Nam Á tán thành các tôn chỉ, nguyên tắc và mục đích tham gia, theo tinh thần của Tuyên bố Băng Cốc 1967. Điều này không có nghĩa là không có sự phân biệt thể chế chính trị, mà chỉ là các quốc gia phải tán thành các tôn chỉ, nguyên tắc và mục đích của ASEAN.",
+        "d": "Đúng, nguyên tắc hoạt động chặt chẽ của ASEAN là nền tảng để thúc đẩy sự hợp tác và phát triển trong khu vực."
+      }
+    }
+  ]
+}

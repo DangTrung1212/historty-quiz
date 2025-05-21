@@ -1,0 +1,82 @@
+{
+  "phan_i": [
+    {
+      "question_id": 1,
+      "source": "Unknown",
+      "question_text": "Hiện nay, Việt Nam vận dụng nguyên tắc của Liên hợp quốc để bảo đảm hòa bình ở Biển Đông thông qua chủ trương nào sau đây?",
+      "options": {
+        "A": "Tiếp tục đẩy mạnh cuộc đấu tranh pháp lý tại Tòa án quốc tế.",
+        "B": "Tuân thủ luật pháp quốc tế để thực hiện quyền tài phán quốc gia.",
+        "C": "Tham gia vào các liên minh chính trị-quân sự mang tính phòng thủ.",
+        "D": "Chỉ đe dọa sử dụng vũ lực khi bị nước ngoài xâm phạm chủ quyền."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "Liên hệ.",
+        "solution": "Việt Nam vận dụng nguyên tắc của Liên hợp quốc trong việc tuân thủ luật pháp quốc tế để thực hiện quyền tài phán quốc gia nhằm bảo vệ hòa bình trên Biển Đông."
+      }
+    },
+    {
+      "question_id": 2,
+      "source": "Unknown",
+      "question_text": "Một trong những địa phương giành chính quyền đầu tiên trong Tổng khởi nghĩa tháng Tám năm 1945 ở Việt Nam (ngày 18-8-1945) là:",
+      "options": {
+        "A": "Đồng Nai Thượng",
+        "B": "Quảng Nam",
+        "C": "Sài Gòn",
+        "D": "Hà Tiên"
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "SGK Lịch sử 12",
+        "solution": "Quảng Nam là một trong những địa phương giành chính quyền đầu tiên trong Tổng khởi nghĩa tháng Tám năm 1945."
+      }
+    }
+  ],
+  "phan_ii": [
+    {
+      "question_id": 25,
+      "question": "Cho đoạn tư liệu sau đây:\n'Vào thập niên 1980, mối quan hệ nóng lạnh giữa Tổng thống Mỹ Reagan và nhà lãnh đạo Liên Xô Gorbachev đã giúp giảm dần tình trạng căng thẳng của Chiến tranh lạnh. Năm 1987, hai nhà lãnh đạo này đồng ý hủy bỏ tên lửa hạt nhân tầm trung. Năm 1989, Gorbachev cho phép các quốc gia xã hội chủ nghĩa ở Đông Âu bầu ra chính phủ dân chủ, và đến năm 1991, Liên Xô tan rã thành 15 nước cộng hòa độc lập.'",
+      "statements": {
+        "a": "Trong thập niên 80 của thế kỷ XX, tình trạng căng thẳng của Chiến tranh lạnh diễn ra gay gắt.",
+        "b": "Đoạn trích trên đề cập đến sự xói mòn và tan rã của trật tự thế giới hai cực I-an-ta.",
+        "c": "Cục diện hai phe kết thúc bắt nguồn từ sự suy giảm tương đối sức mạnh của hai cực trong quan hệ quốc tế.",
+        "d": "Điểm chung của các trật tự thế giới trong thế kỷ XX là đều suy yếu, sụp đổ khi có sự hòa hoãn, thỏa hiệp giữa các siêu cường."
+      },
+      "answer_boolean_map": {
+        "a": false,
+        "b": true,
+        "c": true,
+        "d": false
+      },
+      "explanation_map": {
+        "a": "Sai, vì từ những năm 70 của thế kỷ XX, xu hướng hòa hoãn Đông-Tây đã diễn ra với những cuộc gặp gỡ, thương lượng giữa Liên Xô và Mỹ.",
+        "b": "Đúng, đoạn trích đề cập đến sự xói mòn và tan rã của trật tự thế giới hai cực I-an-ta.",
+        "c": "Đúng, cục diện hai phe kết thúc bắt nguồn từ sự suy giảm tương đối sức mạnh của hai cực trong quan hệ quốc tế.",
+        "d": "Sai, trong thế kỷ XX, có một số trật tự thế giới mới được thiết lập như Trật tự Vecxai-Oasinhton, trật tự hai cực I-an-ta hay trật tự thế giới đơn cực do Mỹ thiết lập sau Chiến tranh Lạnh."
+      }
+    },
+    {
+      "question_id": 26,
+      "question": "Cho đoạn tư liệu sau đây:\n'Quyết tâm sử dụng những cố gắng cần thiết buộc đầu để bảo đảm việc công nhận và tôn trọng Đông Nam Á là một khu vực hòa bình, tự do và trung lập, không có sự can thiệp dưới bất kỳ hình thức và phương cách nào của các nước ngoài khu vực. Các nước Đông Nam Á cần phối hợp nỗ lực nhằm mở rộng các lĩnh vực hợp tác để góp phần tăng cường sức mạnh, tình đoàn kết, mối quan hệ gắn bó hơn nữa.'",
+      "statements": {
+        "a": "Đoạn tư liệu đề cập đến sự kiện tổ chức ASEAN mở rộng thành viên ra toàn bộ khu vực Đông Nam Á.",
+        "b": "Theo đoạn tư liệu trên, ASEAN có chủ trương mở rộng lĩnh vực hợp tác để tăng cường sức mạnh nội khối.",
+        "c": "Tuyên bố về khu vực hòa bình, tự do và trung lập khẳng định nguyên tắc không can thiệp và đa số đồng thuận của ASEAN.",
+        "d": "Tuyên bố về khu vực hòa bình, tự do và trung lập thể hiện quyết tâm duy trì hòa bình vĩnh viễn trong khu vực của các nước ASEAN."
+      },
+      "answer_boolean_map": {
+        "a": false,
+        "b": true,
+        "c": false,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Sai, đoạn tư liệu trên đề cập đến cách thức để ASEAN tăng cường sức mạnh nội khối.",
+        "b": "Đúng, theo đoạn tư liệu trên, ASEAN có chủ trương mở rộng lĩnh vực hợp tác để tăng cường sức mạnh nội khối.",
+        "c": "Sai, 'Tuyên bố về khu vực hòa bình, tự do và trung lập' nhấn mạnh quyết tâm của các nước thành viên trong việc bảo đảm Đông Nam Á là một khu vực hòa bình, tự do và trung lập.",
+        "d": "Đúng, 'Tuyên bố về khu vực hòa bình, tự do và trung lập' thể hiện quyết tâm duy trì hòa bình vĩnh viễn trong khu vực của các nước ASEAN."
+      }
+    }
+  ]
+}

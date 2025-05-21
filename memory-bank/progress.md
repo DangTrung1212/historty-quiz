@@ -1,9 +1,18 @@
 # Project Progress
 
 ## Current Status
-The application has been successfully updated with a romantic purple theme across all pages. Recent UI/UX improvements include enhanced scrolling behavior, consistent styling across quiz components, and improved answer review functionality. The focus is now on ensuring a smooth and intuitive user experience across all devices.
+The application has made significant strides in its development, with a focus on refining the user experience and enhancing visual appeal. The interactive birthday card feature is now functionally complete and themed, and the landing page has been re-styled to match the app's overall aesthetic. The project is moving towards a refinement and polishing phase, with a strong focus on mobile experience and data quality.
 
 ## What Works
+- Core quiz functionalities (multiple choice, true/false) are stable.
+- Score calculation and progress tracking via Context API are functional.
+- `PageTurningCard` component:
+  - Successfully simulates a book/card opening with `framer-motion`.
+  - Displays a congratulatory message (left page) and a personalized, text-based birthday message (right page).
+  - Responsive: Stacks pages vertically on mobile with a slide animation, and spreads horizontally on desktop with a flip animation.
+  - Uses custom text with styling and icons for the message area, replacing the previous image-based approach.
+- `reward.tsx` page correctly displays the `PageTurningCard` when all quiz sections are completed, passing the personalized message.
+- `landing.tsx` page has been re-styled to match the app's overall theme (purple/pink gradients, animated decorative elements), providing a cohesive visual introduction.
 - Project structure is established with client/server architecture
 - React application setup with routing using Wouter
 - Component organization following modern React patterns
@@ -51,42 +60,17 @@ The application has been successfully updated with a romantic purple theme acros
    - Identifying areas for improvement in the user journey
    - Validating the emotional impact of achievement moments
 
-## Recent Improvements
-1. **UI/UX Enhancements**
-   - Implemented smooth scrolling to answer review section
-   - Added visual feedback for selected answers
-   - Improved mobile responsiveness
-   - Enhanced DungSai quiz interface
-   - Consistent styling across all components
-
-2. **Bug Fixes**
-   - Fixed score calculation and display issues
-   - Resolved scrolling behavior in quiz components
-   - Improved state management for quiz navigation
-   - Fixed answer review section display
-
 ## What's Left to Build/Complete
-1.  **Progress Reward System**
-    *   Test and refine the reward reveal experience
-    *   Ensure smooth transitions between quiz completion and reward display
-    *   Add visual feedback for different achievement levels
-
-2.  **UI & UX Polish**
-    *   Complete final UI review of all interactive elements
-    *   Ensure consistent button states and hover effects
-    *   Verify all animations are smooth and purposeful
-
-3.  **Testing & Validation**
-    *   Conduct user testing for the reward flow
-    *   Verify all quiz types trigger rewards correctly
-    *   Ensure progress persists correctly across sessions
-
-4.  **Performance Optimization**
-    *   Optimize animations for smooth performance
-    *   Ensure quick loading of reward assets
-    *   Verify all interactive elements respond promptly
+1.  **Comprehensive Mobile UX Optimization**: Review and enhance the user experience on mobile devices across all parts of the application (quiz sections, navigation, results pages, etc.).
+2.  **Birthday Card Finalization**:
+    *   **Custom Fonts**: Select and integrate appropriate custom fonts for the birthday message to enhance its unique and personal feel.
+    *   **Message Content & Layout**: Refine the specific wording, line breaks, and overall typographic layout of the message on the card for maximum impact.
+    *   **Subtle Enhancements**: Consider minor additional animations or visual cues within the card content if they add to the experience without cluttering.
+3.  **Data Curation - Table-Based Questions**: Identify and decide on handling for table-based questions in `question-json` files (e.g., remove or reformat if they don't fit the quiz UI).
+4.  **Thorough Cross-Device Testing**: Test the entire application flow on various mobile devices and screen resolutions to catch any remaining UI/UX issues.
 
 ## Known Issues
+- Potential for table-based questions in the data source that may not render well in the current quiz UI.
 - `currentQuestion` for MCQs resets on new browser sessions (intended behavior as `MultipleChoiceQuizContext` no longer persists this detailed state)
 - Some code duplication and complexity due to separate quiz contexts (Refactoring remains deprioritized)
 - Minor stale comments remain at the end of `client/src/lib/storage.ts` (Low priority)
@@ -157,3 +141,7 @@ Test and refine the progress reveal reward system to ensure a satisfying and mot
 - Prioritizing visual appeal and romantic theme
 - Focusing on creating engaging reward content
 - Maintaining good performance while enhancing visuals
+- **Message Format**: Shifted from an image-based birthday message to a text-based one within `PageTurningCard`.
+- **Responsive Strategy**: Adopted distinct mobile vs. desktop layouts/animations for `PageTurningCard`.
+- **Theming**: Extended the romantic/celebratory theme to the landing page.
+- **Data Quality**: Added a step to review and handle potentially problematic table-based questions.

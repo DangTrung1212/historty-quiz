@@ -1,0 +1,254 @@
+{
+  "phan_i": [
+    {
+      "question_id": 1,
+      "source": "Unknown",
+      "question_text": "Một trong những bài học được rút ra từ Cách mạng tháng Tám năm 1945 có ý nghĩa quan trọng trong công cuộc xây dựng và phát triển đất nước hiện nay là",
+      "options": {
+        "A": "tận dụng, phát huy truyền thống đoàn kết của nhân dân ba nước Đông Dương.",
+        "B": "linh hoạt, quyết đoán trong việc kết hợp các hình thức đấu tranh ngoại giao.",
+        "C": "cần dự đoán chính xác và nhanh chóng nắm bắt thời cơ để giành thắng lợi.",
+        "D": "kết hợp xây dựng lực lượng vũ trang với sức mạnh của lực lượng quốc tế."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "Phân tích, rút ra bài học kinh nghiệm.",
+        "solution": "Một trong những nguyên nhân khiến ta giành được thắng lợi trong Cách mạng tháng Tám năm 1945 là do dự đoán đúng thời cơ và đẩy lùi nguy cơ. Việc dự đoán đúng thời cơ khiến Cách mạng tháng Tám diễn ra nhanh chóng, ít đổ máu... Đây cũng là một bài học quan trọng trong công cuộc xây dựng và phát triển đất nước hiện nay. Trước những sự thay đổi ngày càng nhanh của tình hình thế giới, Việt Nam cần đi trước đón đầu, dự đoán chính xác và nhanh chóng nắm bắt thời cơ để không bỏ lỡ những cơ hội tốt."
+      }
+    },
+    {
+      "question_id": 2,
+      "source": "Unknown",
+      "question_text": "Xu thế chủ đạo trong quan hệ giữa các cường quốc sau Chiến tranh lạnh là",
+      "options": {
+        "A": "tôn trọng vai trò, nhiệm vụ của Liên hợp quốc.",
+        "B": "hòa bình, không xung đột, tiến hành hợp tác.",
+        "C": "đối thoại, thỏa hiệp, tránh xung đột trực tiếp.",
+        "D": "hợp tác, không cạnh tranh, không mâu thuẫn."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung quan hệ quốc tế sau Chiến tranh Lạnh.",
+        "solution": "Xu thế chủ đạo trong quan hệ giữa các cường quốc sau Chiến tranh lạnh là đối thoại, thỏa hiệp, tránh xung đột trực tiếp."
+      }
+    },
+    {
+      "question_id": 3,
+      "source": "Unknown",
+      "question_text": "Nội dung nào sau đây là biểu hiện của xu thế đa cực trong quan hệ quốc tế sau Chiến tranh lạnh?",
+      "options": {
+        "A": "Các trung tâm, tổ chức kinh tế, tài chính quốc tế và khu vực bắt đầu xuất hiện.",
+        "B": "Mỹ giữ sức mạnh tuyệt đối trong tương quan so sánh với các cường quốc khác.",
+        "C": "Các công ty xuyên quốc gia của Mỹ vươn ra chi phối, lãnh đạo nền kinh tế toàn cầu.",
+        "D": "Các trung tâm quyền lực ngày càng vươn lên khẳng định sức mạnh và tầm ảnh hưởng."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung xu thế đa cực.",
+        "solution": "Các trung tâm quyền lực ngày càng vươn lên khẳng định sức mạnh và tầm ảnh hưởng, ví dụ như Trung Quốc, Nhật Bản, Nga, một số nước thuộc Liên minh châu Âu (EU)... là biểu hiện của xu thế đa cực trong quan hệ quốc tế sau Chiến tranh lạnh."
+      }
+    },
+    {
+      "question_id": 4,
+      "source": "Unknown",
+      "question_text": "Nguyên nhân nào sau đây là nhân tố quyết định dẫn tới thắng lợi Tổng khởi nghĩa tháng Tám (1945)?",
+      "options": {
+        "A": "Nhật đầu hàng Đồng minh.",
+        "B": "Tinh thần đoàn kết quốc tế vô sản.",
+        "C": "Thắng lợi của Hồng quân Liên Xô.",
+        "D": "Sự lãnh đạo sáng suốt của Đảng."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "Giải thích.",
+        "solution": "Nguyên nhân quyết định dẫn đến thắng lợi của Tổng khởi nghĩa tháng Tám năm 1945 là nguyên nhân chủ quan > Sự lãnh đạo sáng suốt của Đảng là yếu tố quyết định dẫn tới thắng lợi Tổng khởi nghĩa tháng Tám (1945)."
+      }
+    },
+    {
+      "question_id": 5,
+      "source": "Unknown",
+      "question_text": "Quốc gia nào là thành viên thứ 10 của ASEAN?",
+      "options": {
+        "A": "Myanmar.",
+        "B": "Campuchia.",
+        "C": "Thái Lan.",
+        "D": "Việt Nam."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Hiệp hội các quốc gia Đông Nam Á.",
+        "solution": "Campuchia là thành viên thứ 10 của ASEAN."
+      }
+    },
+    {
+      "question_id": 6,
+      "source": "Unknown",
+      "question_text": "Trong Cách mạng tháng Tám năm 1945, tỉnh nào giành được chính quyền sớm nhất trong cả nước?",
+      "options": {
+        "A": "Bạc Liêu",
+        "B": "Huế",
+        "C": "Bắc Giang",
+        "D": "Hà Nội"
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Cách mạng tháng Tám năm 1945.",
+        "solution": "Trong Cách mạng tháng Tám năm 1945, Bắc Giang giành được chính quyền sớm nhất trong cả nước."
+      }
+    },
+    {
+      "question_id": 7,
+      "source": "Unknown",
+      "question_text": "Trong giai đoạn từ năm 1945 đến đầu những năm 70 của thế kỷ XX, Trật tự thế giới hai cực Ianta",
+      "options": {
+        "A": "được xác lập và phát triển.",
+        "B": "suy yếu nhưng vẫn duy trì.",
+        "C": "suy yếu và đi đến sụp đổ.",
+        "D": "chưa được hình thành."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Trật tự hai cực Ianta.",
+        "solution": "Trong giai đoạn từ năm 1945 đến đầu những năm 70 của thế kỷ XX, Trật tự thế giới hai cực Ianta được xác lập và phát triển."
+      }
+    },
+    {
+      "question_id": 8,
+      "source": "Unknown",
+      "question_text": "Năm 1948, Đại hội đồng Liên hợp quốc thông qua Tuyên ngôn Nhân quyền đã",
+      "options": {
+        "A": "thủ tiêu các hình thức của chế độ phân biệt chủng tộc.",
+        "B": "đưa ra những quyền và tự do cơ bản của con người.",
+        "C": "xóa bỏ chủ nghĩa thực dân trên phạm vi toàn cầu.",
+        "D": "hạn chế tình trạng chạy đua vũ trang giữa các cường quốc."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Liên hợp quốc.",
+        "solution": "Năm 1948, Đại hội đồng Liên hợp quốc thông qua Tuyên ngôn Nhân quyền đã đưa ra những quyền và tự do cơ bản của con người."
+      }
+    },
+    {
+      "question_id": 9,
+      "source": "Unknown",
+      "question_text": "Hội nghị I-an-ta (2/1945) được tiến hành trong giai đoạn nào của Chiến tranh thế giới thứ hai?",
+      "options": {
+        "A": "Đang diễn ra ác liệt.",
+        "B": "Giai đoạn sắp kết thúc.",
+        "C": "Vừa mới kết thúc.",
+        "D": "Bùng nổ và lan rộng."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Trật tự hai cực Ianta.",
+        "solution": "Hội nghị I-an-ta (2/1945) được tiến hành trong giai đoạn Chiến tranh thế giới thứ hai sắp kết thúc."
+      }
+    },
+    {
+      "question_id": 10,
+      "source": "Unknown",
+      "question_text": "Nội dung nào sau đây là hạn chế trong quá trình phát triển của ASEAN từ khi thành lập (1967) đến nay?",
+      "options": {
+        "A": "Mâu thuẫn gay gắt về vấn đề xây dựng các đập thủy điện.",
+        "B": "Sự chi phối và tác động của một số cường quốc bên ngoài.",
+        "C": "Sự chênh lệch trình độ phát triển giữa các nước thành viên.",
+        "D": "Tranh chấp lãnh thổ diễn ra thường xuyên ở Đông Nam Á."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "Loại trừ phương án.",
+        "solution": "Nội dung phản ánh hạn chế trong quá trình phát triển của ASEAN từ khi thành lập (1967) đến nay là sự chênh lệch trình độ phát triển giữa các nước thành viên."
+      }
+    }
+  ],
+  "phan_ii": [
+    {
+      "question_id": 25,
+      "question": "Đoạn trích sau đây:",
+      "statements": {
+        "a": "ASEAN là một tổ chức hợp tác ở khu vực Đông Nam Á được thành lập năm 1967",
+        "b": "Ngay từ khi mới thành lập, ASEAN đã trở thành một tổ chức có vị thế và uy tín trên trường quốc tế.",
+        "c": "Sau Chiến tranh lạnh, những chuyển biến phức tạp của thế giới đã buộc các nước ASEAN phải chuyển trọng tâm sang hợp tác an ninh, chính trị.",
+        "d": "Vấn đề Biển Đông là nhân tố duy nhất tạo ra nguy cơ chia rẽ trong quan hệ giữa các nước ASEAN."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": false,
+        "c": false,
+        "d": false
+      },
+      "explanation_map": {
+        "a": "Đúng, ASEAN là một tổ chức hợp tác ở khu vực Đông Nam Á được thành lập năm 1967",
+        "b": "Sai, ngay từ khi mới thành lập, ASEAN có tổ chức lỏng lẻo, chưa có sự liên kết chặt chẽ nên cần xây dựng và phát triển để trở thành tổ chức có uy tín và vị thế trong khu vực và quốc tế.",
+        "c": "Sai, sau Chiến tranh lạnh các nước đều điều chỉnh hướng phát triển, tập trung phát triển kinh tế làm trọng tâm.",
+        "d": "Sai, vấn đề Biển Đông không phải là nhân tố duy nhất tạo ra nguy cơ chia rẽ trong quan hệ giữa các nước ASEAN. Cộng đồng các nước ASEAN phải đối mặt với nhiều thách thức như vấn đề chính trị, vấn đề Biển Đông, sự can thiệp của các nước lớn..."
+      }
+    },
+    {
+      "question_id": 26,
+      "question": "Đoạn trích sau đây:",
+      "statements": {
+        "a": "Cuộc Chiến tranh lạnh đã làm thay đổi quan hệ giữa các cường quốc từng là đồng minh trong chiến tranh chống chủ nghĩa phát xít.",
+        "b": "Cuộc Chiến tranh lạnh tuy đã kết thúc nhưng vẫn để lại nhiều di chứng đến ngày nay.",
+        "c": "Cuộc chiến tranh của Mỹ ở Việt Nam (1954-1975) không chịu sự tác động của Chiến tranh lạnh.",
+        "d": "Một trong những nguyên nhân dẫn đến cuộc Chiến tranh lạnh là bắt nguồn từ những quyết định của Hội nghị I-an-ta."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": true,
+        "c": false,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Đúng, sau chiến tranh thế giới thứ hai, Liên Xô và Mỹ chuyển từ Đồng minh chống phát xít sang đối đầu gay gắt với nhau trên mọi mặt.",
+        "b": "Đúng, cuộc Chiến tranh lạnh tuy đã kết thúc nhưng vẫn để lại nhiều di chứng đến ngày nay. Các cuộc chiến tranh cục bộ diễn ra nhiều nơi trên thế giới trong thời kỳ Chiến tranh Lạnh vẫn để lại nhiều di chứng cho các quốc gia.",
+        "c": "Sai, cuộc chiến tranh của Mỹ ở Việt Nam (1954-1975) có chịu sự tác động của Chiến tranh lạnh.",
+        "d": "Đúng, một trong những nguyên nhân dẫn đến cuộc Chiến tranh lạnh là bắt nguồn từ những quyết định của Hội nghị I-an-ta, đó là những quyết định liên quan đến phân chia phạm vi ảnh hưởng của các nước."
+      }
+    },
+    {
+      "question_id": 27,
+      "question": "Đoạn trích sau đây:",
+      "statements": {
+        "a": "Vua Bảo Đại thoái vị chứng tỏ chế độ phong kiến Việt Nam hoàn toàn sụp đổ.",
+        "b": "Thành công của Cách mạng tháng Tám là do Đảng Cộng sản Đông Dương đã nhanh chóng chụp thời cơ khi Nhật đầu hàng Đồng minh không điều kiện.",
+        "c": "Đoạn trích trên thể hiện tư tưởng nhân văn của Đảng trong quá trình lãnh đạo Cách mạng tháng Tám.",
+        "d": "Tinh thần đoàn kết của toàn dân là yếu tố quan trọng để giành được độc lập."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": false,
+        "c": true,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Đúng, vua Bảo Đại thoái vị chứng tỏ chế độ phong kiến Việt Nam hoàn toàn sụp đổ.",
+        "b": "Sai, thành công của Cách mạng tháng Tám là do Đảng Cộng sản Đông Dương đã nhanh chóng chụp thời cơ khi Nhật đầu hàng Đồng minh không điều kiện.",
+        "c": "Đúng, đoạn trích trên thể hiện tư tưởng nhân văn của Đảng trong quá trình lãnh đạo Cách mạng tháng Tám.",
+        "d": "Đúng, tinh thần đoàn kết của toàn dân là yếu tố quan trọng để giành được độc lập."
+      }
+    },
+    {
+      "question_id": 28,
+      "question": "Cho bảng niên biểu về quá trình thành lập Liên hợp quốc",
+      "statements": {
+        "a": "Tổ chức Liên hợp quốc được thành lập để nhanh chóng kết thúc Chiến tranh thế giới thứ hai.",
+        "b": "Liên Xô, Mỹ, Anh đóng vai trò quan trọng nhất cho sự ra đời của tổ chức Liên hợp quốc.",
+        "c": "Quá trình thành lập Liên hợp quốc diễn ra kéo dài với nhiều sự kiện quan trọng thể hiện sự nỗ lực vì hòa bình chung của cộng đồng quốc tế.",
+        "d": "Ý tưởng thành lập Liên hợp quốc không gắn liền với quá trình thiết lập và hoạt động của phe Đồng minh chống phát xít trong Chiến tranh thế giới thứ hai."
+      },
+      "answer_boolean_map": {
+        "a": false,
+        "b": true,
+        "c": true,
+        "d": false
+      },
+      "explanation_map": {
+        "a": "Sai, tổ chức Liên hợp quốc được thành lập để duy trì hòa bình và an ninh thế giới sau hai cuộc chiến tranh đã để lại hậu quả nặng nề cho nhân loại.",
+        "b": "Đúng, Liên Xô, Mỹ, Anh đóng vai trò quan trọng cho sự ra đời của tổ chức Liên hợp quốc.",
+        "c": "Đúng, quá trình thành lập Liên hợp quốc diễn ra kéo dài với nhiều sự kiện quan trọng thể hiện sự nỗ lực vì hòa bình chung của cộng đồng quốc tế.",
+        "d": "Sai, ý tưởng thành lập Liên hợp quốc không gắn liền với quá trình thiết lập và hoạt động của phe Đồng minh chống phát xít trong Chiến tranh thế giới thứ hai."
+      }
+    }
+  ]
+}

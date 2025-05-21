@@ -1,0 +1,478 @@
+{
+  "phan_i": [
+    {
+      "question_id": 1,
+      "source": "Unknown",
+      "question_text": "Cuộc Tổng tiến công và nổi dậy Xuân 1975 trải qua 3 chiến dịch lớn là",
+      "options": {
+        "A": "Huế, Tây Nguyên - Đà Nẵng, Hồ Chí Minh.",
+        "B": "Tây Nguyên, Huế - Đà Nẵng, Hồ Chí Minh.",
+        "C": "Huế - Tây Nguyên, Đà Nẵng, Hồ Chí Minh.",
+        "D": "Đà Nẵng, Tây Nguyên, Hồ Chí Minh."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung kháng chiến chống Mỹ cứu nước (1954-1975).",
+        "solution": "Cuộc Tổng tiến công và nổi dậy Xuân 1975 trải qua 3 chiến dịch lớn là Tây Nguyên, Huế - Đà Nẵng, Hồ Chí Minh."
+      }
+    },
+    {
+      "question_id": 2,
+      "source": "Unknown",
+      "question_text": "Thời cơ khách quan thuận lợi của Cách mạng tháng Tám là sự kiện nào sau đây?",
+      "options": {
+        "A": "Phát xít Nhật đầu hàng Đồng minh vô điều kiện (15/8/1945).",
+        "B": "Mỹ ném hai quả bom nguyên tử xuống Nhật (6, 9/8/1945).",
+        "C": "Nhật đảo chính lật đổ Pháp trên toàn Đông Dương (9/3/1945).",
+        "D": "Đức đã đầu hàng quân Đồng minh vô điều kiện (9/5/1945)."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Cách mạng tháng Tám năm 1945.",
+        "solution": "Thời cơ khách quan thuận lợi của Cách mạng tháng Tám là sự kiện phát xít Nhật đầu hàng Đồng minh vô điều kiện (15/8/1945)."
+      }
+    },
+    {
+      "question_id": 3,
+      "source": "Unknown",
+      "question_text": "Với thắng lợi của Cách mạng tháng Tám năm 1945 ở Việt Nam, khẩu hiệu nào sau đây đã trở thành hiện thực?",
+      "options": {
+        "A": "\"Ruong đất về tay dân cày\".",
+        "B": "\"Chủ nghĩa xã hội\".",
+        "C": "\"Người cày có ruộng\".",
+        "D": "\"Độc lập dân tộc\"."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Cách mạng tháng Tám.",
+        "solution": "Với thắng lợi của Cách mạng tháng Tám năm 1945 ở Việt Nam, khẩu hiệu \"Độc lập dân tộc\" trở thành hiện thực."
+      }
+    },
+    {
+      "question_id": 4,
+      "source": "Unknown",
+      "question_text": "Để tiêu diệt chủ nghĩa quân phiệt Nhật Bản và nhanh chóng kết thúc chiến tranh, Hội nghị I-an-ta (tháng 2-1945) đã quyết định",
+      "options": {
+        "A": "Anh và Liên Xô sẽ tiêu diệt lực lượng quân Nhật tại Trung Quốc.",
+        "B": "Liên Xô sẽ tham gia chiến tranh chống Nhật ở châu Á.",
+        "C": "Anh, Pháp, Mỹ sẽ tham gia chiến tranh chống Nhật ở châu Âu.",
+        "D": "Liên Xô không tham gia chiến tranh chống Nhật ở châu Á."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung hội nghị I-an-ta.",
+        "solution": "Để tiêu diệt chủ nghĩa quân phiệt Nhật Bản và nhanh chóng kết thúc chiến tranh, Hội nghị I-an-ta (tháng 2-1945) đã quyết định Liên Xô sẽ tham gia chiến tranh chống Nhật ở châu Á."
+      }
+    },
+    {
+      "question_id": 5,
+      "source": "Unknown",
+      "question_text": "Cuộc đấu tranh bảo vệ biên giới phía Bắc (1979-1989) của quân dân Việt Nam thể hiện tính",
+      "options": {
+        "A": "chính nghĩa.",
+        "B": "dân chủ.",
+        "C": "toàn diện.",
+        "D": "lâu dài."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "Giải thích.",
+        "solution": "Cuộc đấu tranh bảo vệ biên giới phía Bắc (1979-1989) của quân dân Việt Nam thể hiện tính chính nghĩa vì mục tiêu của chúng ta là bảo vệ Tổ quốc."
+      }
+    },
+    {
+      "question_id": 6,
+      "source": "Unknown",
+      "question_text": "Đường lối đổi mới của Đảng Cộng sản Việt Nam (từ tháng 12-1986) có nội dung nào sau đây?",
+      "options": {
+        "A": "Chỉ tập trung đổi mới về văn hóa.",
+        "B": "Chỉ đổi mới về tổ chức và tư tưởng.",
+        "C": "Chỉ tập trung đổi mới về chính trị.",
+        "D": "Đổi mới kinh tế là trọng tâm."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung công cuộc Đổi mới ở Việt Nam (1986).",
+        "solution": "Đường lối đổi mới của Đảng Cộng sản Việt Nam (từ tháng 12-1986) có nội dung đổi mới kinh tế là trọng tâm."
+      }
+    },
+    {
+      "question_id": 7,
+      "source": "Unknown",
+      "question_text": "Ngày 6-3-1946, Chính phủ nước Việt Nam Dân chủ Cộng hòa đã ký với đại diện của Chính phủ Pháp bản hiệp định nào sau đây?",
+      "options": {
+        "A": "Bản Môn Diệm.",
+        "B": "Gio-ne-vơ.",
+        "C": "Hiệp định Pa-ri.",
+        "D": "Hiệp định Sơ-bô."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung hoạt động đối ngoại của Việt Nam (1945-1954).",
+        "solution": "Ngày 6-3-1946, Chính phủ nước Việt Nam Dân chủ Cộng hòa đã ký với đại diện của Chính phủ Pháp bản Hiệp định Sơ-bô."
+      }
+    },
+    {
+      "question_id": 8,
+      "source": "Unknown",
+      "question_text": "\"Do xuôi Thạch Hãn xin chào nhẹ / Dòng sông còn đó bạn tôi năm / Có tuổi hai mươi thành sóng nước / Vò đời bọ mi mãi ngẩn ngơ.\" Những câu thơ trên đề cập đến trận chiến lịch sử nào của quân dân miền Nam chống Mỹ vào mùa hè năm 1972?",
+      "options": {
+        "A": "Trận đường 9 - Nam Lào.",
+        "B": "Cuộc tổng tiến công và nổi dậy Xuân Mậu Thân.",
+        "C": "Trận thành cổ Quảng Trị.",
+        "D": "Trận Khe Sanh."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung cuộc kháng chiến chống Mỹ cứu nước (1954-1975).",
+        "solution": "Những câu thơ trên đề cập đến trận thành cổ Quảng Trị của quân dân miền Nam chống Mỹ vào mùa hè năm 1972."
+      }
+    },
+    {
+      "question_id": 9,
+      "source": "Unknown",
+      "question_text": "Để làm phá sản kế hoạch Rơve của Pháp, tháng 6-1950 Đảng Cộng sản Đông Dương quyết định mở chiến dịch nào sau đây?",
+      "options": {
+        "A": "Việt Bắc thu - đông.",
+        "B": "Hồ Chí Minh.",
+        "C": "Điện Biên Phủ.",
+        "D": "Biên giới thu - đông."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung kháng chiến chống thực dân Pháp xâm lược (1945-1954).",
+        "solution": "Để làm phá sản kế hoạch Rơve của Pháp, tháng 6-1950 Đảng Cộng sản Đông Dương quyết định mở chiến dịch Biên giới thu - đông."
+      }
+    },
+    {
+      "question_id": 10,
+      "source": "Unknown",
+      "question_text": "\"Áp chiến lược\" được coi là \"xương sống\", \"quốc sách\" của chiến lược chiến tranh nào Mỹ thực hiện ở miền Nam Việt Nam từ 1961-1965?",
+      "options": {
+        "A": "Việt Nam hóa chiến tranh.",
+        "B": "Đông Dương hóa chiến tranh.",
+        "C": "Chiến tranh đặc biệt.",
+        "D": "Chiến tranh Cục bộ."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung kháng chiến chống Mỹ cứu nước (1954-1975).",
+        "solution": "\"Áp chiến lược\" được coi là \"xương sống\", \"quốc sách\" của chiến lược chiến tranh đặc biệt do Mỹ thực hiện ở miền Nam Việt Nam từ 1961-1965."
+      }
+    },
+    {
+      "question_id": 11,
+      "source": "Unknown",
+      "question_text": "Địa bàn nào diễn ra cuộc xung đột sớm nhất giữa Việt Nam với Pháp sau Cách mạng tháng Tám năm 1945?",
+      "options": {
+        "A": "Hà Nội.",
+        "B": "Hải Phòng.",
+        "C": "Bắc Bộ.",
+        "D": "Nam Bộ."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lịch sử 12, cuộc kháng chiến chống thực dân Pháp xâm lược.",
+        "solution": "Nam Bộ diễn ra cuộc xung đột sớm nhất giữa Việt Nam với Pháp sau Cách mạng tháng Tám năm 1945."
+      }
+    },
+    {
+      "question_id": 12,
+      "source": "Unknown",
+      "question_text": "Đại hội đại biểu toàn quốc lần thứ III của Đảng Lao động Việt Nam (9/1960) xác định cách mạng xã hội chủ nghĩa ở miền Bắc có vai trò",
+      "options": {
+        "A": "quyết định nhất đối với sự phát triển của cách mạng cả nước.",
+        "B": "quyết định trực tiếp đối với sự nghiệp giải phóng miền Nam.",
+        "C": "quyết định thành công của cách mạng xã hội chủ nghĩa trên cả nước.",
+        "D": "quyết định với sự nghiệp giải phóng miền Nam, thống nhất đất nước."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung kháng chiến chống Mỹ cứu nước (1954-1975).",
+        "solution": "Đại hội đại biểu toàn quốc lần thứ III của Đảng Lao động Việt Nam (9/1960) xác định cách mạng xã hội chủ nghĩa ở miền Bắc có vai trò quyết định nhất đối với sự phát triển của cách mạng cả nước."
+      }
+    },
+    {
+      "question_id": 13,
+      "source": "Unknown",
+      "question_text": "Mục tiêu xây dựng cộng đồng ASEAN là",
+      "options": {
+        "A": "xây dựng một tổ chức hợp tác sâu rộng trên 3 trụ cột: Kinh tế - xã hội, văn hóa - thể dục thể thao.",
+        "B": "xây dựng một tổ chức hợp tác sâu rộng trên 3 trụ cột: Kinh tế, Chính trị - an ninh, văn hóa - xã hội.",
+        "C": "xây dựng một tổ chức hợp tác sâu rộng trên 3 trụ cột: Kinh tế - chính trị, văn hóa, xã hội.",
+        "D": "xây dựng một tổ chức hợp tác sâu rộng trên 3 trụ cột: Kinh tế, Chính trị, văn hóa - lịch sử."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Cộng đồng ASEAN.",
+        "solution": "Mục tiêu xây dựng cộng đồng ASEAN là xây dựng một tổ chức hợp tác sâu rộng trên 3 trụ cột: Kinh tế, Chính trị - an ninh, văn hóa - xã hội."
+      }
+    },
+    {
+      "question_id": 14,
+      "source": "Unknown",
+      "question_text": "Năm nước sáng lập ASEAN là",
+      "options": {
+        "A": "In-đô-nê-xi-a, Ma-lai-xi-a, Phi-lip-pin, Xin-ga-po, Thái Lan.",
+        "B": "In-đô-nê-xi-a, Lào, Phi-lip-pin, Xin-ga-po, Thái Lan.",
+        "C": "In-đô-nê-xi-a, Cam-pu-chia, Phi-lip-pin, Xin-ga-po, Thái Lan.",
+        "D": "In-đô-nê-xi-a, Bru-nây, Phi-lip-pin, Xin-ga-po, Thái Lan."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Hiệp hội các quốc gia Đông Nam Á (ASEAN).",
+        "solution": "Năm nước sáng lập ASEAN là In-đô-nê-xi-a, Ma-lai-xi-a, Phi-lip-pin, Xin-ga-po, Thái Lan."
+      }
+    },
+    {
+      "question_id": 15,
+      "source": "Unknown",
+      "question_text": "\"Một trật tự thế giới mới có sự tham gia của các quốc gia, các trung tâm khác nhau, trong đó không có một quốc gia nào có quyền lực áp đảo các quốc gia khác, chi phối sự phát triển của thế giới\" là khái niệm về trật tự",
+      "options": {
+        "A": "đơn cực.",
+        "B": "Véc-xai-Oa-xinh-tơn.",
+        "C": "đa cực.",
+        "D": "hai cực Ianta."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung quan hệ quốc tế sau Chiến tranh Lạnh.",
+        "solution": "\"Một trật tự thế giới mới có sự tham gia của các quốc gia, các trung tâm khác nhau, trong đó không có một quốc gia nào có quyền lực áp đảo các quốc gia khác, chi phối sự phát triển của thế giới\" là khái niệm về trật tự đa cực."
+      }
+    },
+    {
+      "question_id": 16,
+      "source": "Unknown",
+      "question_text": "Các cuộc chiến đấu anh dũng của lực lượng Hải quân nhân dân Việt Nam để bảo vệ chủ quyền biển, đảo quốc gia trong năm 1988 đã diễn ra ở các đảo",
+      "options": {
+        "A": "Cô Tô, Cát Bà.",
+        "B": "Côn Đảo, Phú Quốc.",
+        "C": "Gạc Ma, Cô Lin.",
+        "D": "An Bang, Hòn Tre."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung cuộc đấu tranh và bảo vệ Biển Đông.",
+        "solution": "Các cuộc chiến đấu anh dũng của lực lượng Hải quân nhân dân Việt Nam để bảo vệ chủ quyền biển, đảo quốc gia trong năm 1988 đã diễn ra ở các đảo Gạc Ma và Cô Lin."
+      }
+    },
+    {
+      "question_id": 17,
+      "source": "Unknown",
+      "question_text": "Xu thế toàn cầu hóa là hệ quả của",
+      "options": {
+        "A": "quá trình thống nhất thị trường thế giới.",
+        "B": "sự ra đời các công ty xuyên quốc gia.",
+        "C": "cuộc cách mạng khoa học - công nghệ.",
+        "D": "sự phụ thuộc giữa các quốc gia trên thế giới."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung xu thế của thế giới sau chiến tranh lạnh.",
+        "solution": "Xu thế toàn cầu hóa là hệ quả của cuộc cách mạng khoa học - công nghệ."
+      }
+    },
+    {
+      "question_id": 18,
+      "source": "Unknown",
+      "question_text": "Đại hội toàn quốc lần thứ VII (12/1986) đề ra đường lối đổi mới với nội dung phải",
+      "options": {
+        "A": "thực hiện nhanh chóng.",
+        "B": "bảo đảm chắc thắng lợi.",
+        "C": "thận trọng và tỏa bão.",
+        "D": "toàn diện và đồng bộ."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Công cuộc đổi mới ở Việt Nam (1986).",
+        "solution": "Đại hội toàn quốc lần thứ VII (12/1986) đề ra đường lối đổi mới với nội dung phải toàn diện và đồng bộ."
+      }
+    },
+    {
+      "question_id": 19,
+      "source": "Unknown",
+      "question_text": "\"Các nước thành viên phải làm tròn nghĩa vụ đảm nhận theo Hiến chương để được hưởng toàn bộ các quyền và ưu đãi do tư cách thành viên mà có\" phản ánh nội dung nào của Liên hợp quốc?",
+      "options": {
+        "A": "Nguyên tắc hoạt động.",
+        "B": "Vai trò của tổ chức.",
+        "C": "Mục tiêu hoạt động.",
+        "D": "Chương trình hành động."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "Loại trừ phương án.",
+        "solution": "\"Các nước thành viên phải làm tròn nghĩa vụ đảm nhận theo Hiến chương để được hưởng toàn bộ các quyền và ưu đãi do tư cách thành viên mà có\" phản ánh nội dung nguyên tắc hoạt động của Liên hợp quốc."
+      }
+    },
+    {
+      "question_id": 20,
+      "source": "Unknown",
+      "question_text": "Trong những năm 1905 - 1908, những hoạt động đối ngoại của Phan Bội Châu chủ yếu diễn ra",
+      "options": {
+        "A": "Xiêm (Thái Lan).",
+        "B": "Trung Quốc.",
+        "C": "Nhật Bản.",
+        "D": "Liên Xô."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung hoạt động đối ngoại của Phan Bội Châu.",
+        "solution": "Trong những năm 1905 - 1908, những hoạt động đối ngoại của Phan Bội Châu chủ yếu diễn ra ở Nhật Bản."
+      }
+    },
+    {
+      "question_id": 21,
+      "source": "Unknown",
+      "question_text": "Đại hội đại biểu toàn quốc lần thứ II của Đảng (2/1951) quyết định đưa Đảng ra hoạt động công khai với tên gọi mới là",
+      "options": {
+        "A": "Đảng Lao động Đông Dương.",
+        "B": "Đảng Lao động Việt Nam.",
+        "C": "Đảng Cộng sản Đông Dương.",
+        "D": "Đảng Cộng sản Việt Nam."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Đại hội đại biểu toàn quốc lần thứ II của Đảng (2/1951).",
+        "solution": "Đại hội đại biểu toàn quốc lần thứ II của Đảng (2/1951) quyết định đưa Đảng ra hoạt động công khai với tên gọi mới là Đảng Lao động Việt Nam."
+      }
+    },
+    {
+      "question_id": 22,
+      "source": "Unknown",
+      "question_text": "Các cuộc khởi nghĩa trong thời Bắc thuộc của nhân dân Việt Nam diễn ra trong bối cảnh nào?",
+      "options": {
+        "A": "Đất nước thống nhất, chư quyền.",
+        "B": "Đất nước mất độc lập, tự chủ.",
+        "C": "Đất nước có độc lập, chư quyền.",
+        "D": "Nhân dân Việt Nam đã bị đồng hóa."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "SGK Lịch sử 11.",
+        "solution": "Các cuộc khởi nghĩa trong thời Bắc thuộc của nhân dân Việt Nam diễn ra trong bối cảnh đất nước mất độc lập, tự chủ."
+      }
+    },
+    {
+      "question_id": 23,
+      "source": "Unknown",
+      "question_text": "Trong khoảng thời gian từ năm 1975 đến năm 1979, cuộc chiến đấu ở biên giới Tây Nam của quân dân Việt Nam thực hiện nhiệm vụ nào sau đây?",
+      "options": {
+        "A": "Đánh đổ phát xít.",
+        "B": "Đánh đổ phong kiến.",
+        "C": "Bảo vệ Tổ quốc.",
+        "D": "Giải phóng dân tộc."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung đấu tranh bảo vệ biên giới Tây Nam và phía Bắc Tổ quốc.",
+        "solution": "Trong khoảng thời gian từ năm 1975 đến năm 1979, cuộc chiến đấu ở biên giới Tây Nam của quân dân Việt Nam thực hiện nhiệm vụ bảo vệ Tổ quốc."
+      }
+    },
+    {
+      "question_id": 24,
+      "source": "Unknown",
+      "question_text": "Thắng lợi nào sau đây dẫn đến sự ra đời của Nhà nước xã hội chủ nghĩa đầu tiên trên thế giới?",
+      "options": {
+        "A": "Cách mạng tháng Hai (1917) ở Nga.",
+        "B": "Cách mạng tháng Mười Nga (1917).",
+        "C": "Cách mạng Nga năm 1905 - 1907.",
+        "D": "Công xã Pa-ri năm 1871 ở Pháp."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "SGK Lịch sử 11.",
+        "solution": "Cách mạng tháng Mười Nga (1917) dẫn đến sự ra đời của Nhà nước xã hội chủ nghĩa đầu tiên trên thế giới."
+      }
+    }
+  ],
+  "phan_ii": [
+    {
+      "question_id": 25,
+      "question": "Đọc đoạn tư liệu sau đây:\n\nTư liệu 1: \"Hiến chương này hoàn toàn không cho phép Liên hợp quốc được can thiệp vào những công việc thuộc thẩm quyền nội bộ của bất kỳ quốc gia nào, và không đòi hỏi các thành viên của Liên hợp quốc phải đưa những công việc loại này ra để giải quyết theo quy định của Hiến chương.\"\n(Trích: Điều 2, Hiến chương Liên hợp quốc)\n\nTư liệu 2: \"Năm 1960, Đại hội đồng Liên hợp quốc đã thông qua bản Tuyên ngôn tiêu hủy hoàn toàn chủ nghĩa thực dân, trao trả độc lập cho các quốc gia và dân tộc thuộc địa. Đây là một sự kiện chính trị quan trọng.\"",
+      "statements": {
+        "a": "Theo Hiến chương, Liên hợp quốc không được can thiệp vào công việc nội bộ của bất kỳ quốc gia nào.",
+        "b": "Tuyên ngôn về tiêu hủy hoàn toàn chủ nghĩa thực dân đã góp phần mở ra thời kỳ \"phi thực dân hóa\".",
+        "c": "Việc các thuộc địa giành được độc lập hoàn toàn phụ thuộc vào Tuyên ngôn về tiêu hủy hoàn toàn chủ nghĩa thực dân.",
+        "d": "Nguyên tắc không can thiệp vào công việc nội bộ được tất cả các thành viên thực hiện nghiêm chỉnh."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": true,
+        "c": false,
+        "d": false
+      },
+      "explanation_map": {
+        "a": "Đúng, theo Hiến chương, Liên hợp quốc không được can thiệp vào công việc nội bộ của bất kỳ quốc gia nào.",
+        "b": "Đúng, Tuyên ngôn về tiêu hủy hoàn toàn chủ nghĩa thực dân đã góp phần mở ra thời kỳ \"phi thực dân hóa\".",
+        "c": "Sai, Việc các thuộc địa giành được độc lập hoàn toàn phụ thuộc vào ý chí, quyết tâm, năng lực của các quốc gia.",
+        "d": "Sai, nguyên tắc không can thiệp vào công việc nội bộ không được tất cả các thành viên thực hiện nghiêm chỉnh."
+      }
+    },
+    {
+      "question_id": 26,
+      "question": "Đọc đoạn tư liệu sau đây:\n\n\"Sự đầu hàng của Chính phủ Nhật đã đẩy quân Nhật đang chiếm đóng ở Đông Dương vào tình trạng tuyệt vọng như một đám đầu, hoang mang dao động đến cùng độ. Chính phủ Trần Trọng Kim rệu rã... Trước tình hình như vậy, Hồ Chí Minh mặc dù đang ốm nặng đã sáng suốt nhận thức rằng: 'Lúc này thời cơ thuận lợi đã tới, dù hy sinh tới đâu, dù phải đốt cháy cả dãy Trường Sơn cũng phải kiên quyết giành cho được độc lập'. Như đã nói, đây không chỉ là sự nhận thức khách quan khoa học mà còn biểu hiện quyết tâm đấu tranh giành chính quyền khi thời cơ đã có. Sự kết hợp giữa tình hình khách quan và nhận thức chủ quan một cách chính xác là một trong những điều kiện đưa cách mạng đến thắng lợi.\"",
+      "statements": {
+        "a": "Phát xít Đức đầu hàng đã tạo ra thời cơ thuận lợi \"ngàn năm có một\" cho cách mạng Việt Nam.",
+        "b": "Sự thống nhất trong hành động và quyết tâm giành chính quyền của nhân dân Việt Nam là một trong những yếu tố làm nên thắng lợi của Cách mạng tháng Tám năm 1945.",
+        "c": "Cách mạng tháng Tám năm 1945 ở Việt Nam có sự kết hợp giữa yếu tố khách quan thuận lợi với yếu tố chủ quan (đóng vai trò quyết định) là một nhận thức khoa học.",
+        "d": "Nhận thức rõ yếu tố thời cơ đan xen lẫn yếu tố nguy cơ, Đảng và Hồ Chí Minh đã hành động kịp thời và kiên quyết phát động toàn quốc đứng lên giành chính quyền."
+      },
+      "answer_boolean_map": {
+        "a": false,
+        "b": true,
+        "c": true,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Sai, thời cơ \"ngàn năm có một\" cho cách mạng tháng Tám xuất hiện khi quân Nhật đầu hàng Đồng minh không điều kiện.",
+        "b": "Đúng, sự thống nhất trong hành động và quyết tâm giành chính quyền của nhân dân Việt Nam là một trong những yếu tố làm nên thắng lợi của Cách mạng tháng Tám năm 1945.",
+        "c": "Đúng, Cách mạng tháng Tám năm 1945 ở Việt Nam có sự kết hợp giữa yếu tố khách quan thuận lợi với yếu tố chủ quan (đóng vai trò quyết định) là một nhận thức khoa học.",
+        "d": "Đúng, nhận thức rõ yếu tố thời cơ đan xen lẫn yếu tố nguy cơ, Đảng và Hồ Chí Minh đã hành động kịp thời và kiên quyết phát động toàn quốc đứng lên giành chính quyền."
+      }
+    },
+    {
+      "question_id": 27,
+      "question": "Đọc đoạn tư liệu sau đây:\n\n\"Bảo vệ vững chắc độc lập, chủ quyền, thống nhất, toàn vẹn lãnh thổ biên giới quốc gia; bảo vệ Đảng, Nhà nước, Nhân dân, chế độ xã hội chủ nghĩa;... bảo vệ hòa bình, an ninh, văn hóa, pháp luật, tính uy nghiêm và biểu tượng quốc gia tại biên giới, cửa khẩu. Xây dựng biên giới hòa bình, hữu nghị, ổn định, hợp tác; bảo vệ, phòng thủ vững chắc biên giới quốc gia; góp phần phát triển kinh tế - xã hội gắn với củng cố, tăng cường quốc phòng, an ninh, đối ngoại ở khu vực biên giới và cả nước.\"",
+      "statements": {
+        "a": "Tư liệu trên nói về quan điểm xây dựng và bảo vệ Tổ quốc của Việt Nam ngày nay.",
+        "b": "Lực lượng duy nhất bảo vệ chủ quyền biên giới quốc gia trên bộ là bộ đội biên phòng.",
+        "c": "Việt Nam coi trọng gắn củng cố quốc phòng, an ninh với phát triển kinh tế - xã hội.",
+        "d": "Cần xây dựng lực lượng, sẵn sàng dùng vũ lực để giải quyết mọi tranh chấp biên giới."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": false,
+        "c": true,
+        "d": false
+      },
+      "explanation_map": {
+        "a": "Đúng, tư liệu trên nói về quan điểm xây dựng và bảo vệ Tổ quốc của Việt Nam ngày nay.",
+        "b": "Sai, bộ đội biên phòng là lực lượng chính, không phải lực lượng duy nhất.",
+        "c": "Đúng, Việt Nam coi trọng gắn củng cố quốc phòng, an ninh với phát triển kinh tế - xã hội.",
+        "d": "Sai, ưu tiên giải quyết tranh chấp bằng biện pháp hòa bình."
+      }
+    },
+    {
+      "question_id": 28,
+      "question": "Đọc đoạn tư liệu sau đây:\n\n\"Từ tháng 9/1945 đến tháng 12/1946, hoạt động đối ngoại khẳng định tính hợp pháp của Chính phủ Việt Nam Dân chủ Cộng hòa; chủ động triển khai hòa hoãn với Trung Hoa Dân quốc; thực hiện chủ trương \"Hòa để tiến\", ký Hiệp định Sơ-bô ngày 06/3/1946, bản Tạm ước ngày 14/9/1946 với Pháp để tranh thủ thời gian hòa hoãn chuẩn bị lực lượng cho cuộc kháng chiến; thường xuyên giữ quan hệ với Chính phủ Mỹ.\"",
+      "statements": {
+        "a": "Đến trước tháng 12-1946, Việt Nam đã cắt quan hệ ngoại giao với chính phủ Mỹ.",
+        "b": "Hiệp định Sơ-bô là văn bản ngoại giao có tính pháp lý quốc tế đầu tiên của Việt Nam.",
+        "c": "Chính sách với Pháp và Trung Hoa Dân quốc giai đoạn trên chỉ mang tính sách lược.",
+        "d": "Chính sách ngoại giao giai đoạn trên góp phần tạo điều kiện để chuẩn bị kháng chiến."
+      },
+      "answer_boolean_map": {
+        "a": false,
+        "b": true,
+        "c": true,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Sai, từ khi ra đời đến trước năm 1949, Việt Nam Dân chủ Cộng hòa chưa được quốc gia nào công nhận và thiết lập quan hệ ngoại giao.",
+        "b": "Đúng, Hiệp định Sơ-bô là văn bản ngoại giao có tính pháp lý quốc tế đầu tiên của Việt Nam.",
+        "c": "Đúng, chính sách với Pháp và Trung Hoa Dân quốc giai đoạn trên chỉ mang tính sách lược. Tùy vào tình hình, bối cảnh trong nước, sách lược được Đảng thay đổi để phù hợp.",
+        "d": "Đúng, chính sách ngoại giao giai đoạn trên góp phần tạo điều kiện để chuẩn bị kháng chiến."
+      }
+    }
+  ]
+}

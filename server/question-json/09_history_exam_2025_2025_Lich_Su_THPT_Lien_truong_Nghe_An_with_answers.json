@@ -1,0 +1,130 @@
+{
+  "phan_i": [
+    {
+      "question_id": 1,
+      "source": "Unknown",
+      "question_text": "Một trong những cuộc kháng chiến chống ngoại xâm không thành công trong lịch sử Việt Nam (trước Cách mạng tháng Tám năm 1945) là",
+      "options": {
+        "A": "kháng chiến chống quân Tống thế kỷ XI.",
+        "B": "kháng chiến chống quân Thanh thế kỷ XVIII.",
+        "C": "kháng chiến chống thực dân Pháp thế kỷ XIX.",
+        "D": "kháng chiến chống quân Nam Hán thế kỷ X."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 11.",
+        "solution": "Một trong những cuộc kháng chiến chống ngoại xâm không thành công trong lịch sử Việt Nam (trước Cách mạng tháng Tám năm 1945) là kháng chiến chống thực dân Pháp thế kỷ XIX."
+      }
+    },
+    {
+      "question_id": 2,
+      "source": "Unknown",
+      "question_text": "Cuộc đấu tranh bảo vệ Tổ quốc Việt Nam từ sau tháng 4 - 1975 đến nay có điểm khác biệt nổi bật nào sau đây so với các cuộc kháng chiến bảo vệ Tổ quốc (1945-1975)?",
+      "options": {
+        "A": "Đối mặt với sự chia rẽ nội bộ và nguy cơ mất độc lập từ các cường quốc lớn.",
+        "B": "Được sự ủng hộ mạnh mẽ từ các nước trong khối xã hội chủ nghĩa.",
+        "C": "Được tiến hành trong điều kiện đất nước đã thống nhất về mặt lãnh thổ.",
+        "D": "Chủ yếu dựa vào lực lượng quân sự và chiến tranh chính quy toàn dân."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "So sánh.",
+        "solution": "Điểm khác biệt nổi bật của các cuộc đấu tranh bảo vệ Tổ quốc Việt Nam từ sau tháng 4/1975 so với cuộc kháng chiến bảo vệ Tổ quốc (1945-1975) là được tiến hành trong điều kiện đất nước đã thống nhất về mặt lãnh thổ."
+      }
+    },
+    {
+      "question_id": 3,
+      "source": "Unknown",
+      "question_text": "Trật tự thế giới hai cực I-an-ta được xác lập sau Chiến tranh thế giới thứ hai khẳng định vị thế hàng đầu của hai cường quốc nào sau đây?",
+      "options": {
+        "A": "Liên Xô và Anh.",
+        "B": "Liên Xô và Mỹ.",
+        "C": "Mỹ và Anh.",
+        "D": "Nga và Mỹ."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung trật tự hai cực I-an-ta.",
+        "solution": "Trật tự thế giới hai cực I-an-ta được xác lập sau Chiến tranh thế giới thứ hai khẳng định vị thế hàng đầu của hai cường quốc Liên Xô và Mỹ."
+      }
+    },
+    {
+      "question_id": 4,
+      "source": "Unknown",
+      "question_text": "Nhận xét nào sau đây không đúng về công cuộc cải cách, mở cửa ở Trung Quốc (1978)?",
+      "options": {
+        "A": "Khẳng định sự đúng đắn của con đường xây dựng chủ nghĩa xã hội.",
+        "B": "Trung Quốc trở thành nước có tầm ảnh hưởng lớn nhất trong xu thế đa cực.",
+        "C": "Khẳng định tính tất yếu trong xu thế phát triển chung của thế giới.",
+        "D": "Để lại bài học kinh nghiệm quý báu cho công cuộc đổi mới ở Việt Nam."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "Phân tích, loại trừ đáp án.",
+        "solution": "Công cuộc cải cách, mở cửa ở Trung Quốc (1978) không đưa Trung Quốc trở thành nước có tầm ảnh hưởng lớn nhất trong xu thế đa cực."
+      }
+    },
+    {
+      "question_id": 5,
+      "source": "Unknown",
+      "question_text": "Sự kiện nào sau đây chấm dứt vĩnh viễn sự tồn tại của chế độ quân chủ ở Việt Nam?",
+      "options": {
+        "A": "Giành chính quyền ở Huế (23/8/1945).",
+        "B": "Chủ tịch Hồ Chí Minh đọc Tuyên ngôn Độc lập (2/9/1945).",
+        "C": "Giành chính quyền ở Sài Gòn (25/8/1945).",
+        "D": "Vua Bảo Đại tuyên bố thoái vị (30/8/1945)."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Cách mạng tháng Tám năm 1945.",
+        "solution": "Vua Bảo Đại tuyên bố thoái vị (30/8/1945) chấm dứt vĩnh viễn sự tồn tại của chế độ quân chủ ở Việt Nam."
+      }
+    }
+  ],
+  "phan_ii": [
+    {
+      "question_id": 25,
+      "question": "Cho đoạn tư liệu sau đây:\n\n\"Từ năm 1961 đến năm 1968 là khoảng thời gian để quốc Mỹ lần lượt triển khai hai chiến lược chiến tranh nhằm tiếp tục âm mưu xâm lược và thống trị miền Nam bằng hình thức thực dân kiểu mới. Cuộc chiến leo thang với quy mô ngày càng mở rộng và cường độ ngày càng khốc liệt trên cả hai miền Nam, Bắc trở thành cuộc đối đầu lịch sử giữa nhân dân Việt Nam với đế quốc Mỹ xâm lược. Trong cuộc đối đầu lịch sử đó, dưới sự lãnh đạo của Đảng Lao động Việt Nam, đặc biệt là Chủ tịch Hồ Chí Minh, toàn dân, toàn quân ta đã triển khai và thực hiện có hiệu quả đường lối chiến tranh nhân dân của Đảng, đẩy mạnh chiến lược tiến công, đánh bại và làm phá sản các bước leo thang chiến tranh.\"\n(Vấn đề lịch sử quân sự Việt Nam, Lịch sử quân sự Việt Nam, Tập II: Cuộc kháng chiến chống Mỹ, cứu nước (1954–1975), NXB Chính trị quốc gia Sự thật, Hà Nội, 2019, tr. 281)",
+      "statements": {
+        "a": "Từ năm 1961 đến năm 1968, đế quốc Mỹ lần lượt triển khai hai chiến lược chiến tranh ở miền Nam Việt Nam là chiến lược chiến tranh đặc biệt và chiến tranh cục bộ.",
+        "b": "Nhân dân Việt Nam đánh thắng các bước leo thang chiến tranh của Mỹ (1961–1968) góp phần làm phá sản chiến lược toàn cầu \"phản ứng linh hoạt\" dưới thời Tổng thống Truman.",
+        "c": "Các chiến lược chiến tranh Mỹ thực hiện ở miền Nam Việt Nam nhằm ngăn chặn ảnh hưởng của chủ nghĩa xã hội xuống khu vực Đông Nam Á.",
+        "d": "Theo đoạn tư liệu, Mỹ thực hiện âm mưu xâm lược và thống trị miền Nam Việt Nam bằng hình thức thực dân kiểu mới."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": false,
+        "c": true,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Đúng, từ năm 1961 đến năm 1968, đế quốc Mỹ lần lượt triển khai hai chiến lược chiến tranh ở miền Nam Việt Nam là chiến lược chiến tranh đặc biệt và chiến tranh cục bộ.",
+        "b": "Sai, chiến lược toàn cầu \"phản ứng linh hoạt\" thuộc thời kỳ Tổng thống John F. Kennedy, không phải Tổng thống Truman.",
+        "c": "Đúng, các chiến lược chiến tranh Mỹ thực hiện ở miền Nam Việt Nam nhằm ngăn chặn ảnh hưởng của chủ nghĩa xã hội xuống khu vực Đông Nam Á.",
+        "d": "Đúng, theo đoạn tư liệu, Mỹ thực hiện âm mưu xâm lược và thống trị miền Nam Việt Nam bằng hình thức thực dân kiểu mới."
+      }
+    },
+    {
+      "question_id": 26,
+      "question": "Cho đoạn tư liệu sau đây:\n\n\"Trước thắng lợi vẻ vang của Liên Xô đánh tan đạo quân Quan Đông của phát xít Nhật, buộc Nhật phải đầu hàng không điều kiện, Đảng ta đã kịp thời nắm lấy thời cơ có một không hai để phát động cao trào tổng khởi nghĩa, dựa vào lực lượng chính trị của đông đảo quần chúng ở thành thị và nông thôn kết hợp với các lực lượng vũ trang cách mạng, đập tan các cơ quan đầu não của địch ở thị xã và các thành phố, xoá bỏ hoàn toàn hệ thống cai trị của địch ở nông thôn, giành chính quyền trong phạm vi cả nước.\"\n(Lê Duẩn, Đời là những đóa hoa đỏ, vì độc lập, tự do, vì chủ nghĩa xã hội, tin rằng giành được thắng lợi mới, NXB Sự thật, Hà Nội, 1976, tr. 48)",
+      "statements": {
+        "a": "Trong Cách mạng tháng Tám (1945), lực lượng chính trị giữ vai trò quyết định, lực lượng vũ trang giữ vai trò quan trọng đưa cách mạng giành thắng lợi.",
+        "b": "Kẻ thù chính của nhân dân Việt Nam trong Cách mạng tháng Tám là thực dân Pháp và phát xít Nhật.",
+        "c": "Theo đoạn tư liệu, Nhật đầu hàng Đồng minh không điều kiện là \"thời cơ có một không hai\" để Đảng phát động tổng khởi nghĩa giành chính quyền.",
+        "d": "Đặc điểm nổi bật về phương thức giành chính quyền trong Cách mạng tháng Tám (1945) ở Việt Nam là cách mạng bạo lực, có kết hợp đấu tranh chính trị và vũ trang."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": false,
+        "c": true,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Đúng, trong Cách mạng tháng Tám (1945), lực lượng chính trị giữ vai trò quyết định, lực lượng vũ trang giữ vai trò quan trọng đưa cách mạng giành thắng lợi.",
+        "b": "Sai, sau sự kiện Nhật đảo chính Pháp (9/3/1945), kẻ thù chính của Việt Nam là phát xít Nhật.",
+        "c": "Đúng, theo đoạn tư liệu, Nhật đầu hàng Đồng minh không điều kiện là \"thời cơ có một không hai\" để Đảng phát động tổng khởi nghĩa giành chính quyền.",
+        "d": "Đúng, đặc điểm nổi bật về phương thức giành chính quyền trong Cách mạng tháng Tám (1945) ở Việt Nam là cách mạng bạo lực, có kết hợp đấu tranh chính trị và vũ trang."
+      }
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "phan_i": [
+    {
+      "question_id": 1,
+      "source": "Quảng Bình",
+      "question_text": "Phương án nào dưới đây là nguyên nhân thắng lợi của Cách mạng tháng Tám năm 1945 ở Việt Nam?",
+      "options": {
+        "A": "Đảng đã chủ trì hội nghị đại biểu toàn quốc ở Tân Trào.",
+        "B": "Cách mạng Việt Nam được sự ủng hộ của nhân dân tiến bộ thế giới.",
+        "C": "Ta đã xây dựng hậu phương quốc tế ngày càng vững chắc.",
+        "D": "Đảng đã đưa ra đường lối cách mạng đúng đắn, sáng tạo."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Cách mạng tháng Tám năm 1945.",
+        "solution": "Đảng đã đưa ra đường lối cách mạng đúng đắn, sáng tạo là nguyên nhân thắng lợi của Cách mạng tháng Tám năm 1945 ở Việt Nam."
+      }
+    },
+    {
+      "question_id": 2,
+      "source": "Quảng Bình",
+      "question_text": "Phương án nào dưới đây không phải là nguyên nhân thắng lợi của cuộc kháng chiến chống thực dân Pháp (1945-1954) ở Việt Nam?",
+      "options": {
+        "A": "Ngay từ đầu đã được nhà nước Liên Xô giúp đỡ.",
+        "B": "Đảng có đường lối kháng chiến đúng đắn, sáng tạo.",
+        "C": "Nhân dân ta yêu nước, dám hy sinh vì độc lập của dân tộc.",
+        "D": "Sự ủng hộ của nhân dân tiến bộ Pháp và thế giới."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "Loại trừ phương án.",
+        "solution": "Sau Cách mạng tháng Tám năm 1945, nước Việt Nam Dân chủ Cộng hòa ra đời nhưng chưa được các nước công nhận và thiết lập quan hệ ngoại giao. Năm 1950, các nước lần lượt thiết lập quan hệ ngoại giao với Việt Nam trong đó có Liên Xô. Vì vậy, 'ngay từ đầu đã được nhà nước Liên Xô giúp đỡ' không phải là nguyên nhân thắng lợi của cuộc kháng chiến chống thực dân Pháp (1945–1954) ở Việt Nam."
+      }
+    },
+    {
+      "question_id": 3,
+      "source": "Quảng Bình",
+      "question_text": "Một trong những địa bàn ác liệt trong cuộc chiến tranh bảo vệ Tổ quốc ở biên giới phía Bắc (1979–1989) là:",
+      "options": {
+        "A": "Mường Phay",
+        "B": "Móng Cái",
+        "C": "Vị Xuyên",
+        "D": "Bắc Sơn"
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung đấu tranh bảo vệ biên giới phía Bắc.",
+        "solution": "Một trong những địa bàn ác liệt trong cuộc chiến tranh bảo vệ Tổ quốc ở biên giới phía Bắc (1979–1989) là Vị Xuyên (Hà Giang)."
+      }
+    },
+    {
+      "question_id": 4,
+      "source": "Quảng Bình",
+      "question_text": "Đặc điểm lớn của quan hệ quốc tế trong thời kỳ Chiến tranh lạnh là gì?",
+      "options": {
+        "A": "Các nước tham chiến nô dịch, bóc lột các nước bại trận.",
+        "B": "Xung đột quyết liệt giữa các đế quốc về thị trường.",
+        "C": "Có sự phân tuyến triệt để giữa các nước tư bản chủ nghĩa.",
+        "D": "Sự đối đầu căng thẳng giữa hai phe tư bản chủ nghĩa và xã hội chủ nghĩa."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "Giải thích.",
+        "solution": "Chiến tranh Lạnh là sự đối đầu giữa hai phe tư bản chủ nghĩa và xã hội chủ nghĩa do Mỹ và Liên Xô đứng đầu mỗi phe. Đặc điểm lớn nhất của Chiến tranh Lạnh là quan hệ quốc tế luôn trong tình trạng đối đầu căng thẳng, đẩy thế giới vào nguy cơ xuất hiện chiến tranh thế giới thứ ba."
+      }
+    },
+    {
+      "question_id": 5,
+      "source": "Quảng Bình",
+      "question_text": "Điền từ còn thiếu trong nhận định: 'Công cuộc Đổi mới ở Việt Nam được tiến hành xuất phát từ yêu cầu [...] của sự nghiệp xây dựng chủ nghĩa xã hội, phát triển đất nước'.",
+      "options": {
+        "A": "hoàn thành sớm",
+        "B": "kết thúc nhanh",
+        "C": "sống còn",
+        "D": "giải quyết những tồn dư"
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Công cuộc Đổi mới ở Việt Nam (1986)",
+        "solution": "Công cuộc Đổi mới ở Việt Nam được tiến hành xuất phát từ yêu cầu sống còn của sự nghiệp xây dựng chủ nghĩa xã hội, phát triển đất nước."
+      }
+    }
+  ],
+  "phan_ii": [
+    {
+      "question_id": 25,
+      "question": "Bàn về thắng lợi của Cách mạng tháng Tám, Hồ Chí Minh đã viết: 'Vì sao có cuộc thắng lợi ấy? Một phần là vì tình hình quốc tế thuận tiện cho ta. Nhất là vì lực lượng của cuộc toàn dân đoàn kết. Tất cả các dân tộc, các giai cấp, các địa phương, các tôn giáo đều nhất tâm theo lá cờ Việt Minh để tranh lại quyền độc lập cho Tổ quốc. Lực lượng toàn dân là lực lượng vô địch hơn hết. Không ai thắng được lực lượng đó.' (Hồ Chí Minh toàn tập, tập 4, Nxb Chính trị quốc gia, Hà Nội, 2010, tr 19)",
+      "statements": {
+        "a": "\"Tình hình quốc tế thuận tiện\" được nhắc trong đoạn trích là Liên Xô, Trung Quốc giúp đỡ ta.",
+        "b": "Sức mạnh đoàn kết của toàn dân là một trong những yếu tố quan trọng làm nên thắng lợi của Cách mạng tháng Tám.",
+        "c": "Trong công cuộc xây dựng và phát triển đất nước hiện nay, Nhà nước ta tiếp tục củng cố khối đại đoàn kết toàn dân trong Mặt trận Việt Minh.",
+        "d": "Cách mạng tháng Tám năm 1945 đã để lại bài học kinh nghiệm về nhận biết thời cơ và chấp nhận cơ hội."
+      },
+      "answer_boolean_map": {
+        "a": false,
+        "b": true,
+        "c": false,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Sai, \"Tình hình quốc tế thuận tiện\" là Nhật đầu hàng Đồng minh không điều kiện.",
+        "b": "Đúng, sức mạnh đoàn kết của toàn dân là một trong những yếu tố quan trọng làm nên thắng lợi của Cách mạng tháng Tám.",
+        "c": "Sai, trong công cuộc xây dựng và phát triển đất nước hiện nay, Nhà nước ta tiếp tục củng cố khối đại đoàn kết toàn dân trong Mặt trận Tổ quốc.",
+        "d": "Đúng, Cách mạng tháng Tám năm 1945 đã để lại bài học kinh nghiệm về nhận biết thời cơ và chấp nhận cơ hội."
+      }
+    }
+  ]
+}

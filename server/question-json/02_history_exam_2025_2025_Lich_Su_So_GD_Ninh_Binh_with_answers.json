@@ -1,0 +1,130 @@
+{
+  "phan_i": [
+    {
+      "question_id": 1,
+      "source": "Ninh Binh",
+      "question_text": "Thắng lợi của nhân dân Việt Nam trong Cách mạng tháng Tám năm 1945 có ý nghĩa như thế nào đối với thế giới?",
+      "options": {
+        "A": "Góp phần làm đảo lộn và đưa đến thất bại chiến lược toàn cầu của Mỹ.",
+        "B": "Cổ vũ các dân tộc thuộc địa và phụ thuộc đấu tranh tự giải phóng.",
+        "C": "Làm tan ra hoàn toàn hệ thống thuộc địa của chủ nghĩa thực dân.",
+        "D": "Xây dựng vững chắc thành trì của phong trào giải phóng dân tộc."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "Xem lại nội dung Cách mạng tháng Tám năm 1945.",
+        "solution": "Ý nghĩa của thắng lợi trong Cách mạng tháng Tám năm 1945 đối với thế giới là cổ vũ các dân tộc thuộc địa và phụ thuộc trên thế giới đấu tranh tự giải phóng, khẳng định tinh thần độc lập và quyền tự quyết."
+      }
+    },
+    {
+      "question_id": 2,
+      "source": "Ninh Binh",
+      "question_text": "Từ ngày 25-4-1945 đến ngày 26-6-1945, Hội nghị quốc tế họp tại Xan Phran-xi-xcô (Mỹ) với sự tham gia của đại biểu 50 nước đã thông qua văn kiện nào sau đây?",
+      "options": {
+        "A": "Tuyên ngôn Liên hợp quốc.",
+        "B": "Tuyên ngôn Quốc tế Nhân quyền.",
+        "C": "Hiến chương Liên hợp quốc.",
+        "D": "Hiệp ước hòa bình Xan Phran-xi-xcô."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "Xem lại nội dung Liên hợp quốc.",
+        "solution": "Hội nghị quốc tế tại Xan Phran-xi-xcô (1945) đã thông qua Hiến chương Liên hợp quốc, đặt nền móng cho tổ chức Liên hợp quốc nhằm giữ gìn hòa bình và an ninh thế giới."
+      }
+    },
+    {
+      "question_id": 3,
+      "source": "Ninh Binh",
+      "question_text": "Trong xu thế đa cực, trung tâm quyền lực nào đã vươn lên mạnh mẽ để trở thành nền kinh tế lớn thứ hai thế giới (từ năm 2010)?",
+      "options": {
+        "A": "Liên bang Nga.",
+        "B": "Trung Quốc.",
+        "C": "Nhật Bản.",
+        "D": "Ấn Độ."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "Xem lại nội dung Trật tự thế giới sau Chiến tranh Lạnh.",
+        "solution": "Trong xu thế đa cực, Trung Quốc vươn lên mạnh mẽ, trở thành nền kinh tế lớn thứ hai thế giới kể từ năm 2010 nhờ tốc độ phát triển kinh tế vượt bậc."
+      }
+    },
+    {
+      "question_id": 4,
+      "source": "Ninh Binh",
+      "question_text": "Trong những thập niên đầu của thế kỷ XXI, nhân tố nào sẽ còn tiếp tục tạo ra những \"đột phá\" và biến chuyển trong cục diện thế giới?",
+      "options": {
+        "A": "Sự vươn lên mạnh mẽ của Nhật Bản và Tây Âu.",
+        "B": "Cuộc chạy đua vũ trang giữa Mỹ và Liên Xô.",
+        "C": "Sự phát triển của cách mạng khoa học - kỹ thuật.",
+        "D": "Mỹ khống chế và chi phối Trung Quốc, Tây Âu."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "Phân tích các yếu tố tạo ra đột phá trong cục diện thế giới.",
+        "solution": "Sự phát triển nhanh chóng của công nghệ và khoa học kỹ thuật sẽ tiếp tục tạo ra những biến chuyển lớn trong cục diện thế giới trong những thập niên đầu thế kỷ XXI."
+      }
+    },
+    {
+      "question_id": 5,
+      "source": "Ninh Binh",
+      "question_text": "Trong cuộc kháng chiến chống thực dân Pháp xâm lược (1945–1954), cuộc chiến đấu của nhân dân Nam Bộ đã giáng đòn đầu tiên vào kế hoạch chiến tranh nào của thực dân Pháp?",
+      "options": {
+        "A": "\"Việt Nam hóa chiến tranh\".",
+        "B": "\"Chiến tranh chớp nhoáng\".",
+        "C": "\"Chiếm đóng từng gói nhỏ\".",
+        "D": "\"Đánh nhanh, thắng nhanh\"."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "Xem lại nội dung Cuộc kháng chiến chống thực dân Pháp xâm lược (1945–1954).",
+        "solution": "Cuộc chiến đấu của nhân dân Nam Bộ vào cuối năm 1945 đã giáng đòn đầu tiên vào kế hoạch 'Đánh nhanh, thắng nhanh' của thực dân Pháp, buộc Pháp phải kéo dài chiến tranh và thay đổi chiến lược."
+      }
+    }
+  ],
+  "phan_ii": [
+    {
+      "question_id": 25,
+      "question": "Cho những thông tin trong bảng sau đây, chọn đúng hoặc sai",
+      "statements": {
+        "a": "Hội nghị I-an-ta (2-1945) được xem là hội nghị khởi đầu cho việc hình thành một trật tự thế giới mới sau khi Chiến tranh thế giới thứ hai kết thúc trên toàn thế giới.",
+        "b": "Phát biểu của Tổng thống Mỹ G. Bút-so trong cuộc gặp với Tổng Bí thư Đảng Cộng sản Liên Xô M. Goóc-ba-chốp (12-1989) đánh dấu kết thúc hoàn toàn cuộc đối đầu quân sự tại châu Âu.",
+        "c": "Việc Mỹ đề ra 'Kế hoạch Mác-san' còn Liên Xô và các nước Đông Âu thành lập Hội đồng tương trợ kinh tế (SEV) đã tạo ra sự đối đầu gay gắt về chính trị, quân sự giữa hai hệ thống xã hội đối lập.",
+        "d": "Tổng thống Mỹ R. Nich-xơn có chuyến thăm chính thức đầu tiên tới Liên Xô đã mở đầu cho sự xói mòn và dẫn đến sụp đổ của trật tự thế giới hai cực I-an-ta."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": false,
+        "c": true,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Đúng, Hội nghị I-an-ta (2-1945) được xem là hội nghị khởi đầu cho việc hình thành một trật tự thế giới mới sau khi Chiến tranh thế giới thứ hai kết thúc, vì tại hội nghị này, các cường quốc đã quyết định nhiều vấn đề quan trọng, định hình lại trật tự quốc tế.",
+        "b": "Sai, phát biểu của Tổng thống Mỹ G. Bút-so trong cuộc gặp với Tổng Bí thư Đảng Cộng sản Liên Xô M. Goóc-ba-chốp vào tháng 12 năm 1989 đánh dấu kết thúc Chiến tranh Lạnh, nhưng không phải là kết thúc hoàn toàn cuộc đối đầu quân sự tại châu Âu. Cuộc đối đầu này thực sự kết thúc với sự sụp đổ của Bức tường Berlin (1989) và sự tan rã của Liên Xô (1991).",
+        "c": "Đúng, việc Mỹ đề ra 'Kế hoạch Mác-san' và Liên Xô cùng các nước Đông Âu thành lập Hội đồng tương trợ kinh tế (SEV) là các biện pháp đã tạo ra sự đối đầu gay gắt về chính trị và quân sự giữa hai hệ thống xã hội đối lập: tư bản chủ nghĩa và xã hội chủ nghĩa.",
+        "d": "Đúng, Tổng thống Mỹ R. Nich-xơn có chuyến thăm chính thức đầu tiên tới Liên Xô vào năm 1972, điều này mở đầu cho sự xói mòn trật tự thế giới hai cực I-an-ta, góp phần làm giảm căng thẳng trong Chiến tranh Lạnh, và cuối cùng dẫn đến sự tan rã của trật tự này."
+      }
+    },
+    {
+      "question_id": 26,
+      "question": "Cho đoạn tư liệu sau đây: \"Sau năm 1945, các quốc gia độc lập ở Đông Nam Á lần lượt ra đời, đã có những sáng kiến về việc thành lập các tổ chức khu vực như ASA (Ma-lai-xi-a, Thái Lan, Phi-lip-pin) năm 1961, MAPHILINDO (Ma-lai-xi-a, Phi-lip-pin, In-đô-nê-xi-a) năm 1963, song đều không thành công do sự tranh chấp lãnh thổ giữa các nước thành viên. Trật tự thế giới hai cực và cuộc Chiến tranh lạnh kéo dài đã ảnh hưởng đến khu vực Đông Nam Á. Tình hình càng trở nên căng thẳng hơn do sự can thiệp của Mỹ trong cuộc chiến tại Việt Nam. Năm nước Đông Nam A là Thái Lan, In-đô-nê-xi-a, Ma-lai-xi-a, Xin-ga-po và Phi-lip-pin lo ngại có thể sẽ bị lôi cuốn vào chiến tranh và ảnh hưởng của phong trào cách mạng Đông Dương lan rộng đã quyết định thành lập một tổ chức khu vực. Ngày 08-08-1967, Hiệp hội các quốc gia Đông Nam A-ASEAN đã chính thức ra đời.\"",
+      "statements": {
+        "a": "Trong bối cảnh khu vực và quốc tế có nhiều biến động, yêu cầu hợp tác để cùng phát triển giữa các nước trong khu vực Đông Nam A là yêu cầu tất yếu.",
+        "b": "Tổ chức Liên hợp quốc (UN) và Hiệp hội các quốc gia Đông Nam A (ASEAN) là hai tổ chức hợp tác khu vực ra đời sớm nhất và thành công nhất.",
+        "c": "Ma-lai-xi-a, Phi-lip-pin, Thái Lan, In-đô-nê-xi-a là những quốc gia sớm có ý tưởng về việc thành lập một tổ chức khu vực ở Đông Nam A.",
+        "d": "Đoạn tư liệu trên đề cập đến quá trình hình thành và quá trình phát triển của Hiệp hội các quốc gia Đông Nam A (ASEAN)."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": false,
+        "c": true,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Đúng, trong bối cảnh khu vực và quốc tế có nhiều biến động, việc hợp tác để cùng phát triển giữa các nước Đông Nam A là yêu cầu tất yếu, đặc biệt khi các nước lo ngại về ảnh hưởng của chiến tranh và phong trào cách mạng.",
+        "b": "Sai, Liên hợp quốc (UN) là một tổ chức quốc tế toàn cầu, không phải khu vực, còn ASEAN là tổ chức khu vực Đông Nam A. Hai tổ chức này có sự ra đời và mục tiêu khác nhau, và trong đoạn tư liệu không nói ASEAN là tổ chức hợp tác khu vực ra đời sớm nhất hay thành công nhất.",
+        "c": "Đúng, các quốc gia Ma-lai-xi-a, Phi-lip-pin, Thái Lan và In-đô-nê-xi-a là những nước đã tham gia vào các sáng kiến khu vực trước khi ASEAN chính thức ra đời, như ASA (1961) và MAPHILINDO (1963), mặc dù chúng không thành công.",
+        "d": "Đúng, đoạn tư liệu trên đề cập đến quá trình hình thành và sự ra đời của Hiệp hội các quốc gia Đông Nam A (ASEAN) vào ngày 08-08-1967, trong bối cảnh căng thẳng và ảnh hưởng của chiến tranh tại khu vực."
+      }
+    }
+  ]
+}

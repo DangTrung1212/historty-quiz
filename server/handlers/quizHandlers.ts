@@ -10,7 +10,9 @@ export function getTracNghiem1(req: any, res: any) {
   let allQuestions: any[] = [];
   try {
     const files = fs.readdirSync(dirPath).filter(f => f.endsWith('.json')).sort();
-    const selectedFiles = files.slice(0, 3);
+    const splitPoint = Math.ceil(files.length / 2);
+    const selectedFiles = files.slice(0, splitPoint);
+    
     for (const file of selectedFiles) {
       const filePath = path.join(dirPath, file);
       const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -31,7 +33,9 @@ export function getTracNghiem2(req: any, res: any) {
   let allQuestions: any[] = [];
   try {
     const files = fs.readdirSync(dirPath).filter(f => f.endsWith('.json')).sort();
-    const selectedFiles = files.slice(3, 7);
+    const splitPoint = Math.ceil(files.length / 2);
+    const selectedFiles = files.slice(splitPoint);
+    
     for (const file of selectedFiles) {
       const filePath = path.join(dirPath, file);
       const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));

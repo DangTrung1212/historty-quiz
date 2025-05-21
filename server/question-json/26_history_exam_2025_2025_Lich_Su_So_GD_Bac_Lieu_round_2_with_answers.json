@@ -1,0 +1,188 @@
+{
+  "phan_i": [
+    {
+      "question_id": 1,
+      "source": "Bắc Ninh",
+      "question_text": "Một trong những thành phần kinh tế mới được phép hoạt động ở Việt Nam từ sau khi đường lối đổi mới được thực thi là",
+      "options": {
+        "A": "kinh tế quốc doanh.",
+        "B": "có vốn đầu tư nước ngoài.",
+        "C": "kinh tế nhà nước",
+        "D": "kinh tế tập thể, hợp tác xã."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung công cuộc đổi mới ở Việt Nam (1986).",
+        "solution": "Một trong những thành phần kinh tế mới được phép hoạt động ở Việt Nam từ sau khi đường lối đổi mới được thực thi là có vốn đầu tư nước ngoài."
+      }
+    },
+    {
+      "question_id": 2,
+      "source": "Bắc Ninh",
+      "question_text": "Sự kiện nào sau đây đánh dấu cuộc kháng chiến chống thực dân Pháp của nhân dân Việt Nam (1945-1954) hoàn toàn thắng lợi?",
+      "options": {
+        "A": "Hiệp định Genève được ký kết.",
+        "B": "Chiến dịch Điện Biên Phủ thắng.",
+        "C": "Hiệp định Paris được ký kết.",
+        "D": "Pháp mở cuộc đàm phán tại Genève."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung cuộc kháng chiến chống thực dân Pháp (1945-1954).",
+        "solution": "Hiệp định Genève được ký kết đánh dấu cuộc kháng chiến chống thực dân Pháp của nhân dân Việt Nam (1945 - 1954) hoàn toàn thắng lợi."
+      }
+    },
+    {
+      "question_id": 3,
+      "source": "Bắc Ninh",
+      "question_text": "Nội dung nào sau đây không phải là một trong những thách thức của Cộng đồng ASEAN?",
+      "options": {
+        "A": "Chưa có vị thế trong khu vực và trên trường quốc tế.",
+        "B": "Sự chênh lệch về trình độ phát triển giữa các nước.",
+        "C": "Tình hình Biển Đông ở những thời điểm phức tạp.",
+        "D": "Vấn đề phạm vi chủ quyền lãnh thổ gia một số nước."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "Loại trừ phương án.",
+        "solution": "Chưa có vị thế trong khu vực và trên trường quốc tế không phải là một trong những thách thức của Cộng đồng ASEAN."
+      }
+    },
+    {
+      "question_id": 4,
+      "source": "Bắc Ninh",
+      "question_text": "Sau thất bại của chiến lược Chiến tranh cục bộ (1965-1968) ở miền Nam Việt Nam, Mỹ chuyển sang chiến lược",
+      "options": {
+        "A": "\"Chiến tranh đơn phương\".",
+        "B": "\"Việt Nam hóa chiến tranh\".",
+        "C": "\"Chiến tranh đặc biệt tăng cường\".",
+        "D": "\"Chiến tranh đặc biệt\"."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung kháng chiến chống Mỹ, cứu nước (1954-1975).",
+        "solution": "Sau thất bại của chiến lược Chiến tranh cục bộ (1965 - 1968) ở miền Nam Việt Nam, Mỹ chuyển sang chiến lược \"Việt Nam hóa chiến tranh\"."
+      }
+    },
+    {
+      "question_id": 5,
+      "source": "Bắc Ninh",
+      "question_text": "So với chiến lược \"Chiến tranh đặc biệt\" (1961-1965), chiến lược \"Chiến tranh cục bộ\" (1965-1968) có điểm khác biệt về",
+      "options": {
+        "A": "phương tiện chiến tranh.",
+        "B": "vai trò của cố vấn chỉ huy.",
+        "C": "lực lượng tham chiến.",
+        "D": "bản chất chiến lược."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "So sánh.",
+        "solution": "So với chiến lược \"Chiến tranh đặc biệt\" (1961-1965), chiến lược \"Chiến tranh cục bộ\" (1965-1968) có điểm khác biệt về lực lượng tham chiến. Lực lượng tham chiến trong chiến lược \"Chiến tranh đặc biệt\" là quân đội Sài Gòn. Lực lượng tham chiến trong chiến lược \"Chiến tranh cục bộ\" là quân Mỹ và quân các nước đồng minh Mỹ."
+      }
+    },
+    {
+      "question_id": 6,
+      "source": "Bắc Ninh",
+      "question_text": "Trong công cuộc Đổi mới, một trong những thành tựu của Việt Nam về hội nhập quốc tế là",
+      "options": {
+        "A": "xây dựng các quan hệ đối tác chiến lược, đối tác toàn diện với nhiều quốc gia.",
+        "B": "thực hiện thành công công cuộc xóa đói, giảm nghèo.",
+        "C": "xây dựng Nhà nước pháp quyền xã hội chủ nghĩa vững mạnh.",
+        "D": "tinh gọn tổ chức bộ máy của hệ thống chính trị."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung thành tựu của công cuộc đổi mới ở Việt Nam.",
+        "solution": "Trong công cuộc Đổi mới, một trong những thành tựu của Việt Nam về hội nhập quốc tế là xây dựng các quan hệ đối tác chiến lược, đối tác toàn diện với nhiều quốc gia."
+      }
+    },
+    {
+      "question_id": 7,
+      "source": "Bắc Ninh",
+      "question_text": "Từ sau năm 1986, bộ máy Nhà nước được sắp xếp theo hướng",
+      "options": {
+        "A": "giảm thiểu biên chế tối đa.",
+        "B": "chuyển đổi sở hữu quốc gia.",
+        "C": "đơn giản và hiệu quả.",
+        "D": "tinh gọn và hiệu quả."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung công cuộc đổi mới (1986) ở Việt Nam.",
+        "solution": "Từ sau năm 1986, bộ máy Nhà nước được sắp xếp theo hướng tinh gọn và hiệu quả."
+      }
+    },
+    {
+      "question_id": 8,
+      "source": "Bắc Ninh",
+      "question_text": "Quốc gia nào sau đây không phải là một trong những thành viên sáng lập Hiệp hội các quốc gia Đông Nam Á (ASEAN)?",
+      "options": {
+        "A": "Thái Lan",
+        "B": "Singapore",
+        "C": "Việt Nam",
+        "D": "Malaysia"
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "Loại trừ phương án.",
+        "solution": "Việt Nam không phải là một trong những thành viên sáng lập Hiệp hội các quốc gia Đông Nam Á (ASEAN)."
+      }
+    },
+    {
+      "question_id": 9,
+      "source": "Bắc Ninh",
+      "question_text": "Nội dung nào sau đây phản ánh không đúng ý nghĩa của công cuộc Đổi mới đất nước ở Việt Nam?",
+      "options": {
+        "A": "Đưa nền kinh tế Việt Nam hội nhập vào nền kinh tế thế giới.",
+        "B": "Đưa nền kinh tế Việt Nam hội nhập vào nền kinh tế của khối xã hội chủ nghĩa.",
+        "C": "Giúp cho nền kinh tế Việt Nam vận hành đúng theo quy luật thị trường.",
+        "D": "Giải phóng sức sản xuất, cải thiện đáng kể đời sống của nhân dân."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "Loại trừ phương án.",
+        "solution": "Đưa nền kinh tế Việt Nam hội nhập vào nền kinh tế của khối xã hội chủ nghĩa phản ánh không đúng ý nghĩa của công cuộc Đổi mới đất nước ở Việt Nam."
+      }
+    },
+    {
+      "question_id": 10,
+      "source": "Bắc Ninh",
+      "question_text": "Theo quyết định của Hội nghị Ianta, các vùng ảnh hưởng của Liên Xô không thuộc phạm vi",
+      "options": {
+        "A": "miền Đông nước Đức",
+        "B": "phía Bắc vĩ tuyến 18 trên bán đảo Triều Tiên.",
+        "C": "Đông Nam Á, Nam Á, Tây Á",
+        "D": "vùng Đông Âu."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Hội nghị Ianta.",
+        "solution": "Theo quyết định của Hội nghị Ianta, các vùng ảnh hưởng của Liên Xô không thuộc phạm vi Đông Nam Á, Nam Á, Tây Á."
+      }
+    }
+  ],
+  "phan_ii": [
+    {
+      "question_id": 25,
+      "question": "Đọc đoạn tài liệu sau đây:\n\n\"Tuyên bố ASEAN nêu rõ mục đích thành lập của ASEAN：\n- Thúc đẩy sự tăng trưởng kinh tế， tiến bộ xã hội và phát triển văn hóa trong khu vực thông qua các nỗ lực chung trên tinh thần bình đẳng và hợp tác nhằm tăng cường cơ sở cho một Cộng đồng các quốc gia Đông Nam Á hòa bình và thịnh vượng.\n- Thúc đẩy hòa bình và ổn định khu vực bằng việc tôn trọng công lý và nguyên tắc pháp luật trong quan hệ giữa các quốc gia trong vùng và tuân thủ các nguyên tắc của Hiến chương Liên hợp quốc.\n- Thúc đẩy sự hợp tác tích cực và giúp đỡ lẫn nhau trong các vấn đề cùng quan tâm trong các lĩnh vực kinh tế， xã hội， văn hóa，khoa học - kỹ thuật và hành chính。\"。\n\n(Theo Tuyên bố ASEAN， Hiệp hội các quốc gia Đông Nam Á (ASEAN)， NXB Chính trị quốc gia， Hà Nội， 1998， trang 15， 16)\n\na) Mối quan hệ giữa Việt Nam và ASEAN là một trong những trụ cột quan trọng của chính sách đối ngoại của Việt Nam， mang lại nhiều lợi ích cho cả hai bên và đóng góp vào hòa bình và phát triển trong khu vực Đông Nam Á。\n\nb) Một trong những mục tiêu của ASEAN là tôn trọng công lý và nguyên tắc pháp luật trong quan hệ giữa các quốc gia trong khu vực， phù hợp với Hiến chương Liên hợp quốc。\n\nc) Tài liệu nêu về vấn đề thúc đẩy sự tăng trưởng kinh tế， tiến bộ xã hội và phát triển văn hóa trong khu vực。\n\nd) Hiệp hội các quốc gia Đông Nam Á (ASEAN) khi mới thành lập (1967) không đề ra mục đích， nhiệm vụ xây dựng một cộng đồng Đông Nam Á hòa bình và thịnh vượng。",
+      "statements": {
+        "a": "Mối quan hệ giữa Việt Nam và ASEAN là một trong những trụ cột quan trọng của chính sách đối ngoại của Việt Nam， mang lại nhiều lợi ích cho cả hai bên và đóng góp vào hòa bình và phát triển trong khu vực Đông Nam Á。",
+        "b": "Một trong những mục tiêu của ASEAN là tôn trọng công lý và nguyên tắc pháp luật trong quan hệ giữa các quốc gia trong khu vực， phù hợp với Hiến chương Liên hợp quốc。",
+        "c": "Tài liệu nêu về vấn đề thúc đẩy sự tăng trưởng kinh tế， tiến bộ xã hội và phát triển văn hóa trong khu vực。",
+        "d": "Hiệp hội các quốc gia Đông Nam Á (ASEAN) khi mới thành lập (1967) không đề ra mục đích， nhiệm vụ xây dựng một cộng đồng Đông Nam Á hòa bình và thịnh vượng。"
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": true,
+        "c": true,
+        "d": false
+      },
+      "explanation_map": {
+        "a": "Đúng, mối quan hệ giữa Việt Nam và ASEAN là một trong những trụ cột quan trọng của chính sách đối ngoại của Việt Nam， mang lại nhiều lợi ích cho cả hai bên và đóng góp vào hòa bình và phát triển trong khu vực Đông Nam Á。",
+        "b": "Đúng, một trong những mục tiêu của ASEAN là tôn trọng công lý và nguyên tắc pháp luật trong quan hệ giữa các quốc gia trong khu vực， phù hợp với Hiến chương Liên hợp quốc。",
+        "c": "Đúng, tài liệu nêu về vấn đề thúc đẩy sự tăng trưởng kinh tế， tiến bộ xã hội và phát triển văn hóa trong khu vực。",
+        "d": "Sai, ý tưởng xây dựng Cộng đồng ASEAN đã khởi nguồn từ khi ASEAN thành lập。"
+      }
+    }
+  ]
+}

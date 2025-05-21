@@ -1,0 +1,478 @@
+{
+  "phan_i": [
+    {
+      "question_id": 1,
+      "source": "Unknown",
+      "question_text": "Đâu không phải là hoạt động thực thi chủ quyền đối với quần đảo Hoàng Sa và quần đảo Trường Sa?",
+      "options": {
+        "A": "Tấn công các đảo Gạc Ma.",
+        "B": "Xây bia chủ quyền.",
+        "C": "Đưa dân ra sinh sống trên các đảo.",
+        "D": "Tổ chức triển lãm hiện vật."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "Xem lại nội dung bảo vệ chủ quyền biển đảo ở vùng biển Đông.",
+        "solution": "Tấn công các đảo Gạc Ma không phải là hoạt động thực thi chủ quyền đối với quần đảo Hoàng Sa và quần đảo Trường Sa."
+      }
+    },
+    {
+      "question_id": 2,
+      "source": "Unknown",
+      "question_text": "Chiến thắng Phước Long (1-1975) của quân dân Việt Nam cho thấy",
+      "options": {
+        "A": "nhiệm vụ đánh cho 'Mỹ cút' đã hoàn thành.",
+        "B": "quân đội Sài Gòn đã tan rã hoàn toàn.",
+        "C": "khả năng can thiệp trở lại của Mỹ là rất cao.",
+        "D": "khả năng thắng lớn của quân giải phóng."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "Giải thích.",
+        "solution": "Chiến thắng Phước Long là dấu mốc quan trọng, thể hiện khả năng chiến thắng lớn của quân giải phóng."
+      }
+    },
+    {
+      "question_id": 3,
+      "source": "Unknown",
+      "question_text": "Quan điểm đổi mới đất nước của Đảng Cộng sản Việt Nam (từ tháng 12/1986) không có nội dung nào dưới đây?",
+      "options": {
+        "A": "Lấy đổi mới kinh tế làm trọng tâm.",
+        "B": "Đổi mới kinh tế gắn với đổi mới chính trị.",
+        "C": "Đổi mới toàn diện và đồng bộ.",
+        "D": "Thay đổi mục tiêu của chủ nghĩa xã hội."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "Loại trừ phương án.",
+        "solution": "Quan điểm đổi mới đất nước của Đảng Cộng sản Việt Nam không có nội dung thay đổi mục tiêu của chủ nghĩa xã hội."
+      }
+    },
+    {
+      "question_id": 4,
+      "source": "Unknown",
+      "question_text": "Một trong những trụ cột của Cộng đồng ASEAN là",
+      "options": {
+        "A": "Vacsava.",
+        "B": "NATO.",
+        "C": "EU.",
+        "D": "AEC."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Cộng đồng ASEAN.",
+        "solution": "Một trong những trụ cột của Cộng đồng ASEAN là AEC (Cộng đồng Kinh tế)."
+      }
+    },
+    {
+      "question_id": 5,
+      "source": "Unknown",
+      "question_text": "Nội dung nào không phải là ý nghĩa của Cách mạng tháng Tám năm 1945 ở Việt Nam?",
+      "options": {
+        "A": "Mở đầu kỷ nguyên mới của dân tộc: kỷ nguyên độc lập, tự do.",
+        "B": "Mở ra một bước ngoặt lớn trong lịch sử dân tộc Việt Nam.",
+        "C": "Buộc Mỹ công nhận các quyền dân tộc cơ bản của Việt Nam.",
+        "D": "Góp phần chiến thắng phát xít trong Chiến tranh thế giới thứ hai."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "Loại trừ phương án.",
+        "solution": "Buộc Mỹ công nhận các quyền dân tộc cơ bản của Việt Nam không phải là ý nghĩa của Cách mạng tháng Tám năm 1945 ở Việt Nam."
+      }
+    },
+    {
+      "question_id": 6,
+      "source": "Unknown",
+      "question_text": "Hiệp hội các quốc gia Đông Nam Á (ASEAN) ra đời năm 1967 là do",
+      "options": {
+        "A": "được sự hỗ trợ, giúp đỡ về mọi mặt từ các nước xã hội chủ nghĩa.",
+        "B": "sự phát triển mạnh mẽ của xu hướng đơn cực trên thế giới.",
+        "C": "Mỹ bắt đầu can thiệp vào cuộc chiến tranh xâm lược Đông Dương.",
+        "D": "muốn hạn chế ảnh hưởng của các cường quốc bên ngoài vào khu vực."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "Giải thích.",
+        "solution": "Hiệp hội các quốc gia Đông Nam Á (ASEAN) ra đời năm 1967 là do muốn hạn chế ảnh hưởng của các cường quốc bên ngoài vào khu vực."
+      }
+    },
+    {
+      "question_id": 7,
+      "source": "Unknown",
+      "question_text": "Sự kiện Việt Nam gia nhập tổ chức ASEAN (1995), đã tác động như thế nào đến sự phát triển của tổ chức này?",
+      "options": {
+        "A": "Dập tan âm mưu nô dịch các nước ASEAN.",
+        "B": "Củng cố nền độc lập ở khu vực Đông Nam Á.",
+        "C": "Đẩy nhanh quá trình phát triển của tổ chức ASEAN.",
+        "D": "Thúc đẩy nhanh quá trình phi thực dân hóa."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "Giải thích.",
+        "solution": "Việc Việt Nam gia nhập tổ chức ASEAN (1995) đã thúc đẩy nhanh quá trình phát triển của tổ chức ASEAN."
+      }
+    },
+    {
+      "question_id": 8,
+      "source": "Unknown",
+      "question_text": "Theo thỏa thuận tại Hội nghị Ianta, khu vực Đông Nam Á thuộc phạm vi ảnh hưởng của",
+      "options": {
+        "A": "Nhật Bản.",
+        "B": "Liên Xô.",
+        "C": "Trung Quốc.",
+        "D": "các nước phương Tây."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "Xem lại nội dung hội nghị Ianta.",
+        "solution": "Theo thỏa thuận tại Hội nghị Ianta, khu vực Đông Nam Á thuộc phạm vi ảnh hưởng của các nước phương Tây."
+      }
+    },
+    {
+      "question_id": 9,
+      "source": "Unknown",
+      "question_text": "Một trong những biểu hiện của xu thế hòa hoãn Đông - Tây xuất hiện đầu những năm 70 thế kỷ XX là",
+      "options": {
+        "A": "Tổ chức Hiệp ước Vacsava thành lập.",
+        "B": "các cuộc chiến tranh cục bộ diễn ra.",
+        "C": "cuộc gặp gỡ cấp cao giữa Xô - Mỹ.",
+        "D": "Thành lập Hiệp ước Bắc Đại Tây Dương."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung quan hệ quốc tế thời kỳ Chiến tranh Lạnh.",
+        "solution": "Một trong những biểu hiện của xu thế hòa hoãn Đông - Tây xuất hiện đầu những năm 70 thế kỷ XX là các cuộc gặp gỡ cấp cao giữa Xô - Mỹ."
+      }
+    },
+    {
+      "question_id": 10,
+      "source": "Unknown",
+      "question_text": "Hội nghị Ianta (2-1945) họp tại Liên Xô không thông qua nội dung nào sau đây?",
+      "options": {
+        "A": "Phân chia phạm vi ảnh hưởng ở châu Âu.",
+        "B": "Phân chia phạm vi ảnh hưởng ở châu Á.",
+        "C": "Tiêu diệt đồng thời các nước phát xít.",
+        "D": "Liên Xô tham gia chiến tranh chống Nhật."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "Loại trừ phương án.",
+        "solution": "Hội nghị Ianta (2-1945) họp tại Liên Xô không thông qua nội dung tiêu diệt đồng thời các nước phát xít."
+      }
+    },
+    {
+      "question_id": 11,
+      "source": "Unknown",
+      "question_text": "Chiến lược 'Việt Nam hóa chiến tranh' của đế quốc Mỹ được tiến hành sau thất bại của chiến lược",
+      "options": {
+        "A": "'Chiến tranh đơn phương'.",
+        "B": "'Chiến tranh đặc biệt'.",
+        "C": "'Đông Dương hóa chiến tranh'.",
+        "D": "'Chiến tranh cục bộ'."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung kháng chiến chống Mỹ cứu nước (1954-1975).",
+        "solution": "Chiến lược 'Việt Nam hóa chiến tranh' của đế quốc Mỹ được tiến hành sau thất bại của chiến lược 'Chiến tranh cục bộ'."
+      }
+    },
+    {
+      "question_id": 12,
+      "source": "Unknown",
+      "question_text": "Một trong những nội dung chính của Cộng đồng Chính trị - An ninh ASEAN (APSC)?",
+      "options": {
+        "A": "Hạn chế ảnh hưởng của các cường quốc đối với khu vực.",
+        "B": "Giải quyết những bất đồng giữa các quốc gia trong khu vực.",
+        "C": "Tạo dựng môi trường hòa bình - an ninh ở khu vực.",
+        "D": "Hợp tác giữa các quốc gia để cùng phát triển."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Cộng đồng ASEAN.",
+        "solution": "Một trong những nội dung chính của Cộng đồng Chính trị - An ninh ASEAN (APSC) là tạo dựng môi trường hòa bình - an ninh ở khu vực."
+      }
+    },
+    {
+      "question_id": 13,
+      "source": "Unknown",
+      "question_text": "Trong đổi mới đất nước, cơ cấu kinh tế theo ngành chuyển dịch mạnh theo hướng",
+      "options": {
+        "A": "nông nghiệp và dịch vụ.",
+        "B": "nông-lâm-ngư nghiệp.",
+        "C": "lâm nghiệp và thủy sản.",
+        "D": "công nghiệp hóa, hiện đại hóa."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung công cuộc đổi mới ở Việt Nam năm 1986.",
+        "solution": "Trong đổi mới đất nước, cơ cấu kinh tế theo ngành chuyển dịch mạnh theo hướng công nghiệp hóa, hiện đại hóa."
+      }
+    },
+    {
+      "question_id": 14,
+      "source": "Unknown",
+      "question_text": "Sau khi chiến tranh lạnh chấm dứt, yếu tố nào sau đây đóng vai trò là trung tâm trong quan hệ quốc tế?",
+      "options": {
+        "A": "Quân sự.",
+        "B": "Chính trị.",
+        "C": "Kinh tế.",
+        "D": "Vũ khí chiến lược."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "Giải thích.",
+        "solution": "Sau khi chiến tranh lạnh chấm dứt, các nước điều chỉnh chiến lược, lấy phát triển kinh tế làm trọng tâm. > Sau khi chiến tranh lạnh chấm dứt, kinh tế đóng vai trò là trung tâm trong quan hệ quốc tế."
+      }
+    },
+    {
+      "question_id": 15,
+      "source": "Unknown",
+      "question_text": "Ngày 13-8-1945 ngay khi nhận những thông tin về việc Nhật sắp đầu hàng Đồng minh, Trung ương Đảng và Tổng bộ Việt Minh đã thành lập",
+      "options": {
+        "A": "Uỷ ban lâm thời khu giải phóng.",
+        "B": "Uỷ ban quân sự Bắc Kỳ.",
+        "C": "Mặt trận Việt Minh.",
+        "D": "Uỷ ban khởi nghĩa toàn quốc."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Cách mạng tháng Tám năm 1945.",
+        "solution": "Ngày 13-8-1945 ngay khi nhận những thông tin về việc Nhật sắp đầu hàng Đồng minh, Trung ương Đảng và Tổng bộ Việt Minh đã thành lập Uỷ ban khởi nghĩa toàn quốc."
+      }
+    },
+    {
+      "question_id": 16,
+      "source": "Unknown",
+      "question_text": "Một trong những thách thức cơ bản đối với Cộng đồng ASEAN về chính trị là",
+      "options": {
+        "A": "mâu thuẫn tôn giáo gay gắt.",
+        "B": "đa dạng về chế độ chính trị.",
+        "C": "tác động từ chủ nghĩa khủng bố.",
+        "D": "tác động từ các nước châu Âu."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "Loại trừ phương án.",
+        "solution": "Một trong những thách thức cơ bản đối với Cộng đồng ASEAN về chính trị là đa dạng về chế độ chính trị."
+      }
+    },
+    {
+      "question_id": 17,
+      "source": "Unknown",
+      "question_text": "Biểu hiện nào dưới đây không phản ánh đúng xu thế phát triển của thế giới từ sau khi Chiến tranh lạnh chấm dứt?",
+      "options": {
+        "A": "Hòa bình, hợp tác và phát triển là xu thế chủ đạo của thế giới.",
+        "B": "Xu thế đa cực xuất hiện trong quan hệ quốc tế.",
+        "C": "Xu thế toàn cầu hóa diễn ra ngày càng mạnh mẽ trên nhiều lĩnh vực.",
+        "D": "Các quốc gia đều tập trung lấy phát triển quân sự làm trọng điểm."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "Loại trừ phương án.",
+        "solution": "Các quốc gia đều tập trung lấy phát triển quân sự làm trọng điểm không phản ánh đúng xu thế phát triển của thế giới từ sau khi Chiến tranh lạnh chấm dứt."
+      }
+    },
+    {
+      "question_id": 18,
+      "source": "Unknown",
+      "question_text": "Đối với cách mạng miền Nam, Hội nghị lần thứ 15 Ban Chấp hành Trung ương Đảng Lao động Việt Nam (tháng 1-1959) chủ trương",
+      "options": {
+        "A": "đẩy mạnh chiến tranh du kích.",
+        "B": "đấu tranh đòi hiệp thương tổng tuyển cử.",
+        "C": "sử dụng bạo lực cách mạng.",
+        "D": "kết hợp đấu tranh chính trị và ngoại giao."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Cách mạng tháng Tám năm 1945.",
+        "solution": "Đối với cách mạng miền Nam, Hội nghị lần thứ 15 Ban Chấp hành Trung ương Đảng Lao động Việt Nam (tháng 1-1959) chủ trương sử dụng bạo lực cách mạng."
+      }
+    },
+    {
+      "question_id": 19,
+      "source": "Unknown",
+      "question_text": "Cách mạng tháng Tám năm 1945 ở Việt Nam nổ ra và giành thắng lợi nhanh chóng, ít đổ máu là do có",
+      "options": {
+        "A": "Đảng Lao động và Chủ tịch Hồ Chí Minh lãnh đạo.",
+        "B": "sự giúp đỡ về vật chất của các nước Đồng minh.",
+        "C": "sự ủng hộ của các nước xã hội chủ nghĩa.",
+        "D": "điều kiện khách quan và chủ quan thuận lợi."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "Giải thích.",
+        "solution": "Cách mạng tháng Tám năm 1945 ở Việt Nam nổ ra và giành thắng lợi nhanh chóng, ít đổ máu là do có điều kiện khách quan và chủ quan thuận lợi."
+      }
+    },
+    {
+      "question_id": 20,
+      "source": "Unknown",
+      "question_text": "Trong sự nghiệp đổi mới đất nước (từ năm 1986), Việt Nam có chủ trương nào sau đây?",
+      "options": {
+        "A": "Mở rộng quan hệ kinh tế đối ngoại.",
+        "B": "Tập trung cải tạo công thương nghiệp.",
+        "C": "Phát triển kinh tế kế hoạch hóa tập trung.",
+        "D": "Xóa bỏ sự tồn tại cả thị trường tự do."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung công cuộc đổi mới ở Việt Nam năm 1945.",
+        "solution": "Trong sự nghiệp đổi mới đất nước (từ năm 1986), Việt Nam có chủ trương mở rộng quan hệ kinh tế đối ngoại."
+      }
+    },
+    {
+      "question_id": 21,
+      "source": "Unknown",
+      "question_text": "Chiến thắng Việt Bắc thu - đông (1947) của quân dân Việt Nam có ý nghĩa là",
+      "options": {
+        "A": "chứng tỏ sự trưởng thành của quân đội Việt Nam.",
+        "B": "giành được quyền chủ động trên chiến trường.",
+        "C": "tạo điều kiện cho ta thắng lớn ở Điện Biên Phủ.",
+        "D": "làm suy yếu lực lượng quân viễn chinh Pháp."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "Loại trừ phương án.",
+        "solution": "Chiến thắng Việt Bắc thu - đông (1947) của quân dân Việt Nam có ý nghĩa là chứng tỏ sự trưởng thành của quân đội Việt Nam."
+      }
+    },
+    {
+      "question_id": 22,
+      "source": "Unknown",
+      "question_text": "Những thành tựu đạt được bước đầu thực hiện công cuộc đổi mới đã",
+      "options": {
+        "A": "đã thực hiện thành công mục tiêu dân giàu, nước mạnh, xã hội công bằng.",
+        "B": "đưa đất nước Việt Nam trở thành một trong những trung tâm kinh tế - tài chính.",
+        "C": "từng bước chuyển dịch cơ cấu kinh tế theo hướng nhà nước nắm độc quyền.",
+        "D": "chứng tỏ đường lối đổi mới của Đảng là đúng đắn, công cuộc đổi mới là phù hợp."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "Loại trừ phương án.",
+        "solution": "Những thành tựu đạt được bước đầu thực hiện công cuộc đổi mới đã chứng tỏ đường lối đổi mới của Đảng là đúng đắn, công cuộc đổi mới là phù hợp."
+      }
+    },
+    {
+      "question_id": 23,
+      "source": "Unknown",
+      "question_text": "Nội dung nào sau đây phản ánh đúng ý nghĩa của cuộc Tổng tiến công và nổi dậy Xuân Mậu Thân 1968 ở Việt Nam?",
+      "options": {
+        "A": "Buộc Mỹ phải quay lại đàm phán ở Paris để bàn về việc chấm dứt chiến tranh.",
+        "B": "Mở ra khả năng sớm kết thúc chiến tranh thông qua con đường đàm phán.",
+        "C": "Chuyển cách mạng miền Nam từ thế giữ gìn lực lượng sang thế tiến công.",
+        "D": "Chứng tỏ lực lượng vũ trang phát triển vượt bậc thay thế lực lượng chính trị."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "Giải thích.",
+        "solution": "Cuộc Tổng tiến công và nổi dậy Xuân 1968 đã buộc Mỹ phải đồng ý đàm phán với ta tại Hội nghị Paris về chấm dứt chiến tranh, lập lại hòa bình ở Việt Nam. Nó mở ra giai đoạn 'vừa đánh, vừa đàm' đồng thời mở ra khả năng kết thúc chiến tranh thông qua con đường đàm phán."
+      }
+    },
+    {
+      "question_id": 24,
+      "source": "Unknown",
+      "question_text": "Một trong những điểm chung của Cách mạng tháng Tám năm 1945 và hai cuộc kháng chiến chống đế quốc xâm lược (1945-1975) ở Việt Nam là có sự kết hợp",
+      "options": {
+        "A": "đấu tranh chính trị, quân sự và ngoại giao.",
+        "B": "lực lượng chính trị với lực lượng vũ trang.",
+        "C": "chiến trường chính và vùng sau lưng địch.",
+        "D": "của lực lượng vũ trang ba thứ quân."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "So sánh, tìm điểm tương đồng.",
+        "solution": "Một trong những điểm chung của Cách mạng tháng Tám năm 1945 và hai cuộc kháng chiến chống đế quốc xâm lược (1945-1975) ở Việt Nam là có sự kết hợp giữa lực lượng chính trị và lực lượng vũ trang."
+      }
+    }
+  ],
+  "phan_ii": [
+    {
+      "question_id": 25,
+      "question": "\"Tôn chỉ và mục đích của ASEAN: 1. Thúc đẩy sự tăng trưởng kinh tế, tiến bộ xã hội và phát triển văn hóa trong khu vực thông qua các nỗ lực chung trên tinh thần bình đẳng và hợp tác nhằm tăng cường cơ sở cho một Cộng đồng các quốc gia Đông Nam Á hòa bình và thịnh vượng; 2. Thúc đẩy hòa bình và ổn định khu vực bằng việc tôn trọng công lý và nguyên tắc pháp luật trong quan hệ giữa các quốc gia trong vùng và tuân thủ các nguyên tắc của Hiến chương Liên hợp quốc; 3. Thúc đẩy sự hợp tác tích cực và giúp đỡ lẫn nhau trong các vấn đề cùng quan tâm ở các lĩnh vực: kinh tế, xã hội, văn hóa, khoa học - kỹ thuật và hành chính,...\" (Theo Tuyên bố ASEAN, Hiệp hội các quốc gia Đông Nam Á (ASEAN), NXB Chính trị quốc gia, Hà Nội, 1998, tr.15-16).",
+      "statements": {
+        "a": "Tôn chỉ và mục đích của ASEAN tuân thủ các nguyên tắc của Hiến chương Liên hợp quốc.",
+        "b": "Tuyên bố ASEAN thể hiện tôn chỉ và mục đích thành lập của tổ chức ASEAN.",
+        "c": "Một trong những mục đích của tổ chức ASEAN là thúc đẩy sự tăng trưởng kinh tế, tiến bộ xã hội và thành lập khối quân sự của các nước Đông Nam Á.",
+        "d": "ASEAN là một tổ chức kinh tế, văn hóa và xã hội của các quốc gia có chung chế độ chính trị trong khu vực Đông Nam Á."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": true,
+        "c": false,
+        "d": false
+      },
+      "explanation_map": {
+        "a": "Đúng, Tôn chỉ và mục đích của ASEAN tuân thủ các nguyên tắc của Hiến chương Liên hợp quốc.",
+        "b": "Đúng, Tuyên bố ASEAN thể hiện tôn chỉ và mục đích thành lập của tổ chức ASEAN.",
+        "c": "Sai, vì ASEAN không có mục tiêu thành lập khối quân sự mà chỉ tập trung vào hợp tác kinh tế, văn hóa và xã hội.",
+        "d": "Sai, vì ASEAN là một tổ chức kinh tế, văn hóa và xã hội của các quốc gia có sự đa dạng về chế độ chính trị trong khu vực Đông Nam Á."
+      }
+    },
+    {
+      "question_id": 26,
+      "question": "\"Đế quốc Mỹ và chính quyền Sài Gòn do Ngô Đình Diệm đứng đầu đã trắng trợn phá bỏ Hiệp định Giơ-ne-vơ, thẳng tay đàn áp, khủng bố, mở các chiến dịch 'tố cộng, diệt cộng' bằng cái gọi là sức mạnh của quân lực cộng hòa.... Để bảo vệ sinh mạng và quyền lợi cơ bản của mình, nhân dân miền Nam dưới sự lãnh đạo của Đảng không có con đường nào khác là phải đứng lên đánh đổ chế độ độc tài phát xít của Mỹ và tay sai, giải phóng hoàn toàn miền Nam, thực hiện thống nhất đất nước.\" (Lê Mậu Hãn, Sức mạnh dân tộc của cách mạng Việt Nam dưới ánh sáng tư tưởng Hồ Chí Minh, NXB Chính trị quốc gia Sự thật, Hà Nội, 2017, tr.294)",
+      "statements": {
+        "a": "Những chính sách của Mỹ và chính quyền tay sai Ngô Đình Diệm là một trong những nguyên nhân dẫn tới phong trào Đồng khởi của nhân dân miền Nam.",
+        "b": "Sau Hiệp định Giơ-ne-vo về Đông Dương (1954), Mỹ dựng lên chính quyền tay sai Ngô Đình Diệm là để thực hiện tổng tuyến đường thống nhất đất nước ở Việt Nam.",
+        "c": "Phong trào Đồng khởi, cuộc Tổng tiến công và nổi dậy Xuân Mậu Thân 1968 và Hiệp định Pa-ri được ký kết là những thắng lợi mang tính bước ngoặt của cuộc kháng chiến chống Mỹ, cứu nước.",
+        "d": "Đặc điểm lớn nhất và độc đáo nhất của cách mạng Việt Nam (1954-1975) là dưới sự lãnh đạo của một chính Đảng, nhân dân ở hai miền Nam-Bắc thực hiện hai chiến lược cách mạng khác nhau nhưng cùng chung mục đích cuối cùng."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": false,
+        "c": true,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Đúng, Những chính sách của Mỹ và chính quyền tay sai Ngô Đình Diệm là một trong những nguyên nhân dẫn tới phong trào Đồng khởi của nhân dân miền Nam.",
+        "b": "Sai, Sau Hiệp định Giơ-ne-vo về Đông Dương (1954), Mỹ dựng lên chính quyền tay sai Ngô Đình Diệm là nhằm chia cắt lâu dài Việt Nam, biến miền Nam Việt Nam thành thuộc địa kiểu mới của Mỹ đồng thời ngăn chặn sự phát triển của chủ nghĩa cộng sản ở Đông Nam Á.",
+        "c": "Đúng, Phong trào Đồng khởi, cuộc Tổng tiến công và nổi dậy Xuân Mậu Thân 1968 và Hiệp định Pa-ri được ký kết là những thắng lợi mang tính bước ngoặt của cuộc kháng chiến chống Mỹ, cứu nước.",
+        "d": "Đúng, Đặc điểm lớn nhất và độc đáo nhất của cách mạng Việt Nam (1954-1975) là dưới sự lãnh đạo của một chính Đảng, nhân dân ở hai miền Nam-Bắc thực hiện hai chiến lược cách mạng khác nhau nhưng cùng chung mục đích cuối cùng là thống nhất đất nước."
+      }
+    },
+    {
+      "question_id": 27,
+      "question": "\"Chiến sự xảy ra ác liệt tại xã Thanh Thủy, Minh Tân, Thanh Đức... Tại mặt trận Vị Xuyên đã có hơn một chục sư đoàn bộ binh luân phiên tham gia chiến đấu. Các đơn vị bộ đội chủ lực của Bộ và Quân khu cùng với bộ đội địa phương, dân quân tự vệ các tỉnh và nhân dân đã quyết tử chiến đấu giành giật với địch từng chiến hào, từng điểm cao để giữ vững chủ quyền biên giới quốc gia, gần chục năm ròng, chưa khi nào Vị Xuyên ngớt tiếng pháo, đạn vẫn cứ từ bên kia biên giới rót sang.\" (Nguyễn Đức Huy, Hồi ức chiến tranh Vị Xuyên, NXB Thông tin và Truyền Thông, Hà Nội, 2019, tr.66-67)",
+      "statements": {
+        "a": "Qua đoạn trích ta thấy tinh thần chiến đấu anh dũng, ý chí quyết tâm bảo vệ và giữ vững chủ quyền biên giới quốc gia của quân và dân ta.",
+        "b": "Trên thực tế, ở một số vùng biên giới phía Bắc, cuộc chiến đấu bảo vệ biên giới không chỉ diễn ra trong năm 1979 mà kéo dài tới tận 10 năm từ 1979 đến 1989.",
+        "c": "Đoạn trích cung cấp thông tin về cuộc chiến tranh bảo vệ Biên giới Tây Nam Việt Nam cuối năm 1978 - đầu năm 1979.",
+        "d": "Mặt trận Vị Xuyên là một trong những mặt trận ác liệt nhất trong cuộc chiến đấu bảo vệ biên giới năm 1979."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": true,
+        "c": false,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Đúng, Qua đoạn trích ta thấy tinh thần chiến đấu anh dũng, ý chí quyết tâm bảo vệ và giữ vững chủ quyền biên giới quốc gia của quân và dân ta.",
+        "b": "Đúng, Trên thực tế, ở một số vùng biên giới phía Bắc, cuộc chiến đấu bảo vệ biên giới không chỉ diễn ra trong năm 1979 mà kéo dài tới tận 10 năm từ 1979 đến 1989.",
+        "c": "Sai, Đoạn trích cung cấp thông tin về cuộc chiến tranh bảo vệ Biên giới phía Bắc Việt Nam năm 1979.",
+        "d": "Đúng, Mặt trận Vị Xuyên là một trong những mặt trận ác liệt nhất trong cuộc chiến đấu bảo vệ biên giới năm 1979."
+      }
+    },
+    {
+      "question_id": 28,
+      "question": "\"Nhìn lại 35 năm thực hiện công cuộc Đổi mới, 30 năm thực hiện Cương lĩnh xây dựng đất nước trong thời kỳ quá độ lên chủ nghĩa xã hội, lí luận về đường lối đổi mới, về chủ nghĩa xã hội và con đường đi lên chủ nghĩa xã hội của Việt Nam ngày càng hoàn thiện và từng bước được hiện thực hóa. Đất nước đã đạt được những thành tựu to lớn, có ý nghĩa lịch sử, phát triển mạnh mẽ, toàn diện so với những năm trước đổi mới. Quy mô, trình độ nền kinh tế được nâng lên. Đời sống nhân dân cả về vật chất và tinh thần được cải thiện rõ rệt. Đất nước ta chưa bao giờ có được cơ đồ, tiềm lực, vị thế và uy tín quốc tế như ngày nay.\" (Đảng Cộng sản Việt Nam, Văn kiện Đại hội đại biểu toàn quốc lần thứ XIII, Tập 1, NXB Chính trị quốc gia Sự thật, Hà Nội, 2021, tr.103-104)",
+      "statements": {
+        "a": "Những thành tựu của công cuộc đổi mới ở Việt Nam sau 35 năm thực hiện là tiền đề để đất nước ta bước vào \"Kỷ nguyên phát triển mới - Kỷ nguyên vươn mình của dân tộc Việt Nam\".",
+        "b": "Lý luận về con đường đi lên chủ nghĩa xã hội đã được Đảng Cộng sản Việt Nam hoàn thiện ngay từ khi bắt đầu thực hiện đường lối đổi mới.",
+        "c": "Cương lĩnh đổi mới đất nước trong thời kỳ quá độ lên chủ nghĩa xã hội đề ra tại Đại hội đại biểu lần thứ III.",
+        "d": "Thành tựu của công cuộc đổi mới ở Việt Nam có được là do Việt Nam đã có sự học hỏi từ những thành công trong công cuộc cải tổ ở Liên Xô và cải cách ở Trung Quốc."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": false,
+        "c": false,
+        "d": false
+      },
+      "explanation_map": {
+        "a": "Đúng, Những thành tựu của công cuộc đổi mới ở Việt Nam sau 35 năm thực hiện là tiền đề để đất nước ta bước vào \"Kỷ nguyên phát triển mới - Kỷ nguyên vươn mình của dân tộc Việt Nam\".",
+        "b": "Sai, Lý luận về con đường đi lên chủ nghĩa xã hội đã được Đảng Cộng sản Việt Nam từng bước được hoàn thiện qua các giai đoạn phát triển.",
+        "c": "Sai, Cương lĩnh đổi mới đất nước trong thời kỳ quá độ lên chủ nghĩa xã hội đề ra tại Đại hội đại biểu lần thứ VII.",
+        "d": "Sai, Thành tựu của công cuộc đổi mới ở Việt Nam có được là do Việt Nam có đường lối đúng đắn."
+      }
+    }
+  ]
+}

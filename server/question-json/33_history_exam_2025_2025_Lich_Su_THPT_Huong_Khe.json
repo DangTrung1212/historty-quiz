@@ -1,0 +1,108 @@
+{
+  "phan_i": [
+    {
+      "question_id": 1,
+      "source": "Unknown",
+      "question_text": "Nhận xét nào đúng về sự hình thành trật tự thế giới sau Chiến tranh lạnh?",
+      "options": {
+        "A": "Được hình thành sau những xung đột quân sự giữa hai khối đối lập.",
+        "B": "Chịu tác động của nhiều nhân tố nên diễn ra phức tạp, chậm chạp.",
+        "C": "Hình thành thông qua các hội nghị với các hiệp định được ký kết.",
+        "D": "Nhiều quốc gia có sự cân bằng về quyền lực tham gia xác lập trật tự."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "Phân tích, loại trừ phương án.",
+        "solution": "Sau Chiến tranh lạnh, các quốc gia nhận thấy kinh tế là sức mạnh thực sự nên tập trung vào xây dựng quyền lực thực. Trật tự thế giới sau Chiến tranh lạnh do nhiều quốc gia có sự cân bằng về quyền lực tham gia xác lập - trật tự đa cực."
+      }
+    },
+    {
+      "question_id": 2,
+      "source": "Unknown",
+      "question_text": "Nguyễn Ái Quốc tìm thấy con đường cứu nước cho dân tộc Việt Nam khi đang hoạt động ở quốc gia nào sau đây?",
+      "options": {
+        "A": "Anh.",
+        "B": "Liên Xô.",
+        "C": "Trung Quốc.",
+        "D": "Pháp."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "Xem lại nội dung hoạt động của Nguyễn Ái Quốc (1917-1925).",
+        "solution": "Nguyễn Ái Quốc tìm thấy con đường cứu nước cho dân tộc Việt Nam khi đang hoạt động ở Pháp."
+      }
+    },
+    {
+      "question_id": 3,
+      "source": "Unknown",
+      "question_text": "Quốc gia nào sau đây gia nhập tổ chức ASEAN trong thời kỳ Chiến tranh lạnh?",
+      "options": {
+        "A": "Bru-nây.",
+        "B": "Việt Nam",
+        "C": "Campuchia.",
+        "D": "Mi-an-ma."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "Xem lại nội dung quá trình hình thành và phát triển của ASEAN.",
+        "solution": "Bru-nây gia nhập tổ chức ASEAN trong thời kỳ Chiến tranh lạnh."
+      }
+    },
+    {
+      "question_id": 4,
+      "source": "Unknown",
+      "question_text": "Ngay sau khi Cách mạng tháng Tám thành công (1945), nước Việt Nam Dân chủ Cộng hòa phải đối phó với khó khăn nào sau đây?",
+      "options": {
+        "A": "Chưa có lực lượng vũ trang cách mạng.",
+        "B": "Mỹ lập tức tăng cường viện trợ cho Pháp.",
+        "C": "Nhiều quân đội nước ngoài chiếm đóng.",
+        "D": "Mỹ đưa quân viễn chinh vào miền Nam."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "Xem lại nội dung Việt Nam trong những năm đầu sau Cách mạng tháng Tám (1945).",
+        "solution": "Ngay sau khi Cách mạng tháng Tám thành công (1945), nước Việt Nam Dân chủ Cộng hòa phải đối phó với khó khăn là nhiều quân đội nước ngoài vào Việt Nam làm nhiệm vụ giải giáp quân Nhật."
+      }
+    },
+    {
+      "question_id": 5,
+      "source": "Unknown",
+      "question_text": "Một trong những nội dung các công hàm của nước Việt Nam Dân chủ Cộng hòa gửi tới Đại hội đồng Liên hợp quốc ngay sau Cách mạng tháng Tám năm 1945, là:",
+      "options": {
+        "A": "đề nghị công nhận nhà nước Việt Nam Dân chủ Cộng hòa.",
+        "B": "yêu cầu phía Trung Hoa Dân quốc rút khỏi Việt Nam.",
+        "C": "yêu cầu thực dân Pháp và thực dân Anh trao trả độc lập.",
+        "D": "khẳng định tinh thần đoàn kết của ba nước Đông Dương."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "Xem lại nội dung hoạt động ngoại giao của Việt Nam giai đoạn 1945 - 1954.",
+        "solution": "Một trong những nội dung các công hàm của nước Việt Nam Dân chủ Cộng hòa gửi tới Đại hội đồng Liên hợp quốc ngay sau Cách mạng tháng Tám năm 1945, là đề nghị công nhận nhà nước Việt Nam Dân chủ Cộng hòa."
+      }
+    }
+  ],
+  "phan_ii": [
+    {
+      "question_id": 25,
+      "question": "Đoạn tư liệu sau đây và xác định các phương án đúng-sai: \"Sau Chiến tranh lạnh, tất cả các quốc gia đều đang ra sức điều chỉnh chiến lược phát triển và tập trung mọi sức lực vào ưu tiên phát triển kinh tế. Trong thời điểm hiện nay, kinh tế trở thành trọng điểm trong quan hệ quốc tế, cạnh tranh sức mạnh tổng hợp quốc gia thay thế cho chạy đua vũ trang đã trở thành hình thức chủ yếu trong cuộc đo sức giữa các cường quốc. Những cân nhắc về địa - kinh tế trên mức độ nào đó đã vượt quá tính toán về địa - chính trị.\"",
+      "statements": {
+        "a": "Sau Chiến tranh lạnh, các quốc gia ưu tiên phát triển kinh tế, xây dựng sức mạnh tổng hợp của quốc gia thay thế cho chạy đua vũ trang.",
+        "b": "Trong quan hệ quốc tế, khái niệm đa cực chỉ trạng thái địa - chính trị toàn cầu với ba trung tâm quyền lực chi phối là Mỹ, Liên bang Nga và Trung Quốc.",
+        "c": "Những rào cản về địa - chính trị hiện nay đang là trở ngại lớn nhất đối với các quốc gia trong cuộc chạy đua về sức mạnh tổng hợp.",
+        "d": "Sau Chiến tranh lạnh, các quốc gia đều phải đối mặt với những thời cơ và thách thức, các nước đang phát triển và các cường quốc đang có một cuộc cạnh tranh không cần súng."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": false,
+        "c": false,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Đúng, sau Chiến tranh lạnh, các quốc gia ưu tiên phát triển kinh tế, xây dựng sức mạnh tổng hợp của quốc gia thay thế cho chạy đua vũ trang.",
+        "b": "Sai, trong quan hệ quốc tế, khái niệm đa cực chỉ trạng thái địa - chính trị toàn cầu với nhiều quyền lực chi phối, không có trung tâm quyền lực thống trị.",
+        "c": "Sai, những rào cản về địa - chính trị hiện nay không phải là trở ngại lớn nhất đối với các quốc gia trong cuộc chạy đua về sức mạnh tổng hợp.",
+        "d": "Đúng, sau Chiến tranh lạnh, các quốc gia đều phải đối mặt với những thời cơ và thách thức, các nước đang phát triển và các cường quốc đang có một cuộc cạnh tranh không cần súng."
+      }
+    }
+  ]
+}

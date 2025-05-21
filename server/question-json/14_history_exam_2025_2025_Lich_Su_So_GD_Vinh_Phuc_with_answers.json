@@ -1,0 +1,130 @@
+{
+  "phan_i": [
+    {
+      "question_id": 1,
+      "source": "Vinh Phuc",
+      "question_text": "Trong cuộc kháng chiến chống quân Xiêm (1785), nghĩa quân Tây Sơn đã giành được thắng lợi nào sau đây?",
+      "options": {
+        "A": "Tốt Động-Chúc Động.",
+        "B": "Rạch Gầm-Xoài Mút.",
+        "C": "Chi Lăng-Xương Giang.",
+        "D": "Ngọc Hồi-Đống Đa."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "SGK Lịch sử 11.",
+        "solution": "Trong cuộc kháng chiến chống quân Xiêm (1785), nghĩa quân Tây Sơn giành chiến thắng tại Rạch Gầm - Xoài Mút."
+      }
+    },
+    {
+      "question_id": 2,
+      "source": "Vinh Phuc",
+      "question_text": "Trong giai đoạn 1969-1973, quân dân miền Bắc Việt Nam thực hiện một trong những nhiệm vụ nào sau đây?",
+      "options": {
+        "A": "Chống chiến tranh phá hoại của Mỹ.",
+        "B": "Hoàn thành xây dựng chủ nghĩa xã hội.",
+        "C": "Hoàn thành công nghiệp hóa đất nước.",
+        "D": "Chống chiến lược Chiến tranh đặc biệt."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung kháng chiến chống Mỹ cứu nước (1954-1975).",
+        "solution": "Trong giai đoạn 1969-1973, quân dân miền Bắc Việt Nam thực hiện nhiệm vụ chống chiến tranh phá hoại của Mỹ."
+      }
+    },
+    {
+      "question_id": 3,
+      "source": "Vinh Phuc",
+      "question_text": "Theo thỏa thuận của Hội nghị I-an-ta (tháng 2-1945), khu vực nào sau đây thuộc phạm vi ảnh hưởng của Mỹ?",
+      "options": {
+        "A": "Đông Béc-lin.",
+        "B": "Đông Âu.",
+        "C": "Tây Âu.",
+        "D": "Đông Đức."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung trật tự hai cực I-an-ta.",
+        "solution": "Theo thỏa thuận của Hội nghị I-an-ta (tháng 2-1945), Tây Âu thuộc phạm vi ảnh hưởng của Mỹ."
+      }
+    },
+    {
+      "question_id": 4,
+      "source": "Vinh Phuc",
+      "question_text": "Ngày 25-10-1917, Đại hội Xô Viết toàn Nga lần II đã thông qua quyết định nào sau đây?",
+      "options": {
+        "A": "Thành lập Chính phủ Xô Viết.",
+        "B": "Thực hiện Chính sách cộng sản thời chiến.",
+        "C": "Thành lập các đội tự vệ đỏ.",
+        "D": "Thực hiện Chính sách kinh tế mới."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "SGK Lịch sử 11.",
+        "solution": "Ngày 25-10-1917, Đại hội Xô Viết toàn Nga lần II đã thông qua quyết định thành lập Chính phủ Xô Viết."
+      }
+    },
+    {
+      "question_id": 5,
+      "source": "Vinh Phuc",
+      "question_text": "Cuộc kháng chiến chống thực dân Pháp (1945-1954) của nhân dân Việt Nam diễn ra trong bối cảnh nào sau đây?",
+      "options": {
+        "A": "Chiến tranh thế giới thứ hai lan rộng quy mô toàn thế giới.",
+        "B": "Trật tự thế giới đa cực đang trong giai đoạn hình thành.",
+        "C": "Phong trào đấu tranh vì hòa bình, dân chủ phát triển mạnh.",
+        "D": "Đất nước độc lập, thống nhất và đi lên chủ nghĩa xã hội."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "Loại trừ phương án.",
+        "solution": "Cuộc kháng chiến chống thực dân Pháp (1945-1954) diễn ra trong bối cảnh phong trào đấu tranh vì hòa bình, dân chủ phát triển mạnh. Các phương án khác đều không phù hợp với bối cảnh lịch sử lúc bấy giờ."
+      }
+    }
+  ],
+  "phan_ii": [
+    {
+      "question_id": 25,
+      "question": "Cho đoạn tư liệu sau đây: \"Khác với các trật tự trước kia không phân chia quyền lực giữa các đồng minh, trật tự Xô-Mỹ là sự cạnh tranh quyền lực giữa các đối thủ đối kháng nhau. Mặt khác, trật tự này kết thúc theo một cách khác thường: không do chiến tranh, không có hiệp ước ký kết, mà do một cuộc là Liên Xô tan rã. Những đặc điểm vừa nêu của trật tự thế giới Xô-Mỹ tạo thành yếu tố hàng đầu tác động đến quá trình hình thành trật tự thế giới mới\".",
+      "statements": {
+        "a": "Trật tự thế giới hai cực I-an-ta là nhân tố hàng đầu chi phối quan hệ quốc tế phần lớn thời gian nửa sau thế kỷ XX.",
+        "b": "Đoạn tư liệu đề cập đến Trật tự thế giới hai cực I-an-ta, được hình thành sau Chiến tranh thế giới thứ hai.",
+        "c": "Sự tan rã của Liên Xô khiến cho chủ nghĩa xã hội không còn tồn tại, Chiến tranh lạnh thực sự chấm dứt.",
+        "d": "Sự tan rã của chế độ xã hội chủ nghĩa ở Liên Xô là nguyên nhân sâu do của Trật tự thế giới hai cực I-an-ta."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": true,
+        "c": false,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Đúng, Trật tự thế giới hai cực I-an-ta là nhân tố hàng đầu chi phối quan hệ quốc tế phần lớn thời gian nửa sau thế kỷ XX.",
+        "b": "Đúng, Đoạn tư liệu đề cập đến Trật tự thế giới hai cực I-an-ta, được hình thành sau Chiến tranh thế giới thứ hai.",
+        "c": "Sai, Sự tan rã của Liên Xô khiến hệ thống xã hội chủ nghĩa không còn tồn tại, nhưng chủ nghĩa xã hội vẫn tồn tại ở một số quốc gia như Trung Quốc, Cuba...",
+        "d": "Đúng, Sự tan rã của chế độ xã hội chủ nghĩa ở Liên Xô là nguyên nhân sâu xa của Trật tự thế giới hai cực I-an-ta."
+      }
+    },
+    {
+      "question_id": 26,
+      "question": "Cho những thông tin trong bảng sau đây: | Giai đoạn | Nội dung | | --- | --- | | 1967-1976 | ASEAN được thành lập và bước đầu phát triển về cơ cấu tổ chức, nguyên tắc hoạt động. | | 1976-1999 | Thiết lập quan hệ chính trị ổn định trong khu vực, mở rộng thành viên và từng bước nâng cao vị thế của ASEAN trên trường quốc tế. | | 1999-2015 | Hoàn thiện cơ cấu tổ chức, tăng cường hợp tác nội khối và hợp tác quốc tế, từng bước chuẩn bị cho sự ra đời của Cộng đồng ASEAN. | | 2015-nay | Cộng đồng ASEAN được xây dựng và phát triển với ba trụ cột là Cộng đồng Chính trị - An ninh, Cộng đồng Kinh tế và Cộng đồng Văn hóa - xã hội.",
+      "statements": {
+        "a": "Từ ASEAN đến Cộng đồng ASEAN phản ánh xu thế phát triển tất yếu của quan hệ quốc tế trong và sau Chiến tranh lạnh.",
+        "b": "Quá trình mở rộng thành viên của Cộng đồng ASEAN diễn ra lâu dài do tác động của Chiến tranh lạnh.",
+        "c": "Giai đoạn 1967-1976, Hội nghị Thường đỉnh là cơ chế hoạch định chính sách cao nhất của ASEAN.",
+        "d": "Bảng thông tin trên thể hiện các giai đoạn phát triển chính của Hiệp hội các quốc gia Đông Nam Á (ASEAN)."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": false,
+        "c": false,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Đúng, Từ ASEAN đến Cộng đồng ASEAN phản ánh xu thế phát triển tất yếu của quan hệ quốc tế trong và sau Chiến tranh lạnh. Đó là xu thế hòa bình, hợp tác cùng phát triển.",
+        "b": "Sai, Quá trình mở rộng thành viên của Cộng đồng ASEAN diễn ra lâu dài do thời gian giành độc lập của các quốc gia Đông Nam Á có sự khác nhau, thậm chí phải cầm súng chiến đấu chống sự tái xâm lược của các nước Tây Âu rồi chủ nghĩa thực dân mới nên quá trình này diễn ra lâu dài và đầy gian khó.",
+        "c": "Sai, Giai đoạn 1967-1976, Hội nghị Thường đỉnh là cơ quan hoạch định chính sách cao nhất của ASEAN.",
+        "d": "Đúng, Bảng thông tin trên thể hiện các giai đoạn phát triển chính của Hiệp hội các quốc gia Đông Nam Á (ASEAN)."
+      }
+    }
+  ]
+}

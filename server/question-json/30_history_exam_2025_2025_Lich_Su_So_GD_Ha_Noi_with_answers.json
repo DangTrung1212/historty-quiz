@@ -1,0 +1,210 @@
+{
+  "phan_i": [
+    {
+      "question_id": 1,
+      "source": "Hà Nội",
+      "question_text": "Trong thời kỳ phong kiến độc lập, cuộc kháng chiến nào sau đây đã thực hiện kế sách 'Tiến phát chế nhân'?",
+      "options": {
+        "A": "Kháng chiến chống quân Xièm.",
+        "B": "Kháng chiến chống Tống lần hai.",
+        "C": "Kháng chiến chống Mông-Nguyên.",
+        "D": "Kháng chiến chống quân Thanh."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "Xem lại kiến thức cuộc chiến tranh bảo vệ Tổ quốc trước cách mạng tháng Tám.",
+        "solution": "Lý Thường Kiệt đã sử dụng kế sách 'Tiến phát chế nhân' trong cuộc kháng chiến chống quân Tống lần thứ hai (1075-1077)."
+      }
+    },
+    {
+      "question_id": 2,
+      "source": "Hà Nội",
+      "question_text": "Xu thế trong quan hệ quốc tế sau Chiến tranh lạnh là:",
+      "options": {
+        "A": "đơn cực.",
+        "B": "toàn cầu.",
+        "C": "hai cực.",
+        "D": "đa cực."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "Xem lại kiến thức quan hệ quốc tế sau Chiến tranh lạnh.",
+        "solution": "Sau Chiến tranh lạnh, trật tự hai cực (Mỹ và Liên Xô) tan rã, dẫn đến sự hình thành một trật tự quốc tế mới với nhiều trung tâm quyền lực."
+      }
+    },
+    {
+      "question_id": 3,
+      "source": "Hà Nội",
+      "question_text": "Trong giai đoạn 1961-1965, quân dân miền Nam Việt Nam chiến đấu chống chiến lược chiến tranh nào sau đây của đế quốc Mỹ?",
+      "options": {
+        "A": "Đơn phương.",
+        "B": "Đặc biệt.",
+        "C": "Việt Nam hóa.",
+        "D": "Cục bộ."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "Xem lại kiến thức cuộc kháng chiến chống Mỹ cứu nước.",
+        "solution": "Trong giai đoạn 1961 - 1965, đế quốc Mỹ đã thực hiện chiến lược 'Chiến tranh đặc biệt' ở miền Nam Việt Nam."
+      }
+    },
+    {
+      "question_id": 4,
+      "source": "Hà Nội",
+      "question_text": "Trong Cách mạng tháng Tám năm 1945, nhân dân Việt Nam đã giành chính quyền từ tay:",
+      "options": {
+        "A": "Nhật.",
+        "B": "Pháp.",
+        "C": "Anh.",
+        "D": "Mỹ."
+      },
+      "correct_answer": "A",
+      "explanation": {
+        "method": "Xem lại kiến thức Cách mạng tháng Tám năm 1945.",
+        "solution": "Trong Cách mạng tháng Tám năm 1945, nhân dân Việt Nam đã giành chính quyền từ tay phát xít Nhật."
+      }
+    },
+    {
+      "question_id": 5,
+      "source": "Hà Nội",
+      "question_text": "Trong cuộc kháng chiến chống thực dân Pháp (1945 - 1954), thắng lợi nào của quân dân Việt Nam đã làm phá sản hoàn toàn kế hoạch Na-va?",
+      "options": {
+        "A": "Đường 14 - Phước Long.",
+        "B": "Điện Biên Phủ.",
+        "C": "Việt Bắc.",
+        "D": "Áp Bắc."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "Xem lại kiến thức Cuộc kháng chiến chống Pháp.",
+        "solution": "Chiến thắng Điện Biên Phủ năm 1954 là thắng lợi quyết định, làm phá sản hoàn toàn kế hoạch Na-va của thực dân Pháp."
+      }
+    },
+    {
+      "question_id": 6,
+      "source": "Hà Nội",
+      "question_text": "Nội dung nào sau đây là đường lối đổi mới của Đảng Cộng sản Việt Nam giai đoạn 1996-2006?",
+      "options": {
+        "A": "Xóa bỏ cơ chế quản lý kinh tế quan liêu và bao cấp.",
+        "B": "Đẩy mạnh công nghiệp hóa và hiện đại hóa đất nước.",
+        "C": "Xây dựng thành phần kinh tế Nhà nước và tập thể.",
+        "D": "Tập trung vào ưu tiên phát triển công nghiệp nặng."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "Xem lại kiến thức Đường lối đổi mới của Đảng Cộng sản Việt Nam.",
+        "solution": "Đại hội VIII (1996) và Đại hội IX (2001) xác định mục tiêu trọng tâm là công nghiệp hóa, hiện đại hóa gắn với phát triển kinh tế tri thức."
+      }
+    },
+    {
+      "question_id": 7,
+      "source": "Hà Nội",
+      "question_text": "Trong những năm 30 của thế kỷ XX, Đảng Cộng sản Đông Dương có sự liên lạc với tổ chức nào sau đây?",
+      "options": {
+        "A": "Đồng minh chống phát xít.",
+        "B": "Hội Quốc liên.",
+        "C": "Quốc tế Cộng sản.",
+        "D": "Liên A đồng minh."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "Xem lại lịch sử Đảng Cộng sản Đông Dương.",
+        "solution": "Quốc tế Cộng sản có vai trò quan trọng trong việc chỉ đạo và hỗ trợ các phong trào cộng sản trên toàn thế giới, bao gồm cả Đảng Cộng sản Đông Dương."
+      }
+    },
+    {
+      "question_id": 8,
+      "source": "Hà Nội",
+      "question_text": "Hoạt động đối ngoại của Phan Bội Châu trong những năm 1905 - 1909 diễn ra chủ yếu ở quốc gia nào sau đây?",
+      "options": {
+        "A": "Ấn Độ.",
+        "B": "Nga.",
+        "C": "Đức.",
+        "D": "Nhật Bản."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "Xem lại hoạt động đối ngoại của Việt Nam đầu thế kỷ XX.",
+        "solution": "Phan Bội Châu sang Nhật Bản năm 1905, thành lập Hội Duy Tân và tổ chức phong trào Đông Du để học tập và chuẩn bị lực lượng đánh đuổi thực dân Pháp."
+      }
+    },
+    {
+      "question_id": 9,
+      "source": "Hà Nội",
+      "question_text": "Năm 1924, Liên bang Cộng hòa xã hội chủ nghĩa Xô viết đã thông qua văn kiện nào sau đây?",
+      "options": {
+        "A": "Chính sách Kinh tế mới.",
+        "B": "Sắc lệnh ruộng đất.",
+        "C": "Bản Hiến pháp đầu tiên.",
+        "D": "Sắc lệnh hòa bình."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "Xem lại kiến thức về Liên bang Cộng hòa xã hội chủ nghĩa Xô viết.",
+        "solution": "Năm 1924, sau khi thành lập, Liên Xô cần một văn kiện pháp lý cơ bản để xác định cấu trúc nhà nước. Bản Hiến pháp này được thông qua vào ngày 31 tháng 1 năm 1924."
+      }
+    },
+    {
+      "question_id": 10,
+      "source": "Hà Nội",
+      "question_text": "Một trong những trụ cột chính của Cộng đồng ASEAN là:",
+      "options": {
+        "A": "Cộng đồng Quốc phòng ASEAN.",
+        "B": "Cộng đồng Ngoại giao ASEAN.",
+        "C": "Cộng đồng Kinh tế ASEAN.",
+        "D": "Cộng đồng Tài chính ASEAN."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "Xem lại kiến thức về Cộng đồng ASEAN.",
+        "solution": "Cộng đồng Kinh tế ASEAN (AEC) là một trong những trụ cột quan trọng nhất của ASEAN, nhằm mục tiêu xây dựng một thị trường chung và cơ sở sản xuất thống nhất."
+      }
+    }
+  ],
+  "phan_ii": [
+    {
+      "question_id": 25,
+      "question": "Cho đoạn tư liệu sau đây:\n\"Thế giới phát triển nhanh chóng theo hướng đa cực, tuy vậy cục diện đa cực chưa hẳn đã hình thành mà đang trải qua thời kỳ quá độ từ Trật tự cũ để tiến tới một Trật tự mới... Thế giới đang trong tình hình 'một siêu cường, nhiều cường quốc', đó là các nước Mỹ, Tây Âu (EU), Nhật Bản, Nga và Trung Quốc.\"",
+      "statements": {
+        "a": "Sau Chiến tranh lạnh, quan hệ quốc tế phát triển theo xu hướng đa cực.",
+        "b": "Trật tự thế giới đa cực đã được xác lập trên thế giới thay thế cho trật tự đơn cực.",
+        "c": "Một trong những 'đặc điểm mới' mà tài liệu xác định là sức mạnh kinh tế của mỗi quốc gia trong trật tự đa cực.",
+        "d": "Trật tự đa cực có nét tương đồng với các trật tự thế giới trước đó vì đều được xác lập bởi các cuộc chiến tranh."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": false,
+        "c": true,
+        "d": false
+      },
+      "explanation_map": {
+        "a": "Đúng, Sau Chiến tranh lạnh, thế giới có xu hướng chuyển từ trật tự hai cực (Mỹ - Liên Xô) sang đa cực với nhiều trung tâm quyền lực như Mỹ, EU, Trung Quốc, Nga, Nhật Bản.",
+        "b": "Sai, tài liệu khẳng định rằng cục diện đa cực chưa hẳn đã hình thành mà đang trong thời kỳ quá độ.",
+        "c": "Đúng, một trong những đặc điểm mới của cục diện này là sức mạnh kinh tế đóng vai trò quan trọng trong xác lập vị thế của các quốc gia.",
+        "d": "Sai, trật tự đa cực hiện nay không được xác lập bởi chiến tranh, mà đang hình thành dần qua các biến động chính trị, kinh tế, ngoại giao."
+      }
+    },
+    {
+      "question_id": 26,
+      "question": "Cho bảng thông tin sau đây:\n| Thời gian | Nội dung |\n| --- | --- |\n| Năm 1967 | Hiệp hội các quốc gia Đông Nam Á được thành lập gồm năm nước thành viên |\n| Năm 1976 | Hiệp ước Bali được ký kết, đặt khuôn khổ cho nền hòa bình ở khu vực dựa trên tôn trọng độc lập, chủ quyền của các nước thành viên, không can thiệp vào công việc nội bộ của nhau, giải quyết tranh chấp trong khu vực và kêu gọi hợp tác hiệu quả trên các lĩnh vực vì lợi ích chung. |\n| Năm 1984 | Brunei gia nhập, trở thành thành viên thứ 6 của ASEAN. |\n| Năm 1995 | Việt Nam gia nhập, trở thành thành viên thứ 7 của ASEAN. |\n| Năm 1997 | Lào, Mi-an-ma gia nhập ASEAN. |\n| Năm 1999-2015 | Campuchia gia nhập ASEAN năm 1999. ASEAN hoàn thiện cơ cấu tổ chức, đẩy mạnh hợp tác nội khối và hợp tác quốc tế. |\n| 2015 đến nay | Cộng đồng ASEAN được thành lập, xây dựng và phát triển với ba trụ cột hợp tác chính trị và an ninh, hợp tác kinh tế và hợp tác văn hóa - xã hội. ASEAN tăng cường hợp tác và kết nối khu vực, không ngừng nâng cao vị thế.",
+      "statements": {
+        "a": "Bảng thông tin phản ánh quá trình phát triển, sự gia tăng số lượng thành viên của Hiệp hội các quốc gia Đông Nam Á (ASEAN).",
+        "b": "Quá trình mở rộng, phát triển số lượng thành viên của ASEAN diễn ra nhanh chóng và thuận lợi.",
+        "c": "Hiệp ước Bali đã xác định những nguyên tắc hoạt động, tạo cơ sở pháp lý cho quan hệ hợp tác giữa các nước thành viên ASEAN.",
+        "d": "Các trụ cột của Cộng đồng ASEAN đều nhằm đảm bảo hòa bình, ổn định và thịnh vượng chung của khu vực."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": false,
+        "c": true,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Đúng, bảng thông tin thể hiện quá trình mở rộng số lượng thành viên của ASEAN từ khi thành lập (1967) đến nay, phản ánh sự phát triển của tổ chức này.",
+        "b": "Sai, vì quá trình mở rộng không nhanh chóng và thuận lợi. ASEAN thành lập năm 1967 nhưng đến 1999 mới đủ 10 thành viên, quá trình này kéo dài hơn 30 năm và gặp nhiều khó khăn do khác biệt về chính trị, kinh tế giữa các nước.",
+        "c": "Đúng, Hiệp ước Bali (1976) đề ra nguyên tắc cơ bản cho ASEAN như tôn trọng độc lập, không can thiệp nội bộ, giải quyết tranh chấp bằng hòa bình, tạo cơ sở pháp lý cho quan hệ hợp tác trong khu vực.",
+        "d": "Đúng, Cộng đồng ASEAN được xây dựng trên ba trụ cột (chính trị - an ninh, kinh tế, văn hóa-xã hội), tất cả đều hướng đến hòa bình, ổn định và thịnh vượng chung cho khu vực Đông Nam Á."
+      }
+    }
+  ]
+}

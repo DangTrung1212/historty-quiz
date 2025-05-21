@@ -1,0 +1,108 @@
+{
+  "phan_i": [
+    {
+      "question_id": 1,
+      "source": "Phú Thọ",
+      "question_text": "Năm 2010, quốc gia nào sau đây vươn lên trở thành nền kinh tế lớn thứ hai thế giới?",
+      "options": {
+        "A": "Hàn Quốc.",
+        "B": "Nhật Bản.",
+        "C": "Trung Quốc.",
+        "D": "Ấn Độ."
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung trật tự thế giới sau chiến tranh Lạnh.",
+        "solution": "Năm 2010, Trung Quốc vươn lên trở thành nền kinh tế lớn thứ hai thế giới."
+      }
+    },
+    {
+      "question_id": 2,
+      "source": "Phú Thọ",
+      "question_text": "Ý nghĩa quốc tế của sự ra đời Liên bang Cộng hòa xã hội chủ nghĩa Xô viết (1922) là gì?",
+      "options": {
+        "A": "Người lao động trên thế giới hoàn toàn được giải phóng.",
+        "B": "Tạo tiền đề cho sự ra đời hệ thống xã hội chủ nghĩa.",
+        "C": "Tăng cường ảnh hưởng của Liên Xô trên trường quốc tế.",
+        "D": "Tạo nên sức mạnh tổng hợp để Liên Xô bảo vệ đất nước."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "SGK Lịch sử 11.",
+        "solution": "Ý nghĩa quốc tế của sự ra đời Liên bang Cộng hòa xã hội chủ nghĩa Xô viết (1922) là tạo tiền đề cho sự ra đời hệ thống xã hội chủ nghĩa."
+      }
+    },
+    {
+      "question_id": 3,
+      "source": "Phú Thọ",
+      "question_text": "Mục tiêu xây dựng Cộng đồng ASEAN (2015) dựa trên cơ sở pháp lý nào?",
+      "options": {
+        "A": "Hiệp ước Bali.",
+        "B": "Tuyên bố Kuala Lumpur.",
+        "C": "Tuyên bố Băng Cốc.",
+        "D": "Hiến chương ASEAN."
+      },
+      "correct_answer": "D",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung Cộng đồng ASEAN.",
+        "solution": "Mục tiêu xây dựng Cộng đồng ASEAN (2015) dựa trên cơ sở pháp lý là Hiến chương ASEAN."
+      }
+    },
+    {
+      "question_id": 4,
+      "source": "Phú Thọ",
+      "question_text": "Trong giai đoạn 1954 - 1960, nhân dân miền Nam Việt Nam thực hiện nhiệm vụ nào sau đây?",
+      "options": {
+        "A": "Chống chiến lược \"Chiến tranh đặc biệt\".",
+        "B": "Đấu tranh chống chế độ Mỹ-Diệm.",
+        "C": "Cải tạo quan hệ sản xuất xã hội chủ nghĩa.",
+        "D": "Hoàn thành cải cách ruộng đất."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "SGK Lịch sử 12, nội dung kháng chiến chống Mỹ, cứu nước (1954-1975).",
+        "solution": "Trong giai đoạn 1954-1960, nhân dân miền Nam Việt Nam thực hiện nhiệm vụ đấu tranh chống chế độ Mỹ-Diệm."
+      }
+    },
+    {
+      "question_id": 5,
+      "source": "Phú Thọ",
+      "question_text": "Chiến thắng nào sau đây đã chấm dứt hoàn toàn tham vọng xâm chiếm Đại Việt của nhà Nguyên (1288)?",
+      "options": {
+        "A": "Đông Bộ Đầu.",
+        "B": "Bạch Đằng.",
+        "C": "Như Nguyệt.",
+        "D": "Đồng Đậu."
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "SGK Lịch sử 11.",
+        "solution": "Chiến thắng Bạch Đằng năm 1288 đã chấm dứt hoàn toàn tham vọng xâm lược Đại Việt của nhà Nguyên."
+      }
+    }
+  ],
+  "phan_ii": [
+    {
+      "question_id": 25,
+      "question": "Cho những thông tin trong bảng sau:",
+      "statements": {
+        "a": "Sự ra đời của NATO và Tổ chức Hiệp ước Vacsava là một biểu hiện của Trật tự thế giới hai cực Ianta.",
+        "b": "Với thắng lợi của Cách mạng Trung Quốc (1949) chứng tỏ ngay trong giai đoạn xác lập và phát triển, Trật tự thế giới hai cực Ianta đã có biểu hiện của sự rạn nứt.",
+        "c": "Trật tự thế giới hai cực Ianta chính thức sụp đổ khi Mỹ và Liên Xô tuyên bố chấm dứt Chiến tranh lạnh.",
+        "d": "Trật tự thế giới hai cực Ianta suy yếu khi xu hướng hòa hoãn giữa Mỹ và Liên Xô bắt đầu xuất hiện từ đầu những năm 70 của thế kỷ XX."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": true,
+        "c": false,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Đúng. Sự ra đời của NATO và Tổ chức Hiệp ước Vacsava là một biểu hiện của Trật tự thế giới hai cực Ianta vì hai tổ chức quân sự này thuộc hai hệ thống đối đầu nhau là tư bản chủ nghĩa và xã hội chủ nghĩa.",
+        "b": "Đúng. Với thắng lợi của Cách mạng Trung Quốc (1949) chứng tỏ ngay trong giai đoạn xác lập và phát triển, Trật tự thế giới hai cực Ianta đã có biểu hiện của sự rạn nứt. Sự ra đời và vươn lên của Trung Quốc là một biểu hiện cho sự xói mòn của trật tự hai cực Ianta.",
+        "c": "Sai. Trật tự thế giới hai cực Ianta chính thức sụp đổ khi Mỹ và Liên Xô tuyên bố chấm dứt Chiến tranh lạnh. Suy tàn của Liên Xô khiến cho hệ thống chủ nghĩa xã hội không còn tồn tại.",
+        "d": "Đúng. Trật tự thế giới hai cực Ianta suy yếu khi xu hướng hòa hoãn giữa Mỹ và Liên Xô bắt đầu xuất hiện từ đầu những năm 70 của thế kỷ XX."
+      }
+    }
+  ]
+}

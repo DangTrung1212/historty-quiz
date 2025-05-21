@@ -1,0 +1,108 @@
+{
+  "phan_i": [
+    {
+      "question_id": 1,
+      "source": "Ninh Binh",
+      "question_text": "Quá trình phát triển từ ASEAN 5 đến ASEAN 7 của Hiệp hội các quốc gia Đông Nam Á (ASEAN) gắn liền với sự kiện",
+      "options": {
+        "A": "Campuchia gia nhập ASEAN (1999)",
+        "B": "Việt Nam gia nhập ASEAN (1995)",
+        "C": "Myanmar gia nhập ASEAN (1997)",
+        "D": "Lào gia nhập ASEAN (1997)"
+      },
+      "correct_answer": "B",
+      "explanation": {
+        "method": "Xem lại nội dung về Hiệp hội các quốc gia Đông Nam Á (ASEAN).",
+        "solution": "Quá trình phát triển từ ASEAN 5 đến ASEAN 7 gắn liền với việc Việt Nam gia nhập ASEAN năm 1995."
+      }
+    },
+    {
+      "question_id": 2,
+      "source": "Ninh Binh",
+      "question_text": "Trong công cuộc Đổi mới đất nước từ năm 1986 đến nay, nền dân chủ xã hội chủ nghĩa được phát huy và ngày càng mở rộng là thành tựu trên lĩnh vực",
+      "options": {
+        "A": "văn hóa",
+        "B": "hội nhập quốc tế",
+        "C": "chính trị",
+        "D": "kinh tế"
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "Xem lại nội dung về công cuộc Đổi mới ở Việt Nam năm 1986.",
+        "solution": "Trong công cuộc Đổi mới đất nước từ năm 1986 đến nay, nền dân chủ xã hội chủ nghĩa được phát huy và ngày càng mở rộng là thành tựu trên lĩnh vực chính trị."
+      }
+    },
+    {
+      "question_id": 3,
+      "source": "Ninh Binh",
+      "question_text": "Nội dung trọng tâm của đường lối đổi mới đất nước ở Việt Nam (từ tháng 12 - 1986) phù hợp với xu thế phát triển của thế giới là",
+      "options": {
+        "A": "quan hệ đồng minh với các nước lớn",
+        "B": "mở rộng hợp tác, đối thoại, thỏa hiệp",
+        "C": "lấy phát triển kinh tế làm trọng điểm",
+        "D": "tham gia mọi tổ chức khu vực, quốc tế"
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "Xem lại nội dung về công cuộc Đổi mới ở Việt Nam năm 1986.",
+        "solution": "Nội dung trọng tâm của đường lối đổi mới đất nước ở Việt Nam (từ tháng 12 - 1986) phù hợp với xu thế phát triển của thế giới là lấy phát triển kinh tế làm trọng điểm."
+      }
+    },
+    {
+      "question_id": 4,
+      "source": "Ninh Binh",
+      "question_text": "Chiến thắng nào của quân dân Việt Nam trong giai đoạn (1945 - 1954) đã làm phá sản bước đầu kế hoạch Nava của thực dân Pháp?",
+      "options": {
+        "A": "Thắng lợi của chiến dịch lịch sử Điện Biên Phủ năm 1954",
+        "B": "Thắng lợi của chiến dịch Biên giới thu - đông năm 1950",
+        "C": "Cuộc Tiến công chiến lược Đông - Xuân 1953-1954",
+        "D": "Các chiến dịch trung du và đồng bằng Bắc Bộ (1950-1951)"
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "Xem lại nội dung về Cuộc kháng chiến chống thực dân Pháp xâm lược (1945-1954).",
+        "solution": "Cuộc Tiến công chiến lược Đông - Xuân 1953-1954 của quân dân Việt Nam trong giai đoạn (1945-1954) đã làm phá sản bước đầu kế hoạch Nava của thực dân Pháp."
+      }
+    },
+    {
+      "question_id": 5,
+      "source": "Ninh Binh",
+      "question_text": "Trong cuộc chiến đấu chống chiến lược Chiến tranh đặc biệt (1961 - 1965) của Mỹ, quân dân miền Nam Việt Nam đã giành được thắng lợi quan trọng nào?",
+      "options": {
+        "A": "Núi Thành",
+        "B": "Đường 14 - Phước Long",
+        "C": "Ba Gia",
+        "D": "Vạn Tường"
+      },
+      "correct_answer": "C",
+      "explanation": {
+        "method": "Xem lại nội dung về Cuộc kháng chiến chống Mỹ cứu nước (1954-1975).",
+        "solution": "Trong cuộc chiến đấu chống chiến lược Chiến tranh đặc biệt (1961 - 1965) của Mỹ, quân dân miền Nam Việt Nam đã giành được thắng lợi trong trận Ba Gia."
+      }
+    }
+  ],
+  "phan_ii": [
+    {
+      "question_id": 25,
+      "question": "Cho đoạn tư liệu sau đây:\n\"Theo nhận thức của chúng ta, kinh tế thị trường định hướng xã hội chủ nghĩa là nền kinh tế thị trường hiện đại, hội nhập quốc tế, vận hành đầy đủ, đồng bộ theo các quy luật của kinh tế thị trường, có sự quản lý của Nhà nước pháp quyền xã hội chủ nghĩa, do Đảng Cộng sản Việt Nam lãnh đạo; bảo đảm định hướng xã hội chủ nghĩa, nhằm mục tiêu 'dân giàu, nước mạnh, dân chủ, công bằng, văn minh',...\".\n(Nguyễn Phú Trọng, Một số vấn đề lý luận và thực tiễn về chủ nghĩa xã hội và con đường đi lên chủ nghĩa xã hội ở Việt Nam, NXB Chính trị quốc gia Sự thật, Hà Nội, 2022, tr.25-26).",
+      "statements": {
+        "a": "Xây dựng nền kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam nhằm hướng tới mục tiêu \"dân giàu, nước mạnh, công bằng, dân chủ, văn minh\".",
+        "b": "Trong quá trình Đổi mới, cải cách đất nước cuối thế kỷ XX, cả Việt Nam, Trung Quốc và Liên Xô đều phát triển nền kinh tế thị trường định hướng xã hội chủ nghĩa.",
+        "c": "Bản chất của nền kinh tế thị trường định hướng xã hội chủ nghĩa là phát triển tự do theo nhu cầu trong nước và thế giới.",
+        "d": "Việc chuyển đổi mô hình quản lý kinh tế sang cơ chế thị trường định hướng xã hội chủ nghĩa đã tạo động lực to lớn để Việt Nam thực hiện có hiệu quả các mục tiêu của chủ nghĩa xã hội."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": false,
+        "c": false,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Đúng, xây dựng nền kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam nhằm hướng tới mục tiêu \"dân giàu, nước mạnh, công bằng, dân chủ, văn minh\".",
+        "b": "Sai, trong quá trình Đổi mới, cải cách đất nước cuối thế kỷ XX, cả Việt Nam, Trung Quốc đều phát triển nền kinh tế thị trường định hướng xã hội chủ nghĩa, không bao gồm Liên Xô.",
+        "c": "Sai, bản chất của nền kinh tế thị trường định hướng xã hội chủ nghĩa là phát triển có sự định hướng của nhà nước.",
+        "d": "Đúng, việc chuyển đổi mô hình quản lý kinh tế sang cơ chế thị trường định hướng xã hội chủ nghĩa đã tạo động lực to lớn để Việt Nam thực hiện có hiệu quả các mục tiêu của chủ nghĩa xã hội."
+      }
+    }
+  ]
+}
