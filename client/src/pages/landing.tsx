@@ -48,13 +48,7 @@ export default function Landing() {
               <div className="w-20 h-20 rounded-full bg-white/10 flex items-center justify-center backdrop-blur-sm">
                 <BookOpen className="text-white text-4xl" />
               </div>
-              <motion.div
-                className="absolute -top-2 -right-2 bg-pink-400 rounded-full p-2 shadow-lg"
-                animate={{ scale: [1, 1.1, 1] }}
-                transition={{ repeat: Infinity, duration: 2 }}
-              >
-                <Heart className="w-5 h-5 text-white fill-white" />
-              </motion.div>
+              
             </div>
           </div>
           

@@ -122,8 +122,12 @@ const PageTurningCard: React.FC<PageTurningCardProps> = ({
               <div className="absolute inset-0 p-4 md:p-6 flex flex-col items-center justify-center overflow-auto">
                 <div className="relative w-full h-full bg-gradient-to-br from-pink-50 to-purple-50 rounded-lg p-4 md:p-6 flex flex-col items-center justify-center text-center">
                   <Heart className="w-10 h-10 text-pink-500 mb-4" />
-                  <p className="text-base md:text-lg font-serif italic text-purple-600 leading-loose font-normal mb-4 max-w-[90%]">
-                    Chúc mừng sinh nhật bạn!
+                  <p className="text-sm md:text-base font-['Be_Vietnam_Pro'] italic text-purple-600 leading-normal font-normal mb-4 max-w-[90%]">
+                    Chúc mừng sinh nhật em! <br />
+                    <br />
+                    Cảm ơn em vì quãng thời gian vừa qua, nói chuyện với em anh cảm giác bình yên lắm, dù rằng trong anh lại có nhiều mẫu thuẫn hơn. <br />
+                    <br />
+                    Chúc em tuổi mới tràn đầy niềm vui và may mắn trong kỳ thi sắp tới nha!!
                   </p>
                 </div>
                 
@@ -173,17 +177,16 @@ const PageTurningCard: React.FC<PageTurningCardProps> = ({
             >
               <div className="absolute inset-0 p-4 md:p-6 flex flex-col items-center justify-center overflow-auto">
                 <div className="relative w-full h-full bg-gradient-to-br from-pink-50 to-purple-50 rounded-lg p-4 md:p-6 flex flex-col items-center justify-center text-center">
-                  <Cake className="w-10 h-10 text-pink-500 mb-4" />
                   
-                  <div className="text-base md:text-lg font-serif italic text-purple-600 leading-loose font-normal mb-4 max-w-[90%]">
+                  <div className="text-sm md:text-base font-['Be_Vietnam_Pro'] italic text-purple-600 leading-normal font-normal mb-4 max-w-[90%]">
                     {message.split('\n').map((line, i) => (
                       <p key={i} className="mb-2">{line}</p>
                     ))}
                   </div>
-                  <div className="flex items-center justify-center mt-2">
+                  {/* <div className="flex items-center justify-center mt-2">
                     <Sparkles className="w-5 h-5 text-yellow-500 mr-2" />
                     <span className="text-sm text-purple-500 font-light">21.05.2025</span>
-                  </div>
+                  </div> */}
                 </div>
                 
                 {/* Floating hearts */}

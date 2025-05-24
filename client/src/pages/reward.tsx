@@ -5,11 +5,9 @@ import { Card } from "@/components/ui/card";
 import { useMultipleChoiceQuiz } from "@/contexts/MultipleChoiceQuizContext";
 import { useProgress } from "@/contexts/ProgressContext";
 import { motion, AnimatePresence } from "framer-motion";
-import BadgeCard from "@/components/badge-card";
 import Confetti from "react-confetti";
 import useWindowSize from "react-use/lib/useWindowSize";
-import { Share, RotateCcw, Star, Award, Sparkles, Gift, ArrowLeft } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { RotateCcw, Star, Sparkles, ArrowLeft } from "lucide-react";
 import PageTurningCard from '@/components/PageTurningCard';
 import GachaModal from '@/components/GachaModal';
 
@@ -54,7 +52,7 @@ export default function Reward() {
   }
 
   // Personalized birthday message text
-  const personalizedBirthdayMessage = "Chúc em có 1 ngày sinh nhật vui vẻ hạnh phúc.\n\n Ấn quay quà và nhắn cho anh nhé!";
+  const personalizedBirthdayMessage = "Anh không biết nói thế nào nữa…\nẤn quay quà và nhắn cho anh nhé!";
 
   return (
     <section className="min-h-screen bg-gradient-to-br from-purple-100 via-pink-100 to-purple-200 py-6 sm:py-10 overflow-y-auto">
@@ -104,11 +102,11 @@ export default function Reward() {
         )}
       </AnimatePresence>
       
-      <div className="flex-1 overflow-hidden p-4 sm:p-6 relative z-10">
-        <div className="max-w-2xl mx-auto overflow-hidden">
+      <div className="flex flex-col h-screen justify-center p-4 relative z-10">
+        <div className="max-w-2xl mx-auto w-full">
           {/* Success Header */}
           <motion.div 
-            className="text-center mb-4 sm:mb-6"
+            className="text-center mb-2 sm:mb-4"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -140,29 +138,28 @@ export default function Reward() {
             </motion.p>
           </motion.div>
           
-          {/* Replaced Reward Image with BirthdayCard */}
+          {/* Birthday Card */}
           <motion.div 
-            className="mb-10 sm:mb-12 flex justify-center items-center min-h-[500px]" // Added min-height to ensure full display
+            className="flex-1 flex flex-col justify-center items-center py-4"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2, type: "spring", stiffness: 100 }}
           >
-            <PageTurningCard 
-              message={personalizedBirthdayMessage}
-              recipientName="Bạn"
-              cardWidth="300px"
-              cardHeight="420px"
-              hasReceivedReward={hasReceivedReward}
-              onGachaButtonClick={() => setIsGachaModalOpen(true)}
-            />
+            <div className="mb-2 w-full">
+              <PageTurningCard 
+                message={personalizedBirthdayMessage}
+                recipientName="Bạn"
+                cardWidth="300px"
+                cardHeight="420px"
+                hasReceivedReward={hasReceivedReward}
+                onGachaButtonClick={() => setIsGachaModalOpen(true)}
+              />
+            </div>
           </motion.div>
-          <p className="text-center mt-4 text-sm text-purple-500/80 font-medium mb-8">
-            Một lời nhắn đặc biệt dành cho bạn!
-          </p>
           
           {/* Action Buttons */}
           <motion.div 
-            className="flex flex-col sm:flex-row gap-4 mb-8"
+            className="flex flex-col sm:flex-row gap-4 mt-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
@@ -177,7 +174,7 @@ export default function Reward() {
                   variant="outline"
                   className="w-full py-6 text-base border-purple-200 bg-white/80 hover:bg-white text-purple-700 hover:text-purple-800 font-medium rounded-xl shadow-sm hover:shadow-md transition-all duration-300"
                 >
-                  <ArrowLeft className="mr-2 h-5 w-5" /> Back to quiz selection page
+                  <ArrowLeft className="mr-2 h-5 w-5" /> Quay lại chọn phần thi
                 </Button>
               </Link>
             </motion.div>

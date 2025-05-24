@@ -203,7 +203,6 @@ export default function Results() {
     incorrectCount = (scoreResult as any).incorrect;
     totalQuestionsDisplay = (scoreResult as any).total;
   }
-  const timeDisplay = isDungSai ? 'N/A' : `${(scoreResult as any).timeMinutes}:${(scoreResult as any).timeSeconds}`; // Cast to any
 
   const nextSectionIdValue = getNextSectionId(Number(sectionId));
   const nextQuizSection = getMultipleChoiceSection(nextSectionIdValue);
@@ -215,11 +214,30 @@ export default function Results() {
       )}
       <div className="max-w-md mx-auto">
         <motion.div 
-          className="bg-white rounded-xl shadow-romantic p-6 mb-6 border border-purple-100"
+          className="bg-white rounded-xl shadow-romantic p-6 mb-6 border border-purple-100 relative"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
         >
+          <Button
+            variant="ghost"
+            size="sm"
+            className="absolute top-3 left-3 text-purple-500 hover:text-purple-700 hover:bg-purple-100 rounded-full w-8 h-8 p-0"
+            onClick={() => {
+              if (isDungSai) {
+                resetDungSaiSection();
+              } else {
+                resetSection(sectionIdNum);
+              }
+              setLocation('/');
+            }}
+            title="Về trang chọn đề"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M19 12H5"/>
+              <path d="m12 19-7-7 7-7"/>
+            </svg>
+          </Button>
           <div className="text-center">
             <motion.div 
               className={`inline-flex items-center justify-center w-20 h-20 rounded-full mb-4 shadow-romantic-sm ${isPassed ? 'bg-gradient-to-r from-purple-500 to-pink-500' : 'bg-gradient-to-r from-rose-400 to-pink-500'}`}
@@ -241,36 +259,6 @@ export default function Results() {
                 ? 'Bạn đã vượt qua phần thi này!'
                 : 'Bạn chưa đạt điểm tối thiểu. Hãy thử lại để cải thiện kết quả.'}
             </p>
-            
-            {/* Display first time unlock message AND newly unlocked image piece */}
-            {isPassed && newlyUnlockedImageIndex !== null && rewardImageParts[newlyUnlockedImageIndex] && (
-              <motion.div
-                className="my-6 p-5 border-2 border-accent/70 rounded-lg shadow-romantic bg-accent/5"
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.5, duration: 0.5 }}
-              >
-                {showFirstTimeUnlockCelebration && (
-                  <div className="text-center mb-3">
-                    <Star className="inline-block text-accent h-8 w-8 mr-2 animate-pulse-romantic drop-shadow-sm" />
-                    <span className="text-lg font-heading font-semibold text-primary-dark">
-                      Chúc mừng! Bạn đã mở khóa một mảnh ghép mới!
-                    </span>
-                  </div>
-                )}
-                {!showFirstTimeUnlockCelebration && (
-                   <h3 className="text-lg font-heading font-semibold text-primary-dark mb-2 text-center">
-                    Mảnh ghép mới đã được mở khóa!
-                  </h3>
-                )}
-                <img 
-                  src={rewardImageParts[newlyUnlockedImageIndex]} 
-                  alt={`Mảnh ghép phần thưởng ${newlyUnlockedImageIndex + 1}`}
-                  className="rounded-md mx-auto max-h-48 object-contain shadow-romantic"
-                />
-              </motion.div>
-            )}
-            
             {/* Spacer if confetti is showing to prevent overlap with buttons */}
             {showFirstTimeUnlockCelebration && <div className="h-16"></div>}
             
@@ -306,22 +294,18 @@ export default function Results() {
             
             {/* Stats */}
             <motion.div 
-              className="grid grid-cols-3 gap-4 mb-6"
+              className="grid grid-cols-2 gap-3 sm:gap-4 mb-6"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8 }}
             >
-              <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-4 rounded-xl shadow-romantic-sm border border-purple-100">
-                <div className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">{correctCount}/{totalQuestionsDisplay}</div>
+              <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-3 sm:p-4 rounded-xl shadow-romantic-sm border border-purple-100">
+                <div className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">{correctCount}/{totalQuestionsDisplay}</div>
                 <div className="text-xs text-purple-500/80 font-medium">Câu đúng</div>
               </div>
-              <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-4 rounded-xl shadow-romantic-sm border border-purple-100">
-                <div className="text-2xl font-bold text-rose-500">{incorrectCount}/{totalQuestionsDisplay}</div>
+              <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-3 sm:p-4 rounded-xl shadow-romantic-sm border border-purple-100">
+                <div className="text-xl sm:text-2xl font-bold text-rose-500">{incorrectCount}/{totalQuestionsDisplay}</div>
                 <div className="text-xs text-rose-500/80 font-medium">Câu sai</div>
-              </div>
-              <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-4 rounded-xl shadow-romantic-sm border border-purple-100">
-                <div className="text-2xl font-bold text-purple-700">{timeDisplay}</div>
-                <div className="text-xs text-purple-500/80 font-medium">Thời gian</div>
               </div>
             </motion.div>
             
@@ -358,7 +342,7 @@ export default function Results() {
               </motion.div>
             )}
             
-            {/* View Answers Button - Moved above the action buttons */}
+            {/* View Answers Button */}
             <div className="mb-6">
               <motion.button 
                 className="w-full flex items-center justify-center gap-2 py-3 rounded-xl border-2 border-purple-200 bg-white text-purple-700 font-medium shadow-romantic-sm hover:bg-purple-50 transition-all duration-200"
@@ -377,7 +361,7 @@ export default function Results() {
                           behavior: 'smooth'
                         });
                       }
-                    }, 150); // Slightly longer delay for more reliable rendering
+                    }, 150);
                   }
                 }}
                 whileHover={{ scale: 1.01 }}
@@ -390,7 +374,7 @@ export default function Results() {
               </motion.button>
             </div>
             
-            {/* Actions - Centered buttons */}
+            {/* Actions */}
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button
                 variant="secondary"
@@ -425,7 +409,7 @@ export default function Results() {
                     className="w-full shadow-romantic-sm py-3 bg-gradient-to-r from-purple-600 to-pink-500 hover:from-purple-700 hover:to-pink-600 text-white rounded-xl transition-all duration-200"
                     onClick={() => setLocation("/")}
                   >
-                    Quay về trang chủ
+                    Về trang chủ
                   </Button>
                 </motion.div>
               )}

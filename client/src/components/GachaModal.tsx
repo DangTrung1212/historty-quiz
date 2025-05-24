@@ -6,7 +6,6 @@ import {
   DialogHeader,
   DialogTitle,
   DialogDescription,
-  DialogFooter,
   DialogClose
 } from "@/components/ui/dialog"; // Assuming ShadCN Dialog
 import GachaWheel from './GachaWheel';
@@ -32,6 +31,7 @@ const GachaModal: React.FC<GachaModalProps> = ({
   const [isFirstSpin, setIsFirstSpin] = useState(true);
   const [savedPrize, setSavedPrize] = useState<string | null>(null);
   const [showRewardCard, setShowRewardCard] = useState(false);
+  const [hasRewardCardBeenShown, setHasRewardCardBeenShown] = useState(false);
 
   // Check localStorage for existing prize on component mount
   useEffect(() => {
@@ -58,6 +58,7 @@ const GachaModal: React.FC<GachaModalProps> = ({
     // Show the reward card after a brief delay
     setTimeout(() => {
       setShowRewardCard(true);
+      setHasRewardCardBeenShown(true); // Set to true when RewardCard is shown
     }, 1000);
   };
 
@@ -65,6 +66,7 @@ const GachaModal: React.FC<GachaModalProps> = ({
     setPrizeWon(null); // Reset previous prize before new spin
     setIsWheelSpinning(true);
     setShowRewardCard(false);
+    setHasRewardCardBeenShown(false); // Reset when a new spin starts
   }
 
   const handleDialogClose = () => {
@@ -79,62 +81,62 @@ const GachaModal: React.FC<GachaModalProps> = ({
 
   return (
     <Dialog open={isOpen} onOpenChange={handleDialogClose}>
-      <DialogContent className="sm:max-w-md md:max-w-lg bg-gradient-to-br from-purple-100 via-pink-100 to-purple-200 p-0 rounded-xl shadow-2xl border-none overflow-visible">
-        <div className="p-6">
-          <DialogHeader className="mb-4">
-            <DialogTitle className="text-3xl font-bold text-center bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent flex items-center justify-center">
-              <Sparkles className="w-8 h-8 mr-2 text-yellow-400" />
+      <DialogContent className="sm:max-w-sm bg-gradient-to-br from-purple-100 via-pink-100 to-purple-200 p-0 rounded-xl shadow-2xl border-none overflow-visible">
+        <div className="p-4 sm:p-5">
+          <DialogHeader className="mb-2">
+            <DialogTitle className="text-2xl font-bold text-center bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent flex items-center justify-center">
+              <Sparkles className="w-5 h-5 mr-1.5 text-yellow-400" />
               Vòng Quay May Mắn
-              <Sparkles className="w-8 h-8 ml-2 text-yellow-400" />
+              <Sparkles className="w-5 h-5 ml-1.5 text-yellow-400" />
             </DialogTitle>
-            <DialogDescription className="text-center text-purple-700/90 mt-1">
+            <DialogDescription className="text-center text-purple-700/90 text-sm mt-1">
               {!savedPrize && 'Quay vòng quay để nhận phần thưởng đặc biệt của bạn!'}
             </DialogDescription>
           </DialogHeader>
           
           {/* Show either the wheel or the reward card based on state */}
           {!showRewardCard ? (
-            <div className="my-6 flex justify-center">
+            <div className="my-2 flex justify-center">
               <GachaWheel 
                 segments={prizeSegments} 
                 onSpinEnd={handleSpinEnd} 
-                wheelSize={280}
+                wheelSize={240}
                 isFirstSpin={isFirstSpin}
               />
             </div>
           ) : (
-            <div className="my-6">
+            <div className="my-2">
               {prizeWon && (
                 <RewardCard rewardType={prizeWon as 'Knowledge' | 'Love' | 'Money'} />
               )}
               
-              <div className="mt-6 flex justify-center">
+              <div className="mt-3 flex justify-center">
                 <Button 
                   onClick={() => setShowRewardCard(false)}
                   variant="outline"
-                  className="border-purple-400 text-purple-700 hover:bg-purple-200/70 font-semibold"
+                  size="sm"
+                  className="border-purple-400 text-purple-700 hover:bg-purple-200/70 font-medium text-sm h-9"
                 >
-                  <RefreshCcw className="w-4 h-4 mr-2" />
-                  Quay Lại Vòng Quay
+                  <RefreshCcw className="w-3.5 h-3.5 mr-1.5" />
+                  Quay Lại
                 </Button>
               </div>
             </div>
           )}
 
           {/* Show current spin result - styled as secondary and only shown for non-first spins */}
-          {prizeWon && !showRewardCard && !isFirstSpin && (
+          {prizeWon && !showRewardCard && savedPrize && hasRewardCardBeenShown && (
             <motion.div 
-              className="mt-6 text-center p-3 bg-gray-100 border border-gray-300 rounded-lg"
+              className="mt-3 text-center p-2 bg-gray-100 border border-gray-300 rounded-lg text-sm"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ type: 'spring', stiffness: 200, damping: 15 }}
             >
-              <p className="text-sm font-medium text-gray-600">Kết quả quay thử:</p>
-              <p className="text-lg font-semibold text-gray-700">{prizeWon}</p>
+              <p className="font-medium text-gray-600">Kết quả lần quay này:</p>
+              <p className="font-semibold text-gray-700">{prizeWon}</p>
               <Button
                 onClick={() => setShowRewardCard(true)}
-                className="mt-2 bg-gray-200 hover:bg-gray-300 text-gray-700 text-sm py-1"
-                size="sm"
+                className="mt-1 bg-gray-200 hover:bg-gray-300 text-gray-700 text-xs h-7 px-2"
                 variant="ghost"
               >
                 <Gift className="w-3 h-3 mr-1" />
@@ -146,26 +148,25 @@ const GachaModal: React.FC<GachaModalProps> = ({
           {/* Show saved prize notification if exists - now below and more prominent */}
           {savedPrize && !showRewardCard && (
             <motion.div 
-              className="mt-8 text-center p-5 bg-gradient-to-r from-purple-100 to-pink-100 border-2 border-purple-300 rounded-xl shadow-md"
+              className="mt-4 text-center p-3 bg-gradient-to-r from-purple-100 to-pink-100 border-2 border-purple-300 rounded-lg shadow-sm"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
             >
-              <h4 className="text-lg font-bold text-purple-800 mb-2 flex items-center justify-center">
-                <Sparkles className="w-5 h-5 mr-2 text-purple-600" />
+              <h4 className="text-base font-bold text-purple-800 mb-1 flex items-center justify-center">
+                <Sparkles className="w-4 h-4 mr-1.5 text-purple-600" />
                 Phần Thưởng Chính Thức
               </h4>
-              <p className="text-md text-purple-700 flex items-center justify-center font-medium">
-                <Gift className="w-5 h-5 mr-2 text-purple-600" />
-                <span className="font-bold text-xl bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">{savedPrize}</span>
+              <p className="text-sm text-purple-700 flex items-center justify-center font-medium">
+                <Gift className="w-4 h-4 mr-1.5 text-purple-600" />
+                <span className="font-bold text-lg bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">{savedPrize}</span>
               </p>
               <Button
                 onClick={() => {
                   setPrizeWon(savedPrize);
                   setShowRewardCard(true);
                 }}
-                className="mt-3 bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 text-white font-medium"
-                size="sm"
+                className="mt-2 bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 text-white text-sm h-8 px-3"
               >
                 Xem Chi Tiết
               </Button>

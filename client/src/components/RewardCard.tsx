@@ -39,21 +39,21 @@ const RewardCard: React.FC<RewardCardProps> = ({ rewardType }) => {
 
   return (
     <motion.div
-      className={`p-4 rounded-xl shadow-lg border-2 ${content.borderColor} ${content.bgColor} max-w-md mx-auto`}
+      className={`p-3 rounded-xl shadow-lg border-2 ${content.borderColor} ${content.bgColor} max-w-[280px] mx-auto`}
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ type: 'spring', stiffness: 300, damping: 20 }}
     >
       <div className="flex flex-col items-center text-center">
-        <div className={`p-4 rounded-full ${content.bgColor} border ${content.borderColor} mb-4 shadow-inner`}>
-          {content.icon}
+        <div className={`p-2 rounded-full ${content.bgColor} border ${content.borderColor} mb-2 shadow-inner`}>
+          {React.cloneElement(content.icon, { className: 'w-8 h-8' })}
         </div>
-        <h3 className={`text-2xl font-bold mb-2 ${content.textColor}`}>{content.title}</h3>
-        <p className="text-gray-700 mb-4">{content.description}</p>
+        <h3 className={`text-xl font-bold mb-1 ${content.textColor}`}>{content.title}</h3>
+        <p className="text-sm text-gray-700 mb-2">{content.description}</p>
         
-        <div className="mt-2 flex items-center justify-center">
-          <Gift className="w-5 h-5 text-purple-500 mr-2" />
-          <span className="text-sm text-purple-600 font-medium">Phần thưởng đặc biệt</span>
+        <div className="flex items-center justify-center">
+          <Gift className="w-4 h-4 text-purple-500 mr-1" />
+          <span className="text-xs text-purple-600 font-medium">Phần thưởng đặc biệt</span>
         </div>
       </div>
     </motion.div>
