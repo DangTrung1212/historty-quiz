@@ -186,9 +186,9 @@
     },
     {
       "question_id": 26,
-      "question": "Cho bảng dữ kiện về Tổng khởi nghĩa tháng Tám năm 1945 ở Việt Nam: | Thời gian | Sự kiện |\n| --- | --- |\n| 15-8-1945 | Nhật hoàng tuyên bố đầu hàng Đồng minh không điều kiện. |\n| Từ 19 đến 25-8-1945 | Cuộc Tổng khởi nghĩa của nhân dân Việt Nam đã giành thắng lợi ở Hà Nội, Huế, Sài Gòn. |\n| 28-8-1945 | Tổng khởi nghĩa giành thắng lợi trong cả nước. |\n| 30-8-1945 | Vua Bảo Đại tuyên bố thoái vị. |\n| 2-9-1945 | Tại Quảng trường Ba Đình, thay mặt Chính phủ lâm thời, Hồ Chí Minh đọc Tuyên ngôn độc lập tuyên bố thành lập nước Việt Nam Dân chủ Cộng hòa.",
+      "question": "Dựa vào các sự kiện lịch sử sau về Tổng khởi nghĩa tháng Tám năm 1945 ở Việt Nam:\n- Ngày 15-8-1945: Nhật hoàng tuyên bố đầu hàng Đồng minh không điều kiện.\n- Từ ngày 19 đến 25-8-1945: Cuộc Tổng khởi nghĩa của nhân dân Việt Nam đã giành thắng lợi ở Hà Nội, Huế, Sài Gòn.\n- Ngày 28-8-1945: Tổng khởi nghĩa giành thắng lợi trong cả nước.\n- Ngày 30-8-1945: Vua Bảo Đại tuyên bố thoái vị.\n- Ngày 2-9-1945: Tại Quảng trường Ba Đình, thay mặt Chính phủ lâm thời, Hồ Chí Minh đọc Tuyên ngôn độc lập tuyên bố thành lập nước Việt Nam Dân chủ Cộng hòa.",
       "statements": {
-        "a": "Bảng dữ liệu trên đề cập đến diễn biến của Cách mạng tháng Tám năm 1945 ở Việt Nam.",
+        "a": "Đoạn tư liệu cung cấp thông tin về diễn biến chính của Cách mạng tháng Tám năm 1945 ở Việt Nam.",
         "b": "Cách mạng tháng Tám năm 1945 ở Việt Nam do dưới sự lãnh đạo của Chính phủ nước Việt Nam Dân chủ Cộng hòa.",
         "c": "Thắng lợi của Cách mạng tháng Tám năm 1945 ở Việt Nam đã góp phần thúc đẩy cuộc Chiến tranh thế giới thứ hai nhanh chóng kết thúc.",
         "d": "Sự thắng lợi của quân Đồng minh trước phát xít Nhật đã tác động tích cực đến Cách mạng tháng Tám năm 1945 ở Việt Nam."

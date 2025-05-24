@@ -183,28 +183,6 @@
         "c": "Sai, đoạn tư liệu không đề cập đến việc Việt Nam cần liên minh quân sự chặt chẽ với các nước trong khu vực, mà nhấn mạnh vai trò hợp tác hòa bình và phát triển.",
         "d": "Đúng, đoạn tư liệu xác nhận Việt Nam gia nhập ASEAN là một dấu mốc quan trọng trong quá trình hội nhập khu vực."
       }
-    },
-    {
-      "question_id": 26,
-      "question": "Đọc đoạn tư liệu, chọn đúng hoặc sai",
-      "statements": {
-        "a": "Nguyên tắc điều phối hoạt động của ASEAN là biểu hiện rõ nét việc dung hoà lợi ích của các nước thành viên.",
-        "b": "Việc kết nạp thành viên của ASEAN lâu dài và trở ngại do thể chế chính trị các nước có sự khác nhau.",
-        "c": "ASEAN là một tổ chức liên kết quốc tế, việc kết nạp thành viên không có sự phân biệt thể chế chính trị.",
-        "d": "Nguyên tắc hoạt động của ASEAN khá chặt chẽ là cơ sở để thúc đẩy sự hợp tác, phát triển của tổ chức này."
-      },
-      "answer_boolean_map": {
-        "a": true,
-        "b": false,
-        "c": false,
-        "d": true
-      },
-      "explanation_map": {
-        "a": "Đúng, nguyên tắc hoạt động và cơ cấu tổ chức của ASEAN chặt chẽ hơn, nhằm dung hòa lợi ích của các nước thành viên.",
-        "b": "Sai, đoạn tư liệu không đề cập việc việc kết nạp thành viên của ASEAN gặp trở ngại do sự khác biệt về thể chế chính trị, mà nhấn mạnh tinh thần mở rộng không phân biệt trong Tuyên bố Băng Cốc 1967.",
-        "c": "Sai, đoạn tư liệu không đề cập đến việc kết nạp thành viên của ASEAN không có sự phân biệt thể chế chính trị. Thay vào đó, đoạn tư liệu chỉ nhấn mạnh rằng ASEAN mở rộng cho tất cả các quốc gia Đông Nam Á tán thành các tôn chỉ, nguyên tắc và mục đích tham gia, theo tinh thần của Tuyên bố Băng Cốc 1967. Điều này không có nghĩa là không có sự phân biệt thể chế chính trị, mà chỉ là các quốc gia phải tán thành các tôn chỉ, nguyên tắc và mục đích của ASEAN.",
-        "d": "Đúng, nguyên tắc hoạt động chặt chẽ của ASEAN là nền tảng để thúc đẩy sự hợp tác và phát triển trong khu vực."
-      }
     }
   ]
 }

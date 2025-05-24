@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Heart, Gift, BookOpen, Cake, Sparkles } from 'lucide-react';
+import { Heart, Gift, BookOpen, Cake, Sparkles, CheckCircle } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 interface PageTurningCardProps {
   message?: string;
@@ -9,6 +10,8 @@ interface PageTurningCardProps {
   coverColor?: string;
   pageColor?: string;
   recipientName?: string;
+  onGachaButtonClick?: () => void;
+  hasReceivedReward?: boolean;
 }
 
 const PageTurningCard: React.FC<PageTurningCardProps> = ({
@@ -18,6 +21,8 @@ const PageTurningCard: React.FC<PageTurningCardProps> = ({
   coverColor = 'from-purple-600 to-pink-500',
   pageColor = 'from-purple-50 to-pink-50',
   recipientName = 'Bạn',
+  onGachaButtonClick,
+  hasReceivedReward = false,
 }) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
@@ -48,13 +53,14 @@ const PageTurningCard: React.FC<PageTurningCardProps> = ({
 
   return (
     <div 
-      className="relative w-full max-w-full md:max-w-[320px] mx-auto overflow-hidden shadow-romantic-lg"
+      className="relative w-full max-w-full mx-auto overflow-visible shadow-romantic-lg"
       style={{ 
-        width: isFlipped ? (isMobile ? '100%' : `calc(${cardWidth} * 2)`) : '100%',
-        height: isFlipped ? (isMobile ? `calc(${cardHeight} * 1.8)` : cardHeight) : cardHeight,
-        maxWidth: isFlipped ? (isMobile ? '100%' : '640px') : '100%',
+        width: isFlipped ? (isMobile ? '100%' : `calc(${cardWidth} * 2)`) : (isMobile ? '100%' : cardWidth),
+        height: isFlipped ? (isMobile ? `min(90vh, ${cardHeight} * 1.8)` : cardHeight) : cardHeight,
+        maxWidth: isFlipped ? (isMobile ? '100%' : `min(calc(${cardWidth} * 2), 90vw)`) : (isMobile ? '100%' : cardWidth),
         perspective: '1500px',
         transition: 'all 0.8s ease-in-out',
+        margin: '0 auto'
       }}
     >
       {/* Book Cover (Closed State) */}
@@ -103,7 +109,7 @@ const PageTurningCard: React.FC<PageTurningCardProps> = ({
           <div className="absolute inset-0 flex flex-col md:flex-row w-full h-full">
             {/* Left Page (Back of Cover) */}
             <motion.div
-              className="relative w-full md:w-1/2 h-1/2 md:h-full bg-gradient-to-r from-purple-100 to-purple-50 flex items-center justify-center rounded-t-lg md:rounded-l-lg md:rounded-r-none"
+              className="relative w-full md:w-1/2 h-1/2 md:h-full bg-white flex items-center justify-center rounded-t-lg md:rounded-l-lg md:rounded-r-none"
               initial={{ opacity: 0, y: isMobile ? 50 : 0, rotateY: isMobile ? 0 : 180 }}
               animate={{ opacity: 1, y: 0, rotateY: isMobile ? 0 : 0 }}
               transition={{ duration: 0.8, ease: "easeInOut" }}
@@ -113,11 +119,41 @@ const PageTurningCard: React.FC<PageTurningCardProps> = ({
                 boxShadow: isMobile ? 'none' : 'inset -5px 0 10px rgba(0,0,0,0.1)'
               }}
             >
-              <div className="absolute inset-0 flex items-center justify-center p-4">
-                <div className="text-center">
-                  <Heart className="w-16 h-16 mx-auto mb-4 text-pink-400 fill-pink-200" />
-                  <h3 className="text-xl font-bold text-purple-700 mb-2">Chúc Mừng</h3>
-                  <p className="text-purple-600 text-sm">Bạn đã mở khóa phần thưởng đặc biệt!</p>
+              <div className="absolute inset-0 p-4 md:p-6 flex flex-col items-center justify-center overflow-auto">
+                <div className="relative w-full h-full bg-gradient-to-br from-pink-50 to-purple-50 rounded-lg p-4 md:p-6 flex flex-col items-center justify-center text-center">
+                  <Heart className="w-10 h-10 text-pink-500 mb-4" />
+                  <p className="text-base md:text-lg font-serif italic text-purple-600 leading-loose font-normal mb-4 max-w-[90%]">
+                    Chúc mừng sinh nhật bạn!
+                  </p>
+                </div>
+                
+                {/* Floating hearts */}
+                <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                  {[...Array(8)].map((_, i) => (
+                    <motion.div
+                      key={i}
+                      className="absolute"
+                      initial={{ 
+                        x: `${Math.random() * 100}%`, 
+                        y: '120%',
+                        opacity: 0.7,
+                        scale: Math.random() * 0.5 + 0.5
+                      }}
+                      animate={{ 
+                        y: '-20%',
+                        opacity: [0.7, 0.9, 0],
+                        rotate: Math.random() * 360
+                      }}
+                      transition={{ 
+                        duration: Math.random() * 10 + 10,
+                        delay: Math.random() * 5,
+                        repeat: Infinity,
+                        repeatType: "loop"
+                      }}
+                    >
+                      <Heart className="text-pink-400 w-6 h-6 fill-pink-400" />
+                    </motion.div>
+                  ))}
                 </div>
               </div>
               
@@ -135,23 +171,18 @@ const PageTurningCard: React.FC<PageTurningCardProps> = ({
                 boxShadow: isMobile ? 'none' : 'inset 5px 0 10px rgba(0,0,0,0.1)'
               }}
             >
-              <div className="absolute inset-0 p-4 md:p-6 flex flex-col items-center justify-center">
+              <div className="absolute inset-0 p-4 md:p-6 flex flex-col items-center justify-center overflow-auto">
                 <div className="relative w-full h-full bg-gradient-to-br from-pink-50 to-purple-50 rounded-lg p-4 md:p-6 flex flex-col items-center justify-center text-center">
                   <Cake className="w-10 h-10 text-pink-500 mb-4" />
-                  <h2 className="text-2xl md:text-3xl font-bold text-pink-600 mb-2 font-heading">
-                    Chúc Mừng Sinh Nhật
-                  </h2>
-                  <h3 className="text-xl md:text-2xl font-bold text-purple-600 mb-4">
-                    {recipientName}!
-                  </h3>
-                  <div className="text-base md:text-lg text-purple-700 leading-relaxed font-medium mb-4 max-w-[90%]">
+                  
+                  <div className="text-base md:text-lg font-serif italic text-purple-600 leading-loose font-normal mb-4 max-w-[90%]">
                     {message.split('\n').map((line, i) => (
                       <p key={i} className="mb-2">{line}</p>
                     ))}
                   </div>
                   <div className="flex items-center justify-center mt-2">
                     <Sparkles className="w-5 h-5 text-yellow-500 mr-2" />
-                    <span className="text-sm text-purple-600 font-medium">21.05.2025</span>
+                    <span className="text-sm text-purple-500 font-light">21.05.2025</span>
                   </div>
                 </div>
                 
@@ -188,6 +219,28 @@ const PageTurningCard: React.FC<PageTurningCardProps> = ({
                 <div 
                   className="absolute left-0 top-0 bottom-0 w-[3px] bg-gradient-to-r from-black/20 to-transparent"
                 />
+                
+                {/* Gacha Button on Card */}
+                {onGachaButtonClick && (
+                  <div className="flex flex-col items-center">
+                    <Button 
+                      onClick={onGachaButtonClick}
+                      className="mt-6 font-medium py-6 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white"
+                    >
+                      {hasReceivedReward ? (
+                        <>
+                          <Gift className="w-5 h-5 mr-2" />
+                          Xem lại phần thưởng
+                        </>
+                      ) : (
+                        <>
+                          <Gift className="w-5 h-5 mr-2" />
+                          Quay quà ngay
+                        </>
+                      )}
+                    </Button>
+                  </div>
+                )}
               </div>
             </motion.div>
           </div>

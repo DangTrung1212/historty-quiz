@@ -82,27 +82,6 @@
     }
   ],
   "phan_ii": [
-    {
-      "question_id": 25,
-      "question": "Cho những thông tin trong bảng sau:",
-      "statements": {
-        "a": "Sự ra đời của NATO và Tổ chức Hiệp ước Vacsava là một biểu hiện của Trật tự thế giới hai cực Ianta.",
-        "b": "Với thắng lợi của Cách mạng Trung Quốc (1949) chứng tỏ ngay trong giai đoạn xác lập và phát triển, Trật tự thế giới hai cực Ianta đã có biểu hiện của sự rạn nứt.",
-        "c": "Trật tự thế giới hai cực Ianta chính thức sụp đổ khi Mỹ và Liên Xô tuyên bố chấm dứt Chiến tranh lạnh.",
-        "d": "Trật tự thế giới hai cực Ianta suy yếu khi xu hướng hòa hoãn giữa Mỹ và Liên Xô bắt đầu xuất hiện từ đầu những năm 70 của thế kỷ XX."
-      },
-      "answer_boolean_map": {
-        "a": true,
-        "b": true,
-        "c": false,
-        "d": true
-      },
-      "explanation_map": {
-        "a": "Đúng. Sự ra đời của NATO và Tổ chức Hiệp ước Vacsava là một biểu hiện của Trật tự thế giới hai cực Ianta vì hai tổ chức quân sự này thuộc hai hệ thống đối đầu nhau là tư bản chủ nghĩa và xã hội chủ nghĩa.",
-        "b": "Đúng. Với thắng lợi của Cách mạng Trung Quốc (1949) chứng tỏ ngay trong giai đoạn xác lập và phát triển, Trật tự thế giới hai cực Ianta đã có biểu hiện của sự rạn nứt. Sự ra đời và vươn lên của Trung Quốc là một biểu hiện cho sự xói mòn của trật tự hai cực Ianta.",
-        "c": "Sai. Trật tự thế giới hai cực Ianta chính thức sụp đổ khi Mỹ và Liên Xô tuyên bố chấm dứt Chiến tranh lạnh. Suy tàn của Liên Xô khiến cho hệ thống chủ nghĩa xã hội không còn tồn tại.",
-        "d": "Đúng. Trật tự thế giới hai cực Ianta suy yếu khi xu hướng hòa hoãn giữa Mỹ và Liên Xô bắt đầu xuất hiện từ đầu những năm 70 của thế kỷ XX."
-      }
-    }
+    
   ]
 }

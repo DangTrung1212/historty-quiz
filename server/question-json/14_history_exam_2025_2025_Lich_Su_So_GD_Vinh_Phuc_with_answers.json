@@ -103,28 +103,6 @@
         "c": "Sai, Sự tan rã của Liên Xô khiến hệ thống xã hội chủ nghĩa không còn tồn tại, nhưng chủ nghĩa xã hội vẫn tồn tại ở một số quốc gia như Trung Quốc, Cuba...",
         "d": "Đúng, Sự tan rã của chế độ xã hội chủ nghĩa ở Liên Xô là nguyên nhân sâu xa của Trật tự thế giới hai cực I-an-ta."
       }
-    },
-    {
-      "question_id": 26,
-      "question": "Cho những thông tin trong bảng sau đây: | Giai đoạn | Nội dung | | --- | --- | | 1967-1976 | ASEAN được thành lập và bước đầu phát triển về cơ cấu tổ chức, nguyên tắc hoạt động. | | 1976-1999 | Thiết lập quan hệ chính trị ổn định trong khu vực, mở rộng thành viên và từng bước nâng cao vị thế của ASEAN trên trường quốc tế. | | 1999-2015 | Hoàn thiện cơ cấu tổ chức, tăng cường hợp tác nội khối và hợp tác quốc tế, từng bước chuẩn bị cho sự ra đời của Cộng đồng ASEAN. | | 2015-nay | Cộng đồng ASEAN được xây dựng và phát triển với ba trụ cột là Cộng đồng Chính trị - An ninh, Cộng đồng Kinh tế và Cộng đồng Văn hóa - xã hội.",
-      "statements": {
-        "a": "Từ ASEAN đến Cộng đồng ASEAN phản ánh xu thế phát triển tất yếu của quan hệ quốc tế trong và sau Chiến tranh lạnh.",
-        "b": "Quá trình mở rộng thành viên của Cộng đồng ASEAN diễn ra lâu dài do tác động của Chiến tranh lạnh.",
-        "c": "Giai đoạn 1967-1976, Hội nghị Thường đỉnh là cơ chế hoạch định chính sách cao nhất của ASEAN.",
-        "d": "Bảng thông tin trên thể hiện các giai đoạn phát triển chính của Hiệp hội các quốc gia Đông Nam Á (ASEAN)."
-      },
-      "answer_boolean_map": {
-        "a": true,
-        "b": false,
-        "c": false,
-        "d": true
-      },
-      "explanation_map": {
-        "a": "Đúng, Từ ASEAN đến Cộng đồng ASEAN phản ánh xu thế phát triển tất yếu của quan hệ quốc tế trong và sau Chiến tranh lạnh. Đó là xu thế hòa bình, hợp tác cùng phát triển.",
-        "b": "Sai, Quá trình mở rộng thành viên của Cộng đồng ASEAN diễn ra lâu dài do thời gian giành độc lập của các quốc gia Đông Nam Á có sự khác nhau, thậm chí phải cầm súng chiến đấu chống sự tái xâm lược của các nước Tây Âu rồi chủ nghĩa thực dân mới nên quá trình này diễn ra lâu dài và đầy gian khó.",
-        "c": "Sai, Giai đoạn 1967-1976, Hội nghị Thường đỉnh là cơ quan hoạch định chính sách cao nhất của ASEAN.",
-        "d": "Đúng, Bảng thông tin trên thể hiện các giai đoạn phát triển chính của Hiệp hội các quốc gia Đông Nam Á (ASEAN)."
-      }
     }
   ]
 }

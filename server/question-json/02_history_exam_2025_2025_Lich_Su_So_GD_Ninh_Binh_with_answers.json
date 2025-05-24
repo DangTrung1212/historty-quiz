@@ -83,28 +83,6 @@
   ],
   "phan_ii": [
     {
-      "question_id": 25,
-      "question": "Cho những thông tin trong bảng sau đây, chọn đúng hoặc sai",
-      "statements": {
-        "a": "Hội nghị I-an-ta (2-1945) được xem là hội nghị khởi đầu cho việc hình thành một trật tự thế giới mới sau khi Chiến tranh thế giới thứ hai kết thúc trên toàn thế giới.",
-        "b": "Phát biểu của Tổng thống Mỹ G. Bút-so trong cuộc gặp với Tổng Bí thư Đảng Cộng sản Liên Xô M. Goóc-ba-chốp (12-1989) đánh dấu kết thúc hoàn toàn cuộc đối đầu quân sự tại châu Âu.",
-        "c": "Việc Mỹ đề ra 'Kế hoạch Mác-san' còn Liên Xô và các nước Đông Âu thành lập Hội đồng tương trợ kinh tế (SEV) đã tạo ra sự đối đầu gay gắt về chính trị, quân sự giữa hai hệ thống xã hội đối lập.",
-        "d": "Tổng thống Mỹ R. Nich-xơn có chuyến thăm chính thức đầu tiên tới Liên Xô đã mở đầu cho sự xói mòn và dẫn đến sụp đổ của trật tự thế giới hai cực I-an-ta."
-      },
-      "answer_boolean_map": {
-        "a": true,
-        "b": false,
-        "c": true,
-        "d": true
-      },
-      "explanation_map": {
-        "a": "Đúng, Hội nghị I-an-ta (2-1945) được xem là hội nghị khởi đầu cho việc hình thành một trật tự thế giới mới sau khi Chiến tranh thế giới thứ hai kết thúc, vì tại hội nghị này, các cường quốc đã quyết định nhiều vấn đề quan trọng, định hình lại trật tự quốc tế.",
-        "b": "Sai, phát biểu của Tổng thống Mỹ G. Bút-so trong cuộc gặp với Tổng Bí thư Đảng Cộng sản Liên Xô M. Goóc-ba-chốp vào tháng 12 năm 1989 đánh dấu kết thúc Chiến tranh Lạnh, nhưng không phải là kết thúc hoàn toàn cuộc đối đầu quân sự tại châu Âu. Cuộc đối đầu này thực sự kết thúc với sự sụp đổ của Bức tường Berlin (1989) và sự tan rã của Liên Xô (1991).",
-        "c": "Đúng, việc Mỹ đề ra 'Kế hoạch Mác-san' và Liên Xô cùng các nước Đông Âu thành lập Hội đồng tương trợ kinh tế (SEV) là các biện pháp đã tạo ra sự đối đầu gay gắt về chính trị và quân sự giữa hai hệ thống xã hội đối lập: tư bản chủ nghĩa và xã hội chủ nghĩa.",
-        "d": "Đúng, Tổng thống Mỹ R. Nich-xơn có chuyến thăm chính thức đầu tiên tới Liên Xô vào năm 1972, điều này mở đầu cho sự xói mòn trật tự thế giới hai cực I-an-ta, góp phần làm giảm căng thẳng trong Chiến tranh Lạnh, và cuối cùng dẫn đến sự tan rã của trật tự này."
-      }
-    },
-    {
       "question_id": 26,
       "question": "Cho đoạn tư liệu sau đây: \"Sau năm 1945, các quốc gia độc lập ở Đông Nam Á lần lượt ra đời, đã có những sáng kiến về việc thành lập các tổ chức khu vực như ASA (Ma-lai-xi-a, Thái Lan, Phi-lip-pin) năm 1961, MAPHILINDO (Ma-lai-xi-a, Phi-lip-pin, In-đô-nê-xi-a) năm 1963, song đều không thành công do sự tranh chấp lãnh thổ giữa các nước thành viên. Trật tự thế giới hai cực và cuộc Chiến tranh lạnh kéo dài đã ảnh hưởng đến khu vực Đông Nam Á. Tình hình càng trở nên căng thẳng hơn do sự can thiệp của Mỹ trong cuộc chiến tại Việt Nam. Năm nước Đông Nam A là Thái Lan, In-đô-nê-xi-a, Ma-lai-xi-a, Xin-ga-po và Phi-lip-pin lo ngại có thể sẽ bị lôi cuốn vào chiến tranh và ảnh hưởng của phong trào cách mạng Đông Dương lan rộng đã quyết định thành lập một tổ chức khu vực. Ngày 08-08-1967, Hiệp hội các quốc gia Đông Nam A-ASEAN đã chính thức ra đời.\"",
       "statements": {

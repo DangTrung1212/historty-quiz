@@ -1,6 +1,5 @@
 import { createContext, useContext, useState, useCallback, ReactNode, useEffect } from 'react';
 import { QuizSection } from '@/lib/quiz-data';
-import { useLocation } from 'wouter';
 import { calculateMultipleChoiceScore } from "../lib/quiz-multichoice";
 
 interface MultipleChoiceQuizContextType {

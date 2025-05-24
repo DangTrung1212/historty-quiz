@@ -83,28 +83,6 @@
   ],
   "phan_ii": [
     {
-      "question_id": 25,
-      "question": "Cho bảng dữ kiện về các chiến lược chiến tranh Mỹ thực hiện ở miền Nam Việt Nam",
-      "statements": {
-        "a": "Trong giai đoạn 1965 -1968， nhân dân miền Nam Việt Nam phải chiến đấu chống chiến lược \"Chiến tranh đặc biệt\" của Mỹ.",
-        "b": "Thắng lợi của nhân dân Việt Nam trong kháng chiến chống Mỹ cứu nước đã làm thất bại chiến lược toàn cầu của Mỹ.",
-        "c": "Các chiến lược chiến tranh Mỹ triển khai ở miền Nam phản ánh bản chất ngoan cố trong việc tiến hành chiến tranh xâm lược miền Nam Việt Nam.",
-        "d": "Việc Mỹ dựng lên chính quyền tay sai Ngô Đình Diệm là biểu hiện Mỹ đã phá hoại Hiệp định Genève về Đông Dương."
-      },
-      "answer_boolean_map": {
-        "a": false,
-        "b": false,
-        "c": true,
-        "d": true
-      },
-      "explanation_map": {
-        "a": "Sai, trong giai đoạn 1965 -1968, nhân dân miền Nam Việt Nam phải chiến đấu chống chiến lược \"Chiến tranh cục bộ\" của Mỹ.",
-        "b": "Sai, thắng lợi của nhân dân Việt Nam trong kháng chiến chống Mỹ cứu nước đã góp phần làm thất bại chiến lược toàn cầu của Mỹ.",
-        "c": "Đúng, các chiến lược chiến tranh Mỹ triển khai ở miền Nam phản ánh bản chất ngoan cố trong việc tiến hành chiến tranh xâm lược miền Nam Việt Nam.",
-        "d": "Đúng, việc Mỹ dựng lên chính quyền tay sai Ngô Đình Diệm là biểu hiện Mỹ đã phá hoại Hiệp định Genève về Đông Dương."
-      }
-    },
-    {
       "question_id": 26,
       "question": "Đọc đoạn tư liệu sau đây.\n\n\"Sau Chiến tranh lạnh, Đông Nam Á bước vào một thời kỳ phát triển mới. Một trong những nhân tố chủ đạo vẽ nên bức tranh toàn cảnh của Đông Nam Á thời kỳ này là tiến trình liên kết khu vực. Chỉ trong vòng chưa đầy 10 năm, các nước Đông Nam Á đã hoàn tất quá trình khu vực hóa, được bắt đầu từ giữa thập niên \"một trung tâm quyền lực mới\" ở khu vực của thế kỷ trước, đưa ASEAN trở thành một tổ chức toàn khu vực, vươn tới APEC với tính thích nghi cao, sự năng động và sức sống mãnh liệt\".\n\n(Lương Ninh, Lịch sử Đông Nam Á, NXB Giáo dục, 2007, tr.603)",
       "statements": {

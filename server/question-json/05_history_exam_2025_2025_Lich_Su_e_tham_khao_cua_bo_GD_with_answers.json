@@ -161,28 +161,5 @@
       }
     }
   ],
-  "phan_ii": [
-    {
-      "question_id": 25,
-      "question": "Cho thông tin bảng sau",
-      "statements": {
-        "a": "Bảng thông tin trên thể hiện các sự kiện của Trật tự thế giới hai cực I-an-ta.",
-        "b": "Mối quan hệ giữa Liên Xô và Mỹ chuyển từ đồng minh chiến lược sang cạnh tranh và đối đầu.",
-        "c": "Sự thành lập Tổ chức Hiệp ước Bắc Đại Tây Dương và Tổ chức Hiệp ước Vác-sa-va thể hiện sự xói mòn của Trật tự thế giới hai cực I-an-ta.",
-        "d": "Các cuộc chiến tranh cục bộ trong thập niên 50 của thế kỷ XX đã làm thay đổi thế và lực theo hướng có lợi cho Mỹ."
-      },
-      "answer_boolean_map": {
-        "a": true,
-        "b": false,
-        "c": false,
-        "d": false
-      },
-      "explanation_map": {
-        "a": "Đúng, các sự kiện được liệt kê trong bảng đều liên quan đến quá trình hình thành và phát triển của Trật tự thế giới hai cực I-an-ta, như Hội nghị I-an-ta và Pốtx-đam, Chiến tranh lạnh, và sự thành lập NATO và Hiệp ước Vác-sa-va.",
-        "b": "Sai, vì mối quan hệ của Liên Xô và Mỹ không phải là đồng minh chiến lược mà chỉ là đồng minh tạm thời trong cuộc chiến tranh thế giới.",
-        "c": "Sai, sự thành lập NATO (1949) và Hiệp ước Vác-sa-va (1955) thực ra là những minh chứng cho sự cùng tồn tại của Trật tự hai cực, với NATO đại diện cho khối Tây Âu và Mỹ, và Hiệp ước Vác-sa-va đại diện cho khối Đông Âu và Liên Xô.",
-        "d": "Sai, các cuộc chiến tranh cục bộ như Chiến tranh Triều Tiên (1950-1953) và Chiến tranh Đông Dương thực ra không mang lại lợi thế rõ ràng cho Mỹ, vì Chiến tranh Triều Tiên kết thúc trong bế tắc, và Mỹ gặp nhiều khó khăn trong cuộc chiến ở Đông Dương."
-      }
-    }
-  ]
+  "phan_ii": []
 }

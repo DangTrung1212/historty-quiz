@@ -8,15 +8,26 @@ import { motion, AnimatePresence } from "framer-motion";
 import BadgeCard from "@/components/badge-card";
 import Confetti from "react-confetti";
 import useWindowSize from "react-use/lib/useWindowSize";
-import { Share, RotateCcw, Star, Award, Sparkles } from "lucide-react";
+import { Share, RotateCcw, Star, Award, Sparkles, Gift, ArrowLeft } from "lucide-react";
 import { cn } from "@/lib/utils";
 import PageTurningCard from '@/components/PageTurningCard';
+import GachaModal from '@/components/GachaModal';
 
 export default function Reward() {
   const { width, height } = useWindowSize();
   const [showConfetti, setShowConfetti] = useState(true);
   const { sections } = useMultipleChoiceQuiz();
   const { allSectionsCompleted } = useProgress();
+  const [isGachaModalOpen, setIsGachaModalOpen] = useState(false);
+  const [hasReceivedReward, setHasReceivedReward] = useState(false);
+
+  // Check if reward has been received from localStorage
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const storedPrize = localStorage.getItem('birthdayGachaPrize');
+      setHasReceivedReward(!!storedPrize);
+    }
+  }, []);
 
   useEffect(() => {
     // Stop confetti after 5 seconds
@@ -27,36 +38,6 @@ export default function Reward() {
     return () => clearTimeout(timer);
   }, []);
 
-  const badges = [
-    {
-      icon: "crown",
-      color: "text-yellow-400",
-      bgColor: "bg-yellow-50",
-      borderColor: "border-yellow-200",
-      title: "Chuyên gia Lịch sử"
-    },
-    {
-      icon: "bolt",
-      color: "text-purple-500",
-      bgColor: "bg-purple-50",
-      borderColor: "border-purple-200",
-      title: "Siêu tốc"
-    },
-    {
-      icon: "bullseye",
-      color: "text-pink-500",
-      bgColor: "bg-pink-50",
-      borderColor: "border-pink-200",
-      title: "Chính xác"
-    },
-    {
-      icon: "book",
-      color: "text-indigo-500",
-      bgColor: "bg-indigo-50",
-      borderColor: "border-indigo-200",
-      title: "Học giả toàn diện"
-    }
-  ];
 
   if (!allSectionsCompleted()) {
     return (
@@ -73,10 +54,10 @@ export default function Reward() {
   }
 
   // Personalized birthday message text
-  const personalizedBirthdayMessage = "Chúc mừng bạn đã hoàn thành tất cả các thử thách lịch sử!\n\nBạn thật tuyệt vời và xứng đáng nhận được món quà đặc biệt này.\n\nChúc bạn có một ngày sinh nhật thật vui vẻ và hạnh phúc!";
+  const personalizedBirthdayMessage = "Chúc em có 1 ngày sinh nhật vui vẻ hạnh phúc.\n\n Ấn quay quà và nhắn cho anh nhé!";
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-purple-100 via-pink-100 to-purple-200 py-10 sm:py-16">
+    <section className="min-h-screen bg-gradient-to-br from-purple-100 via-pink-100 to-purple-200 py-6 sm:py-10 overflow-y-auto">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(5)].map((_, i) => (
@@ -123,26 +104,26 @@ export default function Reward() {
         )}
       </AnimatePresence>
       
-      <div className="flex-1 overflow-auto p-4 sm:p-6 relative z-10">
-        <div className="max-w-2xl mx-auto">
+      <div className="flex-1 overflow-hidden p-4 sm:p-6 relative z-10">
+        <div className="max-w-2xl mx-auto overflow-hidden">
           {/* Success Header */}
           <motion.div 
-            className="text-center mb-8 sm:mb-12"
+            className="text-center mb-4 sm:mb-6"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
             <motion.div 
-              className="inline-flex items-center justify-center w-24 h-24 bg-gradient-to-br from-purple-100 to-pink-100 rounded-full mb-6 shadow-lg border-2 border-white"
+              className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-purple-100 to-pink-100 rounded-full mb-3 shadow-lg border-2 border-white"
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ delay: 0.2, type: 'spring', stiffness: 200, damping: 15 }}
             >
-              <Star className="text-purple-500 w-12 h-12 fill-current" />
-              <Sparkles className="absolute text-yellow-400 w-6 h-6 -top-1 -right-1 animate-pulse" />
+              <Star className="text-purple-500 w-8 h-8 sm:w-10 sm:h-10 fill-current" />
+              <Sparkles className="absolute text-yellow-400 w-4 h-4 sm:w-5 sm:h-5 -top-1 -right-1 animate-pulse" />
             </motion.div>
             <motion.h1 
-              className="text-3xl sm:text-5xl font-bold bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent mb-3"
+              className="text-2xl sm:text-4xl font-bold bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent mb-2"
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
@@ -150,7 +131,7 @@ export default function Reward() {
               Tuyệt Vời! Xin Chúc Mừng!
             </motion.h1>
             <motion.p 
-              className="text-lg text-purple-700/80 font-medium"
+              className="text-base text-purple-700/80 font-medium"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
@@ -161,7 +142,7 @@ export default function Reward() {
           
           {/* Replaced Reward Image with BirthdayCard */}
           <motion.div 
-            className="mb-10 sm:mb-12 flex justify-center items-center" // Centering the card
+            className="mb-10 sm:mb-12 flex justify-center items-center min-h-[500px]" // Added min-height to ensure full display
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2, type: "spring", stiffness: 100 }}
@@ -169,8 +150,10 @@ export default function Reward() {
             <PageTurningCard 
               message={personalizedBirthdayMessage}
               recipientName="Bạn"
-              cardWidth="320px"
-              cardHeight="450px"
+              cardWidth="300px"
+              cardHeight="420px"
+              hasReceivedReward={hasReceivedReward}
+              onGachaButtonClick={() => setIsGachaModalOpen(true)}
             />
           </motion.div>
           <p className="text-center mt-4 text-sm text-purple-500/80 font-medium mb-8">
@@ -189,21 +172,14 @@ export default function Reward() {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
-              <Button
-                variant="outline"
-                className="w-full py-6 text-base border-purple-200 bg-white/80 hover:bg-white text-purple-700 hover:text-purple-800 font-medium rounded-xl shadow-sm hover:shadow-md transition-all duration-300"
-                onClick={() => {
-                  if (navigator.share) {
-                    navigator.share({
-                      title: 'Sử Nhanh - Tôi đã hoàn thành toàn bộ bài thi!',
-                      text: 'Tôi đã hoàn thành toàn bộ bài thi lịch sử với điểm số cao. Thử xem bạn làm được không nhé!',
-                      url: window.location.href,
-                    });
-                  }
-                }}
-              >
-                <Share className="mr-2 h-5 w-5" /> Chia sẻ thành tích
-              </Button>
+              <Link href="/quiz-selection" className="block w-full">
+                <Button
+                  variant="outline"
+                  className="w-full py-6 text-base border-purple-200 bg-white/80 hover:bg-white text-purple-700 hover:text-purple-800 font-medium rounded-xl shadow-sm hover:shadow-md transition-all duration-300"
+                >
+                  <ArrowLeft className="mr-2 h-5 w-5" /> Back to quiz selection page
+                </Button>
+              </Link>
             </motion.div>
             <motion.div 
               className="flex-1"
@@ -219,6 +195,7 @@ export default function Reward() {
           </motion.div>
         </div>
       </div>
+      <GachaModal isOpen={isGachaModalOpen} onOpenChange={setIsGachaModalOpen} />
     </section>
   );
 }

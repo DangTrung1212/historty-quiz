@@ -83,30 +83,8 @@
   ],
   "phan_ii": [
     {
-      "question_id": 25,
-      "question": "Đọc đoạn tư liệu sau:",
-      "statements": {
-        "a": "Từ năm 1991, cuộc cạnh tranh chiến lược giữa các cường quốc trong thời kỳ Chiến tranh lạnh là chạy đua vũ trang được thay thế bằng cuộc chạy đua về sức mạnh tổng hợp.",
-        "b": "Tương quan lực lượng giữa các cường quốc là một trong những nhân tố tác động đến việc hình thành trật tự thế giới sau Chiến tranh lạnh.",
-        "c": "Đoạn tư liệu đề cập đến bối cảnh hình thành và đặc điểm nổi bật của cục diện thế giới thời kỳ Chiến tranh lạnh.",
-        "d": "Sau Chiến tranh lạnh, trật tự đa cực nhiều trung tâm dần hình thành với ưu thế tuyệt đối thuộc về Mỹ và Trung Quốc."
-      },
-      "answer_boolean_map": {
-        "a": true,
-        "b": true,
-        "c": false,
-        "d": false
-      },
-      "explanation_map": {
-        "a": "Đúng, từ năm 1991, cuộc cạnh tranh chiến lược giữa các cường quốc trong thời kỳ Chiến tranh lạnh là chạy đua vũ trang được thay thế bằng cuộc chạy đua về sức mạnh tổng hợp. Trong đó tập trung vào phát triển kinh tế.",
-        "b": "Đúng, tương quan lực lượng giữa các cường quốc là một trong những nhân tố tác động đến việc hình thành trật tự thế giới sau Chiến tranh lạnh.",
-        "c": "Sai, đoạn tư liệu đề cập đến bối cảnh hình thành và đặc điểm nổi bật của cục diện thế giới thời kỳ sau Chiến tranh lạnh.",
-        "d": "Sai, sau Chiến tranh lạnh, trật tự đa cực nhiều trung tâm dần hình thành, không có quốc gia nào có ưu thế tuyệt đối."
-      }
-    },
-    {
       "question_id": 26,
-      "question": "Cho những thông tin trong bảng sau đây:",
+      "question": "Dựa vào kiến thức lịch sử về Hiệp hội các quốc gia Đông Nam Á (ASEAN), hãy xác định các nhận định sau đây là đúng hay sai:",
       "statements": {
         "a": "Trong quá trình phát triển, ASEAN đã từng bước xóa bỏ những bất đồng giữa các nước thành viên, gắn kết khu vực và nâng cao vị thế trên trường quốc tế.",
         "b": "Yếu tố quyết định đến sự hoạt động hiệu quả của tổ chức ASEAN là phù hợp với các xu thế phát triển của nhân loại trong bối cảnh trật tự thế giới mới.",

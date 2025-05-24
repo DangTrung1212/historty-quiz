@@ -11,6 +11,8 @@ The application has made significant strides in its development, with a focus on
   - Displays a congratulatory message (left page) and a personalized, text-based birthday message (right page).
   - Responsive: Stacks pages vertically on mobile with a slide animation, and spreads horizontally on desktop with a flip animation.
   - Uses custom text with styling and icons for the message area, replacing the previous image-based approach.
+  - Features an always-enabled reward button that changes text based on reward status.
+  - Integrates with localStorage to persist reward status across sessions.
 - `reward.tsx` page correctly displays the `PageTurningCard` when all quiz sections are completed, passing the personalized message.
 - `landing.tsx` page has been re-styled to match the app's overall theme (purple/pink gradients, animated decorative elements), providing a cohesive visual introduction.
 - Project structure is established with client/server architecture

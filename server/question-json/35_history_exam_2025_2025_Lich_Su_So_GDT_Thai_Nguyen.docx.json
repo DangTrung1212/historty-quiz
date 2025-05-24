@@ -162,27 +162,5 @@
     }
   ],
   "phan_ii": [
-    {
-      "question_id": 25,
-      "question": "Cho những thông tin trong bảng sau đây:",
-      "statements": {
-        "a": "Những thông tin trên thể hiện xu thế phát triển chính của thế giới sau Chiến tranh lạnh.",
-        "b": "Chiến tranh lạnh đã làm thay đổi quan hệ giữa các cường quốc từng là đồng minh trong Chiến tranh thế giới thứ hai.",
-        "c": "Chiến tranh lạnh chấm dứt, sau đó là Trật tự thế giới hai cực I-an-ta sụp đổ nhưng những di chứng của nó vẫn còn tiếp diễn ở nhiều nơi trên thế giới.",
-        "d": "Tổ chức Hiệp ước Bắc Đại Tây Dương và Tổ chức Hiệp ước Vác-sa-va được thành lập thể hiện sự xói mòn của Trật tự thế giới hai cực I-an-ta."
-      },
-      "answer_boolean_map": {
-        "a": false,
-        "b": true,
-        "c": true,
-        "d": false
-      },
-      "explanation_map": {
-        "a": "Sai, những thông tin trên thể hiện quan hệ quốc tế thời kỳ Chiến tranh lạnh.",
-        "b": "Đúng, trong chiến tranh thế giới thứ hai, Mỹ và Liên Xô là đồng minh chống phát xít, nhưng sau khi chiến tranh kết thúc, hai quốc gia chuyển từ đồng minh sang đối đầu.",
-        "c": "Đúng, Chiến tranh lạnh chấm dứt, sau đó là Trật tự thế giới hai cực I-an-ta sụp đổ nhưng những di chứng của nó vẫn còn tiếp diễn ở nhiều nơi trên thế giới.",
-        "d": "Sai, tổ chức Hiệp ước Bắc Đại Tây Dương và Tổ chức Hiệp ước Vác-sa-va được thành lập thể hiện sự xác lập của Trật tự thế giới hai cực I-an-ta."
-      }
-    }
   ]
 }

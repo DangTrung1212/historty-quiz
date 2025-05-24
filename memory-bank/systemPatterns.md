@@ -46,7 +46,20 @@ Key data in `ProgressContext`'s `progress.sections` object (keyed by section ID 
 ## UI Components & Reward System
 - **`ProgressModal.tsx`**: Accessed from the quiz selection page. Displays overall progress and a 3-part visual reward. Each part corresponds to a main quiz section (`'1'`, `'2'`, `'3'`). Unlocked parts show an image piece (blurred until all are unlocked). Navigates to `/reward` upon full completion.
 - **`SectionCard.tsx`**: Used on the quiz selection page. Displays section title, question count, and a star icon indicating `highScoreAchieved` status (derived from `ProgressContext`). Also shows highest score if completed.
-- **`/reward` page (`client/src/pages/reward.tsx`):** Displayed after all sections are completed with high scores. Shows a final assembled 3-part reward image, a static congratulatory letter, confetti, and achievement badges.
+- **`PageTurningCard.tsx`**: A key component that displays an interactive birthday card with the following features:
+  - Simulates a book/card opening with `framer-motion` animations
+  - Displays a personalized birthday message on the right page
+  - Includes an always-enabled reward button that changes text based on reward status
+  - Integrates with localStorage to persist reward status across sessions
+  - Responsive design that adapts to mobile and desktop views
+- **`/reward` page (`client/src/pages/reward.tsx`):** 
+  - Displayed after all sections are completed with high scores
+  - Features the `PageTurningCard` component with a personalized birthday message
+  - Uses `localStorage` to track whether the user has received their gift
+  - Shows appropriate button text based on reward status:
+    - "Quay quà ngay" (Spin for reward) when no reward has been received
+    - "Xem lại phần thưởng" (View reward again) when reward has been received
+  - Includes confetti effects and achievement badges
 - **Quiz Results Page (e.g., `ResultsPage.tsx` - *Next Feature*):** Will display the specific image piece unlocked if a high score is achieved for the current section.
 
 ## Routing

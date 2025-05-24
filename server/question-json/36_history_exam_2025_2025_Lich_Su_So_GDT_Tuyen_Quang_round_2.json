@@ -82,49 +82,5 @@
     }
   ],
   "phan_ii": [
-    {
-      "question_id": 25,
-      "question": "Cho đoạn tư liệu sau đây: '[...] Thực tế đã chứng tỏ việc lựa chọn khâu đột phá đổi mới tư duy kinh tế là hoàn toàn đúng đắn và thật sự sáng suốt. Đổi mới tư duy kinh tế để hình thành những chủ trương, chính sách kinh tế đúng đắn, kịp thời đã đem lại những chuyển biến tích cực trong đời sống kinh tế...'",
-      "statements": {
-        "a": "Đổi mới kinh tế đúng đắn của Đảng đã tạo ra những chuyển biến tích cực, thúc đẩy sự phát triển đất nước.",
-        "b": "Đổi mới về tư duy kinh tế từ năm 1968, Đảng xác định không duy trì kinh tế tự cấp tự túc.",
-        "c": "Chủ trương, chính sách kinh tế đúng đắn, kịp thời của Đảng là khâu đột phá trong quá trình đổi mới đất nước.",
-        "d": "Đoạn tư liệu phản ánh vai trò của đổi mới lý luận trong việc xây dựng chủ nghĩa xã hội ở Việt Nam."
-      },
-      "answer_boolean_map": {
-        "a": true,
-        "b": false,
-        "c": true,
-        "d": true
-      },
-      "explanation_map": {
-        "a": "Đúng, đổi mới kinh tế đúng đắn của Đảng đã tạo ra những chuyển biến tích cực, thúc đẩy sự phát triển đất nước.",
-        "b": "Sai, vì Đảng bắt đầu đổi mới tư duy kinh tế vào năm 1986, không phải năm 1968.",
-        "c": "Đúng, chủ trương, chính sách kinh tế đúng đắn, kịp thời của Đảng đóng vai trò quan trọng trong quá trình đổi mới đất nước.",
-        "d": "Đúng, đoạn tư liệu phản ánh vai trò của đổi mới lý luận trong việc xây dựng chủ nghĩa xã hội ở Việt Nam."
-      }
-    },
-    {
-      "question_id": 26,
-      "question": "Cho bảng niên biểu về một số sự kiện tiêu biểu về quan hệ của Việt Nam với một số nước lớn trên thế giới đầu thế kỷ XXI.",
-      "statements": {
-        "a": "Thông qua việc duy trì mối quan hệ tốt đẹp với Mỹ và Trung Quốc, Việt Nam đã giải quyết được cuộc cạnh tranh giữa các cường quốc.",
-        "b": "Việt Nam thực hiện đường lối đối ngoại là sẵn sàng làm bạn với tất cả các nước không phân biệt chế độ chính trị.",
-        "c": "Việt Nam đã thiết lập quan hệ đối tác chiến lược toàn diện với tất cả các nước thành viên của nhóm G7.",
-        "d": "Trung Quốc là quốc gia đầu tiên mà Việt Nam nâng cấp quan hệ lên đối tác chiến lược toàn diện."
-      },
-      "answer_boolean_map": {
-        "a": false,
-        "b": true,
-        "c": false,
-        "d": true
-      },
-      "explanation_map": {
-        "a": "Sai, Việt Nam không thể giải quyết hoàn toàn cạnh tranh giữa Mỹ và Trung Quốc vì đây là thực tế khách quan.",
-        "b": "Đúng, Việt Nam theo đuổi đường lối đối ngoại cởi mở, sẵn sàng làm bạn với tất cả các nước bất kể chế độ chính trị.",
-        "c": "Sai, Việt Nam chưa thiết lập quan hệ đối tác chiến lược toàn diện với tất cả các nước G7.",
-        "d": "Đúng, Trung Quốc là quốc gia đầu tiên mà Việt Nam nâng cấp quan hệ lên đối tác chiến lược toàn diện."
-      }
-    }
   ]
 }

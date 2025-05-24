@@ -227,28 +227,6 @@
         "c": "Đúng. Nguyên tắc 'không can thiệp' và 'đồng thuận' vừa là thuận lợi vừa là khó khăn đối với ASEAN.",
         "d": "Sai. Nguyên tắc hoạt động của ASEAN không phải là 'thiểu số phục tùng đa số', mà là sự nhất trí của tất cả các nước thành viên."
       }
-    },
-    {
-      "question_id": 28,
-      "question": "Cho những thông tin trong bảng sau:",
-      "statements": {
-        "a": "Từ ngày 14/8/1945, khởi nghĩa đã thắng lợi ở một số xã, huyện thuộc đồng bằng sông Hồng.",
-        "b": "Nước Việt Nam Dân chủ Cộng hòa ra đời là kết quả của cuộc nổi dậy trên cả hai địa bàn nông thôn và thành thị.",
-        "c": "Cuộc khởi nghĩa toàn dân với lực lượng chính trị giữ vai trò nòng cốt đã đưa đến thắng lợi nhanh chóng và ít đổ máu của Cách mạng tháng Tám năm 1945 ở Việt Nam.",
-        "d": "Nhân dân Hà Nội, Huế, Sài Gòn giành chính quyền không đánh dấu thắng lợi hoàn toàn của Cách mạng tháng Tám."
-      },
-      "answer_boolean_map": {
-        "a": true,
-        "b": true,
-        "c": false,
-        "d": true
-      },
-      "explanation_map": {
-        "a": "Đúng. Từ ngày 14/8/1945, khởi nghĩa đã thắng lợi ở một số xã, huyện thuộc đồng bằng sông Hồng.",
-        "b": "Đúng. Nước Việt Nam Dân chủ Cộng hòa ra đời là kết quả của cuộc nổi dậy trên cả hai địa bàn nông thôn và thành thị.",
-        "c": "Sai. Cuộc khởi nghĩa toàn dân với lực lượng chính trị giữ vai trò nòng cốt đã đưa đến thắng lợi nhanh chóng và ít đổ máu của Cách mạng tháng Tám năm 1945 ở Việt Nam.",
-        "d": "Đúng. Nhân dân Hà Nội, Huế, Sài Gòn giành chính quyền không đánh dấu thắng lợi hoàn toàn của Cách mạng tháng Tám."
-      }
     }
   ]
 }
