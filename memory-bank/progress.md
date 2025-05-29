@@ -1,7 +1,7 @@
 # Project Progress
 
 ## Current Status
-The application has made significant strides in its development, with a focus on refining the user experience and enhancing visual appeal. The interactive birthday card feature is now functionally complete and themed, and the landing page has been re-styled to match the app's overall aesthetic. The project is moving towards a refinement and polishing phase, with a strong focus on mobile experience and data quality.
+The application has made significant strides in its development, with a focus on refining the user experience and enhancing visual appeal. The interactive birthday card feature is now complete with proper Vietnamese font support (Be Vietnam Pro), responsive design, and smooth animations. The landing page has been re-styled to match the app's romantic theme. The project is in its final polishing phase, with a focus on reward saving functionality and cross-device testing.
 
 ## What Works
 - Core quiz functionalities (multiple choice, true/false) are stable.
@@ -10,7 +10,7 @@ The application has made significant strides in its development, with a focus on
   - Successfully simulates a book/card opening with `framer-motion`.
   - Displays a congratulatory message (left page) and a personalized, text-based birthday message (right page).
   - Responsive: Stacks pages vertically on mobile with a slide animation, and spreads horizontally on desktop with a flip animation.
-  - Uses custom text with styling and icons for the message area, replacing the previous image-based approach.
+  - Uses custom text with proper Vietnamese font support (Be Vietnam Pro) and responsive typography, replacing the previous image-based approach.
   - Features an always-enabled reward button that changes text based on reward status.
   - Integrates with localStorage to persist reward status across sessions.
 - `reward.tsx` page correctly displays the `PageTurningCard` when all quiz sections are completed, passing the personalized message.
@@ -64,11 +64,14 @@ The application has made significant strides in its development, with a focus on
 
 ## What's Left to Build/Complete
 1.  **Comprehensive Mobile UX Optimization**: Review and enhance the user experience on mobile devices across all parts of the application (quiz sections, navigation, results pages, etc.).
-2.  **Birthday Card Finalization**:
-    *   **Custom Fonts**: Select and integrate appropriate custom fonts for the birthday message to enhance its unique and personal feel.
-    *   **Message Content & Layout**: Refine the specific wording, line breaks, and overall typographic layout of the message on the card for maximum impact.
-    *   **Subtle Enhancements**: Consider minor additional animations or visual cues within the card content if they add to the experience without cluttering.
-3.  **Data Curation - Table-Based Questions**: Identify and decide on handling for table-based questions in `question-json` files (e.g., remove or reformat if they don't fit the quiz UI).
+2.  **Reward Saving Functionality**:
+    *   **Persistent Storage**: Implement localStorage to save reward status across sessions
+    *   **Visual Feedback**: Add visual indicators when rewards are saved
+    *   **State Management**: Ensure reward state is properly managed and synchronized across components
+3.  **Final Polish and Testing**:
+    *   **Cross-Device Testing**: Verify consistent behavior across different devices and screen sizes
+    *   **Performance Optimization**: Ensure smooth animations and transitions
+    *   **Accessibility Review**: Check color contrast, font sizes, and interactive elements
 4.  **Thorough Cross-Device Testing**: Test the entire application flow on various mobile devices and screen resolutions to catch any remaining UI/UX issues.
 
 ## Known Issues

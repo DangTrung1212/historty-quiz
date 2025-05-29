@@ -8,12 +8,18 @@ The project utilizes the following system patterns and architectural choices:
     -   Leveraging React Context API for global state such as `MultipleChoiceQuizContext` (managing quiz data, current question, user answers) and `ProgressContext` (tracking overall quiz progress and scores).
     -   Component-level state (`useState`, `useEffect`) is used for UI logic, animations, and responsiveness (e.g., in `PageTurningCard` for flip state, animation control, and screen size detection).
 -   **Animations**: Implemented with `framer-motion` for smooth UI transitions, page-turning effects in the `PageTurningCard`, and decorative animations (e.g., floating hearts, sparkles on the landing page).
--   **Styling**: Tailwind CSS is used for utility-first styling, enabling rapid UI development and responsive design. Custom styles and theming (purple/pink gradients) are applied using Tailwind's configuration and utility classes.
+-   **Styling**: 
+    - Tailwind CSS is used for utility-first styling, enabling rapid UI development and responsive design. 
+    - Custom styles and theming (purple/pink gradients) are applied using Tailwind's configuration and utility classes.
+    - Google Fonts integration (Be Vietnam Pro) ensures proper display of Vietnamese characters and enhances typography.
 -   **Iconography**: `lucide-react` provides a library of SVG icons used throughout the application for visual cues and enhancements (e.g., hearts, stars).
 -   **Responsive Design**:
-    -   Components like `PageTurningCard` and `landing.tsx` are designed to be responsive.
+    -   Components like `PageTurningCard` and `landing.tsx` are designed with a mobile-first approach.
     -   Tailwind CSS responsive prefixes (e.g., `md:`, `sm:`) are used for layout adjustments.
-    -   JavaScript-driven logic (`useEffect` with `window.innerWidth` and resize listeners) is employed for more complex responsive behaviors, such as adapting animations and layouts dynamically (e.g., `PageTurningCard` stacking vertically on mobile vs. spreading horizontally on desktop).
+    -   JavaScript-driven logic (`useEffect` with `window.innerWidth` and resize listeners) handles complex responsive behaviors:
+        - `PageTurningCard` stacks vertically on mobile with slide animations and spreads horizontally on desktop with flip animations
+        - Font sizes and spacing adjust based on viewport size for optimal readability
+        - Touch targets are enlarged for better mobile interaction
 -   **Theming**: A consistent romantic and celebratory theme (purple/pink gradients, festive decorative elements) is applied across key components and pages (`PageTurningCard`, `reward.tsx`, `landing.tsx`) to create a cohesive user experience.
 -   **Data Handling**: Quiz questions are sourced from JSON files located in the `server/question-json/` directory. Handlers on the server-side (e.g., `server/handlers/quizHandlers.ts`) are responsible for managing the fetching and serving of this data to the client application.
 
@@ -48,7 +54,10 @@ Key data in `ProgressContext`'s `progress.sections` object (keyed by section ID 
 - **`SectionCard.tsx`**: Used on the quiz selection page. Displays section title, question count, and a star icon indicating `highScoreAchieved` status (derived from `ProgressContext`). Also shows highest score if completed.
 - **`PageTurningCard.tsx`**: A key component that displays an interactive birthday card with the following features:
   - Simulates a book/card opening with `framer-motion` animations
-  - Displays a personalized birthday message on the right page
+  - Uses "Be Vietnam Pro" font for perfect Vietnamese character rendering
+  - Implements responsive typography with adjusted line heights and spacing
+  - Displays a personalized birthday message on the right page with proper text wrapping and alignment
+  - Features smooth transitions between mobile and desktop layouts
   - Includes an always-enabled reward button that changes text based on reward status
   - Integrates with localStorage to persist reward status across sessions
   - Responsive design that adapts to mobile and desktop views

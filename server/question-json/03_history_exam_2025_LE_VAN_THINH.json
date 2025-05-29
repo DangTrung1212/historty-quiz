@@ -164,7 +164,7 @@
   "phan_ii": [
     {
       "question_id": 25,
-      "question": "Đọc đoạn tư liệu, chọn đúng hoặc sai",
+      "question": "Đọc đoạn tư liệu sau đây và chọn đúng hoặc sai:\n\n\"Việt Nam gia nhập ASEAN năm 1995 là một quyết sách mang tính chiến lược của Đảng và Nhà nước ta, góp phần tạo nên cục diện mới về hội nhập quốc tế và quyết định sự phát triển của đất nước.\"\n\n",
       "statements": {
         "a": "Việt Nam gia nhập ASEAN là sự kiện quyết định, đưa đến thay đổi căn bản và toàn diện cho ASEAN.",
         "b": "Đoạn tư liệu đề cập ý nghĩa và tác động của sự kiện Việt Nam gia nhập ASEAN năm 1995.",

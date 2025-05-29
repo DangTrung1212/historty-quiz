@@ -48,7 +48,6 @@ export default function Landing() {
               <div className="w-20 h-20 rounded-full bg-white/10 flex items-center justify-center backdrop-blur-sm">
                 <BookOpen className="text-white text-4xl" />
               </div>
-              
             </div>
           </div>
           

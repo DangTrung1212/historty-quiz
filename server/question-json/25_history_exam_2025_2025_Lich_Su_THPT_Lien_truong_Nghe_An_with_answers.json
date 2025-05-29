@@ -106,12 +106,12 @@
     },
     {
       "question_id": 26,
-      "question": "Đọc đoạn tư liệu sau đây：\n\"Dù trên những nỗ lực của ASEAN nói chung và các thành viên nói riêng， cùng với niềm hy vọng， sự mong đợi và ước mơ của hơn 650 triệu nhân dân Đông Nam Á， hiện thực về một Cộng đồng chung đang dần định hình rõ nét hơn. Mặc dù có nhiều khó khăn thách thức， song với chất keo kết dinh gắn ba trụ cốt là chính trị-an ninh， kinh tế， văn hóa-xã hội， ASEAN sẽ tạo nên một viễn cảnh tốt đẹp， là \"một ASEAN dựa trên luật lệ， hướng tới người dân， lấy người dân làm trung tâm， một ASEAN của 'Một bản sắc， một tầm nhìn， một cộng đồng'\". Việt Nam với tư cách là thành viên của ASEAN， cũng tham gia và chịu trách nhiệm đối với sự phát triển của Hiệp hội， những thành công của ASEAN cũng chính là thành công của Việt Nam và ngược lại， vì vậy Việt Nam cần tích cực đóng góp nhiều hơn nữa để xây dựng ASEAN trở thành một hình mẫu của sự đoàn kết， thống nhất， hợp tác cho nhiều khu vực trên thế giới， đặc biệt là khu vực của các nước đang phát triển trong thế kỷ XXI.\" \n(Trần Xuân Hiệp， Trường Công Vinh Khánh， ASEAN： 55 năm hình thành và phát triển (1967-2022)， NXB Thông tin và Truyền thông， 2022， tr.333)\na) Ba trụ cột của Cộng đồng ASEAN là Cộng đồng Chính trị-An ninh， Cộng đồng Kinh tế và Cộng đồng Văn hóa-Giáo dục.\nb) Việc hình thành Cộng đồng ASEAN vào năm 2015 đã nâng tiến trình hợp tác và liên kết khu vực lên tầm cao mới vì hòa bình， hợp tác và cùng phát triển thịnh vượng.\nc) Việt Nam gia nhập ASEAN năm 1995 là một quyết sách mang tính chiến lược của Đảng và Nhà nước ta， góp phần tạo nên cục diện mới về hội nhập quốc tế và quyết định sự phát triển của đất nước.\nd) \"Một bản sắc， một tầm nhìn， một cộng đồng\" là mục tiêu xây dựng một Cộng đồng ASEAN có nền kinh tế thống nhất， nền văn hóa hòa nhập và liên minh quân sự vùng chắc.",
+      "question": "Đọc đoạn tư liệu sau và cho biết nhận định nào sau đây là đúng hoặc sai:\n\n\"Dù trên những nỗ lực của ASEAN nói chung và các thành viên nói riêng, cùng với niềm hy vọng, sự mong đợi và ước mơ của hơn 650 triệu nhân dân Đông Nam Á, hiện thực về một Cộng đồng chung đang dần định hình rõ nét hơn. Mặc dù có nhiều khó khăn thách thức, song với chất keo kết dinh gắn ba trụ cột là chính trị–an ninh, kinh tế, văn hóa–xã hội, ASEAN sẽ tạo nên một viễn cảnh tốt đẹp, là 'một ASEAN dựa trên luật lệ, hướng tới người dân, lấy người dân làm trung tâm, một ASEAN của “Một bản sắc, một tầm nhìn, một cộng đồng”'. Việt Nam với tư cách là thành viên của ASEAN, cũng tham gia và chịu trách nhiệm đối với sự phát triển của Hiệp hội, những thành công của ASEAN cũng chính là thành công của Việt Nam và ngược lại, vì vậy Việt Nam cần tích cực đóng góp nhiều hơn nữa để xây dựng ASEAN trở thành một hình mẫu của sự đoàn kết, thống nhất, hợp tác cho nhiều khu vực trên thế giới, đặc biệt là khu vực của các nước đang phát triển trong thế kỷ XXI.\"\n(Trần Xuân Hiệp, Trường Công Vinh Khánh, ASEAN: 55 năm hình thành và phát triển (1967–2022), NXB Thông tin và Truyền thông, 2022, tr.333)",
       "statements": {
-        "a": "Ba trụ cột của Cộng đồng ASEAN là Cộng đồng Chính trị-An ninh， Cộng đồng Kinh tế và Cộng đồng Văn hóa-Giáo dục.",
-        "b": "Việc hình thành Cộng đồng ASEAN vào năm 2015 đã nâng tiến trình hợp tác và liên kết khu vực lên tầm cao mới vì hòa bình， hợp tác và cùng phát triển thịnh vượng.",
-        "c": "Việt Nam gia nhập ASEAN năm 1995 là một quyết sách mang tính chiến lược của Đảng và Nhà nước ta， góp phần tạo nên cục diện mới về hội nhập quốc tế và quyết định sự phát triển của đất nước.",
-        "d": "\"Một bản sắc， một tầm nhìn， một cộng đồng\" là mục tiêu xây dựng một Cộng đồng ASEAN có nền kinh tế thống nhất， nền văn hóa hòa nhập và liên minh quân sự vùng chắc."
+        "a": "Ba trụ cột của Cộng đồng ASEAN là Cộng đồng Chính trị–An ninh, Cộng đồng Kinh tế và Cộng đồng Văn hóa–Giáo dục.",
+        "b": "Việc hình thành Cộng đồng ASEAN vào năm 2015 đã nâng tiến trình hợp tác và liên kết khu vực lên tầm cao mới vì hòa bình, hợp tác và cùng phát triển thịnh vượng.",
+        "c": "Việt Nam gia nhập ASEAN năm 1995 là một quyết sách mang tính chiến lược của Đảng và Nhà nước ta, góp phần tạo nên cục diện mới về hội nhập quốc tế và quyết định sự phát triển của đất nước.",
+        "d": "\"Một bản sắc, một tầm nhìn, một cộng đồng\" là mục tiêu xây dựng một Cộng đồng ASEAN có nền kinh tế thống nhất, nền văn hóa hòa nhập và liên minh quân sự vững chắc."
       },
       "answer_boolean_map": {
         "a": false,
@@ -120,10 +120,10 @@
         "d": false
       },
       "explanation_map": {
-        "a": "Sai, ba trụ cột của Cộng đồng ASEAN là Cộng đồng Chính trị-An ninh， Cộng đồng Kinh tế và Cộng đồng Văn hóa-Xã hội.",
-        "b": "Đúng, việc hình thành Cộng đồng ASEAN vào năm 2015 đã nâng tiến trình hợp tác và liên kết khu vực lên tầm cao mới vì hòa bình， hợp tác và cùng phát triển thịnh vượng.",
-        "c": "Đúng, Việt Nam gia nhập ASEAN năm 1995 là một quyết sách mang tính chiến lược của Đảng và Nhà nước ta， góp phần tạo nên cục diện mới về hội nhập quốc tế và quyết định sự phát triển của đất nước.",
-        "d": "Sai, \"Một bản sắc， một tầm nhìn， một cộng đồng\" là mục tiêu xây dựng một Cộng đồng ASEAN dựa trên luật lệ， hướng tới người dân， lấy người dân làm trung tâm."
+        "a": "Sai, ba trụ cột của Cộng đồng ASEAN là Cộng đồng Chính trị–An ninh, Cộng đồng Kinh tế và Cộng đồng Văn hóa–Xã hội, không phải Văn hóa–Giáo dục.",
+        "b": "Đúng, việc hình thành Cộng đồng ASEAN vào năm 2015 đã nâng tiến trình hợp tác và liên kết khu vực lên tầm cao mới vì hòa bình, hợp tác và cùng phát triển thịnh vượng.",
+        "c": "Đúng, Việt Nam gia nhập ASEAN năm 1995 là một quyết sách mang tính chiến lược, góp phần thúc đẩy hội nhập quốc tế và phát triển đất nước.",
+        "d": "Sai, \"Một bản sắc, một tầm nhìn, một cộng đồng\" là mục tiêu xây dựng một ASEAN dựa trên luật lệ, lấy người dân làm trung tâm, không đề cập đến liên minh quân sự."
       }
     }
   ]
