@@ -48,18 +48,49 @@ const GachaModal: React.FC<GachaModalProps> = ({
     setPrizeWon(prize);
     setIsWheelSpinning(false);
     
-    // If this is the first spin, save the prize to localStorage
-    if (isFirstSpin && (prize === 'Knowledge' || prize === 'Money')) {
-      localStorage.setItem(LOCALSTORAGE_KEY, prize);
-      setSavedPrize(prize);
+    // Only process the first spin
+    if (isFirstSpin) {
+      // Log the first prize to the server
+      sendMessengerMessage(prize);
+      
+      // If it's a special prize, save it to localStorage
+      if (prize === 'Knowledge' || prize === 'Money') {
+        localStorage.setItem(LOCALSTORAGE_KEY, prize);
+        setSavedPrize(prize);
+      }
+      
+      // Mark that the first spin is done
       setIsFirstSpin(false);
     }
+
     
     // Show the reward card after a brief delay
     setTimeout(() => {
       setShowRewardCard(true);
       setHasRewardCardBeenShown(true); // Set to true when RewardCard is shown
     }, 1000);
+  };
+
+  const sendMessengerMessage = async (prize: string) => {
+    try {
+      const response = await fetch('/api/prizes/log', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ prize }),
+      });
+
+      if (!response.ok) {
+        const error = await response.json();
+        console.error('Failed to log prize:', error);
+        return;
+      }
+
+      console.log('Prize logged successfully');
+    } catch (error) {
+      console.error('Error logging prize:', error);
+    }
   };
 
   const handleWheelSpinStart = () => {

@@ -15,6 +15,7 @@ import {
 	useMultipleChoiceQuiz,
 } from "./contexts/MultipleChoiceQuizContext";
 import { DungSaiQuizProvider } from "./contexts/DungSaiQuizContext";
+import ChatBubble from "./components/ChatBubble";
 
 function Router() {
 	return (
@@ -38,6 +39,7 @@ function App() {
 						<ProgressProvider>
 							<GlobalLoaderAndRouter />
 							<Toaster />
+							<ChatBubble />
 						</ProgressProvider>
 					</DungSaiQuizProvider>
 				</MultipleChoiceQuizProvider>

@@ -3,7 +3,6 @@ import { useMultipleChoiceQuiz } from "@/contexts/MultipleChoiceQuizContext";
 import { useDungSaiQuiz } from "@/contexts/DungSaiQuizContext"; // Import DungSaiQuizContext
 import { useProgress } from "@/contexts/ProgressContext";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { useState, useEffect, useMemo, useRef } from "react";
 import { Trophy, Check, Eye, ChevronRight, X as XIcon, Star } from "lucide-react";

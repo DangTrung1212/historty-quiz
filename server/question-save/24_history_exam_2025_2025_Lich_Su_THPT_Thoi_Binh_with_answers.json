@@ -164,34 +164,12 @@
   "phan_ii": [
     {
       "question_id": 25,
-      "question": "Đoạn tư liệu sau đây phản ánh những biểu hiện của Trật tự thế giới hai cực I-an-ta.",
+      "question": "Về Trật tự thế giới hai cực I-an-ta và Chiến tranh lạnh, nhận định nào sau đây là đúng?",
       "statements": {
-        "a": "Đoạn tư liệu trên phản ánh những biểu hiện của Trật tự thế giới hai cực I-an-ta.",
-        "b": "Một trong những nguyên nhân quyết định Mỹ và Liên Xô tuyên bố chấm dứt Chiến tranh lạnh (1989) là thắng lợi của phong trào giải phóng dân tộc trên thế giới.",
-        "c": "Sau khi Liên Xô tan rã, Mỹ và Liên bang Nga tuyên bố chấm dứt Chiến tranh lạnh (1989).",
-        "d": "Trong việc tiến hành Chiến tranh lạnh, châu Âu là mục tiêu chiến lược để Mỹ ngăn chặn ảnh hưởng của chủ nghĩa xã hội và đàn áp phong trào giải phóng dân tộc."
-      },
-      "answer_boolean_map": {
-        "a": false,
-        "b": false,
-        "c": false,
-        "d": true
-      },
-      "explanation_map": {
-        "a": "Sai, đoạn tư liệu trên đề cập đến thắng lợi trong cuộc kháng chiến chống thực dân Pháp xâm lược (1945-1954).",
-        "b": "Sai, lần đầu tiên trong lịch sử, một dân tộc Việt Nam nhỏ bé đã đánh thắng một nước thực dân hùng mạnh, đó là thực dân Pháp.",
-        "c": "Sai, thắng lợi vàng của nhân dân Việt Nam không đánh dấu hệ thống xã hội chủ nghĩa nối liền từ châu Âu sang châu Á. Hệ thống xã hội chủ nghĩa nối liền từ châu Âu sang châu Á qua sự kiện Cộng hòa Nhân dân Trung Hoa ra đời (1949).",
-        "d": "Đúng, thắng lợi của nhân dân Việt Nam chứng minh các dân tộc bị áp bức có khả năng đánh bại các cường quốc thực dân."
-      }
-    },
-    {
-      "question_id": 26,
-      "question": "Đoạn tư liệu sau đây đề cập đến thắng lợi Cách mạng tháng Tám năm 1945 ở Việt Nam.",
-      "statements": {
-        "a": "Đoạn tư liệu trên đề cập đến thắng lợi Cách mạng tháng Tám năm 1945 ở Việt Nam.",
-        "b": "Lần đầu tiên trong lịch sử, một dân tộc Việt Nam nhỏ bé đã đánh thắng một nước thực dân hùng mạnh, đó là đế quốc Mỹ.",
-        "c": "Thắng lợi vàng của nhân dân Việt Nam đánh dấu hệ thống xã hội chủ nghĩa nối liền từ châu Âu sang châu Á.",
-        "d": "Thắng lợi của nhân dân Việt Nam chứng minh các dân tộc bị áp bức có khả năng đánh bại các cường quốc thực dân."
+        "a": "Trật tự hai cực I-an-ta hình thành sau Chiến tranh thế giới thứ hai, phản ánh sự phân chia thế giới thành hai phe đối lập do Mỹ và Liên Xô đứng đầu.",
+        "b": "Một trong những nguyên nhân quyết định Mỹ và Liên Xô tuyên bố chấm dứt Chiến tranh lạnh (1989) là sự suy yếu về kinh tế và chính trị của Liên Xô.",
+        "c": "Chiến tranh lạnh chấm dứt vào năm 1989 sau khi Liên Xô tan rã.",
+        "d": "Trong Chiến tranh lạnh, châu Âu là mặt trận chính để Mỹ và Liên Xô cạnh tranh ảnh hưởng và ngăn chặn sự bành trướng của đối phương."
       },
       "answer_boolean_map": {
         "a": true,
@@ -200,10 +178,32 @@
         "d": true
       },
       "explanation_map": {
-        "a": "Đúng, đoạn tư liệu trên thể hiện các sự kiện của Cách mạng tháng Tám năm 1945 ở Việt Nam.",
-        "b": "Đúng, Tuyên ngôn Độc lập là áng văn lập quốc vĩ đại trong lịch sử dân tộc Việt Nam.",
-        "c": "Sai, khi Hà Nội, Huế, Sài Gòn khởi nghĩa thắng lợi, các địa phương vẫn tiếp tục tiến hành khởi nghĩa.",
-        "d": "Sai, Cách mạng tháng Tám năm 1945 ở Việt Nam bắt đầu diễn ra trước khi Nhật hoàng tuyên bố đầu hàng Đồng minh không điều kiện (15/8/1945). Từ ngày 14/8, một số địa phương đã tiến hành khởi nghĩa."
+        "a": "Đúng, Hội nghị I-an-ta đã quyết định việc phân chia phạm vi ảnh hưởng giữa các cường quốc, dẫn đến sự hình thành trật tự hai cực đối lập giữa hai phe tư bản chủ nghĩa và xã hội chủ nghĩa.",
+        "b": "Đúng, sự suy yếu toàn diện của Liên Xô cùng với những cải cách không thành công là nguyên nhân chính dẫn đến sự chấm dứt Chiến tranh lạnh.",
+        "c": "Sai, Chiến tranh lạnh chấm dứt vào tháng 12 năm 1989 (Hội nghị Malta) giữa Mỹ và Liên Xô, trước khi Liên Xô chính thức tan rã vào tháng 12 năm 1991.",
+        "d": "Đúng, châu Âu là khu vực đối đầu gay gắt nhất trong Chiến tranh lạnh với sự hình thành của hai khối quân sự đối lập (NATO và Vác-sa-va) và các kế hoạch kinh tế (Marshall Plan, COMECON) nhằm lôi kéo và củng cố ảnh hưởng."
+      }
+    },
+    {
+      "question_id": 26,
+      "question": "Về Cách mạng tháng Tám năm 1945 ở Việt Nam, nhận định nào sau đây là đúng?",
+      "statements": {
+        "a": "Thắng lợi của Cách mạng tháng Tám năm 1945 đã lật đổ ách thống trị của thực dân Pháp và phát xít Nhật, lập nên nước Việt Nam Dân chủ Cộng hòa.",
+        "b": "Đây là lần đầu tiên trong lịch sử, một dân tộc nhỏ bé đã đánh thắng một nước đế quốc hùng mạnh là đế quốc Mỹ.",
+        "c": "Thắng lợi này đánh dấu sự hình thành hệ thống xã hội chủ nghĩa nối liền từ châu Âu sang châu Á.",
+        "d": "Thắng lợi của Cách mạng tháng Tám chứng minh các dân tộc bị áp bức hoàn toàn có khả năng đánh bại các cường quốc thực dân."
+      },
+      "answer_boolean_map": {
+        "a": true,
+        "b": false,
+        "c": false,
+        "d": true
+      },
+      "explanation_map": {
+        "a": "Đúng, Cách mạng tháng Tám năm 1945 đã thành công trong việc lật đổ ách thống trị của thực dân Pháp và phát xít Nhật, khai sinh ra nước Việt Nam Dân chủ Cộng hòa.",
+        "b": "Sai, Cách mạng tháng Tám năm 1945 là cuộc đấu tranh chống lại ách thống trị của thực dân Pháp và phát xít Nhật, không phải đế quốc Mỹ.",
+        "c": "Sai, Cách mạng tháng Tám năm 1945 là một cuộc cách mạng giải phóng dân tộc điển hình, không phải là sự kiện đánh dấu sự hình thành hệ thống xã hội chủ nghĩa nối liền Á-Âu.",
+        "d": "Đúng, thắng lợi của Cách mạng tháng Tám đã cổ vũ mạnh mẽ phong trào giải phóng dân tộc trên thế giới, chứng minh các dân tộc bị áp bức có khả năng đánh bại các cường quốc thực dân để giành độc lập."
       }
     }
   ]

@@ -124,10 +124,8 @@ const PageTurningCard: React.FC<PageTurningCardProps> = ({
                   <Heart className="w-10 h-10 text-pink-500 mb-4" />
                   <p className="text-sm md:text-base font-['Be_Vietnam_Pro'] italic text-purple-600 leading-normal font-normal mb-4 max-w-[90%]">
                     Chúc mừng sinh nhật em! <br />
-                    <br />
                     Cảm ơn em vì quãng thời gian vừa qua, nói chuyện với em anh cảm giác bình yên lắm, dù rằng trong anh lại có nhiều mẫu thuẫn hơn. <br />
-                    <br />
-                    Chúc em tuổi mới tràn đầy niềm vui và may mắn trong kỳ thi sắp tới nha!!
+                    Không biết bao nhiêu lần anh tự hỏi là anh có nên gửi em này không, vì suy cho cùng trong em anh chỉ là 1 người xa lạ...
                   </p>
                 </div>
                 

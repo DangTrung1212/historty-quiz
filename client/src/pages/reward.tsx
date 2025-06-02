@@ -52,7 +52,7 @@ export default function Reward() {
   }
 
   // Personalized birthday message text
-  const personalizedBirthdayMessage = "Anh không biết nói thế nào nữa…\nẤn quay quà và nhắn cho anh nhé!";
+  const personalizedBirthdayMessage = "Tuy vậy, anh hy vọng món quà nho nhỏ này có thể làm em vui, vì anh muốn thấy em cười nhiều lắm.\nChúc em tuổi mới tràn đầy niềm vui và may mắn trong kỳ thi sắp tới nha!";
 
   return (
     <section className="min-h-screen bg-gradient-to-br from-purple-100 via-pink-100 to-purple-200 py-6 sm:py-10 overflow-y-auto">

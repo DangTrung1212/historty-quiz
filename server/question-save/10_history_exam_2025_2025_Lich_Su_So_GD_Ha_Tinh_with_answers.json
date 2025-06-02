@@ -217,13 +217,13 @@
       },
       "answer_boolean_map": {
         "a": true,
-        "b": true,
+        "b": false,
         "c": true,
         "d": false
       },
       "explanation_map": {
         "a": "Đúng. Giải quyết hài hòa lợi ích quốc gia với lợi ích khu vực là một thách thức lớn của ASEAN.",
-        "b": "Đúng. ASEAN nhất trí lấy phương thức 'tăng cường ảnh hưởng lẫn nhau' để duy trì sự đoàn kết nội bộ.",
+        "b": "Sai. Đoạn tài liệu không nêu rõ ASEAN nhất trí lấy phương thức 'tăng cường ảnh hưởng lẫn nhau' để duy trì sự đoàn kết nội bộ. Các nguyên tắc cơ bản được đề cập là 'không can thiệp' và 'đồng thuận'.",
         "c": "Đúng. Nguyên tắc 'không can thiệp' và 'đồng thuận' vừa là thuận lợi vừa là khó khăn đối với ASEAN.",
         "d": "Sai. Nguyên tắc hoạt động của ASEAN không phải là 'thiểu số phục tùng đa số', mà là sự nhất trí của tất cả các nước thành viên."
       }
