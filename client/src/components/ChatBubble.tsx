@@ -10,14 +10,14 @@ const ChatBubble = () => {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <div className="fixed bottom-6 left-6 z-50">
       <button
         onClick={openNotebook}
-        className="bg-gradient-to-r from-purple-600 to-pink-500 text-white rounded-full p-4 shadow-lg hover:shadow-xl transition-all hover:scale-105"
+        className="bg-gradient-to-br from-pink-500/90 to-purple-600/90 text-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all hover:scale-105 backdrop-blur-sm"
         title="Open Notebook"
         aria-label="Open Notebook"
       >
-        <MessageSquare size={24} />
+        <MessageSquare size={20} className="text-white/90" />
       </button>
     </div>
   );

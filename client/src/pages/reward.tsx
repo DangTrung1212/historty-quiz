@@ -55,7 +55,7 @@ export default function Reward() {
   const personalizedBirthdayMessage = "Tuy vậy, anh hy vọng món quà nho nhỏ này có thể làm em vui, vì anh muốn thấy em cười nhiều lắm.\nChúc em tuổi mới tràn đầy niềm vui và may mắn trong kỳ thi sắp tới nha!";
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-purple-100 via-pink-100 to-purple-200 py-6 sm:py-10 overflow-y-auto">
+    <section className="min-h-screen bg-gradient-to-br from-purple-100 via-pink-100 to-purple-200 py-6 sm:py-10 overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(5)].map((_, i) => (
@@ -102,7 +102,7 @@ export default function Reward() {
         )}
       </AnimatePresence>
       
-      <div className="flex flex-col h-screen justify-center p-4 relative z-10">
+      <div className="flex flex-col min-h-[calc(100vh-3rem)] sm:min-h-[calc(100vh-5rem)] justify-center p-4 relative z-10">
         <div className="max-w-2xl mx-auto w-full">
           {/* Success Header */}
           <motion.div 

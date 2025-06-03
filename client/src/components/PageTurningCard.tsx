@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Heart, Gift, BookOpen, Cake, Sparkles, CheckCircle } from 'lucide-react';
+import { Heart, Gift, BookOpen, Cake, Sparkles, CheckCircle, Volume2, VolumeX } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 interface PageTurningCardProps {
@@ -26,7 +26,29 @@ const PageTurningCard: React.FC<PageTurningCardProps> = ({
 }) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
+  const [isMuted, setIsMuted] = useState(false);
+  const [currentTrack, setCurrentTrack] = useState(1);
+  const audioRef = useRef<HTMLAudioElement>(null);
   const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0);
+
+  useEffect(() => {
+    if (audioRef.current) {
+      if (isFlipped) {
+        audioRef.current.muted = isMuted;
+        audioRef.current.play().catch(error => console.error("Error playing audio:", error));
+      } else {
+        audioRef.current.pause();
+      }
+    }
+  }, [isFlipped, isMuted]);
+
+  const handleTrackEnd = () => {
+    if (currentTrack === 1) {
+      setCurrentTrack(2);
+    } else {
+      setCurrentTrack(1);
+    }
+  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -51,7 +73,18 @@ const PageTurningCard: React.FC<PageTurningCardProps> = ({
     }, 1000);
   };
 
+  const toggleMute = () => {
+    setIsMuted(!isMuted);
+  };
+
   return (
+    <>
+      <audio 
+        ref={audioRef} 
+        src={currentTrack === 1 ? "/music.mp3" : "/music2.mp3"} 
+        preload="auto" 
+        onEnded={handleTrackEnd}
+      />
     <div 
       className="relative w-full max-w-full mx-auto overflow-visible shadow-romantic-lg"
       style={{ 
@@ -104,6 +137,21 @@ const PageTurningCard: React.FC<PageTurningCardProps> = ({
       </AnimatePresence>
 
       {/* Open Book Spread */}
+      {isFlipped && (
+        <div className="absolute top-4 right-4 z-50">
+          <button 
+            onClick={toggleMute} 
+            className="p-2 rounded-full bg-gradient-to-br from-pink-500/80 to-purple-600/80 hover:from-pink-500 hover:to-purple-600 transition-colors shadow-lg backdrop-blur-sm"
+            aria-label={isMuted ? "Unmute" : "Mute"}
+          >
+            {isMuted ? (
+              <VolumeX className="w-5 h-5 text-white" />
+            ) : (
+              <Volume2 className="w-5 h-5 text-white" />
+            )}
+          </button>
+        </div>
+      )}
       <AnimatePresence>
         {isFlipped && (
           <div className="absolute inset-0 flex flex-col md:flex-row w-full h-full">
@@ -248,6 +296,7 @@ const PageTurningCard: React.FC<PageTurningCardProps> = ({
         )}
       </AnimatePresence>
     </div>
+    </>
   );
 };
 
