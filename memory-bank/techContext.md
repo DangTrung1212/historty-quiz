@@ -43,16 +43,25 @@
 - Static assets are optimized during the build process
 
 ## Data Flow
-1. Server provides quiz questions via API endpoints
-2. Client fetches and caches questions using React Query
-3. User progress is stored in localStorage (hydrated into context on mount)
-4. No database is required as all state is maintained client-side
+1. Server provides quiz questions via API endpoints.
+2. Client fetches and caches questions using React Query (or simple fetch).
+3. **Session State**: User answers during a quiz attempt are managed in-memory by the relevant context (`MultipleChoiceQuizContext`, `DungSaiQuizContext`).
+4. **Persistent Progress**: On quiz completion, results are sent to `ProgressContext`.
+5. `ProgressContext` updates its state (completion, high score status, highest score).
+6. `ProgressContext` saves its state to the `overallQuizProgress` key in localStorage.
+7. On app load, `ProgressContext` initializes/hydrates its state from localStorage.
 
 ## Performance Considerations
 - Bundle size optimized through proper code splitting
 - Images and assets need to be optimized for quick loading
 - Quiz data is structured for efficient rendering and state management
 
+## Debugging Notes
+- Recent debugging involved heavy use of `console.log` to trace state updates and effect execution order.
+- Identified and resolved infinite loops caused by unstable function references in `useEffect` dependencies (fixed using `useCallback`).
+- Addressed Local Storage corruption by ensuring only one context (`ProgressContext`) writes to the primary progress key (`overallQuizProgress`) with a consistent data structure.
+
 ---
 **Note:**
+- Local Storage usage is now simplified, primarily managed by `ProgressContext`.
 - The project is moving toward a unified quiz context for all quiz types, with robust localStorage persistence and hydration to ensure state is always correct and recoverable. 

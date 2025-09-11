@@ -11,12 +11,13 @@ import { BarChart2, ChevronRight } from "lucide-react";
 
 export default function QuizSelection() {
   const { sections } = useMultipleChoiceQuiz();
-  const { getImageRevealLevel, completedSections } = useProgress();
+  const { progress, getImageRevealLevel } = useProgress();
   const [showProgressModal, setShowProgressModal] = useState(false);
   
   const totalSections = sections.length;
-  const progressPercent = (completedSections / totalSections) * 100;
-  const revealLevel = getImageRevealLevel(sections);
+  const completedSections = totalSections > 0 ? Object.values(progress.sections).filter(s => s.completed).length : 0;
+  const progressPercent = totalSections > 0 ? (completedSections / totalSections) * 100 : 0;
+  const revealLevel = getImageRevealLevel();
 
   return (
     <section className="min-h-screen p-6 bg-gray-50">
@@ -37,8 +38,7 @@ export default function QuizSelection() {
           {/* <p className="text-gray-600">Hoàn thành mỗi phần với điểm ≥90% để mở khóa phần thưởng</p> */}
         </motion.header>
         
-        {/* Progress Widget - New Card-based design */}
-        {/*
+        {/* Progress Widget - Uncommented */}
         <motion.div 
           className="mb-8"
           initial={{ opacity: 0, y: 20 }}
@@ -74,7 +74,6 @@ export default function QuizSelection() {
             </div>
           </div>
         </motion.div>
-        */}
         
         {/* Quiz Sections */}
         <motion.div 
